@@ -372,54 +372,5 @@ namespace Weedwacker.GameServer.Systems.Player
                 }
             }
         }
-
-        public async Task<bool> ReviveAvatarAsync(Avatar.Avatar avatar)
-        {
-            foreach (AvatarEntity entity in ActiveTeam.Values)
-            {
-                if (entity.Avatar == avatar)
-                {
-                    if (entity.LiveState == LifeState.LIFE_ALIVE)
-                    {
-                        return false;
-                    }
-
-                    entity.FightProps[
-                        FightProperty.FIGHT_PROP_CUR_HP] =
-                        entity.FightProps[FightProperty.FIGHT_PROP_MAX_HP] * .1f;
-                    await Owner.SendPacketAsync(new PacketAvatarFightPropUpdateNotify(entity.Avatar, FightProperty.FIGHT_PROP_CUR_HP));
-                    await Owner.SendPacketAsync(new PacketAvatarLifeStateChangeNotify(entity.Avatar));
-                    return true;
-                }
-            }
-
-            return false;
-        }
-
-        public async Task<bool> HealAvatar(Avatar.Avatar avatar, int healRate, int healAmount)
-        {
-            foreach (AvatarEntity entity in ActiveTeam.Values)
-            {
-                if (entity.Avatar == avatar)
-                {
-                    if (!(entity.LiveState == LifeState.LIFE_ALIVE))
-                    {
-                        return false;
-                    }
-
-                    entity.FightProps[
-                        FightProperty.FIGHT_PROP_CUR_HP] =
-                        (float)Math.Min(
-                            entity.FightProps[FightProperty.FIGHT_PROP_CUR_HP] +
-                                entity.FightProps[FightProperty.FIGHT_PROP_MAX_HP] * healRate / 100.0 +
-                                healAmount / 100.0,
-                            entity.FightProps[FightProperty.FIGHT_PROP_MAX_HP]);
-                    await Owner.SendPacketAsync(new PacketAvatarFightPropUpdateNotify(entity.Avatar, FightProperty.FIGHT_PROP_CUR_HP));
-                    await Owner.SendPacketAsync(new PacketAvatarLifeStateChangeNotify(entity.Avatar));
-                    return true;
-                }
-            }
-            return false;
-        }
     }
 }
