@@ -9,7 +9,7 @@ namespace Weedwacker.GameServer.Data.Excel
     {
         [JsonProperty] public readonly int id;
         [JsonProperty] public readonly double cdTime;
-        [JsonProperty] public readonly int costElemVal;
+        [JsonProperty] public readonly float costElemVal;
         [JsonProperty] public readonly int maxChargeNum;
         [JsonProperty] public readonly int triggerID;
         [JsonProperty] public readonly bool isAttackCameraLock;
@@ -27,6 +27,6 @@ namespace Weedwacker.GameServer.Data.Excel
         [JsonProperty] public readonly string? buffIcon;
         [JsonProperty] public readonly double[] lockWeightParams;
         [JsonProperty] public readonly string? globalValueKey; // when this is not empty, set the avatar's global's value to energyMin
-        [JsonProperty] public readonly int energyMin;
+        [JsonProperty] public readonly float energyMin;
     }
 }

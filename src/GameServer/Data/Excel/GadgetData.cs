@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Numerics;
+using Newtonsoft.Json;
 using Weedwacker.GameServer.Enums;
 
 namespace Weedwacker.GameServer.Data.Excel
@@ -16,7 +17,7 @@ namespace Weedwacker.GameServer.Data.Excel
         [JsonProperty] public readonly long interactNameTextMapHash;
         [JsonProperty] public readonly int id;
         [JsonProperty] public readonly long nameTextMapHash;
-        [JsonProperty] public readonly long prefabPathHashSuffix;
+        [JsonProperty] public readonly BigInteger prefabPathHashSuffix;
         [JsonProperty] public readonly int prefabPathHashPre;
         [JsonProperty] public readonly int campId;
         [JsonProperty] public readonly string lODPatternName;

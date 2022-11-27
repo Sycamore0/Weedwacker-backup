@@ -96,24 +96,27 @@ namespace Weedwacker.GameServer.Enums
         SHOP_TYPE_ACTIVITY_ROGUE_DIARY = 27001,// guess
         SHOP_TYPE_ACTIVITY_SUMMER_TIME_V2 = 28001, // guess
         SHOP_TYPE_ACTIVITY_GRAVEN_INNOCENCE = 30001, // guess
-        SHOP_TYPE_FISH_SUMERU, // unknown
-        SHOP_TYPE_ACTIVITY_VINTAGE_ANGEL_S_SHARE, // unknown
-        SHOP_TYPE_NPC_Pam, // unknown
-        SHOP_TYPE_NPC_Lambad, // unknown
-        SHOP_TYPE_NPC_Hamawi, // unknown
-        SHOP_TYPE_NPC_Khalid, // unknown
-        SHOP_TYPE_NPC_Ahangar, // unknown
-        SHOP_TYPE_NPC_Afshin, // unknown
-        SHOP_TYPE_NPC_Jut, // unknown
-        SHOP_TYPE_NPC_Butrus, // unknown
-        SHOP_TYPE_NPC_Jahangir, // unknown
-        SHOP_TYPE_NPC_Qiuwei, // unknown
-        SHOP_TYPE_NPC_Babak, // unknown
-        SHOP_TYPE_NPC_Rama, // unknown
-        SHOP_TYPE_NPC_Ashpazi, // unknown
-        SHOP_TYPE_NPC_Aramani, // unknown
-        SHOP_TYPE_NPC_Aravinay, // unknown
-        SHOP_TYPE_NPC_Enteka, // unknown
-        SHOP_TYPE_NPC_Azalai // unknown
+        // unknown
+        SHOP_TYPE_FISH_SUMERU,
+        SHOP_TYPE_ACTIVITY_VINTAGE_ANGEL_S_SHARE,
+        SHOP_TYPE_NPC_Pam,
+        SHOP_TYPE_NPC_Lambad,
+        SHOP_TYPE_NPC_Hamawi,
+        SHOP_TYPE_NPC_Khalid,
+        SHOP_TYPE_NPC_Ahangar,
+        SHOP_TYPE_NPC_Afshin,
+        SHOP_TYPE_NPC_Jut,
+        SHOP_TYPE_NPC_Butrus,
+        SHOP_TYPE_NPC_Jahangir,
+        SHOP_TYPE_NPC_Qiuwei,
+        SHOP_TYPE_NPC_Babak,
+        SHOP_TYPE_NPC_Rama,
+        SHOP_TYPE_NPC_Ashpazi,
+        SHOP_TYPE_NPC_Aramani,
+        SHOP_TYPE_NPC_Aravinay,
+        SHOP_TYPE_NPC_Enteka,
+        SHOP_TYPE_NPC_Azalai,
+        SHOP_TYPE_ACTIVITY_FUNGUS_FIGHTER,
+        SHOP_TYPE_ACTIVITY_EFFIGY_V2,
     }
 }
