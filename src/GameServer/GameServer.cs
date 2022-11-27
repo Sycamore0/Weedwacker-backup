@@ -14,7 +14,9 @@ namespace Weedwacker.GameServer
 {
     internal static class GameServer
     {
-        private static readonly HttpClient client = new HttpClient();
+        private static readonly HttpClientHandler handler = new HttpClientHandler()
+        { ServerCertificateCustomValidationCallback = delegate { return true; } };  //ignore ServerCertificate error
+        private static readonly HttpClient client = new HttpClient(handler);
         private static System.Timers.Timer? TickTimer;
         public static GameConfig? Configuration;
         public static SortedList<int, Connection> OnlinePlayers = new(); // <gameUid,connection>
