@@ -24,16 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetGachaInfoRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVHZXRHYWNoYUluZm9Sc3AucHJvdG8aD0dhY2hhSW5mby5wcm90byKXAQoP",
-            "R2V0R2FjaGFJbmZvUnNwEhsKE1VuazI3MDBfTEVFUEVMSERJTkcYAiABKAgS",
-            "DwoHcmV0Y29kZRgKIAEoBRIUCgxnYWNoYV9yYW5kb20YCSABKA0SGwoTVW5r",
-            "MjcwMF9PSktLSERMRURDSRgFIAEoDRIjCg9nYWNoYV9pbmZvX2xpc3QYDSAD",
-            "KAsyCi5HYWNoYUluZm9CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
-            "UHJvdG9iBnByb3RvMw=="));
+            "ChVHZXRHYWNoYUluZm9Sc3AucHJvdG8aD0dhY2hhSW5mby5wcm90byK9AQoP",
+            "R2V0R2FjaGFJbmZvUnNwEiEKGWlzX3VuZGVyX2dlbmVyYWxfcmVzdHJpY3QY",
+            "BiABKAgSFAoMZ2FjaGFfcmFuZG9tGAkgASgNEg8KB3JldGNvZGUYCiABKAUS",
+            "IAoYaXNfdW5kZXJfbWlub3JzX3Jlc3RyaWN0GAIgASgIEhkKEWRhaWx5X2dh",
+            "Y2hhX3RpbWVzGAUgASgNEiMKD2dhY2hhX2luZm9fbGlzdBgNIAMoCzIKLkdh",
+            "Y2hhSW5mb0IiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GachaInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetGachaInfoRsp), global::Weedwacker.Shared.Network.Proto.GetGachaInfoRsp.Parser, new[]{ "Unk2700LEEPELHDING", "Retcode", "GachaRandom", "Unk2700OJKKHDLEDCI", "GachaInfoList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetGachaInfoRsp), global::Weedwacker.Shared.Network.Proto.GetGachaInfoRsp.Parser, new[]{ "IsUnderGeneralRestrict", "GachaRandom", "Retcode", "IsUnderMinorsRestrict", "DailyGachaTimes", "GachaInfoList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,10 +80,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetGachaInfoRsp(GetGachaInfoRsp other) : this() {
-      unk2700LEEPELHDING_ = other.unk2700LEEPELHDING_;
-      retcode_ = other.retcode_;
+      isUnderGeneralRestrict_ = other.isUnderGeneralRestrict_;
       gachaRandom_ = other.gachaRandom_;
-      unk2700OJKKHDLEDCI_ = other.unk2700OJKKHDLEDCI_;
+      retcode_ = other.retcode_;
+      isUnderMinorsRestrict_ = other.isUnderMinorsRestrict_;
+      dailyGachaTimes_ = other.dailyGachaTimes_;
       gachaInfoList_ = other.gachaInfoList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -93,27 +95,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new GetGachaInfoRsp(this);
     }
 
-    /// <summary>Field number for the "Unk2700_LEEPELHDING" field.</summary>
-    public const int Unk2700LEEPELHDINGFieldNumber = 2;
-    private bool unk2700LEEPELHDING_;
+    /// <summary>Field number for the "is_under_general_restrict" field.</summary>
+    public const int IsUnderGeneralRestrictFieldNumber = 6;
+    private bool isUnderGeneralRestrict_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700LEEPELHDING {
-      get { return unk2700LEEPELHDING_; }
+    public bool IsUnderGeneralRestrict {
+      get { return isUnderGeneralRestrict_; }
       set {
-        unk2700LEEPELHDING_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "retcode" field.</summary>
-    public const int RetcodeFieldNumber = 10;
-    private int retcode_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Retcode {
-      get { return retcode_; }
-      set {
-        retcode_ = value;
+        isUnderGeneralRestrict_ = value;
       }
     }
 
@@ -129,15 +119,39 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_OJKKHDLEDCI" field.</summary>
-    public const int Unk2700OJKKHDLEDCIFieldNumber = 5;
-    private uint unk2700OJKKHDLEDCI_;
+    /// <summary>Field number for the "retcode" field.</summary>
+    public const int RetcodeFieldNumber = 10;
+    private int retcode_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700OJKKHDLEDCI {
-      get { return unk2700OJKKHDLEDCI_; }
+    public int Retcode {
+      get { return retcode_; }
       set {
-        unk2700OJKKHDLEDCI_ = value;
+        retcode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_under_minors_restrict" field.</summary>
+    public const int IsUnderMinorsRestrictFieldNumber = 2;
+    private bool isUnderMinorsRestrict_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsUnderMinorsRestrict {
+      get { return isUnderMinorsRestrict_; }
+      set {
+        isUnderMinorsRestrict_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "daily_gacha_times" field.</summary>
+    public const int DailyGachaTimesFieldNumber = 5;
+    private uint dailyGachaTimes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint DailyGachaTimes {
+      get { return dailyGachaTimes_; }
+      set {
+        dailyGachaTimes_ = value;
       }
     }
 
@@ -167,10 +181,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700LEEPELHDING != other.Unk2700LEEPELHDING) return false;
-      if (Retcode != other.Retcode) return false;
+      if (IsUnderGeneralRestrict != other.IsUnderGeneralRestrict) return false;
       if (GachaRandom != other.GachaRandom) return false;
-      if (Unk2700OJKKHDLEDCI != other.Unk2700OJKKHDLEDCI) return false;
+      if (Retcode != other.Retcode) return false;
+      if (IsUnderMinorsRestrict != other.IsUnderMinorsRestrict) return false;
+      if (DailyGachaTimes != other.DailyGachaTimes) return false;
       if(!gachaInfoList_.Equals(other.gachaInfoList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -179,10 +194,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700LEEPELHDING != false) hash ^= Unk2700LEEPELHDING.GetHashCode();
-      if (Retcode != 0) hash ^= Retcode.GetHashCode();
+      if (IsUnderGeneralRestrict != false) hash ^= IsUnderGeneralRestrict.GetHashCode();
       if (GachaRandom != 0) hash ^= GachaRandom.GetHashCode();
-      if (Unk2700OJKKHDLEDCI != 0) hash ^= Unk2700OJKKHDLEDCI.GetHashCode();
+      if (Retcode != 0) hash ^= Retcode.GetHashCode();
+      if (IsUnderMinorsRestrict != false) hash ^= IsUnderMinorsRestrict.GetHashCode();
+      if (DailyGachaTimes != 0) hash ^= DailyGachaTimes.GetHashCode();
       hash ^= gachaInfoList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -202,13 +218,17 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700LEEPELHDING != false) {
+      if (IsUnderMinorsRestrict != false) {
         output.WriteRawTag(16);
-        output.WriteBool(Unk2700LEEPELHDING);
+        output.WriteBool(IsUnderMinorsRestrict);
       }
-      if (Unk2700OJKKHDLEDCI != 0) {
+      if (DailyGachaTimes != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk2700OJKKHDLEDCI);
+        output.WriteUInt32(DailyGachaTimes);
+      }
+      if (IsUnderGeneralRestrict != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(IsUnderGeneralRestrict);
       }
       if (GachaRandom != 0) {
         output.WriteRawTag(72);
@@ -229,13 +249,17 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700LEEPELHDING != false) {
+      if (IsUnderMinorsRestrict != false) {
         output.WriteRawTag(16);
-        output.WriteBool(Unk2700LEEPELHDING);
+        output.WriteBool(IsUnderMinorsRestrict);
       }
-      if (Unk2700OJKKHDLEDCI != 0) {
+      if (DailyGachaTimes != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk2700OJKKHDLEDCI);
+        output.WriteUInt32(DailyGachaTimes);
+      }
+      if (IsUnderGeneralRestrict != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(IsUnderGeneralRestrict);
       }
       if (GachaRandom != 0) {
         output.WriteRawTag(72);
@@ -256,17 +280,20 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700LEEPELHDING != false) {
+      if (IsUnderGeneralRestrict != false) {
         size += 1 + 1;
-      }
-      if (Retcode != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
       }
       if (GachaRandom != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GachaRandom);
       }
-      if (Unk2700OJKKHDLEDCI != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700OJKKHDLEDCI);
+      if (Retcode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
+      }
+      if (IsUnderMinorsRestrict != false) {
+        size += 1 + 1;
+      }
+      if (DailyGachaTimes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DailyGachaTimes);
       }
       size += gachaInfoList_.CalculateSize(_repeated_gachaInfoList_codec);
       if (_unknownFields != null) {
@@ -281,17 +308,20 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700LEEPELHDING != false) {
-        Unk2700LEEPELHDING = other.Unk2700LEEPELHDING;
-      }
-      if (other.Retcode != 0) {
-        Retcode = other.Retcode;
+      if (other.IsUnderGeneralRestrict != false) {
+        IsUnderGeneralRestrict = other.IsUnderGeneralRestrict;
       }
       if (other.GachaRandom != 0) {
         GachaRandom = other.GachaRandom;
       }
-      if (other.Unk2700OJKKHDLEDCI != 0) {
-        Unk2700OJKKHDLEDCI = other.Unk2700OJKKHDLEDCI;
+      if (other.Retcode != 0) {
+        Retcode = other.Retcode;
+      }
+      if (other.IsUnderMinorsRestrict != false) {
+        IsUnderMinorsRestrict = other.IsUnderMinorsRestrict;
+      }
+      if (other.DailyGachaTimes != 0) {
+        DailyGachaTimes = other.DailyGachaTimes;
       }
       gachaInfoList_.Add(other.gachaInfoList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -310,11 +340,15 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 16: {
-            Unk2700LEEPELHDING = input.ReadBool();
+            IsUnderMinorsRestrict = input.ReadBool();
             break;
           }
           case 40: {
-            Unk2700OJKKHDLEDCI = input.ReadUInt32();
+            DailyGachaTimes = input.ReadUInt32();
+            break;
+          }
+          case 48: {
+            IsUnderGeneralRestrict = input.ReadBool();
             break;
           }
           case 72: {
@@ -345,11 +379,15 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 16: {
-            Unk2700LEEPELHDING = input.ReadBool();
+            IsUnderMinorsRestrict = input.ReadBool();
             break;
           }
           case 40: {
-            Unk2700OJKKHDLEDCI = input.ReadUInt32();
+            DailyGachaTimes = input.ReadUInt32();
+            break;
+          }
+          case 48: {
+            IsUnderGeneralRestrict = input.ReadBool();
             break;
           }
           case 72: {

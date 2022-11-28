@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static WidgetReportReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVXaWRnZXRSZXBvcnRSZXEucHJvdG8idQoPV2lkZ2V0UmVwb3J0UmVxEhsK",
-            "E1VuazI3MDBfTUZFSE1MQk5OQUcYBSABKAgSGQoRaXNfY2xpZW50X2NvbGxl",
-            "Y3QYDiABKAgSFQoNaXNfY2xlYXJfaGludBgNIAEoCBITCgttYXRlcmlhbF9p",
-            "ZBgPIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IG",
-            "cHJvdG8z"));
+            "ChVXaWRnZXRSZXBvcnRSZXEucHJvdG8iewoPV2lkZ2V0UmVwb3J0UmVxEiEK",
+            "GWlzX2NsZWFyX3NreV9jcnlzdGFsX2hpbnQYBSABKAgSGQoRaXNfY2xpZW50",
+            "X2NvbGxlY3QYDiABKAgSFQoNaXNfY2xlYXJfaGludBgNIAEoCBITCgttYXRl",
+            "cmlhbF9pZBgPIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.WidgetReportReq), global::Weedwacker.Shared.Network.Proto.WidgetReportReq.Parser, new[]{ "Unk2700MFEHMLBNNAG", "IsClientCollect", "IsClearHint", "MaterialId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.WidgetReportReq), global::Weedwacker.Shared.Network.Proto.WidgetReportReq.Parser, new[]{ "IsClearSkyCrystalHint", "IsClientCollect", "IsClearHint", "MaterialId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,7 +79,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public WidgetReportReq(WidgetReportReq other) : this() {
-      unk2700MFEHMLBNNAG_ = other.unk2700MFEHMLBNNAG_;
+      isClearSkyCrystalHint_ = other.isClearSkyCrystalHint_;
       isClientCollect_ = other.isClientCollect_;
       isClearHint_ = other.isClearHint_;
       materialId_ = other.materialId_;
@@ -92,15 +92,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new WidgetReportReq(this);
     }
 
-    /// <summary>Field number for the "Unk2700_MFEHMLBNNAG" field.</summary>
-    public const int Unk2700MFEHMLBNNAGFieldNumber = 5;
-    private bool unk2700MFEHMLBNNAG_;
+    /// <summary>Field number for the "is_clear_sky_crystal_hint" field.</summary>
+    public const int IsClearSkyCrystalHintFieldNumber = 5;
+    private bool isClearSkyCrystalHint_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700MFEHMLBNNAG {
-      get { return unk2700MFEHMLBNNAG_; }
+    public bool IsClearSkyCrystalHint {
+      get { return isClearSkyCrystalHint_; }
       set {
-        unk2700MFEHMLBNNAG_ = value;
+        isClearSkyCrystalHint_ = value;
       }
     }
 
@@ -155,7 +155,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700MFEHMLBNNAG != other.Unk2700MFEHMLBNNAG) return false;
+      if (IsClearSkyCrystalHint != other.IsClearSkyCrystalHint) return false;
       if (IsClientCollect != other.IsClientCollect) return false;
       if (IsClearHint != other.IsClearHint) return false;
       if (MaterialId != other.MaterialId) return false;
@@ -166,7 +166,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700MFEHMLBNNAG != false) hash ^= Unk2700MFEHMLBNNAG.GetHashCode();
+      if (IsClearSkyCrystalHint != false) hash ^= IsClearSkyCrystalHint.GetHashCode();
       if (IsClientCollect != false) hash ^= IsClientCollect.GetHashCode();
       if (IsClearHint != false) hash ^= IsClearHint.GetHashCode();
       if (MaterialId != 0) hash ^= MaterialId.GetHashCode();
@@ -188,9 +188,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700MFEHMLBNNAG != false) {
+      if (IsClearSkyCrystalHint != false) {
         output.WriteRawTag(40);
-        output.WriteBool(Unk2700MFEHMLBNNAG);
+        output.WriteBool(IsClearSkyCrystalHint);
       }
       if (IsClearHint != false) {
         output.WriteRawTag(104);
@@ -214,9 +214,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700MFEHMLBNNAG != false) {
+      if (IsClearSkyCrystalHint != false) {
         output.WriteRawTag(40);
-        output.WriteBool(Unk2700MFEHMLBNNAG);
+        output.WriteBool(IsClearSkyCrystalHint);
       }
       if (IsClearHint != false) {
         output.WriteRawTag(104);
@@ -240,7 +240,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700MFEHMLBNNAG != false) {
+      if (IsClearSkyCrystalHint != false) {
         size += 1 + 1;
       }
       if (IsClientCollect != false) {
@@ -264,8 +264,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700MFEHMLBNNAG != false) {
-        Unk2700MFEHMLBNNAG = other.Unk2700MFEHMLBNNAG;
+      if (other.IsClearSkyCrystalHint != false) {
+        IsClearSkyCrystalHint = other.IsClearSkyCrystalHint;
       }
       if (other.IsClientCollect != false) {
         IsClientCollect = other.IsClientCollect;
@@ -292,7 +292,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 40: {
-            Unk2700MFEHMLBNNAG = input.ReadBool();
+            IsClearSkyCrystalHint = input.ReadBool();
             break;
           }
           case 104: {
@@ -323,7 +323,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 40: {
-            Unk2700MFEHMLBNNAG = input.ReadBool();
+            IsClearSkyCrystalHint = input.ReadBool();
             break;
           }
           case 104: {

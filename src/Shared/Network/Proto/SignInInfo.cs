@@ -24,18 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static SignInInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChBTaWduSW5JbmZvLnByb3RvGhlVbmsyNzAwX0hFTkNJSk9QQ0lGLnByb3Rv",
-            "IvMBCgpTaWduSW5JbmZvEhkKEWlzX2NvbmRfc2F0aXNmaWVkGAcgASgIEhcK",
-            "D3Jld2FyZF9kYXlfbGlzdBgPIAMoDRIxChNVbmsyNzAwX0hCTU1JRU9GSUVJ",
-            "GAwgAygLMhQuVW5rMjcwMF9IRU5DSUpPUENJRhIRCgljb25maWdfaWQYCCAB",
-            "KA0SFQoNc2lnbl9pbl9jb3VudBgCIAEoDRITCgtzY2hlZHVsZV9pZBgDIAEo",
-            "DRIQCghlbmRfdGltZRgNIAEoDRIZChFsYXN0X3NpZ25faW5fdGltZRgGIAEo",
-            "DRISCgpiZWdpbl90aW1lGAUgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "ChBTaWduSW5JbmZvLnByb3RvGhBTaWduSW5EYXRhLnByb3RvIucBCgpTaWdu",
+            "SW5JbmZvEhkKEWlzX2NvbmRfc2F0aXNmaWVkGAcgASgIEhcKD3Jld2FyZF9k",
+            "YXlfbGlzdBgPIAMoDRIlChBzaWduaW5fZGF0YV9saXN0GAwgAygLMgsuU2ln",
+            "bkluRGF0YRIRCgljb25maWdfaWQYCCABKA0SFQoNc2lnbl9pbl9jb3VudBgC",
+            "IAEoDRITCgtzY2hlZHVsZV9pZBgDIAEoDRIQCghlbmRfdGltZRgNIAEoDRIZ",
+            "ChFsYXN0X3NpZ25faW5fdGltZRgGIAEoDRISCgpiZWdpbl90aW1lGAUgASgN",
+            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2700HENCIJOPCIFReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.SignInDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SignInInfo), global::Weedwacker.Shared.Network.Proto.SignInInfo.Parser, new[]{ "IsCondSatisfied", "RewardDayList", "Unk2700HBMMIEOFIEI", "ConfigId", "SignInCount", "ScheduleId", "EndTime", "LastSignInTime", "BeginTime" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SignInInfo), global::Weedwacker.Shared.Network.Proto.SignInInfo.Parser, new[]{ "IsCondSatisfied", "RewardDayList", "SigninDataList", "ConfigId", "SignInCount", "ScheduleId", "EndTime", "LastSignInTime", "BeginTime" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,7 +77,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public SignInInfo(SignInInfo other) : this() {
       isCondSatisfied_ = other.isCondSatisfied_;
       rewardDayList_ = other.rewardDayList_.Clone();
-      unk2700HBMMIEOFIEI_ = other.unk2700HBMMIEOFIEI_.Clone();
+      signinDataList_ = other.signinDataList_.Clone();
       configId_ = other.configId_;
       signInCount_ = other.signInCount_;
       scheduleId_ = other.scheduleId_;
@@ -117,15 +116,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return rewardDayList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_HBMMIEOFIEI" field.</summary>
-    public const int Unk2700HBMMIEOFIEIFieldNumber = 12;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_HENCIJOPCIF> _repeated_unk2700HBMMIEOFIEI_codec
-        = pb::FieldCodec.ForMessage(98, global::Weedwacker.Shared.Network.Proto.Unk2700_HENCIJOPCIF.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_HENCIJOPCIF> unk2700HBMMIEOFIEI_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_HENCIJOPCIF>();
+    /// <summary>Field number for the "signin_data_list" field.</summary>
+    public const int SigninDataListFieldNumber = 12;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.SignInData> _repeated_signinDataList_codec
+        = pb::FieldCodec.ForMessage(98, global::Weedwacker.Shared.Network.Proto.SignInData.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SignInData> signinDataList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SignInData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_HENCIJOPCIF> Unk2700HBMMIEOFIEI {
-      get { return unk2700HBMMIEOFIEI_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SignInData> SigninDataList {
+      get { return signinDataList_; }
     }
 
     /// <summary>Field number for the "config_id" field.</summary>
@@ -217,7 +216,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (IsCondSatisfied != other.IsCondSatisfied) return false;
       if(!rewardDayList_.Equals(other.rewardDayList_)) return false;
-      if(!unk2700HBMMIEOFIEI_.Equals(other.unk2700HBMMIEOFIEI_)) return false;
+      if(!signinDataList_.Equals(other.signinDataList_)) return false;
       if (ConfigId != other.ConfigId) return false;
       if (SignInCount != other.SignInCount) return false;
       if (ScheduleId != other.ScheduleId) return false;
@@ -233,7 +232,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (IsCondSatisfied != false) hash ^= IsCondSatisfied.GetHashCode();
       hash ^= rewardDayList_.GetHashCode();
-      hash ^= unk2700HBMMIEOFIEI_.GetHashCode();
+      hash ^= signinDataList_.GetHashCode();
       if (ConfigId != 0) hash ^= ConfigId.GetHashCode();
       if (SignInCount != 0) hash ^= SignInCount.GetHashCode();
       if (ScheduleId != 0) hash ^= ScheduleId.GetHashCode();
@@ -282,7 +281,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(64);
         output.WriteUInt32(ConfigId);
       }
-      unk2700HBMMIEOFIEI_.WriteTo(output, _repeated_unk2700HBMMIEOFIEI_codec);
+      signinDataList_.WriteTo(output, _repeated_signinDataList_codec);
       if (EndTime != 0) {
         output.WriteRawTag(104);
         output.WriteUInt32(EndTime);
@@ -322,7 +321,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(64);
         output.WriteUInt32(ConfigId);
       }
-      unk2700HBMMIEOFIEI_.WriteTo(ref output, _repeated_unk2700HBMMIEOFIEI_codec);
+      signinDataList_.WriteTo(ref output, _repeated_signinDataList_codec);
       if (EndTime != 0) {
         output.WriteRawTag(104);
         output.WriteUInt32(EndTime);
@@ -342,7 +341,7 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + 1;
       }
       size += rewardDayList_.CalculateSize(_repeated_rewardDayList_codec);
-      size += unk2700HBMMIEOFIEI_.CalculateSize(_repeated_unk2700HBMMIEOFIEI_codec);
+      size += signinDataList_.CalculateSize(_repeated_signinDataList_codec);
       if (ConfigId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ConfigId);
       }
@@ -377,7 +376,7 @@ namespace Weedwacker.Shared.Network.Proto {
         IsCondSatisfied = other.IsCondSatisfied;
       }
       rewardDayList_.Add(other.rewardDayList_);
-      unk2700HBMMIEOFIEI_.Add(other.unk2700HBMMIEOFIEI_);
+      signinDataList_.Add(other.signinDataList_);
       if (other.ConfigId != 0) {
         ConfigId = other.ConfigId;
       }
@@ -436,7 +435,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 98: {
-            unk2700HBMMIEOFIEI_.AddEntriesFrom(input, _repeated_unk2700HBMMIEOFIEI_codec);
+            signinDataList_.AddEntriesFrom(input, _repeated_signinDataList_codec);
             break;
           }
           case 104: {
@@ -488,7 +487,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 98: {
-            unk2700HBMMIEOFIEI_.AddEntriesFrom(ref input, _repeated_unk2700HBMMIEOFIEI_codec);
+            signinDataList_.AddEntriesFrom(ref input, _repeated_signinDataList_codec);
             break;
           }
           case 104: {

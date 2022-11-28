@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerQuitFromMpNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxQbGF5ZXJRdWl0RnJvbU1wTm90aWZ5LnByb3RvIs8DChZQbGF5ZXJRdWl0",
+            "ChxQbGF5ZXJRdWl0RnJvbU1wTm90aWZ5LnByb3RvIuUDChZQbGF5ZXJRdWl0",
             "RnJvbU1wTm90aWZ5EjIKBnJlYXNvbhgLIAEoDjIiLlBsYXllclF1aXRGcm9t",
-            "TXBOb3RpZnkuUXVpdFJlYXNvbiKAAwoKUXVpdFJlYXNvbhIXChNRVUlUX1JF",
+            "TXBOb3RpZnkuUXVpdFJlYXNvbiKWAwoKUXVpdFJlYXNvbhIXChNRVUlUX1JF",
             "QVNPTl9JTlZBTElEEAASJAogUVVJVF9SRUFTT05fSE9TVF9OT19PVEhFUl9Q",
             "TEFZRVIQARIcChhRVUlUX1JFQVNPTl9LSUNLX0JZX0hPU1QQAhIgChxRVUlU",
             "X1JFQVNPTl9CQUNLX1RPX01ZX1dPUkxEEAMSIwofUVVJVF9SRUFTT05fS0lD",
@@ -34,8 +34,9 @@ namespace Weedwacker.Shared.Network.Proto {
             "VF9CTE9DSxAFEhoKFlFVSVRfUkVBU09OX0JFX0JMT0NLRUQQBhInCiNRVUlU",
             "X1JFQVNPTl9LSUNLX0JZX0hPU1RfRU5URVJfSE9NRRAHEiIKHlFVSVRfUkVB",
             "U09OX0hPU1RfU0NFTkVfSU5WQUxJRBAIEhwKGFFVSVRfUkVBU09OX0tJQ0tf",
-            "QllfUExBWRAJEiMKH1FVSVRfUkVBU09OX1VuazI4MDBfRkRFQ0hBSEpGREEQ",
-            "CkIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "QllfUExBWRAJEjkKNVFVSVRfUkVBU09OX0tJQ0tfQllfSVNMQU5EX1BBUlRZ",
+            "X0dBTExFUllfU1RBUlRfRkFJTEVEEApCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -254,7 +255,7 @@ namespace Weedwacker.Shared.Network.Proto {
         [pbr::OriginalName("QUIT_REASON_KICK_BY_HOST_ENTER_HOME")] KickByHostEnterHome = 7,
         [pbr::OriginalName("QUIT_REASON_HOST_SCENE_INVALID")] HostSceneInvalid = 8,
         [pbr::OriginalName("QUIT_REASON_KICK_BY_PLAY")] KickByPlay = 9,
-        [pbr::OriginalName("QUIT_REASON_Unk2800_FDECHAHJFDA")] Unk2800Fdechahjfda = 10,
+        [pbr::OriginalName("QUIT_REASON_KICK_BY_ISLAND_PARTY_GALLERY_START_FAILED")] KickByIslandPartyGalleryStartFailed = 10,
       }
 
     }

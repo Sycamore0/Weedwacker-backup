@@ -24,17 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static HideAndSeekActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNIaWRlQW5kU2Vla0FjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoZVW5rMjcw",
-            "MF9MQk9BRUZNRUNDUC5wcm90byKuAQodSGlkZUFuZFNlZWtBY3Rpdml0eURl",
-            "dGFpbEluZm8SMQoTVW5rMjcwMF9KRE1ET09IRk5DQRgBIAMoCzIULlVuazI3",
-            "MDBfTEJPQUVGTUVDQ1ASIAoYY2hvc2VuX2h1bnRlcl9za2lsbF9saXN0GAQg",
-            "AygNEhcKD3VubG9ja19tYXBfbGlzdBgNIAMoDRIfChdjaG9zZW5faGlkZXJf",
-            "c2tpbGxfbGlzdBgGIAMoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90b2IGcHJvdG8z"));
+            "CiNIaWRlQW5kU2Vla0FjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoYSGlkZUFu",
+            "ZFNlZWtNYXBJbmZvLnByb3RvIqwBCh1IaWRlQW5kU2Vla0FjdGl2aXR5RGV0",
+            "YWlsSW5mbxIvChJvcGVuX21hcF9pbmZvX2xpc3QYASADKAsyEy5IaWRlQW5k",
+            "U2Vla01hcEluZm8SIAoYY2hvc2VuX2h1bnRlcl9za2lsbF9saXN0GAQgAygN",
+            "EhcKD3VubG9ja19tYXBfbGlzdBgNIAMoDRIfChdjaG9zZW5faGlkZXJfc2tp",
+            "bGxfbGlzdBgGIAMoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2700LBOAEFMECCPReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.HideAndSeekMapInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HideAndSeekActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.HideAndSeekActivityDetailInfo.Parser, new[]{ "Unk2700JDMDOOHFNCA", "ChosenHunterSkillList", "UnlockMapList", "ChosenHiderSkillList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HideAndSeekActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.HideAndSeekActivityDetailInfo.Parser, new[]{ "OpenMapInfoList", "ChosenHunterSkillList", "UnlockMapList", "ChosenHiderSkillList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -75,7 +75,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public HideAndSeekActivityDetailInfo(HideAndSeekActivityDetailInfo other) : this() {
-      unk2700JDMDOOHFNCA_ = other.unk2700JDMDOOHFNCA_.Clone();
+      openMapInfoList_ = other.openMapInfoList_.Clone();
       chosenHunterSkillList_ = other.chosenHunterSkillList_.Clone();
       unlockMapList_ = other.unlockMapList_.Clone();
       chosenHiderSkillList_ = other.chosenHiderSkillList_.Clone();
@@ -88,15 +88,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new HideAndSeekActivityDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_JDMDOOHFNCA" field.</summary>
-    public const int Unk2700JDMDOOHFNCAFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_LBOAEFMECCP> _repeated_unk2700JDMDOOHFNCA_codec
-        = pb::FieldCodec.ForMessage(10, global::Weedwacker.Shared.Network.Proto.Unk2700_LBOAEFMECCP.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_LBOAEFMECCP> unk2700JDMDOOHFNCA_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_LBOAEFMECCP>();
+    /// <summary>Field number for the "open_map_info_list" field.</summary>
+    public const int OpenMapInfoListFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.HideAndSeekMapInfo> _repeated_openMapInfoList_codec
+        = pb::FieldCodec.ForMessage(10, global::Weedwacker.Shared.Network.Proto.HideAndSeekMapInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.HideAndSeekMapInfo> openMapInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.HideAndSeekMapInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_LBOAEFMECCP> Unk2700JDMDOOHFNCA {
-      get { return unk2700JDMDOOHFNCA_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.HideAndSeekMapInfo> OpenMapInfoList {
+      get { return openMapInfoList_; }
     }
 
     /// <summary>Field number for the "chosen_hunter_skill_list" field.</summary>
@@ -147,7 +147,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2700JDMDOOHFNCA_.Equals(other.unk2700JDMDOOHFNCA_)) return false;
+      if(!openMapInfoList_.Equals(other.openMapInfoList_)) return false;
       if(!chosenHunterSkillList_.Equals(other.chosenHunterSkillList_)) return false;
       if(!unlockMapList_.Equals(other.unlockMapList_)) return false;
       if(!chosenHiderSkillList_.Equals(other.chosenHiderSkillList_)) return false;
@@ -158,7 +158,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2700JDMDOOHFNCA_.GetHashCode();
+      hash ^= openMapInfoList_.GetHashCode();
       hash ^= chosenHunterSkillList_.GetHashCode();
       hash ^= unlockMapList_.GetHashCode();
       hash ^= chosenHiderSkillList_.GetHashCode();
@@ -180,7 +180,7 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk2700JDMDOOHFNCA_.WriteTo(output, _repeated_unk2700JDMDOOHFNCA_codec);
+      openMapInfoList_.WriteTo(output, _repeated_openMapInfoList_codec);
       chosenHunterSkillList_.WriteTo(output, _repeated_chosenHunterSkillList_codec);
       chosenHiderSkillList_.WriteTo(output, _repeated_chosenHiderSkillList_codec);
       unlockMapList_.WriteTo(output, _repeated_unlockMapList_codec);
@@ -194,7 +194,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk2700JDMDOOHFNCA_.WriteTo(ref output, _repeated_unk2700JDMDOOHFNCA_codec);
+      openMapInfoList_.WriteTo(ref output, _repeated_openMapInfoList_codec);
       chosenHunterSkillList_.WriteTo(ref output, _repeated_chosenHunterSkillList_codec);
       chosenHiderSkillList_.WriteTo(ref output, _repeated_chosenHiderSkillList_codec);
       unlockMapList_.WriteTo(ref output, _repeated_unlockMapList_codec);
@@ -208,7 +208,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2700JDMDOOHFNCA_.CalculateSize(_repeated_unk2700JDMDOOHFNCA_codec);
+      size += openMapInfoList_.CalculateSize(_repeated_openMapInfoList_codec);
       size += chosenHunterSkillList_.CalculateSize(_repeated_chosenHunterSkillList_codec);
       size += unlockMapList_.CalculateSize(_repeated_unlockMapList_codec);
       size += chosenHiderSkillList_.CalculateSize(_repeated_chosenHiderSkillList_codec);
@@ -224,7 +224,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2700JDMDOOHFNCA_.Add(other.unk2700JDMDOOHFNCA_);
+      openMapInfoList_.Add(other.openMapInfoList_);
       chosenHunterSkillList_.Add(other.chosenHunterSkillList_);
       unlockMapList_.Add(other.unlockMapList_);
       chosenHiderSkillList_.Add(other.chosenHiderSkillList_);
@@ -244,7 +244,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            unk2700JDMDOOHFNCA_.AddEntriesFrom(input, _repeated_unk2700JDMDOOHFNCA_codec);
+            openMapInfoList_.AddEntriesFrom(input, _repeated_openMapInfoList_codec);
             break;
           }
           case 34:
@@ -278,7 +278,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            unk2700JDMDOOHFNCA_.AddEntriesFrom(ref input, _repeated_unk2700JDMDOOHFNCA_codec);
+            openMapInfoList_.AddEntriesFrom(ref input, _repeated_openMapInfoList_codec);
             break;
           }
           case 34:

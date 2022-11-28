@@ -24,12 +24,13 @@ namespace Weedwacker.Shared.Network.Proto {
     static SeekFurnitureGalleryInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5TZWVrRnVybml0dXJlR2FsbGVyeUluZm8ucHJvdG8aGVVuazI3MDBfSkNC",
-            "SkhDRkVPTk8ucHJvdG8iRQoYU2Vla0Z1cm5pdHVyZUdhbGxlcnlJbmZvEikK",
-            "C3JlY29yZF9saXN0GAUgAygLMhQuVW5rMjcwMF9KQ0JKSENGRU9OT0IiqgIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "Ch5TZWVrRnVybml0dXJlR2FsbGVyeUluZm8ucHJvdG8aIEhvbWVTZWVrRnVy",
+            "bml0dXJlT25lUmVjb3JkLnByb3RvIkwKGFNlZWtGdXJuaXR1cmVHYWxsZXJ5",
+            "SW5mbxIwCgtyZWNvcmRfbGlzdBgFIAMoCzIbLkhvbWVTZWVrRnVybml0dXJl",
+            "T25lUmVjb3JkQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2700JCBJHCFEONOReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.HomeSeekFurnitureOneRecordReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SeekFurnitureGalleryInfo), global::Weedwacker.Shared.Network.Proto.SeekFurnitureGalleryInfo.Parser, new[]{ "RecordList" }, null, null, null, null)
           }));
@@ -84,12 +85,12 @@ namespace Weedwacker.Shared.Network.Proto {
 
     /// <summary>Field number for the "record_list" field.</summary>
     public const int RecordListFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_JCBJHCFEONO> _repeated_recordList_codec
-        = pb::FieldCodec.ForMessage(42, global::Weedwacker.Shared.Network.Proto.Unk2700_JCBJHCFEONO.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_JCBJHCFEONO> recordList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_JCBJHCFEONO>();
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.HomeSeekFurnitureOneRecord> _repeated_recordList_codec
+        = pb::FieldCodec.ForMessage(42, global::Weedwacker.Shared.Network.Proto.HomeSeekFurnitureOneRecord.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.HomeSeekFurnitureOneRecord> recordList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.HomeSeekFurnitureOneRecord>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_JCBJHCFEONO> RecordList {
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.HomeSeekFurnitureOneRecord> RecordList {
       get { return recordList_; }
     }
 

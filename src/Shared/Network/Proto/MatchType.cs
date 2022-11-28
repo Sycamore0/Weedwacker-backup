@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static MatchTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg9NYXRjaFR5cGUucHJvdG8qgwEKCU1hdGNoVHlwZRITCg9NQVRDSF9UWVBF",
+            "Cg9NYXRjaFR5cGUucHJvdG8qlwEKCU1hdGNoVHlwZRITCg9NQVRDSF9UWVBF",
             "X05PTkUQABIWChJNQVRDSF9UWVBFX0RVTkdFT04QARIWChJNQVRDSF9UWVBF",
             "X01QX1BMQVkQAhIZChVNQVRDSF9UWVBFX01FQ0hBTklDVVMQAxIWChJNQVRD",
-            "SF9UWVBFX0dFTkVSQUwQBEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90b2IGcHJvdG8z"));
+            "SF9UWVBFX0dFTkVSQUwQBBISCg5NQVRDSF9UWVBFX0dDRxAFQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.MatchType), }, null, null));
@@ -43,6 +43,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [pbr::OriginalName("MATCH_TYPE_MP_PLAY")] MpPlay = 2,
     [pbr::OriginalName("MATCH_TYPE_MECHANICUS")] Mechanicus = 3,
     [pbr::OriginalName("MATCH_TYPE_GENERAL")] General = 4,
+    [pbr::OriginalName("MATCH_TYPE_GCG")] Gcg = 5,
   }
 
   #endregion

@@ -24,7 +24,7 @@ namespace Weedwacker.Shared.Network.Proto {
     static CombatTypeArgumentReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhDb21iYXRUeXBlQXJndW1lbnQucHJvdG8qxQYKEkNvbWJhdFR5cGVBcmd1",
+            "ChhDb21iYXRUeXBlQXJndW1lbnQucHJvdG8qyAYKEkNvbWJhdFR5cGVBcmd1",
             "bWVudBIdChlDT01CQVRfVFlQRV9BUkdVTUVOVF9OT05FEAASJgoiQ09NQkFU",
             "X1RZUEVfQVJHVU1FTlRfRVZUX0JFSU5HX0hJVBABEi8KK0NPTUJBVF9UWVBF",
             "X0FSR1VNRU5UX0FOSU1BVE9SX1NUQVRFX0NIQU5HRUQQAhIkCiBDT01CQVRf",
@@ -40,11 +40,11 @@ namespace Weedwacker.Shared.Network.Proto {
             "TU9OU1RFUl9ET19CTElOSxAMEigKJENPTUJBVF9UWVBFX0FSR1VNRU5UX0ZJ",
             "WEVEX1JVU0hfTU9WRRANEicKI0NPTUJBVF9UWVBFX0FSR1VNRU5UX1NZTkNf",
             "VFJBTlNGT1JNEA4SKAokQ09NQkFUX1RZUEVfQVJHVU1FTlRfTElHSFRfQ09S",
-            "RV9NT1ZFEA8SLAooQ09NQkFUX1RZUEVfQVJHVU1FTlRfVW5rMjcwMF9LUERO",
-            "RktDTUtQRxAQEiwKKENPTUJBVF9UWVBFX0FSR1VNRU5UX1VuazI3MDBfS1BM",
-            "T01PSUFMR0YQERIsCihDT01CQVRfVFlQRV9BUkdVTUVOVF9VbmszMDAwX0JK",
-            "RUhNUExDRkhOEBJCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
-            "dG9iBnByb3RvMw=="));
+            "RV9NT1ZFEA8SKQolQ09NQkFUX1RZUEVfQVJHVU1FTlRfQkVJTkdfSEVBTEVE",
+            "X05URhAQEjIKLkNPTUJBVF9UWVBFX0FSR1VNRU5UX1NLSUxMX0FOQ0hPUl9Q",
+            "T1NJVElPTl9OVEYQERIsCihDT01CQVRfVFlQRV9BUkdVTUVOVF9HUkFQUExJ",
+            "TkdfSE9PS19NT1ZFEBJCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.CombatTypeArgument), }, null, null));
@@ -70,9 +70,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [pbr::OriginalName("COMBAT_TYPE_ARGUMENT_FIXED_RUSH_MOVE")] FixedRushMove = 13,
     [pbr::OriginalName("COMBAT_TYPE_ARGUMENT_SYNC_TRANSFORM")] SyncTransform = 14,
     [pbr::OriginalName("COMBAT_TYPE_ARGUMENT_LIGHT_CORE_MOVE")] LightCoreMove = 15,
-    [pbr::OriginalName("COMBAT_TYPE_ARGUMENT_Unk2700_KPDNFKCMKPG")] Unk2700Kpdnfkcmkpg = 16,
-    [pbr::OriginalName("COMBAT_TYPE_ARGUMENT_Unk2700_KPLOMOIALGF")] Unk2700Kplomoialgf = 17,
-    [pbr::OriginalName("COMBAT_TYPE_ARGUMENT_Unk3000_BJEHMPLCFHN")] Unk3000Bjehmplcfhn = 18,
+    [pbr::OriginalName("COMBAT_TYPE_ARGUMENT_BEING_HEALED_NTF")] BeingHealedNtf = 16,
+    [pbr::OriginalName("COMBAT_TYPE_ARGUMENT_SKILL_ANCHOR_POSITION_NTF")] SkillAnchorPositionNtf = 17,
+    [pbr::OriginalName("COMBAT_TYPE_ARGUMENT_GRAPPLING_HOOK_MOVE")] GrapplingHookMove = 18,
   }
 
   #endregion

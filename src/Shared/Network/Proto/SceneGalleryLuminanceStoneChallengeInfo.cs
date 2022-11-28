@@ -25,15 +25,15 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci1TY2VuZUdhbGxlcnlMdW1pbmFuY2VTdG9uZUNoYWxsZW5nZUluZm8ucHJv",
-            "dG8ilQEKJ1NjZW5lR2FsbGVyeUx1bWluYW5jZVN0b25lQ2hhbGxlbmdlSW5m",
+            "dG8ikQEKJ1NjZW5lR2FsbGVyeUx1bWluYW5jZVN0b25lQ2hhbGxlbmdlSW5m",
             "bxIaChJraWxsX21vbnN0ZXJfY291bnQYBSABKA0SDQoFc2NvcmUYAyABKA0S",
-            "GwoTVW5rMjcwMF9PRktITEdMT1BDTRgCIAEoDRIiChpraWxsX3NwZWNpYWxf",
-            "bW9uc3Rlcl9jb3VudBgGIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90b2IGcHJvdG8z"));
+            "FwoPY2xlYW5fbXVkX2NvdW50GAIgASgNEiIKGmtpbGxfc3BlY2lhbF9tb25z",
+            "dGVyX2NvdW50GAYgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryLuminanceStoneChallengeInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryLuminanceStoneChallengeInfo.Parser, new[]{ "KillMonsterCount", "Score", "Unk2700OFKHLGLOPCM", "KillSpecialMonsterCount" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryLuminanceStoneChallengeInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryLuminanceStoneChallengeInfo.Parser, new[]{ "KillMonsterCount", "Score", "CleanMudCount", "KillSpecialMonsterCount" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,7 +76,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public SceneGalleryLuminanceStoneChallengeInfo(SceneGalleryLuminanceStoneChallengeInfo other) : this() {
       killMonsterCount_ = other.killMonsterCount_;
       score_ = other.score_;
-      unk2700OFKHLGLOPCM_ = other.unk2700OFKHLGLOPCM_;
+      cleanMudCount_ = other.cleanMudCount_;
       killSpecialMonsterCount_ = other.killSpecialMonsterCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -111,15 +111,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_OFKHLGLOPCM" field.</summary>
-    public const int Unk2700OFKHLGLOPCMFieldNumber = 2;
-    private uint unk2700OFKHLGLOPCM_;
+    /// <summary>Field number for the "clean_mud_count" field.</summary>
+    public const int CleanMudCountFieldNumber = 2;
+    private uint cleanMudCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700OFKHLGLOPCM {
-      get { return unk2700OFKHLGLOPCM_; }
+    public uint CleanMudCount {
+      get { return cleanMudCount_; }
       set {
-        unk2700OFKHLGLOPCM_ = value;
+        cleanMudCount_ = value;
       }
     }
 
@@ -152,7 +152,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (KillMonsterCount != other.KillMonsterCount) return false;
       if (Score != other.Score) return false;
-      if (Unk2700OFKHLGLOPCM != other.Unk2700OFKHLGLOPCM) return false;
+      if (CleanMudCount != other.CleanMudCount) return false;
       if (KillSpecialMonsterCount != other.KillSpecialMonsterCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -163,7 +163,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (KillMonsterCount != 0) hash ^= KillMonsterCount.GetHashCode();
       if (Score != 0) hash ^= Score.GetHashCode();
-      if (Unk2700OFKHLGLOPCM != 0) hash ^= Unk2700OFKHLGLOPCM.GetHashCode();
+      if (CleanMudCount != 0) hash ^= CleanMudCount.GetHashCode();
       if (KillSpecialMonsterCount != 0) hash ^= KillSpecialMonsterCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -183,9 +183,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700OFKHLGLOPCM != 0) {
+      if (CleanMudCount != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk2700OFKHLGLOPCM);
+        output.WriteUInt32(CleanMudCount);
       }
       if (Score != 0) {
         output.WriteRawTag(24);
@@ -209,9 +209,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700OFKHLGLOPCM != 0) {
+      if (CleanMudCount != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk2700OFKHLGLOPCM);
+        output.WriteUInt32(CleanMudCount);
       }
       if (Score != 0) {
         output.WriteRawTag(24);
@@ -241,8 +241,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Score != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Score);
       }
-      if (Unk2700OFKHLGLOPCM != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700OFKHLGLOPCM);
+      if (CleanMudCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CleanMudCount);
       }
       if (KillSpecialMonsterCount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(KillSpecialMonsterCount);
@@ -265,8 +265,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Score != 0) {
         Score = other.Score;
       }
-      if (other.Unk2700OFKHLGLOPCM != 0) {
-        Unk2700OFKHLGLOPCM = other.Unk2700OFKHLGLOPCM;
+      if (other.CleanMudCount != 0) {
+        CleanMudCount = other.CleanMudCount;
       }
       if (other.KillSpecialMonsterCount != 0) {
         KillSpecialMonsterCount = other.KillSpecialMonsterCount;
@@ -287,7 +287,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 16: {
-            Unk2700OFKHLGLOPCM = input.ReadUInt32();
+            CleanMudCount = input.ReadUInt32();
             break;
           }
           case 24: {
@@ -318,7 +318,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 16: {
-            Unk2700OFKHLGLOPCM = input.ReadUInt32();
+            CleanMudCount = input.ReadUInt32();
             break;
           }
           case 24: {

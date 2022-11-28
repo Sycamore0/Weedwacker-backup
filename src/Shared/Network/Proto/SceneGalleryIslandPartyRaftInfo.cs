@@ -24,18 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGalleryIslandPartyRaftInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiVTY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eVJhZnRJbmZvLnByb3RvGhlVbmsy",
-            "ODAwX0ZNQU9FUEVCS0hCLnByb3RvIssBCh9TY2VuZUdhbGxlcnlJc2xhbmRQ",
-            "YXJ0eVJhZnRJbmZvEgwKBGNvaW4YBiABKA0SMQoTVW5rMjgwMF9FTkpHRUZC",
-            "Q0xPTBgHIAEoDjIULlVuazI4MDBfRk1BT0VQRUJLSEISGwoTVW5rMjgwMF9C",
-            "QUVFREVBQURJQRgBIAEoDRIbChNVbmsyODAwX0VPRk9FQ0pKTUxKGA8gASgN",
-            "EhAKCHBvaW50X2lkGAwgASgNEhsKE1VuazI4MDBfTUtOR0FOREFKRkoYBCAB",
-            "KA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
-            "Mw=="));
+            "CiVTY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eVJhZnRJbmZvLnByb3RvGhhHYWxs",
+            "ZXJ5U3RhcnRTb3VyY2UucHJvdG8ipQEKH1NjZW5lR2FsbGVyeUlzbGFuZFBh",
+            "cnR5UmFmdEluZm8SDAoEY29pbhgGIAEoDRIpCgxzdGFydF9zb3VyY2UYByAB",
+            "KA4yEy5HYWxsZXJ5U3RhcnRTb3VyY2USEQoJY29tcG9uZW50GAEgASgNEgwK",
+            "BGZ1ZWwYDyABKA0SEAoIcG9pbnRfaWQYDCABKA0SFgoOcmFmdF9lbnRpdHlf",
+            "aWQYBCABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2800FMAOEPEBKHBReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GalleryStartSourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartyRaftInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartyRaftInfo.Parser, new[]{ "Coin", "Unk2800ENJGEFBCLOL", "Unk2800BAEEDEAADIA", "Unk2800EOFOECJJMLJ", "PointId", "Unk2800MKNGANDAJFJ" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartyRaftInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartyRaftInfo.Parser, new[]{ "Coin", "StartSource", "Component", "Fuel", "PointId", "RaftEntityId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,11 +76,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SceneGalleryIslandPartyRaftInfo(SceneGalleryIslandPartyRaftInfo other) : this() {
       coin_ = other.coin_;
-      unk2800ENJGEFBCLOL_ = other.unk2800ENJGEFBCLOL_;
-      unk2800BAEEDEAADIA_ = other.unk2800BAEEDEAADIA_;
-      unk2800EOFOECJJMLJ_ = other.unk2800EOFOECJJMLJ_;
+      startSource_ = other.startSource_;
+      component_ = other.component_;
+      fuel_ = other.fuel_;
       pointId_ = other.pointId_;
-      unk2800MKNGANDAJFJ_ = other.unk2800MKNGANDAJFJ_;
+      raftEntityId_ = other.raftEntityId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -103,39 +102,39 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2800_ENJGEFBCLOL" field.</summary>
-    public const int Unk2800ENJGEFBCLOLFieldNumber = 7;
-    private global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB unk2800ENJGEFBCLOL_ = global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo;
+    /// <summary>Field number for the "start_source" field.</summary>
+    public const int StartSourceFieldNumber = 7;
+    private global::Weedwacker.Shared.Network.Proto.GalleryStartSource startSource_ = global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB Unk2800ENJGEFBCLOL {
-      get { return unk2800ENJGEFBCLOL_; }
+    public global::Weedwacker.Shared.Network.Proto.GalleryStartSource StartSource {
+      get { return startSource_; }
       set {
-        unk2800ENJGEFBCLOL_ = value;
+        startSource_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2800_BAEEDEAADIA" field.</summary>
-    public const int Unk2800BAEEDEAADIAFieldNumber = 1;
-    private uint unk2800BAEEDEAADIA_;
+    /// <summary>Field number for the "component" field.</summary>
+    public const int ComponentFieldNumber = 1;
+    private uint component_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800BAEEDEAADIA {
-      get { return unk2800BAEEDEAADIA_; }
+    public uint Component {
+      get { return component_; }
       set {
-        unk2800BAEEDEAADIA_ = value;
+        component_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2800_EOFOECJJMLJ" field.</summary>
-    public const int Unk2800EOFOECJJMLJFieldNumber = 15;
-    private uint unk2800EOFOECJJMLJ_;
+    /// <summary>Field number for the "fuel" field.</summary>
+    public const int FuelFieldNumber = 15;
+    private uint fuel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800EOFOECJJMLJ {
-      get { return unk2800EOFOECJJMLJ_; }
+    public uint Fuel {
+      get { return fuel_; }
       set {
-        unk2800EOFOECJJMLJ_ = value;
+        fuel_ = value;
       }
     }
 
@@ -151,15 +150,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2800_MKNGANDAJFJ" field.</summary>
-    public const int Unk2800MKNGANDAJFJFieldNumber = 4;
-    private uint unk2800MKNGANDAJFJ_;
+    /// <summary>Field number for the "raft_entity_id" field.</summary>
+    public const int RaftEntityIdFieldNumber = 4;
+    private uint raftEntityId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800MKNGANDAJFJ {
-      get { return unk2800MKNGANDAJFJ_; }
+    public uint RaftEntityId {
+      get { return raftEntityId_; }
       set {
-        unk2800MKNGANDAJFJ_ = value;
+        raftEntityId_ = value;
       }
     }
 
@@ -179,11 +178,11 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (Coin != other.Coin) return false;
-      if (Unk2800ENJGEFBCLOL != other.Unk2800ENJGEFBCLOL) return false;
-      if (Unk2800BAEEDEAADIA != other.Unk2800BAEEDEAADIA) return false;
-      if (Unk2800EOFOECJJMLJ != other.Unk2800EOFOECJJMLJ) return false;
+      if (StartSource != other.StartSource) return false;
+      if (Component != other.Component) return false;
+      if (Fuel != other.Fuel) return false;
       if (PointId != other.PointId) return false;
-      if (Unk2800MKNGANDAJFJ != other.Unk2800MKNGANDAJFJ) return false;
+      if (RaftEntityId != other.RaftEntityId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -192,11 +191,11 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Coin != 0) hash ^= Coin.GetHashCode();
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) hash ^= Unk2800ENJGEFBCLOL.GetHashCode();
-      if (Unk2800BAEEDEAADIA != 0) hash ^= Unk2800BAEEDEAADIA.GetHashCode();
-      if (Unk2800EOFOECJJMLJ != 0) hash ^= Unk2800EOFOECJJMLJ.GetHashCode();
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) hash ^= StartSource.GetHashCode();
+      if (Component != 0) hash ^= Component.GetHashCode();
+      if (Fuel != 0) hash ^= Fuel.GetHashCode();
       if (PointId != 0) hash ^= PointId.GetHashCode();
-      if (Unk2800MKNGANDAJFJ != 0) hash ^= Unk2800MKNGANDAJFJ.GetHashCode();
+      if (RaftEntityId != 0) hash ^= RaftEntityId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -215,29 +214,29 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2800BAEEDEAADIA != 0) {
+      if (Component != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk2800BAEEDEAADIA);
+        output.WriteUInt32(Component);
       }
-      if (Unk2800MKNGANDAJFJ != 0) {
+      if (RaftEntityId != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk2800MKNGANDAJFJ);
+        output.WriteUInt32(RaftEntityId);
       }
       if (Coin != 0) {
         output.WriteRawTag(48);
         output.WriteUInt32(Coin);
       }
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
         output.WriteRawTag(56);
-        output.WriteEnum((int) Unk2800ENJGEFBCLOL);
+        output.WriteEnum((int) StartSource);
       }
       if (PointId != 0) {
         output.WriteRawTag(96);
         output.WriteUInt32(PointId);
       }
-      if (Unk2800EOFOECJJMLJ != 0) {
+      if (Fuel != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk2800EOFOECJJMLJ);
+        output.WriteUInt32(Fuel);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -249,29 +248,29 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2800BAEEDEAADIA != 0) {
+      if (Component != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk2800BAEEDEAADIA);
+        output.WriteUInt32(Component);
       }
-      if (Unk2800MKNGANDAJFJ != 0) {
+      if (RaftEntityId != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk2800MKNGANDAJFJ);
+        output.WriteUInt32(RaftEntityId);
       }
       if (Coin != 0) {
         output.WriteRawTag(48);
         output.WriteUInt32(Coin);
       }
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
         output.WriteRawTag(56);
-        output.WriteEnum((int) Unk2800ENJGEFBCLOL);
+        output.WriteEnum((int) StartSource);
       }
       if (PointId != 0) {
         output.WriteRawTag(96);
         output.WriteUInt32(PointId);
       }
-      if (Unk2800EOFOECJJMLJ != 0) {
+      if (Fuel != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk2800EOFOECJJMLJ);
+        output.WriteUInt32(Fuel);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -286,20 +285,20 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Coin != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Coin);
       }
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk2800ENJGEFBCLOL);
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StartSource);
       }
-      if (Unk2800BAEEDEAADIA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800BAEEDEAADIA);
+      if (Component != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Component);
       }
-      if (Unk2800EOFOECJJMLJ != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800EOFOECJJMLJ);
+      if (Fuel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Fuel);
       }
       if (PointId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PointId);
       }
-      if (Unk2800MKNGANDAJFJ != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800MKNGANDAJFJ);
+      if (RaftEntityId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RaftEntityId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -316,20 +315,20 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Coin != 0) {
         Coin = other.Coin;
       }
-      if (other.Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
-        Unk2800ENJGEFBCLOL = other.Unk2800ENJGEFBCLOL;
+      if (other.StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
+        StartSource = other.StartSource;
       }
-      if (other.Unk2800BAEEDEAADIA != 0) {
-        Unk2800BAEEDEAADIA = other.Unk2800BAEEDEAADIA;
+      if (other.Component != 0) {
+        Component = other.Component;
       }
-      if (other.Unk2800EOFOECJJMLJ != 0) {
-        Unk2800EOFOECJJMLJ = other.Unk2800EOFOECJJMLJ;
+      if (other.Fuel != 0) {
+        Fuel = other.Fuel;
       }
       if (other.PointId != 0) {
         PointId = other.PointId;
       }
-      if (other.Unk2800MKNGANDAJFJ != 0) {
-        Unk2800MKNGANDAJFJ = other.Unk2800MKNGANDAJFJ;
+      if (other.RaftEntityId != 0) {
+        RaftEntityId = other.RaftEntityId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -347,11 +346,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Unk2800BAEEDEAADIA = input.ReadUInt32();
+            Component = input.ReadUInt32();
             break;
           }
           case 32: {
-            Unk2800MKNGANDAJFJ = input.ReadUInt32();
+            RaftEntityId = input.ReadUInt32();
             break;
           }
           case 48: {
@@ -359,7 +358,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2800ENJGEFBCLOL = (global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB) input.ReadEnum();
+            StartSource = (global::Weedwacker.Shared.Network.Proto.GalleryStartSource) input.ReadEnum();
             break;
           }
           case 96: {
@@ -367,7 +366,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk2800EOFOECJJMLJ = input.ReadUInt32();
+            Fuel = input.ReadUInt32();
             break;
           }
         }
@@ -386,11 +385,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Unk2800BAEEDEAADIA = input.ReadUInt32();
+            Component = input.ReadUInt32();
             break;
           }
           case 32: {
-            Unk2800MKNGANDAJFJ = input.ReadUInt32();
+            RaftEntityId = input.ReadUInt32();
             break;
           }
           case 48: {
@@ -398,7 +397,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2800ENJGEFBCLOL = (global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB) input.ReadEnum();
+            StartSource = (global::Weedwacker.Shared.Network.Proto.GalleryStartSource) input.ReadEnum();
             break;
           }
           case 96: {
@@ -406,7 +405,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk2800EOFOECJJMLJ = input.ReadUInt32();
+            Fuel = input.ReadUInt32();
             break;
           }
         }

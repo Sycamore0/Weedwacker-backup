@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGalleryTreasureSeelieInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiRTY2VuZUdhbGxlcnlUcmVhc3VyZVNlZWxpZUluZm8ucHJvdG8iTwoeU2Nl",
+            "CiRTY2VuZUdhbGxlcnlUcmVhc3VyZVNlZWxpZUluZm8ucHJvdG8iQAoeU2Nl",
             "bmVHYWxsZXJ5VHJlYXN1cmVTZWVsaWVJbmZvEhAKCHByb2dyZXNzGA8gASgN",
-            "EhsKE1VuazMwMDBfTU9OTkVQTkdOQ0EYDiABKA1CIqoCH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "EgwKBGdvYWwYDiABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryTreasureSeelieInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryTreasureSeelieInfo.Parser, new[]{ "Progress", "Unk3000MONNEPNGNCA" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryTreasureSeelieInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryTreasureSeelieInfo.Parser, new[]{ "Progress", "Goal" }, null, null, null, null)
           }));
     }
     #endregion
@@ -73,7 +73,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SceneGalleryTreasureSeelieInfo(SceneGalleryTreasureSeelieInfo other) : this() {
       progress_ = other.progress_;
-      unk3000MONNEPNGNCA_ = other.unk3000MONNEPNGNCA_;
+      goal_ = other.goal_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -95,15 +95,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3000_MONNEPNGNCA" field.</summary>
-    public const int Unk3000MONNEPNGNCAFieldNumber = 14;
-    private uint unk3000MONNEPNGNCA_;
+    /// <summary>Field number for the "goal" field.</summary>
+    public const int GoalFieldNumber = 14;
+    private uint goal_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3000MONNEPNGNCA {
-      get { return unk3000MONNEPNGNCA_; }
+    public uint Goal {
+      get { return goal_; }
       set {
-        unk3000MONNEPNGNCA_ = value;
+        goal_ = value;
       }
     }
 
@@ -123,7 +123,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (Progress != other.Progress) return false;
-      if (Unk3000MONNEPNGNCA != other.Unk3000MONNEPNGNCA) return false;
+      if (Goal != other.Goal) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -132,7 +132,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Progress != 0) hash ^= Progress.GetHashCode();
-      if (Unk3000MONNEPNGNCA != 0) hash ^= Unk3000MONNEPNGNCA.GetHashCode();
+      if (Goal != 0) hash ^= Goal.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -151,9 +151,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3000MONNEPNGNCA != 0) {
+      if (Goal != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk3000MONNEPNGNCA);
+        output.WriteUInt32(Goal);
       }
       if (Progress != 0) {
         output.WriteRawTag(120);
@@ -169,9 +169,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3000MONNEPNGNCA != 0) {
+      if (Goal != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk3000MONNEPNGNCA);
+        output.WriteUInt32(Goal);
       }
       if (Progress != 0) {
         output.WriteRawTag(120);
@@ -190,8 +190,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Progress != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Progress);
       }
-      if (Unk3000MONNEPNGNCA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3000MONNEPNGNCA);
+      if (Goal != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Goal);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -208,8 +208,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Progress != 0) {
         Progress = other.Progress;
       }
-      if (other.Unk3000MONNEPNGNCA != 0) {
-        Unk3000MONNEPNGNCA = other.Unk3000MONNEPNGNCA;
+      if (other.Goal != 0) {
+        Goal = other.Goal;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -227,7 +227,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 112: {
-            Unk3000MONNEPNGNCA = input.ReadUInt32();
+            Goal = input.ReadUInt32();
             break;
           }
           case 120: {
@@ -250,7 +250,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 112: {
-            Unk3000MONNEPNGNCA = input.ReadUInt32();
+            Goal = input.ReadUInt32();
             break;
           }
           case 120: {

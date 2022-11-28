@@ -24,17 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static LanguageTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJMYW5ndWFnZVR5cGUucHJvdG8qkgMKDExhbmd1YWdlVHlwZRIWChJMQU5H",
+            "ChJMYW5ndWFnZVR5cGUucHJvdG8q8AIKDExhbmd1YWdlVHlwZRIWChJMQU5H",
             "VUFHRV9UWVBFX05PTkUQABIUChBMQU5HVUFHRV9UWVBFX0VOEAESFAoQTEFO",
             "R1VBR0VfVFlQRV9TQxACEhQKEExBTkdVQUdFX1RZUEVfVEMQAxIUChBMQU5H",
             "VUFHRV9UWVBFX0ZSEAQSFAoQTEFOR1VBR0VfVFlQRV9ERRAFEhQKEExBTkdV",
             "QUdFX1RZUEVfRVMQBhIUChBMQU5HVUFHRV9UWVBFX1BUEAcSFAoQTEFOR1VB",
             "R0VfVFlQRV9SVRAIEhQKEExBTkdVQUdFX1RZUEVfSlAQCRIUChBMQU5HVUFH",
             "RV9UWVBFX0tSEAoSFAoQTEFOR1VBR0VfVFlQRV9USBALEhQKEExBTkdVQUdF",
-            "X1RZUEVfVk4QDBIUChBMQU5HVUFHRV9UWVBFX0lEEA0SJQohTEFOR1VBR0Vf",
-            "VFlQRV9VbmsyNzAwX0lCRkpETUZMRklJEA4SJQohTEFOR1VBR0VfVFlQRV9V",
-            "bmsyNzAwX1BBQ0lQQUlGSkNOEA9CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "X1RZUEVfVk4QDBIUChBMQU5HVUFHRV9UWVBFX0lEEA0SFAoQTEFOR1VBR0Vf",
+            "VFlQRV9UUhAOEhQKEExBTkdVQUdFX1RZUEVfSVQQD0IiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.LanguageType), }, null, null));
@@ -58,8 +57,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [pbr::OriginalName("LANGUAGE_TYPE_TH")] Th = 11,
     [pbr::OriginalName("LANGUAGE_TYPE_VN")] Vn = 12,
     [pbr::OriginalName("LANGUAGE_TYPE_ID")] Id = 13,
-    [pbr::OriginalName("LANGUAGE_TYPE_Unk2700_IBFJDMFLFII")] Unk2700Ibfjdmflfii = 14,
-    [pbr::OriginalName("LANGUAGE_TYPE_Unk2700_PACIPAIFJCN")] Unk2700Pacipaifjcn = 15,
+    [pbr::OriginalName("LANGUAGE_TYPE_TR")] Tr = 14,
+    [pbr::OriginalName("LANGUAGE_TYPE_IT")] It = 15,
   }
 
   #endregion

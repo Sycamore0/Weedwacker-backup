@@ -24,7 +24,7 @@ namespace Weedwacker.Shared.Network.Proto {
     static MotionStateReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFNb3Rpb25TdGF0ZS5wcm90byqiDQoLTW90aW9uU3RhdGUSFQoRTU9USU9O",
+            "ChFNb3Rpb25TdGF0ZS5wcm90byqUDQoLTW90aW9uU3RhdGUSFQoRTU9USU9O",
             "X1NUQVRFX05PTkUQABIWChJNT1RJT05fU1RBVEVfUkVTRVQQARIYChRNT1RJ",
             "T05fU1RBVEVfU1RBTkRCWRACEh0KGU1PVElPTl9TVEFURV9TVEFOREJZX01P",
             "VkUQAxIVChFNT1RJT05fU1RBVEVfV0FMSxAEEhQKEE1PVElPTl9TVEFURV9S",
@@ -60,10 +60,9 @@ namespace Weedwacker.Shared.Network.Proto {
             "RV9TS0lGRl9QT1dFUkVEX0RBU0gQMRIgChxNT1RJT05fU1RBVEVfREVTVFJP",
             "WV9WRUhJQ0xFEDISGQoVTU9USU9OX1NUQVRFX0ZMWV9JRExFEDMSGQoVTU9U",
             "SU9OX1NUQVRFX0ZMWV9TTE9XEDQSGQoVTU9USU9OX1NUQVRFX0ZMWV9GQVNU",
-            "EDUSFAoQTU9USU9OX1NUQVRFX05VTRA2EiQKIE1PVElPTl9TVEFURV9Vbmsy",
-            "NzAwX09PRk5OSEtMRUZFEDcSJAogTU9USU9OX1NUQVRFX1VuazI3MDBfS01J",
-            "R0xNRUdOT0sQOEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
-            "b2IGcHJvdG8z"));
+            "EDUSGQoVTU9USU9OX1NUQVRFX0FJTV9NT1ZFEDYSIQodTU9USU9OX1NUQVRF",
+            "X0FJUl9DT01QRU5TQVRJT04QNxIUChBNT1RJT05fU1RBVEVfTlVNEDhCIqoC",
+            "H1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.MotionState), }, null, null));
@@ -127,9 +126,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [pbr::OriginalName("MOTION_STATE_FLY_IDLE")] FlyIdle = 51,
     [pbr::OriginalName("MOTION_STATE_FLY_SLOW")] FlySlow = 52,
     [pbr::OriginalName("MOTION_STATE_FLY_FAST")] FlyFast = 53,
-    [pbr::OriginalName("MOTION_STATE_NUM")] Num = 54,
-    [pbr::OriginalName("MOTION_STATE_Unk2700_OOFNNHKLEFE")] Unk2700Oofnnhklefe = 55,
-    [pbr::OriginalName("MOTION_STATE_Unk2700_KMIGLMEGNOK")] Unk2700Kmiglmegnok = 56,
+    [pbr::OriginalName("MOTION_STATE_AIM_MOVE")] AimMove = 54,
+    [pbr::OriginalName("MOTION_STATE_AIR_COMPENSATION")] AirCompensation = 55,
+    [pbr::OriginalName("MOTION_STATE_NUM")] Num = 56,
   }
 
   #endregion

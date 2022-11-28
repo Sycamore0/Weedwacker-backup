@@ -25,15 +25,14 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBHZXRJbnZlc3RpZ2F0aW9uTW9uc3RlclJzcC5wcm90bxoaSW52ZXN0aWdh",
-            "dGlvbk1vbnN0ZXIucHJvdG8idwoaR2V0SW52ZXN0aWdhdGlvbk1vbnN0ZXJS",
+            "dGlvbk1vbnN0ZXIucHJvdG8ibwoaR2V0SW52ZXN0aWdhdGlvbk1vbnN0ZXJS",
             "c3ASKwoMbW9uc3Rlcl9saXN0GAogAygLMhUuSW52ZXN0aWdhdGlvbk1vbnN0",
-            "ZXISDwoHcmV0Y29kZRgBIAEoBRIbChNVbmsyNzAwX0RFTUZESE5GQkJKGAIg",
-            "ASgIQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90",
-            "bzM="));
+            "ZXISDwoHcmV0Y29kZRgBIAEoBRITCgtpc19mb3JfbWFyaxgCIAEoCEIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.InvestigationMonsterReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetInvestigationMonsterRsp), global::Weedwacker.Shared.Network.Proto.GetInvestigationMonsterRsp.Parser, new[]{ "MonsterList", "Retcode", "Unk2700DEMFDHNFBBJ" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetInvestigationMonsterRsp), global::Weedwacker.Shared.Network.Proto.GetInvestigationMonsterRsp.Parser, new[]{ "MonsterList", "Retcode", "IsForMark" }, null, null, null, null)
           }));
     }
     #endregion
@@ -82,7 +81,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public GetInvestigationMonsterRsp(GetInvestigationMonsterRsp other) : this() {
       monsterList_ = other.monsterList_.Clone();
       retcode_ = other.retcode_;
-      unk2700DEMFDHNFBBJ_ = other.unk2700DEMFDHNFBBJ_;
+      isForMark_ = other.isForMark_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -115,15 +114,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_DEMFDHNFBBJ" field.</summary>
-    public const int Unk2700DEMFDHNFBBJFieldNumber = 2;
-    private bool unk2700DEMFDHNFBBJ_;
+    /// <summary>Field number for the "is_for_mark" field.</summary>
+    public const int IsForMarkFieldNumber = 2;
+    private bool isForMark_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700DEMFDHNFBBJ {
-      get { return unk2700DEMFDHNFBBJ_; }
+    public bool IsForMark {
+      get { return isForMark_; }
       set {
-        unk2700DEMFDHNFBBJ_ = value;
+        isForMark_ = value;
       }
     }
 
@@ -144,7 +143,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if(!monsterList_.Equals(other.monsterList_)) return false;
       if (Retcode != other.Retcode) return false;
-      if (Unk2700DEMFDHNFBBJ != other.Unk2700DEMFDHNFBBJ) return false;
+      if (IsForMark != other.IsForMark) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -154,7 +153,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       hash ^= monsterList_.GetHashCode();
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
-      if (Unk2700DEMFDHNFBBJ != false) hash ^= Unk2700DEMFDHNFBBJ.GetHashCode();
+      if (IsForMark != false) hash ^= IsForMark.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -177,9 +176,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(Retcode);
       }
-      if (Unk2700DEMFDHNFBBJ != false) {
+      if (IsForMark != false) {
         output.WriteRawTag(16);
-        output.WriteBool(Unk2700DEMFDHNFBBJ);
+        output.WriteBool(IsForMark);
       }
       monsterList_.WriteTo(output, _repeated_monsterList_codec);
       if (_unknownFields != null) {
@@ -196,9 +195,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(Retcode);
       }
-      if (Unk2700DEMFDHNFBBJ != false) {
+      if (IsForMark != false) {
         output.WriteRawTag(16);
-        output.WriteBool(Unk2700DEMFDHNFBBJ);
+        output.WriteBool(IsForMark);
       }
       monsterList_.WriteTo(ref output, _repeated_monsterList_codec);
       if (_unknownFields != null) {
@@ -215,7 +214,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Retcode != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
       }
-      if (Unk2700DEMFDHNFBBJ != false) {
+      if (IsForMark != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -234,8 +233,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Retcode != 0) {
         Retcode = other.Retcode;
       }
-      if (other.Unk2700DEMFDHNFBBJ != false) {
-        Unk2700DEMFDHNFBBJ = other.Unk2700DEMFDHNFBBJ;
+      if (other.IsForMark != false) {
+        IsForMark = other.IsForMark;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -257,7 +256,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 16: {
-            Unk2700DEMFDHNFBBJ = input.ReadBool();
+            IsForMark = input.ReadBool();
             break;
           }
           case 82: {
@@ -284,7 +283,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 16: {
-            Unk2700DEMFDHNFBBJ = input.ReadBool();
+            IsForMark = input.ReadBool();
             break;
           }
           case 82: {

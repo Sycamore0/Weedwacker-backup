@@ -24,16 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static ClientGadgetInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZDbGllbnRHYWRnZXRJbmZvLnByb3RvIsUBChBDbGllbnRHYWRnZXRJbmZv",
+            "ChZDbGllbnRHYWRnZXRJbmZvLnByb3RvIsoBChBDbGllbnRHYWRnZXRJbmZv",
             "Eg8KB2NhbXBfaWQYASABKA0SEQoJY2FtcF90eXBlGAIgASgNEgwKBGd1aWQY",
             "AyABKAQSFwoPb3duZXJfZW50aXR5X2lkGAQgASgNEhgKEHRhcmdldF9lbnRp",
-            "dHlfaWQYBSABKA0SEgoKYXN5bmNfbG9hZBgGIAEoCBIbChNVbmsyNzAwX0pC",
-            "T1BFTkFHR0FGGAcgASgIEhsKE1VuazI3MDBfQkVMT0lIRUlFQU4YCCADKA1C",
-            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "dHlfaWQYBSABKA0SEgoKYXN5bmNfbG9hZBgGIAEoCBIeChZpc19wZWVyX2lk",
+            "X2Zyb21fcGxheWVyGAcgASgIEh0KFXRhcmdldF9lbnRpdHlfaWRfbGlzdBgI",
+            "IAMoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ClientGadgetInfo), global::Weedwacker.Shared.Network.Proto.ClientGadgetInfo.Parser, new[]{ "CampId", "CampType", "Guid", "OwnerEntityId", "TargetEntityId", "AsyncLoad", "Unk2700JBOPENAGGAF", "Unk2700BELOIHEIEAN" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ClientGadgetInfo), global::Weedwacker.Shared.Network.Proto.ClientGadgetInfo.Parser, new[]{ "CampId", "CampType", "Guid", "OwnerEntityId", "TargetEntityId", "AsyncLoad", "IsPeerIdFromPlayer", "TargetEntityIdList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -80,8 +81,8 @@ namespace Weedwacker.Shared.Network.Proto {
       ownerEntityId_ = other.ownerEntityId_;
       targetEntityId_ = other.targetEntityId_;
       asyncLoad_ = other.asyncLoad_;
-      unk2700JBOPENAGGAF_ = other.unk2700JBOPENAGGAF_;
-      unk2700BELOIHEIEAN_ = other.unk2700BELOIHEIEAN_.Clone();
+      isPeerIdFromPlayer_ = other.isPeerIdFromPlayer_;
+      targetEntityIdList_ = other.targetEntityIdList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -163,27 +164,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_JBOPENAGGAF" field.</summary>
-    public const int Unk2700JBOPENAGGAFFieldNumber = 7;
-    private bool unk2700JBOPENAGGAF_;
+    /// <summary>Field number for the "is_peer_id_from_player" field.</summary>
+    public const int IsPeerIdFromPlayerFieldNumber = 7;
+    private bool isPeerIdFromPlayer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700JBOPENAGGAF {
-      get { return unk2700JBOPENAGGAF_; }
+    public bool IsPeerIdFromPlayer {
+      get { return isPeerIdFromPlayer_; }
       set {
-        unk2700JBOPENAGGAF_ = value;
+        isPeerIdFromPlayer_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_BELOIHEIEAN" field.</summary>
-    public const int Unk2700BELOIHEIEANFieldNumber = 8;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700BELOIHEIEAN_codec
+    /// <summary>Field number for the "target_entity_id_list" field.</summary>
+    public const int TargetEntityIdListFieldNumber = 8;
+    private static readonly pb::FieldCodec<uint> _repeated_targetEntityIdList_codec
         = pb::FieldCodec.ForUInt32(66);
-    private readonly pbc::RepeatedField<uint> unk2700BELOIHEIEAN_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> targetEntityIdList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700BELOIHEIEAN {
-      get { return unk2700BELOIHEIEAN_; }
+    public pbc::RepeatedField<uint> TargetEntityIdList {
+      get { return targetEntityIdList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -207,8 +208,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (OwnerEntityId != other.OwnerEntityId) return false;
       if (TargetEntityId != other.TargetEntityId) return false;
       if (AsyncLoad != other.AsyncLoad) return false;
-      if (Unk2700JBOPENAGGAF != other.Unk2700JBOPENAGGAF) return false;
-      if(!unk2700BELOIHEIEAN_.Equals(other.unk2700BELOIHEIEAN_)) return false;
+      if (IsPeerIdFromPlayer != other.IsPeerIdFromPlayer) return false;
+      if(!targetEntityIdList_.Equals(other.targetEntityIdList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -222,8 +223,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (OwnerEntityId != 0) hash ^= OwnerEntityId.GetHashCode();
       if (TargetEntityId != 0) hash ^= TargetEntityId.GetHashCode();
       if (AsyncLoad != false) hash ^= AsyncLoad.GetHashCode();
-      if (Unk2700JBOPENAGGAF != false) hash ^= Unk2700JBOPENAGGAF.GetHashCode();
-      hash ^= unk2700BELOIHEIEAN_.GetHashCode();
+      if (IsPeerIdFromPlayer != false) hash ^= IsPeerIdFromPlayer.GetHashCode();
+      hash ^= targetEntityIdList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -266,11 +267,11 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteBool(AsyncLoad);
       }
-      if (Unk2700JBOPENAGGAF != false) {
+      if (IsPeerIdFromPlayer != false) {
         output.WriteRawTag(56);
-        output.WriteBool(Unk2700JBOPENAGGAF);
+        output.WriteBool(IsPeerIdFromPlayer);
       }
-      unk2700BELOIHEIEAN_.WriteTo(output, _repeated_unk2700BELOIHEIEAN_codec);
+      targetEntityIdList_.WriteTo(output, _repeated_targetEntityIdList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -305,11 +306,11 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteBool(AsyncLoad);
       }
-      if (Unk2700JBOPENAGGAF != false) {
+      if (IsPeerIdFromPlayer != false) {
         output.WriteRawTag(56);
-        output.WriteBool(Unk2700JBOPENAGGAF);
+        output.WriteBool(IsPeerIdFromPlayer);
       }
-      unk2700BELOIHEIEAN_.WriteTo(ref output, _repeated_unk2700BELOIHEIEAN_codec);
+      targetEntityIdList_.WriteTo(ref output, _repeated_targetEntityIdList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -338,10 +339,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (AsyncLoad != false) {
         size += 1 + 1;
       }
-      if (Unk2700JBOPENAGGAF != false) {
+      if (IsPeerIdFromPlayer != false) {
         size += 1 + 1;
       }
-      size += unk2700BELOIHEIEAN_.CalculateSize(_repeated_unk2700BELOIHEIEAN_codec);
+      size += targetEntityIdList_.CalculateSize(_repeated_targetEntityIdList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -372,10 +373,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.AsyncLoad != false) {
         AsyncLoad = other.AsyncLoad;
       }
-      if (other.Unk2700JBOPENAGGAF != false) {
-        Unk2700JBOPENAGGAF = other.Unk2700JBOPENAGGAF;
+      if (other.IsPeerIdFromPlayer != false) {
+        IsPeerIdFromPlayer = other.IsPeerIdFromPlayer;
       }
-      unk2700BELOIHEIEAN_.Add(other.unk2700BELOIHEIEAN_);
+      targetEntityIdList_.Add(other.targetEntityIdList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -416,12 +417,12 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2700JBOPENAGGAF = input.ReadBool();
+            IsPeerIdFromPlayer = input.ReadBool();
             break;
           }
           case 66:
           case 64: {
-            unk2700BELOIHEIEAN_.AddEntriesFrom(input, _repeated_unk2700BELOIHEIEAN_codec);
+            targetEntityIdList_.AddEntriesFrom(input, _repeated_targetEntityIdList_codec);
             break;
           }
         }
@@ -464,12 +465,12 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2700JBOPENAGGAF = input.ReadBool();
+            IsPeerIdFromPlayer = input.ReadBool();
             break;
           }
           case 66:
           case 64: {
-            unk2700BELOIHEIEAN_.AddEntriesFrom(ref input, _repeated_unk2700BELOIHEIEAN_codec);
+            targetEntityIdList_.AddEntriesFrom(ref input, _repeated_targetEntityIdList_codec);
             break;
           }
         }

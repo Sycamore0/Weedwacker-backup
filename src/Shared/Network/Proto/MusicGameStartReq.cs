@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static MusicGameStartReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdNdXNpY0dhbWVTdGFydFJlcS5wcm90byJlChFNdXNpY0dhbWVTdGFydFJl",
-            "cRIWCg5tdXNpY19iYXNpY19pZBgCIAEoDRIbChNVbmsyNzAwX0lPS1BJS0pE",
-            "RUhHGAsgASgIEhsKE1VuazI3MDBfQ0VQR01LQUhIQ0QYAyABKARCIqoCH1dl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "ChdNdXNpY0dhbWVTdGFydFJlcS5wcm90byJUChFNdXNpY0dhbWVTdGFydFJl",
+            "cRIWCg5tdXNpY19iYXNpY19pZBgCIAEoDRIVCg1pc19zYXZlX3Njb3JlGAsg",
+            "ASgIEhAKCHVnY19ndWlkGAMgASgEQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5O",
+            "ZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MusicGameStartReq), global::Weedwacker.Shared.Network.Proto.MusicGameStartReq.Parser, new[]{ "MusicBasicId", "Unk2700IOKPIKJDEHG", "Unk2700CEPGMKAHHCD" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MusicGameStartReq), global::Weedwacker.Shared.Network.Proto.MusicGameStartReq.Parser, new[]{ "MusicBasicId", "IsSaveScore", "UgcGuid" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,8 +79,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MusicGameStartReq(MusicGameStartReq other) : this() {
       musicBasicId_ = other.musicBasicId_;
-      unk2700IOKPIKJDEHG_ = other.unk2700IOKPIKJDEHG_;
-      unk2700CEPGMKAHHCD_ = other.unk2700CEPGMKAHHCD_;
+      isSaveScore_ = other.isSaveScore_;
+      ugcGuid_ = other.ugcGuid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -102,27 +102,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_IOKPIKJDEHG" field.</summary>
-    public const int Unk2700IOKPIKJDEHGFieldNumber = 11;
-    private bool unk2700IOKPIKJDEHG_;
+    /// <summary>Field number for the "is_save_score" field.</summary>
+    public const int IsSaveScoreFieldNumber = 11;
+    private bool isSaveScore_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700IOKPIKJDEHG {
-      get { return unk2700IOKPIKJDEHG_; }
+    public bool IsSaveScore {
+      get { return isSaveScore_; }
       set {
-        unk2700IOKPIKJDEHG_ = value;
+        isSaveScore_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_CEPGMKAHHCD" field.</summary>
-    public const int Unk2700CEPGMKAHHCDFieldNumber = 3;
-    private ulong unk2700CEPGMKAHHCD_;
+    /// <summary>Field number for the "ugc_guid" field.</summary>
+    public const int UgcGuidFieldNumber = 3;
+    private ulong ugcGuid_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong Unk2700CEPGMKAHHCD {
-      get { return unk2700CEPGMKAHHCD_; }
+    public ulong UgcGuid {
+      get { return ugcGuid_; }
       set {
-        unk2700CEPGMKAHHCD_ = value;
+        ugcGuid_ = value;
       }
     }
 
@@ -142,8 +142,8 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (MusicBasicId != other.MusicBasicId) return false;
-      if (Unk2700IOKPIKJDEHG != other.Unk2700IOKPIKJDEHG) return false;
-      if (Unk2700CEPGMKAHHCD != other.Unk2700CEPGMKAHHCD) return false;
+      if (IsSaveScore != other.IsSaveScore) return false;
+      if (UgcGuid != other.UgcGuid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -152,8 +152,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (MusicBasicId != 0) hash ^= MusicBasicId.GetHashCode();
-      if (Unk2700IOKPIKJDEHG != false) hash ^= Unk2700IOKPIKJDEHG.GetHashCode();
-      if (Unk2700CEPGMKAHHCD != 0UL) hash ^= Unk2700CEPGMKAHHCD.GetHashCode();
+      if (IsSaveScore != false) hash ^= IsSaveScore.GetHashCode();
+      if (UgcGuid != 0UL) hash ^= UgcGuid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -176,13 +176,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(MusicBasicId);
       }
-      if (Unk2700CEPGMKAHHCD != 0UL) {
+      if (UgcGuid != 0UL) {
         output.WriteRawTag(24);
-        output.WriteUInt64(Unk2700CEPGMKAHHCD);
+        output.WriteUInt64(UgcGuid);
       }
-      if (Unk2700IOKPIKJDEHG != false) {
+      if (IsSaveScore != false) {
         output.WriteRawTag(88);
-        output.WriteBool(Unk2700IOKPIKJDEHG);
+        output.WriteBool(IsSaveScore);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -198,13 +198,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(MusicBasicId);
       }
-      if (Unk2700CEPGMKAHHCD != 0UL) {
+      if (UgcGuid != 0UL) {
         output.WriteRawTag(24);
-        output.WriteUInt64(Unk2700CEPGMKAHHCD);
+        output.WriteUInt64(UgcGuid);
       }
-      if (Unk2700IOKPIKJDEHG != false) {
+      if (IsSaveScore != false) {
         output.WriteRawTag(88);
-        output.WriteBool(Unk2700IOKPIKJDEHG);
+        output.WriteBool(IsSaveScore);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -219,11 +219,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (MusicBasicId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MusicBasicId);
       }
-      if (Unk2700IOKPIKJDEHG != false) {
+      if (IsSaveScore != false) {
         size += 1 + 1;
       }
-      if (Unk2700CEPGMKAHHCD != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Unk2700CEPGMKAHHCD);
+      if (UgcGuid != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(UgcGuid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -240,11 +240,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.MusicBasicId != 0) {
         MusicBasicId = other.MusicBasicId;
       }
-      if (other.Unk2700IOKPIKJDEHG != false) {
-        Unk2700IOKPIKJDEHG = other.Unk2700IOKPIKJDEHG;
+      if (other.IsSaveScore != false) {
+        IsSaveScore = other.IsSaveScore;
       }
-      if (other.Unk2700CEPGMKAHHCD != 0UL) {
-        Unk2700CEPGMKAHHCD = other.Unk2700CEPGMKAHHCD;
+      if (other.UgcGuid != 0UL) {
+        UgcGuid = other.UgcGuid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -266,11 +266,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk2700CEPGMKAHHCD = input.ReadUInt64();
+            UgcGuid = input.ReadUInt64();
             break;
           }
           case 88: {
-            Unk2700IOKPIKJDEHG = input.ReadBool();
+            IsSaveScore = input.ReadBool();
             break;
           }
         }
@@ -293,11 +293,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk2700CEPGMKAHHCD = input.ReadUInt64();
+            UgcGuid = input.ReadUInt64();
             break;
           }
           case 88: {
-            Unk2700IOKPIKJDEHG = input.ReadBool();
+            IsSaveScore = input.ReadBool();
             break;
           }
         }

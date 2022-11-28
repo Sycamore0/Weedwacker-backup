@@ -26,13 +26,13 @@ namespace Weedwacker.Shared.Network.Proto {
           string.Concat(
             "ChlEdW5nZW9uRW50cnlJbmZvUmVxLnByb3RvGhBVaW50MzJQYWlyLnByb3Rv",
             "ImMKE0R1bmdlb25FbnRyeUluZm9SZXESEAoIcG9pbnRfaWQYAiABKA0SEAoI",
-            "c2NlbmVfaWQYCSABKA0SKAoTVW5rMjgwMF9HR0FNSkRGRUxQSBgEIAMoCzIL",
+            "c2NlbmVfaWQYCSABKA0SKAoTc2NlbmVfcG9pbnRfaWRfbGlzdBgEIAMoCzIL",
             "LlVpbnQzMlBhaXJCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
             "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Uint32PairReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonEntryInfoReq), global::Weedwacker.Shared.Network.Proto.DungeonEntryInfoReq.Parser, new[]{ "PointId", "SceneId", "Unk2800GGAMJDFELPH" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonEntryInfoReq), global::Weedwacker.Shared.Network.Proto.DungeonEntryInfoReq.Parser, new[]{ "PointId", "SceneId", "ScenePointIdList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -81,7 +81,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public DungeonEntryInfoReq(DungeonEntryInfoReq other) : this() {
       pointId_ = other.pointId_;
       sceneId_ = other.sceneId_;
-      unk2800GGAMJDFELPH_ = other.unk2800GGAMJDFELPH_.Clone();
+      scenePointIdList_ = other.scenePointIdList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -115,15 +115,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2800_GGAMJDFELPH" field.</summary>
-    public const int Unk2800GGAMJDFELPHFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Uint32Pair> _repeated_unk2800GGAMJDFELPH_codec
+    /// <summary>Field number for the "scene_point_id_list" field.</summary>
+    public const int ScenePointIdListFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Uint32Pair> _repeated_scenePointIdList_codec
         = pb::FieldCodec.ForMessage(34, global::Weedwacker.Shared.Network.Proto.Uint32Pair.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Uint32Pair> unk2800GGAMJDFELPH_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Uint32Pair>();
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Uint32Pair> scenePointIdList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Uint32Pair>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Uint32Pair> Unk2800GGAMJDFELPH {
-      get { return unk2800GGAMJDFELPH_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Uint32Pair> ScenePointIdList {
+      get { return scenePointIdList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -143,7 +143,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (PointId != other.PointId) return false;
       if (SceneId != other.SceneId) return false;
-      if(!unk2800GGAMJDFELPH_.Equals(other.unk2800GGAMJDFELPH_)) return false;
+      if(!scenePointIdList_.Equals(other.scenePointIdList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -153,7 +153,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (PointId != 0) hash ^= PointId.GetHashCode();
       if (SceneId != 0) hash ^= SceneId.GetHashCode();
-      hash ^= unk2800GGAMJDFELPH_.GetHashCode();
+      hash ^= scenePointIdList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -176,7 +176,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(PointId);
       }
-      unk2800GGAMJDFELPH_.WriteTo(output, _repeated_unk2800GGAMJDFELPH_codec);
+      scenePointIdList_.WriteTo(output, _repeated_scenePointIdList_codec);
       if (SceneId != 0) {
         output.WriteRawTag(72);
         output.WriteUInt32(SceneId);
@@ -195,7 +195,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(PointId);
       }
-      unk2800GGAMJDFELPH_.WriteTo(ref output, _repeated_unk2800GGAMJDFELPH_codec);
+      scenePointIdList_.WriteTo(ref output, _repeated_scenePointIdList_codec);
       if (SceneId != 0) {
         output.WriteRawTag(72);
         output.WriteUInt32(SceneId);
@@ -216,7 +216,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (SceneId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SceneId);
       }
-      size += unk2800GGAMJDFELPH_.CalculateSize(_repeated_unk2800GGAMJDFELPH_codec);
+      size += scenePointIdList_.CalculateSize(_repeated_scenePointIdList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -235,7 +235,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.SceneId != 0) {
         SceneId = other.SceneId;
       }
-      unk2800GGAMJDFELPH_.Add(other.unk2800GGAMJDFELPH_);
+      scenePointIdList_.Add(other.scenePointIdList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -256,7 +256,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 34: {
-            unk2800GGAMJDFELPH_.AddEntriesFrom(input, _repeated_unk2800GGAMJDFELPH_codec);
+            scenePointIdList_.AddEntriesFrom(input, _repeated_scenePointIdList_codec);
             break;
           }
           case 72: {
@@ -283,7 +283,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 34: {
-            unk2800GGAMJDFELPH_.AddEntriesFrom(ref input, _repeated_unk2800GGAMJDFELPH_codec);
+            scenePointIdList_.AddEntriesFrom(ref input, _repeated_scenePointIdList_codec);
             break;
           }
           case 72: {

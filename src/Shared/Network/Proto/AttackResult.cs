@@ -26,31 +26,31 @@ namespace Weedwacker.Shared.Network.Proto {
           string.Concat(
             "ChJBdHRhY2tSZXN1bHQucHJvdG8aF0FiaWxpdHlJZGVudGlmaWVyLnByb3Rv",
             "GhtBdHRhY2tIaXRFZmZlY3RSZXN1bHQucHJvdG8aEkhpdENvbGxpc2lvbi5w",
-            "cm90bxoMVmVjdG9yLnByb3RvIuYGCgxBdHRhY2tSZXN1bHQSFwoOaXNfcmVz",
-            "aXN0X3RleHQYwg4gASgIEhwKE1VuazI3MDBfR0JBTkNGRVBQSU0Y8wcgASgN",
-            "Eh4KFWFtcGxpZnlfcmVhY3Rpb25fdHlwZRjVDyABKA0SFAoMZW5kdXJlX2Jy",
-            "ZWFrGAcgASgNEhQKDGVsZW1lbnRfdHlwZRgFIAEoDRInCh5lbGVtZW50X2R1",
-            "cmFiaWxpdHlfYXR0ZW51YXRpb24YqQMgASgCEhIKCmRlZmVuc2VfaWQYDyAB",
-            "KA0SHAoTYXR0YWNrX3RpbWVzdGFtcF9tcxikCSABKA0SGgoSYnVsbGV0X2Zs",
-            "eV90aW1lX21zGFsgASgNEg8KB2lzX2NyaXQYDSABKAgSHQoUZWxlbWVudF9h",
-            "bXBsaWZ5X3JhdGUYhAcgASgCEhUKDGF0dGFja19jb3VudBicDCABKA0SFgoN",
-            "Y3JpdGljYWxfcmFuZBiADSABKA0SFAoMaGl0X3Bvc190eXBlGAIgASgNEhUK",
-            "DWFuaW1fZXZlbnRfaWQYBCABKAkSLgoOaGl0X2VmZl9yZXN1bHQYCCABKAsy",
-            "Fi5BdHRhY2tIaXRFZmZlY3RSZXN1bHQSFgoNZGFtYWdlX3NoaWVsZBiyCSAB",
-            "KAISFQoMZW5kdXJlX2RlbHRhGK4DIAEoAhIdCgxyZXNvbHZlZF9kaXIYASAB",
-            "KAsyBy5WZWN0b3ISDgoGZGFtYWdlGAYgASgCEh4KFWFkZGh1cnRfcmVhY3Rp",
-            "b25fdHlwZRjfDiABKA0SHQoUaGFzaGVkX2FuaW1fZXZlbnRfaWQYlgIgASgN",
-            "EiEKGHVzZV9nYWRnZXRfZGFtYWdlX2FjdGlvbhiKCyABKAgSIAoYaGl0X3Jl",
-            "dHJlYXRfYW5nbGVfY29tcGF0GAkgASgFEi4KEmFiaWxpdHlfaWRlbnRpZmll",
-            "chgOIAEoCzISLkFiaWxpdHlJZGVudGlmaWVyEhMKC2F0dGFja2VyX2lkGAsg",
-            "ASgNEhoKEW11dGVfZWxlbWVudF9odXJ0GPoLIAEoCBIUCgt0YXJnZXRfdHlw",
-            "ZRjWCiABKA0SJAoNaGl0X2NvbGxpc2lvbhgKIAEoCzINLkhpdENvbGxpc2lv",
-            "bhIhChhnYWRnZXRfZGFtYWdlX2FjdGlvbl9pZHgY1gggASgNQiKqAh9XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "cm90bxoMVmVjdG9yLnByb3RvIu4GCgxBdHRhY2tSZXN1bHQSFwoOaXNfcmVz",
+            "aXN0X3RleHQYwg4gASgIEiQKG2NyZWF0ZV9jb3VudF9zeW5jX3RvX3NlcnZl",
+            "chjzByABKA0SHgoVYW1wbGlmeV9yZWFjdGlvbl90eXBlGNUPIAEoDRIUCgxl",
+            "bmR1cmVfYnJlYWsYByABKA0SFAoMZWxlbWVudF90eXBlGAUgASgNEicKHmVs",
+            "ZW1lbnRfZHVyYWJpbGl0eV9hdHRlbnVhdGlvbhipAyABKAISEgoKZGVmZW5z",
+            "ZV9pZBgPIAEoDRIcChNhdHRhY2tfdGltZXN0YW1wX21zGKQJIAEoDRIaChJi",
+            "dWxsZXRfZmx5X3RpbWVfbXMYWyABKA0SDwoHaXNfY3JpdBgNIAEoCBIdChRl",
+            "bGVtZW50X2FtcGxpZnlfcmF0ZRiEByABKAISFQoMYXR0YWNrX2NvdW50GJwM",
+            "IAEoDRIWCg1jcml0aWNhbF9yYW5kGIANIAEoDRIUCgxoaXRfcG9zX3R5cGUY",
+            "AiABKA0SFQoNYW5pbV9ldmVudF9pZBgEIAEoCRIuCg5oaXRfZWZmX3Jlc3Vs",
+            "dBgIIAEoCzIWLkF0dGFja0hpdEVmZmVjdFJlc3VsdBIWCg1kYW1hZ2Vfc2hp",
+            "ZWxkGLIJIAEoAhIVCgxlbmR1cmVfZGVsdGEYrgMgASgCEh0KDHJlc29sdmVk",
+            "X2RpchgBIAEoCzIHLlZlY3RvchIOCgZkYW1hZ2UYBiABKAISHgoVYWRkaHVy",
+            "dF9yZWFjdGlvbl90eXBlGN8OIAEoDRIdChRoYXNoZWRfYW5pbV9ldmVudF9p",
+            "ZBiWAiABKA0SIQoYdXNlX2dhZGdldF9kYW1hZ2VfYWN0aW9uGIoLIAEoCBIg",
+            "ChhoaXRfcmV0cmVhdF9hbmdsZV9jb21wYXQYCSABKAUSLgoSYWJpbGl0eV9p",
+            "ZGVudGlmaWVyGA4gASgLMhIuQWJpbGl0eUlkZW50aWZpZXISEwoLYXR0YWNr",
+            "ZXJfaWQYCyABKA0SGgoRbXV0ZV9lbGVtZW50X2h1cnQY+gsgASgIEhQKC3Rh",
+            "cmdldF90eXBlGNYKIAEoDRIkCg1oaXRfY29sbGlzaW9uGAogASgLMg0uSGl0",
+            "Q29sbGlzaW9uEiEKGGdhZGdldF9kYW1hZ2VfYWN0aW9uX2lkeBjWCCABKA1C",
+            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AbilityIdentifierReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.AttackHitEffectResultReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HitCollisionReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AttackResult), global::Weedwacker.Shared.Network.Proto.AttackResult.Parser, new[]{ "IsResistText", "Unk2700GBANCFEPPIM", "AmplifyReactionType", "EndureBreak", "ElementType", "ElementDurabilityAttenuation", "DefenseId", "AttackTimestampMs", "BulletFlyTimeMs", "IsCrit", "ElementAmplifyRate", "AttackCount", "CriticalRand", "HitPosType", "AnimEventId", "HitEffResult", "DamageShield", "EndureDelta", "ResolvedDir", "Damage", "AddhurtReactionType", "HashedAnimEventId", "UseGadgetDamageAction", "HitRetreatAngleCompat", "AbilityIdentifier", "AttackerId", "MuteElementHurt", "TargetType", "HitCollision", "GadgetDamageActionIdx" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AttackResult), global::Weedwacker.Shared.Network.Proto.AttackResult.Parser, new[]{ "IsResistText", "CreateCountSyncToServer", "AmplifyReactionType", "EndureBreak", "ElementType", "ElementDurabilityAttenuation", "DefenseId", "AttackTimestampMs", "BulletFlyTimeMs", "IsCrit", "ElementAmplifyRate", "AttackCount", "CriticalRand", "HitPosType", "AnimEventId", "HitEffResult", "DamageShield", "EndureDelta", "ResolvedDir", "Damage", "AddhurtReactionType", "HashedAnimEventId", "UseGadgetDamageAction", "HitRetreatAngleCompat", "AbilityIdentifier", "AttackerId", "MuteElementHurt", "TargetType", "HitCollision", "GadgetDamageActionIdx" }, null, null, null, null)
           }));
     }
     #endregion
@@ -92,7 +92,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AttackResult(AttackResult other) : this() {
       isResistText_ = other.isResistText_;
-      unk2700GBANCFEPPIM_ = other.unk2700GBANCFEPPIM_;
+      createCountSyncToServer_ = other.createCountSyncToServer_;
       amplifyReactionType_ = other.amplifyReactionType_;
       endureBreak_ = other.endureBreak_;
       elementType_ = other.elementType_;
@@ -142,15 +142,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_GBANCFEPPIM" field.</summary>
-    public const int Unk2700GBANCFEPPIMFieldNumber = 1011;
-    private uint unk2700GBANCFEPPIM_;
+    /// <summary>Field number for the "create_count_sync_to_server" field.</summary>
+    public const int CreateCountSyncToServerFieldNumber = 1011;
+    private uint createCountSyncToServer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700GBANCFEPPIM {
-      get { return unk2700GBANCFEPPIM_; }
+    public uint CreateCountSyncToServer {
+      get { return createCountSyncToServer_; }
       set {
-        unk2700GBANCFEPPIM_ = value;
+        createCountSyncToServer_ = value;
       }
     }
 
@@ -506,7 +506,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (IsResistText != other.IsResistText) return false;
-      if (Unk2700GBANCFEPPIM != other.Unk2700GBANCFEPPIM) return false;
+      if (CreateCountSyncToServer != other.CreateCountSyncToServer) return false;
       if (AmplifyReactionType != other.AmplifyReactionType) return false;
       if (EndureBreak != other.EndureBreak) return false;
       if (ElementType != other.ElementType) return false;
@@ -543,7 +543,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (IsResistText != false) hash ^= IsResistText.GetHashCode();
-      if (Unk2700GBANCFEPPIM != 0) hash ^= Unk2700GBANCFEPPIM.GetHashCode();
+      if (CreateCountSyncToServer != 0) hash ^= CreateCountSyncToServer.GetHashCode();
       if (AmplifyReactionType != 0) hash ^= AmplifyReactionType.GetHashCode();
       if (EndureBreak != 0) hash ^= EndureBreak.GetHashCode();
       if (ElementType != 0) hash ^= ElementType.GetHashCode();
@@ -662,9 +662,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(165, 56);
         output.WriteFloat(ElementAmplifyRate);
       }
-      if (Unk2700GBANCFEPPIM != 0) {
+      if (CreateCountSyncToServer != 0) {
         output.WriteRawTag(152, 63);
-        output.WriteUInt32(Unk2700GBANCFEPPIM);
+        output.WriteUInt32(CreateCountSyncToServer);
       }
       if (GadgetDamageActionIdx != 0) {
         output.WriteRawTag(176, 69);
@@ -792,9 +792,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(165, 56);
         output.WriteFloat(ElementAmplifyRate);
       }
-      if (Unk2700GBANCFEPPIM != 0) {
+      if (CreateCountSyncToServer != 0) {
         output.WriteRawTag(152, 63);
-        output.WriteUInt32(Unk2700GBANCFEPPIM);
+        output.WriteUInt32(CreateCountSyncToServer);
       }
       if (GadgetDamageActionIdx != 0) {
         output.WriteRawTag(176, 69);
@@ -853,8 +853,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsResistText != false) {
         size += 2 + 1;
       }
-      if (Unk2700GBANCFEPPIM != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700GBANCFEPPIM);
+      if (CreateCountSyncToServer != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(CreateCountSyncToServer);
       }
       if (AmplifyReactionType != 0) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(AmplifyReactionType);
@@ -955,8 +955,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.IsResistText != false) {
         IsResistText = other.IsResistText;
       }
-      if (other.Unk2700GBANCFEPPIM != 0) {
-        Unk2700GBANCFEPPIM = other.Unk2700GBANCFEPPIM;
+      if (other.CreateCountSyncToServer != 0) {
+        CreateCountSyncToServer = other.CreateCountSyncToServer;
       }
       if (other.AmplifyReactionType != 0) {
         AmplifyReactionType = other.AmplifyReactionType;
@@ -1154,7 +1154,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 8088: {
-            Unk2700GBANCFEPPIM = input.ReadUInt32();
+            CreateCountSyncToServer = input.ReadUInt32();
             break;
           }
           case 8880: {
@@ -1301,7 +1301,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 8088: {
-            Unk2700GBANCFEPPIM = input.ReadUInt32();
+            CreateCountSyncToServer = input.ReadUInt32();
             break;
           }
           case 8880: {

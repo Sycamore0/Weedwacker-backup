@@ -24,13 +24,12 @@ namespace Weedwacker.Shared.Network.Proto {
     static AbilityMixinEmptyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdBYmlsaXR5TWl4aW5FbXB0eS5wcm90byIkChFBYmlsaXR5TWl4aW5FbXB0",
-            "eRIPCgdpc19zd2ltGAEgASgIQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvYgZwcm90bzM="));
+            "ChdBYmlsaXR5TWl4aW5FbXB0eS5wcm90byITChFBYmlsaXR5TWl4aW5FbXB0",
+            "eUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityMixinEmpty), global::Weedwacker.Shared.Network.Proto.AbilityMixinEmpty.Parser, new[]{ "IsSwim" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityMixinEmpty), global::Weedwacker.Shared.Network.Proto.AbilityMixinEmpty.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -71,7 +70,6 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AbilityMixinEmpty(AbilityMixinEmpty other) : this() {
-      isSwim_ = other.isSwim_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -79,18 +77,6 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AbilityMixinEmpty Clone() {
       return new AbilityMixinEmpty(this);
-    }
-
-    /// <summary>Field number for the "is_swim" field.</summary>
-    public const int IsSwimFieldNumber = 1;
-    private bool isSwim_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsSwim {
-      get { return isSwim_; }
-      set {
-        isSwim_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -108,7 +94,6 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (IsSwim != other.IsSwim) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -116,7 +101,6 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (IsSwim != false) hash ^= IsSwim.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -135,10 +119,6 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (IsSwim != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(IsSwim);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -149,10 +129,6 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (IsSwim != false) {
-        output.WriteRawTag(8);
-        output.WriteBool(IsSwim);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -163,9 +139,6 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (IsSwim != false) {
-        size += 1 + 1;
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -177,9 +150,6 @@ namespace Weedwacker.Shared.Network.Proto {
     public void MergeFrom(AbilityMixinEmpty other) {
       if (other == null) {
         return;
-      }
-      if (other.IsSwim != false) {
-        IsSwim = other.IsSwim;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -196,10 +166,6 @@ namespace Weedwacker.Shared.Network.Proto {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            IsSwim = input.ReadBool();
-            break;
-          }
         }
       }
     #endif
@@ -215,10 +181,6 @@ namespace Weedwacker.Shared.Network.Proto {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            IsSwim = input.ReadBool();
-            break;
-          }
         }
       }
     }

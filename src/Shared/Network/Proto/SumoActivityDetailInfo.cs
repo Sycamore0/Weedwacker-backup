@@ -25,16 +25,16 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChxTdW1vQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhNTdW1vU3RhZ2VEYXRh",
-            "LnByb3RvItQBChZTdW1vQWN0aXZpdHlEZXRhaWxJbmZvEhUKDWRpZmZpY3Vs",
+            "LnByb3RvIs4BChZTdW1vQWN0aXZpdHlEZXRhaWxJbmZvEhUKDWRpZmZpY3Vs",
             "dHlfaWQYCyABKA0SQQoOc3Vtb19zdGFnZV9tYXAYDSADKAsyKS5TdW1vQWN0",
-            "aXZpdHlEZXRhaWxJbmZvLlN1bW9TdGFnZU1hcEVudHJ5EhsKE1VuazI3MDBf",
-            "TklKSUFKTUZMTEQYDiABKA0aQwoRU3Vtb1N0YWdlTWFwRW50cnkSCwoDa2V5",
-            "GAEgASgNEh0KBXZhbHVlGAIgASgLMg4uU3Vtb1N0YWdlRGF0YToCOAFCIqoC",
-            "H1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "aXZpdHlEZXRhaWxJbmZvLlN1bW9TdGFnZU1hcEVudHJ5EhUKDWxhc3Rfc3Rh",
+            "Z2VfaWQYDiABKA0aQwoRU3Vtb1N0YWdlTWFwRW50cnkSCwoDa2V5GAEgASgN",
+            "Eh0KBXZhbHVlGAIgASgLMg4uU3Vtb1N0YWdlRGF0YToCOAFCIqoCH1dlZWR3",
+            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.SumoStageDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SumoActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.SumoActivityDetailInfo.Parser, new[]{ "DifficultyId", "SumoStageMap", "Unk2700NIJIAJMFLLD" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SumoActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.SumoActivityDetailInfo.Parser, new[]{ "DifficultyId", "SumoStageMap", "LastStageId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -77,7 +77,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public SumoActivityDetailInfo(SumoActivityDetailInfo other) : this() {
       difficultyId_ = other.difficultyId_;
       sumoStageMap_ = other.sumoStageMap_.Clone();
-      unk2700NIJIAJMFLLD_ = other.unk2700NIJIAJMFLLD_;
+      lastStageId_ = other.lastStageId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -110,15 +110,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return sumoStageMap_; }
     }
 
-    /// <summary>Field number for the "Unk2700_NIJIAJMFLLD" field.</summary>
-    public const int Unk2700NIJIAJMFLLDFieldNumber = 14;
-    private uint unk2700NIJIAJMFLLD_;
+    /// <summary>Field number for the "last_stage_id" field.</summary>
+    public const int LastStageIdFieldNumber = 14;
+    private uint lastStageId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700NIJIAJMFLLD {
-      get { return unk2700NIJIAJMFLLD_; }
+    public uint LastStageId {
+      get { return lastStageId_; }
       set {
-        unk2700NIJIAJMFLLD_ = value;
+        lastStageId_ = value;
       }
     }
 
@@ -139,7 +139,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (DifficultyId != other.DifficultyId) return false;
       if (!SumoStageMap.Equals(other.SumoStageMap)) return false;
-      if (Unk2700NIJIAJMFLLD != other.Unk2700NIJIAJMFLLD) return false;
+      if (LastStageId != other.LastStageId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -149,7 +149,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (DifficultyId != 0) hash ^= DifficultyId.GetHashCode();
       hash ^= SumoStageMap.GetHashCode();
-      if (Unk2700NIJIAJMFLLD != 0) hash ^= Unk2700NIJIAJMFLLD.GetHashCode();
+      if (LastStageId != 0) hash ^= LastStageId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -173,9 +173,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteUInt32(DifficultyId);
       }
       sumoStageMap_.WriteTo(output, _map_sumoStageMap_codec);
-      if (Unk2700NIJIAJMFLLD != 0) {
+      if (LastStageId != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk2700NIJIAJMFLLD);
+        output.WriteUInt32(LastStageId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -192,9 +192,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteUInt32(DifficultyId);
       }
       sumoStageMap_.WriteTo(ref output, _map_sumoStageMap_codec);
-      if (Unk2700NIJIAJMFLLD != 0) {
+      if (LastStageId != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk2700NIJIAJMFLLD);
+        output.WriteUInt32(LastStageId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -210,8 +210,8 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DifficultyId);
       }
       size += sumoStageMap_.CalculateSize(_map_sumoStageMap_codec);
-      if (Unk2700NIJIAJMFLLD != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700NIJIAJMFLLD);
+      if (LastStageId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LastStageId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -229,8 +229,8 @@ namespace Weedwacker.Shared.Network.Proto {
         DifficultyId = other.DifficultyId;
       }
       sumoStageMap_.Add(other.sumoStageMap_);
-      if (other.Unk2700NIJIAJMFLLD != 0) {
-        Unk2700NIJIAJMFLLD = other.Unk2700NIJIAJMFLLD;
+      if (other.LastStageId != 0) {
+        LastStageId = other.LastStageId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -256,7 +256,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk2700NIJIAJMFLLD = input.ReadUInt32();
+            LastStageId = input.ReadUInt32();
             break;
           }
         }
@@ -283,7 +283,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk2700NIJIAJMFLLD = input.ReadUInt32();
+            LastStageId = input.ReadUInt32();
             break;
           }
         }

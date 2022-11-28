@@ -25,35 +25,35 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRQbGF5ZXJMb2dpblJlcS5wcm90bxoYQWRqdXN0VHJhY2tpbmdJbmZvLnBy",
-            "b3RvGhRUcmFja2luZ0lPSW5mby5wcm90byKLCAoOUGxheWVyTG9naW5SZXES",
+            "b3RvGhRUcmFja2luZ0lPSW5mby5wcm90byKJCAoOUGxheWVyTG9naW5SZXES",
             "FQoNbGFuZ3VhZ2VfdHlwZRgGIAEoDRIVCgxyZWdfcGxhdGZvcm0Y5wQgASgN",
             "EioKEHRyYWNraW5nX2lvX2luZm8Y/AwgASgLMg8uVHJhY2tpbmdJT0luZm8S",
             "FAoMYWNjb3VudF90eXBlGA0gASgNEg0KBXRva2VuGA8gASgJEhcKDmV4dHJh",
             "X2Jpbl9kYXRhGLILIAEoDBITCgpjaGFubmVsX2lkGKIKIAEoDRIcChNjbGll",
             "bnRfZGF0YV92ZXJzaW9uGLAFIAEoDRITCgthY2NvdW50X3VpZBgCIAEoCRIW",
-            "Cg5jbGllbnRfdmVyc2lvbhgMIAEoCRIcChNVbmsyNzAwX05HS0NOUEtLSUtC",
-            "GIQGIAEoCRIVCgxjb3VudHJ5X2NvZGUY0A8gASgJEg8KBnBzbl9pZBj0CSAB",
-            "KAkSHAoTVW5rMjcwMF9HUFBCRU1ER0VISBivAyABKA0SEwoLZGV2aWNlX25h",
-            "bWUYCSABKAkSDAoDY3BzGIsJIAEoCRISCgpsb2dpbl9yYW5kGAMgASgEEhoK",
-            "EXRhcmdldF9ob21lX3BhcmFtGNgHIAEoDRIyChRhZGp1c3RfdHJhY2tpbmdf",
-            "aW5mbxiYDiABKAsyEy5BZGp1c3RUcmFja2luZ0luZm8SFAoLaXNfdHJhbnNm",
-            "ZXIYjAcgASgIEgwKA3RhZxj7DSABKA0SEAoIaXNfZ3Vlc3QYBSABKAgSHwoW",
-            "ZW52aXJvbm1lbnRfZXJyb3JfY29kZRjqDyABKAwSEgoJb25saW5lX2lkGIcH",
-            "IAEoCRIRCglpc19lZGl0b3IYCCABKAgSIAoXY2hlY2tzdW1fY2xpZW50X3Zl",
-            "cnNpb24Y3QYgASgJEhsKEnNlY3VyaXR5X2NtZF9yZXBseRjLDyABKAwSHAoT",
-            "VW5rMjcwMF9KTkRLUEJCQ0FDQhi9CSABKAkSEQoIYmlydGhkYXkY9AwgASgJ",
-            "EhMKC2RldmljZV91dWlkGAQgASgJEhUKDGNsaWVudF90b2tlbhiKDCABKA0S",
-            "FgoOc3ViX2NoYW5uZWxfaWQYFyABKA0SEgoKdGFyZ2V0X3VpZBgLIAEoDRIT",
-            "CgtkZXZpY2VfaW5mbxgBIAEoCRIcChNjbGllbnRfdmVyaXNvbl9oYXNoGKsN",
-            "IAEoCRIRCghjaGVja3N1bRj8CyABKAkSFQoNcGxhdGZvcm1fdHlwZRgOIAEo",
-            "DRIeChV0YXJnZXRfaG9tZV9vd25lcl91aWQYyA4gASgNEhgKD2Nsb3VkX2Ns",
-            "aWVudF9pcBi3CiABKA0SDwoGZ21fdWlkGOQEIAEoDRIWCg5zeXN0ZW1fdmVy",
-            "c2lvbhgKIAEoCRIQCghwbGF0Zm9ybRgHIAEoCUIiqgIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "Cg5jbGllbnRfdmVyc2lvbhgMIAEoCRIdChRzZWN1cml0eV9saWJyYXJ5X21k",
+            "NRiEBiABKAkSFQoMY291bnRyeV9jb2RlGNAPIAEoCRIPCgZwc25faWQY9Akg",
+            "ASgJEhQKC2NsaWVudF9wb3J0GK8DIAEoDRITCgtkZXZpY2VfbmFtZRgJIAEo",
+            "CRIMCgNjcHMYiwkgASgJEhIKCmxvZ2luX3JhbmQYAyABKAQSGgoRdGFyZ2V0",
+            "X2hvbWVfcGFyYW0Y2AcgASgNEjIKFGFkanVzdF90cmFja2luZ19pbmZvGJgO",
+            "IAEoCzITLkFkanVzdFRyYWNraW5nSW5mbxIUCgtpc190cmFuc2ZlchiMByAB",
+            "KAgSDAoDdGFnGPsNIAEoDRIQCghpc19ndWVzdBgFIAEoCBIfChZlbnZpcm9u",
+            "bWVudF9lcnJvcl9jb2RlGOoPIAEoDBISCglvbmxpbmVfaWQYhwcgASgJEhEK",
+            "CWlzX2VkaXRvchgIIAEoCBIgChdjaGVja3N1bV9jbGllbnRfdmVyc2lvbhjd",
+            "BiABKAkSGwoSc2VjdXJpdHlfY21kX3JlcGx5GMsPIAEoDBIhChhzZWN1cml0",
+            "eV9saWJyYXJ5X3ZlcnNpb24YvQkgASgJEhEKCGJpcnRoZGF5GPQMIAEoCRIT",
+            "CgtkZXZpY2VfdXVpZBgEIAEoCRIVCgxjbGllbnRfdG9rZW4YigwgASgNEhYK",
+            "DnN1Yl9jaGFubmVsX2lkGBcgASgNEhIKCnRhcmdldF91aWQYCyABKA0SEwoL",
+            "ZGV2aWNlX2luZm8YASABKAkSHAoTY2xpZW50X3Zlcmlzb25faGFzaBirDSAB",
+            "KAkSEQoIY2hlY2tzdW0Y/AsgASgJEhUKDXBsYXRmb3JtX3R5cGUYDiABKA0S",
+            "HgoVdGFyZ2V0X2hvbWVfb3duZXJfdWlkGMgOIAEoDRIYCg9jbG91ZF9jbGll",
+            "bnRfaXAYtwogASgNEg8KBmdtX3VpZBjkBCABKA0SFgoOc3lzdGVtX3ZlcnNp",
+            "b24YCiABKAkSEAoIcGxhdGZvcm0YByABKAlCIqoCH1dlZWR3YWNrZXIuU2hh",
+            "cmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AdjustTrackingInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TrackingIOInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerLoginReq), global::Weedwacker.Shared.Network.Proto.PlayerLoginReq.Parser, new[]{ "LanguageType", "RegPlatform", "TrackingIoInfo", "AccountType", "Token", "ExtraBinData", "ChannelId", "ClientDataVersion", "AccountUid", "ClientVersion", "Unk2700NGKCNPKKIKB", "CountryCode", "PsnId", "Unk2700GPPBEMDGEHH", "DeviceName", "Cps", "LoginRand", "TargetHomeParam", "AdjustTrackingInfo", "IsTransfer", "Tag", "IsGuest", "EnvironmentErrorCode", "OnlineId", "IsEditor", "ChecksumClientVersion", "SecurityCmdReply", "Unk2700JNDKPBBCACB", "Birthday", "DeviceUuid", "ClientToken", "SubChannelId", "TargetUid", "DeviceInfo", "ClientVerisonHash", "Checksum", "PlatformType", "TargetHomeOwnerUid", "CloudClientIp", "GmUid", "SystemVersion", "Platform" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerLoginReq), global::Weedwacker.Shared.Network.Proto.PlayerLoginReq.Parser, new[]{ "LanguageType", "RegPlatform", "TrackingIoInfo", "AccountType", "Token", "ExtraBinData", "ChannelId", "ClientDataVersion", "AccountUid", "ClientVersion", "SecurityLibraryMd5", "CountryCode", "PsnId", "ClientPort", "DeviceName", "Cps", "LoginRand", "TargetHomeParam", "AdjustTrackingInfo", "IsTransfer", "Tag", "IsGuest", "EnvironmentErrorCode", "OnlineId", "IsEditor", "ChecksumClientVersion", "SecurityCmdReply", "SecurityLibraryVersion", "Birthday", "DeviceUuid", "ClientToken", "SubChannelId", "TargetUid", "DeviceInfo", "ClientVerisonHash", "Checksum", "PlatformType", "TargetHomeOwnerUid", "CloudClientIp", "GmUid", "SystemVersion", "Platform" }, null, null, null, null)
           }));
     }
     #endregion
@@ -110,10 +110,10 @@ namespace Weedwacker.Shared.Network.Proto {
       clientDataVersion_ = other.clientDataVersion_;
       accountUid_ = other.accountUid_;
       clientVersion_ = other.clientVersion_;
-      unk2700NGKCNPKKIKB_ = other.unk2700NGKCNPKKIKB_;
+      securityLibraryMd5_ = other.securityLibraryMd5_;
       countryCode_ = other.countryCode_;
       psnId_ = other.psnId_;
-      unk2700GPPBEMDGEHH_ = other.unk2700GPPBEMDGEHH_;
+      clientPort_ = other.clientPort_;
       deviceName_ = other.deviceName_;
       cps_ = other.cps_;
       loginRand_ = other.loginRand_;
@@ -127,7 +127,7 @@ namespace Weedwacker.Shared.Network.Proto {
       isEditor_ = other.isEditor_;
       checksumClientVersion_ = other.checksumClientVersion_;
       securityCmdReply_ = other.securityCmdReply_;
-      unk2700JNDKPBBCACB_ = other.unk2700JNDKPBBCACB_;
+      securityLibraryVersion_ = other.securityLibraryVersion_;
       birthday_ = other.birthday_;
       deviceUuid_ = other.deviceUuid_;
       clientToken_ = other.clientToken_;
@@ -271,15 +271,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_NGKCNPKKIKB" field.</summary>
-    public const int Unk2700NGKCNPKKIKBFieldNumber = 772;
-    private string unk2700NGKCNPKKIKB_ = "";
+    /// <summary>Field number for the "security_library_md5" field.</summary>
+    public const int SecurityLibraryMd5FieldNumber = 772;
+    private string securityLibraryMd5_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Unk2700NGKCNPKKIKB {
-      get { return unk2700NGKCNPKKIKB_; }
+    public string SecurityLibraryMd5 {
+      get { return securityLibraryMd5_; }
       set {
-        unk2700NGKCNPKKIKB_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        securityLibraryMd5_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -307,15 +307,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_GPPBEMDGEHH" field.</summary>
-    public const int Unk2700GPPBEMDGEHHFieldNumber = 431;
-    private uint unk2700GPPBEMDGEHH_;
+    /// <summary>Field number for the "client_port" field.</summary>
+    public const int ClientPortFieldNumber = 431;
+    private uint clientPort_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700GPPBEMDGEHH {
-      get { return unk2700GPPBEMDGEHH_; }
+    public uint ClientPort {
+      get { return clientPort_; }
       set {
-        unk2700GPPBEMDGEHH_ = value;
+        clientPort_ = value;
       }
     }
 
@@ -475,15 +475,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_JNDKPBBCACB" field.</summary>
-    public const int Unk2700JNDKPBBCACBFieldNumber = 1213;
-    private string unk2700JNDKPBBCACB_ = "";
+    /// <summary>Field number for the "security_library_version" field.</summary>
+    public const int SecurityLibraryVersionFieldNumber = 1213;
+    private string securityLibraryVersion_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Unk2700JNDKPBBCACB {
-      get { return unk2700JNDKPBBCACB_; }
+    public string SecurityLibraryVersion {
+      get { return securityLibraryVersion_; }
       set {
-        unk2700JNDKPBBCACB_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        securityLibraryVersion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -680,10 +680,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ClientDataVersion != other.ClientDataVersion) return false;
       if (AccountUid != other.AccountUid) return false;
       if (ClientVersion != other.ClientVersion) return false;
-      if (Unk2700NGKCNPKKIKB != other.Unk2700NGKCNPKKIKB) return false;
+      if (SecurityLibraryMd5 != other.SecurityLibraryMd5) return false;
       if (CountryCode != other.CountryCode) return false;
       if (PsnId != other.PsnId) return false;
-      if (Unk2700GPPBEMDGEHH != other.Unk2700GPPBEMDGEHH) return false;
+      if (ClientPort != other.ClientPort) return false;
       if (DeviceName != other.DeviceName) return false;
       if (Cps != other.Cps) return false;
       if (LoginRand != other.LoginRand) return false;
@@ -697,7 +697,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsEditor != other.IsEditor) return false;
       if (ChecksumClientVersion != other.ChecksumClientVersion) return false;
       if (SecurityCmdReply != other.SecurityCmdReply) return false;
-      if (Unk2700JNDKPBBCACB != other.Unk2700JNDKPBBCACB) return false;
+      if (SecurityLibraryVersion != other.SecurityLibraryVersion) return false;
       if (Birthday != other.Birthday) return false;
       if (DeviceUuid != other.DeviceUuid) return false;
       if (ClientToken != other.ClientToken) return false;
@@ -729,10 +729,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ClientDataVersion != 0) hash ^= ClientDataVersion.GetHashCode();
       if (AccountUid.Length != 0) hash ^= AccountUid.GetHashCode();
       if (ClientVersion.Length != 0) hash ^= ClientVersion.GetHashCode();
-      if (Unk2700NGKCNPKKIKB.Length != 0) hash ^= Unk2700NGKCNPKKIKB.GetHashCode();
+      if (SecurityLibraryMd5.Length != 0) hash ^= SecurityLibraryMd5.GetHashCode();
       if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
       if (PsnId.Length != 0) hash ^= PsnId.GetHashCode();
-      if (Unk2700GPPBEMDGEHH != 0) hash ^= Unk2700GPPBEMDGEHH.GetHashCode();
+      if (ClientPort != 0) hash ^= ClientPort.GetHashCode();
       if (DeviceName.Length != 0) hash ^= DeviceName.GetHashCode();
       if (Cps.Length != 0) hash ^= Cps.GetHashCode();
       if (LoginRand != 0UL) hash ^= LoginRand.GetHashCode();
@@ -746,7 +746,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsEditor != false) hash ^= IsEditor.GetHashCode();
       if (ChecksumClientVersion.Length != 0) hash ^= ChecksumClientVersion.GetHashCode();
       if (SecurityCmdReply.Length != 0) hash ^= SecurityCmdReply.GetHashCode();
-      if (Unk2700JNDKPBBCACB.Length != 0) hash ^= Unk2700JNDKPBBCACB.GetHashCode();
+      if (SecurityLibraryVersion.Length != 0) hash ^= SecurityLibraryVersion.GetHashCode();
       if (Birthday.Length != 0) hash ^= Birthday.GetHashCode();
       if (DeviceUuid.Length != 0) hash ^= DeviceUuid.GetHashCode();
       if (ClientToken != 0) hash ^= ClientToken.GetHashCode();
@@ -843,9 +843,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(184, 1);
         output.WriteUInt32(SubChannelId);
       }
-      if (Unk2700GPPBEMDGEHH != 0) {
+      if (ClientPort != 0) {
         output.WriteRawTag(248, 26);
-        output.WriteUInt32(Unk2700GPPBEMDGEHH);
+        output.WriteUInt32(ClientPort);
       }
       if (GmUid != 0) {
         output.WriteRawTag(160, 38);
@@ -859,9 +859,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(128, 43);
         output.WriteUInt32(ClientDataVersion);
       }
-      if (Unk2700NGKCNPKKIKB.Length != 0) {
+      if (SecurityLibraryMd5.Length != 0) {
         output.WriteRawTag(162, 48);
-        output.WriteString(Unk2700NGKCNPKKIKB);
+        output.WriteString(SecurityLibraryMd5);
       }
       if (ChecksumClientVersion.Length != 0) {
         output.WriteRawTag(234, 53);
@@ -883,9 +883,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(218, 72);
         output.WriteString(Cps);
       }
-      if (Unk2700JNDKPBBCACB.Length != 0) {
+      if (SecurityLibraryVersion.Length != 0) {
         output.WriteRawTag(234, 75);
-        output.WriteString(Unk2700JNDKPBBCACB);
+        output.WriteString(SecurityLibraryVersion);
       }
       if (PsnId.Length != 0) {
         output.WriteRawTag(162, 79);
@@ -1021,9 +1021,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(184, 1);
         output.WriteUInt32(SubChannelId);
       }
-      if (Unk2700GPPBEMDGEHH != 0) {
+      if (ClientPort != 0) {
         output.WriteRawTag(248, 26);
-        output.WriteUInt32(Unk2700GPPBEMDGEHH);
+        output.WriteUInt32(ClientPort);
       }
       if (GmUid != 0) {
         output.WriteRawTag(160, 38);
@@ -1037,9 +1037,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(128, 43);
         output.WriteUInt32(ClientDataVersion);
       }
-      if (Unk2700NGKCNPKKIKB.Length != 0) {
+      if (SecurityLibraryMd5.Length != 0) {
         output.WriteRawTag(162, 48);
-        output.WriteString(Unk2700NGKCNPKKIKB);
+        output.WriteString(SecurityLibraryMd5);
       }
       if (ChecksumClientVersion.Length != 0) {
         output.WriteRawTag(234, 53);
@@ -1061,9 +1061,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(218, 72);
         output.WriteString(Cps);
       }
-      if (Unk2700JNDKPBBCACB.Length != 0) {
+      if (SecurityLibraryVersion.Length != 0) {
         output.WriteRawTag(234, 75);
-        output.WriteString(Unk2700JNDKPBBCACB);
+        output.WriteString(SecurityLibraryVersion);
       }
       if (PsnId.Length != 0) {
         output.WriteRawTag(162, 79);
@@ -1165,8 +1165,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ClientVersion.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ClientVersion);
       }
-      if (Unk2700NGKCNPKKIKB.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(Unk2700NGKCNPKKIKB);
+      if (SecurityLibraryMd5.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(SecurityLibraryMd5);
       }
       if (CountryCode.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
@@ -1174,8 +1174,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (PsnId.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(PsnId);
       }
-      if (Unk2700GPPBEMDGEHH != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700GPPBEMDGEHH);
+      if (ClientPort != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(ClientPort);
       }
       if (DeviceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(DeviceName);
@@ -1216,8 +1216,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (SecurityCmdReply.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeBytesSize(SecurityCmdReply);
       }
-      if (Unk2700JNDKPBBCACB.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(Unk2700JNDKPBBCACB);
+      if (SecurityLibraryVersion.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(SecurityLibraryVersion);
       }
       if (Birthday.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Birthday);
@@ -1306,8 +1306,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.ClientVersion.Length != 0) {
         ClientVersion = other.ClientVersion;
       }
-      if (other.Unk2700NGKCNPKKIKB.Length != 0) {
-        Unk2700NGKCNPKKIKB = other.Unk2700NGKCNPKKIKB;
+      if (other.SecurityLibraryMd5.Length != 0) {
+        SecurityLibraryMd5 = other.SecurityLibraryMd5;
       }
       if (other.CountryCode.Length != 0) {
         CountryCode = other.CountryCode;
@@ -1315,8 +1315,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.PsnId.Length != 0) {
         PsnId = other.PsnId;
       }
-      if (other.Unk2700GPPBEMDGEHH != 0) {
-        Unk2700GPPBEMDGEHH = other.Unk2700GPPBEMDGEHH;
+      if (other.ClientPort != 0) {
+        ClientPort = other.ClientPort;
       }
       if (other.DeviceName.Length != 0) {
         DeviceName = other.DeviceName;
@@ -1360,8 +1360,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.SecurityCmdReply.Length != 0) {
         SecurityCmdReply = other.SecurityCmdReply;
       }
-      if (other.Unk2700JNDKPBBCACB.Length != 0) {
-        Unk2700JNDKPBBCACB = other.Unk2700JNDKPBBCACB;
+      if (other.SecurityLibraryVersion.Length != 0) {
+        SecurityLibraryVersion = other.SecurityLibraryVersion;
       }
       if (other.Birthday.Length != 0) {
         Birthday = other.Birthday;
@@ -1485,7 +1485,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 3448: {
-            Unk2700GPPBEMDGEHH = input.ReadUInt32();
+            ClientPort = input.ReadUInt32();
             break;
           }
           case 4896: {
@@ -1501,7 +1501,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 6178: {
-            Unk2700NGKCNPKKIKB = input.ReadString();
+            SecurityLibraryMd5 = input.ReadString();
             break;
           }
           case 6890: {
@@ -1525,7 +1525,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 9706: {
-            Unk2700JNDKPBBCACB = input.ReadString();
+            SecurityLibraryVersion = input.ReadString();
             break;
           }
           case 10146: {
@@ -1674,7 +1674,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 3448: {
-            Unk2700GPPBEMDGEHH = input.ReadUInt32();
+            ClientPort = input.ReadUInt32();
             break;
           }
           case 4896: {
@@ -1690,7 +1690,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 6178: {
-            Unk2700NGKCNPKKIKB = input.ReadString();
+            SecurityLibraryMd5 = input.ReadString();
             break;
           }
           case 6890: {
@@ -1714,7 +1714,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 9706: {
-            Unk2700JNDKPBBCACB = input.ReadString();
+            SecurityLibraryVersion = input.ReadString();
             break;
           }
           case 10146: {

@@ -25,15 +25,15 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci9MdW1pbmFuY2VTdG9uZUNoYWxsZW5nZUFjdGl2aXR5RGV0YWlsSW5mby5w",
-            "cm90byKUAQopTHVtaW5hbmNlU3RvbmVDaGFsbGVuZ2VBY3Rpdml0eURldGFp",
+            "cm90byKXAQopTHVtaW5hbmNlU3RvbmVDaGFsbGVuZ2VBY3Rpdml0eURldGFp",
             "bEluZm8SEgoKYmVzdF9zY29yZRgLIAEoDRIZChFpc19jb250ZW50X2Nsb3Nl",
-            "ZBgGIAEoCBIbChNVbmsyNzAwX0NLR01OTFBERkNJGAwgASgIEhsKE1VuazI3",
-            "MDBfTk5MQklBRk1IUEEYDyABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "ZBgGIAEoCBIhChlpc19maW5hbF9nYWxsZXJ5X2NvbXBsZXRlGAwgASgIEhgK",
+            "EGN1cnJlbnRfc3RhZ2VfaWQYDyABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.LuminanceStoneChallengeActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.LuminanceStoneChallengeActivityDetailInfo.Parser, new[]{ "BestScore", "IsContentClosed", "Unk2700CKGMNLPDFCI", "Unk2700NNLBIAFMHPA" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.LuminanceStoneChallengeActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.LuminanceStoneChallengeActivityDetailInfo.Parser, new[]{ "BestScore", "IsContentClosed", "IsFinalGalleryComplete", "CurrentStageId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,8 +76,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public LuminanceStoneChallengeActivityDetailInfo(LuminanceStoneChallengeActivityDetailInfo other) : this() {
       bestScore_ = other.bestScore_;
       isContentClosed_ = other.isContentClosed_;
-      unk2700CKGMNLPDFCI_ = other.unk2700CKGMNLPDFCI_;
-      unk2700NNLBIAFMHPA_ = other.unk2700NNLBIAFMHPA_;
+      isFinalGalleryComplete_ = other.isFinalGalleryComplete_;
+      currentStageId_ = other.currentStageId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -111,27 +111,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_CKGMNLPDFCI" field.</summary>
-    public const int Unk2700CKGMNLPDFCIFieldNumber = 12;
-    private bool unk2700CKGMNLPDFCI_;
+    /// <summary>Field number for the "is_final_gallery_complete" field.</summary>
+    public const int IsFinalGalleryCompleteFieldNumber = 12;
+    private bool isFinalGalleryComplete_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700CKGMNLPDFCI {
-      get { return unk2700CKGMNLPDFCI_; }
+    public bool IsFinalGalleryComplete {
+      get { return isFinalGalleryComplete_; }
       set {
-        unk2700CKGMNLPDFCI_ = value;
+        isFinalGalleryComplete_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_NNLBIAFMHPA" field.</summary>
-    public const int Unk2700NNLBIAFMHPAFieldNumber = 15;
-    private uint unk2700NNLBIAFMHPA_;
+    /// <summary>Field number for the "current_stage_id" field.</summary>
+    public const int CurrentStageIdFieldNumber = 15;
+    private uint currentStageId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700NNLBIAFMHPA {
-      get { return unk2700NNLBIAFMHPA_; }
+    public uint CurrentStageId {
+      get { return currentStageId_; }
       set {
-        unk2700NNLBIAFMHPA_ = value;
+        currentStageId_ = value;
       }
     }
 
@@ -152,8 +152,8 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (BestScore != other.BestScore) return false;
       if (IsContentClosed != other.IsContentClosed) return false;
-      if (Unk2700CKGMNLPDFCI != other.Unk2700CKGMNLPDFCI) return false;
-      if (Unk2700NNLBIAFMHPA != other.Unk2700NNLBIAFMHPA) return false;
+      if (IsFinalGalleryComplete != other.IsFinalGalleryComplete) return false;
+      if (CurrentStageId != other.CurrentStageId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -163,8 +163,8 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (BestScore != 0) hash ^= BestScore.GetHashCode();
       if (IsContentClosed != false) hash ^= IsContentClosed.GetHashCode();
-      if (Unk2700CKGMNLPDFCI != false) hash ^= Unk2700CKGMNLPDFCI.GetHashCode();
-      if (Unk2700NNLBIAFMHPA != 0) hash ^= Unk2700NNLBIAFMHPA.GetHashCode();
+      if (IsFinalGalleryComplete != false) hash ^= IsFinalGalleryComplete.GetHashCode();
+      if (CurrentStageId != 0) hash ^= CurrentStageId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -191,13 +191,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(88);
         output.WriteUInt32(BestScore);
       }
-      if (Unk2700CKGMNLPDFCI != false) {
+      if (IsFinalGalleryComplete != false) {
         output.WriteRawTag(96);
-        output.WriteBool(Unk2700CKGMNLPDFCI);
+        output.WriteBool(IsFinalGalleryComplete);
       }
-      if (Unk2700NNLBIAFMHPA != 0) {
+      if (CurrentStageId != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk2700NNLBIAFMHPA);
+        output.WriteUInt32(CurrentStageId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -217,13 +217,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(88);
         output.WriteUInt32(BestScore);
       }
-      if (Unk2700CKGMNLPDFCI != false) {
+      if (IsFinalGalleryComplete != false) {
         output.WriteRawTag(96);
-        output.WriteBool(Unk2700CKGMNLPDFCI);
+        output.WriteBool(IsFinalGalleryComplete);
       }
-      if (Unk2700NNLBIAFMHPA != 0) {
+      if (CurrentStageId != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk2700NNLBIAFMHPA);
+        output.WriteUInt32(CurrentStageId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -241,11 +241,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsContentClosed != false) {
         size += 1 + 1;
       }
-      if (Unk2700CKGMNLPDFCI != false) {
+      if (IsFinalGalleryComplete != false) {
         size += 1 + 1;
       }
-      if (Unk2700NNLBIAFMHPA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700NNLBIAFMHPA);
+      if (CurrentStageId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurrentStageId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -265,11 +265,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.IsContentClosed != false) {
         IsContentClosed = other.IsContentClosed;
       }
-      if (other.Unk2700CKGMNLPDFCI != false) {
-        Unk2700CKGMNLPDFCI = other.Unk2700CKGMNLPDFCI;
+      if (other.IsFinalGalleryComplete != false) {
+        IsFinalGalleryComplete = other.IsFinalGalleryComplete;
       }
-      if (other.Unk2700NNLBIAFMHPA != 0) {
-        Unk2700NNLBIAFMHPA = other.Unk2700NNLBIAFMHPA;
+      if (other.CurrentStageId != 0) {
+        CurrentStageId = other.CurrentStageId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -295,11 +295,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk2700CKGMNLPDFCI = input.ReadBool();
+            IsFinalGalleryComplete = input.ReadBool();
             break;
           }
           case 120: {
-            Unk2700NNLBIAFMHPA = input.ReadUInt32();
+            CurrentStageId = input.ReadUInt32();
             break;
           }
         }
@@ -326,11 +326,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk2700CKGMNLPDFCI = input.ReadBool();
+            IsFinalGalleryComplete = input.ReadBool();
             break;
           }
           case 120: {
-            Unk2700NNLBIAFMHPA = input.ReadUInt32();
+            CurrentStageId = input.ReadUInt32();
             break;
           }
         }

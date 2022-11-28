@@ -43,7 +43,6 @@ namespace Weedwacker.Shared.Network.Proto {
   /// CmdId: 394
   /// EnetChannelId: 0
   /// EnetIsReliable: true
-  /// IsAllowClient: true
   /// </summary>
   public sealed partial class EntityAuthorityChangeNotify : pb::IMessage<EntityAuthorityChangeNotify>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
