@@ -87,15 +87,15 @@ namespace Weedwacker.GameServer.Packet.Recv
                         break;
                     case CombatTypeArgument.BeingHealedNtf:
                         //TODO
-                        info = EvtLightCoreMove.Parser.ParseFrom(data);
+                        info = EvtBeingHealedNotify.Parser.ParseFrom(data);
                         break;
                     case CombatTypeArgument.GrapplingHookMove:
                         //TODO
-                        info = EvtLightCoreMove.Parser.ParseFrom(data);
+                        info = EvtGrapplingHookMove.Parser.ParseFrom(data);
                         break;
                     case CombatTypeArgument.SkillAnchorPositionNtf:
                         //TODO
-                        info = EvtLightCoreMove.Parser.ParseFrom(data);
+                        info = EvtSyncSkillAnchorPosition.Parser.ParseFrom(data);
                         break;
                     default:
                         info = new EntityMoveInfo();
