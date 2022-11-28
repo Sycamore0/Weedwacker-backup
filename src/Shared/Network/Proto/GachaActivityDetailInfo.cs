@@ -24,22 +24,22 @@ namespace Weedwacker.Shared.Network.Proto {
     static GachaActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1HYWNoYUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoQR2FjaGFTdGFnZS5w",
-            "cm90byKrAwoXR2FjaGFBY3Rpdml0eURldGFpbEluZm8SGwoTVW5rMjcwMF9Q",
-            "SURIS05MREFMQhgGIAMoDRIlChBnYWNoYV9zdGFnZV9saXN0GAQgAygLMgsu",
-            "R2FjaGFTdGFnZRJNChNVbmsyNzAwX0tPSEtCQ0FCSUNEGAggAygLMjAuR2Fj",
-            "aGFBY3Rpdml0eURldGFpbEluZm8uVW5rMjcwMEtPSEtCQ0FCSUNERW50cnkS",
-            "GwoTVW5rMjcwMF9DRFBBUEJJT1BDQRgDIAEoDRJNChNVbmsyNzAwX0RBQ0hI",
-            "SU5MRERKGAUgAygLMjAuR2FjaGFBY3Rpdml0eURldGFpbEluZm8uVW5rMjcw",
-            "MERBQ0hISU5MRERKRW50cnkSGwoTVW5rMjcwMF9GR0ZHTERJSkpFSxgMIAEo",
-            "DRo5ChdVbmsyNzAwS09IS0JDQUJJQ0RFbnRyeRILCgNrZXkYASABKA0SDQoF",
-            "dmFsdWUYAiABKA06AjgBGjkKF1VuazI3MDBEQUNISElOTERESkVudHJ5EgsK",
-            "A2tleRgBIAEoDRINCgV2YWx1ZRgCIAEoDToCOAFCIqoCH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "Ch1HYWNoYUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoUR2FjaGFTdGFnZURh",
+            "dGEucHJvdG8ipQMKF0dhY2hhQWN0aXZpdHlEZXRhaWxJbmZvEhsKE2hhdmVf",
+            "Z2V0X3JvYm90X2xpc3QYBiADKA0SKQoQZ2FjaGFfc3RhZ2VfbGlzdBgEIAMo",
+            "CzIPLkdhY2hhU3RhZ2VEYXRhElYKGWhhdmVfcmV3YXJkX3JvYm90X251bV9t",
+            "YXAYCCADKAsyMy5HYWNoYUFjdGl2aXR5RGV0YWlsSW5mby5IYXZlUmV3YXJk",
+            "Um9ib3ROdW1NYXBFbnRyeRIcChR0ZWNoX2NyZWF0ZV9yb2JvdF9pZBgDIAEo",
+            "DRJACg1yb2JvdF9udW1fbWFwGAUgAygLMikuR2FjaGFBY3Rpdml0eURldGFp",
+            "bEluZm8uUm9ib3ROdW1NYXBFbnRyeRIYChByb2JvdF9maW5pc2hfbnVtGAwg",
+            "ASgNGjwKGkhhdmVSZXdhcmRSb2JvdE51bU1hcEVudHJ5EgsKA2tleRgBIAEo",
+            "DRINCgV2YWx1ZRgCIAEoDToCOAEaMgoQUm9ib3ROdW1NYXBFbnRyeRILCgNr",
+            "ZXkYASABKA0SDQoFdmFsdWUYAiABKA06AjgBQiKqAh9XZWVkd2Fja2VyLlNo",
+            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GachaStageReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GachaStageDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GachaActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.GachaActivityDetailInfo.Parser, new[]{ "Unk2700PIDHKNLDALB", "GachaStageList", "Unk2700KOHKBCABICD", "Unk2700CDPAPBIOPCA", "Unk2700DACHHINLDDJ", "Unk2700FGFGLDIJJEK" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GachaActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.GachaActivityDetailInfo.Parser, new[]{ "HaveGetRobotList", "GachaStageList", "HaveRewardRobotNumMap", "TechCreateRobotId", "RobotNumMap", "RobotFinishNum" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
           }));
     }
     #endregion
@@ -80,12 +80,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GachaActivityDetailInfo(GachaActivityDetailInfo other) : this() {
-      unk2700PIDHKNLDALB_ = other.unk2700PIDHKNLDALB_.Clone();
+      haveGetRobotList_ = other.haveGetRobotList_.Clone();
       gachaStageList_ = other.gachaStageList_.Clone();
-      unk2700KOHKBCABICD_ = other.unk2700KOHKBCABICD_.Clone();
-      unk2700CDPAPBIOPCA_ = other.unk2700CDPAPBIOPCA_;
-      unk2700DACHHINLDDJ_ = other.unk2700DACHHINLDDJ_.Clone();
-      unk2700FGFGLDIJJEK_ = other.unk2700FGFGLDIJJEK_;
+      haveRewardRobotNumMap_ = other.haveRewardRobotNumMap_.Clone();
+      techCreateRobotId_ = other.techCreateRobotId_;
+      robotNumMap_ = other.robotNumMap_.Clone();
+      robotFinishNum_ = other.robotFinishNum_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -95,71 +95,71 @@ namespace Weedwacker.Shared.Network.Proto {
       return new GachaActivityDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_PIDHKNLDALB" field.</summary>
-    public const int Unk2700PIDHKNLDALBFieldNumber = 6;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700PIDHKNLDALB_codec
+    /// <summary>Field number for the "have_get_robot_list" field.</summary>
+    public const int HaveGetRobotListFieldNumber = 6;
+    private static readonly pb::FieldCodec<uint> _repeated_haveGetRobotList_codec
         = pb::FieldCodec.ForUInt32(50);
-    private readonly pbc::RepeatedField<uint> unk2700PIDHKNLDALB_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> haveGetRobotList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700PIDHKNLDALB {
-      get { return unk2700PIDHKNLDALB_; }
+    public pbc::RepeatedField<uint> HaveGetRobotList {
+      get { return haveGetRobotList_; }
     }
 
     /// <summary>Field number for the "gacha_stage_list" field.</summary>
     public const int GachaStageListFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.GachaStage> _repeated_gachaStageList_codec
-        = pb::FieldCodec.ForMessage(34, global::Weedwacker.Shared.Network.Proto.GachaStage.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaStage> gachaStageList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaStage>();
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.GachaStageData> _repeated_gachaStageList_codec
+        = pb::FieldCodec.ForMessage(34, global::Weedwacker.Shared.Network.Proto.GachaStageData.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaStageData> gachaStageList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaStageData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaStage> GachaStageList {
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaStageData> GachaStageList {
       get { return gachaStageList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_KOHKBCABICD" field.</summary>
-    public const int Unk2700KOHKBCABICDFieldNumber = 8;
-    private static readonly pbc::MapField<uint, uint>.Codec _map_unk2700KOHKBCABICD_codec
+    /// <summary>Field number for the "have_reward_robot_num_map" field.</summary>
+    public const int HaveRewardRobotNumMapFieldNumber = 8;
+    private static readonly pbc::MapField<uint, uint>.Codec _map_haveRewardRobotNumMap_codec
         = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 66);
-    private readonly pbc::MapField<uint, uint> unk2700KOHKBCABICD_ = new pbc::MapField<uint, uint>();
+    private readonly pbc::MapField<uint, uint> haveRewardRobotNumMap_ = new pbc::MapField<uint, uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, uint> Unk2700KOHKBCABICD {
-      get { return unk2700KOHKBCABICD_; }
+    public pbc::MapField<uint, uint> HaveRewardRobotNumMap {
+      get { return haveRewardRobotNumMap_; }
     }
 
-    /// <summary>Field number for the "Unk2700_CDPAPBIOPCA" field.</summary>
-    public const int Unk2700CDPAPBIOPCAFieldNumber = 3;
-    private uint unk2700CDPAPBIOPCA_;
+    /// <summary>Field number for the "tech_create_robot_id" field.</summary>
+    public const int TechCreateRobotIdFieldNumber = 3;
+    private uint techCreateRobotId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700CDPAPBIOPCA {
-      get { return unk2700CDPAPBIOPCA_; }
+    public uint TechCreateRobotId {
+      get { return techCreateRobotId_; }
       set {
-        unk2700CDPAPBIOPCA_ = value;
+        techCreateRobotId_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_DACHHINLDDJ" field.</summary>
-    public const int Unk2700DACHHINLDDJFieldNumber = 5;
-    private static readonly pbc::MapField<uint, uint>.Codec _map_unk2700DACHHINLDDJ_codec
+    /// <summary>Field number for the "robot_num_map" field.</summary>
+    public const int RobotNumMapFieldNumber = 5;
+    private static readonly pbc::MapField<uint, uint>.Codec _map_robotNumMap_codec
         = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 42);
-    private readonly pbc::MapField<uint, uint> unk2700DACHHINLDDJ_ = new pbc::MapField<uint, uint>();
+    private readonly pbc::MapField<uint, uint> robotNumMap_ = new pbc::MapField<uint, uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, uint> Unk2700DACHHINLDDJ {
-      get { return unk2700DACHHINLDDJ_; }
+    public pbc::MapField<uint, uint> RobotNumMap {
+      get { return robotNumMap_; }
     }
 
-    /// <summary>Field number for the "Unk2700_FGFGLDIJJEK" field.</summary>
-    public const int Unk2700FGFGLDIJJEKFieldNumber = 12;
-    private uint unk2700FGFGLDIJJEK_;
+    /// <summary>Field number for the "robot_finish_num" field.</summary>
+    public const int RobotFinishNumFieldNumber = 12;
+    private uint robotFinishNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700FGFGLDIJJEK {
-      get { return unk2700FGFGLDIJJEK_; }
+    public uint RobotFinishNum {
+      get { return robotFinishNum_; }
       set {
-        unk2700FGFGLDIJJEK_ = value;
+        robotFinishNum_ = value;
       }
     }
 
@@ -178,12 +178,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2700PIDHKNLDALB_.Equals(other.unk2700PIDHKNLDALB_)) return false;
+      if(!haveGetRobotList_.Equals(other.haveGetRobotList_)) return false;
       if(!gachaStageList_.Equals(other.gachaStageList_)) return false;
-      if (!Unk2700KOHKBCABICD.Equals(other.Unk2700KOHKBCABICD)) return false;
-      if (Unk2700CDPAPBIOPCA != other.Unk2700CDPAPBIOPCA) return false;
-      if (!Unk2700DACHHINLDDJ.Equals(other.Unk2700DACHHINLDDJ)) return false;
-      if (Unk2700FGFGLDIJJEK != other.Unk2700FGFGLDIJJEK) return false;
+      if (!HaveRewardRobotNumMap.Equals(other.HaveRewardRobotNumMap)) return false;
+      if (TechCreateRobotId != other.TechCreateRobotId) return false;
+      if (!RobotNumMap.Equals(other.RobotNumMap)) return false;
+      if (RobotFinishNum != other.RobotFinishNum) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -191,12 +191,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2700PIDHKNLDALB_.GetHashCode();
+      hash ^= haveGetRobotList_.GetHashCode();
       hash ^= gachaStageList_.GetHashCode();
-      hash ^= Unk2700KOHKBCABICD.GetHashCode();
-      if (Unk2700CDPAPBIOPCA != 0) hash ^= Unk2700CDPAPBIOPCA.GetHashCode();
-      hash ^= Unk2700DACHHINLDDJ.GetHashCode();
-      if (Unk2700FGFGLDIJJEK != 0) hash ^= Unk2700FGFGLDIJJEK.GetHashCode();
+      hash ^= HaveRewardRobotNumMap.GetHashCode();
+      if (TechCreateRobotId != 0) hash ^= TechCreateRobotId.GetHashCode();
+      hash ^= RobotNumMap.GetHashCode();
+      if (RobotFinishNum != 0) hash ^= RobotFinishNum.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -215,17 +215,17 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700CDPAPBIOPCA != 0) {
+      if (TechCreateRobotId != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk2700CDPAPBIOPCA);
+        output.WriteUInt32(TechCreateRobotId);
       }
       gachaStageList_.WriteTo(output, _repeated_gachaStageList_codec);
-      unk2700DACHHINLDDJ_.WriteTo(output, _map_unk2700DACHHINLDDJ_codec);
-      unk2700PIDHKNLDALB_.WriteTo(output, _repeated_unk2700PIDHKNLDALB_codec);
-      unk2700KOHKBCABICD_.WriteTo(output, _map_unk2700KOHKBCABICD_codec);
-      if (Unk2700FGFGLDIJJEK != 0) {
+      robotNumMap_.WriteTo(output, _map_robotNumMap_codec);
+      haveGetRobotList_.WriteTo(output, _repeated_haveGetRobotList_codec);
+      haveRewardRobotNumMap_.WriteTo(output, _map_haveRewardRobotNumMap_codec);
+      if (RobotFinishNum != 0) {
         output.WriteRawTag(96);
-        output.WriteUInt32(Unk2700FGFGLDIJJEK);
+        output.WriteUInt32(RobotFinishNum);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -237,17 +237,17 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700CDPAPBIOPCA != 0) {
+      if (TechCreateRobotId != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk2700CDPAPBIOPCA);
+        output.WriteUInt32(TechCreateRobotId);
       }
       gachaStageList_.WriteTo(ref output, _repeated_gachaStageList_codec);
-      unk2700DACHHINLDDJ_.WriteTo(ref output, _map_unk2700DACHHINLDDJ_codec);
-      unk2700PIDHKNLDALB_.WriteTo(ref output, _repeated_unk2700PIDHKNLDALB_codec);
-      unk2700KOHKBCABICD_.WriteTo(ref output, _map_unk2700KOHKBCABICD_codec);
-      if (Unk2700FGFGLDIJJEK != 0) {
+      robotNumMap_.WriteTo(ref output, _map_robotNumMap_codec);
+      haveGetRobotList_.WriteTo(ref output, _repeated_haveGetRobotList_codec);
+      haveRewardRobotNumMap_.WriteTo(ref output, _map_haveRewardRobotNumMap_codec);
+      if (RobotFinishNum != 0) {
         output.WriteRawTag(96);
-        output.WriteUInt32(Unk2700FGFGLDIJJEK);
+        output.WriteUInt32(RobotFinishNum);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -259,15 +259,15 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2700PIDHKNLDALB_.CalculateSize(_repeated_unk2700PIDHKNLDALB_codec);
+      size += haveGetRobotList_.CalculateSize(_repeated_haveGetRobotList_codec);
       size += gachaStageList_.CalculateSize(_repeated_gachaStageList_codec);
-      size += unk2700KOHKBCABICD_.CalculateSize(_map_unk2700KOHKBCABICD_codec);
-      if (Unk2700CDPAPBIOPCA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700CDPAPBIOPCA);
+      size += haveRewardRobotNumMap_.CalculateSize(_map_haveRewardRobotNumMap_codec);
+      if (TechCreateRobotId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TechCreateRobotId);
       }
-      size += unk2700DACHHINLDDJ_.CalculateSize(_map_unk2700DACHHINLDDJ_codec);
-      if (Unk2700FGFGLDIJJEK != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700FGFGLDIJJEK);
+      size += robotNumMap_.CalculateSize(_map_robotNumMap_codec);
+      if (RobotFinishNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RobotFinishNum);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -281,15 +281,15 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2700PIDHKNLDALB_.Add(other.unk2700PIDHKNLDALB_);
+      haveGetRobotList_.Add(other.haveGetRobotList_);
       gachaStageList_.Add(other.gachaStageList_);
-      unk2700KOHKBCABICD_.Add(other.unk2700KOHKBCABICD_);
-      if (other.Unk2700CDPAPBIOPCA != 0) {
-        Unk2700CDPAPBIOPCA = other.Unk2700CDPAPBIOPCA;
+      haveRewardRobotNumMap_.Add(other.haveRewardRobotNumMap_);
+      if (other.TechCreateRobotId != 0) {
+        TechCreateRobotId = other.TechCreateRobotId;
       }
-      unk2700DACHHINLDDJ_.Add(other.unk2700DACHHINLDDJ_);
-      if (other.Unk2700FGFGLDIJJEK != 0) {
-        Unk2700FGFGLDIJJEK = other.Unk2700FGFGLDIJJEK;
+      robotNumMap_.Add(other.robotNumMap_);
+      if (other.RobotFinishNum != 0) {
+        RobotFinishNum = other.RobotFinishNum;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -307,7 +307,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 24: {
-            Unk2700CDPAPBIOPCA = input.ReadUInt32();
+            TechCreateRobotId = input.ReadUInt32();
             break;
           }
           case 34: {
@@ -315,20 +315,20 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 42: {
-            unk2700DACHHINLDDJ_.AddEntriesFrom(input, _map_unk2700DACHHINLDDJ_codec);
+            robotNumMap_.AddEntriesFrom(input, _map_robotNumMap_codec);
             break;
           }
           case 50:
           case 48: {
-            unk2700PIDHKNLDALB_.AddEntriesFrom(input, _repeated_unk2700PIDHKNLDALB_codec);
+            haveGetRobotList_.AddEntriesFrom(input, _repeated_haveGetRobotList_codec);
             break;
           }
           case 66: {
-            unk2700KOHKBCABICD_.AddEntriesFrom(input, _map_unk2700KOHKBCABICD_codec);
+            haveRewardRobotNumMap_.AddEntriesFrom(input, _map_haveRewardRobotNumMap_codec);
             break;
           }
           case 96: {
-            Unk2700FGFGLDIJJEK = input.ReadUInt32();
+            RobotFinishNum = input.ReadUInt32();
             break;
           }
         }
@@ -347,7 +347,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 24: {
-            Unk2700CDPAPBIOPCA = input.ReadUInt32();
+            TechCreateRobotId = input.ReadUInt32();
             break;
           }
           case 34: {
@@ -355,20 +355,20 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 42: {
-            unk2700DACHHINLDDJ_.AddEntriesFrom(ref input, _map_unk2700DACHHINLDDJ_codec);
+            robotNumMap_.AddEntriesFrom(ref input, _map_robotNumMap_codec);
             break;
           }
           case 50:
           case 48: {
-            unk2700PIDHKNLDALB_.AddEntriesFrom(ref input, _repeated_unk2700PIDHKNLDALB_codec);
+            haveGetRobotList_.AddEntriesFrom(ref input, _repeated_haveGetRobotList_codec);
             break;
           }
           case 66: {
-            unk2700KOHKBCABICD_.AddEntriesFrom(ref input, _map_unk2700KOHKBCABICD_codec);
+            haveRewardRobotNumMap_.AddEntriesFrom(ref input, _map_haveRewardRobotNumMap_codec);
             break;
           }
           case 96: {
-            Unk2700FGFGLDIJJEK = input.ReadUInt32();
+            RobotFinishNum = input.ReadUInt32();
             break;
           }
         }

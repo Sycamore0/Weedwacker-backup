@@ -24,16 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static PotionDungeonResultInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1Qb3Rpb25EdW5nZW9uUmVzdWx0SW5mby5wcm90byKfAQoXUG90aW9uRHVu",
+            "Ch1Qb3Rpb25EdW5nZW9uUmVzdWx0SW5mby5wcm90byKQAQoXUG90aW9uRHVu",
             "Z2VvblJlc3VsdEluZm8SEwoLZmluYWxfc2NvcmUYCCABKA0SEQoJbGVmdF90",
-            "aW1lGAkgASgNEhsKE1VuazI3MDBfRkhFSEdEQUJBTEUYDiABKA0SGwoTVW5r",
-            "MjcwMF9IS0ZFQkJDTUJITBgLIAEoDRIQCghsZXZlbF9pZBgEIAEoDRIQCghz",
-            "dGFnZV9pZBgCIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90b2IGcHJvdG8z"));
+            "aW1lGAkgASgNEhgKEGRpZmZpY3VsdHlfbGV2ZWwYDiABKA0SDwoHbW9kZV9p",
+            "ZBgLIAEoDRIQCghsZXZlbF9pZBgEIAEoDRIQCghzdGFnZV9pZBgCIAEoDUIi",
+            "qgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PotionDungeonResultInfo), global::Weedwacker.Shared.Network.Proto.PotionDungeonResultInfo.Parser, new[]{ "FinalScore", "LeftTime", "Unk2700FHEHGDABALE", "Unk2700HKFEBBCMBHL", "LevelId", "StageId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PotionDungeonResultInfo), global::Weedwacker.Shared.Network.Proto.PotionDungeonResultInfo.Parser, new[]{ "FinalScore", "LeftTime", "DifficultyLevel", "ModeId", "LevelId", "StageId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,8 +75,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public PotionDungeonResultInfo(PotionDungeonResultInfo other) : this() {
       finalScore_ = other.finalScore_;
       leftTime_ = other.leftTime_;
-      unk2700FHEHGDABALE_ = other.unk2700FHEHGDABALE_;
-      unk2700HKFEBBCMBHL_ = other.unk2700HKFEBBCMBHL_;
+      difficultyLevel_ = other.difficultyLevel_;
+      modeId_ = other.modeId_;
       levelId_ = other.levelId_;
       stageId_ = other.stageId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -113,27 +112,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_FHEHGDABALE" field.</summary>
-    public const int Unk2700FHEHGDABALEFieldNumber = 14;
-    private uint unk2700FHEHGDABALE_;
+    /// <summary>Field number for the "difficulty_level" field.</summary>
+    public const int DifficultyLevelFieldNumber = 14;
+    private uint difficultyLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700FHEHGDABALE {
-      get { return unk2700FHEHGDABALE_; }
+    public uint DifficultyLevel {
+      get { return difficultyLevel_; }
       set {
-        unk2700FHEHGDABALE_ = value;
+        difficultyLevel_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_HKFEBBCMBHL" field.</summary>
-    public const int Unk2700HKFEBBCMBHLFieldNumber = 11;
-    private uint unk2700HKFEBBCMBHL_;
+    /// <summary>Field number for the "mode_id" field.</summary>
+    public const int ModeIdFieldNumber = 11;
+    private uint modeId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700HKFEBBCMBHL {
-      get { return unk2700HKFEBBCMBHL_; }
+    public uint ModeId {
+      get { return modeId_; }
       set {
-        unk2700HKFEBBCMBHL_ = value;
+        modeId_ = value;
       }
     }
 
@@ -178,8 +177,8 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (FinalScore != other.FinalScore) return false;
       if (LeftTime != other.LeftTime) return false;
-      if (Unk2700FHEHGDABALE != other.Unk2700FHEHGDABALE) return false;
-      if (Unk2700HKFEBBCMBHL != other.Unk2700HKFEBBCMBHL) return false;
+      if (DifficultyLevel != other.DifficultyLevel) return false;
+      if (ModeId != other.ModeId) return false;
       if (LevelId != other.LevelId) return false;
       if (StageId != other.StageId) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -191,8 +190,8 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (FinalScore != 0) hash ^= FinalScore.GetHashCode();
       if (LeftTime != 0) hash ^= LeftTime.GetHashCode();
-      if (Unk2700FHEHGDABALE != 0) hash ^= Unk2700FHEHGDABALE.GetHashCode();
-      if (Unk2700HKFEBBCMBHL != 0) hash ^= Unk2700HKFEBBCMBHL.GetHashCode();
+      if (DifficultyLevel != 0) hash ^= DifficultyLevel.GetHashCode();
+      if (ModeId != 0) hash ^= ModeId.GetHashCode();
       if (LevelId != 0) hash ^= LevelId.GetHashCode();
       if (StageId != 0) hash ^= StageId.GetHashCode();
       if (_unknownFields != null) {
@@ -229,13 +228,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(72);
         output.WriteUInt32(LeftTime);
       }
-      if (Unk2700HKFEBBCMBHL != 0) {
+      if (ModeId != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk2700HKFEBBCMBHL);
+        output.WriteUInt32(ModeId);
       }
-      if (Unk2700FHEHGDABALE != 0) {
+      if (DifficultyLevel != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk2700FHEHGDABALE);
+        output.WriteUInt32(DifficultyLevel);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -263,13 +262,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(72);
         output.WriteUInt32(LeftTime);
       }
-      if (Unk2700HKFEBBCMBHL != 0) {
+      if (ModeId != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk2700HKFEBBCMBHL);
+        output.WriteUInt32(ModeId);
       }
-      if (Unk2700FHEHGDABALE != 0) {
+      if (DifficultyLevel != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk2700FHEHGDABALE);
+        output.WriteUInt32(DifficultyLevel);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -287,11 +286,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (LeftTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LeftTime);
       }
-      if (Unk2700FHEHGDABALE != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700FHEHGDABALE);
+      if (DifficultyLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DifficultyLevel);
       }
-      if (Unk2700HKFEBBCMBHL != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700HKFEBBCMBHL);
+      if (ModeId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ModeId);
       }
       if (LevelId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LevelId);
@@ -317,11 +316,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.LeftTime != 0) {
         LeftTime = other.LeftTime;
       }
-      if (other.Unk2700FHEHGDABALE != 0) {
-        Unk2700FHEHGDABALE = other.Unk2700FHEHGDABALE;
+      if (other.DifficultyLevel != 0) {
+        DifficultyLevel = other.DifficultyLevel;
       }
-      if (other.Unk2700HKFEBBCMBHL != 0) {
-        Unk2700HKFEBBCMBHL = other.Unk2700HKFEBBCMBHL;
+      if (other.ModeId != 0) {
+        ModeId = other.ModeId;
       }
       if (other.LevelId != 0) {
         LevelId = other.LevelId;
@@ -361,11 +360,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk2700HKFEBBCMBHL = input.ReadUInt32();
+            ModeId = input.ReadUInt32();
             break;
           }
           case 112: {
-            Unk2700FHEHGDABALE = input.ReadUInt32();
+            DifficultyLevel = input.ReadUInt32();
             break;
           }
         }
@@ -400,11 +399,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk2700HKFEBBCMBHL = input.ReadUInt32();
+            ModeId = input.ReadUInt32();
             break;
           }
           case 112: {
-            Unk2700FHEHGDABALE = input.ReadUInt32();
+            DifficultyLevel = input.ReadUInt32();
             break;
           }
         }

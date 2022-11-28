@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ParamListReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg9QYXJhbUxpc3QucHJvdG8iIAoJUGFyYW1MaXN0EhMKC3BhcmFtX2xpc3Rf",
-            "GAEgAygNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
-            "cm90bzM="));
+            "Cg9QYXJhbUxpc3QucHJvdG8iHwoJUGFyYW1MaXN0EhIKCnBhcmFtX2xpc3QY",
+            "ASADKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -81,7 +81,7 @@ namespace Weedwacker.Shared.Network.Proto {
       return new ParamList(this);
     }
 
-    /// <summary>Field number for the "param_list_" field.</summary>
+    /// <summary>Field number for the "param_list" field.</summary>
     public const int ParamList_FieldNumber = 1;
     private static readonly pb::FieldCodec<uint> _repeated_paramList_codec
         = pb::FieldCodec.ForUInt32(10);

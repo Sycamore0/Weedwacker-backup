@@ -26,12 +26,12 @@ namespace Weedwacker.Shared.Network.Proto {
           string.Concat(
             "CiNEdW5nZW9uQ2FuZGlkYXRlVGVhbUludml0ZVJzcC5wcm90byJNCh1EdW5n",
             "ZW9uQ2FuZGlkYXRlVGVhbUludml0ZVJzcBIPCgdyZXRjb2RlGAwgASgFEhsK",
-            "E1VuazI3MDBfT0pFR0FDS0tKQUUYByADKA1CIqoCH1dlZWR3YWNrZXIuU2hh",
+            "E2ludmFsaWRfcGxheWVyX3VpZHMYByADKA1CIqoCH1dlZWR3YWNrZXIuU2hh",
             "cmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonCandidateTeamInviteRsp), global::Weedwacker.Shared.Network.Proto.DungeonCandidateTeamInviteRsp.Parser, new[]{ "Retcode", "Unk2700OJEGACKKJAE" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonCandidateTeamInviteRsp), global::Weedwacker.Shared.Network.Proto.DungeonCandidateTeamInviteRsp.Parser, new[]{ "Retcode", "InvalidPlayerUids" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,7 +78,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DungeonCandidateTeamInviteRsp(DungeonCandidateTeamInviteRsp other) : this() {
       retcode_ = other.retcode_;
-      unk2700OJEGACKKJAE_ = other.unk2700OJEGACKKJAE_.Clone();
+      invalidPlayerUids_ = other.invalidPlayerUids_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -100,15 +100,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_OJEGACKKJAE" field.</summary>
-    public const int Unk2700OJEGACKKJAEFieldNumber = 7;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700OJEGACKKJAE_codec
+    /// <summary>Field number for the "invalid_player_uids" field.</summary>
+    public const int InvalidPlayerUidsFieldNumber = 7;
+    private static readonly pb::FieldCodec<uint> _repeated_invalidPlayerUids_codec
         = pb::FieldCodec.ForUInt32(58);
-    private readonly pbc::RepeatedField<uint> unk2700OJEGACKKJAE_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> invalidPlayerUids_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700OJEGACKKJAE {
-      get { return unk2700OJEGACKKJAE_; }
+    public pbc::RepeatedField<uint> InvalidPlayerUids {
+      get { return invalidPlayerUids_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -127,7 +127,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (Retcode != other.Retcode) return false;
-      if(!unk2700OJEGACKKJAE_.Equals(other.unk2700OJEGACKKJAE_)) return false;
+      if(!invalidPlayerUids_.Equals(other.invalidPlayerUids_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -136,7 +136,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
-      hash ^= unk2700OJEGACKKJAE_.GetHashCode();
+      hash ^= invalidPlayerUids_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -155,7 +155,7 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk2700OJEGACKKJAE_.WriteTo(output, _repeated_unk2700OJEGACKKJAE_codec);
+      invalidPlayerUids_.WriteTo(output, _repeated_invalidPlayerUids_codec);
       if (Retcode != 0) {
         output.WriteRawTag(96);
         output.WriteInt32(Retcode);
@@ -170,7 +170,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk2700OJEGACKKJAE_.WriteTo(ref output, _repeated_unk2700OJEGACKKJAE_codec);
+      invalidPlayerUids_.WriteTo(ref output, _repeated_invalidPlayerUids_codec);
       if (Retcode != 0) {
         output.WriteRawTag(96);
         output.WriteInt32(Retcode);
@@ -188,7 +188,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Retcode != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
       }
-      size += unk2700OJEGACKKJAE_.CalculateSize(_repeated_unk2700OJEGACKKJAE_codec);
+      size += invalidPlayerUids_.CalculateSize(_repeated_invalidPlayerUids_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -204,7 +204,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Retcode != 0) {
         Retcode = other.Retcode;
       }
-      unk2700OJEGACKKJAE_.Add(other.unk2700OJEGACKKJAE_);
+      invalidPlayerUids_.Add(other.invalidPlayerUids_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -222,7 +222,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 58:
           case 56: {
-            unk2700OJEGACKKJAE_.AddEntriesFrom(input, _repeated_unk2700OJEGACKKJAE_codec);
+            invalidPlayerUids_.AddEntriesFrom(input, _repeated_invalidPlayerUids_codec);
             break;
           }
           case 96: {
@@ -246,7 +246,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 58:
           case 56: {
-            unk2700OJEGACKKJAE_.AddEntriesFrom(ref input, _repeated_unk2700OJEGACKKJAE_codec);
+            invalidPlayerUids_.AddEntriesFrom(ref input, _repeated_invalidPlayerUids_codec);
             break;
           }
           case 96: {

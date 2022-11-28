@@ -24,19 +24,19 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGalleryIslandPartySailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiVTY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eVNhaWxJbmZvLnByb3RvGhlVbmsy",
-            "ODAwX0ZNQU9FUEVCS0hCLnByb3RvGhlVbmsyODAwX0lNTERHTElNT0RFLnBy",
-            "b3RvIvsBCh9TY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eVNhaWxJbmZvEhsKE1Vu",
-            "azI4MDBfSEtIRU5MQ0lGTk4YDiABKA0SGwoTVW5rMjgwMF9OR1BMR0xMRkdP",
-            "RxgKIAEoDRIxChNVbmsyODAwX0VOSkdFRkJDTE9MGAEgASgOMhQuVW5rMjgw",
-            "MF9GTUFPRVBFQktIQhIbChNVbmsyODAwX0ROREtKT0pDREJJGAsgASgNEgwK",
-            "BGNvaW4YDyABKA0SIwoFc3RhZ2UYDCABKA4yFC5VbmsyODAwX0lNTERHTElN",
-            "T0RFEhsKE1VuazI4MDBfR01PQ01FRkJHSVAYCCABKA1CIqoCH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "CiVTY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eVNhaWxJbmZvLnByb3RvGhhHYWxs",
+            "ZXJ5U3RhcnRTb3VyY2UucHJvdG8aGklzbGFuZFBhcnR5U2FpbFN0YWdlLnBy",
+            "b3RvIuYBCh9TY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eVNhaWxJbmZvEhoKEm1h",
+            "eF9jbGVhbl9wcm9ncmVzcxgOIAEoDRIWCg5jbGVhbl9wcm9ncmVzcxgKIAEo",
+            "DRIpCgxzdGFydF9zb3VyY2UYASABKA4yEy5HYWxsZXJ5U3RhcnRTb3VyY2US",
+            "FQoNa2lsbF9wcm9ncmVzcxgLIAEoDRIMCgRjb2luGA8gASgNEiQKBXN0YWdl",
+            "GAwgASgOMhUuSXNsYW5kUGFydHlTYWlsU3RhZ2USGQoRbWF4X2tpbGxfcHJv",
+            "Z3Jlc3MYCCABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2800FMAOEPEBKHBReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2800IMLDGLIMODEReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GalleryStartSourceReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IslandPartySailStageReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartySailInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartySailInfo.Parser, new[]{ "Unk2800HKHENLCIFNN", "Unk2800NGPLGLLFGOG", "Unk2800ENJGEFBCLOL", "Unk2800DNDKJOJCDBI", "Coin", "Stage", "Unk2800GMOCMEFBGIP" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartySailInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartySailInfo.Parser, new[]{ "MaxCleanProgress", "CleanProgress", "StartSource", "KillProgress", "Coin", "Stage", "MaxKillProgress" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,13 +77,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SceneGalleryIslandPartySailInfo(SceneGalleryIslandPartySailInfo other) : this() {
-      unk2800HKHENLCIFNN_ = other.unk2800HKHENLCIFNN_;
-      unk2800NGPLGLLFGOG_ = other.unk2800NGPLGLLFGOG_;
-      unk2800ENJGEFBCLOL_ = other.unk2800ENJGEFBCLOL_;
-      unk2800DNDKJOJCDBI_ = other.unk2800DNDKJOJCDBI_;
+      maxCleanProgress_ = other.maxCleanProgress_;
+      cleanProgress_ = other.cleanProgress_;
+      startSource_ = other.startSource_;
+      killProgress_ = other.killProgress_;
       coin_ = other.coin_;
       stage_ = other.stage_;
-      unk2800GMOCMEFBGIP_ = other.unk2800GMOCMEFBGIP_;
+      maxKillProgress_ = other.maxKillProgress_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -93,51 +93,51 @@ namespace Weedwacker.Shared.Network.Proto {
       return new SceneGalleryIslandPartySailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2800_HKHENLCIFNN" field.</summary>
-    public const int Unk2800HKHENLCIFNNFieldNumber = 14;
-    private uint unk2800HKHENLCIFNN_;
+    /// <summary>Field number for the "max_clean_progress" field.</summary>
+    public const int MaxCleanProgressFieldNumber = 14;
+    private uint maxCleanProgress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800HKHENLCIFNN {
-      get { return unk2800HKHENLCIFNN_; }
+    public uint MaxCleanProgress {
+      get { return maxCleanProgress_; }
       set {
-        unk2800HKHENLCIFNN_ = value;
+        maxCleanProgress_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2800_NGPLGLLFGOG" field.</summary>
-    public const int Unk2800NGPLGLLFGOGFieldNumber = 10;
-    private uint unk2800NGPLGLLFGOG_;
+    /// <summary>Field number for the "clean_progress" field.</summary>
+    public const int CleanProgressFieldNumber = 10;
+    private uint cleanProgress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800NGPLGLLFGOG {
-      get { return unk2800NGPLGLLFGOG_; }
+    public uint CleanProgress {
+      get { return cleanProgress_; }
       set {
-        unk2800NGPLGLLFGOG_ = value;
+        cleanProgress_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2800_ENJGEFBCLOL" field.</summary>
-    public const int Unk2800ENJGEFBCLOLFieldNumber = 1;
-    private global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB unk2800ENJGEFBCLOL_ = global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo;
+    /// <summary>Field number for the "start_source" field.</summary>
+    public const int StartSourceFieldNumber = 1;
+    private global::Weedwacker.Shared.Network.Proto.GalleryStartSource startSource_ = global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB Unk2800ENJGEFBCLOL {
-      get { return unk2800ENJGEFBCLOL_; }
+    public global::Weedwacker.Shared.Network.Proto.GalleryStartSource StartSource {
+      get { return startSource_; }
       set {
-        unk2800ENJGEFBCLOL_ = value;
+        startSource_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2800_DNDKJOJCDBI" field.</summary>
-    public const int Unk2800DNDKJOJCDBIFieldNumber = 11;
-    private uint unk2800DNDKJOJCDBI_;
+    /// <summary>Field number for the "kill_progress" field.</summary>
+    public const int KillProgressFieldNumber = 11;
+    private uint killProgress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800DNDKJOJCDBI {
-      get { return unk2800DNDKJOJCDBI_; }
+    public uint KillProgress {
+      get { return killProgress_; }
       set {
-        unk2800DNDKJOJCDBI_ = value;
+        killProgress_ = value;
       }
     }
 
@@ -155,25 +155,25 @@ namespace Weedwacker.Shared.Network.Proto {
 
     /// <summary>Field number for the "stage" field.</summary>
     public const int StageFieldNumber = 12;
-    private global::Weedwacker.Shared.Network.Proto.Unk2800_IMLDGLIMODE stage_ = global::Weedwacker.Shared.Network.Proto.Unk2800_IMLDGLIMODE.None;
+    private global::Weedwacker.Shared.Network.Proto.IslandPartySailStage stage_ = global::Weedwacker.Shared.Network.Proto.IslandPartySailStage.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2800_IMLDGLIMODE Stage {
+    public global::Weedwacker.Shared.Network.Proto.IslandPartySailStage Stage {
       get { return stage_; }
       set {
         stage_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2800_GMOCMEFBGIP" field.</summary>
-    public const int Unk2800GMOCMEFBGIPFieldNumber = 8;
-    private uint unk2800GMOCMEFBGIP_;
+    /// <summary>Field number for the "max_kill_progress" field.</summary>
+    public const int MaxKillProgressFieldNumber = 8;
+    private uint maxKillProgress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800GMOCMEFBGIP {
-      get { return unk2800GMOCMEFBGIP_; }
+    public uint MaxKillProgress {
+      get { return maxKillProgress_; }
       set {
-        unk2800GMOCMEFBGIP_ = value;
+        maxKillProgress_ = value;
       }
     }
 
@@ -192,13 +192,13 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2800HKHENLCIFNN != other.Unk2800HKHENLCIFNN) return false;
-      if (Unk2800NGPLGLLFGOG != other.Unk2800NGPLGLLFGOG) return false;
-      if (Unk2800ENJGEFBCLOL != other.Unk2800ENJGEFBCLOL) return false;
-      if (Unk2800DNDKJOJCDBI != other.Unk2800DNDKJOJCDBI) return false;
+      if (MaxCleanProgress != other.MaxCleanProgress) return false;
+      if (CleanProgress != other.CleanProgress) return false;
+      if (StartSource != other.StartSource) return false;
+      if (KillProgress != other.KillProgress) return false;
       if (Coin != other.Coin) return false;
       if (Stage != other.Stage) return false;
-      if (Unk2800GMOCMEFBGIP != other.Unk2800GMOCMEFBGIP) return false;
+      if (MaxKillProgress != other.MaxKillProgress) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -206,13 +206,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2800HKHENLCIFNN != 0) hash ^= Unk2800HKHENLCIFNN.GetHashCode();
-      if (Unk2800NGPLGLLFGOG != 0) hash ^= Unk2800NGPLGLLFGOG.GetHashCode();
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) hash ^= Unk2800ENJGEFBCLOL.GetHashCode();
-      if (Unk2800DNDKJOJCDBI != 0) hash ^= Unk2800DNDKJOJCDBI.GetHashCode();
+      if (MaxCleanProgress != 0) hash ^= MaxCleanProgress.GetHashCode();
+      if (CleanProgress != 0) hash ^= CleanProgress.GetHashCode();
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) hash ^= StartSource.GetHashCode();
+      if (KillProgress != 0) hash ^= KillProgress.GetHashCode();
       if (Coin != 0) hash ^= Coin.GetHashCode();
-      if (Stage != global::Weedwacker.Shared.Network.Proto.Unk2800_IMLDGLIMODE.None) hash ^= Stage.GetHashCode();
-      if (Unk2800GMOCMEFBGIP != 0) hash ^= Unk2800GMOCMEFBGIP.GetHashCode();
+      if (Stage != global::Weedwacker.Shared.Network.Proto.IslandPartySailStage.None) hash ^= Stage.GetHashCode();
+      if (MaxKillProgress != 0) hash ^= MaxKillProgress.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -231,29 +231,29 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
         output.WriteRawTag(8);
-        output.WriteEnum((int) Unk2800ENJGEFBCLOL);
+        output.WriteEnum((int) StartSource);
       }
-      if (Unk2800GMOCMEFBGIP != 0) {
+      if (MaxKillProgress != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk2800GMOCMEFBGIP);
+        output.WriteUInt32(MaxKillProgress);
       }
-      if (Unk2800NGPLGLLFGOG != 0) {
+      if (CleanProgress != 0) {
         output.WriteRawTag(80);
-        output.WriteUInt32(Unk2800NGPLGLLFGOG);
+        output.WriteUInt32(CleanProgress);
       }
-      if (Unk2800DNDKJOJCDBI != 0) {
+      if (KillProgress != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk2800DNDKJOJCDBI);
+        output.WriteUInt32(KillProgress);
       }
-      if (Stage != global::Weedwacker.Shared.Network.Proto.Unk2800_IMLDGLIMODE.None) {
+      if (Stage != global::Weedwacker.Shared.Network.Proto.IslandPartySailStage.None) {
         output.WriteRawTag(96);
         output.WriteEnum((int) Stage);
       }
-      if (Unk2800HKHENLCIFNN != 0) {
+      if (MaxCleanProgress != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk2800HKHENLCIFNN);
+        output.WriteUInt32(MaxCleanProgress);
       }
       if (Coin != 0) {
         output.WriteRawTag(120);
@@ -269,29 +269,29 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
         output.WriteRawTag(8);
-        output.WriteEnum((int) Unk2800ENJGEFBCLOL);
+        output.WriteEnum((int) StartSource);
       }
-      if (Unk2800GMOCMEFBGIP != 0) {
+      if (MaxKillProgress != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk2800GMOCMEFBGIP);
+        output.WriteUInt32(MaxKillProgress);
       }
-      if (Unk2800NGPLGLLFGOG != 0) {
+      if (CleanProgress != 0) {
         output.WriteRawTag(80);
-        output.WriteUInt32(Unk2800NGPLGLLFGOG);
+        output.WriteUInt32(CleanProgress);
       }
-      if (Unk2800DNDKJOJCDBI != 0) {
+      if (KillProgress != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk2800DNDKJOJCDBI);
+        output.WriteUInt32(KillProgress);
       }
-      if (Stage != global::Weedwacker.Shared.Network.Proto.Unk2800_IMLDGLIMODE.None) {
+      if (Stage != global::Weedwacker.Shared.Network.Proto.IslandPartySailStage.None) {
         output.WriteRawTag(96);
         output.WriteEnum((int) Stage);
       }
-      if (Unk2800HKHENLCIFNN != 0) {
+      if (MaxCleanProgress != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk2800HKHENLCIFNN);
+        output.WriteUInt32(MaxCleanProgress);
       }
       if (Coin != 0) {
         output.WriteRawTag(120);
@@ -307,26 +307,26 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2800HKHENLCIFNN != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800HKHENLCIFNN);
+      if (MaxCleanProgress != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxCleanProgress);
       }
-      if (Unk2800NGPLGLLFGOG != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800NGPLGLLFGOG);
+      if (CleanProgress != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CleanProgress);
       }
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk2800ENJGEFBCLOL);
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StartSource);
       }
-      if (Unk2800DNDKJOJCDBI != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800DNDKJOJCDBI);
+      if (KillProgress != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(KillProgress);
       }
       if (Coin != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Coin);
       }
-      if (Stage != global::Weedwacker.Shared.Network.Proto.Unk2800_IMLDGLIMODE.None) {
+      if (Stage != global::Weedwacker.Shared.Network.Proto.IslandPartySailStage.None) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Stage);
       }
-      if (Unk2800GMOCMEFBGIP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800GMOCMEFBGIP);
+      if (MaxKillProgress != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxKillProgress);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -340,26 +340,26 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2800HKHENLCIFNN != 0) {
-        Unk2800HKHENLCIFNN = other.Unk2800HKHENLCIFNN;
+      if (other.MaxCleanProgress != 0) {
+        MaxCleanProgress = other.MaxCleanProgress;
       }
-      if (other.Unk2800NGPLGLLFGOG != 0) {
-        Unk2800NGPLGLLFGOG = other.Unk2800NGPLGLLFGOG;
+      if (other.CleanProgress != 0) {
+        CleanProgress = other.CleanProgress;
       }
-      if (other.Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
-        Unk2800ENJGEFBCLOL = other.Unk2800ENJGEFBCLOL;
+      if (other.StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
+        StartSource = other.StartSource;
       }
-      if (other.Unk2800DNDKJOJCDBI != 0) {
-        Unk2800DNDKJOJCDBI = other.Unk2800DNDKJOJCDBI;
+      if (other.KillProgress != 0) {
+        KillProgress = other.KillProgress;
       }
       if (other.Coin != 0) {
         Coin = other.Coin;
       }
-      if (other.Stage != global::Weedwacker.Shared.Network.Proto.Unk2800_IMLDGLIMODE.None) {
+      if (other.Stage != global::Weedwacker.Shared.Network.Proto.IslandPartySailStage.None) {
         Stage = other.Stage;
       }
-      if (other.Unk2800GMOCMEFBGIP != 0) {
-        Unk2800GMOCMEFBGIP = other.Unk2800GMOCMEFBGIP;
+      if (other.MaxKillProgress != 0) {
+        MaxKillProgress = other.MaxKillProgress;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -377,27 +377,27 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Unk2800ENJGEFBCLOL = (global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB) input.ReadEnum();
+            StartSource = (global::Weedwacker.Shared.Network.Proto.GalleryStartSource) input.ReadEnum();
             break;
           }
           case 64: {
-            Unk2800GMOCMEFBGIP = input.ReadUInt32();
+            MaxKillProgress = input.ReadUInt32();
             break;
           }
           case 80: {
-            Unk2800NGPLGLLFGOG = input.ReadUInt32();
+            CleanProgress = input.ReadUInt32();
             break;
           }
           case 88: {
-            Unk2800DNDKJOJCDBI = input.ReadUInt32();
+            KillProgress = input.ReadUInt32();
             break;
           }
           case 96: {
-            Stage = (global::Weedwacker.Shared.Network.Proto.Unk2800_IMLDGLIMODE) input.ReadEnum();
+            Stage = (global::Weedwacker.Shared.Network.Proto.IslandPartySailStage) input.ReadEnum();
             break;
           }
           case 112: {
-            Unk2800HKHENLCIFNN = input.ReadUInt32();
+            MaxCleanProgress = input.ReadUInt32();
             break;
           }
           case 120: {
@@ -420,27 +420,27 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Unk2800ENJGEFBCLOL = (global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB) input.ReadEnum();
+            StartSource = (global::Weedwacker.Shared.Network.Proto.GalleryStartSource) input.ReadEnum();
             break;
           }
           case 64: {
-            Unk2800GMOCMEFBGIP = input.ReadUInt32();
+            MaxKillProgress = input.ReadUInt32();
             break;
           }
           case 80: {
-            Unk2800NGPLGLLFGOG = input.ReadUInt32();
+            CleanProgress = input.ReadUInt32();
             break;
           }
           case 88: {
-            Unk2800DNDKJOJCDBI = input.ReadUInt32();
+            KillProgress = input.ReadUInt32();
             break;
           }
           case 96: {
-            Stage = (global::Weedwacker.Shared.Network.Proto.Unk2800_IMLDGLIMODE) input.ReadEnum();
+            Stage = (global::Weedwacker.Shared.Network.Proto.IslandPartySailStage) input.ReadEnum();
             break;
           }
           case 112: {
-            Unk2800HKHENLCIFNN = input.ReadUInt32();
+            MaxCleanProgress = input.ReadUInt32();
             break;
           }
           case 120: {

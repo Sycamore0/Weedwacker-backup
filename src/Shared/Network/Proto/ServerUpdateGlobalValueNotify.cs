@@ -29,7 +29,7 @@ namespace Weedwacker.Shared.Network.Proto {
             "Ej4KC3VwZGF0ZV90eXBlGA0gASgOMikuU2VydmVyVXBkYXRlR2xvYmFsVmFs",
             "dWVOb3RpZnkuVXBkYXRlVHlwZRINCgVkZWx0YRgDIAEoAhIQCghrZXlfaGFz",
             "aBgKIAEoDRINCgV2YWx1ZRgGIAEoAiJPCgpVcGRhdGVUeXBlEhcKE1VQREFU",
-            "RV9UWVBFX0lOVkFMVUUQABITCg9VUERBVEVfVFlQRV9BREQQARITCg9VUERB",
+            "RV9UWVBFX0lOVkFMSUQQABITCg9VUERBVEVfVFlQRV9BREQQARITCg9VUERB",
             "VEVfVFlQRV9TRVQQAkIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
             "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
@@ -109,7 +109,7 @@ namespace Weedwacker.Shared.Network.Proto {
 
     /// <summary>Field number for the "update_type" field.</summary>
     public const int UpdateTypeFieldNumber = 13;
-    private global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType updateType_ = global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalue;
+    private global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType updateType_ = global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalid;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType UpdateType {
@@ -183,7 +183,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (UpdateType != global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalue) hash ^= UpdateType.GetHashCode();
+      if (UpdateType != global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalid) hash ^= UpdateType.GetHashCode();
       if (Delta != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Delta);
       if (KeyHash != 0) hash ^= KeyHash.GetHashCode();
       if (Value != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Value);
@@ -221,7 +221,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(80);
         output.WriteUInt32(KeyHash);
       }
-      if (UpdateType != global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalue) {
+      if (UpdateType != global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalid) {
         output.WriteRawTag(104);
         output.WriteEnum((int) UpdateType);
       }
@@ -251,7 +251,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(80);
         output.WriteUInt32(KeyHash);
       }
-      if (UpdateType != global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalue) {
+      if (UpdateType != global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalid) {
         output.WriteRawTag(104);
         output.WriteEnum((int) UpdateType);
       }
@@ -268,7 +268,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EntityId);
       }
-      if (UpdateType != global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalue) {
+      if (UpdateType != global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalid) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) UpdateType);
       }
       if (Delta != 0F) {
@@ -295,7 +295,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.UpdateType != global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalue) {
+      if (other.UpdateType != global::Weedwacker.Shared.Network.Proto.ServerUpdateGlobalValueNotify.Types.UpdateType.Invalid) {
         UpdateType = other.UpdateType;
       }
       if (other.Delta != 0F) {
@@ -388,7 +388,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       public enum UpdateType {
-        [pbr::OriginalName("UPDATE_TYPE_INVALUE")] Invalue = 0,
+        [pbr::OriginalName("UPDATE_TYPE_INVALID")] Invalid = 0,
         [pbr::OriginalName("UPDATE_TYPE_ADD")] Add = 1,
         [pbr::OriginalName("UPDATE_TYPE_SET")] Set = 2,
       }

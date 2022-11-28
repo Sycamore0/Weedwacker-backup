@@ -25,20 +25,20 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiJXaW50ZXJDYW1wQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGg9JdGVtUGFy",
-            "YW0ucHJvdG8aGVVuazI3MDBfRElFR0pERUlES08ucHJvdG8aGVVuazI3MDBf",
-            "TUJJREpETExCTk0ucHJvdG8iwwIKHFdpbnRlckNhbXBBY3Rpdml0eURldGFp",
-            "bEluZm8SMQoTVW5rMjcwMF9GQk1IRkpIREpOQhgJIAMoCzIULlVuazI3MDBf",
-            "TUJJREpETExCTk0SKQoLYmF0dGxlX2luZm8YCiABKAsyFC5VbmsyNzAwX0RJ",
-            "RUdKREVJREtPEhsKE1VuazI3MDBfR0FMSEJQR0VHTkwYCCADKA0SGwoTVW5r",
-            "MjcwMF9ES0NHT1BCSEpIQRgOIAMoDRIbChNVbmsyNzAwX09PQk9DRUFMTEJF",
-            "GAYgAygNEhkKEWlzX2NvbnRlbnRfY2xvc2VkGA8gASgIEioKDGV4cGxvcmVf",
-            "aW5mbxgLIAEoCzIULlVuazI3MDBfRElFR0pERUlES08SJwoTVW5rMjcwMF9D",
-            "RkVOTEVCSUtHRxgCIAMoCzIKLkl0ZW1QYXJhbUIiqgIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "YW0ucHJvdG8aHVdpbnRlckNhbXBSYWNlU3RhZ2VJbmZvLnByb3RvGhlXaW50",
+            "ZXJDYW1wU3RhZ2VJbmZvLnByb3RvIsECChxXaW50ZXJDYW1wQWN0aXZpdHlE",
+            "ZXRhaWxJbmZvEjAKDnJhY2VfaW5mb19saXN0GAkgAygLMhguV2ludGVyQ2Ft",
+            "cFJhY2VTdGFnZUluZm8SKQoLYmF0dGxlX2luZm8YCiABKAsyFC5XaW50ZXJD",
+            "YW1wU3RhZ2VJbmZvEhQKDHdpc2hfaWRfbGlzdBgIIAMoDRIgChhiYXR0bGVf",
+            "dGFrZW5fcmV3YXJkX2xpc3QYDiADKA0SIQoZZXhwbG9yZV90YWtlbl9yZXdh",
+            "cmRfbGlzdBgGIAMoDRIZChFpc19jb250ZW50X2Nsb3NlZBgPIAEoCBIqCgxl",
+            "eHBsb3JlX2luZm8YCyABKAsyFC5XaW50ZXJDYW1wU3RhZ2VJbmZvEiIKDnVz",
+            "ZWRfaXRlbV9saXN0GAIgAygLMgouSXRlbVBhcmFtQiKqAh9XZWVkd2Fja2Vy",
+            "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ItemParamReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700DIEGJDEIDKOReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700MBIDJDLLBNMReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ItemParamReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WinterCampRaceStageInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WinterCampStageInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.WinterCampActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.WinterCampActivityDetailInfo.Parser, new[]{ "Unk2700FBMHFJHDJNB", "BattleInfo", "Unk2700GALHBPGEGNL", "Unk2700DKCGOPBHJHA", "Unk2700OOBOCEALLBE", "IsContentClosed", "ExploreInfo", "Unk2700CFENLEBIKGG" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.WinterCampActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.WinterCampActivityDetailInfo.Parser, new[]{ "RaceInfoList", "BattleInfo", "WishIdList", "BattleTakenRewardList", "ExploreTakenRewardList", "IsContentClosed", "ExploreInfo", "UsedItemList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,14 +79,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public WinterCampActivityDetailInfo(WinterCampActivityDetailInfo other) : this() {
-      unk2700FBMHFJHDJNB_ = other.unk2700FBMHFJHDJNB_.Clone();
+      raceInfoList_ = other.raceInfoList_.Clone();
       battleInfo_ = other.battleInfo_ != null ? other.battleInfo_.Clone() : null;
-      unk2700GALHBPGEGNL_ = other.unk2700GALHBPGEGNL_.Clone();
-      unk2700DKCGOPBHJHA_ = other.unk2700DKCGOPBHJHA_.Clone();
-      unk2700OOBOCEALLBE_ = other.unk2700OOBOCEALLBE_.Clone();
+      wishIdList_ = other.wishIdList_.Clone();
+      battleTakenRewardList_ = other.battleTakenRewardList_.Clone();
+      exploreTakenRewardList_ = other.exploreTakenRewardList_.Clone();
       isContentClosed_ = other.isContentClosed_;
       exploreInfo_ = other.exploreInfo_ != null ? other.exploreInfo_.Clone() : null;
-      unk2700CFENLEBIKGG_ = other.unk2700CFENLEBIKGG_.Clone();
+      usedItemList_ = other.usedItemList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -96,60 +96,60 @@ namespace Weedwacker.Shared.Network.Proto {
       return new WinterCampActivityDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_FBMHFJHDJNB" field.</summary>
-    public const int Unk2700FBMHFJHDJNBFieldNumber = 9;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_MBIDJDLLBNM> _repeated_unk2700FBMHFJHDJNB_codec
-        = pb::FieldCodec.ForMessage(74, global::Weedwacker.Shared.Network.Proto.Unk2700_MBIDJDLLBNM.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_MBIDJDLLBNM> unk2700FBMHFJHDJNB_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_MBIDJDLLBNM>();
+    /// <summary>Field number for the "race_info_list" field.</summary>
+    public const int RaceInfoListFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.WinterCampRaceStageInfo> _repeated_raceInfoList_codec
+        = pb::FieldCodec.ForMessage(74, global::Weedwacker.Shared.Network.Proto.WinterCampRaceStageInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.WinterCampRaceStageInfo> raceInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.WinterCampRaceStageInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_MBIDJDLLBNM> Unk2700FBMHFJHDJNB {
-      get { return unk2700FBMHFJHDJNB_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.WinterCampRaceStageInfo> RaceInfoList {
+      get { return raceInfoList_; }
     }
 
     /// <summary>Field number for the "battle_info" field.</summary>
     public const int BattleInfoFieldNumber = 10;
-    private global::Weedwacker.Shared.Network.Proto.Unk2700_DIEGJDEIDKO battleInfo_;
+    private global::Weedwacker.Shared.Network.Proto.WinterCampStageInfo battleInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2700_DIEGJDEIDKO BattleInfo {
+    public global::Weedwacker.Shared.Network.Proto.WinterCampStageInfo BattleInfo {
       get { return battleInfo_; }
       set {
         battleInfo_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_GALHBPGEGNL" field.</summary>
-    public const int Unk2700GALHBPGEGNLFieldNumber = 8;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700GALHBPGEGNL_codec
+    /// <summary>Field number for the "wish_id_list" field.</summary>
+    public const int WishIdListFieldNumber = 8;
+    private static readonly pb::FieldCodec<uint> _repeated_wishIdList_codec
         = pb::FieldCodec.ForUInt32(66);
-    private readonly pbc::RepeatedField<uint> unk2700GALHBPGEGNL_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> wishIdList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700GALHBPGEGNL {
-      get { return unk2700GALHBPGEGNL_; }
+    public pbc::RepeatedField<uint> WishIdList {
+      get { return wishIdList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_DKCGOPBHJHA" field.</summary>
-    public const int Unk2700DKCGOPBHJHAFieldNumber = 14;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700DKCGOPBHJHA_codec
+    /// <summary>Field number for the "battle_taken_reward_list" field.</summary>
+    public const int BattleTakenRewardListFieldNumber = 14;
+    private static readonly pb::FieldCodec<uint> _repeated_battleTakenRewardList_codec
         = pb::FieldCodec.ForUInt32(114);
-    private readonly pbc::RepeatedField<uint> unk2700DKCGOPBHJHA_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> battleTakenRewardList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700DKCGOPBHJHA {
-      get { return unk2700DKCGOPBHJHA_; }
+    public pbc::RepeatedField<uint> BattleTakenRewardList {
+      get { return battleTakenRewardList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_OOBOCEALLBE" field.</summary>
-    public const int Unk2700OOBOCEALLBEFieldNumber = 6;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700OOBOCEALLBE_codec
+    /// <summary>Field number for the "explore_taken_reward_list" field.</summary>
+    public const int ExploreTakenRewardListFieldNumber = 6;
+    private static readonly pb::FieldCodec<uint> _repeated_exploreTakenRewardList_codec
         = pb::FieldCodec.ForUInt32(50);
-    private readonly pbc::RepeatedField<uint> unk2700OOBOCEALLBE_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> exploreTakenRewardList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700OOBOCEALLBE {
-      get { return unk2700OOBOCEALLBE_; }
+    public pbc::RepeatedField<uint> ExploreTakenRewardList {
+      get { return exploreTakenRewardList_; }
     }
 
     /// <summary>Field number for the "is_content_closed" field.</summary>
@@ -166,25 +166,25 @@ namespace Weedwacker.Shared.Network.Proto {
 
     /// <summary>Field number for the "explore_info" field.</summary>
     public const int ExploreInfoFieldNumber = 11;
-    private global::Weedwacker.Shared.Network.Proto.Unk2700_DIEGJDEIDKO exploreInfo_;
+    private global::Weedwacker.Shared.Network.Proto.WinterCampStageInfo exploreInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2700_DIEGJDEIDKO ExploreInfo {
+    public global::Weedwacker.Shared.Network.Proto.WinterCampStageInfo ExploreInfo {
       get { return exploreInfo_; }
       set {
         exploreInfo_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_CFENLEBIKGG" field.</summary>
-    public const int Unk2700CFENLEBIKGGFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.ItemParam> _repeated_unk2700CFENLEBIKGG_codec
+    /// <summary>Field number for the "used_item_list" field.</summary>
+    public const int UsedItemListFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.ItemParam> _repeated_usedItemList_codec
         = pb::FieldCodec.ForMessage(18, global::Weedwacker.Shared.Network.Proto.ItemParam.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ItemParam> unk2700CFENLEBIKGG_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ItemParam>();
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ItemParam> usedItemList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ItemParam>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ItemParam> Unk2700CFENLEBIKGG {
-      get { return unk2700CFENLEBIKGG_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ItemParam> UsedItemList {
+      get { return usedItemList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -202,14 +202,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2700FBMHFJHDJNB_.Equals(other.unk2700FBMHFJHDJNB_)) return false;
+      if(!raceInfoList_.Equals(other.raceInfoList_)) return false;
       if (!object.Equals(BattleInfo, other.BattleInfo)) return false;
-      if(!unk2700GALHBPGEGNL_.Equals(other.unk2700GALHBPGEGNL_)) return false;
-      if(!unk2700DKCGOPBHJHA_.Equals(other.unk2700DKCGOPBHJHA_)) return false;
-      if(!unk2700OOBOCEALLBE_.Equals(other.unk2700OOBOCEALLBE_)) return false;
+      if(!wishIdList_.Equals(other.wishIdList_)) return false;
+      if(!battleTakenRewardList_.Equals(other.battleTakenRewardList_)) return false;
+      if(!exploreTakenRewardList_.Equals(other.exploreTakenRewardList_)) return false;
       if (IsContentClosed != other.IsContentClosed) return false;
       if (!object.Equals(ExploreInfo, other.ExploreInfo)) return false;
-      if(!unk2700CFENLEBIKGG_.Equals(other.unk2700CFENLEBIKGG_)) return false;
+      if(!usedItemList_.Equals(other.usedItemList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -217,14 +217,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2700FBMHFJHDJNB_.GetHashCode();
+      hash ^= raceInfoList_.GetHashCode();
       if (battleInfo_ != null) hash ^= BattleInfo.GetHashCode();
-      hash ^= unk2700GALHBPGEGNL_.GetHashCode();
-      hash ^= unk2700DKCGOPBHJHA_.GetHashCode();
-      hash ^= unk2700OOBOCEALLBE_.GetHashCode();
+      hash ^= wishIdList_.GetHashCode();
+      hash ^= battleTakenRewardList_.GetHashCode();
+      hash ^= exploreTakenRewardList_.GetHashCode();
       if (IsContentClosed != false) hash ^= IsContentClosed.GetHashCode();
       if (exploreInfo_ != null) hash ^= ExploreInfo.GetHashCode();
-      hash ^= unk2700CFENLEBIKGG_.GetHashCode();
+      hash ^= usedItemList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -243,10 +243,10 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk2700CFENLEBIKGG_.WriteTo(output, _repeated_unk2700CFENLEBIKGG_codec);
-      unk2700OOBOCEALLBE_.WriteTo(output, _repeated_unk2700OOBOCEALLBE_codec);
-      unk2700GALHBPGEGNL_.WriteTo(output, _repeated_unk2700GALHBPGEGNL_codec);
-      unk2700FBMHFJHDJNB_.WriteTo(output, _repeated_unk2700FBMHFJHDJNB_codec);
+      usedItemList_.WriteTo(output, _repeated_usedItemList_codec);
+      exploreTakenRewardList_.WriteTo(output, _repeated_exploreTakenRewardList_codec);
+      wishIdList_.WriteTo(output, _repeated_wishIdList_codec);
+      raceInfoList_.WriteTo(output, _repeated_raceInfoList_codec);
       if (battleInfo_ != null) {
         output.WriteRawTag(82);
         output.WriteMessage(BattleInfo);
@@ -255,7 +255,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(90);
         output.WriteMessage(ExploreInfo);
       }
-      unk2700DKCGOPBHJHA_.WriteTo(output, _repeated_unk2700DKCGOPBHJHA_codec);
+      battleTakenRewardList_.WriteTo(output, _repeated_battleTakenRewardList_codec);
       if (IsContentClosed != false) {
         output.WriteRawTag(120);
         output.WriteBool(IsContentClosed);
@@ -270,10 +270,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk2700CFENLEBIKGG_.WriteTo(ref output, _repeated_unk2700CFENLEBIKGG_codec);
-      unk2700OOBOCEALLBE_.WriteTo(ref output, _repeated_unk2700OOBOCEALLBE_codec);
-      unk2700GALHBPGEGNL_.WriteTo(ref output, _repeated_unk2700GALHBPGEGNL_codec);
-      unk2700FBMHFJHDJNB_.WriteTo(ref output, _repeated_unk2700FBMHFJHDJNB_codec);
+      usedItemList_.WriteTo(ref output, _repeated_usedItemList_codec);
+      exploreTakenRewardList_.WriteTo(ref output, _repeated_exploreTakenRewardList_codec);
+      wishIdList_.WriteTo(ref output, _repeated_wishIdList_codec);
+      raceInfoList_.WriteTo(ref output, _repeated_raceInfoList_codec);
       if (battleInfo_ != null) {
         output.WriteRawTag(82);
         output.WriteMessage(BattleInfo);
@@ -282,7 +282,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(90);
         output.WriteMessage(ExploreInfo);
       }
-      unk2700DKCGOPBHJHA_.WriteTo(ref output, _repeated_unk2700DKCGOPBHJHA_codec);
+      battleTakenRewardList_.WriteTo(ref output, _repeated_battleTakenRewardList_codec);
       if (IsContentClosed != false) {
         output.WriteRawTag(120);
         output.WriteBool(IsContentClosed);
@@ -297,20 +297,20 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2700FBMHFJHDJNB_.CalculateSize(_repeated_unk2700FBMHFJHDJNB_codec);
+      size += raceInfoList_.CalculateSize(_repeated_raceInfoList_codec);
       if (battleInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(BattleInfo);
       }
-      size += unk2700GALHBPGEGNL_.CalculateSize(_repeated_unk2700GALHBPGEGNL_codec);
-      size += unk2700DKCGOPBHJHA_.CalculateSize(_repeated_unk2700DKCGOPBHJHA_codec);
-      size += unk2700OOBOCEALLBE_.CalculateSize(_repeated_unk2700OOBOCEALLBE_codec);
+      size += wishIdList_.CalculateSize(_repeated_wishIdList_codec);
+      size += battleTakenRewardList_.CalculateSize(_repeated_battleTakenRewardList_codec);
+      size += exploreTakenRewardList_.CalculateSize(_repeated_exploreTakenRewardList_codec);
       if (IsContentClosed != false) {
         size += 1 + 1;
       }
       if (exploreInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExploreInfo);
       }
-      size += unk2700CFENLEBIKGG_.CalculateSize(_repeated_unk2700CFENLEBIKGG_codec);
+      size += usedItemList_.CalculateSize(_repeated_usedItemList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -323,26 +323,26 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2700FBMHFJHDJNB_.Add(other.unk2700FBMHFJHDJNB_);
+      raceInfoList_.Add(other.raceInfoList_);
       if (other.battleInfo_ != null) {
         if (battleInfo_ == null) {
-          BattleInfo = new global::Weedwacker.Shared.Network.Proto.Unk2700_DIEGJDEIDKO();
+          BattleInfo = new global::Weedwacker.Shared.Network.Proto.WinterCampStageInfo();
         }
         BattleInfo.MergeFrom(other.BattleInfo);
       }
-      unk2700GALHBPGEGNL_.Add(other.unk2700GALHBPGEGNL_);
-      unk2700DKCGOPBHJHA_.Add(other.unk2700DKCGOPBHJHA_);
-      unk2700OOBOCEALLBE_.Add(other.unk2700OOBOCEALLBE_);
+      wishIdList_.Add(other.wishIdList_);
+      battleTakenRewardList_.Add(other.battleTakenRewardList_);
+      exploreTakenRewardList_.Add(other.exploreTakenRewardList_);
       if (other.IsContentClosed != false) {
         IsContentClosed = other.IsContentClosed;
       }
       if (other.exploreInfo_ != null) {
         if (exploreInfo_ == null) {
-          ExploreInfo = new global::Weedwacker.Shared.Network.Proto.Unk2700_DIEGJDEIDKO();
+          ExploreInfo = new global::Weedwacker.Shared.Network.Proto.WinterCampStageInfo();
         }
         ExploreInfo.MergeFrom(other.ExploreInfo);
       }
-      unk2700CFENLEBIKGG_.Add(other.unk2700CFENLEBIKGG_);
+      usedItemList_.Add(other.usedItemList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -359,40 +359,40 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 18: {
-            unk2700CFENLEBIKGG_.AddEntriesFrom(input, _repeated_unk2700CFENLEBIKGG_codec);
+            usedItemList_.AddEntriesFrom(input, _repeated_usedItemList_codec);
             break;
           }
           case 50:
           case 48: {
-            unk2700OOBOCEALLBE_.AddEntriesFrom(input, _repeated_unk2700OOBOCEALLBE_codec);
+            exploreTakenRewardList_.AddEntriesFrom(input, _repeated_exploreTakenRewardList_codec);
             break;
           }
           case 66:
           case 64: {
-            unk2700GALHBPGEGNL_.AddEntriesFrom(input, _repeated_unk2700GALHBPGEGNL_codec);
+            wishIdList_.AddEntriesFrom(input, _repeated_wishIdList_codec);
             break;
           }
           case 74: {
-            unk2700FBMHFJHDJNB_.AddEntriesFrom(input, _repeated_unk2700FBMHFJHDJNB_codec);
+            raceInfoList_.AddEntriesFrom(input, _repeated_raceInfoList_codec);
             break;
           }
           case 82: {
             if (battleInfo_ == null) {
-              BattleInfo = new global::Weedwacker.Shared.Network.Proto.Unk2700_DIEGJDEIDKO();
+              BattleInfo = new global::Weedwacker.Shared.Network.Proto.WinterCampStageInfo();
             }
             input.ReadMessage(BattleInfo);
             break;
           }
           case 90: {
             if (exploreInfo_ == null) {
-              ExploreInfo = new global::Weedwacker.Shared.Network.Proto.Unk2700_DIEGJDEIDKO();
+              ExploreInfo = new global::Weedwacker.Shared.Network.Proto.WinterCampStageInfo();
             }
             input.ReadMessage(ExploreInfo);
             break;
           }
           case 114:
           case 112: {
-            unk2700DKCGOPBHJHA_.AddEntriesFrom(input, _repeated_unk2700DKCGOPBHJHA_codec);
+            battleTakenRewardList_.AddEntriesFrom(input, _repeated_battleTakenRewardList_codec);
             break;
           }
           case 120: {
@@ -415,40 +415,40 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 18: {
-            unk2700CFENLEBIKGG_.AddEntriesFrom(ref input, _repeated_unk2700CFENLEBIKGG_codec);
+            usedItemList_.AddEntriesFrom(ref input, _repeated_usedItemList_codec);
             break;
           }
           case 50:
           case 48: {
-            unk2700OOBOCEALLBE_.AddEntriesFrom(ref input, _repeated_unk2700OOBOCEALLBE_codec);
+            exploreTakenRewardList_.AddEntriesFrom(ref input, _repeated_exploreTakenRewardList_codec);
             break;
           }
           case 66:
           case 64: {
-            unk2700GALHBPGEGNL_.AddEntriesFrom(ref input, _repeated_unk2700GALHBPGEGNL_codec);
+            wishIdList_.AddEntriesFrom(ref input, _repeated_wishIdList_codec);
             break;
           }
           case 74: {
-            unk2700FBMHFJHDJNB_.AddEntriesFrom(ref input, _repeated_unk2700FBMHFJHDJNB_codec);
+            raceInfoList_.AddEntriesFrom(ref input, _repeated_raceInfoList_codec);
             break;
           }
           case 82: {
             if (battleInfo_ == null) {
-              BattleInfo = new global::Weedwacker.Shared.Network.Proto.Unk2700_DIEGJDEIDKO();
+              BattleInfo = new global::Weedwacker.Shared.Network.Proto.WinterCampStageInfo();
             }
             input.ReadMessage(BattleInfo);
             break;
           }
           case 90: {
             if (exploreInfo_ == null) {
-              ExploreInfo = new global::Weedwacker.Shared.Network.Proto.Unk2700_DIEGJDEIDKO();
+              ExploreInfo = new global::Weedwacker.Shared.Network.Proto.WinterCampStageInfo();
             }
             input.ReadMessage(ExploreInfo);
             break;
           }
           case 114:
           case 112: {
-            unk2700DKCGOPBHJHA_.AddEntriesFrom(ref input, _repeated_unk2700DKCGOPBHJHA_codec);
+            battleTakenRewardList_.AddEntriesFrom(ref input, _repeated_battleTakenRewardList_codec);
             break;
           }
           case 120: {

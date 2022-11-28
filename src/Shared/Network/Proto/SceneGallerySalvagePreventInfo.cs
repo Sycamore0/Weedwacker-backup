@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGallerySalvagePreventInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiRTY2VuZUdhbGxlcnlTYWx2YWdlUHJldmVudEluZm8ucHJvdG8iPQoeU2Nl",
-            "bmVHYWxsZXJ5U2FsdmFnZVByZXZlbnRJbmZvEhsKE1VuazI3MDBfRkZDQ0xH",
-            "SUZHSVAYByABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
-            "dG9iBnByb3RvMw=="));
+            "CiRTY2VuZUdhbGxlcnlTYWx2YWdlUHJldmVudEluZm8ucHJvdG8iNwoeU2Nl",
+            "bmVHYWxsZXJ5U2FsdmFnZVByZXZlbnRJbmZvEhUKDW1vbnN0ZXJfY291bnQY",
+            "ByABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGallerySalvagePreventInfo), global::Weedwacker.Shared.Network.Proto.SceneGallerySalvagePreventInfo.Parser, new[]{ "Unk2700FFCCLGIFGIP" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGallerySalvagePreventInfo), global::Weedwacker.Shared.Network.Proto.SceneGallerySalvagePreventInfo.Parser, new[]{ "MonsterCount" }, null, null, null, null)
           }));
     }
     #endregion
@@ -72,7 +72,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SceneGallerySalvagePreventInfo(SceneGallerySalvagePreventInfo other) : this() {
-      unk2700FFCCLGIFGIP_ = other.unk2700FFCCLGIFGIP_;
+      monsterCount_ = other.monsterCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -82,15 +82,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new SceneGallerySalvagePreventInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_FFCCLGIFGIP" field.</summary>
-    public const int Unk2700FFCCLGIFGIPFieldNumber = 7;
-    private uint unk2700FFCCLGIFGIP_;
+    /// <summary>Field number for the "monster_count" field.</summary>
+    public const int MonsterCountFieldNumber = 7;
+    private uint monsterCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700FFCCLGIFGIP {
-      get { return unk2700FFCCLGIFGIP_; }
+    public uint MonsterCount {
+      get { return monsterCount_; }
       set {
-        unk2700FFCCLGIFGIP_ = value;
+        monsterCount_ = value;
       }
     }
 
@@ -109,7 +109,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700FFCCLGIFGIP != other.Unk2700FFCCLGIFGIP) return false;
+      if (MonsterCount != other.MonsterCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -117,7 +117,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700FFCCLGIFGIP != 0) hash ^= Unk2700FFCCLGIFGIP.GetHashCode();
+      if (MonsterCount != 0) hash ^= MonsterCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -136,9 +136,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700FFCCLGIFGIP != 0) {
+      if (MonsterCount != 0) {
         output.WriteRawTag(56);
-        output.WriteUInt32(Unk2700FFCCLGIFGIP);
+        output.WriteUInt32(MonsterCount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -150,9 +150,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700FFCCLGIFGIP != 0) {
+      if (MonsterCount != 0) {
         output.WriteRawTag(56);
-        output.WriteUInt32(Unk2700FFCCLGIFGIP);
+        output.WriteUInt32(MonsterCount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -164,8 +164,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700FFCCLGIFGIP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700FFCCLGIFGIP);
+      if (MonsterCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MonsterCount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -179,8 +179,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700FFCCLGIFGIP != 0) {
-        Unk2700FFCCLGIFGIP = other.Unk2700FFCCLGIFGIP;
+      if (other.MonsterCount != 0) {
+        MonsterCount = other.MonsterCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -198,7 +198,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 56: {
-            Unk2700FFCCLGIFGIP = input.ReadUInt32();
+            MonsterCount = input.ReadUInt32();
             break;
           }
         }
@@ -217,7 +217,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 56: {
-            Unk2700FFCCLGIFGIP = input.ReadUInt32();
+            MonsterCount = input.ReadUInt32();
             break;
           }
         }

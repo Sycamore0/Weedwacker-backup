@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGallerySummerTimeV2BoatInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiZTY2VuZUdhbGxlcnlTdW1tZXJUaW1lVjJCb2F0SW5mby5wcm90byJvCiBT",
+            "CiZTY2VuZUdhbGxlcnlTdW1tZXJUaW1lVjJCb2F0SW5mby5wcm90byJlCiBT",
             "Y2VuZUdhbGxlcnlTdW1tZXJUaW1lVjJCb2F0SW5mbxIOCgZwYXJhbTEYDyAB",
-            "KA0SDgoGcGFyYW0zGAMgASgNEhsKE1VuazI4MDBfTkdHUElFQ05ISkEYCyAB",
-            "KA0SDgoGcGFyYW0yGAcgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvYgZwcm90bzM="));
+            "KA0SDgoGcGFyYW0zGAMgASgNEhEKCXVzZWRfdGltZRgLIAEoDRIOCgZwYXJh",
+            "bTIYByABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGallerySummerTimeV2BoatInfo), global::Weedwacker.Shared.Network.Proto.SceneGallerySummerTimeV2BoatInfo.Parser, new[]{ "Param1", "Param3", "Unk2800NGGPIECNHJA", "Param2" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGallerySummerTimeV2BoatInfo), global::Weedwacker.Shared.Network.Proto.SceneGallerySummerTimeV2BoatInfo.Parser, new[]{ "Param1", "Param3", "UsedTime", "Param2" }, null, null, null, null)
           }));
     }
     #endregion
@@ -75,7 +75,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public SceneGallerySummerTimeV2BoatInfo(SceneGallerySummerTimeV2BoatInfo other) : this() {
       param1_ = other.param1_;
       param3_ = other.param3_;
-      unk2800NGGPIECNHJA_ = other.unk2800NGGPIECNHJA_;
+      usedTime_ = other.usedTime_;
       param2_ = other.param2_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -110,15 +110,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2800_NGGPIECNHJA" field.</summary>
-    public const int Unk2800NGGPIECNHJAFieldNumber = 11;
-    private uint unk2800NGGPIECNHJA_;
+    /// <summary>Field number for the "used_time" field.</summary>
+    public const int UsedTimeFieldNumber = 11;
+    private uint usedTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800NGGPIECNHJA {
-      get { return unk2800NGGPIECNHJA_; }
+    public uint UsedTime {
+      get { return usedTime_; }
       set {
-        unk2800NGGPIECNHJA_ = value;
+        usedTime_ = value;
       }
     }
 
@@ -151,7 +151,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (Param1 != other.Param1) return false;
       if (Param3 != other.Param3) return false;
-      if (Unk2800NGGPIECNHJA != other.Unk2800NGGPIECNHJA) return false;
+      if (UsedTime != other.UsedTime) return false;
       if (Param2 != other.Param2) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -162,7 +162,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (Param1 != 0) hash ^= Param1.GetHashCode();
       if (Param3 != 0) hash ^= Param3.GetHashCode();
-      if (Unk2800NGGPIECNHJA != 0) hash ^= Unk2800NGGPIECNHJA.GetHashCode();
+      if (UsedTime != 0) hash ^= UsedTime.GetHashCode();
       if (Param2 != 0) hash ^= Param2.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -190,9 +190,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteUInt32(Param2);
       }
-      if (Unk2800NGGPIECNHJA != 0) {
+      if (UsedTime != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk2800NGGPIECNHJA);
+        output.WriteUInt32(UsedTime);
       }
       if (Param1 != 0) {
         output.WriteRawTag(120);
@@ -216,9 +216,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteUInt32(Param2);
       }
-      if (Unk2800NGGPIECNHJA != 0) {
+      if (UsedTime != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk2800NGGPIECNHJA);
+        output.WriteUInt32(UsedTime);
       }
       if (Param1 != 0) {
         output.WriteRawTag(120);
@@ -240,8 +240,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Param3 != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Param3);
       }
-      if (Unk2800NGGPIECNHJA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800NGGPIECNHJA);
+      if (UsedTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(UsedTime);
       }
       if (Param2 != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Param2);
@@ -264,8 +264,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Param3 != 0) {
         Param3 = other.Param3;
       }
-      if (other.Unk2800NGGPIECNHJA != 0) {
-        Unk2800NGGPIECNHJA = other.Unk2800NGGPIECNHJA;
+      if (other.UsedTime != 0) {
+        UsedTime = other.UsedTime;
       }
       if (other.Param2 != 0) {
         Param2 = other.Param2;
@@ -294,7 +294,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk2800NGGPIECNHJA = input.ReadUInt32();
+            UsedTime = input.ReadUInt32();
             break;
           }
           case 120: {
@@ -325,7 +325,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk2800NGGPIECNHJA = input.ReadUInt32();
+            UsedTime = input.ReadUInt32();
             break;
           }
           case 120: {

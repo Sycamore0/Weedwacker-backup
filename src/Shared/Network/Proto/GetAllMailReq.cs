@@ -24,13 +24,13 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetAllMailReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNHZXRBbGxNYWlsUmVxLnByb3RvIiwKDUdldEFsbE1haWxSZXESGwoTVW5r",
-            "MjcwMF9PUEVITERBR0lDRhgHIAEoCEIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "ChNHZXRBbGxNYWlsUmVxLnByb3RvIiUKDUdldEFsbE1haWxSZXESFAoMaXNf",
+            "Y29sbGVjdGVkGAcgASgIQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetAllMailReq), global::Weedwacker.Shared.Network.Proto.GetAllMailReq.Parser, new[]{ "Unk2700OPEHLDAGICF" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetAllMailReq), global::Weedwacker.Shared.Network.Proto.GetAllMailReq.Parser, new[]{ "IsCollected" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,7 +77,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetAllMailReq(GetAllMailReq other) : this() {
-      unk2700OPEHLDAGICF_ = other.unk2700OPEHLDAGICF_;
+      isCollected_ = other.isCollected_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -87,15 +87,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new GetAllMailReq(this);
     }
 
-    /// <summary>Field number for the "Unk2700_OPEHLDAGICF" field.</summary>
-    public const int Unk2700OPEHLDAGICFFieldNumber = 7;
-    private bool unk2700OPEHLDAGICF_;
+    /// <summary>Field number for the "is_collected" field.</summary>
+    public const int IsCollectedFieldNumber = 7;
+    private bool isCollected_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700OPEHLDAGICF {
-      get { return unk2700OPEHLDAGICF_; }
+    public bool IsCollected {
+      get { return isCollected_; }
       set {
-        unk2700OPEHLDAGICF_ = value;
+        isCollected_ = value;
       }
     }
 
@@ -114,7 +114,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700OPEHLDAGICF != other.Unk2700OPEHLDAGICF) return false;
+      if (IsCollected != other.IsCollected) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -122,7 +122,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700OPEHLDAGICF != false) hash ^= Unk2700OPEHLDAGICF.GetHashCode();
+      if (IsCollected != false) hash ^= IsCollected.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -141,9 +141,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700OPEHLDAGICF != false) {
+      if (IsCollected != false) {
         output.WriteRawTag(56);
-        output.WriteBool(Unk2700OPEHLDAGICF);
+        output.WriteBool(IsCollected);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -155,9 +155,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700OPEHLDAGICF != false) {
+      if (IsCollected != false) {
         output.WriteRawTag(56);
-        output.WriteBool(Unk2700OPEHLDAGICF);
+        output.WriteBool(IsCollected);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -169,7 +169,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700OPEHLDAGICF != false) {
+      if (IsCollected != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -184,8 +184,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700OPEHLDAGICF != false) {
-        Unk2700OPEHLDAGICF = other.Unk2700OPEHLDAGICF;
+      if (other.IsCollected != false) {
+        IsCollected = other.IsCollected;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -203,7 +203,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 56: {
-            Unk2700OPEHLDAGICF = input.ReadBool();
+            IsCollected = input.ReadBool();
             break;
           }
         }
@@ -222,7 +222,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 56: {
-            Unk2700OPEHLDAGICF = input.ReadBool();
+            IsCollected = input.ReadBool();
             break;
           }
         }

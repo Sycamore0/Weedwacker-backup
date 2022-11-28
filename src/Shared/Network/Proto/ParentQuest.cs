@@ -24,23 +24,23 @@ namespace Weedwacker.Shared.Network.Proto {
     static ParentQuestReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFQYXJlbnRRdWVzdC5wcm90bxoQQ2hpbGRRdWVzdC5wcm90bxobUGFyZW50",
-            "UXVlc3RSYW5kb21JbmZvLnByb3RvGhlVbmszMDAwX0VOTERJSExHTkNLLnBy",
-            "b3RvIp8DCgtQYXJlbnRRdWVzdBIRCglxdWVzdF92YXIYDiADKAUSMgoMdGlt",
-            "ZV92YXJfbWFwGAggAygLMhwuUGFyZW50UXVlc3QuVGltZVZhck1hcEVudHJ5",
-            "EhoKEnBhcmVudF9xdWVzdF9zdGF0ZRgBIAEoDRITCgtpc19maW5pc2hlZBgH",
-            "IAEoCBIxChNVbmszMDAwX0hMUEdJTElHR0NCGA8gAygLMhQuVW5rMzAwMF9F",
-            "TkxESUhMR05DSxIrCgtyYW5kb21faW5mbxgMIAEoCzIWLlBhcmVudFF1ZXN0",
-            "UmFuZG9tSW5mbxIXCg9wYXJlbnRfcXVlc3RfaWQYAyABKA0SEQoJaXNfcmFu",
-            "ZG9tGA0gASgIEhsKE1VuazI3MDBfS0hERElKTk9JQ0sYBiABKAQSFQoNcXVl",
-            "c3RfdmFyX3NlcRgLIAEoDRIlChBjaGlsZF9xdWVzdF9saXN0GAkgAygLMgsu",
-            "Q2hpbGRRdWVzdBoxCg9UaW1lVmFyTWFwRW50cnkSCwoDa2V5GAEgASgNEg0K",
-            "BXZhbHVlGAIgASgNOgI4AUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90b2IGcHJvdG8z"));
+            "ChFQYXJlbnRRdWVzdC5wcm90bxoQQ2hpbGRRdWVzdC5wcm90bxoXSW5mZXJl",
+            "bmNlUGFnZUluZm8ucHJvdG8aG1BhcmVudFF1ZXN0UmFuZG9tSW5mby5wcm90",
+            "byKTAwoLUGFyZW50UXVlc3QSEQoJcXVlc3RfdmFyGA4gAygFEjIKDHRpbWVf",
+            "dmFyX21hcBgIIAMoCzIcLlBhcmVudFF1ZXN0LlRpbWVWYXJNYXBFbnRyeRIa",
+            "ChJwYXJlbnRfcXVlc3Rfc3RhdGUYASABKA0SEwoLaXNfZmluaXNoZWQYByAB",
+            "KAgSLwoTaW5mZXJlbmNlX3BhZ2VfbGlzdBgPIAMoCzISLkluZmVyZW5jZVBh",
+            "Z2VJbmZvEisKC3JhbmRvbV9pbmZvGAwgASgLMhYuUGFyZW50UXVlc3RSYW5k",
+            "b21JbmZvEhcKD3BhcmVudF9xdWVzdF9pZBgDIAEoDRIRCglpc19yYW5kb20Y",
+            "DSABKAgSEQoJdmlkZW9fa2V5GAYgASgEEhUKDXF1ZXN0X3Zhcl9zZXEYCyAB",
+            "KA0SJQoQY2hpbGRfcXVlc3RfbGlzdBgJIAMoCzILLkNoaWxkUXVlc3QaMQoP",
+            "VGltZVZhck1hcEVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1ZRgCIAEoDToC",
+            "OAFCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ChildQuestReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ParentQuestRandomInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk3000ENLDIHLGNCKReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ChildQuestReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.InferencePageInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ParentQuestRandomInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ParentQuest), global::Weedwacker.Shared.Network.Proto.ParentQuest.Parser, new[]{ "QuestVar", "TimeVarMap", "ParentQuestState", "IsFinished", "Unk3000HLPGILIGGCB", "RandomInfo", "ParentQuestId", "IsRandom", "Unk2700KHDDIJNOICK", "QuestVarSeq", "ChildQuestList" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ParentQuest), global::Weedwacker.Shared.Network.Proto.ParentQuest.Parser, new[]{ "QuestVar", "TimeVarMap", "ParentQuestState", "IsFinished", "InferencePageList", "RandomInfo", "ParentQuestId", "IsRandom", "VideoKey", "QuestVarSeq", "ChildQuestList" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -85,11 +85,11 @@ namespace Weedwacker.Shared.Network.Proto {
       timeVarMap_ = other.timeVarMap_.Clone();
       parentQuestState_ = other.parentQuestState_;
       isFinished_ = other.isFinished_;
-      unk3000HLPGILIGGCB_ = other.unk3000HLPGILIGGCB_.Clone();
+      inferencePageList_ = other.inferencePageList_.Clone();
       randomInfo_ = other.randomInfo_ != null ? other.randomInfo_.Clone() : null;
       parentQuestId_ = other.parentQuestId_;
       isRandom_ = other.isRandom_;
-      unk2700KHDDIJNOICK_ = other.unk2700KHDDIJNOICK_;
+      videoKey_ = other.videoKey_;
       questVarSeq_ = other.questVarSeq_;
       childQuestList_ = other.childQuestList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -147,15 +147,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3000_HLPGILIGGCB" field.</summary>
-    public const int Unk3000HLPGILIGGCBFieldNumber = 15;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk3000_ENLDIHLGNCK> _repeated_unk3000HLPGILIGGCB_codec
-        = pb::FieldCodec.ForMessage(122, global::Weedwacker.Shared.Network.Proto.Unk3000_ENLDIHLGNCK.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk3000_ENLDIHLGNCK> unk3000HLPGILIGGCB_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk3000_ENLDIHLGNCK>();
+    /// <summary>Field number for the "inference_page_list" field.</summary>
+    public const int InferencePageListFieldNumber = 15;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.InferencePageInfo> _repeated_inferencePageList_codec
+        = pb::FieldCodec.ForMessage(122, global::Weedwacker.Shared.Network.Proto.InferencePageInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.InferencePageInfo> inferencePageList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.InferencePageInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk3000_ENLDIHLGNCK> Unk3000HLPGILIGGCB {
-      get { return unk3000HLPGILIGGCB_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.InferencePageInfo> InferencePageList {
+      get { return inferencePageList_; }
     }
 
     /// <summary>Field number for the "random_info" field.</summary>
@@ -194,15 +194,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_KHDDIJNOICK" field.</summary>
-    public const int Unk2700KHDDIJNOICKFieldNumber = 6;
-    private ulong unk2700KHDDIJNOICK_;
+    /// <summary>Field number for the "video_key" field.</summary>
+    public const int VideoKeyFieldNumber = 6;
+    private ulong videoKey_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong Unk2700KHDDIJNOICK {
-      get { return unk2700KHDDIJNOICK_; }
+    public ulong VideoKey {
+      get { return videoKey_; }
       set {
-        unk2700KHDDIJNOICK_ = value;
+        videoKey_ = value;
       }
     }
 
@@ -248,11 +248,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (!TimeVarMap.Equals(other.TimeVarMap)) return false;
       if (ParentQuestState != other.ParentQuestState) return false;
       if (IsFinished != other.IsFinished) return false;
-      if(!unk3000HLPGILIGGCB_.Equals(other.unk3000HLPGILIGGCB_)) return false;
+      if(!inferencePageList_.Equals(other.inferencePageList_)) return false;
       if (!object.Equals(RandomInfo, other.RandomInfo)) return false;
       if (ParentQuestId != other.ParentQuestId) return false;
       if (IsRandom != other.IsRandom) return false;
-      if (Unk2700KHDDIJNOICK != other.Unk2700KHDDIJNOICK) return false;
+      if (VideoKey != other.VideoKey) return false;
       if (QuestVarSeq != other.QuestVarSeq) return false;
       if(!childQuestList_.Equals(other.childQuestList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -266,11 +266,11 @@ namespace Weedwacker.Shared.Network.Proto {
       hash ^= TimeVarMap.GetHashCode();
       if (ParentQuestState != 0) hash ^= ParentQuestState.GetHashCode();
       if (IsFinished != false) hash ^= IsFinished.GetHashCode();
-      hash ^= unk3000HLPGILIGGCB_.GetHashCode();
+      hash ^= inferencePageList_.GetHashCode();
       if (randomInfo_ != null) hash ^= RandomInfo.GetHashCode();
       if (ParentQuestId != 0) hash ^= ParentQuestId.GetHashCode();
       if (IsRandom != false) hash ^= IsRandom.GetHashCode();
-      if (Unk2700KHDDIJNOICK != 0UL) hash ^= Unk2700KHDDIJNOICK.GetHashCode();
+      if (VideoKey != 0UL) hash ^= VideoKey.GetHashCode();
       if (QuestVarSeq != 0) hash ^= QuestVarSeq.GetHashCode();
       hash ^= childQuestList_.GetHashCode();
       if (_unknownFields != null) {
@@ -299,9 +299,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(24);
         output.WriteUInt32(ParentQuestId);
       }
-      if (Unk2700KHDDIJNOICK != 0UL) {
+      if (VideoKey != 0UL) {
         output.WriteRawTag(48);
-        output.WriteUInt64(Unk2700KHDDIJNOICK);
+        output.WriteUInt64(VideoKey);
       }
       if (IsFinished != false) {
         output.WriteRawTag(56);
@@ -322,7 +322,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteBool(IsRandom);
       }
       questVar_.WriteTo(output, _repeated_questVar_codec);
-      unk3000HLPGILIGGCB_.WriteTo(output, _repeated_unk3000HLPGILIGGCB_codec);
+      inferencePageList_.WriteTo(output, _repeated_inferencePageList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -341,9 +341,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(24);
         output.WriteUInt32(ParentQuestId);
       }
-      if (Unk2700KHDDIJNOICK != 0UL) {
+      if (VideoKey != 0UL) {
         output.WriteRawTag(48);
-        output.WriteUInt64(Unk2700KHDDIJNOICK);
+        output.WriteUInt64(VideoKey);
       }
       if (IsFinished != false) {
         output.WriteRawTag(56);
@@ -364,7 +364,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteBool(IsRandom);
       }
       questVar_.WriteTo(ref output, _repeated_questVar_codec);
-      unk3000HLPGILIGGCB_.WriteTo(ref output, _repeated_unk3000HLPGILIGGCB_codec);
+      inferencePageList_.WriteTo(ref output, _repeated_inferencePageList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -383,7 +383,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsFinished != false) {
         size += 1 + 1;
       }
-      size += unk3000HLPGILIGGCB_.CalculateSize(_repeated_unk3000HLPGILIGGCB_codec);
+      size += inferencePageList_.CalculateSize(_repeated_inferencePageList_codec);
       if (randomInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RandomInfo);
       }
@@ -393,8 +393,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsRandom != false) {
         size += 1 + 1;
       }
-      if (Unk2700KHDDIJNOICK != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Unk2700KHDDIJNOICK);
+      if (VideoKey != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(VideoKey);
       }
       if (QuestVarSeq != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(QuestVarSeq);
@@ -420,7 +420,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.IsFinished != false) {
         IsFinished = other.IsFinished;
       }
-      unk3000HLPGILIGGCB_.Add(other.unk3000HLPGILIGGCB_);
+      inferencePageList_.Add(other.inferencePageList_);
       if (other.randomInfo_ != null) {
         if (randomInfo_ == null) {
           RandomInfo = new global::Weedwacker.Shared.Network.Proto.ParentQuestRandomInfo();
@@ -433,8 +433,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.IsRandom != false) {
         IsRandom = other.IsRandom;
       }
-      if (other.Unk2700KHDDIJNOICK != 0UL) {
-        Unk2700KHDDIJNOICK = other.Unk2700KHDDIJNOICK;
+      if (other.VideoKey != 0UL) {
+        VideoKey = other.VideoKey;
       }
       if (other.QuestVarSeq != 0) {
         QuestVarSeq = other.QuestVarSeq;
@@ -464,7 +464,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk2700KHDDIJNOICK = input.ReadUInt64();
+            VideoKey = input.ReadUInt64();
             break;
           }
           case 56: {
@@ -500,7 +500,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 122: {
-            unk3000HLPGILIGGCB_.AddEntriesFrom(input, _repeated_unk3000HLPGILIGGCB_codec);
+            inferencePageList_.AddEntriesFrom(input, _repeated_inferencePageList_codec);
             break;
           }
         }
@@ -527,7 +527,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk2700KHDDIJNOICK = input.ReadUInt64();
+            VideoKey = input.ReadUInt64();
             break;
           }
           case 56: {
@@ -563,7 +563,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 122: {
-            unk3000HLPGILIGGCB_.AddEntriesFrom(ref input, _repeated_unk3000HLPGILIGGCB_codec);
+            inferencePageList_.AddEntriesFrom(ref input, _repeated_inferencePageList_codec);
             break;
           }
         }

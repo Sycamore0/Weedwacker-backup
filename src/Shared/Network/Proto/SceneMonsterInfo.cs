@@ -27,7 +27,7 @@ namespace Weedwacker.Shared.Network.Proto {
             "ChZTY2VuZU1vbnN0ZXJJbmZvLnByb3RvGhZGaXNodGFua0Zpc2hJbmZvLnBy",
             "b3RvGhVNb25zdGVyQm9yblR5cGUucHJvdG8aEk1vbnN0ZXJSb3V0ZS5wcm90",
             "bxoTU2NlbmVGaXNoSW5mby5wcm90bxoVU2NlbmVXZWFwb25JbmZvLnByb3Rv",
-            "IvkFChBTY2VuZU1vbnN0ZXJJbmZvEhIKCm1vbnN0ZXJfaWQYASABKA0SEAoI",
+            "IuMFChBTY2VuZU1vbnN0ZXJJbmZvEhIKCm1vbnN0ZXJfaWQYASABKA0SEAoI",
             "Z3JvdXBfaWQYAiABKA0SEQoJY29uZmlnX2lkGAMgASgNEiUKC3dlYXBvbl9s",
             "aXN0GAQgAygLMhAuU2NlbmVXZWFwb25JbmZvEhkKEWF1dGhvcml0eV9wZWVy",
             "X2lkGAUgASgNEhIKCmFmZml4X2xpc3QYBiADKA0SEAoIaXNfZWxpdGUYByAB",
@@ -39,16 +39,16 @@ namespace Weedwacker.Shared.Network.Proto {
             "ZWNpYWxfbmFtZV9pZBgQIAEoDRIYChBhdHRhY2tfdGFyZ2V0X2lkGBEgASgN",
             "EiQKDW1vbnN0ZXJfcm91dGUYEiABKAsyDS5Nb25zdGVyUm91dGUSFAoMYWlf",
             "Y29uZmlnX2lkGBMgASgNEhYKDmxldmVsX3JvdXRlX2lkGBQgASgNEhQKDGlu",
-            "aXRfcG9zZV9pZBgVIAEoDRIbChNVbmsyODAwX0pFR0xFTlBEUE5JGBYgASgI",
-            "EhsKE1VuazMwMDBfQ0NLSkRDQkRFS0QYFyABKA0SIwoJZmlzaF9pbmZvGDIg",
-            "ASgLMg4uU2NlbmVGaXNoSW5mb0gAEi8KEmZpc2h0YW5rX2Zpc2hfaW5mbxgz",
-            "IAEoCzIRLkZpc2h0YW5rRmlzaEluZm9IABozChFTdW1tb25UYWdNYXBFbnRy",
-            "eRILCgNrZXkYASABKA0SDQoFdmFsdWUYAiABKA06AjgBQgkKB2NvbnRlbnRC",
-            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "aXRfcG9zZV9pZBgVIAEoDRIQCghpc19saWdodBgWIAEoCBIQCghraWxsX251",
+            "bRgXIAEoDRIjCglmaXNoX2luZm8YMiABKAsyDi5TY2VuZUZpc2hJbmZvSAAS",
+            "LwoSZmlzaHRhbmtfZmlzaF9pbmZvGDMgASgLMhEuRmlzaHRhbmtGaXNoSW5m",
+            "b0gAGjMKEVN1bW1vblRhZ01hcEVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1",
+            "ZRgCIAEoDToCOAFCCQoHY29udGVudEIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.FishtankFishInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MonsterBornTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MonsterRouteReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SceneFishInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SceneWeaponInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneMonsterInfo), global::Weedwacker.Shared.Network.Proto.SceneMonsterInfo.Parser, new[]{ "MonsterId", "GroupId", "ConfigId", "WeaponList", "AuthorityPeerId", "AffixList", "IsElite", "OwnerEntityId", "SummonedTag", "SummonTagMap", "PoseId", "BornType", "BlockId", "MarkFlag", "TitleId", "SpecialNameId", "AttackTargetId", "MonsterRoute", "AiConfigId", "LevelRouteId", "InitPoseId", "Unk2800JEGLENPDPNI", "Unk3000CCKJDCBDEKD", "FishInfo", "FishtankFishInfo" }, new[]{ "Content" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneMonsterInfo), global::Weedwacker.Shared.Network.Proto.SceneMonsterInfo.Parser, new[]{ "MonsterId", "GroupId", "ConfigId", "WeaponList", "AuthorityPeerId", "AffixList", "IsElite", "OwnerEntityId", "SummonedTag", "SummonTagMap", "PoseId", "BornType", "BlockId", "MarkFlag", "TitleId", "SpecialNameId", "AttackTargetId", "MonsterRoute", "AiConfigId", "LevelRouteId", "InitPoseId", "IsLight", "KillNum", "FishInfo", "FishtankFishInfo" }, new[]{ "Content" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -110,8 +110,8 @@ namespace Weedwacker.Shared.Network.Proto {
       aiConfigId_ = other.aiConfigId_;
       levelRouteId_ = other.levelRouteId_;
       initPoseId_ = other.initPoseId_;
-      unk2800JEGLENPDPNI_ = other.unk2800JEGLENPDPNI_;
-      unk3000CCKJDCBDEKD_ = other.unk3000CCKJDCBDEKD_;
+      isLight_ = other.isLight_;
+      killNum_ = other.killNum_;
       switch (other.ContentCase) {
         case ContentOneofCase.FishInfo:
           FishInfo = other.FishInfo.Clone();
@@ -379,27 +379,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2800_JEGLENPDPNI" field.</summary>
-    public const int Unk2800JEGLENPDPNIFieldNumber = 22;
-    private bool unk2800JEGLENPDPNI_;
+    /// <summary>Field number for the "is_light" field.</summary>
+    public const int IsLightFieldNumber = 22;
+    private bool isLight_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2800JEGLENPDPNI {
-      get { return unk2800JEGLENPDPNI_; }
+    public bool IsLight {
+      get { return isLight_; }
       set {
-        unk2800JEGLENPDPNI_ = value;
+        isLight_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3000_CCKJDCBDEKD" field.</summary>
-    public const int Unk3000CCKJDCBDEKDFieldNumber = 23;
-    private uint unk3000CCKJDCBDEKD_;
+    /// <summary>Field number for the "kill_num" field.</summary>
+    public const int KillNumFieldNumber = 23;
+    private uint killNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3000CCKJDCBDEKD {
-      get { return unk3000CCKJDCBDEKD_; }
+    public uint KillNum {
+      get { return killNum_; }
       set {
-        unk3000CCKJDCBDEKD_ = value;
+        killNum_ = value;
       }
     }
 
@@ -484,8 +484,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (AiConfigId != other.AiConfigId) return false;
       if (LevelRouteId != other.LevelRouteId) return false;
       if (InitPoseId != other.InitPoseId) return false;
-      if (Unk2800JEGLENPDPNI != other.Unk2800JEGLENPDPNI) return false;
-      if (Unk3000CCKJDCBDEKD != other.Unk3000CCKJDCBDEKD) return false;
+      if (IsLight != other.IsLight) return false;
+      if (KillNum != other.KillNum) return false;
       if (!object.Equals(FishInfo, other.FishInfo)) return false;
       if (!object.Equals(FishtankFishInfo, other.FishtankFishInfo)) return false;
       if (ContentCase != other.ContentCase) return false;
@@ -517,8 +517,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (AiConfigId != 0) hash ^= AiConfigId.GetHashCode();
       if (LevelRouteId != 0) hash ^= LevelRouteId.GetHashCode();
       if (InitPoseId != 0) hash ^= InitPoseId.GetHashCode();
-      if (Unk2800JEGLENPDPNI != false) hash ^= Unk2800JEGLENPDPNI.GetHashCode();
-      if (Unk3000CCKJDCBDEKD != 0) hash ^= Unk3000CCKJDCBDEKD.GetHashCode();
+      if (IsLight != false) hash ^= IsLight.GetHashCode();
+      if (KillNum != 0) hash ^= KillNum.GetHashCode();
       if (contentCase_ == ContentOneofCase.FishInfo) hash ^= FishInfo.GetHashCode();
       if (contentCase_ == ContentOneofCase.FishtankFishInfo) hash ^= FishtankFishInfo.GetHashCode();
       hash ^= (int) contentCase_;
@@ -615,13 +615,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(168, 1);
         output.WriteUInt32(InitPoseId);
       }
-      if (Unk2800JEGLENPDPNI != false) {
+      if (IsLight != false) {
         output.WriteRawTag(176, 1);
-        output.WriteBool(Unk2800JEGLENPDPNI);
+        output.WriteBool(IsLight);
       }
-      if (Unk3000CCKJDCBDEKD != 0) {
+      if (KillNum != 0) {
         output.WriteRawTag(184, 1);
-        output.WriteUInt32(Unk3000CCKJDCBDEKD);
+        output.WriteUInt32(KillNum);
       }
       if (contentCase_ == ContentOneofCase.FishInfo) {
         output.WriteRawTag(146, 3);
@@ -716,13 +716,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(168, 1);
         output.WriteUInt32(InitPoseId);
       }
-      if (Unk2800JEGLENPDPNI != false) {
+      if (IsLight != false) {
         output.WriteRawTag(176, 1);
-        output.WriteBool(Unk2800JEGLENPDPNI);
+        output.WriteBool(IsLight);
       }
-      if (Unk3000CCKJDCBDEKD != 0) {
+      if (KillNum != 0) {
         output.WriteRawTag(184, 1);
-        output.WriteUInt32(Unk3000CCKJDCBDEKD);
+        output.WriteUInt32(KillNum);
       }
       if (contentCase_ == ContentOneofCase.FishInfo) {
         output.WriteRawTag(146, 3);
@@ -799,11 +799,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (InitPoseId != 0) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(InitPoseId);
       }
-      if (Unk2800JEGLENPDPNI != false) {
+      if (IsLight != false) {
         size += 2 + 1;
       }
-      if (Unk3000CCKJDCBDEKD != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk3000CCKJDCBDEKD);
+      if (KillNum != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(KillNum);
       }
       if (contentCase_ == ContentOneofCase.FishInfo) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(FishInfo);
@@ -883,11 +883,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.InitPoseId != 0) {
         InitPoseId = other.InitPoseId;
       }
-      if (other.Unk2800JEGLENPDPNI != false) {
-        Unk2800JEGLENPDPNI = other.Unk2800JEGLENPDPNI;
+      if (other.IsLight != false) {
+        IsLight = other.IsLight;
       }
-      if (other.Unk3000CCKJDCBDEKD != 0) {
-        Unk3000CCKJDCBDEKD = other.Unk3000CCKJDCBDEKD;
+      if (other.KillNum != 0) {
+        KillNum = other.KillNum;
       }
       switch (other.ContentCase) {
         case ContentOneofCase.FishInfo:
@@ -1008,11 +1008,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 176: {
-            Unk2800JEGLENPDPNI = input.ReadBool();
+            IsLight = input.ReadBool();
             break;
           }
           case 184: {
-            Unk3000CCKJDCBDEKD = input.ReadUInt32();
+            KillNum = input.ReadUInt32();
             break;
           }
           case 402: {
@@ -1137,11 +1137,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 176: {
-            Unk2800JEGLENPDPNI = input.ReadBool();
+            IsLight = input.ReadBool();
             break;
           }
           case 184: {
-            Unk3000CCKJDCBDEKD = input.ReadUInt32();
+            KillNum = input.ReadUInt32();
             break;
           }
           case 402: {

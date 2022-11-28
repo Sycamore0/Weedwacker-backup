@@ -24,14 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static CutSceneBeginNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlDdXRTY2VuZUJlZ2luTm90aWZ5LnByb3RvIkIKE0N1dFNjZW5lQmVnaW5O",
-            "b3RpZnkSEwoLY3V0c2NlbmVfaWQYDiABKA0SFgoOaXNfd2FpdF9vdGhlcnMY",
-            "CSABKAhCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
-            "b3RvMw=="));
+            "ChlDdXRTY2VuZUJlZ2luTm90aWZ5LnByb3RvGhhDdXRTY2VuZUV4dHJhUGFy",
+            "YW0ucHJvdG8icQoTQ3V0U2NlbmVCZWdpbk5vdGlmeRIWCg5pc193YWl0X290",
+            "aGVycxgJIAEoCBITCgtjdXRzY2VuZV9pZBgOIAEoDRItChBleHRyYV9wYXJh",
+            "bV9saXN0GAMgAygLMhMuQ3V0U2NlbmVFeHRyYVBhcmFtQiKqAh9XZWVkd2Fj",
+            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.CutSceneExtraParamReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CutSceneBeginNotify), global::Weedwacker.Shared.Network.Proto.CutSceneBeginNotify.Parser, new[]{ "CutsceneId", "IsWaitOthers" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CutSceneBeginNotify), global::Weedwacker.Shared.Network.Proto.CutSceneBeginNotify.Parser, new[]{ "IsWaitOthers", "CutsceneId", "ExtraParamList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,8 +78,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CutSceneBeginNotify(CutSceneBeginNotify other) : this() {
-      cutsceneId_ = other.cutsceneId_;
       isWaitOthers_ = other.isWaitOthers_;
+      cutsceneId_ = other.cutsceneId_;
+      extraParamList_ = other.extraParamList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -86,6 +88,18 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CutSceneBeginNotify Clone() {
       return new CutSceneBeginNotify(this);
+    }
+
+    /// <summary>Field number for the "is_wait_others" field.</summary>
+    public const int IsWaitOthersFieldNumber = 9;
+    private bool isWaitOthers_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsWaitOthers {
+      get { return isWaitOthers_; }
+      set {
+        isWaitOthers_ = value;
+      }
     }
 
     /// <summary>Field number for the "cutscene_id" field.</summary>
@@ -100,16 +114,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "is_wait_others" field.</summary>
-    public const int IsWaitOthersFieldNumber = 9;
-    private bool isWaitOthers_;
+    /// <summary>Field number for the "extra_param_list" field.</summary>
+    public const int ExtraParamListFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.CutSceneExtraParam> _repeated_extraParamList_codec
+        = pb::FieldCodec.ForMessage(26, global::Weedwacker.Shared.Network.Proto.CutSceneExtraParam.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.CutSceneExtraParam> extraParamList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.CutSceneExtraParam>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsWaitOthers {
-      get { return isWaitOthers_; }
-      set {
-        isWaitOthers_ = value;
-      }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.CutSceneExtraParam> ExtraParamList {
+      get { return extraParamList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -127,8 +140,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (CutsceneId != other.CutsceneId) return false;
       if (IsWaitOthers != other.IsWaitOthers) return false;
+      if (CutsceneId != other.CutsceneId) return false;
+      if(!extraParamList_.Equals(other.extraParamList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -136,8 +150,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (CutsceneId != 0) hash ^= CutsceneId.GetHashCode();
       if (IsWaitOthers != false) hash ^= IsWaitOthers.GetHashCode();
+      if (CutsceneId != 0) hash ^= CutsceneId.GetHashCode();
+      hash ^= extraParamList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -156,6 +171,7 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      extraParamList_.WriteTo(output, _repeated_extraParamList_codec);
       if (IsWaitOthers != false) {
         output.WriteRawTag(72);
         output.WriteBool(IsWaitOthers);
@@ -174,6 +190,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      extraParamList_.WriteTo(ref output, _repeated_extraParamList_codec);
       if (IsWaitOthers != false) {
         output.WriteRawTag(72);
         output.WriteBool(IsWaitOthers);
@@ -192,12 +209,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (CutsceneId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CutsceneId);
-      }
       if (IsWaitOthers != false) {
         size += 1 + 1;
       }
+      if (CutsceneId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CutsceneId);
+      }
+      size += extraParamList_.CalculateSize(_repeated_extraParamList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -210,12 +228,13 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.CutsceneId != 0) {
-        CutsceneId = other.CutsceneId;
-      }
       if (other.IsWaitOthers != false) {
         IsWaitOthers = other.IsWaitOthers;
       }
+      if (other.CutsceneId != 0) {
+        CutsceneId = other.CutsceneId;
+      }
+      extraParamList_.Add(other.extraParamList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -231,6 +250,10 @@ namespace Weedwacker.Shared.Network.Proto {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 26: {
+            extraParamList_.AddEntriesFrom(input, _repeated_extraParamList_codec);
+            break;
+          }
           case 72: {
             IsWaitOthers = input.ReadBool();
             break;
@@ -254,6 +277,10 @@ namespace Weedwacker.Shared.Network.Proto {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 26: {
+            extraParamList_.AddEntriesFrom(ref input, _repeated_extraParamList_codec);
+            break;
+          }
           case 72: {
             IsWaitOthers = input.ReadBool();
             break;

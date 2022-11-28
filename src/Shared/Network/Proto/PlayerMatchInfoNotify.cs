@@ -25,17 +25,17 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChtQbGF5ZXJNYXRjaEluZm9Ob3RpZnkucHJvdG8aD01hdGNoVHlwZS5wcm90",
-            "byLjAQoVUGxheWVyTWF0Y2hJbmZvTm90aWZ5EiIKGm1lY2hhbmljdXNfZGlm",
-            "ZmljdWx0X2xldmVsGAwgASgNEiAKGGVzdGltYXRlX21hdGNoX2Nvc3RfdGlt",
-            "ZRgDIAEoDRIeCgptYXRjaF90eXBlGAsgASgOMgouTWF0Y2hUeXBlEhIKCm1w",
-            "X3BsYXlfaWQYBSABKA0SEAoIbWF0Y2hfaWQYCCABKA0SGAoQbWF0Y2hfYmVn",
-            "aW5fdGltZRgEIAEoDRISCgpkdW5nZW9uX2lkGAogASgNEhAKCGhvc3RfdWlk",
-            "GA0gASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
-            "cm90bzM="));
+            "byL9AQoVUGxheWVyTWF0Y2hJbmZvTm90aWZ5EhAKCG1hdGNoX2lkGAggASgN",
+            "EhgKEG1hdGNoX2JlZ2luX3RpbWUYBCABKA0SEgoKZHVuZ2Vvbl9pZBgKIAEo",
+            "DRIeCgptYXRjaF90eXBlGAsgASgOMgouTWF0Y2hUeXBlEiIKGm1lY2hhbmlj",
+            "dXNfZGlmZmljdWx0X2xldmVsGAwgASgNEhgKEG1hdGNoX3BhcmFtX2xpc3QY",
+            "BiADKA0SIAoYZXN0aW1hdGVfbWF0Y2hfY29zdF90aW1lGAMgASgNEhIKCm1w",
+            "X3BsYXlfaWQYBSABKA0SEAoIaG9zdF91aWQYDSABKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MatchTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerMatchInfoNotify), global::Weedwacker.Shared.Network.Proto.PlayerMatchInfoNotify.Parser, new[]{ "MechanicusDifficultLevel", "EstimateMatchCostTime", "MatchType", "MpPlayId", "MatchId", "MatchBeginTime", "DungeonId", "HostUid" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerMatchInfoNotify), global::Weedwacker.Shared.Network.Proto.PlayerMatchInfoNotify.Parser, new[]{ "MatchId", "MatchBeginTime", "DungeonId", "MatchType", "MechanicusDifficultLevel", "MatchParamList", "EstimateMatchCostTime", "MpPlayId", "HostUid" }, null, null, null, null)
           }));
     }
     #endregion
@@ -81,13 +81,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerMatchInfoNotify(PlayerMatchInfoNotify other) : this() {
-      mechanicusDifficultLevel_ = other.mechanicusDifficultLevel_;
-      estimateMatchCostTime_ = other.estimateMatchCostTime_;
-      matchType_ = other.matchType_;
-      mpPlayId_ = other.mpPlayId_;
       matchId_ = other.matchId_;
       matchBeginTime_ = other.matchBeginTime_;
       dungeonId_ = other.dungeonId_;
+      matchType_ = other.matchType_;
+      mechanicusDifficultLevel_ = other.mechanicusDifficultLevel_;
+      matchParamList_ = other.matchParamList_.Clone();
+      estimateMatchCostTime_ = other.estimateMatchCostTime_;
+      mpPlayId_ = other.mpPlayId_;
       hostUid_ = other.hostUid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -96,54 +97,6 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerMatchInfoNotify Clone() {
       return new PlayerMatchInfoNotify(this);
-    }
-
-    /// <summary>Field number for the "mechanicus_difficult_level" field.</summary>
-    public const int MechanicusDifficultLevelFieldNumber = 12;
-    private uint mechanicusDifficultLevel_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint MechanicusDifficultLevel {
-      get { return mechanicusDifficultLevel_; }
-      set {
-        mechanicusDifficultLevel_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "estimate_match_cost_time" field.</summary>
-    public const int EstimateMatchCostTimeFieldNumber = 3;
-    private uint estimateMatchCostTime_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint EstimateMatchCostTime {
-      get { return estimateMatchCostTime_; }
-      set {
-        estimateMatchCostTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "match_type" field.</summary>
-    public const int MatchTypeFieldNumber = 11;
-    private global::Weedwacker.Shared.Network.Proto.MatchType matchType_ = global::Weedwacker.Shared.Network.Proto.MatchType.None;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.MatchType MatchType {
-      get { return matchType_; }
-      set {
-        matchType_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mp_play_id" field.</summary>
-    public const int MpPlayIdFieldNumber = 5;
-    private uint mpPlayId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint MpPlayId {
-      get { return mpPlayId_; }
-      set {
-        mpPlayId_ = value;
-      }
     }
 
     /// <summary>Field number for the "match_id" field.</summary>
@@ -182,6 +135,65 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
+    /// <summary>Field number for the "match_type" field.</summary>
+    public const int MatchTypeFieldNumber = 11;
+    private global::Weedwacker.Shared.Network.Proto.MatchType matchType_ = global::Weedwacker.Shared.Network.Proto.MatchType.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.MatchType MatchType {
+      get { return matchType_; }
+      set {
+        matchType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mechanicus_difficult_level" field.</summary>
+    public const int MechanicusDifficultLevelFieldNumber = 12;
+    private uint mechanicusDifficultLevel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint MechanicusDifficultLevel {
+      get { return mechanicusDifficultLevel_; }
+      set {
+        mechanicusDifficultLevel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "match_param_list" field.</summary>
+    public const int MatchParamListFieldNumber = 6;
+    private static readonly pb::FieldCodec<uint> _repeated_matchParamList_codec
+        = pb::FieldCodec.ForUInt32(50);
+    private readonly pbc::RepeatedField<uint> matchParamList_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<uint> MatchParamList {
+      get { return matchParamList_; }
+    }
+
+    /// <summary>Field number for the "estimate_match_cost_time" field.</summary>
+    public const int EstimateMatchCostTimeFieldNumber = 3;
+    private uint estimateMatchCostTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint EstimateMatchCostTime {
+      get { return estimateMatchCostTime_; }
+      set {
+        estimateMatchCostTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mp_play_id" field.</summary>
+    public const int MpPlayIdFieldNumber = 5;
+    private uint mpPlayId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint MpPlayId {
+      get { return mpPlayId_; }
+      set {
+        mpPlayId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "host_uid" field.</summary>
     public const int HostUidFieldNumber = 13;
     private uint hostUid_;
@@ -209,13 +221,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (MechanicusDifficultLevel != other.MechanicusDifficultLevel) return false;
-      if (EstimateMatchCostTime != other.EstimateMatchCostTime) return false;
-      if (MatchType != other.MatchType) return false;
-      if (MpPlayId != other.MpPlayId) return false;
       if (MatchId != other.MatchId) return false;
       if (MatchBeginTime != other.MatchBeginTime) return false;
       if (DungeonId != other.DungeonId) return false;
+      if (MatchType != other.MatchType) return false;
+      if (MechanicusDifficultLevel != other.MechanicusDifficultLevel) return false;
+      if(!matchParamList_.Equals(other.matchParamList_)) return false;
+      if (EstimateMatchCostTime != other.EstimateMatchCostTime) return false;
+      if (MpPlayId != other.MpPlayId) return false;
       if (HostUid != other.HostUid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -224,13 +237,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (MechanicusDifficultLevel != 0) hash ^= MechanicusDifficultLevel.GetHashCode();
-      if (EstimateMatchCostTime != 0) hash ^= EstimateMatchCostTime.GetHashCode();
-      if (MatchType != global::Weedwacker.Shared.Network.Proto.MatchType.None) hash ^= MatchType.GetHashCode();
-      if (MpPlayId != 0) hash ^= MpPlayId.GetHashCode();
       if (MatchId != 0) hash ^= MatchId.GetHashCode();
       if (MatchBeginTime != 0) hash ^= MatchBeginTime.GetHashCode();
       if (DungeonId != 0) hash ^= DungeonId.GetHashCode();
+      if (MatchType != global::Weedwacker.Shared.Network.Proto.MatchType.None) hash ^= MatchType.GetHashCode();
+      if (MechanicusDifficultLevel != 0) hash ^= MechanicusDifficultLevel.GetHashCode();
+      hash ^= matchParamList_.GetHashCode();
+      if (EstimateMatchCostTime != 0) hash ^= EstimateMatchCostTime.GetHashCode();
+      if (MpPlayId != 0) hash ^= MpPlayId.GetHashCode();
       if (HostUid != 0) hash ^= HostUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -262,6 +276,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(MpPlayId);
       }
+      matchParamList_.WriteTo(output, _repeated_matchParamList_codec);
       if (MatchId != 0) {
         output.WriteRawTag(64);
         output.WriteUInt32(MatchId);
@@ -304,6 +319,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(MpPlayId);
       }
+      matchParamList_.WriteTo(ref output, _repeated_matchParamList_codec);
       if (MatchId != 0) {
         output.WriteRawTag(64);
         output.WriteUInt32(MatchId);
@@ -334,18 +350,6 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (MechanicusDifficultLevel != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MechanicusDifficultLevel);
-      }
-      if (EstimateMatchCostTime != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EstimateMatchCostTime);
-      }
-      if (MatchType != global::Weedwacker.Shared.Network.Proto.MatchType.None) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MatchType);
-      }
-      if (MpPlayId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MpPlayId);
-      }
       if (MatchId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MatchId);
       }
@@ -354,6 +358,19 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (DungeonId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DungeonId);
+      }
+      if (MatchType != global::Weedwacker.Shared.Network.Proto.MatchType.None) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MatchType);
+      }
+      if (MechanicusDifficultLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MechanicusDifficultLevel);
+      }
+      size += matchParamList_.CalculateSize(_repeated_matchParamList_codec);
+      if (EstimateMatchCostTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EstimateMatchCostTime);
+      }
+      if (MpPlayId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MpPlayId);
       }
       if (HostUid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(HostUid);
@@ -370,18 +387,6 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.MechanicusDifficultLevel != 0) {
-        MechanicusDifficultLevel = other.MechanicusDifficultLevel;
-      }
-      if (other.EstimateMatchCostTime != 0) {
-        EstimateMatchCostTime = other.EstimateMatchCostTime;
-      }
-      if (other.MatchType != global::Weedwacker.Shared.Network.Proto.MatchType.None) {
-        MatchType = other.MatchType;
-      }
-      if (other.MpPlayId != 0) {
-        MpPlayId = other.MpPlayId;
-      }
       if (other.MatchId != 0) {
         MatchId = other.MatchId;
       }
@@ -390,6 +395,19 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (other.DungeonId != 0) {
         DungeonId = other.DungeonId;
+      }
+      if (other.MatchType != global::Weedwacker.Shared.Network.Proto.MatchType.None) {
+        MatchType = other.MatchType;
+      }
+      if (other.MechanicusDifficultLevel != 0) {
+        MechanicusDifficultLevel = other.MechanicusDifficultLevel;
+      }
+      matchParamList_.Add(other.matchParamList_);
+      if (other.EstimateMatchCostTime != 0) {
+        EstimateMatchCostTime = other.EstimateMatchCostTime;
+      }
+      if (other.MpPlayId != 0) {
+        MpPlayId = other.MpPlayId;
       }
       if (other.HostUid != 0) {
         HostUid = other.HostUid;
@@ -419,6 +437,11 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 40: {
             MpPlayId = input.ReadUInt32();
+            break;
+          }
+          case 50:
+          case 48: {
+            matchParamList_.AddEntriesFrom(input, _repeated_matchParamList_codec);
             break;
           }
           case 64: {
@@ -466,6 +489,11 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 40: {
             MpPlayId = input.ReadUInt32();
+            break;
+          }
+          case 50:
+          case 48: {
+            matchParamList_.AddEntriesFrom(ref input, _repeated_matchParamList_codec);
             break;
           }
           case 64: {

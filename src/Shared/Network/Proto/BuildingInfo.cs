@@ -24,16 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static BuildingInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJCdWlsZGluZ0luZm8ucHJvdG8ipwEKDEJ1aWxkaW5nSW5mbxITCgtidWls",
+            "ChJCdWlsZGluZ0luZm8ucHJvdG8ikwEKDEJ1aWxkaW5nSW5mbxITCgtidWls",
             "ZGluZ19pZBgBIAEoDRIXCg9wb2ludF9jb25maWdfaWQYAiABKA0SDAoEY29z",
-            "dBgDIAEoDRIOCgZyZWZ1bmQYBSABKA0SEQoJb3duZXJfdWlkGAYgASgNEhsK",
-            "E1VuazI3MDBfTURKT1BIT0hGREIYByABKA0SGwoTVW5rMjcwMF9DT0ZCSUdM",
-            "Qk5HUBgIIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
-            "b2IGcHJvdG8z"));
+            "dBgDIAEoDRIOCgZyZWZ1bmQYBSABKA0SEQoJb3duZXJfdWlkGAYgASgNEhMK",
+            "C2N1cnJlbnRfbnVtGAcgASgNEg8KB21heF9udW0YCCABKA1CIqoCH1dlZWR3",
+            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.BuildingInfo), global::Weedwacker.Shared.Network.Proto.BuildingInfo.Parser, new[]{ "BuildingId", "PointConfigId", "Cost", "Refund", "OwnerUid", "Unk2700MDJOPHOHFDB", "Unk2700COFBIGLBNGP" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.BuildingInfo), global::Weedwacker.Shared.Network.Proto.BuildingInfo.Parser, new[]{ "BuildingId", "PointConfigId", "Cost", "Refund", "OwnerUid", "CurrentNum", "MaxNum" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,8 +78,8 @@ namespace Weedwacker.Shared.Network.Proto {
       cost_ = other.cost_;
       refund_ = other.refund_;
       ownerUid_ = other.ownerUid_;
-      unk2700MDJOPHOHFDB_ = other.unk2700MDJOPHOHFDB_;
-      unk2700COFBIGLBNGP_ = other.unk2700COFBIGLBNGP_;
+      currentNum_ = other.currentNum_;
+      maxNum_ = other.maxNum_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -150,27 +149,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_MDJOPHOHFDB" field.</summary>
-    public const int Unk2700MDJOPHOHFDBFieldNumber = 7;
-    private uint unk2700MDJOPHOHFDB_;
+    /// <summary>Field number for the "current_num" field.</summary>
+    public const int CurrentNumFieldNumber = 7;
+    private uint currentNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700MDJOPHOHFDB {
-      get { return unk2700MDJOPHOHFDB_; }
+    public uint CurrentNum {
+      get { return currentNum_; }
       set {
-        unk2700MDJOPHOHFDB_ = value;
+        currentNum_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_COFBIGLBNGP" field.</summary>
-    public const int Unk2700COFBIGLBNGPFieldNumber = 8;
-    private uint unk2700COFBIGLBNGP_;
+    /// <summary>Field number for the "max_num" field.</summary>
+    public const int MaxNumFieldNumber = 8;
+    private uint maxNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700COFBIGLBNGP {
-      get { return unk2700COFBIGLBNGP_; }
+    public uint MaxNum {
+      get { return maxNum_; }
       set {
-        unk2700COFBIGLBNGP_ = value;
+        maxNum_ = value;
       }
     }
 
@@ -194,8 +193,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Cost != other.Cost) return false;
       if (Refund != other.Refund) return false;
       if (OwnerUid != other.OwnerUid) return false;
-      if (Unk2700MDJOPHOHFDB != other.Unk2700MDJOPHOHFDB) return false;
-      if (Unk2700COFBIGLBNGP != other.Unk2700COFBIGLBNGP) return false;
+      if (CurrentNum != other.CurrentNum) return false;
+      if (MaxNum != other.MaxNum) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -208,8 +207,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Cost != 0) hash ^= Cost.GetHashCode();
       if (Refund != 0) hash ^= Refund.GetHashCode();
       if (OwnerUid != 0) hash ^= OwnerUid.GetHashCode();
-      if (Unk2700MDJOPHOHFDB != 0) hash ^= Unk2700MDJOPHOHFDB.GetHashCode();
-      if (Unk2700COFBIGLBNGP != 0) hash ^= Unk2700COFBIGLBNGP.GetHashCode();
+      if (CurrentNum != 0) hash ^= CurrentNum.GetHashCode();
+      if (MaxNum != 0) hash ^= MaxNum.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -248,13 +247,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(OwnerUid);
       }
-      if (Unk2700MDJOPHOHFDB != 0) {
+      if (CurrentNum != 0) {
         output.WriteRawTag(56);
-        output.WriteUInt32(Unk2700MDJOPHOHFDB);
+        output.WriteUInt32(CurrentNum);
       }
-      if (Unk2700COFBIGLBNGP != 0) {
+      if (MaxNum != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk2700COFBIGLBNGP);
+        output.WriteUInt32(MaxNum);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -286,13 +285,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(OwnerUid);
       }
-      if (Unk2700MDJOPHOHFDB != 0) {
+      if (CurrentNum != 0) {
         output.WriteRawTag(56);
-        output.WriteUInt32(Unk2700MDJOPHOHFDB);
+        output.WriteUInt32(CurrentNum);
       }
-      if (Unk2700COFBIGLBNGP != 0) {
+      if (MaxNum != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk2700COFBIGLBNGP);
+        output.WriteUInt32(MaxNum);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -319,11 +318,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (OwnerUid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OwnerUid);
       }
-      if (Unk2700MDJOPHOHFDB != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700MDJOPHOHFDB);
+      if (CurrentNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurrentNum);
       }
-      if (Unk2700COFBIGLBNGP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700COFBIGLBNGP);
+      if (MaxNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxNum);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -352,11 +351,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.OwnerUid != 0) {
         OwnerUid = other.OwnerUid;
       }
-      if (other.Unk2700MDJOPHOHFDB != 0) {
-        Unk2700MDJOPHOHFDB = other.Unk2700MDJOPHOHFDB;
+      if (other.CurrentNum != 0) {
+        CurrentNum = other.CurrentNum;
       }
-      if (other.Unk2700COFBIGLBNGP != 0) {
-        Unk2700COFBIGLBNGP = other.Unk2700COFBIGLBNGP;
+      if (other.MaxNum != 0) {
+        MaxNum = other.MaxNum;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -394,11 +393,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2700MDJOPHOHFDB = input.ReadUInt32();
+            CurrentNum = input.ReadUInt32();
             break;
           }
           case 64: {
-            Unk2700COFBIGLBNGP = input.ReadUInt32();
+            MaxNum = input.ReadUInt32();
             break;
           }
         }
@@ -437,11 +436,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2700MDJOPHOHFDB = input.ReadUInt32();
+            CurrentNum = input.ReadUInt32();
             break;
           }
           case 64: {
-            Unk2700COFBIGLBNGP = input.ReadUInt32();
+            MaxNum = input.ReadUInt32();
             break;
           }
         }

@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerEnterDungeonReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtQbGF5ZXJFbnRlckR1bmdlb25SZXEucHJvdG8aGVVuazI4MDBfSktMRkFK",
-            "S0RMREcucHJvdG8icAoVUGxheWVyRW50ZXJEdW5nZW9uUmVxEjEKE1VuazI4",
-            "MDBfQU5KQUhCR0JJRkQYAiABKAsyFC5VbmsyODAwX0pLTEZBSktETERHEhAK",
-            "CHBvaW50X2lkGA0gASgNEhIKCmR1bmdlb25faWQYByABKA1CIqoCH1dlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "ChtQbGF5ZXJFbnRlckR1bmdlb25SZXEucHJvdG8aGUR1bmdlb25FbnRlclBv",
+            "c0luZm8ucHJvdG8iawoVUGxheWVyRW50ZXJEdW5nZW9uUmVxEiwKDmVudGVy",
+            "X3Bvc19pbmZvGAIgASgLMhQuRHVuZ2VvbkVudGVyUG9zSW5mbxIQCghwb2lu",
+            "dF9pZBgNIAEoDRISCgpkdW5nZW9uX2lkGAcgASgNQiKqAh9XZWVkd2Fja2Vy",
+            "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2800JKLFAJKDLDGReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.DungeonEnterPosInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerEnterDungeonReq), global::Weedwacker.Shared.Network.Proto.PlayerEnterDungeonReq.Parser, new[]{ "Unk2800ANJAHBGBIFD", "PointId", "DungeonId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerEnterDungeonReq), global::Weedwacker.Shared.Network.Proto.PlayerEnterDungeonReq.Parser, new[]{ "EnterPosInfo", "PointId", "DungeonId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,7 +79,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerEnterDungeonReq(PlayerEnterDungeonReq other) : this() {
-      unk2800ANJAHBGBIFD_ = other.unk2800ANJAHBGBIFD_ != null ? other.unk2800ANJAHBGBIFD_.Clone() : null;
+      enterPosInfo_ = other.enterPosInfo_ != null ? other.enterPosInfo_.Clone() : null;
       pointId_ = other.pointId_;
       dungeonId_ = other.dungeonId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -91,15 +91,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new PlayerEnterDungeonReq(this);
     }
 
-    /// <summary>Field number for the "Unk2800_ANJAHBGBIFD" field.</summary>
-    public const int Unk2800ANJAHBGBIFDFieldNumber = 2;
-    private global::Weedwacker.Shared.Network.Proto.Unk2800_JKLFAJKDLDG unk2800ANJAHBGBIFD_;
+    /// <summary>Field number for the "enter_pos_info" field.</summary>
+    public const int EnterPosInfoFieldNumber = 2;
+    private global::Weedwacker.Shared.Network.Proto.DungeonEnterPosInfo enterPosInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2800_JKLFAJKDLDG Unk2800ANJAHBGBIFD {
-      get { return unk2800ANJAHBGBIFD_; }
+    public global::Weedwacker.Shared.Network.Proto.DungeonEnterPosInfo EnterPosInfo {
+      get { return enterPosInfo_; }
       set {
-        unk2800ANJAHBGBIFD_ = value;
+        enterPosInfo_ = value;
       }
     }
 
@@ -142,7 +142,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Unk2800ANJAHBGBIFD, other.Unk2800ANJAHBGBIFD)) return false;
+      if (!object.Equals(EnterPosInfo, other.EnterPosInfo)) return false;
       if (PointId != other.PointId) return false;
       if (DungeonId != other.DungeonId) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -152,7 +152,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (unk2800ANJAHBGBIFD_ != null) hash ^= Unk2800ANJAHBGBIFD.GetHashCode();
+      if (enterPosInfo_ != null) hash ^= EnterPosInfo.GetHashCode();
       if (PointId != 0) hash ^= PointId.GetHashCode();
       if (DungeonId != 0) hash ^= DungeonId.GetHashCode();
       if (_unknownFields != null) {
@@ -173,9 +173,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (unk2800ANJAHBGBIFD_ != null) {
+      if (enterPosInfo_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(Unk2800ANJAHBGBIFD);
+        output.WriteMessage(EnterPosInfo);
       }
       if (DungeonId != 0) {
         output.WriteRawTag(56);
@@ -195,9 +195,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (unk2800ANJAHBGBIFD_ != null) {
+      if (enterPosInfo_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(Unk2800ANJAHBGBIFD);
+        output.WriteMessage(EnterPosInfo);
       }
       if (DungeonId != 0) {
         output.WriteRawTag(56);
@@ -217,8 +217,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (unk2800ANJAHBGBIFD_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Unk2800ANJAHBGBIFD);
+      if (enterPosInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EnterPosInfo);
       }
       if (PointId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PointId);
@@ -238,11 +238,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.unk2800ANJAHBGBIFD_ != null) {
-        if (unk2800ANJAHBGBIFD_ == null) {
-          Unk2800ANJAHBGBIFD = new global::Weedwacker.Shared.Network.Proto.Unk2800_JKLFAJKDLDG();
+      if (other.enterPosInfo_ != null) {
+        if (enterPosInfo_ == null) {
+          EnterPosInfo = new global::Weedwacker.Shared.Network.Proto.DungeonEnterPosInfo();
         }
-        Unk2800ANJAHBGBIFD.MergeFrom(other.Unk2800ANJAHBGBIFD);
+        EnterPosInfo.MergeFrom(other.EnterPosInfo);
       }
       if (other.PointId != 0) {
         PointId = other.PointId;
@@ -266,10 +266,10 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 18: {
-            if (unk2800ANJAHBGBIFD_ == null) {
-              Unk2800ANJAHBGBIFD = new global::Weedwacker.Shared.Network.Proto.Unk2800_JKLFAJKDLDG();
+            if (enterPosInfo_ == null) {
+              EnterPosInfo = new global::Weedwacker.Shared.Network.Proto.DungeonEnterPosInfo();
             }
-            input.ReadMessage(Unk2800ANJAHBGBIFD);
+            input.ReadMessage(EnterPosInfo);
             break;
           }
           case 56: {
@@ -296,10 +296,10 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 18: {
-            if (unk2800ANJAHBGBIFD_ == null) {
-              Unk2800ANJAHBGBIFD = new global::Weedwacker.Shared.Network.Proto.Unk2800_JKLFAJKDLDG();
+            if (enterPosInfo_ == null) {
+              EnterPosInfo = new global::Weedwacker.Shared.Network.Proto.DungeonEnterPosInfo();
             }
-            input.ReadMessage(Unk2800ANJAHBGBIFD);
+            input.ReadMessage(EnterPosInfo);
             break;
           }
           case 56: {

@@ -26,21 +26,21 @@ namespace Weedwacker.Shared.Network.Proto {
           string.Concat(
             "Ch5Ib21lU2NlbmVBcnJhbmdlbWVudEluZm8ucHJvdG8aHkhvbWVCbG9ja0Fy",
             "cmFuZ2VtZW50SW5mby5wcm90bxoXSG9tZUZ1cm5pdHVyZURhdGEucHJvdG8a",
-            "DFZlY3Rvci5wcm90byKXAwoYSG9tZVNjZW5lQXJyYW5nZW1lbnRJbmZvEhkK",
+            "DFZlY3Rvci5wcm90byKKAwoYSG9tZVNjZW5lQXJyYW5nZW1lbnRJbmZvEhkK",
             "CGJvcm5fcm90GAQgASgLMgcuVmVjdG9yEhkKCGJvcm5fcG9zGAEgASgLMgcu",
             "VmVjdG9yEiYKCnN0YWlyX2xpc3QYCyADKAsyEi5Ib21lRnVybml0dXJlRGF0",
             "YRIlCglkb29yX2xpc3QYDSADKAsyEi5Ib21lRnVybml0dXJlRGF0YRIXCg9p",
             "c19zZXRfYm9ybl9wb3MYCiABKAgSPgobYmxvY2tfYXJyYW5nZW1lbnRfaW5m",
             "b19saXN0GAggAygLMhkuSG9tZUJsb2NrQXJyYW5nZW1lbnRJbmZvEhAKCHNj",
-            "ZW5lX2lkGAIgASgNEhsKE1VuazI3MDBfQkpIQU1LS0VDRUkYDCABKA0SGgoJ",
-            "ZGppbm5fcG9zGAkgASgLMgcuVmVjdG9yEiYKCm1haW5faG91c2UYDiABKAsy",
-            "Ei5Ib21lRnVybml0dXJlRGF0YRIVCg1jb21mb3J0X3ZhbHVlGAcgASgNEhMK",
-            "C3RtcF92ZXJzaW9uGAUgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvYgZwcm90bzM="));
+            "ZW5lX2lkGAIgASgNEg4KBmJnbV9pZBgMIAEoDRIaCglkamlubl9wb3MYCSAB",
+            "KAsyBy5WZWN0b3ISJgoKbWFpbl9ob3VzZRgOIAEoCzISLkhvbWVGdXJuaXR1",
+            "cmVEYXRhEhUKDWNvbWZvcnRfdmFsdWUYByABKA0SEwoLdG1wX3ZlcnNpb24Y",
+            "BSABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.HomeBlockArrangementInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HomeFurnitureDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HomeSceneArrangementInfo), global::Weedwacker.Shared.Network.Proto.HomeSceneArrangementInfo.Parser, new[]{ "BornRot", "BornPos", "StairList", "DoorList", "IsSetBornPos", "BlockArrangementInfoList", "SceneId", "Unk2700BJHAMKKECEI", "DjinnPos", "MainHouse", "ComfortValue", "TmpVersion" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HomeSceneArrangementInfo), global::Weedwacker.Shared.Network.Proto.HomeSceneArrangementInfo.Parser, new[]{ "BornRot", "BornPos", "StairList", "DoorList", "IsSetBornPos", "BlockArrangementInfoList", "SceneId", "BgmId", "DjinnPos", "MainHouse", "ComfortValue", "TmpVersion" }, null, null, null, null)
           }));
     }
     #endregion
@@ -88,7 +88,7 @@ namespace Weedwacker.Shared.Network.Proto {
       isSetBornPos_ = other.isSetBornPos_;
       blockArrangementInfoList_ = other.blockArrangementInfoList_.Clone();
       sceneId_ = other.sceneId_;
-      unk2700BJHAMKKECEI_ = other.unk2700BJHAMKKECEI_;
+      bgmId_ = other.bgmId_;
       djinnPos_ = other.djinnPos_ != null ? other.djinnPos_.Clone() : null;
       mainHouse_ = other.mainHouse_ != null ? other.mainHouse_.Clone() : null;
       comfortValue_ = other.comfortValue_;
@@ -183,15 +183,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_BJHAMKKECEI" field.</summary>
-    public const int Unk2700BJHAMKKECEIFieldNumber = 12;
-    private uint unk2700BJHAMKKECEI_;
+    /// <summary>Field number for the "bgm_id" field.</summary>
+    public const int BgmIdFieldNumber = 12;
+    private uint bgmId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700BJHAMKKECEI {
-      get { return unk2700BJHAMKKECEI_; }
+    public uint BgmId {
+      get { return bgmId_; }
       set {
-        unk2700BJHAMKKECEI_ = value;
+        bgmId_ = value;
       }
     }
 
@@ -265,7 +265,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsSetBornPos != other.IsSetBornPos) return false;
       if(!blockArrangementInfoList_.Equals(other.blockArrangementInfoList_)) return false;
       if (SceneId != other.SceneId) return false;
-      if (Unk2700BJHAMKKECEI != other.Unk2700BJHAMKKECEI) return false;
+      if (BgmId != other.BgmId) return false;
       if (!object.Equals(DjinnPos, other.DjinnPos)) return false;
       if (!object.Equals(MainHouse, other.MainHouse)) return false;
       if (ComfortValue != other.ComfortValue) return false;
@@ -284,7 +284,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsSetBornPos != false) hash ^= IsSetBornPos.GetHashCode();
       hash ^= blockArrangementInfoList_.GetHashCode();
       if (SceneId != 0) hash ^= SceneId.GetHashCode();
-      if (Unk2700BJHAMKKECEI != 0) hash ^= Unk2700BJHAMKKECEI.GetHashCode();
+      if (BgmId != 0) hash ^= BgmId.GetHashCode();
       if (djinnPos_ != null) hash ^= DjinnPos.GetHashCode();
       if (mainHouse_ != null) hash ^= MainHouse.GetHashCode();
       if (ComfortValue != 0) hash ^= ComfortValue.GetHashCode();
@@ -337,9 +337,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteBool(IsSetBornPos);
       }
       stairList_.WriteTo(output, _repeated_stairList_codec);
-      if (Unk2700BJHAMKKECEI != 0) {
+      if (BgmId != 0) {
         output.WriteRawTag(96);
-        output.WriteUInt32(Unk2700BJHAMKKECEI);
+        output.WriteUInt32(BgmId);
       }
       doorList_.WriteTo(output, _repeated_doorList_codec);
       if (mainHouse_ != null) {
@@ -386,9 +386,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteBool(IsSetBornPos);
       }
       stairList_.WriteTo(ref output, _repeated_stairList_codec);
-      if (Unk2700BJHAMKKECEI != 0) {
+      if (BgmId != 0) {
         output.WriteRawTag(96);
-        output.WriteUInt32(Unk2700BJHAMKKECEI);
+        output.WriteUInt32(BgmId);
       }
       doorList_.WriteTo(ref output, _repeated_doorList_codec);
       if (mainHouse_ != null) {
@@ -420,8 +420,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (SceneId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SceneId);
       }
-      if (Unk2700BJHAMKKECEI != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700BJHAMKKECEI);
+      if (BgmId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BgmId);
       }
       if (djinnPos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DjinnPos);
@@ -468,8 +468,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.SceneId != 0) {
         SceneId = other.SceneId;
       }
-      if (other.Unk2700BJHAMKKECEI != 0) {
-        Unk2700BJHAMKKECEI = other.Unk2700BJHAMKKECEI;
+      if (other.BgmId != 0) {
+        BgmId = other.BgmId;
       }
       if (other.djinnPos_ != null) {
         if (djinnPos_ == null) {
@@ -550,7 +550,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk2700BJHAMKKECEI = input.ReadUInt32();
+            BgmId = input.ReadUInt32();
             break;
           }
           case 106: {
@@ -625,7 +625,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk2700BJHAMKKECEI = input.ReadUInt32();
+            BgmId = input.ReadUInt32();
             break;
           }
           case 106: {

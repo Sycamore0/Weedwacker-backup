@@ -24,15 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGalleryIrodoriMasterInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNTY2VuZUdhbGxlcnlJcm9kb3JpTWFzdGVySW5mby5wcm90byJiCh1TY2Vu",
+            "CiNTY2VuZUdhbGxlcnlJcm9kb3JpTWFzdGVySW5mby5wcm90byJbCh1TY2Vu",
             "ZUdhbGxlcnlJcm9kb3JpTWFzdGVySW5mbxIQCghsZXZlbF9pZBgIIAEoDRIS",
-            "CgpkaWZmaWN1bHR5GAEgASgNEhsKE1VuazI3MDBfRktETU9CT0dNQ00YBSAB",
-            "KAhCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
-            "Mw=="));
+            "CgpkaWZmaWN1bHR5GAEgASgNEhQKDGlzX2NnX3ZpZXdlZBgFIAEoCEIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryIrodoriMasterInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryIrodoriMasterInfo.Parser, new[]{ "LevelId", "Difficulty", "Unk2700FKDMOBOGMCM" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryIrodoriMasterInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryIrodoriMasterInfo.Parser, new[]{ "LevelId", "Difficulty", "IsCgViewed" }, null, null, null, null)
           }));
     }
     #endregion
@@ -75,7 +74,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public SceneGalleryIrodoriMasterInfo(SceneGalleryIrodoriMasterInfo other) : this() {
       levelId_ = other.levelId_;
       difficulty_ = other.difficulty_;
-      unk2700FKDMOBOGMCM_ = other.unk2700FKDMOBOGMCM_;
+      isCgViewed_ = other.isCgViewed_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -109,15 +108,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_FKDMOBOGMCM" field.</summary>
-    public const int Unk2700FKDMOBOGMCMFieldNumber = 5;
-    private bool unk2700FKDMOBOGMCM_;
+    /// <summary>Field number for the "is_cg_viewed" field.</summary>
+    public const int IsCgViewedFieldNumber = 5;
+    private bool isCgViewed_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700FKDMOBOGMCM {
-      get { return unk2700FKDMOBOGMCM_; }
+    public bool IsCgViewed {
+      get { return isCgViewed_; }
       set {
-        unk2700FKDMOBOGMCM_ = value;
+        isCgViewed_ = value;
       }
     }
 
@@ -138,7 +137,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (LevelId != other.LevelId) return false;
       if (Difficulty != other.Difficulty) return false;
-      if (Unk2700FKDMOBOGMCM != other.Unk2700FKDMOBOGMCM) return false;
+      if (IsCgViewed != other.IsCgViewed) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -148,7 +147,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (LevelId != 0) hash ^= LevelId.GetHashCode();
       if (Difficulty != 0) hash ^= Difficulty.GetHashCode();
-      if (Unk2700FKDMOBOGMCM != false) hash ^= Unk2700FKDMOBOGMCM.GetHashCode();
+      if (IsCgViewed != false) hash ^= IsCgViewed.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -171,9 +170,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(Difficulty);
       }
-      if (Unk2700FKDMOBOGMCM != false) {
+      if (IsCgViewed != false) {
         output.WriteRawTag(40);
-        output.WriteBool(Unk2700FKDMOBOGMCM);
+        output.WriteBool(IsCgViewed);
       }
       if (LevelId != 0) {
         output.WriteRawTag(64);
@@ -193,9 +192,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(Difficulty);
       }
-      if (Unk2700FKDMOBOGMCM != false) {
+      if (IsCgViewed != false) {
         output.WriteRawTag(40);
-        output.WriteBool(Unk2700FKDMOBOGMCM);
+        output.WriteBool(IsCgViewed);
       }
       if (LevelId != 0) {
         output.WriteRawTag(64);
@@ -217,7 +216,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Difficulty != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Difficulty);
       }
-      if (Unk2700FKDMOBOGMCM != false) {
+      if (IsCgViewed != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -238,8 +237,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Difficulty != 0) {
         Difficulty = other.Difficulty;
       }
-      if (other.Unk2700FKDMOBOGMCM != false) {
-        Unk2700FKDMOBOGMCM = other.Unk2700FKDMOBOGMCM;
+      if (other.IsCgViewed != false) {
+        IsCgViewed = other.IsCgViewed;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -261,7 +260,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk2700FKDMOBOGMCM = input.ReadBool();
+            IsCgViewed = input.ReadBool();
             break;
           }
           case 64: {
@@ -288,7 +287,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk2700FKDMOBOGMCM = input.ReadBool();
+            IsCgViewed = input.ReadBool();
             break;
           }
           case 64: {

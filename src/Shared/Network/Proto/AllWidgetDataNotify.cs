@@ -26,25 +26,26 @@ namespace Weedwacker.Shared.Network.Proto {
           string.Concat(
             "ChlBbGxXaWRnZXREYXRhTm90aWZ5LnByb3RvGhVBbmNob3JQb2ludERhdGEu",
             "cHJvdG8aGUNsaWVudENvbGxlY3RvckRhdGEucHJvdG8aEkx1bmNoQm94RGF0",
-            "YS5wcm90bxoiT25lb2ZHYXRoZXJQb2ludERldGVjdG9yRGF0YS5wcm90bxoZ",
-            "VW5rMjcwMF9DQ0VPRU9ITEFQSy5wcm90bxoYV2lkZ2V0Q29vbERvd25EYXRh",
-            "LnByb3RvGhRXaWRnZXRTbG90RGF0YS5wcm90byL9AwoTQWxsV2lkZ2V0RGF0",
-            "YU5vdGlmeRIbChNVbmszMDAwX0NOTkZHRkJCQkZQGAsgAygNEiUKDmx1bmNo",
-            "X2JveF9kYXRhGAEgASgLMg0uTHVuY2hCb3hEYXRhEjYKGWNvb2xfZG93bl9n",
-            "cm91cF9kYXRhX2xpc3QYDSADKAsyEy5XaWRnZXRDb29sRG93bkRhdGESKwoR",
-            "YW5jaG9yX3BvaW50X2xpc3QYAyADKAsyEC5BbmNob3JQb2ludERhdGESIgoJ",
-            "c2xvdF9saXN0GAYgAygLMg8uV2lkZ2V0U2xvdERhdGESJQodbmV4dF9hbmNo",
-            "b3JfcG9pbnRfdXNhYmxlX3RpbWUYCiABKA0SOAoaY2xpZW50X2NvbGxlY3Rv",
-            "cl9kYXRhX2xpc3QYBCADKAsyFC5DbGllbnRDb2xsZWN0b3JEYXRhEkwKJW9u",
-            "ZW9mX2dhdGhlcl9wb2ludF9kZXRlY3Rvcl9kYXRhX2xpc3QYDyADKAsyHS5P",
-            "bmVvZkdhdGhlclBvaW50RGV0ZWN0b3JEYXRhEjcKGm5vcm1hbF9jb29sX2Rv",
-            "d25fZGF0YV9saXN0GAkgAygLMhMuV2lkZ2V0Q29vbERvd25EYXRhEjEKE1Vu",
-            "azI3MDBfQ09JRUxJR0VBQ0wYDCABKAsyFC5VbmsyNzAwX0NDRU9FT0hMQVBL",
-            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "YS5wcm90bxoiT25lb2ZHYXRoZXJQb2ludERldGVjdG9yRGF0YS5wcm90bxoc",
+            "U2t5Q3J5c3RhbERldGVjdG9yRGF0YS5wcm90bxoYV2lkZ2V0Q29vbERvd25E",
+            "YXRhLnByb3RvGhRXaWRnZXRTbG90RGF0YS5wcm90byKQBAoTQWxsV2lkZ2V0",
+            "RGF0YU5vdGlmeRIlCh1iYWNrZ3JvdW5kX2FjdGl2ZV93aWRnZXRfbGlzdBgL",
+            "IAMoDRIlCg5sdW5jaF9ib3hfZGF0YRgBIAEoCzINLkx1bmNoQm94RGF0YRI2",
+            "Chljb29sX2Rvd25fZ3JvdXBfZGF0YV9saXN0GA0gAygLMhMuV2lkZ2V0Q29v",
+            "bERvd25EYXRhEisKEWFuY2hvcl9wb2ludF9saXN0GAMgAygLMhAuQW5jaG9y",
+            "UG9pbnREYXRhEiIKCXNsb3RfbGlzdBgGIAMoCzIPLldpZGdldFNsb3REYXRh",
+            "EiUKHW5leHRfYW5jaG9yX3BvaW50X3VzYWJsZV90aW1lGAogASgNEjgKGmNs",
+            "aWVudF9jb2xsZWN0b3JfZGF0YV9saXN0GAQgAygLMhQuQ2xpZW50Q29sbGVj",
+            "dG9yRGF0YRJMCiVvbmVvZl9nYXRoZXJfcG9pbnRfZGV0ZWN0b3JfZGF0YV9s",
+            "aXN0GA8gAygLMh0uT25lb2ZHYXRoZXJQb2ludERldGVjdG9yRGF0YRI3Chpu",
+            "b3JtYWxfY29vbF9kb3duX2RhdGFfbGlzdBgJIAMoCzITLldpZGdldENvb2xE",
+            "b3duRGF0YRI6Chlza3lfY3J5c3RhbF9kZXRlY3Rvcl9kYXRhGAwgASgLMhcu",
+            "U2t5Q3J5c3RhbERldGVjdG9yRGF0YUIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AnchorPointDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ClientCollectorDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LunchBoxDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.OneofGatherPointDetectorDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700CCEOEOHLAPKReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WidgetCoolDownDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WidgetSlotDataReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AnchorPointDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ClientCollectorDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LunchBoxDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.OneofGatherPointDetectorDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SkyCrystalDetectorDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WidgetCoolDownDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WidgetSlotDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AllWidgetDataNotify), global::Weedwacker.Shared.Network.Proto.AllWidgetDataNotify.Parser, new[]{ "Unk3000CNNFGFBBBFP", "LunchBoxData", "CoolDownGroupDataList", "AnchorPointList", "SlotList", "NextAnchorPointUsableTime", "ClientCollectorDataList", "OneofGatherPointDetectorDataList", "NormalCoolDownDataList", "Unk2700COIELIGEACL" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AllWidgetDataNotify), global::Weedwacker.Shared.Network.Proto.AllWidgetDataNotify.Parser, new[]{ "BackgroundActiveWidgetList", "LunchBoxData", "CoolDownGroupDataList", "AnchorPointList", "SlotList", "NextAnchorPointUsableTime", "ClientCollectorDataList", "OneofGatherPointDetectorDataList", "NormalCoolDownDataList", "SkyCrystalDetectorData" }, null, null, null, null)
           }));
     }
     #endregion
@@ -90,7 +91,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AllWidgetDataNotify(AllWidgetDataNotify other) : this() {
-      unk3000CNNFGFBBBFP_ = other.unk3000CNNFGFBBBFP_.Clone();
+      backgroundActiveWidgetList_ = other.backgroundActiveWidgetList_.Clone();
       lunchBoxData_ = other.lunchBoxData_ != null ? other.lunchBoxData_.Clone() : null;
       coolDownGroupDataList_ = other.coolDownGroupDataList_.Clone();
       anchorPointList_ = other.anchorPointList_.Clone();
@@ -99,7 +100,7 @@ namespace Weedwacker.Shared.Network.Proto {
       clientCollectorDataList_ = other.clientCollectorDataList_.Clone();
       oneofGatherPointDetectorDataList_ = other.oneofGatherPointDetectorDataList_.Clone();
       normalCoolDownDataList_ = other.normalCoolDownDataList_.Clone();
-      unk2700COIELIGEACL_ = other.unk2700COIELIGEACL_ != null ? other.unk2700COIELIGEACL_.Clone() : null;
+      skyCrystalDetectorData_ = other.skyCrystalDetectorData_ != null ? other.skyCrystalDetectorData_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -109,15 +110,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new AllWidgetDataNotify(this);
     }
 
-    /// <summary>Field number for the "Unk3000_CNNFGFBBBFP" field.</summary>
-    public const int Unk3000CNNFGFBBBFPFieldNumber = 11;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3000CNNFGFBBBFP_codec
+    /// <summary>Field number for the "background_active_widget_list" field.</summary>
+    public const int BackgroundActiveWidgetListFieldNumber = 11;
+    private static readonly pb::FieldCodec<uint> _repeated_backgroundActiveWidgetList_codec
         = pb::FieldCodec.ForUInt32(90);
-    private readonly pbc::RepeatedField<uint> unk3000CNNFGFBBBFP_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> backgroundActiveWidgetList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3000CNNFGFBBBFP {
-      get { return unk3000CNNFGFBBBFP_; }
+    public pbc::RepeatedField<uint> BackgroundActiveWidgetList {
+      get { return backgroundActiveWidgetList_; }
     }
 
     /// <summary>Field number for the "lunch_box_data" field.</summary>
@@ -210,15 +211,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return normalCoolDownDataList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_COIELIGEACL" field.</summary>
-    public const int Unk2700COIELIGEACLFieldNumber = 12;
-    private global::Weedwacker.Shared.Network.Proto.Unk2700_CCEOEOHLAPK unk2700COIELIGEACL_;
+    /// <summary>Field number for the "sky_crystal_detector_data" field.</summary>
+    public const int SkyCrystalDetectorDataFieldNumber = 12;
+    private global::Weedwacker.Shared.Network.Proto.SkyCrystalDetectorData skyCrystalDetectorData_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2700_CCEOEOHLAPK Unk2700COIELIGEACL {
-      get { return unk2700COIELIGEACL_; }
+    public global::Weedwacker.Shared.Network.Proto.SkyCrystalDetectorData SkyCrystalDetectorData {
+      get { return skyCrystalDetectorData_; }
       set {
-        unk2700COIELIGEACL_ = value;
+        skyCrystalDetectorData_ = value;
       }
     }
 
@@ -237,7 +238,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk3000CNNFGFBBBFP_.Equals(other.unk3000CNNFGFBBBFP_)) return false;
+      if(!backgroundActiveWidgetList_.Equals(other.backgroundActiveWidgetList_)) return false;
       if (!object.Equals(LunchBoxData, other.LunchBoxData)) return false;
       if(!coolDownGroupDataList_.Equals(other.coolDownGroupDataList_)) return false;
       if(!anchorPointList_.Equals(other.anchorPointList_)) return false;
@@ -246,7 +247,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if(!clientCollectorDataList_.Equals(other.clientCollectorDataList_)) return false;
       if(!oneofGatherPointDetectorDataList_.Equals(other.oneofGatherPointDetectorDataList_)) return false;
       if(!normalCoolDownDataList_.Equals(other.normalCoolDownDataList_)) return false;
-      if (!object.Equals(Unk2700COIELIGEACL, other.Unk2700COIELIGEACL)) return false;
+      if (!object.Equals(SkyCrystalDetectorData, other.SkyCrystalDetectorData)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -254,7 +255,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk3000CNNFGFBBBFP_.GetHashCode();
+      hash ^= backgroundActiveWidgetList_.GetHashCode();
       if (lunchBoxData_ != null) hash ^= LunchBoxData.GetHashCode();
       hash ^= coolDownGroupDataList_.GetHashCode();
       hash ^= anchorPointList_.GetHashCode();
@@ -263,7 +264,7 @@ namespace Weedwacker.Shared.Network.Proto {
       hash ^= clientCollectorDataList_.GetHashCode();
       hash ^= oneofGatherPointDetectorDataList_.GetHashCode();
       hash ^= normalCoolDownDataList_.GetHashCode();
-      if (unk2700COIELIGEACL_ != null) hash ^= Unk2700COIELIGEACL.GetHashCode();
+      if (skyCrystalDetectorData_ != null) hash ^= SkyCrystalDetectorData.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -294,10 +295,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(80);
         output.WriteUInt32(NextAnchorPointUsableTime);
       }
-      unk3000CNNFGFBBBFP_.WriteTo(output, _repeated_unk3000CNNFGFBBBFP_codec);
-      if (unk2700COIELIGEACL_ != null) {
+      backgroundActiveWidgetList_.WriteTo(output, _repeated_backgroundActiveWidgetList_codec);
+      if (skyCrystalDetectorData_ != null) {
         output.WriteRawTag(98);
-        output.WriteMessage(Unk2700COIELIGEACL);
+        output.WriteMessage(SkyCrystalDetectorData);
       }
       coolDownGroupDataList_.WriteTo(output, _repeated_coolDownGroupDataList_codec);
       oneofGatherPointDetectorDataList_.WriteTo(output, _repeated_oneofGatherPointDetectorDataList_codec);
@@ -323,10 +324,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(80);
         output.WriteUInt32(NextAnchorPointUsableTime);
       }
-      unk3000CNNFGFBBBFP_.WriteTo(ref output, _repeated_unk3000CNNFGFBBBFP_codec);
-      if (unk2700COIELIGEACL_ != null) {
+      backgroundActiveWidgetList_.WriteTo(ref output, _repeated_backgroundActiveWidgetList_codec);
+      if (skyCrystalDetectorData_ != null) {
         output.WriteRawTag(98);
-        output.WriteMessage(Unk2700COIELIGEACL);
+        output.WriteMessage(SkyCrystalDetectorData);
       }
       coolDownGroupDataList_.WriteTo(ref output, _repeated_coolDownGroupDataList_codec);
       oneofGatherPointDetectorDataList_.WriteTo(ref output, _repeated_oneofGatherPointDetectorDataList_codec);
@@ -340,7 +341,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk3000CNNFGFBBBFP_.CalculateSize(_repeated_unk3000CNNFGFBBBFP_codec);
+      size += backgroundActiveWidgetList_.CalculateSize(_repeated_backgroundActiveWidgetList_codec);
       if (lunchBoxData_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LunchBoxData);
       }
@@ -353,8 +354,8 @@ namespace Weedwacker.Shared.Network.Proto {
       size += clientCollectorDataList_.CalculateSize(_repeated_clientCollectorDataList_codec);
       size += oneofGatherPointDetectorDataList_.CalculateSize(_repeated_oneofGatherPointDetectorDataList_codec);
       size += normalCoolDownDataList_.CalculateSize(_repeated_normalCoolDownDataList_codec);
-      if (unk2700COIELIGEACL_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Unk2700COIELIGEACL);
+      if (skyCrystalDetectorData_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SkyCrystalDetectorData);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -368,7 +369,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk3000CNNFGFBBBFP_.Add(other.unk3000CNNFGFBBBFP_);
+      backgroundActiveWidgetList_.Add(other.backgroundActiveWidgetList_);
       if (other.lunchBoxData_ != null) {
         if (lunchBoxData_ == null) {
           LunchBoxData = new global::Weedwacker.Shared.Network.Proto.LunchBoxData();
@@ -384,11 +385,11 @@ namespace Weedwacker.Shared.Network.Proto {
       clientCollectorDataList_.Add(other.clientCollectorDataList_);
       oneofGatherPointDetectorDataList_.Add(other.oneofGatherPointDetectorDataList_);
       normalCoolDownDataList_.Add(other.normalCoolDownDataList_);
-      if (other.unk2700COIELIGEACL_ != null) {
-        if (unk2700COIELIGEACL_ == null) {
-          Unk2700COIELIGEACL = new global::Weedwacker.Shared.Network.Proto.Unk2700_CCEOEOHLAPK();
+      if (other.skyCrystalDetectorData_ != null) {
+        if (skyCrystalDetectorData_ == null) {
+          SkyCrystalDetectorData = new global::Weedwacker.Shared.Network.Proto.SkyCrystalDetectorData();
         }
-        Unk2700COIELIGEACL.MergeFrom(other.Unk2700COIELIGEACL);
+        SkyCrystalDetectorData.MergeFrom(other.SkyCrystalDetectorData);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -434,14 +435,14 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 90:
           case 88: {
-            unk3000CNNFGFBBBFP_.AddEntriesFrom(input, _repeated_unk3000CNNFGFBBBFP_codec);
+            backgroundActiveWidgetList_.AddEntriesFrom(input, _repeated_backgroundActiveWidgetList_codec);
             break;
           }
           case 98: {
-            if (unk2700COIELIGEACL_ == null) {
-              Unk2700COIELIGEACL = new global::Weedwacker.Shared.Network.Proto.Unk2700_CCEOEOHLAPK();
+            if (skyCrystalDetectorData_ == null) {
+              SkyCrystalDetectorData = new global::Weedwacker.Shared.Network.Proto.SkyCrystalDetectorData();
             }
-            input.ReadMessage(Unk2700COIELIGEACL);
+            input.ReadMessage(SkyCrystalDetectorData);
             break;
           }
           case 106: {
@@ -496,14 +497,14 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 90:
           case 88: {
-            unk3000CNNFGFBBBFP_.AddEntriesFrom(ref input, _repeated_unk3000CNNFGFBBBFP_codec);
+            backgroundActiveWidgetList_.AddEntriesFrom(ref input, _repeated_backgroundActiveWidgetList_codec);
             break;
           }
           case 98: {
-            if (unk2700COIELIGEACL_ == null) {
-              Unk2700COIELIGEACL = new global::Weedwacker.Shared.Network.Proto.Unk2700_CCEOEOHLAPK();
+            if (skyCrystalDetectorData_ == null) {
+              SkyCrystalDetectorData = new global::Weedwacker.Shared.Network.Proto.SkyCrystalDetectorData();
             }
-            input.ReadMessage(Unk2700COIELIGEACL);
+            input.ReadMessage(SkyCrystalDetectorData);
             break;
           }
           case 106: {

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static FishingScoreReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJGaXNoaW5nU2NvcmUucHJvdG8iPQoMRmlzaGluZ1Njb3JlEhYKDmZpc2hp",
-            "bmdfc2NvcmVfGAIgASgNEhUKDWlzX25ld19yZWNvcmQYBCABKAhCIqoCH1dl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "ChJGaXNoaW5nU2NvcmUucHJvdG8iPAoMRmlzaGluZ1Njb3JlEhUKDWZpc2hp",
+            "bmdfc2NvcmUYAiABKA0SFQoNaXNfbmV3X3JlY29yZBgEIAEoCEIiqgIfV2Vl",
+            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -82,7 +82,7 @@ namespace Weedwacker.Shared.Network.Proto {
       return new FishingScore(this);
     }
 
-    /// <summary>Field number for the "fishing_score_" field.</summary>
+    /// <summary>Field number for the "fishing_score" field.</summary>
     public const int FishingScore_FieldNumber = 2;
     private uint fishingScore_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

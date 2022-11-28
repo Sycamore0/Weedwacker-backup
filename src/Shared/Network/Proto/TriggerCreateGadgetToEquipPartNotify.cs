@@ -43,7 +43,6 @@ namespace Weedwacker.Shared.Network.Proto {
   /// CmdId: 350
   /// EnetChannelId: 0
   /// EnetIsReliable: true
-  /// IsAllowClient: true
   /// </summary>
   public sealed partial class TriggerCreateGadgetToEquipPartNotify : pb::IMessage<TriggerCreateGadgetToEquipPartNotify>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

@@ -24,7 +24,7 @@ namespace Weedwacker.Shared.Network.Proto {
     static RegionInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChBSZWdpb25JbmZvLnByb3RvGhZSZXNWZXJzaW9uQ29uZmlnLnByb3RvIp0G",
+            "ChBSZWdpb25JbmZvLnByb3RvGhZSZXNWZXJzaW9uQ29uZmlnLnByb3RvIq8G",
             "CgpSZWdpb25JbmZvEhUKDWdhdGVzZXJ2ZXJfaXAYASABKAkSFwoPZ2F0ZXNl",
             "cnZlcl9wb3J0GAIgASgNEhgKEHBheV9jYWxsYmFja191cmwYAyABKAkSEQoJ",
             "YXJlYV90eXBlGAcgASgJEhQKDHJlc291cmNlX3VybBgIIAEoCRIQCghkYXRh",
@@ -42,12 +42,13 @@ namespace Weedwacker.Shared.Network.Proto {
             "ZW50ZXJfdXJsGB4gASgJEhgKEGFjY291bnRfYmluZF91cmwYHyABKAkSEQoJ",
             "Y2RrZXlfdXJsGCAgASgJEhoKEnByaXZhY3lfcG9saWN5X3VybBghIAEoCRIZ",
             "ChFuZXh0X3Jlc291cmNlX3VybBgiIAEoCRIyChduZXh0X3Jlc192ZXJzaW9u",
-            "X2NvbmZpZxgjIAEoCzIRLlJlc1ZlcnNpb25Db25maWdCIqoCH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "X2NvbmZpZxgjIAEoCzIRLlJlc1ZlcnNpb25Db25maWcSEAoIZ2FtZV9iaXoY",
+            "JCABKAlCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ResVersionConfigReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RegionInfo), global::Weedwacker.Shared.Network.Proto.RegionInfo.Parser, new[]{ "GateserverIp", "GateserverPort", "PayCallbackUrl", "AreaType", "ResourceUrl", "DataUrl", "FeedbackUrl", "BulletinUrl", "ResourceUrlBak", "DataUrlBak", "ClientDataVersion", "HandbookUrl", "ClientSilenceDataVersion", "ClientDataMd5", "ClientSilenceDataMd5", "ResVersionConfig", "SecretKey", "OfficialCommunityUrl", "ClientVersionSuffix", "ClientSilenceVersionSuffix", "UseGateserverDomainName", "GateserverDomainName", "UserCenterUrl", "AccountBindUrl", "CdkeyUrl", "PrivacyPolicyUrl", "NextResourceUrl", "NextResVersionConfig" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RegionInfo), global::Weedwacker.Shared.Network.Proto.RegionInfo.Parser, new[]{ "GateserverIp", "GateserverPort", "PayCallbackUrl", "AreaType", "ResourceUrl", "DataUrl", "FeedbackUrl", "BulletinUrl", "ResourceUrlBak", "DataUrlBak", "ClientDataVersion", "HandbookUrl", "ClientSilenceDataVersion", "ClientDataMd5", "ClientSilenceDataMd5", "ResVersionConfig", "SecretKey", "OfficialCommunityUrl", "ClientVersionSuffix", "ClientSilenceVersionSuffix", "UseGateserverDomainName", "GateserverDomainName", "UserCenterUrl", "AccountBindUrl", "CdkeyUrl", "PrivacyPolicyUrl", "NextResourceUrl", "NextResVersionConfig", "GameBiz" }, null, null, null, null)
           }));
     }
     #endregion
@@ -116,6 +117,7 @@ namespace Weedwacker.Shared.Network.Proto {
       privacyPolicyUrl_ = other.privacyPolicyUrl_;
       nextResourceUrl_ = other.nextResourceUrl_;
       nextResVersionConfig_ = other.nextResVersionConfig_ != null ? other.nextResVersionConfig_.Clone() : null;
+      gameBiz_ = other.gameBiz_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -461,6 +463,18 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
+    /// <summary>Field number for the "game_biz" field.</summary>
+    public const int GameBizFieldNumber = 36;
+    private string gameBiz_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string GameBiz {
+      get { return gameBiz_; }
+      set {
+        gameBiz_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -504,6 +518,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (PrivacyPolicyUrl != other.PrivacyPolicyUrl) return false;
       if (NextResourceUrl != other.NextResourceUrl) return false;
       if (!object.Equals(NextResVersionConfig, other.NextResVersionConfig)) return false;
+      if (GameBiz != other.GameBiz) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -539,6 +554,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (PrivacyPolicyUrl.Length != 0) hash ^= PrivacyPolicyUrl.GetHashCode();
       if (NextResourceUrl.Length != 0) hash ^= NextResourceUrl.GetHashCode();
       if (nextResVersionConfig_ != null) hash ^= NextResVersionConfig.GetHashCode();
+      if (GameBiz.Length != 0) hash ^= GameBiz.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -669,6 +685,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(154, 2);
         output.WriteMessage(NextResVersionConfig);
       }
+      if (GameBiz.Length != 0) {
+        output.WriteRawTag(162, 2);
+        output.WriteString(GameBiz);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -791,6 +811,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(154, 2);
         output.WriteMessage(NextResVersionConfig);
       }
+      if (GameBiz.Length != 0) {
+        output.WriteRawTag(162, 2);
+        output.WriteString(GameBiz);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -884,6 +908,9 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (nextResVersionConfig_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(NextResVersionConfig);
+      }
+      if (GameBiz.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(GameBiz);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -986,6 +1013,9 @@ namespace Weedwacker.Shared.Network.Proto {
           NextResVersionConfig = new global::Weedwacker.Shared.Network.Proto.ResVersionConfig();
         }
         NextResVersionConfig.MergeFrom(other.NextResVersionConfig);
+      }
+      if (other.GameBiz.Length != 0) {
+        GameBiz = other.GameBiz;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1120,6 +1150,10 @@ namespace Weedwacker.Shared.Network.Proto {
             input.ReadMessage(NextResVersionConfig);
             break;
           }
+          case 290: {
+            GameBiz = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1251,6 +1285,10 @@ namespace Weedwacker.Shared.Network.Proto {
               NextResVersionConfig = new global::Weedwacker.Shared.Network.Proto.ResVersionConfig();
             }
             input.ReadMessage(NextResVersionConfig);
+            break;
+          }
+          case 290: {
+            GameBiz = input.ReadString();
             break;
           }
         }

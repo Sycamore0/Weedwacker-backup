@@ -24,7 +24,7 @@ namespace Weedwacker.Shared.Network.Proto {
     static InteractTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJJbnRlcmFjdFR5cGUucHJvdG8qlwQKDEludGVyYWN0VHlwZRIWChJJTlRF",
+            "ChJJbnRlcmFjdFR5cGUucHJvdG8qiwQKDEludGVyYWN0VHlwZRIWChJJTlRF",
             "UkFDVF9UWVBFX05PTkUQABIbChdJTlRFUkFDVF9UWVBFX1BJQ0tfSVRFTRAB",
             "EhgKFElOVEVSQUNUX1RZUEVfR0FUSEVSEAISHAoYSU5URVJBQ1RfVFlQRV9P",
             "UEVOX0NIRVNUEAMSHQoZSU5URVJBQ1RfVFlQRV9PUEVOX1NUQVRVRRAEEhgK",
@@ -34,10 +34,10 @@ namespace Weedwacker.Shared.Network.Proto {
             "UkFDTEVfUklORxAJEhwKGElOVEVSQUNUX1RZUEVfRk9VTkRBVElPThAKEhwK",
             "GElOVEVSQUNUX1RZUEVfRUNIT19TSEVMTBALEh0KGUlOVEVSQUNUX1RZUEVf",
             "SE9NRV9HQVRIRVIQDBIcChhJTlRFUkFDVF9UWVBFX0VOVl9BTklNQUwQDRIe",
-            "ChpJTlRFUkFDVF9UWVBFX1FVRVNUX0dBREdFVBAOEiUKIUlOVEVSQUNUX1RZ",
-            "UEVfVW5rMjcwMF9MSUVJS0ZERk1HRhAPEiUKIUlOVEVSQUNUX1RZUEVfVW5r",
-            "MzAwMF9OTU9DRktETkNPQhAQQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvYgZwcm90bzM="));
+            "ChpJTlRFUkFDVF9UWVBFX1FVRVNUX0dBREdFVBAOEh0KGUlOVEVSQUNUX1RZ",
+            "UEVfVUlfSU5URVJBQ1QQDxIhCh1JTlRFUkFDVF9UWVBFX0RFU0hSRVRfT0JF",
+            "TElTSxAQQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.InteractType), }, null, null));
@@ -62,8 +62,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [pbr::OriginalName("INTERACT_TYPE_HOME_GATHER")] HomeGather = 12,
     [pbr::OriginalName("INTERACT_TYPE_ENV_ANIMAL")] EnvAnimal = 13,
     [pbr::OriginalName("INTERACT_TYPE_QUEST_GADGET")] QuestGadget = 14,
-    [pbr::OriginalName("INTERACT_TYPE_Unk2700_LIEIKFDFMGF")] Unk2700Lieikfdfmgf = 15,
-    [pbr::OriginalName("INTERACT_TYPE_Unk3000_NMOCFKDNCOB")] Unk3000Nmocfkdncob = 16,
+    [pbr::OriginalName("INTERACT_TYPE_UI_INTERACT")] UiInteract = 15,
+    [pbr::OriginalName("INTERACT_TYPE_DESHRET_OBELISK")] DeshretObelisk = 16,
   }
 
   #endregion

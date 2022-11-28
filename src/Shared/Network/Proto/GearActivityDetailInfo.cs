@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static GearActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxHZWFyQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhlVbmsyODAwX0JQT0pJ",
-            "SURFQURELnByb3RvGhlVbmsyODAwX0pJUE1KUEFLSUtFLnByb3RvIn4KFkdl",
-            "YXJBY3Rpdml0eURldGFpbEluZm8SMQoTVW5rMjgwMF9HQkFQQ0JQTUhOShgO",
-            "IAMoCzIULlVuazI4MDBfQlBPSklJREVBREQSMQoTVW5rMjgwMF9JSEVIR09C",
-            "Q0lOQxgIIAEoCzIULlVuazI4MDBfSklQTUpQQUtJS0VCIqoCH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "ChxHZWFyQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhNHZWFyTGV2ZWxEYXRh",
+            "LnByb3RvGhdKaWdzYXdQaWN0dXJlRGF0YS5wcm90byJ3ChZHZWFyQWN0aXZp",
+            "dHlEZXRhaWxJbmZvEiwKFGdlYXJfbGV2ZWxfZGF0YV9saXN0GA4gAygLMg4u",
+            "R2VhckxldmVsRGF0YRIvChNqaWdzYXdfcGljdHVyZV9kYXRhGAggASgLMhIu",
+            "Smlnc2F3UGljdHVyZURhdGFCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
+            "cmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2800BPOJIIDEADDReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2800JIPMJPAKIKEReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GearLevelDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.JigsawPictureDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GearActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.GearActivityDetailInfo.Parser, new[]{ "Unk2800GBAPCBPMHNJ", "Unk2800IHEHGOBCINC" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GearActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.GearActivityDetailInfo.Parser, new[]{ "GearLevelDataList", "JigsawPictureData" }, null, null, null, null)
           }));
     }
     #endregion
@@ -74,8 +74,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GearActivityDetailInfo(GearActivityDetailInfo other) : this() {
-      unk2800GBAPCBPMHNJ_ = other.unk2800GBAPCBPMHNJ_.Clone();
-      unk2800IHEHGOBCINC_ = other.unk2800IHEHGOBCINC_ != null ? other.unk2800IHEHGOBCINC_.Clone() : null;
+      gearLevelDataList_ = other.gearLevelDataList_.Clone();
+      jigsawPictureData_ = other.jigsawPictureData_ != null ? other.jigsawPictureData_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -85,26 +85,26 @@ namespace Weedwacker.Shared.Network.Proto {
       return new GearActivityDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2800_GBAPCBPMHNJ" field.</summary>
-    public const int Unk2800GBAPCBPMHNJFieldNumber = 14;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2800_BPOJIIDEADD> _repeated_unk2800GBAPCBPMHNJ_codec
-        = pb::FieldCodec.ForMessage(114, global::Weedwacker.Shared.Network.Proto.Unk2800_BPOJIIDEADD.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_BPOJIIDEADD> unk2800GBAPCBPMHNJ_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_BPOJIIDEADD>();
+    /// <summary>Field number for the "gear_level_data_list" field.</summary>
+    public const int GearLevelDataListFieldNumber = 14;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.GearLevelData> _repeated_gearLevelDataList_codec
+        = pb::FieldCodec.ForMessage(114, global::Weedwacker.Shared.Network.Proto.GearLevelData.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GearLevelData> gearLevelDataList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GearLevelData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_BPOJIIDEADD> Unk2800GBAPCBPMHNJ {
-      get { return unk2800GBAPCBPMHNJ_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GearLevelData> GearLevelDataList {
+      get { return gearLevelDataList_; }
     }
 
-    /// <summary>Field number for the "Unk2800_IHEHGOBCINC" field.</summary>
-    public const int Unk2800IHEHGOBCINCFieldNumber = 8;
-    private global::Weedwacker.Shared.Network.Proto.Unk2800_JIPMJPAKIKE unk2800IHEHGOBCINC_;
+    /// <summary>Field number for the "jigsaw_picture_data" field.</summary>
+    public const int JigsawPictureDataFieldNumber = 8;
+    private global::Weedwacker.Shared.Network.Proto.JigsawPictureData jigsawPictureData_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2800_JIPMJPAKIKE Unk2800IHEHGOBCINC {
-      get { return unk2800IHEHGOBCINC_; }
+    public global::Weedwacker.Shared.Network.Proto.JigsawPictureData JigsawPictureData {
+      get { return jigsawPictureData_; }
       set {
-        unk2800IHEHGOBCINC_ = value;
+        jigsawPictureData_ = value;
       }
     }
 
@@ -123,8 +123,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2800GBAPCBPMHNJ_.Equals(other.unk2800GBAPCBPMHNJ_)) return false;
-      if (!object.Equals(Unk2800IHEHGOBCINC, other.Unk2800IHEHGOBCINC)) return false;
+      if(!gearLevelDataList_.Equals(other.gearLevelDataList_)) return false;
+      if (!object.Equals(JigsawPictureData, other.JigsawPictureData)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -132,8 +132,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2800GBAPCBPMHNJ_.GetHashCode();
-      if (unk2800IHEHGOBCINC_ != null) hash ^= Unk2800IHEHGOBCINC.GetHashCode();
+      hash ^= gearLevelDataList_.GetHashCode();
+      if (jigsawPictureData_ != null) hash ^= JigsawPictureData.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -152,11 +152,11 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (unk2800IHEHGOBCINC_ != null) {
+      if (jigsawPictureData_ != null) {
         output.WriteRawTag(66);
-        output.WriteMessage(Unk2800IHEHGOBCINC);
+        output.WriteMessage(JigsawPictureData);
       }
-      unk2800GBAPCBPMHNJ_.WriteTo(output, _repeated_unk2800GBAPCBPMHNJ_codec);
+      gearLevelDataList_.WriteTo(output, _repeated_gearLevelDataList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -167,11 +167,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (unk2800IHEHGOBCINC_ != null) {
+      if (jigsawPictureData_ != null) {
         output.WriteRawTag(66);
-        output.WriteMessage(Unk2800IHEHGOBCINC);
+        output.WriteMessage(JigsawPictureData);
       }
-      unk2800GBAPCBPMHNJ_.WriteTo(ref output, _repeated_unk2800GBAPCBPMHNJ_codec);
+      gearLevelDataList_.WriteTo(ref output, _repeated_gearLevelDataList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -182,9 +182,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2800GBAPCBPMHNJ_.CalculateSize(_repeated_unk2800GBAPCBPMHNJ_codec);
-      if (unk2800IHEHGOBCINC_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Unk2800IHEHGOBCINC);
+      size += gearLevelDataList_.CalculateSize(_repeated_gearLevelDataList_codec);
+      if (jigsawPictureData_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(JigsawPictureData);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -198,12 +198,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2800GBAPCBPMHNJ_.Add(other.unk2800GBAPCBPMHNJ_);
-      if (other.unk2800IHEHGOBCINC_ != null) {
-        if (unk2800IHEHGOBCINC_ == null) {
-          Unk2800IHEHGOBCINC = new global::Weedwacker.Shared.Network.Proto.Unk2800_JIPMJPAKIKE();
+      gearLevelDataList_.Add(other.gearLevelDataList_);
+      if (other.jigsawPictureData_ != null) {
+        if (jigsawPictureData_ == null) {
+          JigsawPictureData = new global::Weedwacker.Shared.Network.Proto.JigsawPictureData();
         }
-        Unk2800IHEHGOBCINC.MergeFrom(other.Unk2800IHEHGOBCINC);
+        JigsawPictureData.MergeFrom(other.JigsawPictureData);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -221,14 +221,14 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 66: {
-            if (unk2800IHEHGOBCINC_ == null) {
-              Unk2800IHEHGOBCINC = new global::Weedwacker.Shared.Network.Proto.Unk2800_JIPMJPAKIKE();
+            if (jigsawPictureData_ == null) {
+              JigsawPictureData = new global::Weedwacker.Shared.Network.Proto.JigsawPictureData();
             }
-            input.ReadMessage(Unk2800IHEHGOBCINC);
+            input.ReadMessage(JigsawPictureData);
             break;
           }
           case 114: {
-            unk2800GBAPCBPMHNJ_.AddEntriesFrom(input, _repeated_unk2800GBAPCBPMHNJ_codec);
+            gearLevelDataList_.AddEntriesFrom(input, _repeated_gearLevelDataList_codec);
             break;
           }
         }
@@ -247,14 +247,14 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 66: {
-            if (unk2800IHEHGOBCINC_ == null) {
-              Unk2800IHEHGOBCINC = new global::Weedwacker.Shared.Network.Proto.Unk2800_JIPMJPAKIKE();
+            if (jigsawPictureData_ == null) {
+              JigsawPictureData = new global::Weedwacker.Shared.Network.Proto.JigsawPictureData();
             }
-            input.ReadMessage(Unk2800IHEHGOBCINC);
+            input.ReadMessage(JigsawPictureData);
             break;
           }
           case 114: {
-            unk2800GBAPCBPMHNJ_.AddEntriesFrom(ref input, _repeated_unk2800GBAPCBPMHNJ_codec);
+            gearLevelDataList_.AddEntriesFrom(ref input, _repeated_gearLevelDataList_codec);
             break;
           }
         }

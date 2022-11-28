@@ -24,14 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static InstableSprayDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1JbnN0YWJsZVNwcmF5RGV0YWlsSW5mby5wcm90bxoZVW5rMzAwMF9JQ0xL",
-            "SkpOR09ITi5wcm90byJMChdJbnN0YWJsZVNwcmF5RGV0YWlsSW5mbxIxChNV",
-            "bmsyNzAwX1BIS0hJUExET09BGAkgAygLMhQuVW5rMzAwMF9JQ0xLSkpOR09I",
-            "TkIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "Ch1JbnN0YWJsZVNwcmF5RGV0YWlsSW5mby5wcm90bxocSW5zdGFibGVTcHJh",
+            "eVN0YWdlSW5mby5wcm90byJLChdJbnN0YWJsZVNwcmF5RGV0YWlsSW5mbxIw",
+            "Cg9zdGFnZV9pbmZvX2xpc3QYCSADKAsyFy5JbnN0YWJsZVNwcmF5U3RhZ2VJ",
+            "bmZvQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk3000ICLKJJNGOHNReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.InstableSprayStageInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfo), global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfo.Parser, new[]{ "Unk2700PHKHIPLDOOA" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfo), global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfo.Parser, new[]{ "StageInfoList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -72,7 +73,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InstableSprayDetailInfo(InstableSprayDetailInfo other) : this() {
-      unk2700PHKHIPLDOOA_ = other.unk2700PHKHIPLDOOA_.Clone();
+      stageInfoList_ = other.stageInfoList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -82,15 +83,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new InstableSprayDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_PHKHIPLDOOA" field.</summary>
-    public const int Unk2700PHKHIPLDOOAFieldNumber = 9;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk3000_ICLKJJNGOHN> _repeated_unk2700PHKHIPLDOOA_codec
-        = pb::FieldCodec.ForMessage(74, global::Weedwacker.Shared.Network.Proto.Unk3000_ICLKJJNGOHN.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk3000_ICLKJJNGOHN> unk2700PHKHIPLDOOA_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk3000_ICLKJJNGOHN>();
+    /// <summary>Field number for the "stage_info_list" field.</summary>
+    public const int StageInfoListFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.InstableSprayStageInfo> _repeated_stageInfoList_codec
+        = pb::FieldCodec.ForMessage(74, global::Weedwacker.Shared.Network.Proto.InstableSprayStageInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.InstableSprayStageInfo> stageInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.InstableSprayStageInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk3000_ICLKJJNGOHN> Unk2700PHKHIPLDOOA {
-      get { return unk2700PHKHIPLDOOA_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.InstableSprayStageInfo> StageInfoList {
+      get { return stageInfoList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -108,7 +109,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2700PHKHIPLDOOA_.Equals(other.unk2700PHKHIPLDOOA_)) return false;
+      if(!stageInfoList_.Equals(other.stageInfoList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -116,7 +117,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2700PHKHIPLDOOA_.GetHashCode();
+      hash ^= stageInfoList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -135,7 +136,7 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk2700PHKHIPLDOOA_.WriteTo(output, _repeated_unk2700PHKHIPLDOOA_codec);
+      stageInfoList_.WriteTo(output, _repeated_stageInfoList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -146,7 +147,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk2700PHKHIPLDOOA_.WriteTo(ref output, _repeated_unk2700PHKHIPLDOOA_codec);
+      stageInfoList_.WriteTo(ref output, _repeated_stageInfoList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -157,7 +158,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2700PHKHIPLDOOA_.CalculateSize(_repeated_unk2700PHKHIPLDOOA_codec);
+      size += stageInfoList_.CalculateSize(_repeated_stageInfoList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -170,7 +171,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2700PHKHIPLDOOA_.Add(other.unk2700PHKHIPLDOOA_);
+      stageInfoList_.Add(other.stageInfoList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -187,7 +188,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 74: {
-            unk2700PHKHIPLDOOA_.AddEntriesFrom(input, _repeated_unk2700PHKHIPLDOOA_codec);
+            stageInfoList_.AddEntriesFrom(input, _repeated_stageInfoList_codec);
             break;
           }
         }
@@ -206,7 +207,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 74: {
-            unk2700PHKHIPLDOOA_.AddEntriesFrom(ref input, _repeated_unk2700PHKHIPLDOOA_codec);
+            stageInfoList_.AddEntriesFrom(ref input, _repeated_stageInfoList_codec);
             break;
           }
         }

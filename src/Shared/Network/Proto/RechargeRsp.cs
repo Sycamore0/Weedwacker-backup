@@ -25,13 +25,13 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChFSZWNoYXJnZVJzcC5wcm90byJPCgtSZWNoYXJnZVJzcBIPCgdyZXRjb2Rl",
-            "GAwgASgFEhsKE1VuazI3MDBfRkdFTkFPQkRJRUEYBiABKAgSEgoKcHJvZHVj",
+            "GAwgASgFEhsKE2lzX3Nob3dfbWlub3JzX2hpbnQYBiABKAgSEgoKcHJvZHVj",
             "dF9pZBgCIAEoCUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
             "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RechargeRsp), global::Weedwacker.Shared.Network.Proto.RechargeRsp.Parser, new[]{ "Retcode", "Unk2700FGENAOBDIEA", "ProductId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RechargeRsp), global::Weedwacker.Shared.Network.Proto.RechargeRsp.Parser, new[]{ "Retcode", "IsShowMinorsHint", "ProductId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,7 +78,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RechargeRsp(RechargeRsp other) : this() {
       retcode_ = other.retcode_;
-      unk2700FGENAOBDIEA_ = other.unk2700FGENAOBDIEA_;
+      isShowMinorsHint_ = other.isShowMinorsHint_;
       productId_ = other.productId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -101,15 +101,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_FGENAOBDIEA" field.</summary>
-    public const int Unk2700FGENAOBDIEAFieldNumber = 6;
-    private bool unk2700FGENAOBDIEA_;
+    /// <summary>Field number for the "is_show_minors_hint" field.</summary>
+    public const int IsShowMinorsHintFieldNumber = 6;
+    private bool isShowMinorsHint_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700FGENAOBDIEA {
-      get { return unk2700FGENAOBDIEA_; }
+    public bool IsShowMinorsHint {
+      get { return isShowMinorsHint_; }
       set {
-        unk2700FGENAOBDIEA_ = value;
+        isShowMinorsHint_ = value;
       }
     }
 
@@ -141,7 +141,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (Retcode != other.Retcode) return false;
-      if (Unk2700FGENAOBDIEA != other.Unk2700FGENAOBDIEA) return false;
+      if (IsShowMinorsHint != other.IsShowMinorsHint) return false;
       if (ProductId != other.ProductId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -151,7 +151,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
-      if (Unk2700FGENAOBDIEA != false) hash ^= Unk2700FGENAOBDIEA.GetHashCode();
+      if (IsShowMinorsHint != false) hash ^= IsShowMinorsHint.GetHashCode();
       if (ProductId.Length != 0) hash ^= ProductId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -175,9 +175,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(18);
         output.WriteString(ProductId);
       }
-      if (Unk2700FGENAOBDIEA != false) {
+      if (IsShowMinorsHint != false) {
         output.WriteRawTag(48);
-        output.WriteBool(Unk2700FGENAOBDIEA);
+        output.WriteBool(IsShowMinorsHint);
       }
       if (Retcode != 0) {
         output.WriteRawTag(96);
@@ -197,9 +197,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(18);
         output.WriteString(ProductId);
       }
-      if (Unk2700FGENAOBDIEA != false) {
+      if (IsShowMinorsHint != false) {
         output.WriteRawTag(48);
-        output.WriteBool(Unk2700FGENAOBDIEA);
+        output.WriteBool(IsShowMinorsHint);
       }
       if (Retcode != 0) {
         output.WriteRawTag(96);
@@ -218,7 +218,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Retcode != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
       }
-      if (Unk2700FGENAOBDIEA != false) {
+      if (IsShowMinorsHint != false) {
         size += 1 + 1;
       }
       if (ProductId.Length != 0) {
@@ -239,8 +239,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Retcode != 0) {
         Retcode = other.Retcode;
       }
-      if (other.Unk2700FGENAOBDIEA != false) {
-        Unk2700FGENAOBDIEA = other.Unk2700FGENAOBDIEA;
+      if (other.IsShowMinorsHint != false) {
+        IsShowMinorsHint = other.IsShowMinorsHint;
       }
       if (other.ProductId.Length != 0) {
         ProductId = other.ProductId;
@@ -265,7 +265,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk2700FGENAOBDIEA = input.ReadBool();
+            IsShowMinorsHint = input.ReadBool();
             break;
           }
           case 96: {
@@ -292,7 +292,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk2700FGENAOBDIEA = input.ReadBool();
+            IsShowMinorsHint = input.ReadBool();
             break;
           }
           case 96: {

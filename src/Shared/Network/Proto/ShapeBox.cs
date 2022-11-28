@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static ShapeBoxReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5TaGFwZUJveC5wcm90bxoMVmVjdG9yLnByb3RvIogBCghTaGFwZUJveBIX",
-            "CgZjZW50ZXIYASABKAsyBy5WZWN0b3ISFwoGYXhpc18wGAIgASgLMgcuVmVj",
-            "dG9yEhcKBmF4aXNfMRgDIAEoCzIHLlZlY3RvchIXCgZheGlzXzIYBCABKAsy",
-            "By5WZWN0b3ISGAoHZXh0ZW50cxgFIAEoCzIHLlZlY3RvckIiqgIfV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "Cg5TaGFwZUJveC5wcm90bxoMVmVjdG9yLnByb3RvIoUBCghTaGFwZUJveBIX",
+            "CgZjZW50ZXIYASABKAsyBy5WZWN0b3ISFgoFYXhpczAYAiABKAsyBy5WZWN0",
+            "b3ISFgoFYXhpczEYAyABKAsyBy5WZWN0b3ISFgoFYXhpczIYBCABKAsyBy5W",
+            "ZWN0b3ISGAoHZXh0ZW50cxgFIAEoCzIHLlZlY3RvckIiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -99,7 +99,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "axis_0" field.</summary>
+    /// <summary>Field number for the "axis0" field.</summary>
     public const int Axis0FieldNumber = 2;
     private global::Weedwacker.Shared.Network.Proto.Vector axis0_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -111,7 +111,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "axis_1" field.</summary>
+    /// <summary>Field number for the "axis1" field.</summary>
     public const int Axis1FieldNumber = 3;
     private global::Weedwacker.Shared.Network.Proto.Vector axis1_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -123,7 +123,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "axis_2" field.</summary>
+    /// <summary>Field number for the "axis2" field.</summary>
     public const int Axis2FieldNumber = 4;
     private global::Weedwacker.Shared.Network.Proto.Vector axis2_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

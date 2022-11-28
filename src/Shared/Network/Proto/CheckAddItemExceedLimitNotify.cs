@@ -24,21 +24,21 @@ namespace Weedwacker.Shared.Network.Proto {
     static CheckAddItemExceedLimitNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNDaGVja0FkZEl0ZW1FeGNlZWRMaW1pdE5vdGlmeS5wcm90byL5AgodQ2hl",
-            "Y2tBZGRJdGVtRXhjZWVkTGltaXROb3RpZnkSDwoHaXNfZHJvcBgFIAEoCBIf",
-            "ChdleGNlZWRlZF9pdGVtX3R5cGVfbGlzdBgKIAMoDRIaChJleGNlZWRlZF9p",
-            "dGVtX2xpc3QYDCADKA0SRwoIbXNnX3R5cGUYBCABKA4yNS5DaGVja0FkZEl0",
-            "ZW1FeGNlZWRMaW1pdE5vdGlmeS5JdGVtRXhjZWVkTGltaXRNc2dUeXBlIsAB",
-            "ChZJdGVtRXhjZWVkTGltaXRNc2dUeXBlEiYKIklURU1fRVhDRUVEX0xJTUlU",
-            "X01TR19UWVBFX0RFRkFVTFQQABIjCh9JVEVNX0VYQ0VFRF9MSU1JVF9NU0df",
-            "VFlQRV9URVhUEAESJQohSVRFTV9FWENFRURfTElNSVRfTVNHX1RZUEVfRElB",
-            "TE9HEAISMgouSVRFTV9FWENFRURfTElNSVRfTVNHX1RZUEVfVW5rMjcwMF9C",
-            "T05MR0VFRUJCRhADQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvYgZwcm90bzM="));
+            "CiNDaGVja0FkZEl0ZW1FeGNlZWRMaW1pdE5vdGlmeS5wcm90byKFAwodQ2hl",
+            "Y2tBZGRJdGVtRXhjZWVkTGltaXROb3RpZnkSDwoHaXNfZHJvcBgFIAEoCBJH",
+            "Cghtc2dfdHlwZRgEIAEoDjI1LkNoZWNrQWRkSXRlbUV4Y2VlZExpbWl0Tm90",
+            "aWZ5Lkl0ZW1FeGNlZWRMaW1pdE1zZ1R5cGUSHwoXZXhjZWVkZWRfaXRlbV90",
+            "eXBlX2xpc3QYCiADKA0SGgoSZXhjZWVkZWRfaXRlbV9saXN0GAwgAygNEg4K",
+            "BnJlYXNvbhgOIAEoDSK8AQoWSXRlbUV4Y2VlZExpbWl0TXNnVHlwZRImCiJJ",
+            "VEVNX0VYQ0VFRF9MSU1JVF9NU0dfVFlQRV9ERUZBVUxUEAASIwofSVRFTV9F",
+            "WENFRURfTElNSVRfTVNHX1RZUEVfVEVYVBABEiUKIUlURU1fRVhDRUVEX0xJ",
+            "TUlUX01TR19UWVBFX0RJQUxPRxACEi4KKklURU1fRVhDRUVEX0xJTUlUX01T",
+            "R19UWVBFX0RJQUxPR19OT05CTE9DSxADQiKqAh9XZWVkd2Fja2VyLlNoYXJl",
+            "ZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify), global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Parser, new[]{ "IsDrop", "ExceededItemTypeList", "ExceededItemList", "MsgType" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType) }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify), global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Parser, new[]{ "IsDrop", "MsgType", "ExceededItemTypeList", "ExceededItemList", "Reason" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType) }, null, null)
           }));
     }
     #endregion
@@ -85,9 +85,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CheckAddItemExceedLimitNotify(CheckAddItemExceedLimitNotify other) : this() {
       isDrop_ = other.isDrop_;
+      msgType_ = other.msgType_;
       exceededItemTypeList_ = other.exceededItemTypeList_.Clone();
       exceededItemList_ = other.exceededItemList_.Clone();
-      msgType_ = other.msgType_;
+      reason_ = other.reason_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -106,6 +107,18 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return isDrop_; }
       set {
         isDrop_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "msg_type" field.</summary>
+    public const int MsgTypeFieldNumber = 4;
+    private global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType msgType_ = global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType.Default;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType MsgType {
+      get { return msgType_; }
+      set {
+        msgType_ = value;
       }
     }
 
@@ -131,15 +144,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return exceededItemList_; }
     }
 
-    /// <summary>Field number for the "msg_type" field.</summary>
-    public const int MsgTypeFieldNumber = 4;
-    private global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType msgType_ = global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType.Default;
+    /// <summary>Field number for the "reason" field.</summary>
+    public const int ReasonFieldNumber = 14;
+    private uint reason_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType MsgType {
-      get { return msgType_; }
+    public uint Reason {
+      get { return reason_; }
       set {
-        msgType_ = value;
+        reason_ = value;
       }
     }
 
@@ -159,9 +172,10 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (IsDrop != other.IsDrop) return false;
+      if (MsgType != other.MsgType) return false;
       if(!exceededItemTypeList_.Equals(other.exceededItemTypeList_)) return false;
       if(!exceededItemList_.Equals(other.exceededItemList_)) return false;
-      if (MsgType != other.MsgType) return false;
+      if (Reason != other.Reason) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -170,9 +184,10 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (IsDrop != false) hash ^= IsDrop.GetHashCode();
+      if (MsgType != global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType.Default) hash ^= MsgType.GetHashCode();
       hash ^= exceededItemTypeList_.GetHashCode();
       hash ^= exceededItemList_.GetHashCode();
-      if (MsgType != global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType.Default) hash ^= MsgType.GetHashCode();
+      if (Reason != 0) hash ^= Reason.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -201,6 +216,10 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       exceededItemTypeList_.WriteTo(output, _repeated_exceededItemTypeList_codec);
       exceededItemList_.WriteTo(output, _repeated_exceededItemList_codec);
+      if (Reason != 0) {
+        output.WriteRawTag(112);
+        output.WriteUInt32(Reason);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -221,6 +240,10 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       exceededItemTypeList_.WriteTo(ref output, _repeated_exceededItemTypeList_codec);
       exceededItemList_.WriteTo(ref output, _repeated_exceededItemList_codec);
+      if (Reason != 0) {
+        output.WriteRawTag(112);
+        output.WriteUInt32(Reason);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -234,10 +257,13 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsDrop != false) {
         size += 1 + 1;
       }
-      size += exceededItemTypeList_.CalculateSize(_repeated_exceededItemTypeList_codec);
-      size += exceededItemList_.CalculateSize(_repeated_exceededItemList_codec);
       if (MsgType != global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType.Default) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MsgType);
+      }
+      size += exceededItemTypeList_.CalculateSize(_repeated_exceededItemTypeList_codec);
+      size += exceededItemList_.CalculateSize(_repeated_exceededItemList_codec);
+      if (Reason != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Reason);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -254,10 +280,13 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.IsDrop != false) {
         IsDrop = other.IsDrop;
       }
-      exceededItemTypeList_.Add(other.exceededItemTypeList_);
-      exceededItemList_.Add(other.exceededItemList_);
       if (other.MsgType != global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType.Default) {
         MsgType = other.MsgType;
+      }
+      exceededItemTypeList_.Add(other.exceededItemTypeList_);
+      exceededItemList_.Add(other.exceededItemList_);
+      if (other.Reason != 0) {
+        Reason = other.Reason;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -290,6 +319,10 @@ namespace Weedwacker.Shared.Network.Proto {
           case 98:
           case 96: {
             exceededItemList_.AddEntriesFrom(input, _repeated_exceededItemList_codec);
+            break;
+          }
+          case 112: {
+            Reason = input.ReadUInt32();
             break;
           }
         }
@@ -325,6 +358,10 @@ namespace Weedwacker.Shared.Network.Proto {
             exceededItemList_.AddEntriesFrom(ref input, _repeated_exceededItemList_codec);
             break;
           }
+          case 112: {
+            Reason = input.ReadUInt32();
+            break;
+          }
         }
       }
     }
@@ -339,7 +376,7 @@ namespace Weedwacker.Shared.Network.Proto {
         [pbr::OriginalName("ITEM_EXCEED_LIMIT_MSG_TYPE_DEFAULT")] Default = 0,
         [pbr::OriginalName("ITEM_EXCEED_LIMIT_MSG_TYPE_TEXT")] Text = 1,
         [pbr::OriginalName("ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG")] Dialog = 2,
-        [pbr::OriginalName("ITEM_EXCEED_LIMIT_MSG_TYPE_Unk2700_BONLGEEEBBF")] Unk2700Bonlgeeebbf = 3,
+        [pbr::OriginalName("ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK")] DialogNonblock = 3,
       }
 
     }

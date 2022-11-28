@@ -24,20 +24,19 @@ namespace Weedwacker.Shared.Network.Proto {
     static CustomDungeonResultInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1DdXN0b21EdW5nZW9uUmVzdWx0SW5mby5wcm90bxoZVW5rMjcwMF9GREVH",
-            "Sk9DRERHSC5wcm90bxoZVW5rMjcwMF9PQ09LSUxCSklQSi5wcm90byKkAgoX",
-            "Q3VzdG9tRHVuZ2VvblJlc3VsdEluZm8SGwoTVW5rMjcwMF9CT05OSEdLRExG",
-            "TxgMIAEoCBIbChNVbmsyNzAwX0ZCQkVKS0NETUVJGAkgASgNEjIKFGNoaWxk",
-            "X2NoYWxsZW5nZV9saXN0GAYgAygLMhQuVW5rMjcwMF9GREVHSk9DRERHSBIb",
-            "ChNVbmsyNzAwX09OT09KQkVBQk9FGAMgASgEEjEKE1VuazI3MDBfT05DRExQ",
-            "REhGQUIYByABKA4yFC5VbmsyNzAwX09DT0tJTEJKSVBKEhEKCXRpbWVfY29z",
-            "dBgLIAEoDRIbChNVbmsyNzAwX0lCRENGQU1CR09LGAIgASgIEhsKE1VuazI3",
-            "MDBfSEJGTEtGT0NLQkYYDiABKAhCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "Ch1DdXN0b21EdW5nZW9uUmVzdWx0SW5mby5wcm90bxoUQ2hhbGxlbmdlQnJp",
+            "ZWYucHJvdG8aHUN1c3RvbUR1bmdlb25GaW5pc2hUeXBlLnByb3RvIvUBChdD",
+            "dXN0b21EdW5nZW9uUmVzdWx0SW5mbxIQCghpc19saWtlZBgMIAEoCBIUCgxn",
+            "b3RfY29pbl9udW0YCSABKA0SLQoUY2hpbGRfY2hhbGxlbmdlX2xpc3QYBiAD",
+            "KAsyDy5DaGFsbGVuZ2VCcmllZhIUCgxkdW5nZW9uX2d1aWQYAyABKAQSLQoL",
+            "ZmluaXNoX3R5cGUYByABKA4yGC5DdXN0b21EdW5nZW9uRmluaXNoVHlwZRIR",
+            "Cgl0aW1lX2Nvc3QYCyABKA0SGAoQaXNfYXJyaXZlX2ZpbmlzaBgCIAEoCBIR",
+            "Cglpc19zdG9yZWQYDiABKAhCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
+            "cmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2700FDEGJOCDDGHReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700OCOKILBJIPJReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ChallengeBriefReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CustomDungeonResultInfo), global::Weedwacker.Shared.Network.Proto.CustomDungeonResultInfo.Parser, new[]{ "Unk2700BONNHGKDLFO", "Unk2700FBBEJKCDMEI", "ChildChallengeList", "Unk2700ONOOJBEABOE", "Unk2700ONCDLPDHFAB", "TimeCost", "Unk2700IBDCFAMBGOK", "Unk2700HBFLKFOCKBF" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CustomDungeonResultInfo), global::Weedwacker.Shared.Network.Proto.CustomDungeonResultInfo.Parser, new[]{ "IsLiked", "GotCoinNum", "ChildChallengeList", "DungeonGuid", "FinishType", "TimeCost", "IsArriveFinish", "IsStored" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,14 +77,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CustomDungeonResultInfo(CustomDungeonResultInfo other) : this() {
-      unk2700BONNHGKDLFO_ = other.unk2700BONNHGKDLFO_;
-      unk2700FBBEJKCDMEI_ = other.unk2700FBBEJKCDMEI_;
+      isLiked_ = other.isLiked_;
+      gotCoinNum_ = other.gotCoinNum_;
       childChallengeList_ = other.childChallengeList_.Clone();
-      unk2700ONOOJBEABOE_ = other.unk2700ONOOJBEABOE_;
-      unk2700ONCDLPDHFAB_ = other.unk2700ONCDLPDHFAB_;
+      dungeonGuid_ = other.dungeonGuid_;
+      finishType_ = other.finishType_;
       timeCost_ = other.timeCost_;
-      unk2700IBDCFAMBGOK_ = other.unk2700IBDCFAMBGOK_;
-      unk2700HBFLKFOCKBF_ = other.unk2700HBFLKFOCKBF_;
+      isArriveFinish_ = other.isArriveFinish_;
+      isStored_ = other.isStored_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -95,62 +94,62 @@ namespace Weedwacker.Shared.Network.Proto {
       return new CustomDungeonResultInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_BONNHGKDLFO" field.</summary>
-    public const int Unk2700BONNHGKDLFOFieldNumber = 12;
-    private bool unk2700BONNHGKDLFO_;
+    /// <summary>Field number for the "is_liked" field.</summary>
+    public const int IsLikedFieldNumber = 12;
+    private bool isLiked_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700BONNHGKDLFO {
-      get { return unk2700BONNHGKDLFO_; }
+    public bool IsLiked {
+      get { return isLiked_; }
       set {
-        unk2700BONNHGKDLFO_ = value;
+        isLiked_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_FBBEJKCDMEI" field.</summary>
-    public const int Unk2700FBBEJKCDMEIFieldNumber = 9;
-    private uint unk2700FBBEJKCDMEI_;
+    /// <summary>Field number for the "got_coin_num" field.</summary>
+    public const int GotCoinNumFieldNumber = 9;
+    private uint gotCoinNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700FBBEJKCDMEI {
-      get { return unk2700FBBEJKCDMEI_; }
+    public uint GotCoinNum {
+      get { return gotCoinNum_; }
       set {
-        unk2700FBBEJKCDMEI_ = value;
+        gotCoinNum_ = value;
       }
     }
 
     /// <summary>Field number for the "child_challenge_list" field.</summary>
     public const int ChildChallengeListFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_FDEGJOCDDGH> _repeated_childChallengeList_codec
-        = pb::FieldCodec.ForMessage(50, global::Weedwacker.Shared.Network.Proto.Unk2700_FDEGJOCDDGH.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_FDEGJOCDDGH> childChallengeList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_FDEGJOCDDGH>();
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.ChallengeBrief> _repeated_childChallengeList_codec
+        = pb::FieldCodec.ForMessage(50, global::Weedwacker.Shared.Network.Proto.ChallengeBrief.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ChallengeBrief> childChallengeList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ChallengeBrief>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_FDEGJOCDDGH> ChildChallengeList {
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ChallengeBrief> ChildChallengeList {
       get { return childChallengeList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_ONOOJBEABOE" field.</summary>
-    public const int Unk2700ONOOJBEABOEFieldNumber = 3;
-    private ulong unk2700ONOOJBEABOE_;
+    /// <summary>Field number for the "dungeon_guid" field.</summary>
+    public const int DungeonGuidFieldNumber = 3;
+    private ulong dungeonGuid_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong Unk2700ONOOJBEABOE {
-      get { return unk2700ONOOJBEABOE_; }
+    public ulong DungeonGuid {
+      get { return dungeonGuid_; }
       set {
-        unk2700ONOOJBEABOE_ = value;
+        dungeonGuid_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_ONCDLPDHFAB" field.</summary>
-    public const int Unk2700ONCDLPDHFABFieldNumber = 7;
-    private global::Weedwacker.Shared.Network.Proto.Unk2700_OCOKILBJIPJ unk2700ONCDLPDHFAB_ = global::Weedwacker.Shared.Network.Proto.Unk2700_OCOKILBJIPJ.Unk2700Mpgoempnceh;
+    /// <summary>Field number for the "finish_type" field.</summary>
+    public const int FinishTypeFieldNumber = 7;
+    private global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishType finishType_ = global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishType.PlayNormal;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2700_OCOKILBJIPJ Unk2700ONCDLPDHFAB {
-      get { return unk2700ONCDLPDHFAB_; }
+    public global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishType FinishType {
+      get { return finishType_; }
       set {
-        unk2700ONCDLPDHFAB_ = value;
+        finishType_ = value;
       }
     }
 
@@ -166,27 +165,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_IBDCFAMBGOK" field.</summary>
-    public const int Unk2700IBDCFAMBGOKFieldNumber = 2;
-    private bool unk2700IBDCFAMBGOK_;
+    /// <summary>Field number for the "is_arrive_finish" field.</summary>
+    public const int IsArriveFinishFieldNumber = 2;
+    private bool isArriveFinish_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700IBDCFAMBGOK {
-      get { return unk2700IBDCFAMBGOK_; }
+    public bool IsArriveFinish {
+      get { return isArriveFinish_; }
       set {
-        unk2700IBDCFAMBGOK_ = value;
+        isArriveFinish_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_HBFLKFOCKBF" field.</summary>
-    public const int Unk2700HBFLKFOCKBFFieldNumber = 14;
-    private bool unk2700HBFLKFOCKBF_;
+    /// <summary>Field number for the "is_stored" field.</summary>
+    public const int IsStoredFieldNumber = 14;
+    private bool isStored_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700HBFLKFOCKBF {
-      get { return unk2700HBFLKFOCKBF_; }
+    public bool IsStored {
+      get { return isStored_; }
       set {
-        unk2700HBFLKFOCKBF_ = value;
+        isStored_ = value;
       }
     }
 
@@ -205,14 +204,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700BONNHGKDLFO != other.Unk2700BONNHGKDLFO) return false;
-      if (Unk2700FBBEJKCDMEI != other.Unk2700FBBEJKCDMEI) return false;
+      if (IsLiked != other.IsLiked) return false;
+      if (GotCoinNum != other.GotCoinNum) return false;
       if(!childChallengeList_.Equals(other.childChallengeList_)) return false;
-      if (Unk2700ONOOJBEABOE != other.Unk2700ONOOJBEABOE) return false;
-      if (Unk2700ONCDLPDHFAB != other.Unk2700ONCDLPDHFAB) return false;
+      if (DungeonGuid != other.DungeonGuid) return false;
+      if (FinishType != other.FinishType) return false;
       if (TimeCost != other.TimeCost) return false;
-      if (Unk2700IBDCFAMBGOK != other.Unk2700IBDCFAMBGOK) return false;
-      if (Unk2700HBFLKFOCKBF != other.Unk2700HBFLKFOCKBF) return false;
+      if (IsArriveFinish != other.IsArriveFinish) return false;
+      if (IsStored != other.IsStored) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -220,14 +219,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700BONNHGKDLFO != false) hash ^= Unk2700BONNHGKDLFO.GetHashCode();
-      if (Unk2700FBBEJKCDMEI != 0) hash ^= Unk2700FBBEJKCDMEI.GetHashCode();
+      if (IsLiked != false) hash ^= IsLiked.GetHashCode();
+      if (GotCoinNum != 0) hash ^= GotCoinNum.GetHashCode();
       hash ^= childChallengeList_.GetHashCode();
-      if (Unk2700ONOOJBEABOE != 0UL) hash ^= Unk2700ONOOJBEABOE.GetHashCode();
-      if (Unk2700ONCDLPDHFAB != global::Weedwacker.Shared.Network.Proto.Unk2700_OCOKILBJIPJ.Unk2700Mpgoempnceh) hash ^= Unk2700ONCDLPDHFAB.GetHashCode();
+      if (DungeonGuid != 0UL) hash ^= DungeonGuid.GetHashCode();
+      if (FinishType != global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishType.PlayNormal) hash ^= FinishType.GetHashCode();
       if (TimeCost != 0) hash ^= TimeCost.GetHashCode();
-      if (Unk2700IBDCFAMBGOK != false) hash ^= Unk2700IBDCFAMBGOK.GetHashCode();
-      if (Unk2700HBFLKFOCKBF != false) hash ^= Unk2700HBFLKFOCKBF.GetHashCode();
+      if (IsArriveFinish != false) hash ^= IsArriveFinish.GetHashCode();
+      if (IsStored != false) hash ^= IsStored.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -246,34 +245,34 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700IBDCFAMBGOK != false) {
+      if (IsArriveFinish != false) {
         output.WriteRawTag(16);
-        output.WriteBool(Unk2700IBDCFAMBGOK);
+        output.WriteBool(IsArriveFinish);
       }
-      if (Unk2700ONOOJBEABOE != 0UL) {
+      if (DungeonGuid != 0UL) {
         output.WriteRawTag(24);
-        output.WriteUInt64(Unk2700ONOOJBEABOE);
+        output.WriteUInt64(DungeonGuid);
       }
       childChallengeList_.WriteTo(output, _repeated_childChallengeList_codec);
-      if (Unk2700ONCDLPDHFAB != global::Weedwacker.Shared.Network.Proto.Unk2700_OCOKILBJIPJ.Unk2700Mpgoempnceh) {
+      if (FinishType != global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishType.PlayNormal) {
         output.WriteRawTag(56);
-        output.WriteEnum((int) Unk2700ONCDLPDHFAB);
+        output.WriteEnum((int) FinishType);
       }
-      if (Unk2700FBBEJKCDMEI != 0) {
+      if (GotCoinNum != 0) {
         output.WriteRawTag(72);
-        output.WriteUInt32(Unk2700FBBEJKCDMEI);
+        output.WriteUInt32(GotCoinNum);
       }
       if (TimeCost != 0) {
         output.WriteRawTag(88);
         output.WriteUInt32(TimeCost);
       }
-      if (Unk2700BONNHGKDLFO != false) {
+      if (IsLiked != false) {
         output.WriteRawTag(96);
-        output.WriteBool(Unk2700BONNHGKDLFO);
+        output.WriteBool(IsLiked);
       }
-      if (Unk2700HBFLKFOCKBF != false) {
+      if (IsStored != false) {
         output.WriteRawTag(112);
-        output.WriteBool(Unk2700HBFLKFOCKBF);
+        output.WriteBool(IsStored);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -285,34 +284,34 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700IBDCFAMBGOK != false) {
+      if (IsArriveFinish != false) {
         output.WriteRawTag(16);
-        output.WriteBool(Unk2700IBDCFAMBGOK);
+        output.WriteBool(IsArriveFinish);
       }
-      if (Unk2700ONOOJBEABOE != 0UL) {
+      if (DungeonGuid != 0UL) {
         output.WriteRawTag(24);
-        output.WriteUInt64(Unk2700ONOOJBEABOE);
+        output.WriteUInt64(DungeonGuid);
       }
       childChallengeList_.WriteTo(ref output, _repeated_childChallengeList_codec);
-      if (Unk2700ONCDLPDHFAB != global::Weedwacker.Shared.Network.Proto.Unk2700_OCOKILBJIPJ.Unk2700Mpgoempnceh) {
+      if (FinishType != global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishType.PlayNormal) {
         output.WriteRawTag(56);
-        output.WriteEnum((int) Unk2700ONCDLPDHFAB);
+        output.WriteEnum((int) FinishType);
       }
-      if (Unk2700FBBEJKCDMEI != 0) {
+      if (GotCoinNum != 0) {
         output.WriteRawTag(72);
-        output.WriteUInt32(Unk2700FBBEJKCDMEI);
+        output.WriteUInt32(GotCoinNum);
       }
       if (TimeCost != 0) {
         output.WriteRawTag(88);
         output.WriteUInt32(TimeCost);
       }
-      if (Unk2700BONNHGKDLFO != false) {
+      if (IsLiked != false) {
         output.WriteRawTag(96);
-        output.WriteBool(Unk2700BONNHGKDLFO);
+        output.WriteBool(IsLiked);
       }
-      if (Unk2700HBFLKFOCKBF != false) {
+      if (IsStored != false) {
         output.WriteRawTag(112);
-        output.WriteBool(Unk2700HBFLKFOCKBF);
+        output.WriteBool(IsStored);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -324,26 +323,26 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700BONNHGKDLFO != false) {
+      if (IsLiked != false) {
         size += 1 + 1;
       }
-      if (Unk2700FBBEJKCDMEI != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700FBBEJKCDMEI);
+      if (GotCoinNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GotCoinNum);
       }
       size += childChallengeList_.CalculateSize(_repeated_childChallengeList_codec);
-      if (Unk2700ONOOJBEABOE != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Unk2700ONOOJBEABOE);
+      if (DungeonGuid != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(DungeonGuid);
       }
-      if (Unk2700ONCDLPDHFAB != global::Weedwacker.Shared.Network.Proto.Unk2700_OCOKILBJIPJ.Unk2700Mpgoempnceh) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk2700ONCDLPDHFAB);
+      if (FinishType != global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishType.PlayNormal) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) FinishType);
       }
       if (TimeCost != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TimeCost);
       }
-      if (Unk2700IBDCFAMBGOK != false) {
+      if (IsArriveFinish != false) {
         size += 1 + 1;
       }
-      if (Unk2700HBFLKFOCKBF != false) {
+      if (IsStored != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -358,27 +357,27 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700BONNHGKDLFO != false) {
-        Unk2700BONNHGKDLFO = other.Unk2700BONNHGKDLFO;
+      if (other.IsLiked != false) {
+        IsLiked = other.IsLiked;
       }
-      if (other.Unk2700FBBEJKCDMEI != 0) {
-        Unk2700FBBEJKCDMEI = other.Unk2700FBBEJKCDMEI;
+      if (other.GotCoinNum != 0) {
+        GotCoinNum = other.GotCoinNum;
       }
       childChallengeList_.Add(other.childChallengeList_);
-      if (other.Unk2700ONOOJBEABOE != 0UL) {
-        Unk2700ONOOJBEABOE = other.Unk2700ONOOJBEABOE;
+      if (other.DungeonGuid != 0UL) {
+        DungeonGuid = other.DungeonGuid;
       }
-      if (other.Unk2700ONCDLPDHFAB != global::Weedwacker.Shared.Network.Proto.Unk2700_OCOKILBJIPJ.Unk2700Mpgoempnceh) {
-        Unk2700ONCDLPDHFAB = other.Unk2700ONCDLPDHFAB;
+      if (other.FinishType != global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishType.PlayNormal) {
+        FinishType = other.FinishType;
       }
       if (other.TimeCost != 0) {
         TimeCost = other.TimeCost;
       }
-      if (other.Unk2700IBDCFAMBGOK != false) {
-        Unk2700IBDCFAMBGOK = other.Unk2700IBDCFAMBGOK;
+      if (other.IsArriveFinish != false) {
+        IsArriveFinish = other.IsArriveFinish;
       }
-      if (other.Unk2700HBFLKFOCKBF != false) {
-        Unk2700HBFLKFOCKBF = other.Unk2700HBFLKFOCKBF;
+      if (other.IsStored != false) {
+        IsStored = other.IsStored;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -396,11 +395,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 16: {
-            Unk2700IBDCFAMBGOK = input.ReadBool();
+            IsArriveFinish = input.ReadBool();
             break;
           }
           case 24: {
-            Unk2700ONOOJBEABOE = input.ReadUInt64();
+            DungeonGuid = input.ReadUInt64();
             break;
           }
           case 50: {
@@ -408,11 +407,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2700ONCDLPDHFAB = (global::Weedwacker.Shared.Network.Proto.Unk2700_OCOKILBJIPJ) input.ReadEnum();
+            FinishType = (global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishType) input.ReadEnum();
             break;
           }
           case 72: {
-            Unk2700FBBEJKCDMEI = input.ReadUInt32();
+            GotCoinNum = input.ReadUInt32();
             break;
           }
           case 88: {
@@ -420,11 +419,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk2700BONNHGKDLFO = input.ReadBool();
+            IsLiked = input.ReadBool();
             break;
           }
           case 112: {
-            Unk2700HBFLKFOCKBF = input.ReadBool();
+            IsStored = input.ReadBool();
             break;
           }
         }
@@ -443,11 +442,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 16: {
-            Unk2700IBDCFAMBGOK = input.ReadBool();
+            IsArriveFinish = input.ReadBool();
             break;
           }
           case 24: {
-            Unk2700ONOOJBEABOE = input.ReadUInt64();
+            DungeonGuid = input.ReadUInt64();
             break;
           }
           case 50: {
@@ -455,11 +454,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2700ONCDLPDHFAB = (global::Weedwacker.Shared.Network.Proto.Unk2700_OCOKILBJIPJ) input.ReadEnum();
+            FinishType = (global::Weedwacker.Shared.Network.Proto.CustomDungeonFinishType) input.ReadEnum();
             break;
           }
           case 72: {
-            Unk2700FBBEJKCDMEI = input.ReadUInt32();
+            GotCoinNum = input.ReadUInt32();
             break;
           }
           case 88: {
@@ -467,11 +466,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk2700BONNHGKDLFO = input.ReadBool();
+            IsLiked = input.ReadBool();
             break;
           }
           case 112: {
-            Unk2700HBFLKFOCKBF = input.ReadBool();
+            IsStored = input.ReadBool();
             break;
           }
         }

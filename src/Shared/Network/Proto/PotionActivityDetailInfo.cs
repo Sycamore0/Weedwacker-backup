@@ -24,12 +24,12 @@ namespace Weedwacker.Shared.Network.Proto {
     static PotionActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5Qb3Rpb25BY3Rpdml0eURldGFpbEluZm8ucHJvdG8aEVBvdGlvblN0YWdl",
-            "LnByb3RvIjwKGFBvdGlvbkFjdGl2aXR5RGV0YWlsSW5mbxIgCgpzdGFnZV9s",
-            "aXN0GAogAygLMgwuUG90aW9uU3RhZ2VCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "Ch5Qb3Rpb25BY3Rpdml0eURldGFpbEluZm8ucHJvdG8aFVBvdGlvblN0YWdl",
+            "RGF0YS5wcm90byJAChhQb3Rpb25BY3Rpdml0eURldGFpbEluZm8SJAoKc3Rh",
+            "Z2VfbGlzdBgKIAMoCzIQLlBvdGlvblN0YWdlRGF0YUIiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.PotionStageReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.PotionStageDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PotionActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.PotionActivityDetailInfo.Parser, new[]{ "StageList" }, null, null, null, null)
           }));
@@ -84,12 +84,12 @@ namespace Weedwacker.Shared.Network.Proto {
 
     /// <summary>Field number for the "stage_list" field.</summary>
     public const int StageListFieldNumber = 10;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.PotionStage> _repeated_stageList_codec
-        = pb::FieldCodec.ForMessage(82, global::Weedwacker.Shared.Network.Proto.PotionStage.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PotionStage> stageList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PotionStage>();
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.PotionStageData> _repeated_stageList_codec
+        = pb::FieldCodec.ForMessage(82, global::Weedwacker.Shared.Network.Proto.PotionStageData.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PotionStageData> stageList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PotionStageData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PotionStage> StageList {
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PotionStageData> StageList {
       get { return stageList_; }
     }
 

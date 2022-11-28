@@ -24,18 +24,18 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlatformTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJQbGF0Zm9ybVR5cGUucHJvdG8qywMKDFBsYXRmb3JtVHlwZRIYChRQTEFU",
+            "ChJQbGF0Zm9ybVR5cGUucHJvdG8qvAMKDFBsYXRmb3JtVHlwZRIYChRQTEFU",
             "Rk9STV9UWVBFX0VESVRPUhAAEhUKEVBMQVRGT1JNX1RZUEVfSU9TEAESGQoV",
             "UExBVEZPUk1fVFlQRV9BTkRST0lEEAISFAoQUExBVEZPUk1fVFlQRV9QQxAD",
             "EhUKEVBMQVRGT1JNX1RZUEVfUFM0EAQSGAoUUExBVEZPUk1fVFlQRV9TRVJW",
             "RVIQBRIfChtQTEFURk9STV9UWVBFX0NMT1VEX0FORFJPSUQQBhIbChdQTEFU",
             "Rk9STV9UWVBFX0NMT1VEX0lPUxAHEhUKEVBMQVRGT1JNX1RZUEVfUFM1EAgS",
             "GwoXUExBVEZPUk1fVFlQRV9DTE9VRF9XRUIQCRIaChZQTEFURk9STV9UWVBF",
-            "X0NMT1VEX1RWEAoSJQohUExBVEZPUk1fVFlQRV9VbmsyNzAwX0lCQkVLQkpM",
-            "TUFKEAsSJQohUExBVEZPUk1fVFlQRV9VbmsyNzAwX0JDRUlDTUROSUlHEAwS",
-            "JQohUExBVEZPUk1fVFlQRV9VbmsyODAwX0VGTkdIRk5QTUtNEA0SJQohUExB",
-            "VEZPUk1fVFlQRV9VbmsyODAwX0ZORkhHUEFCTEZCEA5CIqoCH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "X0NMT1VEX1RWEAoSGwoXUExBVEZPUk1fVFlQRV9DTE9VRF9NQUMQCxIaChZQ",
+            "TEFURk9STV9UWVBFX0NMT1VEX1BDEAwSKgomUExBVEZPUk1fVFlQRV9DTE9V",
+            "RF9USElSRF9QQVJUWV9NT0JJTEUQDRImCiJQTEFURk9STV9UWVBFX0NMT1VE",
+            "X1RISVJEX1BBUlRZX1BDEA5CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
+            "cmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.PlatformType), }, null, null));
@@ -56,10 +56,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [pbr::OriginalName("PLATFORM_TYPE_PS5")] Ps5 = 8,
     [pbr::OriginalName("PLATFORM_TYPE_CLOUD_WEB")] CloudWeb = 9,
     [pbr::OriginalName("PLATFORM_TYPE_CLOUD_TV")] CloudTv = 10,
-    [pbr::OriginalName("PLATFORM_TYPE_Unk2700_IBBEKBJLMAJ")] Unk2700Ibbekbjlmaj = 11,
-    [pbr::OriginalName("PLATFORM_TYPE_Unk2700_BCEICMDNIIG")] Unk2700Bceicmdniig = 12,
-    [pbr::OriginalName("PLATFORM_TYPE_Unk2800_EFNGHFNPMKM")] Unk2800Efnghfnpmkm = 13,
-    [pbr::OriginalName("PLATFORM_TYPE_Unk2800_FNFHGPABLFB")] Unk2800Fnfhgpablfb = 14,
+    [pbr::OriginalName("PLATFORM_TYPE_CLOUD_MAC")] CloudMac = 11,
+    [pbr::OriginalName("PLATFORM_TYPE_CLOUD_PC")] CloudPc = 12,
+    [pbr::OriginalName("PLATFORM_TYPE_CLOUD_THIRD_PARTY_MOBILE")] CloudThirdPartyMobile = 13,
+    [pbr::OriginalName("PLATFORM_TYPE_CLOUD_THIRD_PARTY_PC")] CloudThirdPartyPc = 14,
   }
 
   #endregion

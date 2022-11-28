@@ -25,16 +25,16 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5QYXRoZmluZGluZ0VudGVyU2NlbmVSZXEucHJvdG8aEk9ic3RhY2xlSW5m",
-            "by5wcm90byLBAQoYUGF0aGZpbmRpbmdFbnRlclNjZW5lUmVxEhAKCHNjZW5l",
-            "X2lkGAwgASgNEhMKC2FjdGl2aXR5X2lkGA4gAygNEhsKE1VuazI4MDBfTkNE",
-            "RkFGTUdNSUcYDyABKA0SDwoHdmVyc2lvbhgGIAEoDRIRCglpc19lZGl0b3IY",
-            "CyABKAgSIAoJb2JzdGFjbGVzGA0gAygLMg0uT2JzdGFjbGVJbmZvEhsKE1Vu",
-            "azI4MDBfTUJERkdPRE1QRk4YBCABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "by5wcm90byKzAQoYUGF0aGZpbmRpbmdFbnRlclNjZW5lUmVxEhAKCHNjZW5l",
+            "X2lkGAwgASgNEhMKC2FjdGl2aXR5X2lkGA4gAygNEhYKDnNjZW5lX3RhZ19o",
+            "YXNoGA8gASgNEg8KB3ZlcnNpb24YBiABKA0SEQoJaXNfZWRpdG9yGAsgASgI",
+            "EiAKCW9ic3RhY2xlcxgNIAMoCzINLk9ic3RhY2xlSW5mbxISCgpwb2x5Z29u",
+            "X2lkGAQgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ObstacleInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PathfindingEnterSceneReq), global::Weedwacker.Shared.Network.Proto.PathfindingEnterSceneReq.Parser, new[]{ "SceneId", "ActivityId", "Unk2800NCDFAFMGMIG", "Version", "IsEditor", "Obstacles", "Unk2800MBDFGODMPFN" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PathfindingEnterSceneReq), global::Weedwacker.Shared.Network.Proto.PathfindingEnterSceneReq.Parser, new[]{ "SceneId", "ActivityId", "SceneTagHash", "Version", "IsEditor", "Obstacles", "PolygonId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -83,11 +83,11 @@ namespace Weedwacker.Shared.Network.Proto {
     public PathfindingEnterSceneReq(PathfindingEnterSceneReq other) : this() {
       sceneId_ = other.sceneId_;
       activityId_ = other.activityId_.Clone();
-      unk2800NCDFAFMGMIG_ = other.unk2800NCDFAFMGMIG_;
+      sceneTagHash_ = other.sceneTagHash_;
       version_ = other.version_;
       isEditor_ = other.isEditor_;
       obstacles_ = other.obstacles_.Clone();
-      unk2800MBDFGODMPFN_ = other.unk2800MBDFGODMPFN_;
+      polygonId_ = other.polygonId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -120,15 +120,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return activityId_; }
     }
 
-    /// <summary>Field number for the "Unk2800_NCDFAFMGMIG" field.</summary>
-    public const int Unk2800NCDFAFMGMIGFieldNumber = 15;
-    private uint unk2800NCDFAFMGMIG_;
+    /// <summary>Field number for the "scene_tag_hash" field.</summary>
+    public const int SceneTagHashFieldNumber = 15;
+    private uint sceneTagHash_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800NCDFAFMGMIG {
-      get { return unk2800NCDFAFMGMIG_; }
+    public uint SceneTagHash {
+      get { return sceneTagHash_; }
       set {
-        unk2800NCDFAFMGMIG_ = value;
+        sceneTagHash_ = value;
       }
     }
 
@@ -167,15 +167,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return obstacles_; }
     }
 
-    /// <summary>Field number for the "Unk2800_MBDFGODMPFN" field.</summary>
-    public const int Unk2800MBDFGODMPFNFieldNumber = 4;
-    private uint unk2800MBDFGODMPFN_;
+    /// <summary>Field number for the "polygon_id" field.</summary>
+    public const int PolygonIdFieldNumber = 4;
+    private uint polygonId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800MBDFGODMPFN {
-      get { return unk2800MBDFGODMPFN_; }
+    public uint PolygonId {
+      get { return polygonId_; }
       set {
-        unk2800MBDFGODMPFN_ = value;
+        polygonId_ = value;
       }
     }
 
@@ -196,11 +196,11 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (SceneId != other.SceneId) return false;
       if(!activityId_.Equals(other.activityId_)) return false;
-      if (Unk2800NCDFAFMGMIG != other.Unk2800NCDFAFMGMIG) return false;
+      if (SceneTagHash != other.SceneTagHash) return false;
       if (Version != other.Version) return false;
       if (IsEditor != other.IsEditor) return false;
       if(!obstacles_.Equals(other.obstacles_)) return false;
-      if (Unk2800MBDFGODMPFN != other.Unk2800MBDFGODMPFN) return false;
+      if (PolygonId != other.PolygonId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -210,11 +210,11 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (SceneId != 0) hash ^= SceneId.GetHashCode();
       hash ^= activityId_.GetHashCode();
-      if (Unk2800NCDFAFMGMIG != 0) hash ^= Unk2800NCDFAFMGMIG.GetHashCode();
+      if (SceneTagHash != 0) hash ^= SceneTagHash.GetHashCode();
       if (Version != 0) hash ^= Version.GetHashCode();
       if (IsEditor != false) hash ^= IsEditor.GetHashCode();
       hash ^= obstacles_.GetHashCode();
-      if (Unk2800MBDFGODMPFN != 0) hash ^= Unk2800MBDFGODMPFN.GetHashCode();
+      if (PolygonId != 0) hash ^= PolygonId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -233,9 +233,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2800MBDFGODMPFN != 0) {
+      if (PolygonId != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk2800MBDFGODMPFN);
+        output.WriteUInt32(PolygonId);
       }
       if (Version != 0) {
         output.WriteRawTag(48);
@@ -251,9 +251,9 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       obstacles_.WriteTo(output, _repeated_obstacles_codec);
       activityId_.WriteTo(output, _repeated_activityId_codec);
-      if (Unk2800NCDFAFMGMIG != 0) {
+      if (SceneTagHash != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk2800NCDFAFMGMIG);
+        output.WriteUInt32(SceneTagHash);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -265,9 +265,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2800MBDFGODMPFN != 0) {
+      if (PolygonId != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk2800MBDFGODMPFN);
+        output.WriteUInt32(PolygonId);
       }
       if (Version != 0) {
         output.WriteRawTag(48);
@@ -283,9 +283,9 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       obstacles_.WriteTo(ref output, _repeated_obstacles_codec);
       activityId_.WriteTo(ref output, _repeated_activityId_codec);
-      if (Unk2800NCDFAFMGMIG != 0) {
+      if (SceneTagHash != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk2800NCDFAFMGMIG);
+        output.WriteUInt32(SceneTagHash);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -301,8 +301,8 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SceneId);
       }
       size += activityId_.CalculateSize(_repeated_activityId_codec);
-      if (Unk2800NCDFAFMGMIG != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800NCDFAFMGMIG);
+      if (SceneTagHash != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SceneTagHash);
       }
       if (Version != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Version);
@@ -311,8 +311,8 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + 1;
       }
       size += obstacles_.CalculateSize(_repeated_obstacles_codec);
-      if (Unk2800MBDFGODMPFN != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800MBDFGODMPFN);
+      if (PolygonId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PolygonId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -330,8 +330,8 @@ namespace Weedwacker.Shared.Network.Proto {
         SceneId = other.SceneId;
       }
       activityId_.Add(other.activityId_);
-      if (other.Unk2800NCDFAFMGMIG != 0) {
-        Unk2800NCDFAFMGMIG = other.Unk2800NCDFAFMGMIG;
+      if (other.SceneTagHash != 0) {
+        SceneTagHash = other.SceneTagHash;
       }
       if (other.Version != 0) {
         Version = other.Version;
@@ -340,8 +340,8 @@ namespace Weedwacker.Shared.Network.Proto {
         IsEditor = other.IsEditor;
       }
       obstacles_.Add(other.obstacles_);
-      if (other.Unk2800MBDFGODMPFN != 0) {
-        Unk2800MBDFGODMPFN = other.Unk2800MBDFGODMPFN;
+      if (other.PolygonId != 0) {
+        PolygonId = other.PolygonId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -359,7 +359,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 32: {
-            Unk2800MBDFGODMPFN = input.ReadUInt32();
+            PolygonId = input.ReadUInt32();
             break;
           }
           case 48: {
@@ -384,7 +384,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk2800NCDFAFMGMIG = input.ReadUInt32();
+            SceneTagHash = input.ReadUInt32();
             break;
           }
         }
@@ -403,7 +403,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 32: {
-            Unk2800MBDFGODMPFN = input.ReadUInt32();
+            PolygonId = input.ReadUInt32();
             break;
           }
           case 48: {
@@ -428,7 +428,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk2800NCDFAFMGMIG = input.ReadUInt32();
+            SceneTagHash = input.ReadUInt32();
             break;
           }
         }

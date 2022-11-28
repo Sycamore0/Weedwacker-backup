@@ -26,21 +26,21 @@ namespace Weedwacker.Shared.Network.Proto {
           string.Concat(
             "Ch9QbGF5ZXJFeWVQb2ludFN0YXRlTm90aWZ5LnByb3RvGhhDeWxpbmRlclJl",
             "Z2lvblNpemUucHJvdG8aF1BvbHlnb25SZWdpb25TaXplLnByb3RvGgxWZWN0",
-            "b3IucHJvdG8imAMKGVBsYXllckV5ZVBvaW50U3RhdGVOb3RpZnkSGAoQcmVn",
+            "b3IucHJvdG8ikgMKGVBsYXllckV5ZVBvaW50U3RhdGVOb3RpZnkSGAoQcmVn",
             "aW9uX2VudGl0eV9pZBgPIAEoDRIeCg1leWVfcG9pbnRfcG9zGAEgASgLMgcu",
             "VmVjdG9yEhgKEGlzX3VzZV9leWVfcG9pbnQYAyABKAgSGAoQcmVnaW9uX2Nv",
             "bmZpZ19pZBgHIAEoDRIUCgxyZWdpb25fc2hhcGUYDCABKA0SHAoUaXNfZmls",
-            "dGVyX3N0cmVhbV9wb3MYAiABKAgSGwoTVW5rMjgwMF9HQkJNTUlHSkZDRhgF",
-            "IAEoBRIXCg9yZWdpb25fZ3JvdXBfaWQYBCABKA0SGAoNc3BoZXJlX3JhZGl1",
-            "cxj/ASABKAJIABIeCgpjdWJpY19zaXplGJ8OIAEoCzIHLlZlY3RvckgAEi0K",
-            "DWN5bGluZGVyX3NpemUYxg4gASgLMhMuQ3lsaW5kZXJSZWdpb25TaXplSAAS",
-            "KwoMcG9seWdvbl9zaXplGO0GIAEoCzISLlBvbHlnb25SZWdpb25TaXplSABC",
-            "DQoLcmVnaW9uX3NpemVCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
-            "UHJvdG9iBnByb3RvMw=="));
+            "dGVyX3N0cmVhbV9wb3MYAiABKAgSFQoNZml4X2xvZF9sZXZlbBgFIAEoBRIX",
+            "Cg9yZWdpb25fZ3JvdXBfaWQYBCABKA0SGAoNc3BoZXJlX3JhZGl1cxj/ASAB",
+            "KAJIABIeCgpjdWJpY19zaXplGJ8OIAEoCzIHLlZlY3RvckgAEi0KDWN5bGlu",
+            "ZGVyX3NpemUYxg4gASgLMhMuQ3lsaW5kZXJSZWdpb25TaXplSAASKwoMcG9s",
+            "eWdvbl9zaXplGO0GIAEoCzISLlBvbHlnb25SZWdpb25TaXplSABCDQoLcmVn",
+            "aW9uX3NpemVCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.CylinderRegionSizeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PolygonRegionSizeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerEyePointStateNotify), global::Weedwacker.Shared.Network.Proto.PlayerEyePointStateNotify.Parser, new[]{ "RegionEntityId", "EyePointPos", "IsUseEyePoint", "RegionConfigId", "RegionShape", "IsFilterStreamPos", "Unk2800GBBMMIGJFCF", "RegionGroupId", "SphereRadius", "CubicSize", "CylinderSize", "PolygonSize" }, new[]{ "RegionSize" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerEyePointStateNotify), global::Weedwacker.Shared.Network.Proto.PlayerEyePointStateNotify.Parser, new[]{ "RegionEntityId", "EyePointPos", "IsUseEyePoint", "RegionConfigId", "RegionShape", "IsFilterStreamPos", "FixLodLevel", "RegionGroupId", "SphereRadius", "CubicSize", "CylinderSize", "PolygonSize" }, new[]{ "RegionSize" }, null, null, null)
           }));
     }
     #endregion
@@ -92,7 +92,7 @@ namespace Weedwacker.Shared.Network.Proto {
       regionConfigId_ = other.regionConfigId_;
       regionShape_ = other.regionShape_;
       isFilterStreamPos_ = other.isFilterStreamPos_;
-      unk2800GBBMMIGJFCF_ = other.unk2800GBBMMIGJFCF_;
+      fixLodLevel_ = other.fixLodLevel_;
       regionGroupId_ = other.regionGroupId_;
       switch (other.RegionSizeCase) {
         case RegionSizeOneofCase.SphereRadius:
@@ -190,15 +190,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2800_GBBMMIGJFCF" field.</summary>
-    public const int Unk2800GBBMMIGJFCFFieldNumber = 5;
-    private int unk2800GBBMMIGJFCF_;
+    /// <summary>Field number for the "fix_lod_level" field.</summary>
+    public const int FixLodLevelFieldNumber = 5;
+    private int fixLodLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Unk2800GBBMMIGJFCF {
-      get { return unk2800GBBMMIGJFCF_; }
+    public int FixLodLevel {
+      get { return fixLodLevel_; }
       set {
-        unk2800GBBMMIGJFCF_ = value;
+        fixLodLevel_ = value;
       }
     }
 
@@ -306,7 +306,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (RegionConfigId != other.RegionConfigId) return false;
       if (RegionShape != other.RegionShape) return false;
       if (IsFilterStreamPos != other.IsFilterStreamPos) return false;
-      if (Unk2800GBBMMIGJFCF != other.Unk2800GBBMMIGJFCF) return false;
+      if (FixLodLevel != other.FixLodLevel) return false;
       if (RegionGroupId != other.RegionGroupId) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SphereRadius, other.SphereRadius)) return false;
       if (!object.Equals(CubicSize, other.CubicSize)) return false;
@@ -326,7 +326,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (RegionConfigId != 0) hash ^= RegionConfigId.GetHashCode();
       if (RegionShape != 0) hash ^= RegionShape.GetHashCode();
       if (IsFilterStreamPos != false) hash ^= IsFilterStreamPos.GetHashCode();
-      if (Unk2800GBBMMIGJFCF != 0) hash ^= Unk2800GBBMMIGJFCF.GetHashCode();
+      if (FixLodLevel != 0) hash ^= FixLodLevel.GetHashCode();
       if (RegionGroupId != 0) hash ^= RegionGroupId.GetHashCode();
       if (regionSizeCase_ == RegionSizeOneofCase.SphereRadius) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SphereRadius);
       if (regionSizeCase_ == RegionSizeOneofCase.CubicSize) hash ^= CubicSize.GetHashCode();
@@ -367,9 +367,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(32);
         output.WriteUInt32(RegionGroupId);
       }
-      if (Unk2800GBBMMIGJFCF != 0) {
+      if (FixLodLevel != 0) {
         output.WriteRawTag(40);
-        output.WriteInt32(Unk2800GBBMMIGJFCF);
+        output.WriteInt32(FixLodLevel);
       }
       if (RegionConfigId != 0) {
         output.WriteRawTag(56);
@@ -425,9 +425,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(32);
         output.WriteUInt32(RegionGroupId);
       }
-      if (Unk2800GBBMMIGJFCF != 0) {
+      if (FixLodLevel != 0) {
         output.WriteRawTag(40);
-        output.WriteInt32(Unk2800GBBMMIGJFCF);
+        output.WriteInt32(FixLodLevel);
       }
       if (RegionConfigId != 0) {
         output.WriteRawTag(56);
@@ -485,8 +485,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsFilterStreamPos != false) {
         size += 1 + 1;
       }
-      if (Unk2800GBBMMIGJFCF != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Unk2800GBBMMIGJFCF);
+      if (FixLodLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FixLodLevel);
       }
       if (RegionGroupId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RegionGroupId);
@@ -536,8 +536,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.IsFilterStreamPos != false) {
         IsFilterStreamPos = other.IsFilterStreamPos;
       }
-      if (other.Unk2800GBBMMIGJFCF != 0) {
-        Unk2800GBBMMIGJFCF = other.Unk2800GBBMMIGJFCF;
+      if (other.FixLodLevel != 0) {
+        FixLodLevel = other.FixLodLevel;
       }
       if (other.RegionGroupId != 0) {
         RegionGroupId = other.RegionGroupId;
@@ -601,7 +601,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk2800GBBMMIGJFCF = input.ReadInt32();
+            FixLodLevel = input.ReadInt32();
             break;
           }
           case 56: {
@@ -682,7 +682,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk2800GBBMMIGJFCF = input.ReadInt32();
+            FixLodLevel = input.ReadInt32();
             break;
           }
           case 56: {
