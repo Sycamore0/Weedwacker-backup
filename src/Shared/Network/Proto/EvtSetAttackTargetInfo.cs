@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static EvtSetAttackTargetInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxFdnRTZXRBdHRhY2tUYXJnZXRJbmZvLnByb3RvImIKFkV2dFNldEF0dGFj",
-            "a1RhcmdldEluZm8SEQoJZW50aXR5X2lkGAsgASgNEhsKE1VuazI3MDBfTVBP",
-            "TkJDTVBDSUgYBiABKA0SGAoQYXR0YWNrX3RhcmdldF9pZBgHIAEoDUIiqgIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "ChxFdnRTZXRBdHRhY2tUYXJnZXRJbmZvLnByb3RvImEKFkV2dFNldEF0dGFj",
+            "a1RhcmdldEluZm8SEQoJZW50aXR5X2lkGAsgASgNEhoKEnNlbGVjdF9wb2lu",
+            "dF9pbmRleBgGIAEoDRIYChBhdHRhY2tfdGFyZ2V0X2lkGAcgASgNQiKqAh9X",
+            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtSetAttackTargetInfo), global::Weedwacker.Shared.Network.Proto.EvtSetAttackTargetInfo.Parser, new[]{ "EntityId", "Unk2700MPONBCMPCIH", "AttackTargetId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtSetAttackTargetInfo), global::Weedwacker.Shared.Network.Proto.EvtSetAttackTargetInfo.Parser, new[]{ "EntityId", "SelectPointIndex", "AttackTargetId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -73,7 +73,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EvtSetAttackTargetInfo(EvtSetAttackTargetInfo other) : this() {
       entityId_ = other.entityId_;
-      unk2700MPONBCMPCIH_ = other.unk2700MPONBCMPCIH_;
+      selectPointIndex_ = other.selectPointIndex_;
       attackTargetId_ = other.attackTargetId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -96,15 +96,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_MPONBCMPCIH" field.</summary>
-    public const int Unk2700MPONBCMPCIHFieldNumber = 6;
-    private uint unk2700MPONBCMPCIH_;
+    /// <summary>Field number for the "select_point_index" field.</summary>
+    public const int SelectPointIndexFieldNumber = 6;
+    private uint selectPointIndex_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700MPONBCMPCIH {
-      get { return unk2700MPONBCMPCIH_; }
+    public uint SelectPointIndex {
+      get { return selectPointIndex_; }
       set {
-        unk2700MPONBCMPCIH_ = value;
+        selectPointIndex_ = value;
       }
     }
 
@@ -136,7 +136,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (EntityId != other.EntityId) return false;
-      if (Unk2700MPONBCMPCIH != other.Unk2700MPONBCMPCIH) return false;
+      if (SelectPointIndex != other.SelectPointIndex) return false;
       if (AttackTargetId != other.AttackTargetId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -146,7 +146,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (Unk2700MPONBCMPCIH != 0) hash ^= Unk2700MPONBCMPCIH.GetHashCode();
+      if (SelectPointIndex != 0) hash ^= SelectPointIndex.GetHashCode();
       if (AttackTargetId != 0) hash ^= AttackTargetId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -166,9 +166,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700MPONBCMPCIH != 0) {
+      if (SelectPointIndex != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(Unk2700MPONBCMPCIH);
+        output.WriteUInt32(SelectPointIndex);
       }
       if (AttackTargetId != 0) {
         output.WriteRawTag(56);
@@ -188,9 +188,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700MPONBCMPCIH != 0) {
+      if (SelectPointIndex != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(Unk2700MPONBCMPCIH);
+        output.WriteUInt32(SelectPointIndex);
       }
       if (AttackTargetId != 0) {
         output.WriteRawTag(56);
@@ -213,8 +213,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EntityId);
       }
-      if (Unk2700MPONBCMPCIH != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700MPONBCMPCIH);
+      if (SelectPointIndex != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SelectPointIndex);
       }
       if (AttackTargetId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AttackTargetId);
@@ -234,8 +234,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.Unk2700MPONBCMPCIH != 0) {
-        Unk2700MPONBCMPCIH = other.Unk2700MPONBCMPCIH;
+      if (other.SelectPointIndex != 0) {
+        SelectPointIndex = other.SelectPointIndex;
       }
       if (other.AttackTargetId != 0) {
         AttackTargetId = other.AttackTargetId;
@@ -256,7 +256,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 48: {
-            Unk2700MPONBCMPCIH = input.ReadUInt32();
+            SelectPointIndex = input.ReadUInt32();
             break;
           }
           case 56: {
@@ -283,7 +283,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 48: {
-            Unk2700MPONBCMPCIH = input.ReadUInt32();
+            SelectPointIndex = input.ReadUInt32();
             break;
           }
           case 56: {

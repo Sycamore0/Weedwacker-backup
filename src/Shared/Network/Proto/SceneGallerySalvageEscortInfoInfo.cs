@@ -24,16 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGallerySalvageEscortInfoInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CidTY2VuZUdhbGxlcnlTYWx2YWdlRXNjb3J0SW5mb0luZm8ucHJvdG8ilwEK",
-            "IVNjZW5lR2FsbGVyeVNhbHZhZ2VFc2NvcnRJbmZvSW5mbxIbChNVbmsyNzAw",
-            "X05FQ0hFQ0lEQ0VHGA4gASgNEhsKE1VuazI3MDBfQU1KRUtFSkxPR0oYAyAB",
-            "KA0SGwoTVW5rMjcwMF9NQ0ZNTUlETkxJRhgHIAEoDRIbChNVbmsyNzAwX0ZG",
-            "Q0NMR0lGR0lQGAsgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvYgZwcm90bzM="));
+            "CidTY2VuZUdhbGxlcnlTYWx2YWdlRXNjb3J0SW5mb0luZm8ucHJvdG8ifwoh",
+            "U2NlbmVHYWxsZXJ5U2FsdmFnZUVzY29ydEluZm9JbmZvEhUKDW1heF9ib3hf",
+            "Y291bnQYDiABKA0SGQoRbWF4X21vbnN0ZXJfY291bnQYAyABKA0SEQoJYm94",
+            "X2NvdW50GAcgASgNEhUKDW1vbnN0ZXJfY291bnQYCyABKA1CIqoCH1dlZWR3",
+            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGallerySalvageEscortInfoInfo), global::Weedwacker.Shared.Network.Proto.SceneGallerySalvageEscortInfoInfo.Parser, new[]{ "Unk2700NECHECIDCEG", "Unk2700AMJEKEJLOGJ", "Unk2700MCFMMIDNLIF", "Unk2700FFCCLGIFGIP" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGallerySalvageEscortInfoInfo), global::Weedwacker.Shared.Network.Proto.SceneGallerySalvageEscortInfoInfo.Parser, new[]{ "MaxBoxCount", "MaxMonsterCount", "BoxCount", "MonsterCount" }, null, null, null, null)
           }));
     }
     #endregion
@@ -74,10 +73,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SceneGallerySalvageEscortInfoInfo(SceneGallerySalvageEscortInfoInfo other) : this() {
-      unk2700NECHECIDCEG_ = other.unk2700NECHECIDCEG_;
-      unk2700AMJEKEJLOGJ_ = other.unk2700AMJEKEJLOGJ_;
-      unk2700MCFMMIDNLIF_ = other.unk2700MCFMMIDNLIF_;
-      unk2700FFCCLGIFGIP_ = other.unk2700FFCCLGIFGIP_;
+      maxBoxCount_ = other.maxBoxCount_;
+      maxMonsterCount_ = other.maxMonsterCount_;
+      boxCount_ = other.boxCount_;
+      monsterCount_ = other.monsterCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -87,51 +86,51 @@ namespace Weedwacker.Shared.Network.Proto {
       return new SceneGallerySalvageEscortInfoInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_NECHECIDCEG" field.</summary>
-    public const int Unk2700NECHECIDCEGFieldNumber = 14;
-    private uint unk2700NECHECIDCEG_;
+    /// <summary>Field number for the "max_box_count" field.</summary>
+    public const int MaxBoxCountFieldNumber = 14;
+    private uint maxBoxCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700NECHECIDCEG {
-      get { return unk2700NECHECIDCEG_; }
+    public uint MaxBoxCount {
+      get { return maxBoxCount_; }
       set {
-        unk2700NECHECIDCEG_ = value;
+        maxBoxCount_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_AMJEKEJLOGJ" field.</summary>
-    public const int Unk2700AMJEKEJLOGJFieldNumber = 3;
-    private uint unk2700AMJEKEJLOGJ_;
+    /// <summary>Field number for the "max_monster_count" field.</summary>
+    public const int MaxMonsterCountFieldNumber = 3;
+    private uint maxMonsterCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700AMJEKEJLOGJ {
-      get { return unk2700AMJEKEJLOGJ_; }
+    public uint MaxMonsterCount {
+      get { return maxMonsterCount_; }
       set {
-        unk2700AMJEKEJLOGJ_ = value;
+        maxMonsterCount_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_MCFMMIDNLIF" field.</summary>
-    public const int Unk2700MCFMMIDNLIFFieldNumber = 7;
-    private uint unk2700MCFMMIDNLIF_;
+    /// <summary>Field number for the "box_count" field.</summary>
+    public const int BoxCountFieldNumber = 7;
+    private uint boxCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700MCFMMIDNLIF {
-      get { return unk2700MCFMMIDNLIF_; }
+    public uint BoxCount {
+      get { return boxCount_; }
       set {
-        unk2700MCFMMIDNLIF_ = value;
+        boxCount_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_FFCCLGIFGIP" field.</summary>
-    public const int Unk2700FFCCLGIFGIPFieldNumber = 11;
-    private uint unk2700FFCCLGIFGIP_;
+    /// <summary>Field number for the "monster_count" field.</summary>
+    public const int MonsterCountFieldNumber = 11;
+    private uint monsterCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700FFCCLGIFGIP {
-      get { return unk2700FFCCLGIFGIP_; }
+    public uint MonsterCount {
+      get { return monsterCount_; }
       set {
-        unk2700FFCCLGIFGIP_ = value;
+        monsterCount_ = value;
       }
     }
 
@@ -150,10 +149,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700NECHECIDCEG != other.Unk2700NECHECIDCEG) return false;
-      if (Unk2700AMJEKEJLOGJ != other.Unk2700AMJEKEJLOGJ) return false;
-      if (Unk2700MCFMMIDNLIF != other.Unk2700MCFMMIDNLIF) return false;
-      if (Unk2700FFCCLGIFGIP != other.Unk2700FFCCLGIFGIP) return false;
+      if (MaxBoxCount != other.MaxBoxCount) return false;
+      if (MaxMonsterCount != other.MaxMonsterCount) return false;
+      if (BoxCount != other.BoxCount) return false;
+      if (MonsterCount != other.MonsterCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -161,10 +160,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700NECHECIDCEG != 0) hash ^= Unk2700NECHECIDCEG.GetHashCode();
-      if (Unk2700AMJEKEJLOGJ != 0) hash ^= Unk2700AMJEKEJLOGJ.GetHashCode();
-      if (Unk2700MCFMMIDNLIF != 0) hash ^= Unk2700MCFMMIDNLIF.GetHashCode();
-      if (Unk2700FFCCLGIFGIP != 0) hash ^= Unk2700FFCCLGIFGIP.GetHashCode();
+      if (MaxBoxCount != 0) hash ^= MaxBoxCount.GetHashCode();
+      if (MaxMonsterCount != 0) hash ^= MaxMonsterCount.GetHashCode();
+      if (BoxCount != 0) hash ^= BoxCount.GetHashCode();
+      if (MonsterCount != 0) hash ^= MonsterCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -183,21 +182,21 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700AMJEKEJLOGJ != 0) {
+      if (MaxMonsterCount != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk2700AMJEKEJLOGJ);
+        output.WriteUInt32(MaxMonsterCount);
       }
-      if (Unk2700MCFMMIDNLIF != 0) {
+      if (BoxCount != 0) {
         output.WriteRawTag(56);
-        output.WriteUInt32(Unk2700MCFMMIDNLIF);
+        output.WriteUInt32(BoxCount);
       }
-      if (Unk2700FFCCLGIFGIP != 0) {
+      if (MonsterCount != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk2700FFCCLGIFGIP);
+        output.WriteUInt32(MonsterCount);
       }
-      if (Unk2700NECHECIDCEG != 0) {
+      if (MaxBoxCount != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk2700NECHECIDCEG);
+        output.WriteUInt32(MaxBoxCount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -209,21 +208,21 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700AMJEKEJLOGJ != 0) {
+      if (MaxMonsterCount != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk2700AMJEKEJLOGJ);
+        output.WriteUInt32(MaxMonsterCount);
       }
-      if (Unk2700MCFMMIDNLIF != 0) {
+      if (BoxCount != 0) {
         output.WriteRawTag(56);
-        output.WriteUInt32(Unk2700MCFMMIDNLIF);
+        output.WriteUInt32(BoxCount);
       }
-      if (Unk2700FFCCLGIFGIP != 0) {
+      if (MonsterCount != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk2700FFCCLGIFGIP);
+        output.WriteUInt32(MonsterCount);
       }
-      if (Unk2700NECHECIDCEG != 0) {
+      if (MaxBoxCount != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk2700NECHECIDCEG);
+        output.WriteUInt32(MaxBoxCount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -235,17 +234,17 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700NECHECIDCEG != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700NECHECIDCEG);
+      if (MaxBoxCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxBoxCount);
       }
-      if (Unk2700AMJEKEJLOGJ != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700AMJEKEJLOGJ);
+      if (MaxMonsterCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxMonsterCount);
       }
-      if (Unk2700MCFMMIDNLIF != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700MCFMMIDNLIF);
+      if (BoxCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BoxCount);
       }
-      if (Unk2700FFCCLGIFGIP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700FFCCLGIFGIP);
+      if (MonsterCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MonsterCount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -259,17 +258,17 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700NECHECIDCEG != 0) {
-        Unk2700NECHECIDCEG = other.Unk2700NECHECIDCEG;
+      if (other.MaxBoxCount != 0) {
+        MaxBoxCount = other.MaxBoxCount;
       }
-      if (other.Unk2700AMJEKEJLOGJ != 0) {
-        Unk2700AMJEKEJLOGJ = other.Unk2700AMJEKEJLOGJ;
+      if (other.MaxMonsterCount != 0) {
+        MaxMonsterCount = other.MaxMonsterCount;
       }
-      if (other.Unk2700MCFMMIDNLIF != 0) {
-        Unk2700MCFMMIDNLIF = other.Unk2700MCFMMIDNLIF;
+      if (other.BoxCount != 0) {
+        BoxCount = other.BoxCount;
       }
-      if (other.Unk2700FFCCLGIFGIP != 0) {
-        Unk2700FFCCLGIFGIP = other.Unk2700FFCCLGIFGIP;
+      if (other.MonsterCount != 0) {
+        MonsterCount = other.MonsterCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -287,19 +286,19 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 24: {
-            Unk2700AMJEKEJLOGJ = input.ReadUInt32();
+            MaxMonsterCount = input.ReadUInt32();
             break;
           }
           case 56: {
-            Unk2700MCFMMIDNLIF = input.ReadUInt32();
+            BoxCount = input.ReadUInt32();
             break;
           }
           case 88: {
-            Unk2700FFCCLGIFGIP = input.ReadUInt32();
+            MonsterCount = input.ReadUInt32();
             break;
           }
           case 112: {
-            Unk2700NECHECIDCEG = input.ReadUInt32();
+            MaxBoxCount = input.ReadUInt32();
             break;
           }
         }
@@ -318,19 +317,19 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 24: {
-            Unk2700AMJEKEJLOGJ = input.ReadUInt32();
+            MaxMonsterCount = input.ReadUInt32();
             break;
           }
           case 56: {
-            Unk2700MCFMMIDNLIF = input.ReadUInt32();
+            BoxCount = input.ReadUInt32();
             break;
           }
           case 88: {
-            Unk2700FFCCLGIFGIP = input.ReadUInt32();
+            MonsterCount = input.ReadUInt32();
             break;
           }
           case 112: {
-            Unk2700NECHECIDCEG = input.ReadUInt32();
+            MaxBoxCount = input.ReadUInt32();
             break;
           }
         }

@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static TanukiTravelActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiRUYW51a2lUcmF2ZWxBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aGVVuazI3",
-            "MDBfQklGTkZPR0JQTk0ucHJvdG8iiwEKHlRhbnVraVRyYXZlbEFjdGl2aXR5",
-            "RGV0YWlsSW5mbxIxChNVbmsyNzAwX0pCUEZJRERQR01FGAQgAygLMhQuVW5r",
-            "MjcwMF9CSUZORk9HQlBOTRIZChFpc19jb250ZW50X2Nsb3NlZBgLIAEoCBIb",
-            "ChNVbmsyNzAwX0JISENOT0xNQ0pNGAogASgNQiKqAh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "CiRUYW51a2lUcmF2ZWxBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aG1RhbnVr",
+            "aVRyYXZlbExldmVsRGF0YS5wcm90byKYAQoeVGFudWtpVHJhdmVsQWN0aXZp",
+            "dHlEZXRhaWxJbmZvEj0KHXRhbnVraV90cmF2ZWxfbGV2ZWxfZGF0YV9saXN0",
+            "GAQgAygLMhYuVGFudWtpVHJhdmVsTGV2ZWxEYXRhEhkKEWlzX2NvbnRlbnRf",
+            "Y2xvc2VkGAsgASgIEhwKFGZpbmlzaGVkX2xldmVsX2luZGV4GAogASgNQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2700BIFNFOGBPNMReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.TanukiTravelLevelDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TanukiTravelActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.TanukiTravelActivityDetailInfo.Parser, new[]{ "Unk2700JBPFIDDPGME", "IsContentClosed", "Unk2700BHHCNOLMCJM" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TanukiTravelActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.TanukiTravelActivityDetailInfo.Parser, new[]{ "TanukiTravelLevelDataList", "IsContentClosed", "FinishedLevelIndex" }, null, null, null, null)
           }));
     }
     #endregion
@@ -74,9 +74,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TanukiTravelActivityDetailInfo(TanukiTravelActivityDetailInfo other) : this() {
-      unk2700JBPFIDDPGME_ = other.unk2700JBPFIDDPGME_.Clone();
+      tanukiTravelLevelDataList_ = other.tanukiTravelLevelDataList_.Clone();
       isContentClosed_ = other.isContentClosed_;
-      unk2700BHHCNOLMCJM_ = other.unk2700BHHCNOLMCJM_;
+      finishedLevelIndex_ = other.finishedLevelIndex_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -86,15 +86,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new TanukiTravelActivityDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_JBPFIDDPGME" field.</summary>
-    public const int Unk2700JBPFIDDPGMEFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_BIFNFOGBPNM> _repeated_unk2700JBPFIDDPGME_codec
-        = pb::FieldCodec.ForMessage(34, global::Weedwacker.Shared.Network.Proto.Unk2700_BIFNFOGBPNM.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_BIFNFOGBPNM> unk2700JBPFIDDPGME_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_BIFNFOGBPNM>();
+    /// <summary>Field number for the "tanuki_travel_level_data_list" field.</summary>
+    public const int TanukiTravelLevelDataListFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.TanukiTravelLevelData> _repeated_tanukiTravelLevelDataList_codec
+        = pb::FieldCodec.ForMessage(34, global::Weedwacker.Shared.Network.Proto.TanukiTravelLevelData.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.TanukiTravelLevelData> tanukiTravelLevelDataList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.TanukiTravelLevelData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_BIFNFOGBPNM> Unk2700JBPFIDDPGME {
-      get { return unk2700JBPFIDDPGME_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.TanukiTravelLevelData> TanukiTravelLevelDataList {
+      get { return tanukiTravelLevelDataList_; }
     }
 
     /// <summary>Field number for the "is_content_closed" field.</summary>
@@ -109,15 +109,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_BHHCNOLMCJM" field.</summary>
-    public const int Unk2700BHHCNOLMCJMFieldNumber = 10;
-    private uint unk2700BHHCNOLMCJM_;
+    /// <summary>Field number for the "finished_level_index" field.</summary>
+    public const int FinishedLevelIndexFieldNumber = 10;
+    private uint finishedLevelIndex_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700BHHCNOLMCJM {
-      get { return unk2700BHHCNOLMCJM_; }
+    public uint FinishedLevelIndex {
+      get { return finishedLevelIndex_; }
       set {
-        unk2700BHHCNOLMCJM_ = value;
+        finishedLevelIndex_ = value;
       }
     }
 
@@ -136,9 +136,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2700JBPFIDDPGME_.Equals(other.unk2700JBPFIDDPGME_)) return false;
+      if(!tanukiTravelLevelDataList_.Equals(other.tanukiTravelLevelDataList_)) return false;
       if (IsContentClosed != other.IsContentClosed) return false;
-      if (Unk2700BHHCNOLMCJM != other.Unk2700BHHCNOLMCJM) return false;
+      if (FinishedLevelIndex != other.FinishedLevelIndex) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -146,9 +146,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2700JBPFIDDPGME_.GetHashCode();
+      hash ^= tanukiTravelLevelDataList_.GetHashCode();
       if (IsContentClosed != false) hash ^= IsContentClosed.GetHashCode();
-      if (Unk2700BHHCNOLMCJM != 0) hash ^= Unk2700BHHCNOLMCJM.GetHashCode();
+      if (FinishedLevelIndex != 0) hash ^= FinishedLevelIndex.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -167,10 +167,10 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk2700JBPFIDDPGME_.WriteTo(output, _repeated_unk2700JBPFIDDPGME_codec);
-      if (Unk2700BHHCNOLMCJM != 0) {
+      tanukiTravelLevelDataList_.WriteTo(output, _repeated_tanukiTravelLevelDataList_codec);
+      if (FinishedLevelIndex != 0) {
         output.WriteRawTag(80);
-        output.WriteUInt32(Unk2700BHHCNOLMCJM);
+        output.WriteUInt32(FinishedLevelIndex);
       }
       if (IsContentClosed != false) {
         output.WriteRawTag(88);
@@ -186,10 +186,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk2700JBPFIDDPGME_.WriteTo(ref output, _repeated_unk2700JBPFIDDPGME_codec);
-      if (Unk2700BHHCNOLMCJM != 0) {
+      tanukiTravelLevelDataList_.WriteTo(ref output, _repeated_tanukiTravelLevelDataList_codec);
+      if (FinishedLevelIndex != 0) {
         output.WriteRawTag(80);
-        output.WriteUInt32(Unk2700BHHCNOLMCJM);
+        output.WriteUInt32(FinishedLevelIndex);
       }
       if (IsContentClosed != false) {
         output.WriteRawTag(88);
@@ -205,12 +205,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2700JBPFIDDPGME_.CalculateSize(_repeated_unk2700JBPFIDDPGME_codec);
+      size += tanukiTravelLevelDataList_.CalculateSize(_repeated_tanukiTravelLevelDataList_codec);
       if (IsContentClosed != false) {
         size += 1 + 1;
       }
-      if (Unk2700BHHCNOLMCJM != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700BHHCNOLMCJM);
+      if (FinishedLevelIndex != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FinishedLevelIndex);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -224,12 +224,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2700JBPFIDDPGME_.Add(other.unk2700JBPFIDDPGME_);
+      tanukiTravelLevelDataList_.Add(other.tanukiTravelLevelDataList_);
       if (other.IsContentClosed != false) {
         IsContentClosed = other.IsContentClosed;
       }
-      if (other.Unk2700BHHCNOLMCJM != 0) {
-        Unk2700BHHCNOLMCJM = other.Unk2700BHHCNOLMCJM;
+      if (other.FinishedLevelIndex != 0) {
+        FinishedLevelIndex = other.FinishedLevelIndex;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -247,11 +247,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 34: {
-            unk2700JBPFIDDPGME_.AddEntriesFrom(input, _repeated_unk2700JBPFIDDPGME_codec);
+            tanukiTravelLevelDataList_.AddEntriesFrom(input, _repeated_tanukiTravelLevelDataList_codec);
             break;
           }
           case 80: {
-            Unk2700BHHCNOLMCJM = input.ReadUInt32();
+            FinishedLevelIndex = input.ReadUInt32();
             break;
           }
           case 88: {
@@ -274,11 +274,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 34: {
-            unk2700JBPFIDDPGME_.AddEntriesFrom(ref input, _repeated_unk2700JBPFIDDPGME_codec);
+            tanukiTravelLevelDataList_.AddEntriesFrom(ref input, _repeated_tanukiTravelLevelDataList_codec);
             break;
           }
           case 80: {
-            Unk2700BHHCNOLMCJM = input.ReadUInt32();
+            FinishedLevelIndex = input.ReadUInt32();
             break;
           }
           case 88: {

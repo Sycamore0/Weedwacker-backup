@@ -24,17 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGalleryIslandPartyDownHillInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CilTY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eURvd25IaWxsSW5mby5wcm90bxoZ",
-            "VW5rMjgwMF9GTUFPRVBFQktIQi5wcm90byKgAQojU2NlbmVHYWxsZXJ5SXNs",
-            "YW5kUGFydHlEb3duSGlsbEluZm8SGwoTVW5rMjgwMF9MQlBDRENIT09MShgO",
-            "IAEoDRIxChNVbmsyODAwX0VOSkdFRkJDTE9MGA8gASgOMhQuVW5rMjgwMF9G",
-            "TUFPRVBFQktIQhIbChNVbmsyODAwX0JLRUZMRENFQkxGGAUgASgNEgwKBGNv",
-            "aW4YDSABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9i",
-            "BnByb3RvMw=="));
+            "CilTY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eURvd25IaWxsSW5mby5wcm90bxoY",
+            "R2FsbGVyeVN0YXJ0U291cmNlLnByb3RvIqABCiNTY2VuZUdhbGxlcnlJc2xh",
+            "bmRQYXJ0eURvd25IaWxsSW5mbxIgChh0b3RhbF9raWxsX21vbnN0ZXJfY291",
+            "bnQYDiABKA0SKQoMc3RhcnRfc291cmNlGA8gASgOMhMuR2FsbGVyeVN0YXJ0",
+            "U291cmNlEh4KFm1heF9raWxsX21vbnN0ZXJfY291bnQYBSABKA0SDAoEY29p",
+            "bhgNIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2800FMAOEPEBKHBReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GalleryStartSourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartyDownHillInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartyDownHillInfo.Parser, new[]{ "Unk2800LBPCDCHOOLJ", "Unk2800ENJGEFBCLOL", "Unk2800BKEFLDCEBLF", "Coin" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartyDownHillInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryIslandPartyDownHillInfo.Parser, new[]{ "TotalKillMonsterCount", "StartSource", "MaxKillMonsterCount", "Coin" }, null, null, null, null)
           }));
     }
     #endregion
@@ -75,9 +75,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SceneGalleryIslandPartyDownHillInfo(SceneGalleryIslandPartyDownHillInfo other) : this() {
-      unk2800LBPCDCHOOLJ_ = other.unk2800LBPCDCHOOLJ_;
-      unk2800ENJGEFBCLOL_ = other.unk2800ENJGEFBCLOL_;
-      unk2800BKEFLDCEBLF_ = other.unk2800BKEFLDCEBLF_;
+      totalKillMonsterCount_ = other.totalKillMonsterCount_;
+      startSource_ = other.startSource_;
+      maxKillMonsterCount_ = other.maxKillMonsterCount_;
       coin_ = other.coin_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -88,39 +88,39 @@ namespace Weedwacker.Shared.Network.Proto {
       return new SceneGalleryIslandPartyDownHillInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2800_LBPCDCHOOLJ" field.</summary>
-    public const int Unk2800LBPCDCHOOLJFieldNumber = 14;
-    private uint unk2800LBPCDCHOOLJ_;
+    /// <summary>Field number for the "total_kill_monster_count" field.</summary>
+    public const int TotalKillMonsterCountFieldNumber = 14;
+    private uint totalKillMonsterCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800LBPCDCHOOLJ {
-      get { return unk2800LBPCDCHOOLJ_; }
+    public uint TotalKillMonsterCount {
+      get { return totalKillMonsterCount_; }
       set {
-        unk2800LBPCDCHOOLJ_ = value;
+        totalKillMonsterCount_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2800_ENJGEFBCLOL" field.</summary>
-    public const int Unk2800ENJGEFBCLOLFieldNumber = 15;
-    private global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB unk2800ENJGEFBCLOL_ = global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo;
+    /// <summary>Field number for the "start_source" field.</summary>
+    public const int StartSourceFieldNumber = 15;
+    private global::Weedwacker.Shared.Network.Proto.GalleryStartSource startSource_ = global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB Unk2800ENJGEFBCLOL {
-      get { return unk2800ENJGEFBCLOL_; }
+    public global::Weedwacker.Shared.Network.Proto.GalleryStartSource StartSource {
+      get { return startSource_; }
       set {
-        unk2800ENJGEFBCLOL_ = value;
+        startSource_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2800_BKEFLDCEBLF" field.</summary>
-    public const int Unk2800BKEFLDCEBLFFieldNumber = 5;
-    private uint unk2800BKEFLDCEBLF_;
+    /// <summary>Field number for the "max_kill_monster_count" field.</summary>
+    public const int MaxKillMonsterCountFieldNumber = 5;
+    private uint maxKillMonsterCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800BKEFLDCEBLF {
-      get { return unk2800BKEFLDCEBLF_; }
+    public uint MaxKillMonsterCount {
+      get { return maxKillMonsterCount_; }
       set {
-        unk2800BKEFLDCEBLF_ = value;
+        maxKillMonsterCount_ = value;
       }
     }
 
@@ -151,9 +151,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2800LBPCDCHOOLJ != other.Unk2800LBPCDCHOOLJ) return false;
-      if (Unk2800ENJGEFBCLOL != other.Unk2800ENJGEFBCLOL) return false;
-      if (Unk2800BKEFLDCEBLF != other.Unk2800BKEFLDCEBLF) return false;
+      if (TotalKillMonsterCount != other.TotalKillMonsterCount) return false;
+      if (StartSource != other.StartSource) return false;
+      if (MaxKillMonsterCount != other.MaxKillMonsterCount) return false;
       if (Coin != other.Coin) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -162,9 +162,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2800LBPCDCHOOLJ != 0) hash ^= Unk2800LBPCDCHOOLJ.GetHashCode();
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) hash ^= Unk2800ENJGEFBCLOL.GetHashCode();
-      if (Unk2800BKEFLDCEBLF != 0) hash ^= Unk2800BKEFLDCEBLF.GetHashCode();
+      if (TotalKillMonsterCount != 0) hash ^= TotalKillMonsterCount.GetHashCode();
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) hash ^= StartSource.GetHashCode();
+      if (MaxKillMonsterCount != 0) hash ^= MaxKillMonsterCount.GetHashCode();
       if (Coin != 0) hash ^= Coin.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -184,21 +184,21 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2800BKEFLDCEBLF != 0) {
+      if (MaxKillMonsterCount != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk2800BKEFLDCEBLF);
+        output.WriteUInt32(MaxKillMonsterCount);
       }
       if (Coin != 0) {
         output.WriteRawTag(104);
         output.WriteUInt32(Coin);
       }
-      if (Unk2800LBPCDCHOOLJ != 0) {
+      if (TotalKillMonsterCount != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk2800LBPCDCHOOLJ);
+        output.WriteUInt32(TotalKillMonsterCount);
       }
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
         output.WriteRawTag(120);
-        output.WriteEnum((int) Unk2800ENJGEFBCLOL);
+        output.WriteEnum((int) StartSource);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -210,21 +210,21 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2800BKEFLDCEBLF != 0) {
+      if (MaxKillMonsterCount != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk2800BKEFLDCEBLF);
+        output.WriteUInt32(MaxKillMonsterCount);
       }
       if (Coin != 0) {
         output.WriteRawTag(104);
         output.WriteUInt32(Coin);
       }
-      if (Unk2800LBPCDCHOOLJ != 0) {
+      if (TotalKillMonsterCount != 0) {
         output.WriteRawTag(112);
-        output.WriteUInt32(Unk2800LBPCDCHOOLJ);
+        output.WriteUInt32(TotalKillMonsterCount);
       }
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
         output.WriteRawTag(120);
-        output.WriteEnum((int) Unk2800ENJGEFBCLOL);
+        output.WriteEnum((int) StartSource);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -236,14 +236,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2800LBPCDCHOOLJ != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800LBPCDCHOOLJ);
+      if (TotalKillMonsterCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TotalKillMonsterCount);
       }
-      if (Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk2800ENJGEFBCLOL);
+      if (StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StartSource);
       }
-      if (Unk2800BKEFLDCEBLF != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800BKEFLDCEBLF);
+      if (MaxKillMonsterCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxKillMonsterCount);
       }
       if (Coin != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Coin);
@@ -260,14 +260,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2800LBPCDCHOOLJ != 0) {
-        Unk2800LBPCDCHOOLJ = other.Unk2800LBPCDCHOOLJ;
+      if (other.TotalKillMonsterCount != 0) {
+        TotalKillMonsterCount = other.TotalKillMonsterCount;
       }
-      if (other.Unk2800ENJGEFBCLOL != global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB.Unk2800Ibmpphflkeo) {
-        Unk2800ENJGEFBCLOL = other.Unk2800ENJGEFBCLOL;
+      if (other.StartSource != global::Weedwacker.Shared.Network.Proto.GalleryStartSource.ByNone) {
+        StartSource = other.StartSource;
       }
-      if (other.Unk2800BKEFLDCEBLF != 0) {
-        Unk2800BKEFLDCEBLF = other.Unk2800BKEFLDCEBLF;
+      if (other.MaxKillMonsterCount != 0) {
+        MaxKillMonsterCount = other.MaxKillMonsterCount;
       }
       if (other.Coin != 0) {
         Coin = other.Coin;
@@ -288,7 +288,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 40: {
-            Unk2800BKEFLDCEBLF = input.ReadUInt32();
+            MaxKillMonsterCount = input.ReadUInt32();
             break;
           }
           case 104: {
@@ -296,11 +296,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk2800LBPCDCHOOLJ = input.ReadUInt32();
+            TotalKillMonsterCount = input.ReadUInt32();
             break;
           }
           case 120: {
-            Unk2800ENJGEFBCLOL = (global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB) input.ReadEnum();
+            StartSource = (global::Weedwacker.Shared.Network.Proto.GalleryStartSource) input.ReadEnum();
             break;
           }
         }
@@ -319,7 +319,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 40: {
-            Unk2800BKEFLDCEBLF = input.ReadUInt32();
+            MaxKillMonsterCount = input.ReadUInt32();
             break;
           }
           case 104: {
@@ -327,11 +327,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk2800LBPCDCHOOLJ = input.ReadUInt32();
+            TotalKillMonsterCount = input.ReadUInt32();
             break;
           }
           case 120: {
-            Unk2800ENJGEFBCLOL = (global::Weedwacker.Shared.Network.Proto.Unk2800_FMAOEPEBKHB) input.ReadEnum();
+            StartSource = (global::Weedwacker.Shared.Network.Proto.GalleryStartSource) input.ReadEnum();
             break;
           }
         }

@@ -24,15 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGalleryInstableSprayInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNTY2VuZUdhbGxlcnlJbnN0YWJsZVNwcmF5SW5mby5wcm90bxoZVW5rMzAw",
-            "MF9PTUNCTUFIT0xIQi5wcm90byJhCh1TY2VuZUdhbGxlcnlJbnN0YWJsZVNw",
-            "cmF5SW5mbxINCgVzY29yZRgFIAEoDRIxChNVbmsyNzAwX0lOSUJLRlBNQ0ZP",
-            "GAwgAygLMhQuVW5rMzAwMF9PTUNCTUFIT0xIQkIiqgIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "CiNTY2VuZUdhbGxlcnlJbnN0YWJsZVNwcmF5SW5mby5wcm90bxonU2NlbmVH",
+            "YWxsZXJ5SW5zdGFibGVTcHJheUJ1ZmZJbmZvLnByb3RvImoKHVNjZW5lR2Fs",
+            "bGVyeUluc3RhYmxlU3ByYXlJbmZvEg0KBXNjb3JlGAUgASgNEjoKDmJ1ZmZf",
+            "aW5mb19saXN0GAwgAygLMiIuU2NlbmVHYWxsZXJ5SW5zdGFibGVTcHJheUJ1",
+            "ZmZJbmZvQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk3000OMCBMAHOLHBReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.SceneGalleryInstableSprayBuffInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryInstableSprayInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryInstableSprayInfo.Parser, new[]{ "Score", "Unk2700INIBKFPMCFO" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryInstableSprayInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryInstableSprayInfo.Parser, new[]{ "Score", "BuffInfoList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -74,7 +75,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SceneGalleryInstableSprayInfo(SceneGalleryInstableSprayInfo other) : this() {
       score_ = other.score_;
-      unk2700INIBKFPMCFO_ = other.unk2700INIBKFPMCFO_.Clone();
+      buffInfoList_ = other.buffInfoList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -96,15 +97,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_INIBKFPMCFO" field.</summary>
-    public const int Unk2700INIBKFPMCFOFieldNumber = 12;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk3000_OMCBMAHOLHB> _repeated_unk2700INIBKFPMCFO_codec
-        = pb::FieldCodec.ForMessage(98, global::Weedwacker.Shared.Network.Proto.Unk3000_OMCBMAHOLHB.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk3000_OMCBMAHOLHB> unk2700INIBKFPMCFO_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk3000_OMCBMAHOLHB>();
+    /// <summary>Field number for the "buff_info_list" field.</summary>
+    public const int BuffInfoListFieldNumber = 12;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.SceneGalleryInstableSprayBuffInfo> _repeated_buffInfoList_codec
+        = pb::FieldCodec.ForMessage(98, global::Weedwacker.Shared.Network.Proto.SceneGalleryInstableSprayBuffInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SceneGalleryInstableSprayBuffInfo> buffInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SceneGalleryInstableSprayBuffInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk3000_OMCBMAHOLHB> Unk2700INIBKFPMCFO {
-      get { return unk2700INIBKFPMCFO_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SceneGalleryInstableSprayBuffInfo> BuffInfoList {
+      get { return buffInfoList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -123,7 +124,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (Score != other.Score) return false;
-      if(!unk2700INIBKFPMCFO_.Equals(other.unk2700INIBKFPMCFO_)) return false;
+      if(!buffInfoList_.Equals(other.buffInfoList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -132,7 +133,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Score != 0) hash ^= Score.GetHashCode();
-      hash ^= unk2700INIBKFPMCFO_.GetHashCode();
+      hash ^= buffInfoList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -155,7 +156,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(Score);
       }
-      unk2700INIBKFPMCFO_.WriteTo(output, _repeated_unk2700INIBKFPMCFO_codec);
+      buffInfoList_.WriteTo(output, _repeated_buffInfoList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -170,7 +171,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(Score);
       }
-      unk2700INIBKFPMCFO_.WriteTo(ref output, _repeated_unk2700INIBKFPMCFO_codec);
+      buffInfoList_.WriteTo(ref output, _repeated_buffInfoList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -184,7 +185,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Score != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Score);
       }
-      size += unk2700INIBKFPMCFO_.CalculateSize(_repeated_unk2700INIBKFPMCFO_codec);
+      size += buffInfoList_.CalculateSize(_repeated_buffInfoList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -200,7 +201,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Score != 0) {
         Score = other.Score;
       }
-      unk2700INIBKFPMCFO_.Add(other.unk2700INIBKFPMCFO_);
+      buffInfoList_.Add(other.buffInfoList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -221,7 +222,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 98: {
-            unk2700INIBKFPMCFO_.AddEntriesFrom(input, _repeated_unk2700INIBKFPMCFO_codec);
+            buffInfoList_.AddEntriesFrom(input, _repeated_buffInfoList_codec);
             break;
           }
         }
@@ -244,7 +245,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 98: {
-            unk2700INIBKFPMCFO_.AddEntriesFrom(ref input, _repeated_unk2700INIBKFPMCFO_codec);
+            buffInfoList_.AddEntriesFrom(ref input, _repeated_buffInfoList_codec);
             break;
           }
         }

@@ -25,20 +25,20 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch9FdnRBdmF0YXJFbnRlckZvY3VzTm90aWZ5LnByb3RvGhFGb3J3YXJkVHlw",
-            "ZS5wcm90bxoMVmVjdG9yLnByb3RvIu0CChlFdnRBdmF0YXJFbnRlckZvY3Vz",
+            "ZS5wcm90bxoMVmVjdG9yLnByb3RvIusCChlFdnRBdmF0YXJFbnRlckZvY3Vz",
             "Tm90aWZ5EhEKCWVudGl0eV9pZBgBIAEoDRIQCghjYW5fbW92ZRgKIAEoCBIh",
-            "ChllbnRlcl9ob2xkaW5nX2ZvY3VzX3Nob290GA0gASgIEhsKE1VuazI3MDBf",
-            "R0FDS0dIRUhFSUsYBiABKAgSFgoOdXNlX2F1dG9fZm9jdXMYBSABKAgSEgoK",
-            "ZmFzdF9mb2N1cxgDIAEoCBIXCg9zaG93X2Nyb3NzX2hhaXIYDCABKAgSIAoY",
-            "ZW50ZXJfbm9ybWFsX2ZvY3VzX3Nob290GA4gASgIEiIKDGZvcndhcmRfdHlw",
-            "ZRgIIAEoDjIMLkZvcndhcmRUeXBlEh4KDWZvY3VzX2ZvcndhcmQYByABKAsy",
-            "By5WZWN0b3ISFAoMZGlzYWJsZV9hbmltGAkgASgIEhgKEHVzZV9mb2N1c19z",
-            "dGlja3kYDyABKAgSEAoIdXNlX2d5cm8YCyABKAhCIqoCH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "ChllbnRlcl9ob2xkaW5nX2ZvY3VzX3Nob290GA0gASgIEhkKEWRpc2FibGVf",
+            "YWltX2xheWVyGAYgASgIEhYKDnVzZV9hdXRvX2ZvY3VzGAUgASgIEhIKCmZh",
+            "c3RfZm9jdXMYAyABKAgSFwoPc2hvd19jcm9zc19oYWlyGAwgASgIEiAKGGVu",
+            "dGVyX25vcm1hbF9mb2N1c19zaG9vdBgOIAEoCBIiCgxmb3J3YXJkX3R5cGUY",
+            "CCABKA4yDC5Gb3J3YXJkVHlwZRIeCg1mb2N1c19mb3J3YXJkGAcgASgLMgcu",
+            "VmVjdG9yEhQKDGRpc2FibGVfYW5pbRgJIAEoCBIYChB1c2VfZm9jdXNfc3Rp",
+            "Y2t5GA8gASgIEhAKCHVzZV9neXJvGAsgASgIQiKqAh9XZWVkd2Fja2VyLlNo",
+            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ForwardTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtAvatarEnterFocusNotify), global::Weedwacker.Shared.Network.Proto.EvtAvatarEnterFocusNotify.Parser, new[]{ "EntityId", "CanMove", "EnterHoldingFocusShoot", "Unk2700GACKGHEHEIK", "UseAutoFocus", "FastFocus", "ShowCrossHair", "EnterNormalFocusShoot", "ForwardType", "FocusForward", "DisableAnim", "UseFocusSticky", "UseGyro" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtAvatarEnterFocusNotify), global::Weedwacker.Shared.Network.Proto.EvtAvatarEnterFocusNotify.Parser, new[]{ "EntityId", "CanMove", "EnterHoldingFocusShoot", "DisableAimLayer", "UseAutoFocus", "FastFocus", "ShowCrossHair", "EnterNormalFocusShoot", "ForwardType", "FocusForward", "DisableAnim", "UseFocusSticky", "UseGyro" }, null, null, null, null)
           }));
     }
     #endregion
@@ -88,7 +88,7 @@ namespace Weedwacker.Shared.Network.Proto {
       entityId_ = other.entityId_;
       canMove_ = other.canMove_;
       enterHoldingFocusShoot_ = other.enterHoldingFocusShoot_;
-      unk2700GACKGHEHEIK_ = other.unk2700GACKGHEHEIK_;
+      disableAimLayer_ = other.disableAimLayer_;
       useAutoFocus_ = other.useAutoFocus_;
       fastFocus_ = other.fastFocus_;
       showCrossHair_ = other.showCrossHair_;
@@ -143,15 +143,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_GACKGHEHEIK" field.</summary>
-    public const int Unk2700GACKGHEHEIKFieldNumber = 6;
-    private bool unk2700GACKGHEHEIK_;
+    /// <summary>Field number for the "disable_aim_layer" field.</summary>
+    public const int DisableAimLayerFieldNumber = 6;
+    private bool disableAimLayer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700GACKGHEHEIK {
-      get { return unk2700GACKGHEHEIK_; }
+    public bool DisableAimLayer {
+      get { return disableAimLayer_; }
       set {
-        unk2700GACKGHEHEIK_ = value;
+        disableAimLayer_ = value;
       }
     }
 
@@ -281,7 +281,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (EntityId != other.EntityId) return false;
       if (CanMove != other.CanMove) return false;
       if (EnterHoldingFocusShoot != other.EnterHoldingFocusShoot) return false;
-      if (Unk2700GACKGHEHEIK != other.Unk2700GACKGHEHEIK) return false;
+      if (DisableAimLayer != other.DisableAimLayer) return false;
       if (UseAutoFocus != other.UseAutoFocus) return false;
       if (FastFocus != other.FastFocus) return false;
       if (ShowCrossHair != other.ShowCrossHair) return false;
@@ -301,7 +301,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
       if (CanMove != false) hash ^= CanMove.GetHashCode();
       if (EnterHoldingFocusShoot != false) hash ^= EnterHoldingFocusShoot.GetHashCode();
-      if (Unk2700GACKGHEHEIK != false) hash ^= Unk2700GACKGHEHEIK.GetHashCode();
+      if (DisableAimLayer != false) hash ^= DisableAimLayer.GetHashCode();
       if (UseAutoFocus != false) hash ^= UseAutoFocus.GetHashCode();
       if (FastFocus != false) hash ^= FastFocus.GetHashCode();
       if (ShowCrossHair != false) hash ^= ShowCrossHair.GetHashCode();
@@ -341,9 +341,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteBool(UseAutoFocus);
       }
-      if (Unk2700GACKGHEHEIK != false) {
+      if (DisableAimLayer != false) {
         output.WriteRawTag(48);
-        output.WriteBool(Unk2700GACKGHEHEIK);
+        output.WriteBool(DisableAimLayer);
       }
       if (focusForward_ != null) {
         output.WriteRawTag(58);
@@ -403,9 +403,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteBool(UseAutoFocus);
       }
-      if (Unk2700GACKGHEHEIK != false) {
+      if (DisableAimLayer != false) {
         output.WriteRawTag(48);
-        output.WriteBool(Unk2700GACKGHEHEIK);
+        output.WriteBool(DisableAimLayer);
       }
       if (focusForward_ != null) {
         output.WriteRawTag(58);
@@ -462,7 +462,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (EnterHoldingFocusShoot != false) {
         size += 1 + 1;
       }
-      if (Unk2700GACKGHEHEIK != false) {
+      if (DisableAimLayer != false) {
         size += 1 + 1;
       }
       if (UseAutoFocus != false) {
@@ -513,8 +513,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.EnterHoldingFocusShoot != false) {
         EnterHoldingFocusShoot = other.EnterHoldingFocusShoot;
       }
-      if (other.Unk2700GACKGHEHEIK != false) {
-        Unk2700GACKGHEHEIK = other.Unk2700GACKGHEHEIK;
+      if (other.DisableAimLayer != false) {
+        DisableAimLayer = other.DisableAimLayer;
       }
       if (other.UseAutoFocus != false) {
         UseAutoFocus = other.UseAutoFocus;
@@ -574,7 +574,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk2700GACKGHEHEIK = input.ReadBool();
+            DisableAimLayer = input.ReadBool();
             break;
           }
           case 58: {
@@ -644,7 +644,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk2700GACKGHEHEIK = input.ReadBool();
+            DisableAimLayer = input.ReadBool();
             break;
           }
           case 58: {

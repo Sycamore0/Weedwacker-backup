@@ -25,18 +25,18 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChhFdnRCdWxsZXRIaXROb3RpZnkucHJvdG8aEUZvcndhcmRUeXBlLnByb3Rv",
-            "GhVIaXRDb2xsaWRlclR5cGUucHJvdG8aDFZlY3Rvci5wcm90byKSAgoSRXZ0",
-            "QnVsbGV0SGl0Tm90aWZ5EhsKE1VuazI3MDBfRkVBTExCSUJIT0wYCCABKA0S",
-            "GgoJaGl0X3BvaW50GA8gASgLMgcuVmVjdG9yEhsKCmhpdF9ub3JtYWwYCyAB",
-            "KAsyBy5WZWN0b3ISFQoNaGl0X2JveF9pbmRleBgJIAEoBRIVCg1oaXRfZW50",
-            "aXR5X2lkGAMgASgNEhEKCWVudGl0eV9pZBgFIAEoDRIUCgxmb3J3YXJkX3Bl",
-            "ZXIYByABKA0SIgoMZm9yd2FyZF90eXBlGAIgASgOMgwuRm9yd2FyZFR5cGUS",
-            "KwoRaGl0X2NvbGxpZGVyX3R5cGUYBiABKA4yEC5IaXRDb2xsaWRlclR5cGVC",
-            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "GhVIaXRDb2xsaWRlclR5cGUucHJvdG8aDFZlY3Rvci5wcm90byKPAgoSRXZ0",
+            "QnVsbGV0SGl0Tm90aWZ5EhgKEHNpbmdsZV9idWxsZXRfaWQYCCABKA0SGgoJ",
+            "aGl0X3BvaW50GA8gASgLMgcuVmVjdG9yEhsKCmhpdF9ub3JtYWwYCyABKAsy",
+            "By5WZWN0b3ISFQoNaGl0X2JveF9pbmRleBgJIAEoBRIVCg1oaXRfZW50aXR5",
+            "X2lkGAMgASgNEhEKCWVudGl0eV9pZBgFIAEoDRIUCgxmb3J3YXJkX3BlZXIY",
+            "ByABKA0SIgoMZm9yd2FyZF90eXBlGAIgASgOMgwuRm9yd2FyZFR5cGUSKwoR",
+            "aGl0X2NvbGxpZGVyX3R5cGUYBiABKA4yEC5IaXRDb2xsaWRlclR5cGVCIqoC",
+            "H1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ForwardTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HitColliderTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtBulletHitNotify), global::Weedwacker.Shared.Network.Proto.EvtBulletHitNotify.Parser, new[]{ "Unk2700FEALLBIBHOL", "HitPoint", "HitNormal", "HitBoxIndex", "HitEntityId", "EntityId", "ForwardPeer", "ForwardType", "HitColliderType" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtBulletHitNotify), global::Weedwacker.Shared.Network.Proto.EvtBulletHitNotify.Parser, new[]{ "SingleBulletId", "HitPoint", "HitNormal", "HitBoxIndex", "HitEntityId", "EntityId", "ForwardPeer", "ForwardType", "HitColliderType" }, null, null, null, null)
           }));
     }
     #endregion
@@ -83,7 +83,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EvtBulletHitNotify(EvtBulletHitNotify other) : this() {
-      unk2700FEALLBIBHOL_ = other.unk2700FEALLBIBHOL_;
+      singleBulletId_ = other.singleBulletId_;
       hitPoint_ = other.hitPoint_ != null ? other.hitPoint_.Clone() : null;
       hitNormal_ = other.hitNormal_ != null ? other.hitNormal_.Clone() : null;
       hitBoxIndex_ = other.hitBoxIndex_;
@@ -101,15 +101,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new EvtBulletHitNotify(this);
     }
 
-    /// <summary>Field number for the "Unk2700_FEALLBIBHOL" field.</summary>
-    public const int Unk2700FEALLBIBHOLFieldNumber = 8;
-    private uint unk2700FEALLBIBHOL_;
+    /// <summary>Field number for the "single_bullet_id" field.</summary>
+    public const int SingleBulletIdFieldNumber = 8;
+    private uint singleBulletId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700FEALLBIBHOL {
-      get { return unk2700FEALLBIBHOL_; }
+    public uint SingleBulletId {
+      get { return singleBulletId_; }
       set {
-        unk2700FEALLBIBHOL_ = value;
+        singleBulletId_ = value;
       }
     }
 
@@ -224,7 +224,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700FEALLBIBHOL != other.Unk2700FEALLBIBHOL) return false;
+      if (SingleBulletId != other.SingleBulletId) return false;
       if (!object.Equals(HitPoint, other.HitPoint)) return false;
       if (!object.Equals(HitNormal, other.HitNormal)) return false;
       if (HitBoxIndex != other.HitBoxIndex) return false;
@@ -240,7 +240,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700FEALLBIBHOL != 0) hash ^= Unk2700FEALLBIBHOL.GetHashCode();
+      if (SingleBulletId != 0) hash ^= SingleBulletId.GetHashCode();
       if (hitPoint_ != null) hash ^= HitPoint.GetHashCode();
       if (hitNormal_ != null) hash ^= HitNormal.GetHashCode();
       if (HitBoxIndex != 0) hash ^= HitBoxIndex.GetHashCode();
@@ -287,9 +287,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteUInt32(ForwardPeer);
       }
-      if (Unk2700FEALLBIBHOL != 0) {
+      if (SingleBulletId != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk2700FEALLBIBHOL);
+        output.WriteUInt32(SingleBulletId);
       }
       if (HitBoxIndex != 0) {
         output.WriteRawTag(72);
@@ -333,9 +333,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteUInt32(ForwardPeer);
       }
-      if (Unk2700FEALLBIBHOL != 0) {
+      if (SingleBulletId != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk2700FEALLBIBHOL);
+        output.WriteUInt32(SingleBulletId);
       }
       if (HitBoxIndex != 0) {
         output.WriteRawTag(72);
@@ -359,8 +359,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700FEALLBIBHOL != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700FEALLBIBHOL);
+      if (SingleBulletId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SingleBulletId);
       }
       if (hitPoint_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(HitPoint);
@@ -398,8 +398,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700FEALLBIBHOL != 0) {
-        Unk2700FEALLBIBHOL = other.Unk2700FEALLBIBHOL;
+      if (other.SingleBulletId != 0) {
+        SingleBulletId = other.SingleBulletId;
       }
       if (other.hitPoint_ != null) {
         if (hitPoint_ == null) {
@@ -467,7 +467,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk2700FEALLBIBHOL = input.ReadUInt32();
+            SingleBulletId = input.ReadUInt32();
             break;
           }
           case 72: {
@@ -524,7 +524,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk2700FEALLBIBHOL = input.ReadUInt32();
+            SingleBulletId = input.ReadUInt32();
             break;
           }
           case 72: {

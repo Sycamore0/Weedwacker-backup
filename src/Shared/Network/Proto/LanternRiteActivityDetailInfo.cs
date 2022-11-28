@@ -24,20 +24,20 @@ namespace Weedwacker.Shared.Network.Proto {
     static LanternRiteActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNMYW50ZXJuUml0ZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoZVW5rMjcw",
-            "MF9KQ05JUE9KTUZNSC5wcm90bxoZVW5rMjcwMF9MTEdEQ0FLTUNLTC5wcm90",
-            "bxoZVW5rMjcwMF9NSkdGRUhPTUtKRS5wcm90byKNAgodTGFudGVyblJpdGVB",
-            "Y3Rpdml0eURldGFpbEluZm8SMQoTVW5rMjcwMF9PTk9IT0RKUElHSxgNIAEo",
-            "CzIULlVuazI3MDBfSkNOSVBPSk1GTUgSMQoTVW5rMjcwMF9QSEtISVBMRE9P",
-            "QRgFIAMoCzIULlVuazI3MDBfTExHRENBS01DS0wSMQoTVW5rMjcwMF9NUE9D",
-            "TEdCRk5BSxgIIAEoCzIULlVuazI3MDBfTUpHRkVIT01LSkUSGwoTVW5rMjcw",
-            "MF9LR0dDS0hCSU9FRBgCIAEoCBIZChFpc19jb250ZW50X2Nsb3NlZBgOIAEo",
-            "CBIbChNVbmsyNzAwX0VPR0VBSUhKUEZEGAYgASgIQiKqAh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "CiNMYW50ZXJuUml0ZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxobTGFudGVy",
+            "blByb2plY3Rpb25JbmZvLnByb3RvGh5MYW50ZXJuUml0ZUZpcmV3b3Jrc0lu",
+            "Zm8ucHJvdG8aFlNhbHZhZ2VTdGFnZUluZm8ucHJvdG8ijwIKHUxhbnRlcm5S",
+            "aXRlQWN0aXZpdHlEZXRhaWxJbmZvEi8KD3Byb2plY3Rpb25faW5mbxgNIAEo",
+            "CzIWLkxhbnRlcm5Qcm9qZWN0aW9uSW5mbxIqCg9zdGFnZV9pbmZvX2xpc3QY",
+            "BSADKAsyES5TYWx2YWdlU3RhZ2VJbmZvEjEKDmZpcmV3b3Jrc19pbmZvGAgg",
+            "ASgLMhkuTGFudGVyblJpdGVGaXJld29ya3NJbmZvEiUKHWlzX21pbmlfZWxk",
+            "cml0Y2hfZHVuZ2Vvbl9vcGVuGAIgASgIEhkKEWlzX2NvbnRlbnRfY2xvc2Vk",
+            "GA4gASgIEhwKFGlzX3Rha2VuX3NraW5fcmV3YXJkGAYgASgIQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2700JCNIPOJMFMHReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700LLGDCAKMCKLReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700MJGFEHOMKJEReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.LanternProjectionInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LanternRiteFireworksInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SalvageStageInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.LanternRiteActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.LanternRiteActivityDetailInfo.Parser, new[]{ "Unk2700ONOHODJPIGK", "Unk2700PHKHIPLDOOA", "Unk2700MPOCLGBFNAK", "Unk2700KGGCKHBIOED", "IsContentClosed", "Unk2700EOGEAIHJPFD" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.LanternRiteActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.LanternRiteActivityDetailInfo.Parser, new[]{ "ProjectionInfo", "StageInfoList", "FireworksInfo", "IsMiniEldritchDungeonOpen", "IsContentClosed", "IsTakenSkinReward" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,12 +78,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LanternRiteActivityDetailInfo(LanternRiteActivityDetailInfo other) : this() {
-      unk2700ONOHODJPIGK_ = other.unk2700ONOHODJPIGK_ != null ? other.unk2700ONOHODJPIGK_.Clone() : null;
-      unk2700PHKHIPLDOOA_ = other.unk2700PHKHIPLDOOA_.Clone();
-      unk2700MPOCLGBFNAK_ = other.unk2700MPOCLGBFNAK_ != null ? other.unk2700MPOCLGBFNAK_.Clone() : null;
-      unk2700KGGCKHBIOED_ = other.unk2700KGGCKHBIOED_;
+      projectionInfo_ = other.projectionInfo_ != null ? other.projectionInfo_.Clone() : null;
+      stageInfoList_ = other.stageInfoList_.Clone();
+      fireworksInfo_ = other.fireworksInfo_ != null ? other.fireworksInfo_.Clone() : null;
+      isMiniEldritchDungeonOpen_ = other.isMiniEldritchDungeonOpen_;
       isContentClosed_ = other.isContentClosed_;
-      unk2700EOGEAIHJPFD_ = other.unk2700EOGEAIHJPFD_;
+      isTakenSkinReward_ = other.isTakenSkinReward_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -93,50 +93,50 @@ namespace Weedwacker.Shared.Network.Proto {
       return new LanternRiteActivityDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_ONOHODJPIGK" field.</summary>
-    public const int Unk2700ONOHODJPIGKFieldNumber = 13;
-    private global::Weedwacker.Shared.Network.Proto.Unk2700_JCNIPOJMFMH unk2700ONOHODJPIGK_;
+    /// <summary>Field number for the "projection_info" field.</summary>
+    public const int ProjectionInfoFieldNumber = 13;
+    private global::Weedwacker.Shared.Network.Proto.LanternProjectionInfo projectionInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2700_JCNIPOJMFMH Unk2700ONOHODJPIGK {
-      get { return unk2700ONOHODJPIGK_; }
+    public global::Weedwacker.Shared.Network.Proto.LanternProjectionInfo ProjectionInfo {
+      get { return projectionInfo_; }
       set {
-        unk2700ONOHODJPIGK_ = value;
+        projectionInfo_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_PHKHIPLDOOA" field.</summary>
-    public const int Unk2700PHKHIPLDOOAFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_LLGDCAKMCKL> _repeated_unk2700PHKHIPLDOOA_codec
-        = pb::FieldCodec.ForMessage(42, global::Weedwacker.Shared.Network.Proto.Unk2700_LLGDCAKMCKL.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_LLGDCAKMCKL> unk2700PHKHIPLDOOA_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_LLGDCAKMCKL>();
+    /// <summary>Field number for the "stage_info_list" field.</summary>
+    public const int StageInfoListFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.SalvageStageInfo> _repeated_stageInfoList_codec
+        = pb::FieldCodec.ForMessage(42, global::Weedwacker.Shared.Network.Proto.SalvageStageInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SalvageStageInfo> stageInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SalvageStageInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_LLGDCAKMCKL> Unk2700PHKHIPLDOOA {
-      get { return unk2700PHKHIPLDOOA_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SalvageStageInfo> StageInfoList {
+      get { return stageInfoList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_MPOCLGBFNAK" field.</summary>
-    public const int Unk2700MPOCLGBFNAKFieldNumber = 8;
-    private global::Weedwacker.Shared.Network.Proto.Unk2700_MJGFEHOMKJE unk2700MPOCLGBFNAK_;
+    /// <summary>Field number for the "fireworks_info" field.</summary>
+    public const int FireworksInfoFieldNumber = 8;
+    private global::Weedwacker.Shared.Network.Proto.LanternRiteFireworksInfo fireworksInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2700_MJGFEHOMKJE Unk2700MPOCLGBFNAK {
-      get { return unk2700MPOCLGBFNAK_; }
+    public global::Weedwacker.Shared.Network.Proto.LanternRiteFireworksInfo FireworksInfo {
+      get { return fireworksInfo_; }
       set {
-        unk2700MPOCLGBFNAK_ = value;
+        fireworksInfo_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_KGGCKHBIOED" field.</summary>
-    public const int Unk2700KGGCKHBIOEDFieldNumber = 2;
-    private bool unk2700KGGCKHBIOED_;
+    /// <summary>Field number for the "is_mini_eldritch_dungeon_open" field.</summary>
+    public const int IsMiniEldritchDungeonOpenFieldNumber = 2;
+    private bool isMiniEldritchDungeonOpen_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700KGGCKHBIOED {
-      get { return unk2700KGGCKHBIOED_; }
+    public bool IsMiniEldritchDungeonOpen {
+      get { return isMiniEldritchDungeonOpen_; }
       set {
-        unk2700KGGCKHBIOED_ = value;
+        isMiniEldritchDungeonOpen_ = value;
       }
     }
 
@@ -152,15 +152,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_EOGEAIHJPFD" field.</summary>
-    public const int Unk2700EOGEAIHJPFDFieldNumber = 6;
-    private bool unk2700EOGEAIHJPFD_;
+    /// <summary>Field number for the "is_taken_skin_reward" field.</summary>
+    public const int IsTakenSkinRewardFieldNumber = 6;
+    private bool isTakenSkinReward_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700EOGEAIHJPFD {
-      get { return unk2700EOGEAIHJPFD_; }
+    public bool IsTakenSkinReward {
+      get { return isTakenSkinReward_; }
       set {
-        unk2700EOGEAIHJPFD_ = value;
+        isTakenSkinReward_ = value;
       }
     }
 
@@ -179,12 +179,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Unk2700ONOHODJPIGK, other.Unk2700ONOHODJPIGK)) return false;
-      if(!unk2700PHKHIPLDOOA_.Equals(other.unk2700PHKHIPLDOOA_)) return false;
-      if (!object.Equals(Unk2700MPOCLGBFNAK, other.Unk2700MPOCLGBFNAK)) return false;
-      if (Unk2700KGGCKHBIOED != other.Unk2700KGGCKHBIOED) return false;
+      if (!object.Equals(ProjectionInfo, other.ProjectionInfo)) return false;
+      if(!stageInfoList_.Equals(other.stageInfoList_)) return false;
+      if (!object.Equals(FireworksInfo, other.FireworksInfo)) return false;
+      if (IsMiniEldritchDungeonOpen != other.IsMiniEldritchDungeonOpen) return false;
       if (IsContentClosed != other.IsContentClosed) return false;
-      if (Unk2700EOGEAIHJPFD != other.Unk2700EOGEAIHJPFD) return false;
+      if (IsTakenSkinReward != other.IsTakenSkinReward) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -192,12 +192,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (unk2700ONOHODJPIGK_ != null) hash ^= Unk2700ONOHODJPIGK.GetHashCode();
-      hash ^= unk2700PHKHIPLDOOA_.GetHashCode();
-      if (unk2700MPOCLGBFNAK_ != null) hash ^= Unk2700MPOCLGBFNAK.GetHashCode();
-      if (Unk2700KGGCKHBIOED != false) hash ^= Unk2700KGGCKHBIOED.GetHashCode();
+      if (projectionInfo_ != null) hash ^= ProjectionInfo.GetHashCode();
+      hash ^= stageInfoList_.GetHashCode();
+      if (fireworksInfo_ != null) hash ^= FireworksInfo.GetHashCode();
+      if (IsMiniEldritchDungeonOpen != false) hash ^= IsMiniEldritchDungeonOpen.GetHashCode();
       if (IsContentClosed != false) hash ^= IsContentClosed.GetHashCode();
-      if (Unk2700EOGEAIHJPFD != false) hash ^= Unk2700EOGEAIHJPFD.GetHashCode();
+      if (IsTakenSkinReward != false) hash ^= IsTakenSkinReward.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -216,22 +216,22 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700KGGCKHBIOED != false) {
+      if (IsMiniEldritchDungeonOpen != false) {
         output.WriteRawTag(16);
-        output.WriteBool(Unk2700KGGCKHBIOED);
+        output.WriteBool(IsMiniEldritchDungeonOpen);
       }
-      unk2700PHKHIPLDOOA_.WriteTo(output, _repeated_unk2700PHKHIPLDOOA_codec);
-      if (Unk2700EOGEAIHJPFD != false) {
+      stageInfoList_.WriteTo(output, _repeated_stageInfoList_codec);
+      if (IsTakenSkinReward != false) {
         output.WriteRawTag(48);
-        output.WriteBool(Unk2700EOGEAIHJPFD);
+        output.WriteBool(IsTakenSkinReward);
       }
-      if (unk2700MPOCLGBFNAK_ != null) {
+      if (fireworksInfo_ != null) {
         output.WriteRawTag(66);
-        output.WriteMessage(Unk2700MPOCLGBFNAK);
+        output.WriteMessage(FireworksInfo);
       }
-      if (unk2700ONOHODJPIGK_ != null) {
+      if (projectionInfo_ != null) {
         output.WriteRawTag(106);
-        output.WriteMessage(Unk2700ONOHODJPIGK);
+        output.WriteMessage(ProjectionInfo);
       }
       if (IsContentClosed != false) {
         output.WriteRawTag(112);
@@ -247,22 +247,22 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700KGGCKHBIOED != false) {
+      if (IsMiniEldritchDungeonOpen != false) {
         output.WriteRawTag(16);
-        output.WriteBool(Unk2700KGGCKHBIOED);
+        output.WriteBool(IsMiniEldritchDungeonOpen);
       }
-      unk2700PHKHIPLDOOA_.WriteTo(ref output, _repeated_unk2700PHKHIPLDOOA_codec);
-      if (Unk2700EOGEAIHJPFD != false) {
+      stageInfoList_.WriteTo(ref output, _repeated_stageInfoList_codec);
+      if (IsTakenSkinReward != false) {
         output.WriteRawTag(48);
-        output.WriteBool(Unk2700EOGEAIHJPFD);
+        output.WriteBool(IsTakenSkinReward);
       }
-      if (unk2700MPOCLGBFNAK_ != null) {
+      if (fireworksInfo_ != null) {
         output.WriteRawTag(66);
-        output.WriteMessage(Unk2700MPOCLGBFNAK);
+        output.WriteMessage(FireworksInfo);
       }
-      if (unk2700ONOHODJPIGK_ != null) {
+      if (projectionInfo_ != null) {
         output.WriteRawTag(106);
-        output.WriteMessage(Unk2700ONOHODJPIGK);
+        output.WriteMessage(ProjectionInfo);
       }
       if (IsContentClosed != false) {
         output.WriteRawTag(112);
@@ -278,20 +278,20 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (unk2700ONOHODJPIGK_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Unk2700ONOHODJPIGK);
+      if (projectionInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProjectionInfo);
       }
-      size += unk2700PHKHIPLDOOA_.CalculateSize(_repeated_unk2700PHKHIPLDOOA_codec);
-      if (unk2700MPOCLGBFNAK_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Unk2700MPOCLGBFNAK);
+      size += stageInfoList_.CalculateSize(_repeated_stageInfoList_codec);
+      if (fireworksInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(FireworksInfo);
       }
-      if (Unk2700KGGCKHBIOED != false) {
+      if (IsMiniEldritchDungeonOpen != false) {
         size += 1 + 1;
       }
       if (IsContentClosed != false) {
         size += 1 + 1;
       }
-      if (Unk2700EOGEAIHJPFD != false) {
+      if (IsTakenSkinReward != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -306,27 +306,27 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.unk2700ONOHODJPIGK_ != null) {
-        if (unk2700ONOHODJPIGK_ == null) {
-          Unk2700ONOHODJPIGK = new global::Weedwacker.Shared.Network.Proto.Unk2700_JCNIPOJMFMH();
+      if (other.projectionInfo_ != null) {
+        if (projectionInfo_ == null) {
+          ProjectionInfo = new global::Weedwacker.Shared.Network.Proto.LanternProjectionInfo();
         }
-        Unk2700ONOHODJPIGK.MergeFrom(other.Unk2700ONOHODJPIGK);
+        ProjectionInfo.MergeFrom(other.ProjectionInfo);
       }
-      unk2700PHKHIPLDOOA_.Add(other.unk2700PHKHIPLDOOA_);
-      if (other.unk2700MPOCLGBFNAK_ != null) {
-        if (unk2700MPOCLGBFNAK_ == null) {
-          Unk2700MPOCLGBFNAK = new global::Weedwacker.Shared.Network.Proto.Unk2700_MJGFEHOMKJE();
+      stageInfoList_.Add(other.stageInfoList_);
+      if (other.fireworksInfo_ != null) {
+        if (fireworksInfo_ == null) {
+          FireworksInfo = new global::Weedwacker.Shared.Network.Proto.LanternRiteFireworksInfo();
         }
-        Unk2700MPOCLGBFNAK.MergeFrom(other.Unk2700MPOCLGBFNAK);
+        FireworksInfo.MergeFrom(other.FireworksInfo);
       }
-      if (other.Unk2700KGGCKHBIOED != false) {
-        Unk2700KGGCKHBIOED = other.Unk2700KGGCKHBIOED;
+      if (other.IsMiniEldritchDungeonOpen != false) {
+        IsMiniEldritchDungeonOpen = other.IsMiniEldritchDungeonOpen;
       }
       if (other.IsContentClosed != false) {
         IsContentClosed = other.IsContentClosed;
       }
-      if (other.Unk2700EOGEAIHJPFD != false) {
-        Unk2700EOGEAIHJPFD = other.Unk2700EOGEAIHJPFD;
+      if (other.IsTakenSkinReward != false) {
+        IsTakenSkinReward = other.IsTakenSkinReward;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -344,29 +344,29 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 16: {
-            Unk2700KGGCKHBIOED = input.ReadBool();
+            IsMiniEldritchDungeonOpen = input.ReadBool();
             break;
           }
           case 42: {
-            unk2700PHKHIPLDOOA_.AddEntriesFrom(input, _repeated_unk2700PHKHIPLDOOA_codec);
+            stageInfoList_.AddEntriesFrom(input, _repeated_stageInfoList_codec);
             break;
           }
           case 48: {
-            Unk2700EOGEAIHJPFD = input.ReadBool();
+            IsTakenSkinReward = input.ReadBool();
             break;
           }
           case 66: {
-            if (unk2700MPOCLGBFNAK_ == null) {
-              Unk2700MPOCLGBFNAK = new global::Weedwacker.Shared.Network.Proto.Unk2700_MJGFEHOMKJE();
+            if (fireworksInfo_ == null) {
+              FireworksInfo = new global::Weedwacker.Shared.Network.Proto.LanternRiteFireworksInfo();
             }
-            input.ReadMessage(Unk2700MPOCLGBFNAK);
+            input.ReadMessage(FireworksInfo);
             break;
           }
           case 106: {
-            if (unk2700ONOHODJPIGK_ == null) {
-              Unk2700ONOHODJPIGK = new global::Weedwacker.Shared.Network.Proto.Unk2700_JCNIPOJMFMH();
+            if (projectionInfo_ == null) {
+              ProjectionInfo = new global::Weedwacker.Shared.Network.Proto.LanternProjectionInfo();
             }
-            input.ReadMessage(Unk2700ONOHODJPIGK);
+            input.ReadMessage(ProjectionInfo);
             break;
           }
           case 112: {
@@ -389,29 +389,29 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 16: {
-            Unk2700KGGCKHBIOED = input.ReadBool();
+            IsMiniEldritchDungeonOpen = input.ReadBool();
             break;
           }
           case 42: {
-            unk2700PHKHIPLDOOA_.AddEntriesFrom(ref input, _repeated_unk2700PHKHIPLDOOA_codec);
+            stageInfoList_.AddEntriesFrom(ref input, _repeated_stageInfoList_codec);
             break;
           }
           case 48: {
-            Unk2700EOGEAIHJPFD = input.ReadBool();
+            IsTakenSkinReward = input.ReadBool();
             break;
           }
           case 66: {
-            if (unk2700MPOCLGBFNAK_ == null) {
-              Unk2700MPOCLGBFNAK = new global::Weedwacker.Shared.Network.Proto.Unk2700_MJGFEHOMKJE();
+            if (fireworksInfo_ == null) {
+              FireworksInfo = new global::Weedwacker.Shared.Network.Proto.LanternRiteFireworksInfo();
             }
-            input.ReadMessage(Unk2700MPOCLGBFNAK);
+            input.ReadMessage(FireworksInfo);
             break;
           }
           case 106: {
-            if (unk2700ONOHODJPIGK_ == null) {
-              Unk2700ONOHODJPIGK = new global::Weedwacker.Shared.Network.Proto.Unk2700_JCNIPOJMFMH();
+            if (projectionInfo_ == null) {
+              ProjectionInfo = new global::Weedwacker.Shared.Network.Proto.LanternProjectionInfo();
             }
-            input.ReadMessage(Unk2700ONOHODJPIGK);
+            input.ReadMessage(ProjectionInfo);
             break;
           }
           case 112: {

@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static IrodoriChessInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZJcm9kb3JpQ2hlc3NJbmZvLnByb3RvGhlVbmsyNzAwX0lCRUtETk9HTUxB",
-            "LnByb3RvIqgBChBJcm9kb3JpQ2hlc3NJbmZvEioKDG15c3RlcnlfaW5mbxgD",
-            "IAEoCzIULlVuazI3MDBfSUJFS0ROT0dNTEESFQoNbGVmdF9tb25zdGVycxgM",
-            "IAEoDRIbChNVbmsyNzAwX01BQk1QQUFHSENKGA0gAygNEhcKD2J1aWxkaW5n",
-            "X3BvaW50cxgHIAEoDRIbChNVbmsyNzAwX0NET0tFTkpKSk1IGAQgASgNQiKq",
-            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "ChZJcm9kb3JpQ2hlc3NJbmZvLnByb3RvGh1Jcm9kb3JpQ2hlc3NNeXN0ZXJ5",
+            "SW5mby5wcm90byKnAQoQSXJvZG9yaUNoZXNzSW5mbxIuCgxteXN0ZXJ5X2lu",
+            "Zm8YAyABKAsyGC5Jcm9kb3JpQ2hlc3NNeXN0ZXJ5SW5mbxIVCg1sZWZ0X21v",
+            "bnN0ZXJzGAwgASgNEh0KFXNlbGVjdGVkX2NhcmRfaWRfbGlzdBgNIAMoDRIX",
+            "Cg9idWlsZGluZ19wb2ludHMYByABKA0SFAoMc2V0dGxlX3Njb3JlGAQgASgN",
+            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2700IBEKDNOGMLAReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.IrodoriChessMysteryInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.IrodoriChessInfo), global::Weedwacker.Shared.Network.Proto.IrodoriChessInfo.Parser, new[]{ "MysteryInfo", "LeftMonsters", "Unk2700MABMPAAGHCJ", "BuildingPoints", "Unk2700CDOKENJJJMH" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.IrodoriChessInfo), global::Weedwacker.Shared.Network.Proto.IrodoriChessInfo.Parser, new[]{ "MysteryInfo", "LeftMonsters", "SelectedCardIdList", "BuildingPoints", "SettleScore" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,9 +76,9 @@ namespace Weedwacker.Shared.Network.Proto {
     public IrodoriChessInfo(IrodoriChessInfo other) : this() {
       mysteryInfo_ = other.mysteryInfo_ != null ? other.mysteryInfo_.Clone() : null;
       leftMonsters_ = other.leftMonsters_;
-      unk2700MABMPAAGHCJ_ = other.unk2700MABMPAAGHCJ_.Clone();
+      selectedCardIdList_ = other.selectedCardIdList_.Clone();
       buildingPoints_ = other.buildingPoints_;
-      unk2700CDOKENJJJMH_ = other.unk2700CDOKENJJJMH_;
+      settleScore_ = other.settleScore_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -90,10 +90,10 @@ namespace Weedwacker.Shared.Network.Proto {
 
     /// <summary>Field number for the "mystery_info" field.</summary>
     public const int MysteryInfoFieldNumber = 3;
-    private global::Weedwacker.Shared.Network.Proto.Unk2700_IBEKDNOGMLA mysteryInfo_;
+    private global::Weedwacker.Shared.Network.Proto.IrodoriChessMysteryInfo mysteryInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2700_IBEKDNOGMLA MysteryInfo {
+    public global::Weedwacker.Shared.Network.Proto.IrodoriChessMysteryInfo MysteryInfo {
       get { return mysteryInfo_; }
       set {
         mysteryInfo_ = value;
@@ -112,15 +112,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_MABMPAAGHCJ" field.</summary>
-    public const int Unk2700MABMPAAGHCJFieldNumber = 13;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700MABMPAAGHCJ_codec
+    /// <summary>Field number for the "selected_card_id_list" field.</summary>
+    public const int SelectedCardIdListFieldNumber = 13;
+    private static readonly pb::FieldCodec<uint> _repeated_selectedCardIdList_codec
         = pb::FieldCodec.ForUInt32(106);
-    private readonly pbc::RepeatedField<uint> unk2700MABMPAAGHCJ_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> selectedCardIdList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700MABMPAAGHCJ {
-      get { return unk2700MABMPAAGHCJ_; }
+    public pbc::RepeatedField<uint> SelectedCardIdList {
+      get { return selectedCardIdList_; }
     }
 
     /// <summary>Field number for the "building_points" field.</summary>
@@ -135,15 +135,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_CDOKENJJJMH" field.</summary>
-    public const int Unk2700CDOKENJJJMHFieldNumber = 4;
-    private uint unk2700CDOKENJJJMH_;
+    /// <summary>Field number for the "settle_score" field.</summary>
+    public const int SettleScoreFieldNumber = 4;
+    private uint settleScore_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700CDOKENJJJMH {
-      get { return unk2700CDOKENJJJMH_; }
+    public uint SettleScore {
+      get { return settleScore_; }
       set {
-        unk2700CDOKENJJJMH_ = value;
+        settleScore_ = value;
       }
     }
 
@@ -164,9 +164,9 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (!object.Equals(MysteryInfo, other.MysteryInfo)) return false;
       if (LeftMonsters != other.LeftMonsters) return false;
-      if(!unk2700MABMPAAGHCJ_.Equals(other.unk2700MABMPAAGHCJ_)) return false;
+      if(!selectedCardIdList_.Equals(other.selectedCardIdList_)) return false;
       if (BuildingPoints != other.BuildingPoints) return false;
-      if (Unk2700CDOKENJJJMH != other.Unk2700CDOKENJJJMH) return false;
+      if (SettleScore != other.SettleScore) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -176,9 +176,9 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (mysteryInfo_ != null) hash ^= MysteryInfo.GetHashCode();
       if (LeftMonsters != 0) hash ^= LeftMonsters.GetHashCode();
-      hash ^= unk2700MABMPAAGHCJ_.GetHashCode();
+      hash ^= selectedCardIdList_.GetHashCode();
       if (BuildingPoints != 0) hash ^= BuildingPoints.GetHashCode();
-      if (Unk2700CDOKENJJJMH != 0) hash ^= Unk2700CDOKENJJJMH.GetHashCode();
+      if (SettleScore != 0) hash ^= SettleScore.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -201,9 +201,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(26);
         output.WriteMessage(MysteryInfo);
       }
-      if (Unk2700CDOKENJJJMH != 0) {
+      if (SettleScore != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk2700CDOKENJJJMH);
+        output.WriteUInt32(SettleScore);
       }
       if (BuildingPoints != 0) {
         output.WriteRawTag(56);
@@ -213,7 +213,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(96);
         output.WriteUInt32(LeftMonsters);
       }
-      unk2700MABMPAAGHCJ_.WriteTo(output, _repeated_unk2700MABMPAAGHCJ_codec);
+      selectedCardIdList_.WriteTo(output, _repeated_selectedCardIdList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -228,9 +228,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(26);
         output.WriteMessage(MysteryInfo);
       }
-      if (Unk2700CDOKENJJJMH != 0) {
+      if (SettleScore != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk2700CDOKENJJJMH);
+        output.WriteUInt32(SettleScore);
       }
       if (BuildingPoints != 0) {
         output.WriteRawTag(56);
@@ -240,7 +240,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(96);
         output.WriteUInt32(LeftMonsters);
       }
-      unk2700MABMPAAGHCJ_.WriteTo(ref output, _repeated_unk2700MABMPAAGHCJ_codec);
+      selectedCardIdList_.WriteTo(ref output, _repeated_selectedCardIdList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -257,12 +257,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (LeftMonsters != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LeftMonsters);
       }
-      size += unk2700MABMPAAGHCJ_.CalculateSize(_repeated_unk2700MABMPAAGHCJ_codec);
+      size += selectedCardIdList_.CalculateSize(_repeated_selectedCardIdList_codec);
       if (BuildingPoints != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BuildingPoints);
       }
-      if (Unk2700CDOKENJJJMH != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700CDOKENJJJMH);
+      if (SettleScore != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SettleScore);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -278,19 +278,19 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (other.mysteryInfo_ != null) {
         if (mysteryInfo_ == null) {
-          MysteryInfo = new global::Weedwacker.Shared.Network.Proto.Unk2700_IBEKDNOGMLA();
+          MysteryInfo = new global::Weedwacker.Shared.Network.Proto.IrodoriChessMysteryInfo();
         }
         MysteryInfo.MergeFrom(other.MysteryInfo);
       }
       if (other.LeftMonsters != 0) {
         LeftMonsters = other.LeftMonsters;
       }
-      unk2700MABMPAAGHCJ_.Add(other.unk2700MABMPAAGHCJ_);
+      selectedCardIdList_.Add(other.selectedCardIdList_);
       if (other.BuildingPoints != 0) {
         BuildingPoints = other.BuildingPoints;
       }
-      if (other.Unk2700CDOKENJJJMH != 0) {
-        Unk2700CDOKENJJJMH = other.Unk2700CDOKENJJJMH;
+      if (other.SettleScore != 0) {
+        SettleScore = other.SettleScore;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -309,13 +309,13 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 26: {
             if (mysteryInfo_ == null) {
-              MysteryInfo = new global::Weedwacker.Shared.Network.Proto.Unk2700_IBEKDNOGMLA();
+              MysteryInfo = new global::Weedwacker.Shared.Network.Proto.IrodoriChessMysteryInfo();
             }
             input.ReadMessage(MysteryInfo);
             break;
           }
           case 32: {
-            Unk2700CDOKENJJJMH = input.ReadUInt32();
+            SettleScore = input.ReadUInt32();
             break;
           }
           case 56: {
@@ -328,7 +328,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 106:
           case 104: {
-            unk2700MABMPAAGHCJ_.AddEntriesFrom(input, _repeated_unk2700MABMPAAGHCJ_codec);
+            selectedCardIdList_.AddEntriesFrom(input, _repeated_selectedCardIdList_codec);
             break;
           }
         }
@@ -348,13 +348,13 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 26: {
             if (mysteryInfo_ == null) {
-              MysteryInfo = new global::Weedwacker.Shared.Network.Proto.Unk2700_IBEKDNOGMLA();
+              MysteryInfo = new global::Weedwacker.Shared.Network.Proto.IrodoriChessMysteryInfo();
             }
             input.ReadMessage(MysteryInfo);
             break;
           }
           case 32: {
-            Unk2700CDOKENJJJMH = input.ReadUInt32();
+            SettleScore = input.ReadUInt32();
             break;
           }
           case 56: {
@@ -367,7 +367,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 106:
           case 104: {
-            unk2700MABMPAAGHCJ_.AddEntriesFrom(ref input, _repeated_unk2700MABMPAAGHCJ_codec);
+            selectedCardIdList_.AddEntriesFrom(ref input, _repeated_selectedCardIdList_codec);
             break;
           }
         }

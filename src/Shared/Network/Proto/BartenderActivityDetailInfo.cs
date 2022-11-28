@@ -24,19 +24,19 @@ namespace Weedwacker.Shared.Network.Proto {
     static BartenderActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFCYXJ0ZW5kZXJBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aGVVuazI3MDBf",
-            "S0pPREhGTUhNTkMucHJvdG8aGVVuazI3MDBfTEJJREJHTEdLQ0oucHJvdG8i",
-            "9QEKG0JhcnRlbmRlckFjdGl2aXR5RGV0YWlsSW5mbxIbChNVbmsyNzAwX0JN",
-            "T0FJSk1IUEdBGAMgAygNEhsKE1VuazI3MDBfSklDQUFFTVBOQkMYDSABKAgS",
-            "GQoRaXNfY29udGVudF9jbG9zZWQYBiABKAgSMQoTVW5rMjcwMF9NRUdPUEtC",
-            "RUhPSBgFIAMoCzIULlVuazI3MDBfTEJJREJHTEdLQ0oSGwoTVW5rMjcwMF9B",
-            "SUtGTU1MRklKSRgOIAMoDRIxChNVbmsyNzAwX0RBR0dBRUNCREVHGAIgAygL",
-            "MhQuVW5rMjcwMF9LSk9ESEZNSE1OQ0IiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "CiFCYXJ0ZW5kZXJBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aGEJhcnRlbmRl",
+            "ckxldmVsSW5mby5wcm90bxoXQmFydGVuZGVyVGFza0luZm8ucHJvdG8i7QEK",
+            "G0JhcnRlbmRlckFjdGl2aXR5RGV0YWlsSW5mbxIYChB1bmxvY2tfaXRlbV9s",
+            "aXN0GAMgAygNEh4KFmlzX2RldmVsb3BfbW9kdWxlX29wZW4YDSABKAgSGQoR",
+            "aXNfY29udGVudF9jbG9zZWQYBiABKAgSLgoRdW5sb2NrX2xldmVsX2xpc3QY",
+            "BSADKAsyEy5CYXJ0ZW5kZXJMZXZlbEluZm8SGwoTdW5sb2NrX2Zvcm11bGFf",
+            "bGlzdBgOIAMoDRIsChB1bmxvY2tfdGFza19saXN0GAIgAygLMhIuQmFydGVu",
+            "ZGVyVGFza0luZm9CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2700KJODHFMHMNCReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700LBIDBGLGKCJReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.BartenderLevelInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BartenderTaskInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.BartenderActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.BartenderActivityDetailInfo.Parser, new[]{ "Unk2700BMOAIJMHPGA", "Unk2700JICAAEMPNBC", "IsContentClosed", "Unk2700MEGOPKBEHOH", "Unk2700AIKFMMLFIJI", "Unk2700DAGGAECBDEG" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.BartenderActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.BartenderActivityDetailInfo.Parser, new[]{ "UnlockItemList", "IsDevelopModuleOpen", "IsContentClosed", "UnlockLevelList", "UnlockFormulaList", "UnlockTaskList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,12 +77,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BartenderActivityDetailInfo(BartenderActivityDetailInfo other) : this() {
-      unk2700BMOAIJMHPGA_ = other.unk2700BMOAIJMHPGA_.Clone();
-      unk2700JICAAEMPNBC_ = other.unk2700JICAAEMPNBC_;
+      unlockItemList_ = other.unlockItemList_.Clone();
+      isDevelopModuleOpen_ = other.isDevelopModuleOpen_;
       isContentClosed_ = other.isContentClosed_;
-      unk2700MEGOPKBEHOH_ = other.unk2700MEGOPKBEHOH_.Clone();
-      unk2700AIKFMMLFIJI_ = other.unk2700AIKFMMLFIJI_.Clone();
-      unk2700DAGGAECBDEG_ = other.unk2700DAGGAECBDEG_.Clone();
+      unlockLevelList_ = other.unlockLevelList_.Clone();
+      unlockFormulaList_ = other.unlockFormulaList_.Clone();
+      unlockTaskList_ = other.unlockTaskList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -92,26 +92,26 @@ namespace Weedwacker.Shared.Network.Proto {
       return new BartenderActivityDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_BMOAIJMHPGA" field.</summary>
-    public const int Unk2700BMOAIJMHPGAFieldNumber = 3;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700BMOAIJMHPGA_codec
+    /// <summary>Field number for the "unlock_item_list" field.</summary>
+    public const int UnlockItemListFieldNumber = 3;
+    private static readonly pb::FieldCodec<uint> _repeated_unlockItemList_codec
         = pb::FieldCodec.ForUInt32(26);
-    private readonly pbc::RepeatedField<uint> unk2700BMOAIJMHPGA_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> unlockItemList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700BMOAIJMHPGA {
-      get { return unk2700BMOAIJMHPGA_; }
+    public pbc::RepeatedField<uint> UnlockItemList {
+      get { return unlockItemList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_JICAAEMPNBC" field.</summary>
-    public const int Unk2700JICAAEMPNBCFieldNumber = 13;
-    private bool unk2700JICAAEMPNBC_;
+    /// <summary>Field number for the "is_develop_module_open" field.</summary>
+    public const int IsDevelopModuleOpenFieldNumber = 13;
+    private bool isDevelopModuleOpen_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700JICAAEMPNBC {
-      get { return unk2700JICAAEMPNBC_; }
+    public bool IsDevelopModuleOpen {
+      get { return isDevelopModuleOpen_; }
       set {
-        unk2700JICAAEMPNBC_ = value;
+        isDevelopModuleOpen_ = value;
       }
     }
 
@@ -127,37 +127,37 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_MEGOPKBEHOH" field.</summary>
-    public const int Unk2700MEGOPKBEHOHFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_LBIDBGLGKCJ> _repeated_unk2700MEGOPKBEHOH_codec
-        = pb::FieldCodec.ForMessage(42, global::Weedwacker.Shared.Network.Proto.Unk2700_LBIDBGLGKCJ.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_LBIDBGLGKCJ> unk2700MEGOPKBEHOH_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_LBIDBGLGKCJ>();
+    /// <summary>Field number for the "unlock_level_list" field.</summary>
+    public const int UnlockLevelListFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.BartenderLevelInfo> _repeated_unlockLevelList_codec
+        = pb::FieldCodec.ForMessage(42, global::Weedwacker.Shared.Network.Proto.BartenderLevelInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BartenderLevelInfo> unlockLevelList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BartenderLevelInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_LBIDBGLGKCJ> Unk2700MEGOPKBEHOH {
-      get { return unk2700MEGOPKBEHOH_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BartenderLevelInfo> UnlockLevelList {
+      get { return unlockLevelList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_AIKFMMLFIJI" field.</summary>
-    public const int Unk2700AIKFMMLFIJIFieldNumber = 14;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700AIKFMMLFIJI_codec
+    /// <summary>Field number for the "unlock_formula_list" field.</summary>
+    public const int UnlockFormulaListFieldNumber = 14;
+    private static readonly pb::FieldCodec<uint> _repeated_unlockFormulaList_codec
         = pb::FieldCodec.ForUInt32(114);
-    private readonly pbc::RepeatedField<uint> unk2700AIKFMMLFIJI_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> unlockFormulaList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700AIKFMMLFIJI {
-      get { return unk2700AIKFMMLFIJI_; }
+    public pbc::RepeatedField<uint> UnlockFormulaList {
+      get { return unlockFormulaList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_DAGGAECBDEG" field.</summary>
-    public const int Unk2700DAGGAECBDEGFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_KJODHFMHMNC> _repeated_unk2700DAGGAECBDEG_codec
-        = pb::FieldCodec.ForMessage(18, global::Weedwacker.Shared.Network.Proto.Unk2700_KJODHFMHMNC.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_KJODHFMHMNC> unk2700DAGGAECBDEG_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_KJODHFMHMNC>();
+    /// <summary>Field number for the "unlock_task_list" field.</summary>
+    public const int UnlockTaskListFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.BartenderTaskInfo> _repeated_unlockTaskList_codec
+        = pb::FieldCodec.ForMessage(18, global::Weedwacker.Shared.Network.Proto.BartenderTaskInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BartenderTaskInfo> unlockTaskList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BartenderTaskInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_KJODHFMHMNC> Unk2700DAGGAECBDEG {
-      get { return unk2700DAGGAECBDEG_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BartenderTaskInfo> UnlockTaskList {
+      get { return unlockTaskList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -175,12 +175,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2700BMOAIJMHPGA_.Equals(other.unk2700BMOAIJMHPGA_)) return false;
-      if (Unk2700JICAAEMPNBC != other.Unk2700JICAAEMPNBC) return false;
+      if(!unlockItemList_.Equals(other.unlockItemList_)) return false;
+      if (IsDevelopModuleOpen != other.IsDevelopModuleOpen) return false;
       if (IsContentClosed != other.IsContentClosed) return false;
-      if(!unk2700MEGOPKBEHOH_.Equals(other.unk2700MEGOPKBEHOH_)) return false;
-      if(!unk2700AIKFMMLFIJI_.Equals(other.unk2700AIKFMMLFIJI_)) return false;
-      if(!unk2700DAGGAECBDEG_.Equals(other.unk2700DAGGAECBDEG_)) return false;
+      if(!unlockLevelList_.Equals(other.unlockLevelList_)) return false;
+      if(!unlockFormulaList_.Equals(other.unlockFormulaList_)) return false;
+      if(!unlockTaskList_.Equals(other.unlockTaskList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -188,12 +188,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2700BMOAIJMHPGA_.GetHashCode();
-      if (Unk2700JICAAEMPNBC != false) hash ^= Unk2700JICAAEMPNBC.GetHashCode();
+      hash ^= unlockItemList_.GetHashCode();
+      if (IsDevelopModuleOpen != false) hash ^= IsDevelopModuleOpen.GetHashCode();
       if (IsContentClosed != false) hash ^= IsContentClosed.GetHashCode();
-      hash ^= unk2700MEGOPKBEHOH_.GetHashCode();
-      hash ^= unk2700AIKFMMLFIJI_.GetHashCode();
-      hash ^= unk2700DAGGAECBDEG_.GetHashCode();
+      hash ^= unlockLevelList_.GetHashCode();
+      hash ^= unlockFormulaList_.GetHashCode();
+      hash ^= unlockTaskList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -212,18 +212,18 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk2700DAGGAECBDEG_.WriteTo(output, _repeated_unk2700DAGGAECBDEG_codec);
-      unk2700BMOAIJMHPGA_.WriteTo(output, _repeated_unk2700BMOAIJMHPGA_codec);
-      unk2700MEGOPKBEHOH_.WriteTo(output, _repeated_unk2700MEGOPKBEHOH_codec);
+      unlockTaskList_.WriteTo(output, _repeated_unlockTaskList_codec);
+      unlockItemList_.WriteTo(output, _repeated_unlockItemList_codec);
+      unlockLevelList_.WriteTo(output, _repeated_unlockLevelList_codec);
       if (IsContentClosed != false) {
         output.WriteRawTag(48);
         output.WriteBool(IsContentClosed);
       }
-      if (Unk2700JICAAEMPNBC != false) {
+      if (IsDevelopModuleOpen != false) {
         output.WriteRawTag(104);
-        output.WriteBool(Unk2700JICAAEMPNBC);
+        output.WriteBool(IsDevelopModuleOpen);
       }
-      unk2700AIKFMMLFIJI_.WriteTo(output, _repeated_unk2700AIKFMMLFIJI_codec);
+      unlockFormulaList_.WriteTo(output, _repeated_unlockFormulaList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -234,18 +234,18 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk2700DAGGAECBDEG_.WriteTo(ref output, _repeated_unk2700DAGGAECBDEG_codec);
-      unk2700BMOAIJMHPGA_.WriteTo(ref output, _repeated_unk2700BMOAIJMHPGA_codec);
-      unk2700MEGOPKBEHOH_.WriteTo(ref output, _repeated_unk2700MEGOPKBEHOH_codec);
+      unlockTaskList_.WriteTo(ref output, _repeated_unlockTaskList_codec);
+      unlockItemList_.WriteTo(ref output, _repeated_unlockItemList_codec);
+      unlockLevelList_.WriteTo(ref output, _repeated_unlockLevelList_codec);
       if (IsContentClosed != false) {
         output.WriteRawTag(48);
         output.WriteBool(IsContentClosed);
       }
-      if (Unk2700JICAAEMPNBC != false) {
+      if (IsDevelopModuleOpen != false) {
         output.WriteRawTag(104);
-        output.WriteBool(Unk2700JICAAEMPNBC);
+        output.WriteBool(IsDevelopModuleOpen);
       }
-      unk2700AIKFMMLFIJI_.WriteTo(ref output, _repeated_unk2700AIKFMMLFIJI_codec);
+      unlockFormulaList_.WriteTo(ref output, _repeated_unlockFormulaList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -256,16 +256,16 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2700BMOAIJMHPGA_.CalculateSize(_repeated_unk2700BMOAIJMHPGA_codec);
-      if (Unk2700JICAAEMPNBC != false) {
+      size += unlockItemList_.CalculateSize(_repeated_unlockItemList_codec);
+      if (IsDevelopModuleOpen != false) {
         size += 1 + 1;
       }
       if (IsContentClosed != false) {
         size += 1 + 1;
       }
-      size += unk2700MEGOPKBEHOH_.CalculateSize(_repeated_unk2700MEGOPKBEHOH_codec);
-      size += unk2700AIKFMMLFIJI_.CalculateSize(_repeated_unk2700AIKFMMLFIJI_codec);
-      size += unk2700DAGGAECBDEG_.CalculateSize(_repeated_unk2700DAGGAECBDEG_codec);
+      size += unlockLevelList_.CalculateSize(_repeated_unlockLevelList_codec);
+      size += unlockFormulaList_.CalculateSize(_repeated_unlockFormulaList_codec);
+      size += unlockTaskList_.CalculateSize(_repeated_unlockTaskList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -278,16 +278,16 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2700BMOAIJMHPGA_.Add(other.unk2700BMOAIJMHPGA_);
-      if (other.Unk2700JICAAEMPNBC != false) {
-        Unk2700JICAAEMPNBC = other.Unk2700JICAAEMPNBC;
+      unlockItemList_.Add(other.unlockItemList_);
+      if (other.IsDevelopModuleOpen != false) {
+        IsDevelopModuleOpen = other.IsDevelopModuleOpen;
       }
       if (other.IsContentClosed != false) {
         IsContentClosed = other.IsContentClosed;
       }
-      unk2700MEGOPKBEHOH_.Add(other.unk2700MEGOPKBEHOH_);
-      unk2700AIKFMMLFIJI_.Add(other.unk2700AIKFMMLFIJI_);
-      unk2700DAGGAECBDEG_.Add(other.unk2700DAGGAECBDEG_);
+      unlockLevelList_.Add(other.unlockLevelList_);
+      unlockFormulaList_.Add(other.unlockFormulaList_);
+      unlockTaskList_.Add(other.unlockTaskList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -304,16 +304,16 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 18: {
-            unk2700DAGGAECBDEG_.AddEntriesFrom(input, _repeated_unk2700DAGGAECBDEG_codec);
+            unlockTaskList_.AddEntriesFrom(input, _repeated_unlockTaskList_codec);
             break;
           }
           case 26:
           case 24: {
-            unk2700BMOAIJMHPGA_.AddEntriesFrom(input, _repeated_unk2700BMOAIJMHPGA_codec);
+            unlockItemList_.AddEntriesFrom(input, _repeated_unlockItemList_codec);
             break;
           }
           case 42: {
-            unk2700MEGOPKBEHOH_.AddEntriesFrom(input, _repeated_unk2700MEGOPKBEHOH_codec);
+            unlockLevelList_.AddEntriesFrom(input, _repeated_unlockLevelList_codec);
             break;
           }
           case 48: {
@@ -321,12 +321,12 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk2700JICAAEMPNBC = input.ReadBool();
+            IsDevelopModuleOpen = input.ReadBool();
             break;
           }
           case 114:
           case 112: {
-            unk2700AIKFMMLFIJI_.AddEntriesFrom(input, _repeated_unk2700AIKFMMLFIJI_codec);
+            unlockFormulaList_.AddEntriesFrom(input, _repeated_unlockFormulaList_codec);
             break;
           }
         }
@@ -345,16 +345,16 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 18: {
-            unk2700DAGGAECBDEG_.AddEntriesFrom(ref input, _repeated_unk2700DAGGAECBDEG_codec);
+            unlockTaskList_.AddEntriesFrom(ref input, _repeated_unlockTaskList_codec);
             break;
           }
           case 26:
           case 24: {
-            unk2700BMOAIJMHPGA_.AddEntriesFrom(ref input, _repeated_unk2700BMOAIJMHPGA_codec);
+            unlockItemList_.AddEntriesFrom(ref input, _repeated_unlockItemList_codec);
             break;
           }
           case 42: {
-            unk2700MEGOPKBEHOH_.AddEntriesFrom(ref input, _repeated_unk2700MEGOPKBEHOH_codec);
+            unlockLevelList_.AddEntriesFrom(ref input, _repeated_unlockLevelList_codec);
             break;
           }
           case 48: {
@@ -362,12 +362,12 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk2700JICAAEMPNBC = input.ReadBool();
+            IsDevelopModuleOpen = input.ReadBool();
             break;
           }
           case 114:
           case 112: {
-            unk2700AIKFMMLFIJI_.AddEntriesFrom(ref input, _repeated_unk2700AIKFMMLFIJI_codec);
+            unlockFormulaList_.AddEntriesFrom(ref input, _repeated_unlockFormulaList_codec);
             break;
           }
         }

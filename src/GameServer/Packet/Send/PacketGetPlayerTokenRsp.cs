@@ -62,8 +62,8 @@ namespace Weedwacker.GameServer.Packet.Send
                 //ClientVersionRandomKey = "c25-314dd05b0b5f",
                 RegPlatform = 3,
                 ClientIpStr = GameServer.Configuration.Server.AccessAddress,
-                EncryptedSeed = encryptedSeed,
-                SeedSignature = encryptedSeedSign
+                ServerRandKey = encryptedSeed,
+                Sign = encryptedSeedSign
             };
 
             Data = p.ToByteArray();

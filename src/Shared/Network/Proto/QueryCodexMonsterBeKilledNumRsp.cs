@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static QueryCodexMonsterBeKilledNumRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiVRdWVyeUNvZGV4TW9uc3RlckJlS2lsbGVkTnVtUnNwLnByb3RvIoIBCh9R",
+            "CiVRdWVyeUNvZGV4TW9uc3RlckJlS2lsbGVkTnVtUnNwLnByb3RvIoMBCh9R",
             "dWVyeUNvZGV4TW9uc3RlckJlS2lsbGVkTnVtUnNwEhUKDWNvZGV4X2lkX2xp",
-            "c3QYBCADKA0SGwoTVW5rMjcwMF9NS09CTUdHUE5NSRgGIAMoDRIaChJiZV9r",
-            "aWxsZWRfbnVtX2xpc3QYDCADKA0SDwoHcmV0Y29kZRgFIAEoBUIiqgIfV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "c3QYBCADKA0SHAoUYmVfY2FwdHVyZWRfbnVtX2xpc3QYBiADKA0SGgoSYmVf",
+            "a2lsbGVkX251bV9saXN0GAwgAygNEg8KB3JldGNvZGUYBSABKAVCIqoCH1dl",
+            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.QueryCodexMonsterBeKilledNumRsp), global::Weedwacker.Shared.Network.Proto.QueryCodexMonsterBeKilledNumRsp.Parser, new[]{ "CodexIdList", "Unk2700MKOBMGGPNMI", "BeKilledNumList", "Retcode" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.QueryCodexMonsterBeKilledNumRsp), global::Weedwacker.Shared.Network.Proto.QueryCodexMonsterBeKilledNumRsp.Parser, new[]{ "CodexIdList", "BeCapturedNumList", "BeKilledNumList", "Retcode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,7 +79,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public QueryCodexMonsterBeKilledNumRsp(QueryCodexMonsterBeKilledNumRsp other) : this() {
       codexIdList_ = other.codexIdList_.Clone();
-      unk2700MKOBMGGPNMI_ = other.unk2700MKOBMGGPNMI_.Clone();
+      beCapturedNumList_ = other.beCapturedNumList_.Clone();
       beKilledNumList_ = other.beKilledNumList_.Clone();
       retcode_ = other.retcode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -102,15 +102,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return codexIdList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_MKOBMGGPNMI" field.</summary>
-    public const int Unk2700MKOBMGGPNMIFieldNumber = 6;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700MKOBMGGPNMI_codec
+    /// <summary>Field number for the "be_captured_num_list" field.</summary>
+    public const int BeCapturedNumListFieldNumber = 6;
+    private static readonly pb::FieldCodec<uint> _repeated_beCapturedNumList_codec
         = pb::FieldCodec.ForUInt32(50);
-    private readonly pbc::RepeatedField<uint> unk2700MKOBMGGPNMI_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> beCapturedNumList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700MKOBMGGPNMI {
-      get { return unk2700MKOBMGGPNMI_; }
+    public pbc::RepeatedField<uint> BeCapturedNumList {
+      get { return beCapturedNumList_; }
     }
 
     /// <summary>Field number for the "be_killed_num_list" field.</summary>
@@ -152,7 +152,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if(!codexIdList_.Equals(other.codexIdList_)) return false;
-      if(!unk2700MKOBMGGPNMI_.Equals(other.unk2700MKOBMGGPNMI_)) return false;
+      if(!beCapturedNumList_.Equals(other.beCapturedNumList_)) return false;
       if(!beKilledNumList_.Equals(other.beKilledNumList_)) return false;
       if (Retcode != other.Retcode) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -163,7 +163,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= codexIdList_.GetHashCode();
-      hash ^= unk2700MKOBMGGPNMI_.GetHashCode();
+      hash ^= beCapturedNumList_.GetHashCode();
       hash ^= beKilledNumList_.GetHashCode();
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
       if (_unknownFields != null) {
@@ -189,7 +189,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteInt32(Retcode);
       }
-      unk2700MKOBMGGPNMI_.WriteTo(output, _repeated_unk2700MKOBMGGPNMI_codec);
+      beCapturedNumList_.WriteTo(output, _repeated_beCapturedNumList_codec);
       beKilledNumList_.WriteTo(output, _repeated_beKilledNumList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -206,7 +206,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteInt32(Retcode);
       }
-      unk2700MKOBMGGPNMI_.WriteTo(ref output, _repeated_unk2700MKOBMGGPNMI_codec);
+      beCapturedNumList_.WriteTo(ref output, _repeated_beCapturedNumList_codec);
       beKilledNumList_.WriteTo(ref output, _repeated_beKilledNumList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -219,7 +219,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public int CalculateSize() {
       int size = 0;
       size += codexIdList_.CalculateSize(_repeated_codexIdList_codec);
-      size += unk2700MKOBMGGPNMI_.CalculateSize(_repeated_unk2700MKOBMGGPNMI_codec);
+      size += beCapturedNumList_.CalculateSize(_repeated_beCapturedNumList_codec);
       size += beKilledNumList_.CalculateSize(_repeated_beKilledNumList_codec);
       if (Retcode != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
@@ -237,7 +237,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return;
       }
       codexIdList_.Add(other.codexIdList_);
-      unk2700MKOBMGGPNMI_.Add(other.unk2700MKOBMGGPNMI_);
+      beCapturedNumList_.Add(other.beCapturedNumList_);
       beKilledNumList_.Add(other.beKilledNumList_);
       if (other.Retcode != 0) {
         Retcode = other.Retcode;
@@ -268,7 +268,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 50:
           case 48: {
-            unk2700MKOBMGGPNMI_.AddEntriesFrom(input, _repeated_unk2700MKOBMGGPNMI_codec);
+            beCapturedNumList_.AddEntriesFrom(input, _repeated_beCapturedNumList_codec);
             break;
           }
           case 98:
@@ -302,7 +302,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 50:
           case 48: {
-            unk2700MKOBMGGPNMI_.AddEntriesFrom(ref input, _repeated_unk2700MKOBMGGPNMI_codec);
+            beCapturedNumList_.AddEntriesFrom(ref input, _repeated_beCapturedNumList_codec);
             break;
           }
           case 98:

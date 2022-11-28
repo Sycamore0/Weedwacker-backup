@@ -25,15 +25,15 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChlUb3dlckN1ckxldmVsUmVjb3JkLnByb3RvGg9Ub3dlclRlYW0ucHJvdG8i",
-            "rgEKE1Rvd2VyQ3VyTGV2ZWxSZWNvcmQSIwoPdG93ZXJfdGVhbV9saXN0GAgg",
+            "qAEKE1Rvd2VyQ3VyTGV2ZWxSZWNvcmQSIwoPdG93ZXJfdGVhbV9saXN0GAgg",
             "AygLMgouVG93ZXJUZWFtEhAKCGlzX2VtcHR5GAYgASgIEhQKDGJ1ZmZfaWRf",
-            "bGlzdBgEIAMoDRIbChNVbmsyNzAwX0NCUE5QRUJNUE9IGAIgASgIEhcKD2N1",
-            "cl9sZXZlbF9pbmRleBgBIAEoDRIUCgxjdXJfZmxvb3JfaWQYDyABKA1CIqoC",
-            "H1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "bGlzdBgEIAMoDRIVCg1pc191cHBlcl9wYXJ0GAIgASgIEhcKD2N1cl9sZXZl",
+            "bF9pbmRleBgBIAEoDRIUCgxjdXJfZmxvb3JfaWQYDyABKA1CIqoCH1dlZWR3",
+            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.TowerTeamReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TowerCurLevelRecord), global::Weedwacker.Shared.Network.Proto.TowerCurLevelRecord.Parser, new[]{ "TowerTeamList", "IsEmpty", "BuffIdList", "Unk2700CBPNPEBMPOH", "CurLevelIndex", "CurFloorId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TowerCurLevelRecord), global::Weedwacker.Shared.Network.Proto.TowerCurLevelRecord.Parser, new[]{ "TowerTeamList", "IsEmpty", "BuffIdList", "IsUpperPart", "CurLevelIndex", "CurFloorId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,7 +77,7 @@ namespace Weedwacker.Shared.Network.Proto {
       towerTeamList_ = other.towerTeamList_.Clone();
       isEmpty_ = other.isEmpty_;
       buffIdList_ = other.buffIdList_.Clone();
-      unk2700CBPNPEBMPOH_ = other.unk2700CBPNPEBMPOH_;
+      isUpperPart_ = other.isUpperPart_;
       curLevelIndex_ = other.curLevelIndex_;
       curFloorId_ = other.curFloorId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -123,15 +123,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return buffIdList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_CBPNPEBMPOH" field.</summary>
-    public const int Unk2700CBPNPEBMPOHFieldNumber = 2;
-    private bool unk2700CBPNPEBMPOH_;
+    /// <summary>Field number for the "is_upper_part" field.</summary>
+    public const int IsUpperPartFieldNumber = 2;
+    private bool isUpperPart_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700CBPNPEBMPOH {
-      get { return unk2700CBPNPEBMPOH_; }
+    public bool IsUpperPart {
+      get { return isUpperPart_; }
       set {
-        unk2700CBPNPEBMPOH_ = value;
+        isUpperPart_ = value;
       }
     }
 
@@ -177,7 +177,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if(!towerTeamList_.Equals(other.towerTeamList_)) return false;
       if (IsEmpty != other.IsEmpty) return false;
       if(!buffIdList_.Equals(other.buffIdList_)) return false;
-      if (Unk2700CBPNPEBMPOH != other.Unk2700CBPNPEBMPOH) return false;
+      if (IsUpperPart != other.IsUpperPart) return false;
       if (CurLevelIndex != other.CurLevelIndex) return false;
       if (CurFloorId != other.CurFloorId) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -190,7 +190,7 @@ namespace Weedwacker.Shared.Network.Proto {
       hash ^= towerTeamList_.GetHashCode();
       if (IsEmpty != false) hash ^= IsEmpty.GetHashCode();
       hash ^= buffIdList_.GetHashCode();
-      if (Unk2700CBPNPEBMPOH != false) hash ^= Unk2700CBPNPEBMPOH.GetHashCode();
+      if (IsUpperPart != false) hash ^= IsUpperPart.GetHashCode();
       if (CurLevelIndex != 0) hash ^= CurLevelIndex.GetHashCode();
       if (CurFloorId != 0) hash ^= CurFloorId.GetHashCode();
       if (_unknownFields != null) {
@@ -215,9 +215,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(CurLevelIndex);
       }
-      if (Unk2700CBPNPEBMPOH != false) {
+      if (IsUpperPart != false) {
         output.WriteRawTag(16);
-        output.WriteBool(Unk2700CBPNPEBMPOH);
+        output.WriteBool(IsUpperPart);
       }
       buffIdList_.WriteTo(output, _repeated_buffIdList_codec);
       if (IsEmpty != false) {
@@ -243,9 +243,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(CurLevelIndex);
       }
-      if (Unk2700CBPNPEBMPOH != false) {
+      if (IsUpperPart != false) {
         output.WriteRawTag(16);
-        output.WriteBool(Unk2700CBPNPEBMPOH);
+        output.WriteBool(IsUpperPart);
       }
       buffIdList_.WriteTo(ref output, _repeated_buffIdList_codec);
       if (IsEmpty != false) {
@@ -272,7 +272,7 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + 1;
       }
       size += buffIdList_.CalculateSize(_repeated_buffIdList_codec);
-      if (Unk2700CBPNPEBMPOH != false) {
+      if (IsUpperPart != false) {
         size += 1 + 1;
       }
       if (CurLevelIndex != 0) {
@@ -298,8 +298,8 @@ namespace Weedwacker.Shared.Network.Proto {
         IsEmpty = other.IsEmpty;
       }
       buffIdList_.Add(other.buffIdList_);
-      if (other.Unk2700CBPNPEBMPOH != false) {
-        Unk2700CBPNPEBMPOH = other.Unk2700CBPNPEBMPOH;
+      if (other.IsUpperPart != false) {
+        IsUpperPart = other.IsUpperPart;
       }
       if (other.CurLevelIndex != 0) {
         CurLevelIndex = other.CurLevelIndex;
@@ -327,7 +327,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 16: {
-            Unk2700CBPNPEBMPOH = input.ReadBool();
+            IsUpperPart = input.ReadBool();
             break;
           }
           case 34:
@@ -367,7 +367,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 16: {
-            Unk2700CBPNPEBMPOH = input.ReadBool();
+            IsUpperPart = input.ReadBool();
             break;
           }
           case 34:

@@ -24,18 +24,19 @@ namespace Weedwacker.Shared.Network.Proto {
     static SummerTimeV2DetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxTdW1tZXJUaW1lVjJEZXRhaWxJbmZvLnByb3RvGhlVbmsyODAwX0NHT0RG",
-            "RERBTEFHLnByb3RvGhlVbmsyODAwX0NHUE5MQk5NUENNLnByb3RvItMBChZT",
-            "dW1tZXJUaW1lVjJEZXRhaWxJbmZvEjEKE1VuazI4MDBfUE5CTENQSUJLUE8Y",
-            "DSADKAsyFC5VbmsyODAwX0NHT0RGRERBTEFHEhsKE1VuazI4MDBfSERFRkpL",
-            "R0RORUgYCiABKA0SGQoRaXNfY29udGVudF9jbG9zZWQYBCABKAgSGwoTVW5r",
-            "MjgwMF9FTEhCQ05QS09KRxgFIAEoDRIxChNVbmsyODAwX01QS0xKSklFSElC",
-            "GA8gAygLMhQuVW5rMjgwMF9DR1BOTEJOTVBDTUIiqgIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "ChxTdW1tZXJUaW1lVjJEZXRhaWxJbmZvLnByb3RvGh9TdW1tZXJUaW1lVjJC",
+            "b2F0U3RhZ2VJbmZvLnByb3RvGiJTdW1tZXJUaW1lVjJEdW5nZW9uU3RhZ2VJ",
+            "bmZvLnByb3RvIusBChZTdW1tZXJUaW1lVjJEZXRhaWxJbmZvEj4KF2R1bmdl",
+            "b25fc3RhZ2VfaW5mb19saXN0GA0gAygLMh0uU3VtbWVyVGltZVYyRHVuZ2Vv",
+            "blN0YWdlSW5mbxIgChhjdXJfZHVuZ2Vvbl9yZXdhcmRfbGltaXQYCiABKA0S",
+            "GQoRaXNfY29udGVudF9jbG9zZWQYBCABKAgSGgoSdGFrZW5fcmV3YXJkX2Nv",
+            "dW50GAUgASgNEjgKFGJvYXRfc3RhZ2VfaW5mb19saXN0GA8gAygLMhouU3Vt",
+            "bWVyVGltZVYyQm9hdFN0YWdlSW5mb0IiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2800CGODFDDALAGReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2800CGPNLBNMPCMReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.SummerTimeV2BoatStageInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SummerTimeV2DungeonStageInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SummerTimeV2DetailInfo), global::Weedwacker.Shared.Network.Proto.SummerTimeV2DetailInfo.Parser, new[]{ "Unk2800PNBLCPIBKPO", "Unk2800HDEFJKGDNEH", "IsContentClosed", "Unk2800ELHBCNPKOJG", "Unk2800MPKLJJIEHIB" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SummerTimeV2DetailInfo), global::Weedwacker.Shared.Network.Proto.SummerTimeV2DetailInfo.Parser, new[]{ "DungeonStageInfoList", "CurDungeonRewardLimit", "IsContentClosed", "TakenRewardCount", "BoatStageInfoList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,11 +77,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SummerTimeV2DetailInfo(SummerTimeV2DetailInfo other) : this() {
-      unk2800PNBLCPIBKPO_ = other.unk2800PNBLCPIBKPO_.Clone();
-      unk2800HDEFJKGDNEH_ = other.unk2800HDEFJKGDNEH_;
+      dungeonStageInfoList_ = other.dungeonStageInfoList_.Clone();
+      curDungeonRewardLimit_ = other.curDungeonRewardLimit_;
       isContentClosed_ = other.isContentClosed_;
-      unk2800ELHBCNPKOJG_ = other.unk2800ELHBCNPKOJG_;
-      unk2800MPKLJJIEHIB_ = other.unk2800MPKLJJIEHIB_.Clone();
+      takenRewardCount_ = other.takenRewardCount_;
+      boatStageInfoList_ = other.boatStageInfoList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -90,26 +91,26 @@ namespace Weedwacker.Shared.Network.Proto {
       return new SummerTimeV2DetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2800_PNBLCPIBKPO" field.</summary>
-    public const int Unk2800PNBLCPIBKPOFieldNumber = 13;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2800_CGODFDDALAG> _repeated_unk2800PNBLCPIBKPO_codec
-        = pb::FieldCodec.ForMessage(106, global::Weedwacker.Shared.Network.Proto.Unk2800_CGODFDDALAG.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_CGODFDDALAG> unk2800PNBLCPIBKPO_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_CGODFDDALAG>();
+    /// <summary>Field number for the "dungeon_stage_info_list" field.</summary>
+    public const int DungeonStageInfoListFieldNumber = 13;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.SummerTimeV2DungeonStageInfo> _repeated_dungeonStageInfoList_codec
+        = pb::FieldCodec.ForMessage(106, global::Weedwacker.Shared.Network.Proto.SummerTimeV2DungeonStageInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SummerTimeV2DungeonStageInfo> dungeonStageInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SummerTimeV2DungeonStageInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_CGODFDDALAG> Unk2800PNBLCPIBKPO {
-      get { return unk2800PNBLCPIBKPO_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SummerTimeV2DungeonStageInfo> DungeonStageInfoList {
+      get { return dungeonStageInfoList_; }
     }
 
-    /// <summary>Field number for the "Unk2800_HDEFJKGDNEH" field.</summary>
-    public const int Unk2800HDEFJKGDNEHFieldNumber = 10;
-    private uint unk2800HDEFJKGDNEH_;
+    /// <summary>Field number for the "cur_dungeon_reward_limit" field.</summary>
+    public const int CurDungeonRewardLimitFieldNumber = 10;
+    private uint curDungeonRewardLimit_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800HDEFJKGDNEH {
-      get { return unk2800HDEFJKGDNEH_; }
+    public uint CurDungeonRewardLimit {
+      get { return curDungeonRewardLimit_; }
       set {
-        unk2800HDEFJKGDNEH_ = value;
+        curDungeonRewardLimit_ = value;
       }
     }
 
@@ -125,27 +126,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2800_ELHBCNPKOJG" field.</summary>
-    public const int Unk2800ELHBCNPKOJGFieldNumber = 5;
-    private uint unk2800ELHBCNPKOJG_;
+    /// <summary>Field number for the "taken_reward_count" field.</summary>
+    public const int TakenRewardCountFieldNumber = 5;
+    private uint takenRewardCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2800ELHBCNPKOJG {
-      get { return unk2800ELHBCNPKOJG_; }
+    public uint TakenRewardCount {
+      get { return takenRewardCount_; }
       set {
-        unk2800ELHBCNPKOJG_ = value;
+        takenRewardCount_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2800_MPKLJJIEHIB" field.</summary>
-    public const int Unk2800MPKLJJIEHIBFieldNumber = 15;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2800_CGPNLBNMPCM> _repeated_unk2800MPKLJJIEHIB_codec
-        = pb::FieldCodec.ForMessage(122, global::Weedwacker.Shared.Network.Proto.Unk2800_CGPNLBNMPCM.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_CGPNLBNMPCM> unk2800MPKLJJIEHIB_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_CGPNLBNMPCM>();
+    /// <summary>Field number for the "boat_stage_info_list" field.</summary>
+    public const int BoatStageInfoListFieldNumber = 15;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.SummerTimeV2BoatStageInfo> _repeated_boatStageInfoList_codec
+        = pb::FieldCodec.ForMessage(122, global::Weedwacker.Shared.Network.Proto.SummerTimeV2BoatStageInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SummerTimeV2BoatStageInfo> boatStageInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SummerTimeV2BoatStageInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_CGPNLBNMPCM> Unk2800MPKLJJIEHIB {
-      get { return unk2800MPKLJJIEHIB_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SummerTimeV2BoatStageInfo> BoatStageInfoList {
+      get { return boatStageInfoList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -163,11 +164,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2800PNBLCPIBKPO_.Equals(other.unk2800PNBLCPIBKPO_)) return false;
-      if (Unk2800HDEFJKGDNEH != other.Unk2800HDEFJKGDNEH) return false;
+      if(!dungeonStageInfoList_.Equals(other.dungeonStageInfoList_)) return false;
+      if (CurDungeonRewardLimit != other.CurDungeonRewardLimit) return false;
       if (IsContentClosed != other.IsContentClosed) return false;
-      if (Unk2800ELHBCNPKOJG != other.Unk2800ELHBCNPKOJG) return false;
-      if(!unk2800MPKLJJIEHIB_.Equals(other.unk2800MPKLJJIEHIB_)) return false;
+      if (TakenRewardCount != other.TakenRewardCount) return false;
+      if(!boatStageInfoList_.Equals(other.boatStageInfoList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -175,11 +176,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2800PNBLCPIBKPO_.GetHashCode();
-      if (Unk2800HDEFJKGDNEH != 0) hash ^= Unk2800HDEFJKGDNEH.GetHashCode();
+      hash ^= dungeonStageInfoList_.GetHashCode();
+      if (CurDungeonRewardLimit != 0) hash ^= CurDungeonRewardLimit.GetHashCode();
       if (IsContentClosed != false) hash ^= IsContentClosed.GetHashCode();
-      if (Unk2800ELHBCNPKOJG != 0) hash ^= Unk2800ELHBCNPKOJG.GetHashCode();
-      hash ^= unk2800MPKLJJIEHIB_.GetHashCode();
+      if (TakenRewardCount != 0) hash ^= TakenRewardCount.GetHashCode();
+      hash ^= boatStageInfoList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -202,16 +203,16 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(32);
         output.WriteBool(IsContentClosed);
       }
-      if (Unk2800ELHBCNPKOJG != 0) {
+      if (TakenRewardCount != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk2800ELHBCNPKOJG);
+        output.WriteUInt32(TakenRewardCount);
       }
-      if (Unk2800HDEFJKGDNEH != 0) {
+      if (CurDungeonRewardLimit != 0) {
         output.WriteRawTag(80);
-        output.WriteUInt32(Unk2800HDEFJKGDNEH);
+        output.WriteUInt32(CurDungeonRewardLimit);
       }
-      unk2800PNBLCPIBKPO_.WriteTo(output, _repeated_unk2800PNBLCPIBKPO_codec);
-      unk2800MPKLJJIEHIB_.WriteTo(output, _repeated_unk2800MPKLJJIEHIB_codec);
+      dungeonStageInfoList_.WriteTo(output, _repeated_dungeonStageInfoList_codec);
+      boatStageInfoList_.WriteTo(output, _repeated_boatStageInfoList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -226,16 +227,16 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(32);
         output.WriteBool(IsContentClosed);
       }
-      if (Unk2800ELHBCNPKOJG != 0) {
+      if (TakenRewardCount != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk2800ELHBCNPKOJG);
+        output.WriteUInt32(TakenRewardCount);
       }
-      if (Unk2800HDEFJKGDNEH != 0) {
+      if (CurDungeonRewardLimit != 0) {
         output.WriteRawTag(80);
-        output.WriteUInt32(Unk2800HDEFJKGDNEH);
+        output.WriteUInt32(CurDungeonRewardLimit);
       }
-      unk2800PNBLCPIBKPO_.WriteTo(ref output, _repeated_unk2800PNBLCPIBKPO_codec);
-      unk2800MPKLJJIEHIB_.WriteTo(ref output, _repeated_unk2800MPKLJJIEHIB_codec);
+      dungeonStageInfoList_.WriteTo(ref output, _repeated_dungeonStageInfoList_codec);
+      boatStageInfoList_.WriteTo(ref output, _repeated_boatStageInfoList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -246,17 +247,17 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2800PNBLCPIBKPO_.CalculateSize(_repeated_unk2800PNBLCPIBKPO_codec);
-      if (Unk2800HDEFJKGDNEH != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800HDEFJKGDNEH);
+      size += dungeonStageInfoList_.CalculateSize(_repeated_dungeonStageInfoList_codec);
+      if (CurDungeonRewardLimit != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurDungeonRewardLimit);
       }
       if (IsContentClosed != false) {
         size += 1 + 1;
       }
-      if (Unk2800ELHBCNPKOJG != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2800ELHBCNPKOJG);
+      if (TakenRewardCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TakenRewardCount);
       }
-      size += unk2800MPKLJJIEHIB_.CalculateSize(_repeated_unk2800MPKLJJIEHIB_codec);
+      size += boatStageInfoList_.CalculateSize(_repeated_boatStageInfoList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -269,17 +270,17 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2800PNBLCPIBKPO_.Add(other.unk2800PNBLCPIBKPO_);
-      if (other.Unk2800HDEFJKGDNEH != 0) {
-        Unk2800HDEFJKGDNEH = other.Unk2800HDEFJKGDNEH;
+      dungeonStageInfoList_.Add(other.dungeonStageInfoList_);
+      if (other.CurDungeonRewardLimit != 0) {
+        CurDungeonRewardLimit = other.CurDungeonRewardLimit;
       }
       if (other.IsContentClosed != false) {
         IsContentClosed = other.IsContentClosed;
       }
-      if (other.Unk2800ELHBCNPKOJG != 0) {
-        Unk2800ELHBCNPKOJG = other.Unk2800ELHBCNPKOJG;
+      if (other.TakenRewardCount != 0) {
+        TakenRewardCount = other.TakenRewardCount;
       }
-      unk2800MPKLJJIEHIB_.Add(other.unk2800MPKLJJIEHIB_);
+      boatStageInfoList_.Add(other.boatStageInfoList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -300,19 +301,19 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk2800ELHBCNPKOJG = input.ReadUInt32();
+            TakenRewardCount = input.ReadUInt32();
             break;
           }
           case 80: {
-            Unk2800HDEFJKGDNEH = input.ReadUInt32();
+            CurDungeonRewardLimit = input.ReadUInt32();
             break;
           }
           case 106: {
-            unk2800PNBLCPIBKPO_.AddEntriesFrom(input, _repeated_unk2800PNBLCPIBKPO_codec);
+            dungeonStageInfoList_.AddEntriesFrom(input, _repeated_dungeonStageInfoList_codec);
             break;
           }
           case 122: {
-            unk2800MPKLJJIEHIB_.AddEntriesFrom(input, _repeated_unk2800MPKLJJIEHIB_codec);
+            boatStageInfoList_.AddEntriesFrom(input, _repeated_boatStageInfoList_codec);
             break;
           }
         }
@@ -335,19 +336,19 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk2800ELHBCNPKOJG = input.ReadUInt32();
+            TakenRewardCount = input.ReadUInt32();
             break;
           }
           case 80: {
-            Unk2800HDEFJKGDNEH = input.ReadUInt32();
+            CurDungeonRewardLimit = input.ReadUInt32();
             break;
           }
           case 106: {
-            unk2800PNBLCPIBKPO_.AddEntriesFrom(ref input, _repeated_unk2800PNBLCPIBKPO_codec);
+            dungeonStageInfoList_.AddEntriesFrom(ref input, _repeated_dungeonStageInfoList_codec);
             break;
           }
           case 122: {
-            unk2800MPKLJJIEHIB_.AddEntriesFrom(ref input, _repeated_unk2800MPKLJJIEHIB_codec);
+            boatStageInfoList_.AddEntriesFrom(ref input, _repeated_boatStageInfoList_codec);
             break;
           }
         }

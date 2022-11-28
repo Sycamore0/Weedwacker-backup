@@ -24,20 +24,22 @@ namespace Weedwacker.Shared.Network.Proto {
     static TrialAvatarGrantRecordReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxUcmlhbEF2YXRhckdyYW50UmVjb3JkLnByb3RvIpsEChZUcmlhbEF2YXRh",
+            "ChxUcmlhbEF2YXRhckdyYW50UmVjb3JkLnByb3RvIuYEChZUcmlhbEF2YXRh",
             "ckdyYW50UmVjb3JkEhQKDGdyYW50X3JlYXNvbhgBIAEoDRIcChRmcm9tX3Bh",
-            "cmVudF9xdWVzdF9pZBgCIAEoDSLMAwoLR3JhbnRSZWFzb24SGAoUR1JBTlRf",
+            "cmVudF9xdWVzdF9pZBgCIAEoDSKXBAoLR3JhbnRSZWFzb24SGAoUR1JBTlRf",
             "UkVBU09OX0lOVkFMSUQQABIZChVHUkFOVF9SRUFTT05fQllfUVVFU1QQARIp",
             "CiVHUkFOVF9SRUFTT05fQllfVFJJQUxfQVZBVEFSX0FDVElWSVRZEAISLQop",
             "R1JBTlRfUkVBU09OX0JZX0RVTkdFT05fRUxFTUVOVF9DSEFMTEVOR0UQAxIn",
             "CiNHUkFOVF9SRUFTT05fQllfTUlTVF9UUklBTF9BQ1RJVklUWRAEEiEKHUdS",
-            "QU5UX1JFQVNPTl9CWV9TVU1PX0FDVElWSVRZEAUSJAogR1JBTlRfUkVBU09O",
-            "X1VuazI3MDBfRUxQTURJRUlPSFAQBhIkCiBHUkFOVF9SRUFTT05fVW5rMjcw",
-            "MF9GQUxQREJMR0hKQhAHEiQKIEdSQU5UX1JFQVNPTl9VbmsyNzAwX0dBTUFE",
-            "TUdHTUJDEAgSJAogR1JBTlRfUkVBU09OX1VuazI4MDBfRklJREpIQUtNT0kQ",
-            "CRIkCiBHUkFOVF9SRUFTT05fVW5rMzAwMF9BTlBDTkhDQURIRxAKEiQKIEdS",
-            "QU5UX1JFQVNPTl9VbmszMDAwX0FKSUZGT0xGS0xPEAtCIqoCH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "QU5UX1JFQVNPTl9CWV9TVU1PX0FDVElWSVRZEAUSIwofR1JBTlRfUkVBU09O",
+            "X0JZX1BPVElPTl9BQ1RJVklUWRAGEikKJUdSQU5UX1JFQVNPTl9CWV9DUllT",
+            "VEFMX0xJTktfQUNUSVZJVFkQBxIiCh5HUkFOVF9SRUFTT05fQllfSVJPRE9S",
+            "SV9NQVNURVIQCBIWChJHUkFOVF9SRUFTT05fQllfR00QCRIrCidHUkFOVF9S",
+            "RUFTT05fQllfSU5TVEFCTEVfU1BSQVlfQUNUSVZJVFkQChIrCidHUkFOVF9S",
+            "RUFTT05fQllfTVVRQURBU19QT1RJT05fQUNUSVZJVFkQCxIjCh9HUkFOVF9S",
+            "RUFTT05fQllfVklOVEFHRV9IVU5USU5HEAwSIgoeR1JBTlRfUkVBU09OX0JZ",
+            "X0NIQVJfQU1VU0VNRU5UEA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
+            "cmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -284,12 +286,14 @@ namespace Weedwacker.Shared.Network.Proto {
         [pbr::OriginalName("GRANT_REASON_BY_DUNGEON_ELEMENT_CHALLENGE")] ByDungeonElementChallenge = 3,
         [pbr::OriginalName("GRANT_REASON_BY_MIST_TRIAL_ACTIVITY")] ByMistTrialActivity = 4,
         [pbr::OriginalName("GRANT_REASON_BY_SUMO_ACTIVITY")] BySumoActivity = 5,
-        [pbr::OriginalName("GRANT_REASON_Unk2700_ELPMDIEIOHP")] Unk2700Elpmdieiohp = 6,
-        [pbr::OriginalName("GRANT_REASON_Unk2700_FALPDBLGHJB")] Unk2700Falpdblghjb = 7,
-        [pbr::OriginalName("GRANT_REASON_Unk2700_GAMADMGGMBC")] Unk2700Gamadmggmbc = 8,
-        [pbr::OriginalName("GRANT_REASON_Unk2800_FIIDJHAKMOI")] Unk2800Fiidjhakmoi = 9,
-        [pbr::OriginalName("GRANT_REASON_Unk3000_ANPCNHCADHG")] Unk3000Anpcnhcadhg = 10,
-        [pbr::OriginalName("GRANT_REASON_Unk3000_AJIFFOLFKLO")] Unk3000Ajiffolfklo = 11,
+        [pbr::OriginalName("GRANT_REASON_BY_POTION_ACTIVITY")] ByPotionActivity = 6,
+        [pbr::OriginalName("GRANT_REASON_BY_CRYSTAL_LINK_ACTIVITY")] ByCrystalLinkActivity = 7,
+        [pbr::OriginalName("GRANT_REASON_BY_IRODORI_MASTER")] ByIrodoriMaster = 8,
+        [pbr::OriginalName("GRANT_REASON_BY_GM")] ByGm = 9,
+        [pbr::OriginalName("GRANT_REASON_BY_INSTABLE_SPRAY_ACTIVITY")] ByInstableSprayActivity = 10,
+        [pbr::OriginalName("GRANT_REASON_BY_MUQADAS_POTION_ACTIVITY")] ByMuqadasPotionActivity = 11,
+        [pbr::OriginalName("GRANT_REASON_BY_VINTAGE_HUNTING")] ByVintageHunting = 12,
+        [pbr::OriginalName("GRANT_REASON_BY_CHAR_AMUSEMENT")] ByCharAmusement = 13,
       }
 
     }

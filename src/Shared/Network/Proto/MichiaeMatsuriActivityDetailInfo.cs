@@ -24,19 +24,21 @@ namespace Weedwacker.Shared.Network.Proto {
     static MichiaeMatsuriActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiZNaWNoaWFlTWF0c3VyaUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoZTWlj",
-            "aGlhZU1hdHN1cmlTdGFnZS5wcm90bxoZVW5rMjcwMF9IR0ZGR01DT0ROQy5w",
-            "cm90bxoZVW5rMjcwMF9OQUZBSU1IRkVGRy5wcm90byLsAQogTWljaGlhZU1h",
-            "dHN1cmlBY3Rpdml0eURldGFpbEluZm8SMQoTVW5rMjcwMF9NUE5OTUNQT0xB",
-            "TRgGIAMoCzIULlVuazI3MDBfSEdGRkdNQ09ETkMSGwoTVW5rMjcwMF9NQU9B",
-            "SEhCQ0tJQRgNIAEoDRIbChNVbmsyNzAwX0JFSEFBSEhHQ0xLGAIgAygNEjEK",
-            "E1VuazI3MDBfTEVLSEtOS0hJUE8YCiADKAsyFC5VbmsyNzAwX05BRkFJTUhG",
-            "RUZHEigKCnN0YWdlX2xpc3QYDiADKAsyFC5NaWNoaWFlTWF0c3VyaVN0YWdl",
-            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "CiZNaWNoaWFlTWF0c3VyaUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxopTWlj",
+            "aGlhZU1hdHN1cmlDaGFsbGVuZ2VQb3NpdGlvbkluZm8ucHJvdG8aJU1pY2hp",
+            "YWVNYXRzdXJpQ2hlc3RQb3NpdGlvbkluZm8ucHJvdG8aGU1pY2hpYWVNYXRz",
+            "dXJpU3RhZ2UucHJvdG8ihwIKIE1pY2hpYWVNYXRzdXJpQWN0aXZpdHlEZXRh",
+            "aWxJbmZvEkAKEmNoYWxsZW5nZV9wb3NfbGlzdBgGIAMoCzIkLk1pY2hpYWVN",
+            "YXRzdXJpQ2hhbGxlbmdlUG9zaXRpb25JbmZvEhgKEGdhaW5fY3J5c3RhbF9l",
+            "eHAYDSABKA0SIwobdW5sb2NrZWRfY3J5c3RhbF9za2lsbF9saXN0GAIgAygN",
+            "EjgKDmNoZXN0X3Bvc19saXN0GAogAygLMiAuTWljaGlhZU1hdHN1cmlDaGVz",
+            "dFBvc2l0aW9uSW5mbxIoCgpzdGFnZV9saXN0GA4gAygLMhQuTWljaGlhZU1h",
+            "dHN1cmlTdGFnZUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriStageReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700HGFFGMCODNCReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700NAFAIMHFEFGReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChallengePositionInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChestPositionInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriStageReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriActivityDetailInfo.Parser, new[]{ "Unk2700MPNNMCPOLAM", "Unk2700MAOAHHBCKIA", "Unk2700BEHAAHHGCLK", "Unk2700LEKHKNKHIPO", "StageList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriActivityDetailInfo.Parser, new[]{ "ChallengePosList", "GainCrystalExp", "UnlockedCrystalSkillList", "ChestPosList", "StageList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,10 +79,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MichiaeMatsuriActivityDetailInfo(MichiaeMatsuriActivityDetailInfo other) : this() {
-      unk2700MPNNMCPOLAM_ = other.unk2700MPNNMCPOLAM_.Clone();
-      unk2700MAOAHHBCKIA_ = other.unk2700MAOAHHBCKIA_;
-      unk2700BEHAAHHGCLK_ = other.unk2700BEHAAHHGCLK_.Clone();
-      unk2700LEKHKNKHIPO_ = other.unk2700LEKHKNKHIPO_.Clone();
+      challengePosList_ = other.challengePosList_.Clone();
+      gainCrystalExp_ = other.gainCrystalExp_;
+      unlockedCrystalSkillList_ = other.unlockedCrystalSkillList_.Clone();
+      chestPosList_ = other.chestPosList_.Clone();
       stageList_ = other.stageList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -91,49 +93,49 @@ namespace Weedwacker.Shared.Network.Proto {
       return new MichiaeMatsuriActivityDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_MPNNMCPOLAM" field.</summary>
-    public const int Unk2700MPNNMCPOLAMFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_HGFFGMCODNC> _repeated_unk2700MPNNMCPOLAM_codec
-        = pb::FieldCodec.ForMessage(50, global::Weedwacker.Shared.Network.Proto.Unk2700_HGFFGMCODNC.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_HGFFGMCODNC> unk2700MPNNMCPOLAM_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_HGFFGMCODNC>();
+    /// <summary>Field number for the "challenge_pos_list" field.</summary>
+    public const int ChallengePosListFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChallengePositionInfo> _repeated_challengePosList_codec
+        = pb::FieldCodec.ForMessage(50, global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChallengePositionInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChallengePositionInfo> challengePosList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChallengePositionInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_HGFFGMCODNC> Unk2700MPNNMCPOLAM {
-      get { return unk2700MPNNMCPOLAM_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChallengePositionInfo> ChallengePosList {
+      get { return challengePosList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_MAOAHHBCKIA" field.</summary>
-    public const int Unk2700MAOAHHBCKIAFieldNumber = 13;
-    private uint unk2700MAOAHHBCKIA_;
+    /// <summary>Field number for the "gain_crystal_exp" field.</summary>
+    public const int GainCrystalExpFieldNumber = 13;
+    private uint gainCrystalExp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700MAOAHHBCKIA {
-      get { return unk2700MAOAHHBCKIA_; }
+    public uint GainCrystalExp {
+      get { return gainCrystalExp_; }
       set {
-        unk2700MAOAHHBCKIA_ = value;
+        gainCrystalExp_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_BEHAAHHGCLK" field.</summary>
-    public const int Unk2700BEHAAHHGCLKFieldNumber = 2;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700BEHAAHHGCLK_codec
+    /// <summary>Field number for the "unlocked_crystal_skill_list" field.</summary>
+    public const int UnlockedCrystalSkillListFieldNumber = 2;
+    private static readonly pb::FieldCodec<uint> _repeated_unlockedCrystalSkillList_codec
         = pb::FieldCodec.ForUInt32(18);
-    private readonly pbc::RepeatedField<uint> unk2700BEHAAHHGCLK_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> unlockedCrystalSkillList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700BEHAAHHGCLK {
-      get { return unk2700BEHAAHHGCLK_; }
+    public pbc::RepeatedField<uint> UnlockedCrystalSkillList {
+      get { return unlockedCrystalSkillList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_LEKHKNKHIPO" field.</summary>
-    public const int Unk2700LEKHKNKHIPOFieldNumber = 10;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_NAFAIMHFEFG> _repeated_unk2700LEKHKNKHIPO_codec
-        = pb::FieldCodec.ForMessage(82, global::Weedwacker.Shared.Network.Proto.Unk2700_NAFAIMHFEFG.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_NAFAIMHFEFG> unk2700LEKHKNKHIPO_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_NAFAIMHFEFG>();
+    /// <summary>Field number for the "chest_pos_list" field.</summary>
+    public const int ChestPosListFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChestPositionInfo> _repeated_chestPosList_codec
+        = pb::FieldCodec.ForMessage(82, global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChestPositionInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChestPositionInfo> chestPosList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChestPositionInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_NAFAIMHFEFG> Unk2700LEKHKNKHIPO {
-      get { return unk2700LEKHKNKHIPO_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChestPositionInfo> ChestPosList {
+      get { return chestPosList_; }
     }
 
     /// <summary>Field number for the "stage_list" field.</summary>
@@ -162,10 +164,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2700MPNNMCPOLAM_.Equals(other.unk2700MPNNMCPOLAM_)) return false;
-      if (Unk2700MAOAHHBCKIA != other.Unk2700MAOAHHBCKIA) return false;
-      if(!unk2700BEHAAHHGCLK_.Equals(other.unk2700BEHAAHHGCLK_)) return false;
-      if(!unk2700LEKHKNKHIPO_.Equals(other.unk2700LEKHKNKHIPO_)) return false;
+      if(!challengePosList_.Equals(other.challengePosList_)) return false;
+      if (GainCrystalExp != other.GainCrystalExp) return false;
+      if(!unlockedCrystalSkillList_.Equals(other.unlockedCrystalSkillList_)) return false;
+      if(!chestPosList_.Equals(other.chestPosList_)) return false;
       if(!stageList_.Equals(other.stageList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -174,10 +176,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2700MPNNMCPOLAM_.GetHashCode();
-      if (Unk2700MAOAHHBCKIA != 0) hash ^= Unk2700MAOAHHBCKIA.GetHashCode();
-      hash ^= unk2700BEHAAHHGCLK_.GetHashCode();
-      hash ^= unk2700LEKHKNKHIPO_.GetHashCode();
+      hash ^= challengePosList_.GetHashCode();
+      if (GainCrystalExp != 0) hash ^= GainCrystalExp.GetHashCode();
+      hash ^= unlockedCrystalSkillList_.GetHashCode();
+      hash ^= chestPosList_.GetHashCode();
       hash ^= stageList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -197,12 +199,12 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk2700BEHAAHHGCLK_.WriteTo(output, _repeated_unk2700BEHAAHHGCLK_codec);
-      unk2700MPNNMCPOLAM_.WriteTo(output, _repeated_unk2700MPNNMCPOLAM_codec);
-      unk2700LEKHKNKHIPO_.WriteTo(output, _repeated_unk2700LEKHKNKHIPO_codec);
-      if (Unk2700MAOAHHBCKIA != 0) {
+      unlockedCrystalSkillList_.WriteTo(output, _repeated_unlockedCrystalSkillList_codec);
+      challengePosList_.WriteTo(output, _repeated_challengePosList_codec);
+      chestPosList_.WriteTo(output, _repeated_chestPosList_codec);
+      if (GainCrystalExp != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk2700MAOAHHBCKIA);
+        output.WriteUInt32(GainCrystalExp);
       }
       stageList_.WriteTo(output, _repeated_stageList_codec);
       if (_unknownFields != null) {
@@ -215,12 +217,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk2700BEHAAHHGCLK_.WriteTo(ref output, _repeated_unk2700BEHAAHHGCLK_codec);
-      unk2700MPNNMCPOLAM_.WriteTo(ref output, _repeated_unk2700MPNNMCPOLAM_codec);
-      unk2700LEKHKNKHIPO_.WriteTo(ref output, _repeated_unk2700LEKHKNKHIPO_codec);
-      if (Unk2700MAOAHHBCKIA != 0) {
+      unlockedCrystalSkillList_.WriteTo(ref output, _repeated_unlockedCrystalSkillList_codec);
+      challengePosList_.WriteTo(ref output, _repeated_challengePosList_codec);
+      chestPosList_.WriteTo(ref output, _repeated_chestPosList_codec);
+      if (GainCrystalExp != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk2700MAOAHHBCKIA);
+        output.WriteUInt32(GainCrystalExp);
       }
       stageList_.WriteTo(ref output, _repeated_stageList_codec);
       if (_unknownFields != null) {
@@ -233,12 +235,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2700MPNNMCPOLAM_.CalculateSize(_repeated_unk2700MPNNMCPOLAM_codec);
-      if (Unk2700MAOAHHBCKIA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700MAOAHHBCKIA);
+      size += challengePosList_.CalculateSize(_repeated_challengePosList_codec);
+      if (GainCrystalExp != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GainCrystalExp);
       }
-      size += unk2700BEHAAHHGCLK_.CalculateSize(_repeated_unk2700BEHAAHHGCLK_codec);
-      size += unk2700LEKHKNKHIPO_.CalculateSize(_repeated_unk2700LEKHKNKHIPO_codec);
+      size += unlockedCrystalSkillList_.CalculateSize(_repeated_unlockedCrystalSkillList_codec);
+      size += chestPosList_.CalculateSize(_repeated_chestPosList_codec);
       size += stageList_.CalculateSize(_repeated_stageList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -252,12 +254,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2700MPNNMCPOLAM_.Add(other.unk2700MPNNMCPOLAM_);
-      if (other.Unk2700MAOAHHBCKIA != 0) {
-        Unk2700MAOAHHBCKIA = other.Unk2700MAOAHHBCKIA;
+      challengePosList_.Add(other.challengePosList_);
+      if (other.GainCrystalExp != 0) {
+        GainCrystalExp = other.GainCrystalExp;
       }
-      unk2700BEHAAHHGCLK_.Add(other.unk2700BEHAAHHGCLK_);
-      unk2700LEKHKNKHIPO_.Add(other.unk2700LEKHKNKHIPO_);
+      unlockedCrystalSkillList_.Add(other.unlockedCrystalSkillList_);
+      chestPosList_.Add(other.chestPosList_);
       stageList_.Add(other.stageList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -276,19 +278,19 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 18:
           case 16: {
-            unk2700BEHAAHHGCLK_.AddEntriesFrom(input, _repeated_unk2700BEHAAHHGCLK_codec);
+            unlockedCrystalSkillList_.AddEntriesFrom(input, _repeated_unlockedCrystalSkillList_codec);
             break;
           }
           case 50: {
-            unk2700MPNNMCPOLAM_.AddEntriesFrom(input, _repeated_unk2700MPNNMCPOLAM_codec);
+            challengePosList_.AddEntriesFrom(input, _repeated_challengePosList_codec);
             break;
           }
           case 82: {
-            unk2700LEKHKNKHIPO_.AddEntriesFrom(input, _repeated_unk2700LEKHKNKHIPO_codec);
+            chestPosList_.AddEntriesFrom(input, _repeated_chestPosList_codec);
             break;
           }
           case 104: {
-            Unk2700MAOAHHBCKIA = input.ReadUInt32();
+            GainCrystalExp = input.ReadUInt32();
             break;
           }
           case 114: {
@@ -312,19 +314,19 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 18:
           case 16: {
-            unk2700BEHAAHHGCLK_.AddEntriesFrom(ref input, _repeated_unk2700BEHAAHHGCLK_codec);
+            unlockedCrystalSkillList_.AddEntriesFrom(ref input, _repeated_unlockedCrystalSkillList_codec);
             break;
           }
           case 50: {
-            unk2700MPNNMCPOLAM_.AddEntriesFrom(ref input, _repeated_unk2700MPNNMCPOLAM_codec);
+            challengePosList_.AddEntriesFrom(ref input, _repeated_challengePosList_codec);
             break;
           }
           case 82: {
-            unk2700LEKHKNKHIPO_.AddEntriesFrom(ref input, _repeated_unk2700LEKHKNKHIPO_codec);
+            chestPosList_.AddEntriesFrom(ref input, _repeated_chestPosList_codec);
             break;
           }
           case 104: {
-            Unk2700MAOAHHBCKIA = input.ReadUInt32();
+            GainCrystalExp = input.ReadUInt32();
             break;
           }
           case 114: {

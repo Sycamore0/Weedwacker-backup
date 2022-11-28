@@ -30,14 +30,14 @@ namespace Weedwacker.Shared.Network.Proto {
             "KAUSCwoDbXNnGAIgASgJEiAKC3JlZ2lvbl9pbmZvGAMgASgLMgsuUmVnaW9u",
             "SW5mbxIZChFjbGllbnRfc2VjcmV0X2tleRgLIAEoDBImCh5yZWdpb25fY3Vz",
             "dG9tX2NvbmZpZ19lbmNyeXB0ZWQYDCABKAwSLQolY2xpZW50X3JlZ2lvbl9j",
-            "dXN0b21fY29uZmlnX2VuY3J5cHRlZBgNIAEoDBIoCgxmb3JjZV91ZHBhdGUY",
+            "dXN0b21fY29uZmlnX2VuY3J5cHRlZBgNIAEoDBIoCgxmb3JjZV91cGRhdGUY",
             "BCABKAsyEC5Gb3JjZVVwZGF0ZUluZm9IABImCgtzdG9wX3NlcnZlchgFIAEo",
             "CzIPLlN0b3BTZXJ2ZXJJbmZvSABCCAoGZGV0YWlsQiKqAh9XZWVkd2Fja2Vy",
             "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ForceUpdateInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RegionInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.StopServerInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.QueryCurrRegionHttpRsp), global::Weedwacker.Shared.Network.Proto.QueryCurrRegionHttpRsp.Parser, new[]{ "Retcode", "Msg", "RegionInfo", "ClientSecretKey", "RegionCustomConfigEncrypted", "ClientRegionCustomConfigEncrypted", "ForceUdpate", "StopServer" }, new[]{ "Detail" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.QueryCurrRegionHttpRsp), global::Weedwacker.Shared.Network.Proto.QueryCurrRegionHttpRsp.Parser, new[]{ "Retcode", "Msg", "RegionInfo", "ClientSecretKey", "RegionCustomConfigEncrypted", "ClientRegionCustomConfigEncrypted", "ForceUpdate", "StopServer" }, new[]{ "Detail" }, null, null, null)
           }));
     }
     #endregion
@@ -85,8 +85,8 @@ namespace Weedwacker.Shared.Network.Proto {
       regionCustomConfigEncrypted_ = other.regionCustomConfigEncrypted_;
       clientRegionCustomConfigEncrypted_ = other.clientRegionCustomConfigEncrypted_;
       switch (other.DetailCase) {
-        case DetailOneofCase.ForceUdpate:
-          ForceUdpate = other.ForceUdpate.Clone();
+        case DetailOneofCase.ForceUpdate:
+          ForceUpdate = other.ForceUpdate.Clone();
           break;
         case DetailOneofCase.StopServer:
           StopServer = other.StopServer.Clone();
@@ -174,15 +174,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "force_udpate" field.</summary>
-    public const int ForceUdpateFieldNumber = 4;
+    /// <summary>Field number for the "force_update" field.</summary>
+    public const int ForceUpdateFieldNumber = 4;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.ForceUpdateInfo ForceUdpate {
-      get { return detailCase_ == DetailOneofCase.ForceUdpate ? (global::Weedwacker.Shared.Network.Proto.ForceUpdateInfo) detail_ : null; }
+    public global::Weedwacker.Shared.Network.Proto.ForceUpdateInfo ForceUpdate {
+      get { return detailCase_ == DetailOneofCase.ForceUpdate ? (global::Weedwacker.Shared.Network.Proto.ForceUpdateInfo) detail_ : null; }
       set {
         detail_ = value;
-        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.ForceUdpate;
+        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.ForceUpdate;
       }
     }
 
@@ -202,7 +202,7 @@ namespace Weedwacker.Shared.Network.Proto {
     /// <summary>Enum of possible cases for the "detail" oneof.</summary>
     public enum DetailOneofCase {
       None = 0,
-      ForceUdpate = 4,
+      ForceUpdate = 4,
       StopServer = 5,
     }
     private DetailOneofCase detailCase_ = DetailOneofCase.None;
@@ -240,7 +240,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ClientSecretKey != other.ClientSecretKey) return false;
       if (RegionCustomConfigEncrypted != other.RegionCustomConfigEncrypted) return false;
       if (ClientRegionCustomConfigEncrypted != other.ClientRegionCustomConfigEncrypted) return false;
-      if (!object.Equals(ForceUdpate, other.ForceUdpate)) return false;
+      if (!object.Equals(ForceUpdate, other.ForceUpdate)) return false;
       if (!object.Equals(StopServer, other.StopServer)) return false;
       if (DetailCase != other.DetailCase) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -256,7 +256,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ClientSecretKey.Length != 0) hash ^= ClientSecretKey.GetHashCode();
       if (RegionCustomConfigEncrypted.Length != 0) hash ^= RegionCustomConfigEncrypted.GetHashCode();
       if (ClientRegionCustomConfigEncrypted.Length != 0) hash ^= ClientRegionCustomConfigEncrypted.GetHashCode();
-      if (detailCase_ == DetailOneofCase.ForceUdpate) hash ^= ForceUdpate.GetHashCode();
+      if (detailCase_ == DetailOneofCase.ForceUpdate) hash ^= ForceUpdate.GetHashCode();
       if (detailCase_ == DetailOneofCase.StopServer) hash ^= StopServer.GetHashCode();
       hash ^= (int) detailCase_;
       if (_unknownFields != null) {
@@ -289,9 +289,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(26);
         output.WriteMessage(RegionInfo);
       }
-      if (detailCase_ == DetailOneofCase.ForceUdpate) {
+      if (detailCase_ == DetailOneofCase.ForceUpdate) {
         output.WriteRawTag(34);
-        output.WriteMessage(ForceUdpate);
+        output.WriteMessage(ForceUpdate);
       }
       if (detailCase_ == DetailOneofCase.StopServer) {
         output.WriteRawTag(42);
@@ -331,9 +331,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(26);
         output.WriteMessage(RegionInfo);
       }
-      if (detailCase_ == DetailOneofCase.ForceUdpate) {
+      if (detailCase_ == DetailOneofCase.ForceUpdate) {
         output.WriteRawTag(34);
-        output.WriteMessage(ForceUdpate);
+        output.WriteMessage(ForceUpdate);
       }
       if (detailCase_ == DetailOneofCase.StopServer) {
         output.WriteRawTag(42);
@@ -379,8 +379,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ClientRegionCustomConfigEncrypted.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(ClientRegionCustomConfigEncrypted);
       }
-      if (detailCase_ == DetailOneofCase.ForceUdpate) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ForceUdpate);
+      if (detailCase_ == DetailOneofCase.ForceUpdate) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ForceUpdate);
       }
       if (detailCase_ == DetailOneofCase.StopServer) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(StopServer);
@@ -419,11 +419,11 @@ namespace Weedwacker.Shared.Network.Proto {
         ClientRegionCustomConfigEncrypted = other.ClientRegionCustomConfigEncrypted;
       }
       switch (other.DetailCase) {
-        case DetailOneofCase.ForceUdpate:
-          if (ForceUdpate == null) {
-            ForceUdpate = new global::Weedwacker.Shared.Network.Proto.ForceUpdateInfo();
+        case DetailOneofCase.ForceUpdate:
+          if (ForceUpdate == null) {
+            ForceUpdate = new global::Weedwacker.Shared.Network.Proto.ForceUpdateInfo();
           }
-          ForceUdpate.MergeFrom(other.ForceUdpate);
+          ForceUpdate.MergeFrom(other.ForceUpdate);
           break;
         case DetailOneofCase.StopServer:
           if (StopServer == null) {
@@ -465,11 +465,11 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 34: {
             global::Weedwacker.Shared.Network.Proto.ForceUpdateInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.ForceUpdateInfo();
-            if (detailCase_ == DetailOneofCase.ForceUdpate) {
-              subBuilder.MergeFrom(ForceUdpate);
+            if (detailCase_ == DetailOneofCase.ForceUpdate) {
+              subBuilder.MergeFrom(ForceUpdate);
             }
             input.ReadMessage(subBuilder);
-            ForceUdpate = subBuilder;
+            ForceUpdate = subBuilder;
             break;
           }
           case 42: {
@@ -525,11 +525,11 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 34: {
             global::Weedwacker.Shared.Network.Proto.ForceUpdateInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.ForceUpdateInfo();
-            if (detailCase_ == DetailOneofCase.ForceUdpate) {
-              subBuilder.MergeFrom(ForceUdpate);
+            if (detailCase_ == DetailOneofCase.ForceUpdate) {
+              subBuilder.MergeFrom(ForceUpdate);
             }
             input.ReadMessage(subBuilder);
-            ForceUdpate = subBuilder;
+            ForceUpdate = subBuilder;
             break;
           }
           case 42: {

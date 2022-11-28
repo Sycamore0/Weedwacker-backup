@@ -27,42 +27,47 @@ namespace Weedwacker.Shared.Network.Proto {
             "ChlEdW5nZW9uU2V0dGxlTm90aWZ5LnByb3RvGihDaGFubmVsZXJTbGFiTG9v",
             "cER1bmdlb25SZXN1bHRJbmZvLnByb3RvGhtDcnlzdGFsTGlua1NldHRsZUlu",
             "Zm8ucHJvdG8aIUR1bmdlb25TZXR0bGVFeGhpYml0aW9uSW5mby5wcm90bxom",
-            "RWZmaWd5Q2hhbGxlbmdlRHVuZ2VvblJlc3VsdEluZm8ucHJvdG8aHUluc3Rh",
-            "YmxlU3ByYXlTZXR0bGVJbmZvLnByb3RvGg9QYXJhbUxpc3QucHJvdG8aIFJv",
-            "Z3VlbGlrZUR1bmdlb25TZXR0bGVJbmZvLnByb3RvGhlTdHJlbmd0aGVuUG9p",
-            "bnREYXRhLnByb3RvGiNTdW1tZXJUaW1lVjJEdW5nZW9uU2V0dGxlSW5mby5w",
-            "cm90bxoZVG93ZXJMZXZlbEVuZE5vdGlmeS5wcm90bxonVHJpYWxBdmF0YXJG",
-            "aXJzdFBhc3NEdW5nZW9uTm90aWZ5LnByb3RvItEIChNEdW5nZW9uU2V0dGxl",
-            "Tm90aWZ5ElMKGXN0cmVuZ3RoZW5fcG9pbnRfZGF0YV9tYXAYDiADKAsyMC5E",
-            "dW5nZW9uU2V0dGxlTm90aWZ5LlN0cmVuZ3RoZW5Qb2ludERhdGFNYXBFbnRy",
-            "eRISCgppc19zdWNjZXNzGAcgASgIEhIKCmNsb3NlX3RpbWUYBCABKA0SGwoT",
-            "VW5rMjcwMF9PTUNDRkJCREpNSRgBIAEoDRI5CgtzZXR0bGVfc2hvdxgFIAMo",
-            "CzIkLkR1bmdlb25TZXR0bGVOb3RpZnkuU2V0dGxlU2hvd0VudHJ5EjoKFGV4",
-            "aGliaXRpb25faW5mb19saXN0GAggAygLMhwuRHVuZ2VvblNldHRsZUV4aGli",
-            "aXRpb25JbmZvEhYKDmZhaWxfY29uZF9saXN0GAsgAygNEhIKCmR1bmdlb25f",
-            "aWQYDSABKA0SDgoGcmVzdWx0GAogASgNEjcKFnRvd2VyX2xldmVsX2VuZF9u",
-            "b3RpZnkY3wIgASgLMhQuVG93ZXJMZXZlbEVuZE5vdGlmeUgAElUKJnRyaWFs",
-            "X2F2YXRhcl9maXJzdF9wYXNzX2R1bmdlb25fbm90aWZ5GPsEIAEoCzIiLlRy",
-            "aWFsQXZhdGFyRmlyc3RQYXNzRHVuZ2Vvbk5vdGlmeUgAElgKKGNoYW5uZWxs",
-            "ZXJfc2xhYl9sb29wX2R1bmdlb25fcmVzdWx0X2luZm8YrgUgASgLMiMuQ2hh",
-            "bm5lbGVyU2xhYkxvb3BEdW5nZW9uUmVzdWx0SW5mb0gAElIKJGVmZmlneV9j",
-            "aGFsbGVuZ2VfZHVuZ2Vvbl9yZXN1bHRfaW5mbxjIAiABKAsyIS5FZmZpZ3lD",
-            "aGFsbGVuZ2VEdW5nZW9uUmVzdWx0SW5mb0gAEkUKHXJvZ3VlbGlrZV9kdW5n",
-            "ZW9uX3NldHRsZV9pbmZvGMoLIAEoCzIbLlJvZ3VlbGlrZUR1bmdlb25TZXR0",
-            "bGVJbmZvSAASOgoYY3J5c3RhbF9saW5rX3NldHRsZV9pbmZvGHAgASgLMhYu",
-            "Q3J5c3RhbExpbmtTZXR0bGVJbmZvSAASTQoic3VtbWVyX3RpbWVfdjJfZHVu",
-            "Z2Vvbl9zZXR0bGVfaW5mbxjaDiABKAsyHi5TdW1tZXJUaW1lVjJEdW5nZW9u",
-            "U2V0dGxlSW5mb0gAEj8KGmluc3RhYmxlX3NwcmF5X3NldHRsZV9pbmZvGMEB",
-            "IAEoCzIYLkluc3RhYmxlU3ByYXlTZXR0bGVJbmZvSAAaUwobU3RyZW5ndGhl",
-            "blBvaW50RGF0YU1hcEVudHJ5EgsKA2tleRgBIAEoDRIjCgV2YWx1ZRgCIAEo",
-            "CzIULlN0cmVuZ3RoZW5Qb2ludERhdGE6AjgBGj0KD1NldHRsZVNob3dFbnRy",
-            "eRILCgNrZXkYASABKA0SGQoFdmFsdWUYAiABKAsyCi5QYXJhbUxpc3Q6AjgB",
-            "QggKBmRldGFpbEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
-            "b2IGcHJvdG8z"));
+            "RWZmaWd5Q2hhbGxlbmdlRHVuZ2VvblJlc3VsdEluZm8ucHJvdG8aIUVmZmln",
+            "eUNoYWxsZW5nZVYyU2V0dGxlSW5mby5wcm90bxodSW5zdGFibGVTcHJheVNl",
+            "dHRsZUluZm8ucHJvdG8aD1BhcmFtTGlzdC5wcm90bxogUm9ndWVsaWtlRHVu",
+            "Z2VvblNldHRsZUluZm8ucHJvdG8aGVN0cmVuZ3RoZW5Qb2ludERhdGEucHJv",
+            "dG8aI1N1bW1lclRpbWVWMkR1bmdlb25TZXR0bGVJbmZvLnByb3RvGhlUb3dl",
+            "ckxldmVsRW5kTm90aWZ5LnByb3RvGidUcmlhbEF2YXRhckZpcnN0UGFzc0R1",
+            "bmdlb25Ob3RpZnkucHJvdG8aIFdpbmRGaWVsZER1bmdlb25TZXR0bGVJbmZv",
+            "LnByb3RvIvIJChNEdW5nZW9uU2V0dGxlTm90aWZ5Eg4KBnJlc3VsdBgKIAEo",
+            "DRISCgpkdW5nZW9uX2lkGA0gASgNElMKGXN0cmVuZ3RoZW5fcG9pbnRfZGF0",
+            "YV9tYXAYDiADKAsyMC5EdW5nZW9uU2V0dGxlTm90aWZ5LlN0cmVuZ3RoZW5Q",
+            "b2ludERhdGFNYXBFbnRyeRI6ChRleGhpYml0aW9uX2luZm9fbGlzdBgIIAMo",
+            "CzIcLkR1bmdlb25TZXR0bGVFeGhpYml0aW9uSW5mbxIZChFjcmVhdGVfcGxh",
+            "eWVyX3VpZBgMIAEoDRIWCg5mYWlsX2NvbmRfbGlzdBgLIAMoDRIQCgh1c2Vf",
+            "dGltZRgBIAEoDRISCgpjbG9zZV90aW1lGAQgASgNEhIKCmlzX3N1Y2Nlc3MY",
+            "ByABKAgSOQoLc2V0dGxlX3Nob3cYBSADKAsyJC5EdW5nZW9uU2V0dGxlTm90",
+            "aWZ5LlNldHRsZVNob3dFbnRyeRI3ChZ0b3dlcl9sZXZlbF9lbmRfbm90aWZ5",
+            "GN8CIAEoCzIULlRvd2VyTGV2ZWxFbmROb3RpZnlIABJVCiZ0cmlhbF9hdmF0",
+            "YXJfZmlyc3RfcGFzc19kdW5nZW9uX25vdGlmeRj7BCABKAsyIi5UcmlhbEF2",
+            "YXRhckZpcnN0UGFzc0R1bmdlb25Ob3RpZnlIABJXCidjaGFubmVsZXJfc2xh",
+            "Yl9sb29wX2R1bmdlb25fcmVzdWx0X2luZm8YrgUgASgLMiMuQ2hhbm5lbGVy",
+            "U2xhYkxvb3BEdW5nZW9uUmVzdWx0SW5mb0gAElIKJGVmZmlneV9jaGFsbGVu",
+            "Z2VfZHVuZ2Vvbl9yZXN1bHRfaW5mbxjIAiABKAsyIS5FZmZpZ3lDaGFsbGVu",
+            "Z2VEdW5nZW9uUmVzdWx0SW5mb0gAEkUKHXJvZ3VlbGlrZV9kdW5nZW9uX3Nl",
+            "dHRsZV9pbmZvGMoLIAEoCzIbLlJvZ3VlbGlrZUR1bmdlb25TZXR0bGVJbmZv",
+            "SAASOgoYY3J5c3RhbF9saW5rX3NldHRsZV9pbmZvGHAgASgLMhYuQ3J5c3Rh",
+            "bExpbmtTZXR0bGVJbmZvSAASTQoic3VtbWVyX3RpbWVfdjJfZHVuZ2Vvbl9z",
+            "ZXR0bGVfaW5mbxjaDiABKAsyHi5TdW1tZXJUaW1lVjJEdW5nZW9uU2V0dGxl",
+            "SW5mb0gAEj8KGmluc3RhYmxlX3NwcmF5X3NldHRsZV9pbmZvGMEBIAEoCzIY",
+            "Lkluc3RhYmxlU3ByYXlTZXR0bGVJbmZvSAASRgoed2luZF9maWVsZF9kdW5n",
+            "ZW9uX3NldHRsZV9pbmZvGKEOIAEoCzIbLldpbmRGaWVsZER1bmdlb25TZXR0",
+            "bGVJbmZvSAASSAofZWZmaWd5X2NoYWxsZW5nZV92Ml9zZXR0bGVfaW5mbxiK",
+            "DiABKAsyHC5FZmZpZ3lDaGFsbGVuZ2VWMlNldHRsZUluZm9IABpTChtTdHJl",
+            "bmd0aGVuUG9pbnREYXRhTWFwRW50cnkSCwoDa2V5GAEgASgNEiMKBXZhbHVl",
+            "GAIgASgLMhQuU3RyZW5ndGhlblBvaW50RGF0YToCOAEaPQoPU2V0dGxlU2hv",
+            "d0VudHJ5EgsKA2tleRgBIAEoDRIZCgV2YWx1ZRgCIAEoCzIKLlBhcmFtTGlz",
+            "dDoCOAFCCAoGZGV0YWlsQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CrystalLinkSettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EffigyChallengeDungeonResultInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.InstableSpraySettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ParamListReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RoguelikeDungeonSettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.StrengthenPointDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SummerTimeV2DungeonSettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TowerLevelEndNotifyReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TrialAvatarFirstPassDungeonNotifyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CrystalLinkSettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EffigyChallengeDungeonResultInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2SettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.InstableSpraySettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ParamListReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RoguelikeDungeonSettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.StrengthenPointDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SummerTimeV2DungeonSettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TowerLevelEndNotifyReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TrialAvatarFirstPassDungeonNotifyReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WindFieldDungeonSettleInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonSettleNotify), global::Weedwacker.Shared.Network.Proto.DungeonSettleNotify.Parser, new[]{ "StrengthenPointDataMap", "IsSuccess", "CloseTime", "Unk2700OMCCFBBDJMI", "SettleShow", "ExhibitionInfoList", "FailCondList", "DungeonId", "Result", "TowerLevelEndNotify", "TrialAvatarFirstPassDungeonNotify", "ChannellerSlabLoopDungeonResultInfo", "EffigyChallengeDungeonResultInfo", "RoguelikeDungeonSettleInfo", "CrystalLinkSettleInfo", "SummerTimeV2DungeonSettleInfo", "InstableSpraySettleInfo" }, new[]{ "Detail" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonSettleNotify), global::Weedwacker.Shared.Network.Proto.DungeonSettleNotify.Parser, new[]{ "Result", "DungeonId", "StrengthenPointDataMap", "ExhibitionInfoList", "CreatePlayerUid", "FailCondList", "UseTime", "CloseTime", "IsSuccess", "SettleShow", "TowerLevelEndNotify", "TrialAvatarFirstPassDungeonNotify", "ChannelerSlabLoopDungeonResultInfo", "EffigyChallengeDungeonResultInfo", "RoguelikeDungeonSettleInfo", "CrystalLinkSettleInfo", "SummerTimeV2DungeonSettleInfo", "InstableSpraySettleInfo", "WindFieldDungeonSettleInfo", "EffigyChallengeV2SettleInfo" }, new[]{ "Detail" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
           }));
     }
     #endregion
@@ -108,15 +113,16 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DungeonSettleNotify(DungeonSettleNotify other) : this() {
-      strengthenPointDataMap_ = other.strengthenPointDataMap_.Clone();
-      isSuccess_ = other.isSuccess_;
-      closeTime_ = other.closeTime_;
-      unk2700OMCCFBBDJMI_ = other.unk2700OMCCFBBDJMI_;
-      settleShow_ = other.settleShow_.Clone();
-      exhibitionInfoList_ = other.exhibitionInfoList_.Clone();
-      failCondList_ = other.failCondList_.Clone();
-      dungeonId_ = other.dungeonId_;
       result_ = other.result_;
+      dungeonId_ = other.dungeonId_;
+      strengthenPointDataMap_ = other.strengthenPointDataMap_.Clone();
+      exhibitionInfoList_ = other.exhibitionInfoList_.Clone();
+      createPlayerUid_ = other.createPlayerUid_;
+      failCondList_ = other.failCondList_.Clone();
+      useTime_ = other.useTime_;
+      closeTime_ = other.closeTime_;
+      isSuccess_ = other.isSuccess_;
+      settleShow_ = other.settleShow_.Clone();
       switch (other.DetailCase) {
         case DetailOneofCase.TowerLevelEndNotify:
           TowerLevelEndNotify = other.TowerLevelEndNotify.Clone();
@@ -124,8 +130,8 @@ namespace Weedwacker.Shared.Network.Proto {
         case DetailOneofCase.TrialAvatarFirstPassDungeonNotify:
           TrialAvatarFirstPassDungeonNotify = other.TrialAvatarFirstPassDungeonNotify.Clone();
           break;
-        case DetailOneofCase.ChannellerSlabLoopDungeonResultInfo:
-          ChannellerSlabLoopDungeonResultInfo = other.ChannellerSlabLoopDungeonResultInfo.Clone();
+        case DetailOneofCase.ChannelerSlabLoopDungeonResultInfo:
+          ChannelerSlabLoopDungeonResultInfo = other.ChannelerSlabLoopDungeonResultInfo.Clone();
           break;
         case DetailOneofCase.EffigyChallengeDungeonResultInfo:
           EffigyChallengeDungeonResultInfo = other.EffigyChallengeDungeonResultInfo.Clone();
@@ -142,6 +148,12 @@ namespace Weedwacker.Shared.Network.Proto {
         case DetailOneofCase.InstableSpraySettleInfo:
           InstableSpraySettleInfo = other.InstableSpraySettleInfo.Clone();
           break;
+        case DetailOneofCase.WindFieldDungeonSettleInfo:
+          WindFieldDungeonSettleInfo = other.WindFieldDungeonSettleInfo.Clone();
+          break;
+        case DetailOneofCase.EffigyChallengeV2SettleInfo:
+          EffigyChallengeV2SettleInfo = other.EffigyChallengeV2SettleInfo.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -151,6 +163,30 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DungeonSettleNotify Clone() {
       return new DungeonSettleNotify(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 10;
+    private uint result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Result {
+      get { return result_; }
+      set {
+        result_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "dungeon_id" field.</summary>
+    public const int DungeonIdFieldNumber = 13;
+    private uint dungeonId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint DungeonId {
+      get { return dungeonId_; }
+      set {
+        dungeonId_ = value;
+      }
     }
 
     /// <summary>Field number for the "strengthen_point_data_map" field.</summary>
@@ -164,15 +200,49 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return strengthenPointDataMap_; }
     }
 
-    /// <summary>Field number for the "is_success" field.</summary>
-    public const int IsSuccessFieldNumber = 7;
-    private bool isSuccess_;
+    /// <summary>Field number for the "exhibition_info_list" field.</summary>
+    public const int ExhibitionInfoListFieldNumber = 8;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfo> _repeated_exhibitionInfoList_codec
+        = pb::FieldCodec.ForMessage(66, global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfo> exhibitionInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsSuccess {
-      get { return isSuccess_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfo> ExhibitionInfoList {
+      get { return exhibitionInfoList_; }
+    }
+
+    /// <summary>Field number for the "create_player_uid" field.</summary>
+    public const int CreatePlayerUidFieldNumber = 12;
+    private uint createPlayerUid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint CreatePlayerUid {
+      get { return createPlayerUid_; }
       set {
-        isSuccess_ = value;
+        createPlayerUid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "fail_cond_list" field.</summary>
+    public const int FailCondListFieldNumber = 11;
+    private static readonly pb::FieldCodec<uint> _repeated_failCondList_codec
+        = pb::FieldCodec.ForUInt32(90);
+    private readonly pbc::RepeatedField<uint> failCondList_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<uint> FailCondList {
+      get { return failCondList_; }
+    }
+
+    /// <summary>Field number for the "use_time" field.</summary>
+    public const int UseTimeFieldNumber = 1;
+    private uint useTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint UseTime {
+      get { return useTime_; }
+      set {
+        useTime_ = value;
       }
     }
 
@@ -188,15 +258,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_OMCCFBBDJMI" field.</summary>
-    public const int Unk2700OMCCFBBDJMIFieldNumber = 1;
-    private uint unk2700OMCCFBBDJMI_;
+    /// <summary>Field number for the "is_success" field.</summary>
+    public const int IsSuccessFieldNumber = 7;
+    private bool isSuccess_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700OMCCFBBDJMI {
-      get { return unk2700OMCCFBBDJMI_; }
+    public bool IsSuccess {
+      get { return isSuccess_; }
       set {
-        unk2700OMCCFBBDJMI_ = value;
+        isSuccess_ = value;
       }
     }
 
@@ -209,52 +279,6 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.ParamList> SettleShow {
       get { return settleShow_; }
-    }
-
-    /// <summary>Field number for the "exhibition_info_list" field.</summary>
-    public const int ExhibitionInfoListFieldNumber = 8;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfo> _repeated_exhibitionInfoList_codec
-        = pb::FieldCodec.ForMessage(66, global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfo.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfo> exhibitionInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfo>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.DungeonSettleExhibitionInfo> ExhibitionInfoList {
-      get { return exhibitionInfoList_; }
-    }
-
-    /// <summary>Field number for the "fail_cond_list" field.</summary>
-    public const int FailCondListFieldNumber = 11;
-    private static readonly pb::FieldCodec<uint> _repeated_failCondList_codec
-        = pb::FieldCodec.ForUInt32(90);
-    private readonly pbc::RepeatedField<uint> failCondList_ = new pbc::RepeatedField<uint>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> FailCondList {
-      get { return failCondList_; }
-    }
-
-    /// <summary>Field number for the "dungeon_id" field.</summary>
-    public const int DungeonIdFieldNumber = 13;
-    private uint dungeonId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint DungeonId {
-      get { return dungeonId_; }
-      set {
-        dungeonId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "result" field.</summary>
-    public const int ResultFieldNumber = 10;
-    private uint result_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Result {
-      get { return result_; }
-      set {
-        result_ = value;
-      }
     }
 
     /// <summary>Field number for the "tower_level_end_notify" field.</summary>
@@ -281,15 +305,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "channeller_slab_loop_dungeon_result_info" field.</summary>
-    public const int ChannellerSlabLoopDungeonResultInfoFieldNumber = 686;
+    /// <summary>Field number for the "channeler_slab_loop_dungeon_result_info" field.</summary>
+    public const int ChannelerSlabLoopDungeonResultInfoFieldNumber = 686;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfo ChannellerSlabLoopDungeonResultInfo {
-      get { return detailCase_ == DetailOneofCase.ChannellerSlabLoopDungeonResultInfo ? (global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfo) detail_ : null; }
+    public global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfo ChannelerSlabLoopDungeonResultInfo {
+      get { return detailCase_ == DetailOneofCase.ChannelerSlabLoopDungeonResultInfo ? (global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfo) detail_ : null; }
       set {
         detail_ = value;
-        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.ChannellerSlabLoopDungeonResultInfo;
+        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.ChannelerSlabLoopDungeonResultInfo;
       }
     }
 
@@ -353,18 +377,44 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
+    /// <summary>Field number for the "wind_field_dungeon_settle_info" field.</summary>
+    public const int WindFieldDungeonSettleInfoFieldNumber = 1825;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.WindFieldDungeonSettleInfo WindFieldDungeonSettleInfo {
+      get { return detailCase_ == DetailOneofCase.WindFieldDungeonSettleInfo ? (global::Weedwacker.Shared.Network.Proto.WindFieldDungeonSettleInfo) detail_ : null; }
+      set {
+        detail_ = value;
+        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.WindFieldDungeonSettleInfo;
+      }
+    }
+
+    /// <summary>Field number for the "effigy_challenge_v2_settle_info" field.</summary>
+    public const int EffigyChallengeV2SettleInfoFieldNumber = 1802;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2SettleInfo EffigyChallengeV2SettleInfo {
+      get { return detailCase_ == DetailOneofCase.EffigyChallengeV2SettleInfo ? (global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2SettleInfo) detail_ : null; }
+      set {
+        detail_ = value;
+        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.EffigyChallengeV2SettleInfo;
+      }
+    }
+
     private object detail_;
     /// <summary>Enum of possible cases for the "detail" oneof.</summary>
     public enum DetailOneofCase {
       None = 0,
       TowerLevelEndNotify = 351,
       TrialAvatarFirstPassDungeonNotify = 635,
-      ChannellerSlabLoopDungeonResultInfo = 686,
+      ChannelerSlabLoopDungeonResultInfo = 686,
       EffigyChallengeDungeonResultInfo = 328,
       RoguelikeDungeonSettleInfo = 1482,
       CrystalLinkSettleInfo = 112,
       SummerTimeV2DungeonSettleInfo = 1882,
       InstableSpraySettleInfo = 193,
+      WindFieldDungeonSettleInfo = 1825,
+      EffigyChallengeV2SettleInfo = 1802,
     }
     private DetailOneofCase detailCase_ = DetailOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -395,23 +445,26 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!StrengthenPointDataMap.Equals(other.StrengthenPointDataMap)) return false;
-      if (IsSuccess != other.IsSuccess) return false;
-      if (CloseTime != other.CloseTime) return false;
-      if (Unk2700OMCCFBBDJMI != other.Unk2700OMCCFBBDJMI) return false;
-      if (!SettleShow.Equals(other.SettleShow)) return false;
-      if(!exhibitionInfoList_.Equals(other.exhibitionInfoList_)) return false;
-      if(!failCondList_.Equals(other.failCondList_)) return false;
-      if (DungeonId != other.DungeonId) return false;
       if (Result != other.Result) return false;
+      if (DungeonId != other.DungeonId) return false;
+      if (!StrengthenPointDataMap.Equals(other.StrengthenPointDataMap)) return false;
+      if(!exhibitionInfoList_.Equals(other.exhibitionInfoList_)) return false;
+      if (CreatePlayerUid != other.CreatePlayerUid) return false;
+      if(!failCondList_.Equals(other.failCondList_)) return false;
+      if (UseTime != other.UseTime) return false;
+      if (CloseTime != other.CloseTime) return false;
+      if (IsSuccess != other.IsSuccess) return false;
+      if (!SettleShow.Equals(other.SettleShow)) return false;
       if (!object.Equals(TowerLevelEndNotify, other.TowerLevelEndNotify)) return false;
       if (!object.Equals(TrialAvatarFirstPassDungeonNotify, other.TrialAvatarFirstPassDungeonNotify)) return false;
-      if (!object.Equals(ChannellerSlabLoopDungeonResultInfo, other.ChannellerSlabLoopDungeonResultInfo)) return false;
+      if (!object.Equals(ChannelerSlabLoopDungeonResultInfo, other.ChannelerSlabLoopDungeonResultInfo)) return false;
       if (!object.Equals(EffigyChallengeDungeonResultInfo, other.EffigyChallengeDungeonResultInfo)) return false;
       if (!object.Equals(RoguelikeDungeonSettleInfo, other.RoguelikeDungeonSettleInfo)) return false;
       if (!object.Equals(CrystalLinkSettleInfo, other.CrystalLinkSettleInfo)) return false;
       if (!object.Equals(SummerTimeV2DungeonSettleInfo, other.SummerTimeV2DungeonSettleInfo)) return false;
       if (!object.Equals(InstableSpraySettleInfo, other.InstableSpraySettleInfo)) return false;
+      if (!object.Equals(WindFieldDungeonSettleInfo, other.WindFieldDungeonSettleInfo)) return false;
+      if (!object.Equals(EffigyChallengeV2SettleInfo, other.EffigyChallengeV2SettleInfo)) return false;
       if (DetailCase != other.DetailCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -420,23 +473,26 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= StrengthenPointDataMap.GetHashCode();
-      if (IsSuccess != false) hash ^= IsSuccess.GetHashCode();
-      if (CloseTime != 0) hash ^= CloseTime.GetHashCode();
-      if (Unk2700OMCCFBBDJMI != 0) hash ^= Unk2700OMCCFBBDJMI.GetHashCode();
-      hash ^= SettleShow.GetHashCode();
-      hash ^= exhibitionInfoList_.GetHashCode();
-      hash ^= failCondList_.GetHashCode();
-      if (DungeonId != 0) hash ^= DungeonId.GetHashCode();
       if (Result != 0) hash ^= Result.GetHashCode();
+      if (DungeonId != 0) hash ^= DungeonId.GetHashCode();
+      hash ^= StrengthenPointDataMap.GetHashCode();
+      hash ^= exhibitionInfoList_.GetHashCode();
+      if (CreatePlayerUid != 0) hash ^= CreatePlayerUid.GetHashCode();
+      hash ^= failCondList_.GetHashCode();
+      if (UseTime != 0) hash ^= UseTime.GetHashCode();
+      if (CloseTime != 0) hash ^= CloseTime.GetHashCode();
+      if (IsSuccess != false) hash ^= IsSuccess.GetHashCode();
+      hash ^= SettleShow.GetHashCode();
       if (detailCase_ == DetailOneofCase.TowerLevelEndNotify) hash ^= TowerLevelEndNotify.GetHashCode();
       if (detailCase_ == DetailOneofCase.TrialAvatarFirstPassDungeonNotify) hash ^= TrialAvatarFirstPassDungeonNotify.GetHashCode();
-      if (detailCase_ == DetailOneofCase.ChannellerSlabLoopDungeonResultInfo) hash ^= ChannellerSlabLoopDungeonResultInfo.GetHashCode();
+      if (detailCase_ == DetailOneofCase.ChannelerSlabLoopDungeonResultInfo) hash ^= ChannelerSlabLoopDungeonResultInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.EffigyChallengeDungeonResultInfo) hash ^= EffigyChallengeDungeonResultInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.RoguelikeDungeonSettleInfo) hash ^= RoguelikeDungeonSettleInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.CrystalLinkSettleInfo) hash ^= CrystalLinkSettleInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.SummerTimeV2DungeonSettleInfo) hash ^= SummerTimeV2DungeonSettleInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.InstableSpraySettleInfo) hash ^= InstableSpraySettleInfo.GetHashCode();
+      if (detailCase_ == DetailOneofCase.WindFieldDungeonSettleInfo) hash ^= WindFieldDungeonSettleInfo.GetHashCode();
+      if (detailCase_ == DetailOneofCase.EffigyChallengeV2SettleInfo) hash ^= EffigyChallengeV2SettleInfo.GetHashCode();
       hash ^= (int) detailCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -456,9 +512,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700OMCCFBBDJMI != 0) {
+      if (UseTime != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk2700OMCCFBBDJMI);
+        output.WriteUInt32(UseTime);
       }
       if (CloseTime != 0) {
         output.WriteRawTag(32);
@@ -475,6 +531,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteUInt32(Result);
       }
       failCondList_.WriteTo(output, _repeated_failCondList_codec);
+      if (CreatePlayerUid != 0) {
+        output.WriteRawTag(96);
+        output.WriteUInt32(CreatePlayerUid);
+      }
       if (DungeonId != 0) {
         output.WriteRawTag(104);
         output.WriteUInt32(DungeonId);
@@ -500,13 +560,21 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(218, 39);
         output.WriteMessage(TrialAvatarFirstPassDungeonNotify);
       }
-      if (detailCase_ == DetailOneofCase.ChannellerSlabLoopDungeonResultInfo) {
+      if (detailCase_ == DetailOneofCase.ChannelerSlabLoopDungeonResultInfo) {
         output.WriteRawTag(242, 42);
-        output.WriteMessage(ChannellerSlabLoopDungeonResultInfo);
+        output.WriteMessage(ChannelerSlabLoopDungeonResultInfo);
       }
       if (detailCase_ == DetailOneofCase.RoguelikeDungeonSettleInfo) {
         output.WriteRawTag(210, 92);
         output.WriteMessage(RoguelikeDungeonSettleInfo);
+      }
+      if (detailCase_ == DetailOneofCase.EffigyChallengeV2SettleInfo) {
+        output.WriteRawTag(210, 112);
+        output.WriteMessage(EffigyChallengeV2SettleInfo);
+      }
+      if (detailCase_ == DetailOneofCase.WindFieldDungeonSettleInfo) {
+        output.WriteRawTag(138, 114);
+        output.WriteMessage(WindFieldDungeonSettleInfo);
       }
       if (detailCase_ == DetailOneofCase.SummerTimeV2DungeonSettleInfo) {
         output.WriteRawTag(210, 117);
@@ -522,9 +590,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700OMCCFBBDJMI != 0) {
+      if (UseTime != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk2700OMCCFBBDJMI);
+        output.WriteUInt32(UseTime);
       }
       if (CloseTime != 0) {
         output.WriteRawTag(32);
@@ -541,6 +609,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteUInt32(Result);
       }
       failCondList_.WriteTo(ref output, _repeated_failCondList_codec);
+      if (CreatePlayerUid != 0) {
+        output.WriteRawTag(96);
+        output.WriteUInt32(CreatePlayerUid);
+      }
       if (DungeonId != 0) {
         output.WriteRawTag(104);
         output.WriteUInt32(DungeonId);
@@ -566,13 +638,21 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(218, 39);
         output.WriteMessage(TrialAvatarFirstPassDungeonNotify);
       }
-      if (detailCase_ == DetailOneofCase.ChannellerSlabLoopDungeonResultInfo) {
+      if (detailCase_ == DetailOneofCase.ChannelerSlabLoopDungeonResultInfo) {
         output.WriteRawTag(242, 42);
-        output.WriteMessage(ChannellerSlabLoopDungeonResultInfo);
+        output.WriteMessage(ChannelerSlabLoopDungeonResultInfo);
       }
       if (detailCase_ == DetailOneofCase.RoguelikeDungeonSettleInfo) {
         output.WriteRawTag(210, 92);
         output.WriteMessage(RoguelikeDungeonSettleInfo);
+      }
+      if (detailCase_ == DetailOneofCase.EffigyChallengeV2SettleInfo) {
+        output.WriteRawTag(210, 112);
+        output.WriteMessage(EffigyChallengeV2SettleInfo);
+      }
+      if (detailCase_ == DetailOneofCase.WindFieldDungeonSettleInfo) {
+        output.WriteRawTag(138, 114);
+        output.WriteMessage(WindFieldDungeonSettleInfo);
       }
       if (detailCase_ == DetailOneofCase.SummerTimeV2DungeonSettleInfo) {
         output.WriteRawTag(210, 117);
@@ -588,33 +668,36 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (Result != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Result);
+      }
+      if (DungeonId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DungeonId);
+      }
       size += strengthenPointDataMap_.CalculateSize(_map_strengthenPointDataMap_codec);
-      if (IsSuccess != false) {
-        size += 1 + 1;
+      size += exhibitionInfoList_.CalculateSize(_repeated_exhibitionInfoList_codec);
+      if (CreatePlayerUid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CreatePlayerUid);
+      }
+      size += failCondList_.CalculateSize(_repeated_failCondList_codec);
+      if (UseTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(UseTime);
       }
       if (CloseTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CloseTime);
       }
-      if (Unk2700OMCCFBBDJMI != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700OMCCFBBDJMI);
+      if (IsSuccess != false) {
+        size += 1 + 1;
       }
       size += settleShow_.CalculateSize(_map_settleShow_codec);
-      size += exhibitionInfoList_.CalculateSize(_repeated_exhibitionInfoList_codec);
-      size += failCondList_.CalculateSize(_repeated_failCondList_codec);
-      if (DungeonId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DungeonId);
-      }
-      if (Result != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Result);
-      }
       if (detailCase_ == DetailOneofCase.TowerLevelEndNotify) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TowerLevelEndNotify);
       }
       if (detailCase_ == DetailOneofCase.TrialAvatarFirstPassDungeonNotify) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TrialAvatarFirstPassDungeonNotify);
       }
-      if (detailCase_ == DetailOneofCase.ChannellerSlabLoopDungeonResultInfo) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ChannellerSlabLoopDungeonResultInfo);
+      if (detailCase_ == DetailOneofCase.ChannelerSlabLoopDungeonResultInfo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ChannelerSlabLoopDungeonResultInfo);
       }
       if (detailCase_ == DetailOneofCase.EffigyChallengeDungeonResultInfo) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(EffigyChallengeDungeonResultInfo);
@@ -631,6 +714,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (detailCase_ == DetailOneofCase.InstableSpraySettleInfo) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(InstableSpraySettleInfo);
       }
+      if (detailCase_ == DetailOneofCase.WindFieldDungeonSettleInfo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(WindFieldDungeonSettleInfo);
+      }
+      if (detailCase_ == DetailOneofCase.EffigyChallengeV2SettleInfo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(EffigyChallengeV2SettleInfo);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -643,25 +732,28 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
+      if (other.Result != 0) {
+        Result = other.Result;
+      }
+      if (other.DungeonId != 0) {
+        DungeonId = other.DungeonId;
+      }
       strengthenPointDataMap_.Add(other.strengthenPointDataMap_);
-      if (other.IsSuccess != false) {
-        IsSuccess = other.IsSuccess;
+      exhibitionInfoList_.Add(other.exhibitionInfoList_);
+      if (other.CreatePlayerUid != 0) {
+        CreatePlayerUid = other.CreatePlayerUid;
+      }
+      failCondList_.Add(other.failCondList_);
+      if (other.UseTime != 0) {
+        UseTime = other.UseTime;
       }
       if (other.CloseTime != 0) {
         CloseTime = other.CloseTime;
       }
-      if (other.Unk2700OMCCFBBDJMI != 0) {
-        Unk2700OMCCFBBDJMI = other.Unk2700OMCCFBBDJMI;
+      if (other.IsSuccess != false) {
+        IsSuccess = other.IsSuccess;
       }
       settleShow_.Add(other.settleShow_);
-      exhibitionInfoList_.Add(other.exhibitionInfoList_);
-      failCondList_.Add(other.failCondList_);
-      if (other.DungeonId != 0) {
-        DungeonId = other.DungeonId;
-      }
-      if (other.Result != 0) {
-        Result = other.Result;
-      }
       switch (other.DetailCase) {
         case DetailOneofCase.TowerLevelEndNotify:
           if (TowerLevelEndNotify == null) {
@@ -675,11 +767,11 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           TrialAvatarFirstPassDungeonNotify.MergeFrom(other.TrialAvatarFirstPassDungeonNotify);
           break;
-        case DetailOneofCase.ChannellerSlabLoopDungeonResultInfo:
-          if (ChannellerSlabLoopDungeonResultInfo == null) {
-            ChannellerSlabLoopDungeonResultInfo = new global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfo();
+        case DetailOneofCase.ChannelerSlabLoopDungeonResultInfo:
+          if (ChannelerSlabLoopDungeonResultInfo == null) {
+            ChannelerSlabLoopDungeonResultInfo = new global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfo();
           }
-          ChannellerSlabLoopDungeonResultInfo.MergeFrom(other.ChannellerSlabLoopDungeonResultInfo);
+          ChannelerSlabLoopDungeonResultInfo.MergeFrom(other.ChannelerSlabLoopDungeonResultInfo);
           break;
         case DetailOneofCase.EffigyChallengeDungeonResultInfo:
           if (EffigyChallengeDungeonResultInfo == null) {
@@ -711,6 +803,18 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           InstableSpraySettleInfo.MergeFrom(other.InstableSpraySettleInfo);
           break;
+        case DetailOneofCase.WindFieldDungeonSettleInfo:
+          if (WindFieldDungeonSettleInfo == null) {
+            WindFieldDungeonSettleInfo = new global::Weedwacker.Shared.Network.Proto.WindFieldDungeonSettleInfo();
+          }
+          WindFieldDungeonSettleInfo.MergeFrom(other.WindFieldDungeonSettleInfo);
+          break;
+        case DetailOneofCase.EffigyChallengeV2SettleInfo:
+          if (EffigyChallengeV2SettleInfo == null) {
+            EffigyChallengeV2SettleInfo = new global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2SettleInfo();
+          }
+          EffigyChallengeV2SettleInfo.MergeFrom(other.EffigyChallengeV2SettleInfo);
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -729,7 +833,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Unk2700OMCCFBBDJMI = input.ReadUInt32();
+            UseTime = input.ReadUInt32();
             break;
           }
           case 32: {
@@ -755,6 +859,10 @@ namespace Weedwacker.Shared.Network.Proto {
           case 90:
           case 88: {
             failCondList_.AddEntriesFrom(input, _repeated_failCondList_codec);
+            break;
+          }
+          case 96: {
+            CreatePlayerUid = input.ReadUInt32();
             break;
           }
           case 104: {
@@ -812,11 +920,11 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 5490: {
             global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfo();
-            if (detailCase_ == DetailOneofCase.ChannellerSlabLoopDungeonResultInfo) {
-              subBuilder.MergeFrom(ChannellerSlabLoopDungeonResultInfo);
+            if (detailCase_ == DetailOneofCase.ChannelerSlabLoopDungeonResultInfo) {
+              subBuilder.MergeFrom(ChannelerSlabLoopDungeonResultInfo);
             }
             input.ReadMessage(subBuilder);
-            ChannellerSlabLoopDungeonResultInfo = subBuilder;
+            ChannelerSlabLoopDungeonResultInfo = subBuilder;
             break;
           }
           case 11858: {
@@ -826,6 +934,24 @@ namespace Weedwacker.Shared.Network.Proto {
             }
             input.ReadMessage(subBuilder);
             RoguelikeDungeonSettleInfo = subBuilder;
+            break;
+          }
+          case 14418: {
+            global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2SettleInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2SettleInfo();
+            if (detailCase_ == DetailOneofCase.EffigyChallengeV2SettleInfo) {
+              subBuilder.MergeFrom(EffigyChallengeV2SettleInfo);
+            }
+            input.ReadMessage(subBuilder);
+            EffigyChallengeV2SettleInfo = subBuilder;
+            break;
+          }
+          case 14602: {
+            global::Weedwacker.Shared.Network.Proto.WindFieldDungeonSettleInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.WindFieldDungeonSettleInfo();
+            if (detailCase_ == DetailOneofCase.WindFieldDungeonSettleInfo) {
+              subBuilder.MergeFrom(WindFieldDungeonSettleInfo);
+            }
+            input.ReadMessage(subBuilder);
+            WindFieldDungeonSettleInfo = subBuilder;
             break;
           }
           case 15058: {
@@ -853,7 +979,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Unk2700OMCCFBBDJMI = input.ReadUInt32();
+            UseTime = input.ReadUInt32();
             break;
           }
           case 32: {
@@ -879,6 +1005,10 @@ namespace Weedwacker.Shared.Network.Proto {
           case 90:
           case 88: {
             failCondList_.AddEntriesFrom(ref input, _repeated_failCondList_codec);
+            break;
+          }
+          case 96: {
+            CreatePlayerUid = input.ReadUInt32();
             break;
           }
           case 104: {
@@ -936,11 +1066,11 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 5490: {
             global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonResultInfo();
-            if (detailCase_ == DetailOneofCase.ChannellerSlabLoopDungeonResultInfo) {
-              subBuilder.MergeFrom(ChannellerSlabLoopDungeonResultInfo);
+            if (detailCase_ == DetailOneofCase.ChannelerSlabLoopDungeonResultInfo) {
+              subBuilder.MergeFrom(ChannelerSlabLoopDungeonResultInfo);
             }
             input.ReadMessage(subBuilder);
-            ChannellerSlabLoopDungeonResultInfo = subBuilder;
+            ChannelerSlabLoopDungeonResultInfo = subBuilder;
             break;
           }
           case 11858: {
@@ -950,6 +1080,24 @@ namespace Weedwacker.Shared.Network.Proto {
             }
             input.ReadMessage(subBuilder);
             RoguelikeDungeonSettleInfo = subBuilder;
+            break;
+          }
+          case 14418: {
+            global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2SettleInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2SettleInfo();
+            if (detailCase_ == DetailOneofCase.EffigyChallengeV2SettleInfo) {
+              subBuilder.MergeFrom(EffigyChallengeV2SettleInfo);
+            }
+            input.ReadMessage(subBuilder);
+            EffigyChallengeV2SettleInfo = subBuilder;
+            break;
+          }
+          case 14602: {
+            global::Weedwacker.Shared.Network.Proto.WindFieldDungeonSettleInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.WindFieldDungeonSettleInfo();
+            if (detailCase_ == DetailOneofCase.WindFieldDungeonSettleInfo) {
+              subBuilder.MergeFrom(WindFieldDungeonSettleInfo);
+            }
+            input.ReadMessage(subBuilder);
+            WindFieldDungeonSettleInfo = subBuilder;
             break;
           }
           case 15058: {

@@ -24,21 +24,21 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetPlayerTokenReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdHZXRQbGF5ZXJUb2tlblJlcS5wcm90byKhAwoRR2V0UGxheWVyVG9rZW5S",
+            "ChdHZXRQbGF5ZXJUb2tlblJlcS5wcm90byKkAwoRR2V0UGxheWVyVG9rZW5S",
             "ZXESFQoNYWNjb3VudF90b2tlbhgKIAEoCRITCgthY2NvdW50X3VpZBgLIAEo",
             "CRISCgpwc25fcmVnaW9uGAQgASgJEhEKCW9ubGluZV9pZBgHIAEoCRISCgpj",
             "aGFubmVsX2lkGA8gASgNEhMKC2FjY291bnRfZXh0GAkgASgJEhQKDGNvdW50",
-            "cnlfY29kZRgFIAEoCRIUCgtjbGllbnRfc2VlZBj4BSABKAkSEAoIaXNfZ3Vl",
-            "c3QYBiABKAgSEQoIYmlydGhkYXkYtg0gASgJEhYKDnN1Yl9jaGFubmVsX2lk",
-            "GAggASgNEhUKDXBsYXRmb3JtX3R5cGUYDCABKA0SFQoNY2xpZW50X2lwX3N0",
-            "chgDIAEoCRIOCgZwc25faWQYDSABKAkSFAoMYWNjb3VudF90eXBlGAEgASgN",
-            "EhwKE1VuazI3MDBfTk9KUEVISUJESkgY4wcgASgNEhcKD2Nsb3VkX2NsaWVu",
-            "dF9pcBgOIAEoDRIPCgZrZXlfaWQY+w0gASgNEgsKA3VpZBgCIAEoDUIiqgIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "cnlfY29kZRgFIAEoCRIYCg9jbGllbnRfcmFuZF9rZXkY+AUgASgJEhAKCGlz",
+            "X2d1ZXN0GAYgASgIEhEKCGJpcnRoZGF5GLYNIAEoCRIWCg5zdWJfY2hhbm5l",
+            "bF9pZBgIIAEoDRIVCg1wbGF0Zm9ybV90eXBlGAwgASgNEhUKDWNsaWVudF9p",
+            "cF9zdHIYAyABKAkSDgoGcHNuX2lkGA0gASgJEhQKDGFjY291bnRfdHlwZRgB",
+            "IAEoDRIbChJtaW5vcnNfcmVnX21pbl9hZ2UY4wcgASgNEhcKD2Nsb3VkX2Ns",
+            "aWVudF9pcBgOIAEoDRIPCgZrZXlfaWQY+w0gASgNEgsKA3VpZBgCIAEoDUIi",
+            "qgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetPlayerTokenReq), global::Weedwacker.Shared.Network.Proto.GetPlayerTokenReq.Parser, new[]{ "AccountToken", "AccountUid", "PsnRegion", "OnlineId", "ChannelId", "AccountExt", "CountryCode", "ClientSeed", "IsGuest", "Birthday", "SubChannelId", "PlatformType", "ClientIpStr", "PsnId", "AccountType", "Unk2700NOJPEHIBDJH", "CloudClientIp", "KeyId", "Uid" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetPlayerTokenReq), global::Weedwacker.Shared.Network.Proto.GetPlayerTokenReq.Parser, new[]{ "AccountToken", "AccountUid", "PsnRegion", "OnlineId", "ChannelId", "AccountExt", "CountryCode", "ClientRandKey", "IsGuest", "Birthday", "SubChannelId", "PlatformType", "ClientIpStr", "PsnId", "AccountType", "MinorsRegMinAge", "CloudClientIp", "KeyId", "Uid" }, null, null, null, null)
           }));
     }
     #endregion
@@ -92,7 +92,7 @@ namespace Weedwacker.Shared.Network.Proto {
       channelId_ = other.channelId_;
       accountExt_ = other.accountExt_;
       countryCode_ = other.countryCode_;
-      clientSeed_ = other.clientSeed_;
+      clientRandKey_ = other.clientRandKey_;
       isGuest_ = other.isGuest_;
       birthday_ = other.birthday_;
       subChannelId_ = other.subChannelId_;
@@ -100,7 +100,7 @@ namespace Weedwacker.Shared.Network.Proto {
       clientIpStr_ = other.clientIpStr_;
       psnId_ = other.psnId_;
       accountType_ = other.accountType_;
-      unk2700NOJPEHIBDJH_ = other.unk2700NOJPEHIBDJH_;
+      minorsRegMinAge_ = other.minorsRegMinAge_;
       cloudClientIp_ = other.cloudClientIp_;
       keyId_ = other.keyId_;
       uid_ = other.uid_;
@@ -197,15 +197,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "client_seed" field.</summary>
-    public const int ClientSeedFieldNumber = 760;
-    private string clientSeed_ = "";
+    /// <summary>Field number for the "client_rand_key" field.</summary>
+    public const int ClientRandKeyFieldNumber = 760;
+    private string clientRandKey_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ClientSeed {
-      get { return clientSeed_; }
+    public string ClientRandKey {
+      get { return clientRandKey_; }
       set {
-        clientSeed_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        clientRandKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -293,15 +293,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_NOJPEHIBDJH" field.</summary>
-    public const int Unk2700NOJPEHIBDJHFieldNumber = 995;
-    private uint unk2700NOJPEHIBDJH_;
+    /// <summary>Field number for the "minors_reg_min_age" field.</summary>
+    public const int MinorsRegMinAgeFieldNumber = 995;
+    private uint minorsRegMinAge_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700NOJPEHIBDJH {
-      get { return unk2700NOJPEHIBDJH_; }
+    public uint MinorsRegMinAge {
+      get { return minorsRegMinAge_; }
       set {
-        unk2700NOJPEHIBDJH_ = value;
+        minorsRegMinAge_ = value;
       }
     }
 
@@ -363,7 +363,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ChannelId != other.ChannelId) return false;
       if (AccountExt != other.AccountExt) return false;
       if (CountryCode != other.CountryCode) return false;
-      if (ClientSeed != other.ClientSeed) return false;
+      if (ClientRandKey != other.ClientRandKey) return false;
       if (IsGuest != other.IsGuest) return false;
       if (Birthday != other.Birthday) return false;
       if (SubChannelId != other.SubChannelId) return false;
@@ -371,7 +371,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ClientIpStr != other.ClientIpStr) return false;
       if (PsnId != other.PsnId) return false;
       if (AccountType != other.AccountType) return false;
-      if (Unk2700NOJPEHIBDJH != other.Unk2700NOJPEHIBDJH) return false;
+      if (MinorsRegMinAge != other.MinorsRegMinAge) return false;
       if (CloudClientIp != other.CloudClientIp) return false;
       if (KeyId != other.KeyId) return false;
       if (Uid != other.Uid) return false;
@@ -389,7 +389,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ChannelId != 0) hash ^= ChannelId.GetHashCode();
       if (AccountExt.Length != 0) hash ^= AccountExt.GetHashCode();
       if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
-      if (ClientSeed.Length != 0) hash ^= ClientSeed.GetHashCode();
+      if (ClientRandKey.Length != 0) hash ^= ClientRandKey.GetHashCode();
       if (IsGuest != false) hash ^= IsGuest.GetHashCode();
       if (Birthday.Length != 0) hash ^= Birthday.GetHashCode();
       if (SubChannelId != 0) hash ^= SubChannelId.GetHashCode();
@@ -397,7 +397,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ClientIpStr.Length != 0) hash ^= ClientIpStr.GetHashCode();
       if (PsnId.Length != 0) hash ^= PsnId.GetHashCode();
       if (AccountType != 0) hash ^= AccountType.GetHashCode();
-      if (Unk2700NOJPEHIBDJH != 0) hash ^= Unk2700NOJPEHIBDJH.GetHashCode();
+      if (MinorsRegMinAge != 0) hash ^= MinorsRegMinAge.GetHashCode();
       if (CloudClientIp != 0) hash ^= CloudClientIp.GetHashCode();
       if (KeyId != 0) hash ^= KeyId.GetHashCode();
       if (Uid != 0) hash ^= Uid.GetHashCode();
@@ -479,13 +479,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(120);
         output.WriteUInt32(ChannelId);
       }
-      if (ClientSeed.Length != 0) {
+      if (ClientRandKey.Length != 0) {
         output.WriteRawTag(194, 47);
-        output.WriteString(ClientSeed);
+        output.WriteString(ClientRandKey);
       }
-      if (Unk2700NOJPEHIBDJH != 0) {
+      if (MinorsRegMinAge != 0) {
         output.WriteRawTag(152, 62);
-        output.WriteUInt32(Unk2700NOJPEHIBDJH);
+        output.WriteUInt32(MinorsRegMinAge);
       }
       if (Birthday.Length != 0) {
         output.WriteRawTag(178, 107);
@@ -565,13 +565,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(120);
         output.WriteUInt32(ChannelId);
       }
-      if (ClientSeed.Length != 0) {
+      if (ClientRandKey.Length != 0) {
         output.WriteRawTag(194, 47);
-        output.WriteString(ClientSeed);
+        output.WriteString(ClientRandKey);
       }
-      if (Unk2700NOJPEHIBDJH != 0) {
+      if (MinorsRegMinAge != 0) {
         output.WriteRawTag(152, 62);
-        output.WriteUInt32(Unk2700NOJPEHIBDJH);
+        output.WriteUInt32(MinorsRegMinAge);
       }
       if (Birthday.Length != 0) {
         output.WriteRawTag(178, 107);
@@ -612,8 +612,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (CountryCode.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
       }
-      if (ClientSeed.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(ClientSeed);
+      if (ClientRandKey.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(ClientRandKey);
       }
       if (IsGuest != false) {
         size += 1 + 1;
@@ -636,8 +636,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (AccountType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AccountType);
       }
-      if (Unk2700NOJPEHIBDJH != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700NOJPEHIBDJH);
+      if (MinorsRegMinAge != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(MinorsRegMinAge);
       }
       if (CloudClientIp != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CloudClientIp);
@@ -681,8 +681,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.CountryCode.Length != 0) {
         CountryCode = other.CountryCode;
       }
-      if (other.ClientSeed.Length != 0) {
-        ClientSeed = other.ClientSeed;
+      if (other.ClientRandKey.Length != 0) {
+        ClientRandKey = other.ClientRandKey;
       }
       if (other.IsGuest != false) {
         IsGuest = other.IsGuest;
@@ -705,8 +705,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.AccountType != 0) {
         AccountType = other.AccountType;
       }
-      if (other.Unk2700NOJPEHIBDJH != 0) {
-        Unk2700NOJPEHIBDJH = other.Unk2700NOJPEHIBDJH;
+      if (other.MinorsRegMinAge != 0) {
+        MinorsRegMinAge = other.MinorsRegMinAge;
       }
       if (other.CloudClientIp != 0) {
         CloudClientIp = other.CloudClientIp;
@@ -793,11 +793,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 6082: {
-            ClientSeed = input.ReadString();
+            ClientRandKey = input.ReadString();
             break;
           }
           case 7960: {
-            Unk2700NOJPEHIBDJH = input.ReadUInt32();
+            MinorsRegMinAge = input.ReadUInt32();
             break;
           }
           case 13746: {
@@ -884,11 +884,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 6082: {
-            ClientSeed = input.ReadString();
+            ClientRandKey = input.ReadString();
             break;
           }
           case 7960: {
-            Unk2700NOJPEHIBDJH = input.ReadUInt32();
+            MinorsRegMinAge = input.ReadUInt32();
             break;
           }
           case 13746: {

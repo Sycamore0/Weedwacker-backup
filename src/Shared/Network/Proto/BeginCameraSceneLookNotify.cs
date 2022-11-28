@@ -25,27 +25,25 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBCZWdpbkNhbWVyYVNjZW5lTG9va05vdGlmeS5wcm90bxoMVmVjdG9yLnBy",
-            "b3RvIrwFChpCZWdpbkNhbWVyYVNjZW5lTG9va05vdGlmeRIcChNVbmszMDAw",
-            "X01OTExDSk1QTU5IGIIJIAEoDRIbChNVbmsyNzAwX0RIQUhFS09HSEJKGAcg",
-            "ASgCEhgKEGlzX3NldF9zY3JlZW5feHkYBSABKAgSGQoIbG9va19wb3MYBCAB",
-            "KAsyBy5WZWN0b3ISHwoXaXNfcmVjb3Zlcl9rZWVwX2N1cnJlbnQYCyABKAgS",
-            "HAoTVW5rMzAwMF9HT1BJRlBNRkVQQhjfCiABKAgSTAoTVW5rMjcwMF9ISUFL",
-            "Tk5DS0hKQhgGIAEoDjIvLkJlZ2luQ2FtZXJhU2NlbmVMb29rTm90aWZ5LlVu",
-            "azI3MDBfTE5DSERET09FQ0QSGwoTaXNfY2hhbmdlX3BsYXlfbW9kZRgJIAEo",
-            "CBIcChNVbmszMDAwX0lFRklLTUhDS0RIGM8IIAEoDRIQCghzY3JlZW5feRgP",
-            "IAEoAhIZChFpc19zZXRfZm9sbG93X3BvcxgNIAEoCBIQCghpc19mb3JjZRgM",
-            "IAEoCBIcChNVbmszMDAwX09HQ0xNRkZBREJEGN4NIAEoAhISCgllbnRpdHlf",
-            "aWQYrwogASgNEhAKCHNjcmVlbl94GAMgASgCEhUKDWlzX2ZvcmNlX3dhbGsY",
-            "CiABKAgSFAoMb3RoZXJfcGFyYW1zGAEgAygJEhsKCmZvbGxvd19wb3MYCCAB",
-            "KAsyBy5WZWN0b3ISFgoOaXNfYWxsb3dfaW5wdXQYAiABKAgSEAoIZHVyYXRp",
-            "b24YDiABKAIibwoTVW5rMjcwMF9MTkNIRERPT0VDRBIrCidVbmsyNzAwX0xO",
-            "Q0hERE9PRUNEX1VuazI3MDBfQUNPRU5CTURGQlAQABIrCidVbmsyNzAwX0xO",
-            "Q0hERE9PRUNEX1VuazI3MDBfRktCTENERkxDT00QAUIiqgIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "b3RvIt0EChpCZWdpbkNhbWVyYVNjZW5lTG9va05vdGlmeRITCgpibGVuZF90",
+            "eXBlGIIJIAEoDRIVCg1jdXN0b21fcmFkaXVzGAcgASgCEhgKEGlzX3NldF9z",
+            "Y3JlZW5feHkYBSABKAgSGQoIbG9va19wb3MYBCABKAsyBy5WZWN0b3ISHwoX",
+            "aXNfcmVjb3Zlcl9rZWVwX2N1cnJlbnQYCyABKAgSGgoRaXNfYWJzX2ZvbGxv",
+            "d19wb3MY3wogASgIEj4KDWtlZXBfcm90X3R5cGUYBiABKA4yJy5CZWdpbkNh",
+            "bWVyYVNjZW5lTG9va05vdGlmeS5LZWVwUm90VHlwZRIbChNpc19jaGFuZ2Vf",
+            "cGxheV9tb2RlGAkgASgIEhgKD2Rpc2FibGVfcHJvdGVjdBjPCCABKA0SEAoI",
+            "c2NyZWVuX3kYDyABKAISGQoRaXNfc2V0X2ZvbGxvd19wb3MYDSABKAgSEAoI",
+            "aXNfZm9yY2UYDCABKAgSFwoOYmxlbmRfZHVyYXRpb24Y3g0gASgCEhIKCWVu",
+            "dGl0eV9pZBivCiABKA0SEAoIc2NyZWVuX3gYAyABKAISFQoNaXNfZm9yY2Vf",
+            "d2FsaxgKIAEoCBIUCgxvdGhlcl9wYXJhbXMYASADKAkSGwoKZm9sbG93X3Bv",
+            "cxgIIAEoCzIHLlZlY3RvchIWCg5pc19hbGxvd19pbnB1dBgCIAEoCBIQCghk",
+            "dXJhdGlvbhgOIAEoAiI4CgtLZWVwUm90VHlwZRITCg9LRUVQX1JPVF9UWVBF",
+            "X1gQABIUChBLRUVQX1JPVF9UWVBFX1hZEAFCIqoCH1dlZWR3YWNrZXIuU2hh",
+            "cmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify), global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Parser, new[]{ "Unk3000MNLLCJMPMNH", "Unk2700DHAHEKOGHBJ", "IsSetScreenXy", "LookPos", "IsRecoverKeepCurrent", "Unk3000GOPIFPMFEPB", "Unk2700HIAKNNCKHJB", "IsChangePlayMode", "Unk3000IEFIKMHCKDH", "ScreenY", "IsSetFollowPos", "IsForce", "Unk3000OGCLMFFADBD", "EntityId", "ScreenX", "IsForceWalk", "OtherParams", "FollowPos", "IsAllowInput", "Duration" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD) }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify), global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Parser, new[]{ "BlendType", "CustomRadius", "IsSetScreenXy", "LookPos", "IsRecoverKeepCurrent", "IsAbsFollowPos", "KeepRotType", "IsChangePlayMode", "DisableProtect", "ScreenY", "IsSetFollowPos", "IsForce", "BlendDuration", "EntityId", "ScreenX", "IsForceWalk", "OtherParams", "FollowPos", "IsAllowInput", "Duration" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType) }, null, null)
           }));
     }
     #endregion
@@ -91,19 +89,19 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BeginCameraSceneLookNotify(BeginCameraSceneLookNotify other) : this() {
-      unk3000MNLLCJMPMNH_ = other.unk3000MNLLCJMPMNH_;
-      unk2700DHAHEKOGHBJ_ = other.unk2700DHAHEKOGHBJ_;
+      blendType_ = other.blendType_;
+      customRadius_ = other.customRadius_;
       isSetScreenXy_ = other.isSetScreenXy_;
       lookPos_ = other.lookPos_ != null ? other.lookPos_.Clone() : null;
       isRecoverKeepCurrent_ = other.isRecoverKeepCurrent_;
-      unk3000GOPIFPMFEPB_ = other.unk3000GOPIFPMFEPB_;
-      unk2700HIAKNNCKHJB_ = other.unk2700HIAKNNCKHJB_;
+      isAbsFollowPos_ = other.isAbsFollowPos_;
+      keepRotType_ = other.keepRotType_;
       isChangePlayMode_ = other.isChangePlayMode_;
-      unk3000IEFIKMHCKDH_ = other.unk3000IEFIKMHCKDH_;
+      disableProtect_ = other.disableProtect_;
       screenY_ = other.screenY_;
       isSetFollowPos_ = other.isSetFollowPos_;
       isForce_ = other.isForce_;
-      unk3000OGCLMFFADBD_ = other.unk3000OGCLMFFADBD_;
+      blendDuration_ = other.blendDuration_;
       entityId_ = other.entityId_;
       screenX_ = other.screenX_;
       isForceWalk_ = other.isForceWalk_;
@@ -120,27 +118,27 @@ namespace Weedwacker.Shared.Network.Proto {
       return new BeginCameraSceneLookNotify(this);
     }
 
-    /// <summary>Field number for the "Unk3000_MNLLCJMPMNH" field.</summary>
-    public const int Unk3000MNLLCJMPMNHFieldNumber = 1154;
-    private uint unk3000MNLLCJMPMNH_;
+    /// <summary>Field number for the "blend_type" field.</summary>
+    public const int BlendTypeFieldNumber = 1154;
+    private uint blendType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3000MNLLCJMPMNH {
-      get { return unk3000MNLLCJMPMNH_; }
+    public uint BlendType {
+      get { return blendType_; }
       set {
-        unk3000MNLLCJMPMNH_ = value;
+        blendType_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_DHAHEKOGHBJ" field.</summary>
-    public const int Unk2700DHAHEKOGHBJFieldNumber = 7;
-    private float unk2700DHAHEKOGHBJ_;
+    /// <summary>Field number for the "custom_radius" field.</summary>
+    public const int CustomRadiusFieldNumber = 7;
+    private float customRadius_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk2700DHAHEKOGHBJ {
-      get { return unk2700DHAHEKOGHBJ_; }
+    public float CustomRadius {
+      get { return customRadius_; }
       set {
-        unk2700DHAHEKOGHBJ_ = value;
+        customRadius_ = value;
       }
     }
 
@@ -180,27 +178,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3000_GOPIFPMFEPB" field.</summary>
-    public const int Unk3000GOPIFPMFEPBFieldNumber = 1375;
-    private bool unk3000GOPIFPMFEPB_;
+    /// <summary>Field number for the "is_abs_follow_pos" field.</summary>
+    public const int IsAbsFollowPosFieldNumber = 1375;
+    private bool isAbsFollowPos_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3000GOPIFPMFEPB {
-      get { return unk3000GOPIFPMFEPB_; }
+    public bool IsAbsFollowPos {
+      get { return isAbsFollowPos_; }
       set {
-        unk3000GOPIFPMFEPB_ = value;
+        isAbsFollowPos_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_HIAKNNCKHJB" field.</summary>
-    public const int Unk2700HIAKNNCKHJBFieldNumber = 6;
-    private global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD unk2700HIAKNNCKHJB_ = global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD.Unk2700Acoenbmdfbp;
+    /// <summary>Field number for the "keep_rot_type" field.</summary>
+    public const int KeepRotTypeFieldNumber = 6;
+    private global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType keepRotType_ = global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType.X;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD Unk2700HIAKNNCKHJB {
-      get { return unk2700HIAKNNCKHJB_; }
+    public global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType KeepRotType {
+      get { return keepRotType_; }
       set {
-        unk2700HIAKNNCKHJB_ = value;
+        keepRotType_ = value;
       }
     }
 
@@ -216,15 +214,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3000_IEFIKMHCKDH" field.</summary>
-    public const int Unk3000IEFIKMHCKDHFieldNumber = 1103;
-    private uint unk3000IEFIKMHCKDH_;
+    /// <summary>Field number for the "disable_protect" field.</summary>
+    public const int DisableProtectFieldNumber = 1103;
+    private uint disableProtect_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3000IEFIKMHCKDH {
-      get { return unk3000IEFIKMHCKDH_; }
+    public uint DisableProtect {
+      get { return disableProtect_; }
       set {
-        unk3000IEFIKMHCKDH_ = value;
+        disableProtect_ = value;
       }
     }
 
@@ -264,15 +262,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3000_OGCLMFFADBD" field.</summary>
-    public const int Unk3000OGCLMFFADBDFieldNumber = 1758;
-    private float unk3000OGCLMFFADBD_;
+    /// <summary>Field number for the "blend_duration" field.</summary>
+    public const int BlendDurationFieldNumber = 1758;
+    private float blendDuration_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3000OGCLMFFADBD {
-      get { return unk3000OGCLMFFADBD_; }
+    public float BlendDuration {
+      get { return blendDuration_; }
       set {
-        unk3000OGCLMFFADBD_ = value;
+        blendDuration_ = value;
       }
     }
 
@@ -374,19 +372,19 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3000MNLLCJMPMNH != other.Unk3000MNLLCJMPMNH) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk2700DHAHEKOGHBJ, other.Unk2700DHAHEKOGHBJ)) return false;
+      if (BlendType != other.BlendType) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(CustomRadius, other.CustomRadius)) return false;
       if (IsSetScreenXy != other.IsSetScreenXy) return false;
       if (!object.Equals(LookPos, other.LookPos)) return false;
       if (IsRecoverKeepCurrent != other.IsRecoverKeepCurrent) return false;
-      if (Unk3000GOPIFPMFEPB != other.Unk3000GOPIFPMFEPB) return false;
-      if (Unk2700HIAKNNCKHJB != other.Unk2700HIAKNNCKHJB) return false;
+      if (IsAbsFollowPos != other.IsAbsFollowPos) return false;
+      if (KeepRotType != other.KeepRotType) return false;
       if (IsChangePlayMode != other.IsChangePlayMode) return false;
-      if (Unk3000IEFIKMHCKDH != other.Unk3000IEFIKMHCKDH) return false;
+      if (DisableProtect != other.DisableProtect) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ScreenY, other.ScreenY)) return false;
       if (IsSetFollowPos != other.IsSetFollowPos) return false;
       if (IsForce != other.IsForce) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3000OGCLMFFADBD, other.Unk3000OGCLMFFADBD)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(BlendDuration, other.BlendDuration)) return false;
       if (EntityId != other.EntityId) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ScreenX, other.ScreenX)) return false;
       if (IsForceWalk != other.IsForceWalk) return false;
@@ -401,19 +399,19 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3000MNLLCJMPMNH != 0) hash ^= Unk3000MNLLCJMPMNH.GetHashCode();
-      if (Unk2700DHAHEKOGHBJ != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk2700DHAHEKOGHBJ);
+      if (BlendType != 0) hash ^= BlendType.GetHashCode();
+      if (CustomRadius != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(CustomRadius);
       if (IsSetScreenXy != false) hash ^= IsSetScreenXy.GetHashCode();
       if (lookPos_ != null) hash ^= LookPos.GetHashCode();
       if (IsRecoverKeepCurrent != false) hash ^= IsRecoverKeepCurrent.GetHashCode();
-      if (Unk3000GOPIFPMFEPB != false) hash ^= Unk3000GOPIFPMFEPB.GetHashCode();
-      if (Unk2700HIAKNNCKHJB != global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD.Unk2700Acoenbmdfbp) hash ^= Unk2700HIAKNNCKHJB.GetHashCode();
+      if (IsAbsFollowPos != false) hash ^= IsAbsFollowPos.GetHashCode();
+      if (KeepRotType != global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType.X) hash ^= KeepRotType.GetHashCode();
       if (IsChangePlayMode != false) hash ^= IsChangePlayMode.GetHashCode();
-      if (Unk3000IEFIKMHCKDH != 0) hash ^= Unk3000IEFIKMHCKDH.GetHashCode();
+      if (DisableProtect != 0) hash ^= DisableProtect.GetHashCode();
       if (ScreenY != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ScreenY);
       if (IsSetFollowPos != false) hash ^= IsSetFollowPos.GetHashCode();
       if (IsForce != false) hash ^= IsForce.GetHashCode();
-      if (Unk3000OGCLMFFADBD != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3000OGCLMFFADBD);
+      if (BlendDuration != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(BlendDuration);
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
       if (ScreenX != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ScreenX);
       if (IsForceWalk != false) hash ^= IsForceWalk.GetHashCode();
@@ -456,13 +454,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteBool(IsSetScreenXy);
       }
-      if (Unk2700HIAKNNCKHJB != global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD.Unk2700Acoenbmdfbp) {
+      if (KeepRotType != global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType.X) {
         output.WriteRawTag(48);
-        output.WriteEnum((int) Unk2700HIAKNNCKHJB);
+        output.WriteEnum((int) KeepRotType);
       }
-      if (Unk2700DHAHEKOGHBJ != 0F) {
+      if (CustomRadius != 0F) {
         output.WriteRawTag(61);
-        output.WriteFloat(Unk2700DHAHEKOGHBJ);
+        output.WriteFloat(CustomRadius);
       }
       if (followPos_ != null) {
         output.WriteRawTag(66);
@@ -496,25 +494,25 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(125);
         output.WriteFloat(ScreenY);
       }
-      if (Unk3000IEFIKMHCKDH != 0) {
+      if (DisableProtect != 0) {
         output.WriteRawTag(248, 68);
-        output.WriteUInt32(Unk3000IEFIKMHCKDH);
+        output.WriteUInt32(DisableProtect);
       }
-      if (Unk3000MNLLCJMPMNH != 0) {
+      if (BlendType != 0) {
         output.WriteRawTag(144, 72);
-        output.WriteUInt32(Unk3000MNLLCJMPMNH);
+        output.WriteUInt32(BlendType);
       }
       if (EntityId != 0) {
         output.WriteRawTag(248, 82);
         output.WriteUInt32(EntityId);
       }
-      if (Unk3000GOPIFPMFEPB != false) {
+      if (IsAbsFollowPos != false) {
         output.WriteRawTag(248, 85);
-        output.WriteBool(Unk3000GOPIFPMFEPB);
+        output.WriteBool(IsAbsFollowPos);
       }
-      if (Unk3000OGCLMFFADBD != 0F) {
+      if (BlendDuration != 0F) {
         output.WriteRawTag(245, 109);
-        output.WriteFloat(Unk3000OGCLMFFADBD);
+        output.WriteFloat(BlendDuration);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -543,13 +541,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteBool(IsSetScreenXy);
       }
-      if (Unk2700HIAKNNCKHJB != global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD.Unk2700Acoenbmdfbp) {
+      if (KeepRotType != global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType.X) {
         output.WriteRawTag(48);
-        output.WriteEnum((int) Unk2700HIAKNNCKHJB);
+        output.WriteEnum((int) KeepRotType);
       }
-      if (Unk2700DHAHEKOGHBJ != 0F) {
+      if (CustomRadius != 0F) {
         output.WriteRawTag(61);
-        output.WriteFloat(Unk2700DHAHEKOGHBJ);
+        output.WriteFloat(CustomRadius);
       }
       if (followPos_ != null) {
         output.WriteRawTag(66);
@@ -583,25 +581,25 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(125);
         output.WriteFloat(ScreenY);
       }
-      if (Unk3000IEFIKMHCKDH != 0) {
+      if (DisableProtect != 0) {
         output.WriteRawTag(248, 68);
-        output.WriteUInt32(Unk3000IEFIKMHCKDH);
+        output.WriteUInt32(DisableProtect);
       }
-      if (Unk3000MNLLCJMPMNH != 0) {
+      if (BlendType != 0) {
         output.WriteRawTag(144, 72);
-        output.WriteUInt32(Unk3000MNLLCJMPMNH);
+        output.WriteUInt32(BlendType);
       }
       if (EntityId != 0) {
         output.WriteRawTag(248, 82);
         output.WriteUInt32(EntityId);
       }
-      if (Unk3000GOPIFPMFEPB != false) {
+      if (IsAbsFollowPos != false) {
         output.WriteRawTag(248, 85);
-        output.WriteBool(Unk3000GOPIFPMFEPB);
+        output.WriteBool(IsAbsFollowPos);
       }
-      if (Unk3000OGCLMFFADBD != 0F) {
+      if (BlendDuration != 0F) {
         output.WriteRawTag(245, 109);
-        output.WriteFloat(Unk3000OGCLMFFADBD);
+        output.WriteFloat(BlendDuration);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -613,10 +611,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3000MNLLCJMPMNH != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk3000MNLLCJMPMNH);
+      if (BlendType != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(BlendType);
       }
-      if (Unk2700DHAHEKOGHBJ != 0F) {
+      if (CustomRadius != 0F) {
         size += 1 + 4;
       }
       if (IsSetScreenXy != false) {
@@ -628,17 +626,17 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsRecoverKeepCurrent != false) {
         size += 1 + 1;
       }
-      if (Unk3000GOPIFPMFEPB != false) {
+      if (IsAbsFollowPos != false) {
         size += 2 + 1;
       }
-      if (Unk2700HIAKNNCKHJB != global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD.Unk2700Acoenbmdfbp) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk2700HIAKNNCKHJB);
+      if (KeepRotType != global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType.X) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) KeepRotType);
       }
       if (IsChangePlayMode != false) {
         size += 1 + 1;
       }
-      if (Unk3000IEFIKMHCKDH != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk3000IEFIKMHCKDH);
+      if (DisableProtect != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(DisableProtect);
       }
       if (ScreenY != 0F) {
         size += 1 + 4;
@@ -649,7 +647,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsForce != false) {
         size += 1 + 1;
       }
-      if (Unk3000OGCLMFFADBD != 0F) {
+      if (BlendDuration != 0F) {
         size += 2 + 4;
       }
       if (EntityId != 0) {
@@ -683,11 +681,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3000MNLLCJMPMNH != 0) {
-        Unk3000MNLLCJMPMNH = other.Unk3000MNLLCJMPMNH;
+      if (other.BlendType != 0) {
+        BlendType = other.BlendType;
       }
-      if (other.Unk2700DHAHEKOGHBJ != 0F) {
-        Unk2700DHAHEKOGHBJ = other.Unk2700DHAHEKOGHBJ;
+      if (other.CustomRadius != 0F) {
+        CustomRadius = other.CustomRadius;
       }
       if (other.IsSetScreenXy != false) {
         IsSetScreenXy = other.IsSetScreenXy;
@@ -701,17 +699,17 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.IsRecoverKeepCurrent != false) {
         IsRecoverKeepCurrent = other.IsRecoverKeepCurrent;
       }
-      if (other.Unk3000GOPIFPMFEPB != false) {
-        Unk3000GOPIFPMFEPB = other.Unk3000GOPIFPMFEPB;
+      if (other.IsAbsFollowPos != false) {
+        IsAbsFollowPos = other.IsAbsFollowPos;
       }
-      if (other.Unk2700HIAKNNCKHJB != global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD.Unk2700Acoenbmdfbp) {
-        Unk2700HIAKNNCKHJB = other.Unk2700HIAKNNCKHJB;
+      if (other.KeepRotType != global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType.X) {
+        KeepRotType = other.KeepRotType;
       }
       if (other.IsChangePlayMode != false) {
         IsChangePlayMode = other.IsChangePlayMode;
       }
-      if (other.Unk3000IEFIKMHCKDH != 0) {
-        Unk3000IEFIKMHCKDH = other.Unk3000IEFIKMHCKDH;
+      if (other.DisableProtect != 0) {
+        DisableProtect = other.DisableProtect;
       }
       if (other.ScreenY != 0F) {
         ScreenY = other.ScreenY;
@@ -722,8 +720,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.IsForce != false) {
         IsForce = other.IsForce;
       }
-      if (other.Unk3000OGCLMFFADBD != 0F) {
-        Unk3000OGCLMFFADBD = other.Unk3000OGCLMFFADBD;
+      if (other.BlendDuration != 0F) {
+        BlendDuration = other.BlendDuration;
       }
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
@@ -786,11 +784,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk2700HIAKNNCKHJB = (global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD) input.ReadEnum();
+            KeepRotType = (global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType) input.ReadEnum();
             break;
           }
           case 61: {
-            Unk2700DHAHEKOGHBJ = input.ReadFloat();
+            CustomRadius = input.ReadFloat();
             break;
           }
           case 66: {
@@ -829,11 +827,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 8824: {
-            Unk3000IEFIKMHCKDH = input.ReadUInt32();
+            DisableProtect = input.ReadUInt32();
             break;
           }
           case 9232: {
-            Unk3000MNLLCJMPMNH = input.ReadUInt32();
+            BlendType = input.ReadUInt32();
             break;
           }
           case 10616: {
@@ -841,11 +839,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 11000: {
-            Unk3000GOPIFPMFEPB = input.ReadBool();
+            IsAbsFollowPos = input.ReadBool();
             break;
           }
           case 14069: {
-            Unk3000OGCLMFFADBD = input.ReadFloat();
+            BlendDuration = input.ReadFloat();
             break;
           }
         }
@@ -887,11 +885,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk2700HIAKNNCKHJB = (global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.Unk2700_LNCHDDOOECD) input.ReadEnum();
+            KeepRotType = (global::Weedwacker.Shared.Network.Proto.BeginCameraSceneLookNotify.Types.KeepRotType) input.ReadEnum();
             break;
           }
           case 61: {
-            Unk2700DHAHEKOGHBJ = input.ReadFloat();
+            CustomRadius = input.ReadFloat();
             break;
           }
           case 66: {
@@ -930,11 +928,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 8824: {
-            Unk3000IEFIKMHCKDH = input.ReadUInt32();
+            DisableProtect = input.ReadUInt32();
             break;
           }
           case 9232: {
-            Unk3000MNLLCJMPMNH = input.ReadUInt32();
+            BlendType = input.ReadUInt32();
             break;
           }
           case 10616: {
@@ -942,11 +940,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 11000: {
-            Unk3000GOPIFPMFEPB = input.ReadBool();
+            IsAbsFollowPos = input.ReadBool();
             break;
           }
           case 14069: {
-            Unk3000OGCLMFFADBD = input.ReadFloat();
+            BlendDuration = input.ReadFloat();
             break;
           }
         }
@@ -959,9 +957,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
-      public enum Unk2700_LNCHDDOOECD {
-        [pbr::OriginalName("Unk2700_LNCHDDOOECD_Unk2700_ACOENBMDFBP")] Unk2700Acoenbmdfbp = 0,
-        [pbr::OriginalName("Unk2700_LNCHDDOOECD_Unk2700_FKBLCDFLCOM")] Unk2700Fkblcdflcom = 1,
+      public enum KeepRotType {
+        [pbr::OriginalName("KEEP_ROT_TYPE_X")] X = 0,
+        [pbr::OriginalName("KEEP_ROT_TYPE_XY")] Xy = 1,
       }
 
     }

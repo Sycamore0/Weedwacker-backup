@@ -24,18 +24,18 @@ namespace Weedwacker.Shared.Network.Proto {
     static GivingRecordReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJHaXZpbmdSZWNvcmQucHJvdG8ijgIKDEdpdmluZ1JlY29yZBITCgtpc19m",
-            "aW5pc2hlZBgJIAEoCBIQCghncm91cF9pZBgFIAEoDRIbChNVbmsyODAwX0pC",
-            "UFBORUhQQUNDGAggASgIEhEKCWdpdmluZ19pZBgDIAEoDRIVCg1sYXN0X2dy",
-            "b3VwX2lkGAYgASgNEhEKCWNvbmZpZ19pZBgCIAEoDRJCChNVbmsyODAwX0JE",
-            "S0tFTlBFRUdEGA8gAygLMiUuR2l2aW5nUmVjb3JkLlVuazI4MDBCREtLRU5Q",
-            "RUVHREVudHJ5GjkKF1VuazI4MDBCREtLRU5QRUVHREVudHJ5EgsKA2tleRgB",
-            "IAEoDRINCgV2YWx1ZRgCIAEoDToCOAFCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "ChJHaXZpbmdSZWNvcmQucHJvdG8igAIKDEdpdmluZ1JlY29yZBITCgtpc19m",
+            "aW5pc2hlZBgJIAEoCBIQCghncm91cF9pZBgFIAEoDRIYChBpc19nYWRnZXRf",
+            "Z2l2aW5nGAggASgIEhEKCWdpdmluZ19pZBgDIAEoDRIVCg1sYXN0X2dyb3Vw",
+            "X2lkGAYgASgNEhEKCWNvbmZpZ19pZBgCIAEoDRI7ChBtYXRlcmlhbF9jbnRf",
+            "bWFwGA8gAygLMiEuR2l2aW5nUmVjb3JkLk1hdGVyaWFsQ250TWFwRW50cnka",
+            "NQoTTWF0ZXJpYWxDbnRNYXBFbnRyeRILCgNrZXkYASABKA0SDQoFdmFsdWUY",
+            "AiABKA06AjgBQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GivingRecord), global::Weedwacker.Shared.Network.Proto.GivingRecord.Parser, new[]{ "IsFinished", "GroupId", "Unk2800JBPPNEHPACC", "GivingId", "LastGroupId", "ConfigId", "Unk2800BDKKENPEEGD" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GivingRecord), global::Weedwacker.Shared.Network.Proto.GivingRecord.Parser, new[]{ "IsFinished", "GroupId", "IsGadgetGiving", "GivingId", "LastGroupId", "ConfigId", "MaterialCntMap" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -78,11 +78,11 @@ namespace Weedwacker.Shared.Network.Proto {
     public GivingRecord(GivingRecord other) : this() {
       isFinished_ = other.isFinished_;
       groupId_ = other.groupId_;
-      unk2800JBPPNEHPACC_ = other.unk2800JBPPNEHPACC_;
+      isGadgetGiving_ = other.isGadgetGiving_;
       givingId_ = other.givingId_;
       lastGroupId_ = other.lastGroupId_;
       configId_ = other.configId_;
-      unk2800BDKKENPEEGD_ = other.unk2800BDKKENPEEGD_.Clone();
+      materialCntMap_ = other.materialCntMap_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -116,15 +116,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2800_JBPPNEHPACC" field.</summary>
-    public const int Unk2800JBPPNEHPACCFieldNumber = 8;
-    private bool unk2800JBPPNEHPACC_;
+    /// <summary>Field number for the "is_gadget_giving" field.</summary>
+    public const int IsGadgetGivingFieldNumber = 8;
+    private bool isGadgetGiving_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2800JBPPNEHPACC {
-      get { return unk2800JBPPNEHPACC_; }
+    public bool IsGadgetGiving {
+      get { return isGadgetGiving_; }
       set {
-        unk2800JBPPNEHPACC_ = value;
+        isGadgetGiving_ = value;
       }
     }
 
@@ -164,15 +164,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2800_BDKKENPEEGD" field.</summary>
-    public const int Unk2800BDKKENPEEGDFieldNumber = 15;
-    private static readonly pbc::MapField<uint, uint>.Codec _map_unk2800BDKKENPEEGD_codec
+    /// <summary>Field number for the "material_cnt_map" field.</summary>
+    public const int MaterialCntMapFieldNumber = 15;
+    private static readonly pbc::MapField<uint, uint>.Codec _map_materialCntMap_codec
         = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 122);
-    private readonly pbc::MapField<uint, uint> unk2800BDKKENPEEGD_ = new pbc::MapField<uint, uint>();
+    private readonly pbc::MapField<uint, uint> materialCntMap_ = new pbc::MapField<uint, uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, uint> Unk2800BDKKENPEEGD {
-      get { return unk2800BDKKENPEEGD_; }
+    public pbc::MapField<uint, uint> MaterialCntMap {
+      get { return materialCntMap_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -192,11 +192,11 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (IsFinished != other.IsFinished) return false;
       if (GroupId != other.GroupId) return false;
-      if (Unk2800JBPPNEHPACC != other.Unk2800JBPPNEHPACC) return false;
+      if (IsGadgetGiving != other.IsGadgetGiving) return false;
       if (GivingId != other.GivingId) return false;
       if (LastGroupId != other.LastGroupId) return false;
       if (ConfigId != other.ConfigId) return false;
-      if (!Unk2800BDKKENPEEGD.Equals(other.Unk2800BDKKENPEEGD)) return false;
+      if (!MaterialCntMap.Equals(other.MaterialCntMap)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -206,11 +206,11 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (IsFinished != false) hash ^= IsFinished.GetHashCode();
       if (GroupId != 0) hash ^= GroupId.GetHashCode();
-      if (Unk2800JBPPNEHPACC != false) hash ^= Unk2800JBPPNEHPACC.GetHashCode();
+      if (IsGadgetGiving != false) hash ^= IsGadgetGiving.GetHashCode();
       if (GivingId != 0) hash ^= GivingId.GetHashCode();
       if (LastGroupId != 0) hash ^= LastGroupId.GetHashCode();
       if (ConfigId != 0) hash ^= ConfigId.GetHashCode();
-      hash ^= Unk2800BDKKENPEEGD.GetHashCode();
+      hash ^= MaterialCntMap.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -245,15 +245,15 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(LastGroupId);
       }
-      if (Unk2800JBPPNEHPACC != false) {
+      if (IsGadgetGiving != false) {
         output.WriteRawTag(64);
-        output.WriteBool(Unk2800JBPPNEHPACC);
+        output.WriteBool(IsGadgetGiving);
       }
       if (IsFinished != false) {
         output.WriteRawTag(72);
         output.WriteBool(IsFinished);
       }
-      unk2800BDKKENPEEGD_.WriteTo(output, _map_unk2800BDKKENPEEGD_codec);
+      materialCntMap_.WriteTo(output, _map_materialCntMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -280,15 +280,15 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(LastGroupId);
       }
-      if (Unk2800JBPPNEHPACC != false) {
+      if (IsGadgetGiving != false) {
         output.WriteRawTag(64);
-        output.WriteBool(Unk2800JBPPNEHPACC);
+        output.WriteBool(IsGadgetGiving);
       }
       if (IsFinished != false) {
         output.WriteRawTag(72);
         output.WriteBool(IsFinished);
       }
-      unk2800BDKKENPEEGD_.WriteTo(ref output, _map_unk2800BDKKENPEEGD_codec);
+      materialCntMap_.WriteTo(ref output, _map_materialCntMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -305,7 +305,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (GroupId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
       }
-      if (Unk2800JBPPNEHPACC != false) {
+      if (IsGadgetGiving != false) {
         size += 1 + 1;
       }
       if (GivingId != 0) {
@@ -317,7 +317,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ConfigId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ConfigId);
       }
-      size += unk2800BDKKENPEEGD_.CalculateSize(_map_unk2800BDKKENPEEGD_codec);
+      size += materialCntMap_.CalculateSize(_map_materialCntMap_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -336,8 +336,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.GroupId != 0) {
         GroupId = other.GroupId;
       }
-      if (other.Unk2800JBPPNEHPACC != false) {
-        Unk2800JBPPNEHPACC = other.Unk2800JBPPNEHPACC;
+      if (other.IsGadgetGiving != false) {
+        IsGadgetGiving = other.IsGadgetGiving;
       }
       if (other.GivingId != 0) {
         GivingId = other.GivingId;
@@ -348,7 +348,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.ConfigId != 0) {
         ConfigId = other.ConfigId;
       }
-      unk2800BDKKENPEEGD_.Add(other.unk2800BDKKENPEEGD_);
+      materialCntMap_.Add(other.materialCntMap_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -381,7 +381,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk2800JBPPNEHPACC = input.ReadBool();
+            IsGadgetGiving = input.ReadBool();
             break;
           }
           case 72: {
@@ -389,7 +389,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 122: {
-            unk2800BDKKENPEEGD_.AddEntriesFrom(input, _map_unk2800BDKKENPEEGD_codec);
+            materialCntMap_.AddEntriesFrom(input, _map_materialCntMap_codec);
             break;
           }
         }
@@ -424,7 +424,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk2800JBPPNEHPACC = input.ReadBool();
+            IsGadgetGiving = input.ReadBool();
             break;
           }
           case 72: {
@@ -432,7 +432,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 122: {
-            unk2800BDKKENPEEGD_.AddEntriesFrom(ref input, _map_unk2800BDKKENPEEGD_codec);
+            materialCntMap_.AddEntriesFrom(ref input, _map_materialCntMap_codec);
             break;
           }
         }

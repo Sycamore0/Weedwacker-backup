@@ -24,27 +24,28 @@ namespace Weedwacker.Shared.Network.Proto {
     static GachaInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg9HYWNoYUluZm8ucHJvdG8aEUdhY2hhVXBJbmZvLnByb3RvIqAFCglHYWNo",
-            "YUluZm8SIQoZZ2FjaGFfcHJldmlld19wcmVmYWJfcGF0aBgEIAEoCRIUCgxj",
-            "b3N0X2l0ZW1faWQYCSABKA0SFAoLaXNfbmV3X3dpc2gY3QUgASgIEhYKDmdh",
-            "Y2hhX3Byb2JfdXJsGAggASgJEiEKGGdhY2hhX3JlY29yZF91cmxfb3ZlcnNl",
-            "YRi+DiABKAkSFQoNY29zdF9pdGVtX251bRgDIAEoDRIpChJnYWNoYV91cF9p",
-            "bmZvX2xpc3QY0QkgAygLMgwuR2FjaGFVcEluZm8SHgoVZGlzcGxheV91cDRf",
-            "aXRlbV9saXN0GNMOIAMoDRIWCg13aXNoX3Byb2dyZXNzGJsOIAEoDRITCgtz",
-            "Y2hlZHVsZV9pZBgKIAEoDRIVCg1nYWNoYV9zb3J0X2lkGAcgASgNEhgKEGxl",
-            "ZnRfZ2FjaGFfdGltZXMYBSABKA0SGQoRZ2FjaGFfcHJlZmFiX3BhdGgYDyAB",
-            "KAkSFgoNdGl0bGVfdGV4dG1hcBjgBSABKAkSGQoRdGVuX2Nvc3RfaXRlbV9u",
-            "dW0YBiABKA0SEgoKZ2FjaGFfdHlwZRgNIAEoDRIaChF3aXNoX21heF9wcm9n",
-            "cmVzcxjGCSABKA0SEAoIZW5kX3RpbWUYDiABKA0SGAoQdGVuX2Nvc3RfaXRl",
-            "bV9pZBgCIAEoDRIYChBnYWNoYV9yZWNvcmRfdXJsGAwgASgJEhUKDHdpc2hf",
-            "aXRlbV9pZBjlDCABKA0SEgoKYmVnaW5fdGltZRgBIAEoDRIfChZnYWNoYV9w",
-            "cm9iX3VybF9vdmVyc2VhGMkLIAEoCRIZChFnYWNoYV90aW1lc19saW1pdBgL",
-            "IAEoDRIeChVkaXNwbGF5X3VwNV9pdGVtX2xpc3QY1g8gAygNQiKqAh9XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "Cg9HYWNoYUluZm8ucHJvdG8aEUdhY2hhVXBJbmZvLnByb3RvIskFCglHYWNo",
+            "YUluZm8SGAoQdGVuX2Nvc3RfaXRlbV9pZBgCIAEoDRIQCghlbmRfdGltZRgO",
+            "IAEoDRIeChVkaXNwbGF5X3VwNF9pdGVtX2xpc3QY0w4gAygNEicKHmN1cl9z",
+            "Y2hlZHVsZV9kYWlseV9nYWNoYV90aW1lcxjVAyABKA0SKQoSZ2FjaGFfdXBf",
+            "aW5mb19saXN0GNEJIAMoCzIMLkdhY2hhVXBJbmZvEhYKDmdhY2hhX3Byb2Jf",
+            "dXJsGAggASgJEhkKEWdhY2hhX3ByZWZhYl9wYXRoGA8gASgJEhUKDHdpc2hf",
+            "aXRlbV9pZBjlDCABKA0SEgoKYmVnaW5fdGltZRgBIAEoDRIaChF3aXNoX21h",
+            "eF9wcm9ncmVzcxjGCSABKA0SEwoLc2NoZWR1bGVfaWQYCiABKA0SHwoWZ2Fj",
+            "aGFfcHJvYl91cmxfb3ZlcnNlYRjJCyABKAkSEgoKZ2FjaGFfdHlwZRgNIAEo",
+            "DRIYChBsZWZ0X2dhY2hhX3RpbWVzGAUgASgNEh4KFWRpc3BsYXlfdXA1X2l0",
+            "ZW1fbGlzdBjWDyADKA0SGQoRZ2FjaGFfdGltZXNfbGltaXQYCyABKA0SFQoN",
+            "Y29zdF9pdGVtX251bRgDIAEoDRIUCgtpc19uZXdfd2lzaBjdBSABKAgSFAoM",
+            "Y29zdF9pdGVtX2lkGAkgASgNEhkKEXRlbl9jb3N0X2l0ZW1fbnVtGAYgASgN",
+            "EiEKGWdhY2hhX3ByZXZpZXdfcHJlZmFiX3BhdGgYBCABKAkSFgoNd2lzaF9w",
+            "cm9ncmVzcxibDiABKA0SFgoNdGl0bGVfdGV4dG1hcBjgBSABKAkSIQoYZ2Fj",
+            "aGFfcmVjb3JkX3VybF9vdmVyc2VhGL4OIAEoCRIVCg1nYWNoYV9zb3J0X2lk",
+            "GAcgASgNEhgKEGdhY2hhX3JlY29yZF91cmwYDCABKAlCIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GachaUpInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GachaInfo), global::Weedwacker.Shared.Network.Proto.GachaInfo.Parser, new[]{ "GachaPreviewPrefabPath", "CostItemId", "IsNewWish", "GachaProbUrl", "GachaRecordUrlOversea", "CostItemNum", "GachaUpInfoList", "DisplayUp4ItemList", "WishProgress", "ScheduleId", "GachaSortId", "LeftGachaTimes", "GachaPrefabPath", "TitleTextmap", "TenCostItemNum", "GachaType", "WishMaxProgress", "EndTime", "TenCostItemId", "GachaRecordUrl", "WishItemId", "BeginTime", "GachaProbUrlOversea", "GachaTimesLimit", "DisplayUp5ItemList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GachaInfo), global::Weedwacker.Shared.Network.Proto.GachaInfo.Parser, new[]{ "TenCostItemId", "EndTime", "DisplayUp4ItemList", "CurScheduleDailyGachaTimes", "GachaUpInfoList", "GachaProbUrl", "GachaPrefabPath", "WishItemId", "BeginTime", "WishMaxProgress", "ScheduleId", "GachaProbUrlOversea", "GachaType", "LeftGachaTimes", "DisplayUp5ItemList", "GachaTimesLimit", "CostItemNum", "IsNewWish", "CostItemId", "TenCostItemNum", "GachaPreviewPrefabPath", "WishProgress", "TitleTextmap", "GachaRecordUrlOversea", "GachaSortId", "GachaRecordUrl" }, null, null, null, null)
           }));
     }
     #endregion
@@ -85,31 +86,32 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GachaInfo(GachaInfo other) : this() {
-      gachaPreviewPrefabPath_ = other.gachaPreviewPrefabPath_;
-      costItemId_ = other.costItemId_;
-      isNewWish_ = other.isNewWish_;
-      gachaProbUrl_ = other.gachaProbUrl_;
-      gachaRecordUrlOversea_ = other.gachaRecordUrlOversea_;
-      costItemNum_ = other.costItemNum_;
-      gachaUpInfoList_ = other.gachaUpInfoList_.Clone();
-      displayUp4ItemList_ = other.displayUp4ItemList_.Clone();
-      wishProgress_ = other.wishProgress_;
-      scheduleId_ = other.scheduleId_;
-      gachaSortId_ = other.gachaSortId_;
-      leftGachaTimes_ = other.leftGachaTimes_;
-      gachaPrefabPath_ = other.gachaPrefabPath_;
-      titleTextmap_ = other.titleTextmap_;
-      tenCostItemNum_ = other.tenCostItemNum_;
-      gachaType_ = other.gachaType_;
-      wishMaxProgress_ = other.wishMaxProgress_;
-      endTime_ = other.endTime_;
       tenCostItemId_ = other.tenCostItemId_;
-      gachaRecordUrl_ = other.gachaRecordUrl_;
+      endTime_ = other.endTime_;
+      displayUp4ItemList_ = other.displayUp4ItemList_.Clone();
+      curScheduleDailyGachaTimes_ = other.curScheduleDailyGachaTimes_;
+      gachaUpInfoList_ = other.gachaUpInfoList_.Clone();
+      gachaProbUrl_ = other.gachaProbUrl_;
+      gachaPrefabPath_ = other.gachaPrefabPath_;
       wishItemId_ = other.wishItemId_;
       beginTime_ = other.beginTime_;
+      wishMaxProgress_ = other.wishMaxProgress_;
+      scheduleId_ = other.scheduleId_;
       gachaProbUrlOversea_ = other.gachaProbUrlOversea_;
-      gachaTimesLimit_ = other.gachaTimesLimit_;
+      gachaType_ = other.gachaType_;
+      leftGachaTimes_ = other.leftGachaTimes_;
       displayUp5ItemList_ = other.displayUp5ItemList_.Clone();
+      gachaTimesLimit_ = other.gachaTimesLimit_;
+      costItemNum_ = other.costItemNum_;
+      isNewWish_ = other.isNewWish_;
+      costItemId_ = other.costItemId_;
+      tenCostItemNum_ = other.tenCostItemNum_;
+      gachaPreviewPrefabPath_ = other.gachaPreviewPrefabPath_;
+      wishProgress_ = other.wishProgress_;
+      titleTextmap_ = other.titleTextmap_;
+      gachaRecordUrlOversea_ = other.gachaRecordUrlOversea_;
+      gachaSortId_ = other.gachaSortId_;
+      gachaRecordUrl_ = other.gachaRecordUrl_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -119,205 +121,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new GachaInfo(this);
     }
 
-    /// <summary>Field number for the "gacha_preview_prefab_path" field.</summary>
-    public const int GachaPreviewPrefabPathFieldNumber = 4;
-    private string gachaPreviewPrefabPath_ = "";
+    /// <summary>Field number for the "ten_cost_item_id" field.</summary>
+    public const int TenCostItemIdFieldNumber = 2;
+    private uint tenCostItemId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string GachaPreviewPrefabPath {
-      get { return gachaPreviewPrefabPath_; }
+    public uint TenCostItemId {
+      get { return tenCostItemId_; }
       set {
-        gachaPreviewPrefabPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "cost_item_id" field.</summary>
-    public const int CostItemIdFieldNumber = 9;
-    private uint costItemId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint CostItemId {
-      get { return costItemId_; }
-      set {
-        costItemId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_new_wish" field.</summary>
-    public const int IsNewWishFieldNumber = 733;
-    private bool isNewWish_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsNewWish {
-      get { return isNewWish_; }
-      set {
-        isNewWish_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "gacha_prob_url" field.</summary>
-    public const int GachaProbUrlFieldNumber = 8;
-    private string gachaProbUrl_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string GachaProbUrl {
-      get { return gachaProbUrl_; }
-      set {
-        gachaProbUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "gacha_record_url_oversea" field.</summary>
-    public const int GachaRecordUrlOverseaFieldNumber = 1854;
-    private string gachaRecordUrlOversea_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string GachaRecordUrlOversea {
-      get { return gachaRecordUrlOversea_; }
-      set {
-        gachaRecordUrlOversea_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "cost_item_num" field.</summary>
-    public const int CostItemNumFieldNumber = 3;
-    private uint costItemNum_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint CostItemNum {
-      get { return costItemNum_; }
-      set {
-        costItemNum_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "gacha_up_info_list" field.</summary>
-    public const int GachaUpInfoListFieldNumber = 1233;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.GachaUpInfo> _repeated_gachaUpInfoList_codec
-        = pb::FieldCodec.ForMessage(9866, global::Weedwacker.Shared.Network.Proto.GachaUpInfo.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaUpInfo> gachaUpInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaUpInfo>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaUpInfo> GachaUpInfoList {
-      get { return gachaUpInfoList_; }
-    }
-
-    /// <summary>Field number for the "display_up4_item_list" field.</summary>
-    public const int DisplayUp4ItemListFieldNumber = 1875;
-    private static readonly pb::FieldCodec<uint> _repeated_displayUp4ItemList_codec
-        = pb::FieldCodec.ForUInt32(15002);
-    private readonly pbc::RepeatedField<uint> displayUp4ItemList_ = new pbc::RepeatedField<uint>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> DisplayUp4ItemList {
-      get { return displayUp4ItemList_; }
-    }
-
-    /// <summary>Field number for the "wish_progress" field.</summary>
-    public const int WishProgressFieldNumber = 1819;
-    private uint wishProgress_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint WishProgress {
-      get { return wishProgress_; }
-      set {
-        wishProgress_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "schedule_id" field.</summary>
-    public const int ScheduleIdFieldNumber = 10;
-    private uint scheduleId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint ScheduleId {
-      get { return scheduleId_; }
-      set {
-        scheduleId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "gacha_sort_id" field.</summary>
-    public const int GachaSortIdFieldNumber = 7;
-    private uint gachaSortId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint GachaSortId {
-      get { return gachaSortId_; }
-      set {
-        gachaSortId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "left_gacha_times" field.</summary>
-    public const int LeftGachaTimesFieldNumber = 5;
-    private uint leftGachaTimes_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint LeftGachaTimes {
-      get { return leftGachaTimes_; }
-      set {
-        leftGachaTimes_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "gacha_prefab_path" field.</summary>
-    public const int GachaPrefabPathFieldNumber = 15;
-    private string gachaPrefabPath_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string GachaPrefabPath {
-      get { return gachaPrefabPath_; }
-      set {
-        gachaPrefabPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "title_textmap" field.</summary>
-    public const int TitleTextmapFieldNumber = 736;
-    private string titleTextmap_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string TitleTextmap {
-      get { return titleTextmap_; }
-      set {
-        titleTextmap_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "ten_cost_item_num" field.</summary>
-    public const int TenCostItemNumFieldNumber = 6;
-    private uint tenCostItemNum_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint TenCostItemNum {
-      get { return tenCostItemNum_; }
-      set {
-        tenCostItemNum_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "gacha_type" field.</summary>
-    public const int GachaTypeFieldNumber = 13;
-    private uint gachaType_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint GachaType {
-      get { return gachaType_; }
-      set {
-        gachaType_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "wish_max_progress" field.</summary>
-    public const int WishMaxProgressFieldNumber = 1222;
-    private uint wishMaxProgress_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint WishMaxProgress {
-      get { return wishMaxProgress_; }
-      set {
-        wishMaxProgress_ = value;
+        tenCostItemId_ = value;
       }
     }
 
@@ -333,27 +145,61 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "ten_cost_item_id" field.</summary>
-    public const int TenCostItemIdFieldNumber = 2;
-    private uint tenCostItemId_;
+    /// <summary>Field number for the "display_up4_item_list" field.</summary>
+    public const int DisplayUp4ItemListFieldNumber = 1875;
+    private static readonly pb::FieldCodec<uint> _repeated_displayUp4ItemList_codec
+        = pb::FieldCodec.ForUInt32(15002);
+    private readonly pbc::RepeatedField<uint> displayUp4ItemList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint TenCostItemId {
-      get { return tenCostItemId_; }
+    public pbc::RepeatedField<uint> DisplayUp4ItemList {
+      get { return displayUp4ItemList_; }
+    }
+
+    /// <summary>Field number for the "cur_schedule_daily_gacha_times" field.</summary>
+    public const int CurScheduleDailyGachaTimesFieldNumber = 469;
+    private uint curScheduleDailyGachaTimes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint CurScheduleDailyGachaTimes {
+      get { return curScheduleDailyGachaTimes_; }
       set {
-        tenCostItemId_ = value;
+        curScheduleDailyGachaTimes_ = value;
       }
     }
 
-    /// <summary>Field number for the "gacha_record_url" field.</summary>
-    public const int GachaRecordUrlFieldNumber = 12;
-    private string gachaRecordUrl_ = "";
+    /// <summary>Field number for the "gacha_up_info_list" field.</summary>
+    public const int GachaUpInfoListFieldNumber = 1233;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.GachaUpInfo> _repeated_gachaUpInfoList_codec
+        = pb::FieldCodec.ForMessage(9866, global::Weedwacker.Shared.Network.Proto.GachaUpInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaUpInfo> gachaUpInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaUpInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string GachaRecordUrl {
-      get { return gachaRecordUrl_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GachaUpInfo> GachaUpInfoList {
+      get { return gachaUpInfoList_; }
+    }
+
+    /// <summary>Field number for the "gacha_prob_url" field.</summary>
+    public const int GachaProbUrlFieldNumber = 8;
+    private string gachaProbUrl_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string GachaProbUrl {
+      get { return gachaProbUrl_; }
       set {
-        gachaRecordUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        gachaProbUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "gacha_prefab_path" field.</summary>
+    public const int GachaPrefabPathFieldNumber = 15;
+    private string gachaPrefabPath_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string GachaPrefabPath {
+      get { return gachaPrefabPath_; }
+      set {
+        gachaPrefabPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -381,6 +227,30 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
+    /// <summary>Field number for the "wish_max_progress" field.</summary>
+    public const int WishMaxProgressFieldNumber = 1222;
+    private uint wishMaxProgress_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint WishMaxProgress {
+      get { return wishMaxProgress_; }
+      set {
+        wishMaxProgress_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "schedule_id" field.</summary>
+    public const int ScheduleIdFieldNumber = 10;
+    private uint scheduleId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint ScheduleId {
+      get { return scheduleId_; }
+      set {
+        scheduleId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "gacha_prob_url_oversea" field.</summary>
     public const int GachaProbUrlOverseaFieldNumber = 1481;
     private string gachaProbUrlOversea_ = "";
@@ -391,6 +261,41 @@ namespace Weedwacker.Shared.Network.Proto {
       set {
         gachaProbUrlOversea_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
+    }
+
+    /// <summary>Field number for the "gacha_type" field.</summary>
+    public const int GachaTypeFieldNumber = 13;
+    private uint gachaType_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint GachaType {
+      get { return gachaType_; }
+      set {
+        gachaType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "left_gacha_times" field.</summary>
+    public const int LeftGachaTimesFieldNumber = 5;
+    private uint leftGachaTimes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint LeftGachaTimes {
+      get { return leftGachaTimes_; }
+      set {
+        leftGachaTimes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "display_up5_item_list" field.</summary>
+    public const int DisplayUp5ItemListFieldNumber = 2006;
+    private static readonly pb::FieldCodec<uint> _repeated_displayUp5ItemList_codec
+        = pb::FieldCodec.ForUInt32(16050);
+    private readonly pbc::RepeatedField<uint> displayUp5ItemList_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<uint> DisplayUp5ItemList {
+      get { return displayUp5ItemList_; }
     }
 
     /// <summary>Field number for the "gacha_times_limit" field.</summary>
@@ -405,15 +310,124 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "display_up5_item_list" field.</summary>
-    public const int DisplayUp5ItemListFieldNumber = 2006;
-    private static readonly pb::FieldCodec<uint> _repeated_displayUp5ItemList_codec
-        = pb::FieldCodec.ForUInt32(16050);
-    private readonly pbc::RepeatedField<uint> displayUp5ItemList_ = new pbc::RepeatedField<uint>();
+    /// <summary>Field number for the "cost_item_num" field.</summary>
+    public const int CostItemNumFieldNumber = 3;
+    private uint costItemNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> DisplayUp5ItemList {
-      get { return displayUp5ItemList_; }
+    public uint CostItemNum {
+      get { return costItemNum_; }
+      set {
+        costItemNum_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_new_wish" field.</summary>
+    public const int IsNewWishFieldNumber = 733;
+    private bool isNewWish_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsNewWish {
+      get { return isNewWish_; }
+      set {
+        isNewWish_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "cost_item_id" field.</summary>
+    public const int CostItemIdFieldNumber = 9;
+    private uint costItemId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint CostItemId {
+      get { return costItemId_; }
+      set {
+        costItemId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ten_cost_item_num" field.</summary>
+    public const int TenCostItemNumFieldNumber = 6;
+    private uint tenCostItemNum_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint TenCostItemNum {
+      get { return tenCostItemNum_; }
+      set {
+        tenCostItemNum_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gacha_preview_prefab_path" field.</summary>
+    public const int GachaPreviewPrefabPathFieldNumber = 4;
+    private string gachaPreviewPrefabPath_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string GachaPreviewPrefabPath {
+      get { return gachaPreviewPrefabPath_; }
+      set {
+        gachaPreviewPrefabPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "wish_progress" field.</summary>
+    public const int WishProgressFieldNumber = 1819;
+    private uint wishProgress_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint WishProgress {
+      get { return wishProgress_; }
+      set {
+        wishProgress_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "title_textmap" field.</summary>
+    public const int TitleTextmapFieldNumber = 736;
+    private string titleTextmap_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TitleTextmap {
+      get { return titleTextmap_; }
+      set {
+        titleTextmap_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "gacha_record_url_oversea" field.</summary>
+    public const int GachaRecordUrlOverseaFieldNumber = 1854;
+    private string gachaRecordUrlOversea_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string GachaRecordUrlOversea {
+      get { return gachaRecordUrlOversea_; }
+      set {
+        gachaRecordUrlOversea_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "gacha_sort_id" field.</summary>
+    public const int GachaSortIdFieldNumber = 7;
+    private uint gachaSortId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint GachaSortId {
+      get { return gachaSortId_; }
+      set {
+        gachaSortId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gacha_record_url" field.</summary>
+    public const int GachaRecordUrlFieldNumber = 12;
+    private string gachaRecordUrl_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string GachaRecordUrl {
+      get { return gachaRecordUrl_; }
+      set {
+        gachaRecordUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -431,31 +445,32 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (GachaPreviewPrefabPath != other.GachaPreviewPrefabPath) return false;
-      if (CostItemId != other.CostItemId) return false;
-      if (IsNewWish != other.IsNewWish) return false;
-      if (GachaProbUrl != other.GachaProbUrl) return false;
-      if (GachaRecordUrlOversea != other.GachaRecordUrlOversea) return false;
-      if (CostItemNum != other.CostItemNum) return false;
-      if(!gachaUpInfoList_.Equals(other.gachaUpInfoList_)) return false;
-      if(!displayUp4ItemList_.Equals(other.displayUp4ItemList_)) return false;
-      if (WishProgress != other.WishProgress) return false;
-      if (ScheduleId != other.ScheduleId) return false;
-      if (GachaSortId != other.GachaSortId) return false;
-      if (LeftGachaTimes != other.LeftGachaTimes) return false;
-      if (GachaPrefabPath != other.GachaPrefabPath) return false;
-      if (TitleTextmap != other.TitleTextmap) return false;
-      if (TenCostItemNum != other.TenCostItemNum) return false;
-      if (GachaType != other.GachaType) return false;
-      if (WishMaxProgress != other.WishMaxProgress) return false;
-      if (EndTime != other.EndTime) return false;
       if (TenCostItemId != other.TenCostItemId) return false;
-      if (GachaRecordUrl != other.GachaRecordUrl) return false;
+      if (EndTime != other.EndTime) return false;
+      if(!displayUp4ItemList_.Equals(other.displayUp4ItemList_)) return false;
+      if (CurScheduleDailyGachaTimes != other.CurScheduleDailyGachaTimes) return false;
+      if(!gachaUpInfoList_.Equals(other.gachaUpInfoList_)) return false;
+      if (GachaProbUrl != other.GachaProbUrl) return false;
+      if (GachaPrefabPath != other.GachaPrefabPath) return false;
       if (WishItemId != other.WishItemId) return false;
       if (BeginTime != other.BeginTime) return false;
+      if (WishMaxProgress != other.WishMaxProgress) return false;
+      if (ScheduleId != other.ScheduleId) return false;
       if (GachaProbUrlOversea != other.GachaProbUrlOversea) return false;
-      if (GachaTimesLimit != other.GachaTimesLimit) return false;
+      if (GachaType != other.GachaType) return false;
+      if (LeftGachaTimes != other.LeftGachaTimes) return false;
       if(!displayUp5ItemList_.Equals(other.displayUp5ItemList_)) return false;
+      if (GachaTimesLimit != other.GachaTimesLimit) return false;
+      if (CostItemNum != other.CostItemNum) return false;
+      if (IsNewWish != other.IsNewWish) return false;
+      if (CostItemId != other.CostItemId) return false;
+      if (TenCostItemNum != other.TenCostItemNum) return false;
+      if (GachaPreviewPrefabPath != other.GachaPreviewPrefabPath) return false;
+      if (WishProgress != other.WishProgress) return false;
+      if (TitleTextmap != other.TitleTextmap) return false;
+      if (GachaRecordUrlOversea != other.GachaRecordUrlOversea) return false;
+      if (GachaSortId != other.GachaSortId) return false;
+      if (GachaRecordUrl != other.GachaRecordUrl) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -463,31 +478,32 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (GachaPreviewPrefabPath.Length != 0) hash ^= GachaPreviewPrefabPath.GetHashCode();
-      if (CostItemId != 0) hash ^= CostItemId.GetHashCode();
-      if (IsNewWish != false) hash ^= IsNewWish.GetHashCode();
-      if (GachaProbUrl.Length != 0) hash ^= GachaProbUrl.GetHashCode();
-      if (GachaRecordUrlOversea.Length != 0) hash ^= GachaRecordUrlOversea.GetHashCode();
-      if (CostItemNum != 0) hash ^= CostItemNum.GetHashCode();
-      hash ^= gachaUpInfoList_.GetHashCode();
-      hash ^= displayUp4ItemList_.GetHashCode();
-      if (WishProgress != 0) hash ^= WishProgress.GetHashCode();
-      if (ScheduleId != 0) hash ^= ScheduleId.GetHashCode();
-      if (GachaSortId != 0) hash ^= GachaSortId.GetHashCode();
-      if (LeftGachaTimes != 0) hash ^= LeftGachaTimes.GetHashCode();
-      if (GachaPrefabPath.Length != 0) hash ^= GachaPrefabPath.GetHashCode();
-      if (TitleTextmap.Length != 0) hash ^= TitleTextmap.GetHashCode();
-      if (TenCostItemNum != 0) hash ^= TenCostItemNum.GetHashCode();
-      if (GachaType != 0) hash ^= GachaType.GetHashCode();
-      if (WishMaxProgress != 0) hash ^= WishMaxProgress.GetHashCode();
-      if (EndTime != 0) hash ^= EndTime.GetHashCode();
       if (TenCostItemId != 0) hash ^= TenCostItemId.GetHashCode();
-      if (GachaRecordUrl.Length != 0) hash ^= GachaRecordUrl.GetHashCode();
+      if (EndTime != 0) hash ^= EndTime.GetHashCode();
+      hash ^= displayUp4ItemList_.GetHashCode();
+      if (CurScheduleDailyGachaTimes != 0) hash ^= CurScheduleDailyGachaTimes.GetHashCode();
+      hash ^= gachaUpInfoList_.GetHashCode();
+      if (GachaProbUrl.Length != 0) hash ^= GachaProbUrl.GetHashCode();
+      if (GachaPrefabPath.Length != 0) hash ^= GachaPrefabPath.GetHashCode();
       if (WishItemId != 0) hash ^= WishItemId.GetHashCode();
       if (BeginTime != 0) hash ^= BeginTime.GetHashCode();
+      if (WishMaxProgress != 0) hash ^= WishMaxProgress.GetHashCode();
+      if (ScheduleId != 0) hash ^= ScheduleId.GetHashCode();
       if (GachaProbUrlOversea.Length != 0) hash ^= GachaProbUrlOversea.GetHashCode();
-      if (GachaTimesLimit != 0) hash ^= GachaTimesLimit.GetHashCode();
+      if (GachaType != 0) hash ^= GachaType.GetHashCode();
+      if (LeftGachaTimes != 0) hash ^= LeftGachaTimes.GetHashCode();
       hash ^= displayUp5ItemList_.GetHashCode();
+      if (GachaTimesLimit != 0) hash ^= GachaTimesLimit.GetHashCode();
+      if (CostItemNum != 0) hash ^= CostItemNum.GetHashCode();
+      if (IsNewWish != false) hash ^= IsNewWish.GetHashCode();
+      if (CostItemId != 0) hash ^= CostItemId.GetHashCode();
+      if (TenCostItemNum != 0) hash ^= TenCostItemNum.GetHashCode();
+      if (GachaPreviewPrefabPath.Length != 0) hash ^= GachaPreviewPrefabPath.GetHashCode();
+      if (WishProgress != 0) hash ^= WishProgress.GetHashCode();
+      if (TitleTextmap.Length != 0) hash ^= TitleTextmap.GetHashCode();
+      if (GachaRecordUrlOversea.Length != 0) hash ^= GachaRecordUrlOversea.GetHashCode();
+      if (GachaSortId != 0) hash ^= GachaSortId.GetHashCode();
+      if (GachaRecordUrl.Length != 0) hash ^= GachaRecordUrl.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -565,6 +581,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (GachaPrefabPath.Length != 0) {
         output.WriteRawTag(122);
         output.WriteString(GachaPrefabPath);
+      }
+      if (CurScheduleDailyGachaTimes != 0) {
+        output.WriteRawTag(168, 29);
+        output.WriteUInt32(CurScheduleDailyGachaTimes);
       }
       if (IsNewWish != false) {
         output.WriteRawTag(232, 45);
@@ -667,6 +687,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(122);
         output.WriteString(GachaPrefabPath);
       }
+      if (CurScheduleDailyGachaTimes != 0) {
+        output.WriteRawTag(168, 29);
+        output.WriteUInt32(CurScheduleDailyGachaTimes);
+      }
       if (IsNewWish != false) {
         output.WriteRawTag(232, 45);
         output.WriteBool(IsNewWish);
@@ -708,61 +732,22 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (GachaPreviewPrefabPath.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(GachaPreviewPrefabPath);
-      }
-      if (CostItemId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CostItemId);
-      }
-      if (IsNewWish != false) {
-        size += 2 + 1;
-      }
-      if (GachaProbUrl.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(GachaProbUrl);
-      }
-      if (GachaRecordUrlOversea.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(GachaRecordUrlOversea);
-      }
-      if (CostItemNum != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CostItemNum);
-      }
-      size += gachaUpInfoList_.CalculateSize(_repeated_gachaUpInfoList_codec);
-      size += displayUp4ItemList_.CalculateSize(_repeated_displayUp4ItemList_codec);
-      if (WishProgress != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(WishProgress);
-      }
-      if (ScheduleId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ScheduleId);
-      }
-      if (GachaSortId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GachaSortId);
-      }
-      if (LeftGachaTimes != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LeftGachaTimes);
-      }
-      if (GachaPrefabPath.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(GachaPrefabPath);
-      }
-      if (TitleTextmap.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(TitleTextmap);
-      }
-      if (TenCostItemNum != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TenCostItemNum);
-      }
-      if (GachaType != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GachaType);
-      }
-      if (WishMaxProgress != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(WishMaxProgress);
+      if (TenCostItemId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TenCostItemId);
       }
       if (EndTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EndTime);
       }
-      if (TenCostItemId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TenCostItemId);
+      size += displayUp4ItemList_.CalculateSize(_repeated_displayUp4ItemList_codec);
+      if (CurScheduleDailyGachaTimes != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(CurScheduleDailyGachaTimes);
       }
-      if (GachaRecordUrl.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(GachaRecordUrl);
+      size += gachaUpInfoList_.CalculateSize(_repeated_gachaUpInfoList_codec);
+      if (GachaProbUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GachaProbUrl);
+      }
+      if (GachaPrefabPath.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GachaPrefabPath);
       }
       if (WishItemId != 0) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(WishItemId);
@@ -770,13 +755,55 @@ namespace Weedwacker.Shared.Network.Proto {
       if (BeginTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BeginTime);
       }
+      if (WishMaxProgress != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(WishMaxProgress);
+      }
+      if (ScheduleId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ScheduleId);
+      }
       if (GachaProbUrlOversea.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(GachaProbUrlOversea);
       }
+      if (GachaType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GachaType);
+      }
+      if (LeftGachaTimes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LeftGachaTimes);
+      }
+      size += displayUp5ItemList_.CalculateSize(_repeated_displayUp5ItemList_codec);
       if (GachaTimesLimit != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GachaTimesLimit);
       }
-      size += displayUp5ItemList_.CalculateSize(_repeated_displayUp5ItemList_codec);
+      if (CostItemNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CostItemNum);
+      }
+      if (IsNewWish != false) {
+        size += 2 + 1;
+      }
+      if (CostItemId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CostItemId);
+      }
+      if (TenCostItemNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TenCostItemNum);
+      }
+      if (GachaPreviewPrefabPath.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GachaPreviewPrefabPath);
+      }
+      if (WishProgress != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(WishProgress);
+      }
+      if (TitleTextmap.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(TitleTextmap);
+      }
+      if (GachaRecordUrlOversea.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(GachaRecordUrlOversea);
+      }
+      if (GachaSortId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GachaSortId);
+      }
+      if (GachaRecordUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GachaRecordUrl);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -789,61 +816,22 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.GachaPreviewPrefabPath.Length != 0) {
-        GachaPreviewPrefabPath = other.GachaPreviewPrefabPath;
-      }
-      if (other.CostItemId != 0) {
-        CostItemId = other.CostItemId;
-      }
-      if (other.IsNewWish != false) {
-        IsNewWish = other.IsNewWish;
-      }
-      if (other.GachaProbUrl.Length != 0) {
-        GachaProbUrl = other.GachaProbUrl;
-      }
-      if (other.GachaRecordUrlOversea.Length != 0) {
-        GachaRecordUrlOversea = other.GachaRecordUrlOversea;
-      }
-      if (other.CostItemNum != 0) {
-        CostItemNum = other.CostItemNum;
-      }
-      gachaUpInfoList_.Add(other.gachaUpInfoList_);
-      displayUp4ItemList_.Add(other.displayUp4ItemList_);
-      if (other.WishProgress != 0) {
-        WishProgress = other.WishProgress;
-      }
-      if (other.ScheduleId != 0) {
-        ScheduleId = other.ScheduleId;
-      }
-      if (other.GachaSortId != 0) {
-        GachaSortId = other.GachaSortId;
-      }
-      if (other.LeftGachaTimes != 0) {
-        LeftGachaTimes = other.LeftGachaTimes;
-      }
-      if (other.GachaPrefabPath.Length != 0) {
-        GachaPrefabPath = other.GachaPrefabPath;
-      }
-      if (other.TitleTextmap.Length != 0) {
-        TitleTextmap = other.TitleTextmap;
-      }
-      if (other.TenCostItemNum != 0) {
-        TenCostItemNum = other.TenCostItemNum;
-      }
-      if (other.GachaType != 0) {
-        GachaType = other.GachaType;
-      }
-      if (other.WishMaxProgress != 0) {
-        WishMaxProgress = other.WishMaxProgress;
+      if (other.TenCostItemId != 0) {
+        TenCostItemId = other.TenCostItemId;
       }
       if (other.EndTime != 0) {
         EndTime = other.EndTime;
       }
-      if (other.TenCostItemId != 0) {
-        TenCostItemId = other.TenCostItemId;
+      displayUp4ItemList_.Add(other.displayUp4ItemList_);
+      if (other.CurScheduleDailyGachaTimes != 0) {
+        CurScheduleDailyGachaTimes = other.CurScheduleDailyGachaTimes;
       }
-      if (other.GachaRecordUrl.Length != 0) {
-        GachaRecordUrl = other.GachaRecordUrl;
+      gachaUpInfoList_.Add(other.gachaUpInfoList_);
+      if (other.GachaProbUrl.Length != 0) {
+        GachaProbUrl = other.GachaProbUrl;
+      }
+      if (other.GachaPrefabPath.Length != 0) {
+        GachaPrefabPath = other.GachaPrefabPath;
       }
       if (other.WishItemId != 0) {
         WishItemId = other.WishItemId;
@@ -851,13 +839,55 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.BeginTime != 0) {
         BeginTime = other.BeginTime;
       }
+      if (other.WishMaxProgress != 0) {
+        WishMaxProgress = other.WishMaxProgress;
+      }
+      if (other.ScheduleId != 0) {
+        ScheduleId = other.ScheduleId;
+      }
       if (other.GachaProbUrlOversea.Length != 0) {
         GachaProbUrlOversea = other.GachaProbUrlOversea;
       }
+      if (other.GachaType != 0) {
+        GachaType = other.GachaType;
+      }
+      if (other.LeftGachaTimes != 0) {
+        LeftGachaTimes = other.LeftGachaTimes;
+      }
+      displayUp5ItemList_.Add(other.displayUp5ItemList_);
       if (other.GachaTimesLimit != 0) {
         GachaTimesLimit = other.GachaTimesLimit;
       }
-      displayUp5ItemList_.Add(other.displayUp5ItemList_);
+      if (other.CostItemNum != 0) {
+        CostItemNum = other.CostItemNum;
+      }
+      if (other.IsNewWish != false) {
+        IsNewWish = other.IsNewWish;
+      }
+      if (other.CostItemId != 0) {
+        CostItemId = other.CostItemId;
+      }
+      if (other.TenCostItemNum != 0) {
+        TenCostItemNum = other.TenCostItemNum;
+      }
+      if (other.GachaPreviewPrefabPath.Length != 0) {
+        GachaPreviewPrefabPath = other.GachaPreviewPrefabPath;
+      }
+      if (other.WishProgress != 0) {
+        WishProgress = other.WishProgress;
+      }
+      if (other.TitleTextmap.Length != 0) {
+        TitleTextmap = other.TitleTextmap;
+      }
+      if (other.GachaRecordUrlOversea.Length != 0) {
+        GachaRecordUrlOversea = other.GachaRecordUrlOversea;
+      }
+      if (other.GachaSortId != 0) {
+        GachaSortId = other.GachaSortId;
+      }
+      if (other.GachaRecordUrl.Length != 0) {
+        GachaRecordUrl = other.GachaRecordUrl;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -931,6 +961,10 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 122: {
             GachaPrefabPath = input.ReadString();
+            break;
+          }
+          case 3752: {
+            CurScheduleDailyGachaTimes = input.ReadUInt32();
             break;
           }
           case 5864: {
@@ -1048,6 +1082,10 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 122: {
             GachaPrefabPath = input.ReadString();
+            break;
+          }
+          case 3752: {
+            CurScheduleDailyGachaTimes = input.ReadUInt32();
             break;
           }
           case 5864: {

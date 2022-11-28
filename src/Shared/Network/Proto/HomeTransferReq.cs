@@ -24,13 +24,13 @@ namespace Weedwacker.Shared.Network.Proto {
     static HomeTransferReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVIb21lVHJhbnNmZXJSZXEucHJvdG8iHwoPSG9tZVRyYW5zZmVyUmVxEgwK",
-            "BGd1aWQYASABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
-            "dG9iBnByb3RvMw=="));
+            "ChVIb21lVHJhbnNmZXJSZXEucHJvdG8iQgoPSG9tZVRyYW5zZmVyUmVxEgwK",
+            "BGd1aWQYASABKA0SIQoZaXNfdHJhbnNmZXJfdG9fc2FmZV9wb2ludBgMIAEo",
+            "CEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HomeTransferReq), global::Weedwacker.Shared.Network.Proto.HomeTransferReq.Parser, new[]{ "Guid" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HomeTransferReq), global::Weedwacker.Shared.Network.Proto.HomeTransferReq.Parser, new[]{ "Guid", "IsTransferToSafePoint" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,6 +78,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public HomeTransferReq(HomeTransferReq other) : this() {
       guid_ = other.guid_;
+      isTransferToSafePoint_ = other.isTransferToSafePoint_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -99,6 +100,18 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
+    /// <summary>Field number for the "is_transfer_to_safe_point" field.</summary>
+    public const int IsTransferToSafePointFieldNumber = 12;
+    private bool isTransferToSafePoint_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsTransferToSafePoint {
+      get { return isTransferToSafePoint_; }
+      set {
+        isTransferToSafePoint_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -115,6 +128,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (Guid != other.Guid) return false;
+      if (IsTransferToSafePoint != other.IsTransferToSafePoint) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -123,6 +137,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Guid != 0) hash ^= Guid.GetHashCode();
+      if (IsTransferToSafePoint != false) hash ^= IsTransferToSafePoint.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -145,6 +160,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(Guid);
       }
+      if (IsTransferToSafePoint != false) {
+        output.WriteRawTag(96);
+        output.WriteBool(IsTransferToSafePoint);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -159,6 +178,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(Guid);
       }
+      if (IsTransferToSafePoint != false) {
+        output.WriteRawTag(96);
+        output.WriteBool(IsTransferToSafePoint);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -171,6 +194,9 @@ namespace Weedwacker.Shared.Network.Proto {
       int size = 0;
       if (Guid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Guid);
+      }
+      if (IsTransferToSafePoint != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -186,6 +212,9 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (other.Guid != 0) {
         Guid = other.Guid;
+      }
+      if (other.IsTransferToSafePoint != false) {
+        IsTransferToSafePoint = other.IsTransferToSafePoint;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -206,6 +235,10 @@ namespace Weedwacker.Shared.Network.Proto {
             Guid = input.ReadUInt32();
             break;
           }
+          case 96: {
+            IsTransferToSafePoint = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -223,6 +256,10 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 8: {
             Guid = input.ReadUInt32();
+            break;
+          }
+          case 96: {
+            IsTransferToSafePoint = input.ReadBool();
             break;
           }
         }

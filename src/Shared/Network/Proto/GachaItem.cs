@@ -25,12 +25,12 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cg9HYWNoYUl0ZW0ucHJvdG8aF0dhY2hhVHJhbnNmZXJJdGVtLnByb3RvGg9J",
-            "dGVtUGFyYW0ucHJvdG8irwEKCUdhY2hhSXRlbRIfCgtnYWNoYV9pdGVtXxgH",
-            "IAEoCzIKLkl0ZW1QYXJhbRIZChFpc19nYWNoYV9pdGVtX25ldxgGIAEoCBIV",
-            "Cg1pc19mbGFzaF9jYXJkGAggASgIEiMKD3Rva2VuX2l0ZW1fbGlzdBgJIAMo",
-            "CzIKLkl0ZW1QYXJhbRIqCg50cmFuc2Zlcl9pdGVtcxgMIAMoCzISLkdhY2hh",
-            "VHJhbnNmZXJJdGVtQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvYgZwcm90bzM="));
+            "dGVtUGFyYW0ucHJvdG8irgEKCUdhY2hhSXRlbRIeCgpnYWNoYV9pdGVtGAcg",
+            "ASgLMgouSXRlbVBhcmFtEhkKEWlzX2dhY2hhX2l0ZW1fbmV3GAYgASgIEhUK",
+            "DWlzX2ZsYXNoX2NhcmQYCCABKAgSIwoPdG9rZW5faXRlbV9saXN0GAkgAygL",
+            "MgouSXRlbVBhcmFtEioKDnRyYW5zZmVyX2l0ZW1zGAwgAygLMhIuR2FjaGFU",
+            "cmFuc2Zlckl0ZW1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GachaTransferItemReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ItemParamReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -89,7 +89,7 @@ namespace Weedwacker.Shared.Network.Proto {
       return new GachaItem(this);
     }
 
-    /// <summary>Field number for the "gacha_item_" field.</summary>
+    /// <summary>Field number for the "gacha_item" field.</summary>
     public const int GachaItem_FieldNumber = 7;
     private global::Weedwacker.Shared.Network.Proto.ItemParam gachaItem_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

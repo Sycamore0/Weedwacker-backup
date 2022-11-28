@@ -26,7 +26,7 @@ namespace Weedwacker.Shared.Network.Proto {
           string.Concat(
             "CiZBcmVuYUNoYWxsZW5nZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxogQXJl",
             "bmFDaGFsbGVuZ2VNb25zdGVyTGV2ZWwucHJvdG8ilAIKIEFyZW5hQ2hhbGxl",
-            "bmdlQWN0aXZpdHlEZXRhaWxJbmZvEhsKE1VuazI4MDBfR05LSENJQ09JTUMY",
+            "bmdlQWN0aXZpdHlEZXRhaWxJbmZvEhsKE2lzX2ZpbmlzaF9hbnlfbGV2ZWwY",
             "DiABKAgSVAoTbGV2ZWxfb3Blbl90aW1lX21hcBgDIAMoCzI3LkFyZW5hQ2hh",
             "bGxlbmdlQWN0aXZpdHlEZXRhaWxJbmZvLkxldmVsT3BlblRpbWVNYXBFbnRy",
             "eRITCgt3b3JsZF9sZXZlbBgPIAEoDRIvCgpsZXZlbF9saXN0GAkgAygLMhsu",
@@ -36,7 +36,7 @@ namespace Weedwacker.Shared.Network.Proto {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ArenaChallengeMonsterLevelReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ArenaChallengeActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.ArenaChallengeActivityDetailInfo.Parser, new[]{ "Unk2800GNKHCICOIMC", "LevelOpenTimeMap", "WorldLevel", "LevelList" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ArenaChallengeActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.ArenaChallengeActivityDetailInfo.Parser, new[]{ "IsFinishAnyLevel", "LevelOpenTimeMap", "WorldLevel", "LevelList" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -77,7 +77,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ArenaChallengeActivityDetailInfo(ArenaChallengeActivityDetailInfo other) : this() {
-      unk2800GNKHCICOIMC_ = other.unk2800GNKHCICOIMC_;
+      isFinishAnyLevel_ = other.isFinishAnyLevel_;
       levelOpenTimeMap_ = other.levelOpenTimeMap_.Clone();
       worldLevel_ = other.worldLevel_;
       levelList_ = other.levelList_.Clone();
@@ -90,15 +90,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new ArenaChallengeActivityDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2800_GNKHCICOIMC" field.</summary>
-    public const int Unk2800GNKHCICOIMCFieldNumber = 14;
-    private bool unk2800GNKHCICOIMC_;
+    /// <summary>Field number for the "is_finish_any_level" field.</summary>
+    public const int IsFinishAnyLevelFieldNumber = 14;
+    private bool isFinishAnyLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2800GNKHCICOIMC {
-      get { return unk2800GNKHCICOIMC_; }
+    public bool IsFinishAnyLevel {
+      get { return isFinishAnyLevel_; }
       set {
-        unk2800GNKHCICOIMC_ = value;
+        isFinishAnyLevel_ = value;
       }
     }
 
@@ -151,7 +151,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2800GNKHCICOIMC != other.Unk2800GNKHCICOIMC) return false;
+      if (IsFinishAnyLevel != other.IsFinishAnyLevel) return false;
       if (!LevelOpenTimeMap.Equals(other.LevelOpenTimeMap)) return false;
       if (WorldLevel != other.WorldLevel) return false;
       if(!levelList_.Equals(other.levelList_)) return false;
@@ -162,7 +162,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2800GNKHCICOIMC != false) hash ^= Unk2800GNKHCICOIMC.GetHashCode();
+      if (IsFinishAnyLevel != false) hash ^= IsFinishAnyLevel.GetHashCode();
       hash ^= LevelOpenTimeMap.GetHashCode();
       if (WorldLevel != 0) hash ^= WorldLevel.GetHashCode();
       hash ^= levelList_.GetHashCode();
@@ -186,9 +186,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #else
       levelOpenTimeMap_.WriteTo(output, _map_levelOpenTimeMap_codec);
       levelList_.WriteTo(output, _repeated_levelList_codec);
-      if (Unk2800GNKHCICOIMC != false) {
+      if (IsFinishAnyLevel != false) {
         output.WriteRawTag(112);
-        output.WriteBool(Unk2800GNKHCICOIMC);
+        output.WriteBool(IsFinishAnyLevel);
       }
       if (WorldLevel != 0) {
         output.WriteRawTag(120);
@@ -206,9 +206,9 @@ namespace Weedwacker.Shared.Network.Proto {
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       levelOpenTimeMap_.WriteTo(ref output, _map_levelOpenTimeMap_codec);
       levelList_.WriteTo(ref output, _repeated_levelList_codec);
-      if (Unk2800GNKHCICOIMC != false) {
+      if (IsFinishAnyLevel != false) {
         output.WriteRawTag(112);
-        output.WriteBool(Unk2800GNKHCICOIMC);
+        output.WriteBool(IsFinishAnyLevel);
       }
       if (WorldLevel != 0) {
         output.WriteRawTag(120);
@@ -224,7 +224,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2800GNKHCICOIMC != false) {
+      if (IsFinishAnyLevel != false) {
         size += 1 + 1;
       }
       size += levelOpenTimeMap_.CalculateSize(_map_levelOpenTimeMap_codec);
@@ -244,8 +244,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2800GNKHCICOIMC != false) {
-        Unk2800GNKHCICOIMC = other.Unk2800GNKHCICOIMC;
+      if (other.IsFinishAnyLevel != false) {
+        IsFinishAnyLevel = other.IsFinishAnyLevel;
       }
       levelOpenTimeMap_.Add(other.levelOpenTimeMap_);
       if (other.WorldLevel != 0) {
@@ -276,7 +276,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk2800GNKHCICOIMC = input.ReadBool();
+            IsFinishAnyLevel = input.ReadBool();
             break;
           }
           case 120: {
@@ -307,7 +307,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk2800GNKHCICOIMC = input.ReadBool();
+            IsFinishAnyLevel = input.ReadBool();
             break;
           }
           case 120: {

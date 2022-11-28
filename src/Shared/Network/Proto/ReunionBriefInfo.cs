@@ -24,19 +24,20 @@ namespace Weedwacker.Shared.Network.Proto {
     static ReunionBriefInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZSZXVuaW9uQnJpZWZJbmZvLnByb3RvIqICChBSZXVuaW9uQnJpZWZJbmZv",
-            "EhsKE2lzX3Rha2VuX2ZpcnN0X2dpZnQYCCABKAgSGgoSbWlzc2lvbl9oYXNf",
-            "cmV3YXJkGAkgASgIEhQKDHByaXZpbGVnZV9pZBgFIAEoDRISCgpzdGFydF90",
-            "aW1lGAcgASgNEg8KB3ZlcnNpb24YDSABKAkSGgoSc2lnbl9pbl9oYXNfcmV3",
-            "YXJkGAIgASgIEhwKFGZpcnN0X2dpZnRfcmV3YXJkX2lkGA8gASgNEhIKCm1p",
-            "c3Npb25faWQYCiABKA0SHAoUZmlyc3RfZGF5X3N0YXJ0X3RpbWUYAyABKA0S",
-            "GQoRc2lnbl9pbl9jb25maWdfaWQYBiABKA0SEwoLZmluaXNoX3RpbWUYDCAB",
-            "KA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
-            "Mw=="));
+            "ChZSZXVuaW9uQnJpZWZJbmZvLnByb3RvGhpSZXVuaW9uUHJpdmlsZWdlSW5m",
+            "by5wcm90byLRAgoQUmV1bmlvbkJyaWVmSW5mbxIcChRmaXJzdF9naWZ0X3Jl",
+            "d2FyZF9pZBgPIAEoDRIUCgxwcml2aWxlZ2VfaWQYBSABKA0SEgoKbWlzc2lv",
+            "bl9pZBgKIAEoDRIcChRmaXJzdF9kYXlfc3RhcnRfdGltZRgDIAEoDRIaChJz",
+            "aWduX2luX2hhc19yZXdhcmQYAiABKAgSEgoKc3RhcnRfdGltZRgHIAEoDRIb",
+            "ChNpc190YWtlbl9maXJzdF9naWZ0GAggASgIEhMKC2ZpbmlzaF90aW1lGAwg",
+            "ASgNEhoKEm1pc3Npb25faGFzX3Jld2FyZBgJIAEoCBItCg5wcml2aWxlZ2Vf",
+            "aW5mbxgOIAEoCzIVLlJldW5pb25Qcml2aWxlZ2VJbmZvEg8KB3ZlcnNpb24Y",
+            "DSABKAkSGQoRc2lnbl9pbl9jb25maWdfaWQYBiABKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ReunionPrivilegeInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ReunionBriefInfo), global::Weedwacker.Shared.Network.Proto.ReunionBriefInfo.Parser, new[]{ "IsTakenFirstGift", "MissionHasReward", "PrivilegeId", "StartTime", "Version", "SignInHasReward", "FirstGiftRewardId", "MissionId", "FirstDayStartTime", "SignInConfigId", "FinishTime" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ReunionBriefInfo), global::Weedwacker.Shared.Network.Proto.ReunionBriefInfo.Parser, new[]{ "FirstGiftRewardId", "PrivilegeId", "MissionId", "FirstDayStartTime", "SignInHasReward", "StartTime", "IsTakenFirstGift", "FinishTime", "MissionHasReward", "PrivilegeInfo", "Version", "SignInConfigId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,17 +78,18 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReunionBriefInfo(ReunionBriefInfo other) : this() {
-      isTakenFirstGift_ = other.isTakenFirstGift_;
-      missionHasReward_ = other.missionHasReward_;
-      privilegeId_ = other.privilegeId_;
-      startTime_ = other.startTime_;
-      version_ = other.version_;
-      signInHasReward_ = other.signInHasReward_;
       firstGiftRewardId_ = other.firstGiftRewardId_;
+      privilegeId_ = other.privilegeId_;
       missionId_ = other.missionId_;
       firstDayStartTime_ = other.firstDayStartTime_;
-      signInConfigId_ = other.signInConfigId_;
+      signInHasReward_ = other.signInHasReward_;
+      startTime_ = other.startTime_;
+      isTakenFirstGift_ = other.isTakenFirstGift_;
       finishTime_ = other.finishTime_;
+      missionHasReward_ = other.missionHasReward_;
+      privilegeInfo_ = other.privilegeInfo_ != null ? other.privilegeInfo_.Clone() : null;
+      version_ = other.version_;
+      signInConfigId_ = other.signInConfigId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -97,27 +99,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new ReunionBriefInfo(this);
     }
 
-    /// <summary>Field number for the "is_taken_first_gift" field.</summary>
-    public const int IsTakenFirstGiftFieldNumber = 8;
-    private bool isTakenFirstGift_;
+    /// <summary>Field number for the "first_gift_reward_id" field.</summary>
+    public const int FirstGiftRewardIdFieldNumber = 15;
+    private uint firstGiftRewardId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsTakenFirstGift {
-      get { return isTakenFirstGift_; }
+    public uint FirstGiftRewardId {
+      get { return firstGiftRewardId_; }
       set {
-        isTakenFirstGift_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "mission_has_reward" field.</summary>
-    public const int MissionHasRewardFieldNumber = 9;
-    private bool missionHasReward_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool MissionHasReward {
-      get { return missionHasReward_; }
-      set {
-        missionHasReward_ = value;
+        firstGiftRewardId_ = value;
       }
     }
 
@@ -130,54 +120,6 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return privilegeId_; }
       set {
         privilegeId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "start_time" field.</summary>
-    public const int StartTimeFieldNumber = 7;
-    private uint startTime_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint StartTime {
-      get { return startTime_; }
-      set {
-        startTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "version" field.</summary>
-    public const int VersionFieldNumber = 13;
-    private string version_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Version {
-      get { return version_; }
-      set {
-        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "sign_in_has_reward" field.</summary>
-    public const int SignInHasRewardFieldNumber = 2;
-    private bool signInHasReward_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool SignInHasReward {
-      get { return signInHasReward_; }
-      set {
-        signInHasReward_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "first_gift_reward_id" field.</summary>
-    public const int FirstGiftRewardIdFieldNumber = 15;
-    private uint firstGiftRewardId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint FirstGiftRewardId {
-      get { return firstGiftRewardId_; }
-      set {
-        firstGiftRewardId_ = value;
       }
     }
 
@@ -205,15 +147,39 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "sign_in_config_id" field.</summary>
-    public const int SignInConfigIdFieldNumber = 6;
-    private uint signInConfigId_;
+    /// <summary>Field number for the "sign_in_has_reward" field.</summary>
+    public const int SignInHasRewardFieldNumber = 2;
+    private bool signInHasReward_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint SignInConfigId {
-      get { return signInConfigId_; }
+    public bool SignInHasReward {
+      get { return signInHasReward_; }
       set {
-        signInConfigId_ = value;
+        signInHasReward_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "start_time" field.</summary>
+    public const int StartTimeFieldNumber = 7;
+    private uint startTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint StartTime {
+      get { return startTime_; }
+      set {
+        startTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_taken_first_gift" field.</summary>
+    public const int IsTakenFirstGiftFieldNumber = 8;
+    private bool isTakenFirstGift_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsTakenFirstGift {
+      get { return isTakenFirstGift_; }
+      set {
+        isTakenFirstGift_ = value;
       }
     }
 
@@ -226,6 +192,54 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return finishTime_; }
       set {
         finishTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mission_has_reward" field.</summary>
+    public const int MissionHasRewardFieldNumber = 9;
+    private bool missionHasReward_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool MissionHasReward {
+      get { return missionHasReward_; }
+      set {
+        missionHasReward_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "privilege_info" field.</summary>
+    public const int PrivilegeInfoFieldNumber = 14;
+    private global::Weedwacker.Shared.Network.Proto.ReunionPrivilegeInfo privilegeInfo_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.ReunionPrivilegeInfo PrivilegeInfo {
+      get { return privilegeInfo_; }
+      set {
+        privilegeInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "version" field.</summary>
+    public const int VersionFieldNumber = 13;
+    private string version_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Version {
+      get { return version_; }
+      set {
+        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "sign_in_config_id" field.</summary>
+    public const int SignInConfigIdFieldNumber = 6;
+    private uint signInConfigId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint SignInConfigId {
+      get { return signInConfigId_; }
+      set {
+        signInConfigId_ = value;
       }
     }
 
@@ -244,17 +258,18 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (IsTakenFirstGift != other.IsTakenFirstGift) return false;
-      if (MissionHasReward != other.MissionHasReward) return false;
-      if (PrivilegeId != other.PrivilegeId) return false;
-      if (StartTime != other.StartTime) return false;
-      if (Version != other.Version) return false;
-      if (SignInHasReward != other.SignInHasReward) return false;
       if (FirstGiftRewardId != other.FirstGiftRewardId) return false;
+      if (PrivilegeId != other.PrivilegeId) return false;
       if (MissionId != other.MissionId) return false;
       if (FirstDayStartTime != other.FirstDayStartTime) return false;
-      if (SignInConfigId != other.SignInConfigId) return false;
+      if (SignInHasReward != other.SignInHasReward) return false;
+      if (StartTime != other.StartTime) return false;
+      if (IsTakenFirstGift != other.IsTakenFirstGift) return false;
       if (FinishTime != other.FinishTime) return false;
+      if (MissionHasReward != other.MissionHasReward) return false;
+      if (!object.Equals(PrivilegeInfo, other.PrivilegeInfo)) return false;
+      if (Version != other.Version) return false;
+      if (SignInConfigId != other.SignInConfigId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -262,17 +277,18 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (IsTakenFirstGift != false) hash ^= IsTakenFirstGift.GetHashCode();
-      if (MissionHasReward != false) hash ^= MissionHasReward.GetHashCode();
-      if (PrivilegeId != 0) hash ^= PrivilegeId.GetHashCode();
-      if (StartTime != 0) hash ^= StartTime.GetHashCode();
-      if (Version.Length != 0) hash ^= Version.GetHashCode();
-      if (SignInHasReward != false) hash ^= SignInHasReward.GetHashCode();
       if (FirstGiftRewardId != 0) hash ^= FirstGiftRewardId.GetHashCode();
+      if (PrivilegeId != 0) hash ^= PrivilegeId.GetHashCode();
       if (MissionId != 0) hash ^= MissionId.GetHashCode();
       if (FirstDayStartTime != 0) hash ^= FirstDayStartTime.GetHashCode();
-      if (SignInConfigId != 0) hash ^= SignInConfigId.GetHashCode();
+      if (SignInHasReward != false) hash ^= SignInHasReward.GetHashCode();
+      if (StartTime != 0) hash ^= StartTime.GetHashCode();
+      if (IsTakenFirstGift != false) hash ^= IsTakenFirstGift.GetHashCode();
       if (FinishTime != 0) hash ^= FinishTime.GetHashCode();
+      if (MissionHasReward != false) hash ^= MissionHasReward.GetHashCode();
+      if (privilegeInfo_ != null) hash ^= PrivilegeInfo.GetHashCode();
+      if (Version.Length != 0) hash ^= Version.GetHashCode();
+      if (SignInConfigId != 0) hash ^= SignInConfigId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -331,6 +347,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(106);
         output.WriteString(Version);
       }
+      if (privilegeInfo_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(PrivilegeInfo);
+      }
       if (FirstGiftRewardId != 0) {
         output.WriteRawTag(120);
         output.WriteUInt32(FirstGiftRewardId);
@@ -385,6 +405,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(106);
         output.WriteString(Version);
       }
+      if (privilegeInfo_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(PrivilegeInfo);
+      }
       if (FirstGiftRewardId != 0) {
         output.WriteRawTag(120);
         output.WriteUInt32(FirstGiftRewardId);
@@ -399,26 +423,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (IsTakenFirstGift != false) {
-        size += 1 + 1;
-      }
-      if (MissionHasReward != false) {
-        size += 1 + 1;
+      if (FirstGiftRewardId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FirstGiftRewardId);
       }
       if (PrivilegeId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PrivilegeId);
-      }
-      if (StartTime != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(StartTime);
-      }
-      if (Version.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Version);
-      }
-      if (SignInHasReward != false) {
-        size += 1 + 1;
-      }
-      if (FirstGiftRewardId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FirstGiftRewardId);
       }
       if (MissionId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MissionId);
@@ -426,11 +435,29 @@ namespace Weedwacker.Shared.Network.Proto {
       if (FirstDayStartTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FirstDayStartTime);
       }
-      if (SignInConfigId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SignInConfigId);
+      if (SignInHasReward != false) {
+        size += 1 + 1;
+      }
+      if (StartTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(StartTime);
+      }
+      if (IsTakenFirstGift != false) {
+        size += 1 + 1;
       }
       if (FinishTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FinishTime);
+      }
+      if (MissionHasReward != false) {
+        size += 1 + 1;
+      }
+      if (privilegeInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PrivilegeInfo);
+      }
+      if (Version.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Version);
+      }
+      if (SignInConfigId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SignInConfigId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -444,26 +471,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.IsTakenFirstGift != false) {
-        IsTakenFirstGift = other.IsTakenFirstGift;
-      }
-      if (other.MissionHasReward != false) {
-        MissionHasReward = other.MissionHasReward;
+      if (other.FirstGiftRewardId != 0) {
+        FirstGiftRewardId = other.FirstGiftRewardId;
       }
       if (other.PrivilegeId != 0) {
         PrivilegeId = other.PrivilegeId;
-      }
-      if (other.StartTime != 0) {
-        StartTime = other.StartTime;
-      }
-      if (other.Version.Length != 0) {
-        Version = other.Version;
-      }
-      if (other.SignInHasReward != false) {
-        SignInHasReward = other.SignInHasReward;
-      }
-      if (other.FirstGiftRewardId != 0) {
-        FirstGiftRewardId = other.FirstGiftRewardId;
       }
       if (other.MissionId != 0) {
         MissionId = other.MissionId;
@@ -471,11 +483,32 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.FirstDayStartTime != 0) {
         FirstDayStartTime = other.FirstDayStartTime;
       }
-      if (other.SignInConfigId != 0) {
-        SignInConfigId = other.SignInConfigId;
+      if (other.SignInHasReward != false) {
+        SignInHasReward = other.SignInHasReward;
+      }
+      if (other.StartTime != 0) {
+        StartTime = other.StartTime;
+      }
+      if (other.IsTakenFirstGift != false) {
+        IsTakenFirstGift = other.IsTakenFirstGift;
       }
       if (other.FinishTime != 0) {
         FinishTime = other.FinishTime;
+      }
+      if (other.MissionHasReward != false) {
+        MissionHasReward = other.MissionHasReward;
+      }
+      if (other.privilegeInfo_ != null) {
+        if (privilegeInfo_ == null) {
+          PrivilegeInfo = new global::Weedwacker.Shared.Network.Proto.ReunionPrivilegeInfo();
+        }
+        PrivilegeInfo.MergeFrom(other.PrivilegeInfo);
+      }
+      if (other.Version.Length != 0) {
+        Version = other.Version;
+      }
+      if (other.SignInConfigId != 0) {
+        SignInConfigId = other.SignInConfigId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -530,6 +563,13 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 106: {
             Version = input.ReadString();
+            break;
+          }
+          case 114: {
+            if (privilegeInfo_ == null) {
+              PrivilegeInfo = new global::Weedwacker.Shared.Network.Proto.ReunionPrivilegeInfo();
+            }
+            input.ReadMessage(PrivilegeInfo);
             break;
           }
           case 120: {
@@ -589,6 +629,13 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 106: {
             Version = input.ReadString();
+            break;
+          }
+          case 114: {
+            if (privilegeInfo_ == null) {
+              PrivilegeInfo = new global::Weedwacker.Shared.Network.Proto.ReunionPrivilegeInfo();
+            }
+            input.ReadMessage(PrivilegeInfo);
             break;
           }
           case 120: {

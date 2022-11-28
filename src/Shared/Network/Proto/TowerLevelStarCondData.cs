@@ -24,15 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static TowerLevelStarCondDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxUb3dlckxldmVsU3RhckNvbmREYXRhLnByb3RvInQKFlRvd2VyTGV2ZWxT",
-            "dGFyQ29uZERhdGESGwoTVW5rMjcwMF9ISUZNSk1BSEVNQhgPIAEoCBISCgpj",
-            "b25kX3ZhbHVlGAkgASgNEhAKCGlzX3BhdXNlGA0gASgIEhcKD3N0YXJfY29u",
-            "ZF9pbmRleBgGIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90b2IGcHJvdG8z"));
+            "ChxUb3dlckxldmVsU3RhckNvbmREYXRhLnByb3RvImgKFlRvd2VyTGV2ZWxT",
+            "dGFyQ29uZERhdGESDwoHaXNfZmFpbBgPIAEoCBISCgpjb25kX3ZhbHVlGAkg",
+            "ASgNEhAKCGlzX3BhdXNlGA0gASgIEhcKD3N0YXJfY29uZF9pbmRleBgGIAEo",
+            "DUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TowerLevelStarCondData), global::Weedwacker.Shared.Network.Proto.TowerLevelStarCondData.Parser, new[]{ "Unk2700HIFMJMAHEMB", "CondValue", "IsPause", "StarCondIndex" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TowerLevelStarCondData), global::Weedwacker.Shared.Network.Proto.TowerLevelStarCondData.Parser, new[]{ "IsFail", "CondValue", "IsPause", "StarCondIndex" }, null, null, null, null)
           }));
     }
     #endregion
@@ -73,7 +72,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TowerLevelStarCondData(TowerLevelStarCondData other) : this() {
-      unk2700HIFMJMAHEMB_ = other.unk2700HIFMJMAHEMB_;
+      isFail_ = other.isFail_;
       condValue_ = other.condValue_;
       isPause_ = other.isPause_;
       starCondIndex_ = other.starCondIndex_;
@@ -86,15 +85,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new TowerLevelStarCondData(this);
     }
 
-    /// <summary>Field number for the "Unk2700_HIFMJMAHEMB" field.</summary>
-    public const int Unk2700HIFMJMAHEMBFieldNumber = 15;
-    private bool unk2700HIFMJMAHEMB_;
+    /// <summary>Field number for the "is_fail" field.</summary>
+    public const int IsFailFieldNumber = 15;
+    private bool isFail_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700HIFMJMAHEMB {
-      get { return unk2700HIFMJMAHEMB_; }
+    public bool IsFail {
+      get { return isFail_; }
       set {
-        unk2700HIFMJMAHEMB_ = value;
+        isFail_ = value;
       }
     }
 
@@ -149,7 +148,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700HIFMJMAHEMB != other.Unk2700HIFMJMAHEMB) return false;
+      if (IsFail != other.IsFail) return false;
       if (CondValue != other.CondValue) return false;
       if (IsPause != other.IsPause) return false;
       if (StarCondIndex != other.StarCondIndex) return false;
@@ -160,7 +159,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700HIFMJMAHEMB != false) hash ^= Unk2700HIFMJMAHEMB.GetHashCode();
+      if (IsFail != false) hash ^= IsFail.GetHashCode();
       if (CondValue != 0) hash ^= CondValue.GetHashCode();
       if (IsPause != false) hash ^= IsPause.GetHashCode();
       if (StarCondIndex != 0) hash ^= StarCondIndex.GetHashCode();
@@ -194,9 +193,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(104);
         output.WriteBool(IsPause);
       }
-      if (Unk2700HIFMJMAHEMB != false) {
+      if (IsFail != false) {
         output.WriteRawTag(120);
-        output.WriteBool(Unk2700HIFMJMAHEMB);
+        output.WriteBool(IsFail);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -220,9 +219,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(104);
         output.WriteBool(IsPause);
       }
-      if (Unk2700HIFMJMAHEMB != false) {
+      if (IsFail != false) {
         output.WriteRawTag(120);
-        output.WriteBool(Unk2700HIFMJMAHEMB);
+        output.WriteBool(IsFail);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -234,7 +233,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700HIFMJMAHEMB != false) {
+      if (IsFail != false) {
         size += 1 + 1;
       }
       if (CondValue != 0) {
@@ -258,8 +257,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700HIFMJMAHEMB != false) {
-        Unk2700HIFMJMAHEMB = other.Unk2700HIFMJMAHEMB;
+      if (other.IsFail != false) {
+        IsFail = other.IsFail;
       }
       if (other.CondValue != 0) {
         CondValue = other.CondValue;
@@ -298,7 +297,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk2700HIFMJMAHEMB = input.ReadBool();
+            IsFail = input.ReadBool();
             break;
           }
         }
@@ -329,7 +328,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk2700HIFMJMAHEMB = input.ReadBool();
+            IsFail = input.ReadBool();
             break;
           }
         }

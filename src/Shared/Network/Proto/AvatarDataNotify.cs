@@ -25,20 +25,20 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChZBdmF0YXJEYXRhTm90aWZ5LnByb3RvGhBBdmF0YXJJbmZvLnByb3RvGhBB",
-            "dmF0YXJUZWFtLnByb3RvIuMCChBBdmF0YXJEYXRhTm90aWZ5EhoKEm93bmVk",
+            "dmF0YXJUZWFtLnByb3RvIu0CChBBdmF0YXJEYXRhTm90aWZ5EhoKEm93bmVk",
             "X2Nvc3R1bWVfbGlzdBgLIAMoDRIaChJjaG9vc2VfYXZhdGFyX2d1aWQYCCAB",
             "KAQSPQoPYXZhdGFyX3RlYW1fbWFwGAcgAygLMiQuQXZhdGFyRGF0YU5vdGlm",
-            "eS5BdmF0YXJUZWFtTWFwRW50cnkSGwoTVW5rMzAwMF9OSUdQSUNMQkhNQRgJ",
-            "IAMoDRIdChV0ZW1wX2F2YXRhcl9ndWlkX2xpc3QYDCADKAQSGwoTb3duZWRf",
-            "Zmx5Y2xvYWtfbGlzdBgBIAMoDRIgCgthdmF0YXJfbGlzdBgGIAMoCzILLkF2",
-            "YXRhckluZm8SGgoSY3VyX2F2YXRhcl90ZWFtX2lkGAIgASgNGkEKEkF2YXRh",
-            "clRlYW1NYXBFbnRyeRILCgNrZXkYASABKA0SGgoFdmFsdWUYAiABKAsyCy5B",
-            "dmF0YXJUZWFtOgI4AUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90b2IGcHJvdG8z"));
+            "eS5BdmF0YXJUZWFtTWFwRW50cnkSJQodYmFja3VwX2F2YXRhcl90ZWFtX29y",
+            "ZGVyX2xpc3QYCSADKA0SHQoVdGVtcF9hdmF0YXJfZ3VpZF9saXN0GAwgAygE",
+            "EhsKE293bmVkX2ZseWNsb2FrX2xpc3QYASADKA0SIAoLYXZhdGFyX2xpc3QY",
+            "BiADKAsyCy5BdmF0YXJJbmZvEhoKEmN1cl9hdmF0YXJfdGVhbV9pZBgCIAEo",
+            "DRpBChJBdmF0YXJUZWFtTWFwRW50cnkSCwoDa2V5GAEgASgNEhoKBXZhbHVl",
+            "GAIgASgLMgsuQXZhdGFyVGVhbToCOAFCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AvatarInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.AvatarTeamReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AvatarDataNotify), global::Weedwacker.Shared.Network.Proto.AvatarDataNotify.Parser, new[]{ "OwnedCostumeList", "ChooseAvatarGuid", "AvatarTeamMap", "Unk3000NIGPICLBHMA", "TempAvatarGuidList", "OwnedFlycloakList", "AvatarList", "CurAvatarTeamId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AvatarDataNotify), global::Weedwacker.Shared.Network.Proto.AvatarDataNotify.Parser, new[]{ "OwnedCostumeList", "ChooseAvatarGuid", "AvatarTeamMap", "BackupAvatarTeamOrderList", "TempAvatarGuidList", "OwnedFlycloakList", "AvatarList", "CurAvatarTeamId" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -87,7 +87,7 @@ namespace Weedwacker.Shared.Network.Proto {
       ownedCostumeList_ = other.ownedCostumeList_.Clone();
       chooseAvatarGuid_ = other.chooseAvatarGuid_;
       avatarTeamMap_ = other.avatarTeamMap_.Clone();
-      unk3000NIGPICLBHMA_ = other.unk3000NIGPICLBHMA_.Clone();
+      backupAvatarTeamOrderList_ = other.backupAvatarTeamOrderList_.Clone();
       tempAvatarGuidList_ = other.tempAvatarGuidList_.Clone();
       ownedFlycloakList_ = other.ownedFlycloakList_.Clone();
       avatarList_ = other.avatarList_.Clone();
@@ -135,15 +135,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return avatarTeamMap_; }
     }
 
-    /// <summary>Field number for the "Unk3000_NIGPICLBHMA" field.</summary>
-    public const int Unk3000NIGPICLBHMAFieldNumber = 9;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3000NIGPICLBHMA_codec
+    /// <summary>Field number for the "backup_avatar_team_order_list" field.</summary>
+    public const int BackupAvatarTeamOrderListFieldNumber = 9;
+    private static readonly pb::FieldCodec<uint> _repeated_backupAvatarTeamOrderList_codec
         = pb::FieldCodec.ForUInt32(74);
-    private readonly pbc::RepeatedField<uint> unk3000NIGPICLBHMA_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> backupAvatarTeamOrderList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3000NIGPICLBHMA {
-      get { return unk3000NIGPICLBHMA_; }
+    public pbc::RepeatedField<uint> BackupAvatarTeamOrderList {
+      get { return backupAvatarTeamOrderList_; }
     }
 
     /// <summary>Field number for the "temp_avatar_guid_list" field.</summary>
@@ -209,7 +209,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if(!ownedCostumeList_.Equals(other.ownedCostumeList_)) return false;
       if (ChooseAvatarGuid != other.ChooseAvatarGuid) return false;
       if (!AvatarTeamMap.Equals(other.AvatarTeamMap)) return false;
-      if(!unk3000NIGPICLBHMA_.Equals(other.unk3000NIGPICLBHMA_)) return false;
+      if(!backupAvatarTeamOrderList_.Equals(other.backupAvatarTeamOrderList_)) return false;
       if(!tempAvatarGuidList_.Equals(other.tempAvatarGuidList_)) return false;
       if(!ownedFlycloakList_.Equals(other.ownedFlycloakList_)) return false;
       if(!avatarList_.Equals(other.avatarList_)) return false;
@@ -224,7 +224,7 @@ namespace Weedwacker.Shared.Network.Proto {
       hash ^= ownedCostumeList_.GetHashCode();
       if (ChooseAvatarGuid != 0UL) hash ^= ChooseAvatarGuid.GetHashCode();
       hash ^= AvatarTeamMap.GetHashCode();
-      hash ^= unk3000NIGPICLBHMA_.GetHashCode();
+      hash ^= backupAvatarTeamOrderList_.GetHashCode();
       hash ^= tempAvatarGuidList_.GetHashCode();
       hash ^= ownedFlycloakList_.GetHashCode();
       hash ^= avatarList_.GetHashCode();
@@ -258,7 +258,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(64);
         output.WriteUInt64(ChooseAvatarGuid);
       }
-      unk3000NIGPICLBHMA_.WriteTo(output, _repeated_unk3000NIGPICLBHMA_codec);
+      backupAvatarTeamOrderList_.WriteTo(output, _repeated_backupAvatarTeamOrderList_codec);
       ownedCostumeList_.WriteTo(output, _repeated_ownedCostumeList_codec);
       tempAvatarGuidList_.WriteTo(output, _repeated_tempAvatarGuidList_codec);
       if (_unknownFields != null) {
@@ -282,7 +282,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(64);
         output.WriteUInt64(ChooseAvatarGuid);
       }
-      unk3000NIGPICLBHMA_.WriteTo(ref output, _repeated_unk3000NIGPICLBHMA_codec);
+      backupAvatarTeamOrderList_.WriteTo(ref output, _repeated_backupAvatarTeamOrderList_codec);
       ownedCostumeList_.WriteTo(ref output, _repeated_ownedCostumeList_codec);
       tempAvatarGuidList_.WriteTo(ref output, _repeated_tempAvatarGuidList_codec);
       if (_unknownFields != null) {
@@ -300,7 +300,7 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ChooseAvatarGuid);
       }
       size += avatarTeamMap_.CalculateSize(_map_avatarTeamMap_codec);
-      size += unk3000NIGPICLBHMA_.CalculateSize(_repeated_unk3000NIGPICLBHMA_codec);
+      size += backupAvatarTeamOrderList_.CalculateSize(_repeated_backupAvatarTeamOrderList_codec);
       size += tempAvatarGuidList_.CalculateSize(_repeated_tempAvatarGuidList_codec);
       size += ownedFlycloakList_.CalculateSize(_repeated_ownedFlycloakList_codec);
       size += avatarList_.CalculateSize(_repeated_avatarList_codec);
@@ -324,7 +324,7 @@ namespace Weedwacker.Shared.Network.Proto {
         ChooseAvatarGuid = other.ChooseAvatarGuid;
       }
       avatarTeamMap_.Add(other.avatarTeamMap_);
-      unk3000NIGPICLBHMA_.Add(other.unk3000NIGPICLBHMA_);
+      backupAvatarTeamOrderList_.Add(other.backupAvatarTeamOrderList_);
       tempAvatarGuidList_.Add(other.tempAvatarGuidList_);
       ownedFlycloakList_.Add(other.ownedFlycloakList_);
       avatarList_.Add(other.avatarList_);
@@ -369,7 +369,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 74:
           case 72: {
-            unk3000NIGPICLBHMA_.AddEntriesFrom(input, _repeated_unk3000NIGPICLBHMA_codec);
+            backupAvatarTeamOrderList_.AddEntriesFrom(input, _repeated_backupAvatarTeamOrderList_codec);
             break;
           }
           case 90:
@@ -420,7 +420,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 74:
           case 72: {
-            unk3000NIGPICLBHMA_.AddEntriesFrom(ref input, _repeated_unk3000NIGPICLBHMA_codec);
+            backupAvatarTeamOrderList_.AddEntriesFrom(ref input, _repeated_backupAvatarTeamOrderList_codec);
             break;
           }
           case 90:

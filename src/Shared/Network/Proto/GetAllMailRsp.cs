@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetAllMailRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNHZXRBbGxNYWlsUnNwLnByb3RvGg5NYWlsRGF0YS5wcm90byJxCg1HZXRB",
+            "ChNHZXRBbGxNYWlsUnNwLnByb3RvGg5NYWlsRGF0YS5wcm90byJqCg1HZXRB",
             "bGxNYWlsUnNwEg8KB3JldGNvZGUYCCABKAUSHAoJbWFpbF9saXN0GA4gAygL",
-            "MgkuTWFpbERhdGESGwoTVW5rMjcwMF9PUEVITERBR0lDRhgBIAEoCBIUCgxp",
-            "c190cnVuY2F0ZWQYAiABKAhCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG9iBnByb3RvMw=="));
+            "MgkuTWFpbERhdGESFAoMaXNfY29sbGVjdGVkGAEgASgIEhQKDGlzX3RydW5j",
+            "YXRlZBgCIAEoCEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MailDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetAllMailRsp), global::Weedwacker.Shared.Network.Proto.GetAllMailRsp.Parser, new[]{ "Retcode", "MailList", "Unk2700OPEHLDAGICF", "IsTruncated" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetAllMailRsp), global::Weedwacker.Shared.Network.Proto.GetAllMailRsp.Parser, new[]{ "Retcode", "MailList", "IsCollected", "IsTruncated" }, null, null, null, null)
           }));
     }
     #endregion
@@ -80,7 +80,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public GetAllMailRsp(GetAllMailRsp other) : this() {
       retcode_ = other.retcode_;
       mailList_ = other.mailList_.Clone();
-      unk2700OPEHLDAGICF_ = other.unk2700OPEHLDAGICF_;
+      isCollected_ = other.isCollected_;
       isTruncated_ = other.isTruncated_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -114,15 +114,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return mailList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_OPEHLDAGICF" field.</summary>
-    public const int Unk2700OPEHLDAGICFFieldNumber = 1;
-    private bool unk2700OPEHLDAGICF_;
+    /// <summary>Field number for the "is_collected" field.</summary>
+    public const int IsCollectedFieldNumber = 1;
+    private bool isCollected_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700OPEHLDAGICF {
-      get { return unk2700OPEHLDAGICF_; }
+    public bool IsCollected {
+      get { return isCollected_; }
       set {
-        unk2700OPEHLDAGICF_ = value;
+        isCollected_ = value;
       }
     }
 
@@ -155,7 +155,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (Retcode != other.Retcode) return false;
       if(!mailList_.Equals(other.mailList_)) return false;
-      if (Unk2700OPEHLDAGICF != other.Unk2700OPEHLDAGICF) return false;
+      if (IsCollected != other.IsCollected) return false;
       if (IsTruncated != other.IsTruncated) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -166,7 +166,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
       hash ^= mailList_.GetHashCode();
-      if (Unk2700OPEHLDAGICF != false) hash ^= Unk2700OPEHLDAGICF.GetHashCode();
+      if (IsCollected != false) hash ^= IsCollected.GetHashCode();
       if (IsTruncated != false) hash ^= IsTruncated.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -186,9 +186,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700OPEHLDAGICF != false) {
+      if (IsCollected != false) {
         output.WriteRawTag(8);
-        output.WriteBool(Unk2700OPEHLDAGICF);
+        output.WriteBool(IsCollected);
       }
       if (IsTruncated != false) {
         output.WriteRawTag(16);
@@ -209,9 +209,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700OPEHLDAGICF != false) {
+      if (IsCollected != false) {
         output.WriteRawTag(8);
-        output.WriteBool(Unk2700OPEHLDAGICF);
+        output.WriteBool(IsCollected);
       }
       if (IsTruncated != false) {
         output.WriteRawTag(16);
@@ -236,7 +236,7 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
       }
       size += mailList_.CalculateSize(_repeated_mailList_codec);
-      if (Unk2700OPEHLDAGICF != false) {
+      if (IsCollected != false) {
         size += 1 + 1;
       }
       if (IsTruncated != false) {
@@ -258,8 +258,8 @@ namespace Weedwacker.Shared.Network.Proto {
         Retcode = other.Retcode;
       }
       mailList_.Add(other.mailList_);
-      if (other.Unk2700OPEHLDAGICF != false) {
-        Unk2700OPEHLDAGICF = other.Unk2700OPEHLDAGICF;
+      if (other.IsCollected != false) {
+        IsCollected = other.IsCollected;
       }
       if (other.IsTruncated != false) {
         IsTruncated = other.IsTruncated;
@@ -280,7 +280,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Unk2700OPEHLDAGICF = input.ReadBool();
+            IsCollected = input.ReadBool();
             break;
           }
           case 16: {
@@ -311,7 +311,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Unk2700OPEHLDAGICF = input.ReadBool();
+            IsCollected = input.ReadBool();
             break;
           }
           case 16: {
