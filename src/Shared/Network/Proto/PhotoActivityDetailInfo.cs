@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static PhotoActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1QaG90b0FjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoQUGhvdG9TdGFnZS5w",
-            "cm90byJbChdQaG90b0FjdGl2aXR5RGV0YWlsSW5mbxIZChFpc19jb250ZW50",
-            "X2Nsb3NlZBgEIAEoCBIlChBwaG90b19zdGFnZV9saXN0GAwgAygLMgsuUGhv",
-            "dG9TdGFnZUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IG",
-            "cHJvdG8z"));
+            "Ch1QaG90b0FjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoSUGhvdG9Qb3NEYXRh",
+            "LnByb3RvImAKF1Bob3RvQWN0aXZpdHlEZXRhaWxJbmZvEhkKEWlzX2NvbnRl",
+            "bnRfY2xvc2VkGAQgASgIEioKE3Bob3RvX3Bvc19kYXRhX2xpc3QYDCADKAsy",
+            "DS5QaG90b1Bvc0RhdGFCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.PhotoStageReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.PhotoPosDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PhotoActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.PhotoActivityDetailInfo.Parser, new[]{ "IsContentClosed", "PhotoStageList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PhotoActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.PhotoActivityDetailInfo.Parser, new[]{ "IsContentClosed", "PhotoPosDataList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -74,7 +74,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PhotoActivityDetailInfo(PhotoActivityDetailInfo other) : this() {
       isContentClosed_ = other.isContentClosed_;
-      photoStageList_ = other.photoStageList_.Clone();
+      photoPosDataList_ = other.photoPosDataList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -96,15 +96,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "photo_stage_list" field.</summary>
-    public const int PhotoStageListFieldNumber = 12;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.PhotoStage> _repeated_photoStageList_codec
-        = pb::FieldCodec.ForMessage(98, global::Weedwacker.Shared.Network.Proto.PhotoStage.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PhotoStage> photoStageList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PhotoStage>();
+    /// <summary>Field number for the "photo_pos_data_list" field.</summary>
+    public const int PhotoPosDataListFieldNumber = 12;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.PhotoPosData> _repeated_photoPosDataList_codec
+        = pb::FieldCodec.ForMessage(98, global::Weedwacker.Shared.Network.Proto.PhotoPosData.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PhotoPosData> photoPosDataList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PhotoPosData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PhotoStage> PhotoStageList {
-      get { return photoStageList_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.PhotoPosData> PhotoPosDataList {
+      get { return photoPosDataList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -123,7 +123,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (IsContentClosed != other.IsContentClosed) return false;
-      if(!photoStageList_.Equals(other.photoStageList_)) return false;
+      if(!photoPosDataList_.Equals(other.photoPosDataList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -132,7 +132,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (IsContentClosed != false) hash ^= IsContentClosed.GetHashCode();
-      hash ^= photoStageList_.GetHashCode();
+      hash ^= photoPosDataList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -155,7 +155,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(32);
         output.WriteBool(IsContentClosed);
       }
-      photoStageList_.WriteTo(output, _repeated_photoStageList_codec);
+      photoPosDataList_.WriteTo(output, _repeated_photoPosDataList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -170,7 +170,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(32);
         output.WriteBool(IsContentClosed);
       }
-      photoStageList_.WriteTo(ref output, _repeated_photoStageList_codec);
+      photoPosDataList_.WriteTo(ref output, _repeated_photoPosDataList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -184,7 +184,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsContentClosed != false) {
         size += 1 + 1;
       }
-      size += photoStageList_.CalculateSize(_repeated_photoStageList_codec);
+      size += photoPosDataList_.CalculateSize(_repeated_photoPosDataList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -200,7 +200,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.IsContentClosed != false) {
         IsContentClosed = other.IsContentClosed;
       }
-      photoStageList_.Add(other.photoStageList_);
+      photoPosDataList_.Add(other.photoPosDataList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -221,7 +221,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 98: {
-            photoStageList_.AddEntriesFrom(input, _repeated_photoStageList_codec);
+            photoPosDataList_.AddEntriesFrom(input, _repeated_photoPosDataList_codec);
             break;
           }
         }
@@ -244,7 +244,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 98: {
-            photoStageList_.AddEntriesFrom(ref input, _repeated_photoStageList_codec);
+            photoPosDataList_.AddEntriesFrom(ref input, _repeated_photoPosDataList_codec);
             break;
           }
         }

@@ -25,15 +25,16 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CilBYmlsaXR5TWV0YVVwZGF0ZUJhc2VSZWFjdGlvbkRhbWFnZS5wcm90bxoT",
-            "QWJpbGl0eVN0cmluZy5wcm90byKAAQojQWJpbGl0eU1ldGFVcGRhdGVCYXNl",
-            "UmVhY3Rpb25EYW1hZ2USGAoQc291cmNlX2Nhc3Rlcl9pZBgPIAEoDRIoChBn",
-            "bG9iYWxfdmFsdWVfa2V5GAQgASgLMg4uQWJpbGl0eVN0cmluZxIVCg1yZWFj",
-            "dGlvbl90eXBlGAggASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvYgZwcm90bzM="));
+            "QWJpbGl0eVN0cmluZy5wcm90byKmAQojQWJpbGl0eU1ldGFVcGRhdGVCYXNl",
+            "UmVhY3Rpb25EYW1hZ2USGAoQc291cmNlX2Nhc3Rlcl9pZBgPIAEoDRIkCgxh",
+            "YmlsaXR5X25hbWUYASABKAsyDi5BYmlsaXR5U3RyaW5nEigKEGdsb2JhbF92",
+            "YWx1ZV9rZXkYBCABKAsyDi5BYmlsaXR5U3RyaW5nEhUKDXJlYWN0aW9uX3R5",
+            "cGUYCCABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AbilityStringReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityMetaUpdateBaseReactionDamage), global::Weedwacker.Shared.Network.Proto.AbilityMetaUpdateBaseReactionDamage.Parser, new[]{ "SourceCasterId", "GlobalValueKey", "ReactionType" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityMetaUpdateBaseReactionDamage), global::Weedwacker.Shared.Network.Proto.AbilityMetaUpdateBaseReactionDamage.Parser, new[]{ "SourceCasterId", "AbilityName", "GlobalValueKey", "ReactionType" }, null, null, null, null)
           }));
     }
     #endregion
@@ -75,6 +76,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AbilityMetaUpdateBaseReactionDamage(AbilityMetaUpdateBaseReactionDamage other) : this() {
       sourceCasterId_ = other.sourceCasterId_;
+      abilityName_ = other.abilityName_ != null ? other.abilityName_.Clone() : null;
       globalValueKey_ = other.globalValueKey_ != null ? other.globalValueKey_.Clone() : null;
       reactionType_ = other.reactionType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -95,6 +97,18 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return sourceCasterId_; }
       set {
         sourceCasterId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ability_name" field.</summary>
+    public const int AbilityNameFieldNumber = 1;
+    private global::Weedwacker.Shared.Network.Proto.AbilityString abilityName_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.AbilityString AbilityName {
+      get { return abilityName_; }
+      set {
+        abilityName_ = value;
       }
     }
 
@@ -138,6 +152,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (SourceCasterId != other.SourceCasterId) return false;
+      if (!object.Equals(AbilityName, other.AbilityName)) return false;
       if (!object.Equals(GlobalValueKey, other.GlobalValueKey)) return false;
       if (ReactionType != other.ReactionType) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -148,6 +163,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (SourceCasterId != 0) hash ^= SourceCasterId.GetHashCode();
+      if (abilityName_ != null) hash ^= AbilityName.GetHashCode();
       if (globalValueKey_ != null) hash ^= GlobalValueKey.GetHashCode();
       if (ReactionType != 0) hash ^= ReactionType.GetHashCode();
       if (_unknownFields != null) {
@@ -168,6 +184,10 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      if (abilityName_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AbilityName);
+      }
       if (globalValueKey_ != null) {
         output.WriteRawTag(34);
         output.WriteMessage(GlobalValueKey);
@@ -190,6 +210,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (abilityName_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AbilityName);
+      }
       if (globalValueKey_ != null) {
         output.WriteRawTag(34);
         output.WriteMessage(GlobalValueKey);
@@ -215,6 +239,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (SourceCasterId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SourceCasterId);
       }
+      if (abilityName_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AbilityName);
+      }
       if (globalValueKey_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GlobalValueKey);
       }
@@ -235,6 +262,12 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (other.SourceCasterId != 0) {
         SourceCasterId = other.SourceCasterId;
+      }
+      if (other.abilityName_ != null) {
+        if (abilityName_ == null) {
+          AbilityName = new global::Weedwacker.Shared.Network.Proto.AbilityString();
+        }
+        AbilityName.MergeFrom(other.AbilityName);
       }
       if (other.globalValueKey_ != null) {
         if (globalValueKey_ == null) {
@@ -260,6 +293,13 @@ namespace Weedwacker.Shared.Network.Proto {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            if (abilityName_ == null) {
+              AbilityName = new global::Weedwacker.Shared.Network.Proto.AbilityString();
+            }
+            input.ReadMessage(AbilityName);
+            break;
+          }
           case 34: {
             if (globalValueKey_ == null) {
               GlobalValueKey = new global::Weedwacker.Shared.Network.Proto.AbilityString();
@@ -290,6 +330,13 @@ namespace Weedwacker.Shared.Network.Proto {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 10: {
+            if (abilityName_ == null) {
+              AbilityName = new global::Weedwacker.Shared.Network.Proto.AbilityString();
+            }
+            input.ReadMessage(AbilityName);
+            break;
+          }
           case 34: {
             if (globalValueKey_ == null) {
               GlobalValueKey = new global::Weedwacker.Shared.Network.Proto.AbilityString();

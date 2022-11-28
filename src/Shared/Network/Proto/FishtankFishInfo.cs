@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static FishtankFishInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZGaXNodGFua0Zpc2hJbmZvLnByb3RvImkKEEZpc2h0YW5rRmlzaEluZm8S",
-            "GwoTVW5rMzAwMF9LTk9CRERISU9OSBgBIAEoAhIbChNVbmszMDAwX05EQkpD",
-            "SkVJRUVPGAIgASgCEhsKE1VuazMwMDBfQ0dCSEtQRUdCT0QYAyABKAJCIqoC",
-            "H1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "ChZGaXNodGFua0Zpc2hJbmZvLnByb3RvImQKEEZpc2h0YW5rRmlzaEluZm8S",
+            "IAoYZmlzaF9kaXN0YW5jZV9mcm9tX3dhdGVyGAEgASgCEhIKCmZpc2hfc2Nh",
+            "bGUYAiABKAISGgoSaW5pdGlhbF9yb3RhdGlvbl95GAMgASgCQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.FishtankFishInfo), global::Weedwacker.Shared.Network.Proto.FishtankFishInfo.Parser, new[]{ "Unk3000KNOBDDHIONH", "Unk3000NDBJCJEIEEO", "Unk3000CGBHKPEGBOD" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.FishtankFishInfo), global::Weedwacker.Shared.Network.Proto.FishtankFishInfo.Parser, new[]{ "FishDistanceFromWater", "FishScale", "InitialRotationY" }, null, null, null, null)
           }));
     }
     #endregion
@@ -72,9 +72,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FishtankFishInfo(FishtankFishInfo other) : this() {
-      unk3000KNOBDDHIONH_ = other.unk3000KNOBDDHIONH_;
-      unk3000NDBJCJEIEEO_ = other.unk3000NDBJCJEIEEO_;
-      unk3000CGBHKPEGBOD_ = other.unk3000CGBHKPEGBOD_;
+      fishDistanceFromWater_ = other.fishDistanceFromWater_;
+      fishScale_ = other.fishScale_;
+      initialRotationY_ = other.initialRotationY_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -84,39 +84,39 @@ namespace Weedwacker.Shared.Network.Proto {
       return new FishtankFishInfo(this);
     }
 
-    /// <summary>Field number for the "Unk3000_KNOBDDHIONH" field.</summary>
-    public const int Unk3000KNOBDDHIONHFieldNumber = 1;
-    private float unk3000KNOBDDHIONH_;
+    /// <summary>Field number for the "fish_distance_from_water" field.</summary>
+    public const int FishDistanceFromWaterFieldNumber = 1;
+    private float fishDistanceFromWater_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3000KNOBDDHIONH {
-      get { return unk3000KNOBDDHIONH_; }
+    public float FishDistanceFromWater {
+      get { return fishDistanceFromWater_; }
       set {
-        unk3000KNOBDDHIONH_ = value;
+        fishDistanceFromWater_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3000_NDBJCJEIEEO" field.</summary>
-    public const int Unk3000NDBJCJEIEEOFieldNumber = 2;
-    private float unk3000NDBJCJEIEEO_;
+    /// <summary>Field number for the "fish_scale" field.</summary>
+    public const int FishScaleFieldNumber = 2;
+    private float fishScale_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3000NDBJCJEIEEO {
-      get { return unk3000NDBJCJEIEEO_; }
+    public float FishScale {
+      get { return fishScale_; }
       set {
-        unk3000NDBJCJEIEEO_ = value;
+        fishScale_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3000_CGBHKPEGBOD" field.</summary>
-    public const int Unk3000CGBHKPEGBODFieldNumber = 3;
-    private float unk3000CGBHKPEGBOD_;
+    /// <summary>Field number for the "initial_rotation_y" field.</summary>
+    public const int InitialRotationYFieldNumber = 3;
+    private float initialRotationY_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3000CGBHKPEGBOD {
-      get { return unk3000CGBHKPEGBOD_; }
+    public float InitialRotationY {
+      get { return initialRotationY_; }
       set {
-        unk3000CGBHKPEGBOD_ = value;
+        initialRotationY_ = value;
       }
     }
 
@@ -135,9 +135,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3000KNOBDDHIONH, other.Unk3000KNOBDDHIONH)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3000NDBJCJEIEEO, other.Unk3000NDBJCJEIEEO)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3000CGBHKPEGBOD, other.Unk3000CGBHKPEGBOD)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(FishDistanceFromWater, other.FishDistanceFromWater)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(FishScale, other.FishScale)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(InitialRotationY, other.InitialRotationY)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -145,9 +145,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3000KNOBDDHIONH != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3000KNOBDDHIONH);
-      if (Unk3000NDBJCJEIEEO != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3000NDBJCJEIEEO);
-      if (Unk3000CGBHKPEGBOD != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3000CGBHKPEGBOD);
+      if (FishDistanceFromWater != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FishDistanceFromWater);
+      if (FishScale != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FishScale);
+      if (InitialRotationY != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(InitialRotationY);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -166,17 +166,17 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3000KNOBDDHIONH != 0F) {
+      if (FishDistanceFromWater != 0F) {
         output.WriteRawTag(13);
-        output.WriteFloat(Unk3000KNOBDDHIONH);
+        output.WriteFloat(FishDistanceFromWater);
       }
-      if (Unk3000NDBJCJEIEEO != 0F) {
+      if (FishScale != 0F) {
         output.WriteRawTag(21);
-        output.WriteFloat(Unk3000NDBJCJEIEEO);
+        output.WriteFloat(FishScale);
       }
-      if (Unk3000CGBHKPEGBOD != 0F) {
+      if (InitialRotationY != 0F) {
         output.WriteRawTag(29);
-        output.WriteFloat(Unk3000CGBHKPEGBOD);
+        output.WriteFloat(InitialRotationY);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -188,17 +188,17 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3000KNOBDDHIONH != 0F) {
+      if (FishDistanceFromWater != 0F) {
         output.WriteRawTag(13);
-        output.WriteFloat(Unk3000KNOBDDHIONH);
+        output.WriteFloat(FishDistanceFromWater);
       }
-      if (Unk3000NDBJCJEIEEO != 0F) {
+      if (FishScale != 0F) {
         output.WriteRawTag(21);
-        output.WriteFloat(Unk3000NDBJCJEIEEO);
+        output.WriteFloat(FishScale);
       }
-      if (Unk3000CGBHKPEGBOD != 0F) {
+      if (InitialRotationY != 0F) {
         output.WriteRawTag(29);
-        output.WriteFloat(Unk3000CGBHKPEGBOD);
+        output.WriteFloat(InitialRotationY);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -210,13 +210,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3000KNOBDDHIONH != 0F) {
+      if (FishDistanceFromWater != 0F) {
         size += 1 + 4;
       }
-      if (Unk3000NDBJCJEIEEO != 0F) {
+      if (FishScale != 0F) {
         size += 1 + 4;
       }
-      if (Unk3000CGBHKPEGBOD != 0F) {
+      if (InitialRotationY != 0F) {
         size += 1 + 4;
       }
       if (_unknownFields != null) {
@@ -231,14 +231,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3000KNOBDDHIONH != 0F) {
-        Unk3000KNOBDDHIONH = other.Unk3000KNOBDDHIONH;
+      if (other.FishDistanceFromWater != 0F) {
+        FishDistanceFromWater = other.FishDistanceFromWater;
       }
-      if (other.Unk3000NDBJCJEIEEO != 0F) {
-        Unk3000NDBJCJEIEEO = other.Unk3000NDBJCJEIEEO;
+      if (other.FishScale != 0F) {
+        FishScale = other.FishScale;
       }
-      if (other.Unk3000CGBHKPEGBOD != 0F) {
-        Unk3000CGBHKPEGBOD = other.Unk3000CGBHKPEGBOD;
+      if (other.InitialRotationY != 0F) {
+        InitialRotationY = other.InitialRotationY;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -256,15 +256,15 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 13: {
-            Unk3000KNOBDDHIONH = input.ReadFloat();
+            FishDistanceFromWater = input.ReadFloat();
             break;
           }
           case 21: {
-            Unk3000NDBJCJEIEEO = input.ReadFloat();
+            FishScale = input.ReadFloat();
             break;
           }
           case 29: {
-            Unk3000CGBHKPEGBOD = input.ReadFloat();
+            InitialRotationY = input.ReadFloat();
             break;
           }
         }
@@ -283,15 +283,15 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 13: {
-            Unk3000KNOBDDHIONH = input.ReadFloat();
+            FishDistanceFromWater = input.ReadFloat();
             break;
           }
           case 21: {
-            Unk3000NDBJCJEIEEO = input.ReadFloat();
+            FishScale = input.ReadFloat();
             break;
           }
           case 29: {
-            Unk3000CGBHKPEGBOD = input.ReadFloat();
+            InitialRotationY = input.ReadFloat();
             break;
           }
         }

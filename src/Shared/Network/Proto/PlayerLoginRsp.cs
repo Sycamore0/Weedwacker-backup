@@ -26,38 +26,39 @@ namespace Weedwacker.Shared.Network.Proto {
           string.Concat(
             "ChRQbGF5ZXJMb2dpblJzcC5wcm90bxoPQmxvY2tJbmZvLnByb3RvGhZGZWF0",
             "dXJlQmxvY2tJbmZvLnByb3RvGhZSZXNWZXJzaW9uQ29uZmlnLnByb3RvGhpT",
-            "aG9ydEFiaWxpdHlIYXNoUGFpci5wcm90byKcCQoOUGxheWVyTG9naW5Sc3AS",
-            "PQoQYWJpbGl0eV9oYXNoX21hcBgLIAMoCzIjLlBsYXllckxvZ2luUnNwLkFi",
-            "aWxpdHlIYXNoTWFwRW50cnkSEQoIaXNfYXVkaXQYlQ0gASgIEhUKDWlzX25l",
-            "d19wbGF5ZXIYCCABKAgSLgoScmVzX3ZlcnNpb25fY29uZmlnGLEPIAEoCzIR",
-            "LlJlc1ZlcnNpb25Db25maWcSJAobaXNfZW5hYmxlX2NsaWVudF9oYXNoX2Rl",
-            "YnVnGKQHIAEoCBITCgpjbGllbnRfbWQ1GKYOIAEoCRIbChNjbGllbnRfZGF0",
-            "YV92ZXJzaW9uGAEgASgNEhUKDGNvdW50cnlfY29kZRjsDiABKAkSEgoKaXNf",
-            "cmVsb2dpbhgKIAEoCBITCgtwbGF5ZXJfZGF0YRgNIAEoDBIQCghnYW1lX2Jp",
-            "ehgFIAEoCRI6Cg5ibG9ja19pbmZvX21hcBi7BCADKAsyIS5QbGF5ZXJMb2dp",
-            "blJzcC5CbG9ja0luZm9NYXBFbnRyeRIVCgxyZWdpc3Rlcl9jcHMY+A8gASgJ",
-            "EjMKF25leHRfcmVzX3ZlcnNpb25fY29uZmlnGKUMIAEoCzIRLlJlc1ZlcnNp",
-            "b25Db25maWcSFAoLaXNfdHJhbnNmZXIY4g8gASgIEh4KFXRhcmdldF9ob21l",
-            "X293bmVyX3VpZBipBCABKA0SNgoWc2hvcnRfYWJpbGl0eV9oYXNoX21hcBj6",
-            "ASADKAsyFS5TaG9ydEFiaWxpdHlIYXNoUGFpchIZChFhYmlsaXR5X2hhc2hf",
-            "Y29kZRgMIAEoBRITCgppc19zY19vcGVuGJULIAEoCBIjChtjbGllbnRfc2ls",
-            "ZW5jZV9kYXRhX3ZlcnNpb24YBiABKA0SEQoIYmlydGhkYXkY8AQgASgJEhsK",
-            "E2lzX3VzZV9hYmlsaXR5X2hhc2gYAiABKAgSJgodY2xpZW50X3NpbGVuY2Vf",
-            "dmVyc2lvbl9zdWZmaXgYkwogASgJEhsKE3BsYXllcl9kYXRhX3ZlcnNpb24Y",
-            "ByABKA0SHQoUaXNfZGF0YV9uZWVkX3JlbG9naW4YtwcgASgIEjMKF2ZlYXR1",
-            "cmVfYmxvY2tfaW5mb19saXN0GMgKIAMoCzIRLkZlYXR1cmVCbG9ja0luZm8S",
-            "GwoSY2xpZW50X3NpbGVuY2VfbWQ1GNINIAEoCRISCgp0YXJnZXRfdWlkGA4g",
-            "ASgNEhcKD3RvdGFsX3RpY2tfdGltZRh9IAEoARISCgpsb2dpbl9yYW5kGAQg",
-            "ASgEEhAKB3NjX2luZm8Y6A8gASgMEh4KFWNsaWVudF92ZXJzaW9uX3N1ZmZp",
-            "eBiXCCABKAkSGgoRbmV4dF9yZXNvdXJjZV91cmwY7QQgASgJEg8KB3JldGNv",
-            "ZGUYDyABKAUaNQoTQWJpbGl0eUhhc2hNYXBFbnRyeRILCgNrZXkYASABKAkS",
-            "DQoFdmFsdWUYAiABKAU6AjgBGj8KEUJsb2NrSW5mb01hcEVudHJ5EgsKA2tl",
-            "eRgBIAEoDRIZCgV2YWx1ZRgCIAEoCzIKLkJsb2NrSW5mbzoCOAFCIqoCH1dl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "aG9ydEFiaWxpdHlIYXNoUGFpci5wcm90byK5CQoOUGxheWVyTG9naW5Sc3AS",
+            "GwoTY2xpZW50X2RhdGFfdmVyc2lvbhgBIAEoDRITCgppc19zY19vcGVuGJUL",
+            "IAEoCBIPCgdyZXRjb2RlGA8gASgFEjoKDmJsb2NrX2luZm9fbWFwGLsEIAMo",
+            "CzIhLlBsYXllckxvZ2luUnNwLkJsb2NrSW5mb01hcEVudHJ5EhEKCGlzX2F1",
+            "ZGl0GJUNIAEoCBIUCgtpc190cmFuc2ZlchjiDyABKAgSGwoSY2xpZW50X3Np",
+            "bGVuY2VfbWQ1GNINIAEoCRIzChduZXh0X3Jlc192ZXJzaW9uX2NvbmZpZxil",
+            "DCABKAsyES5SZXNWZXJzaW9uQ29uZmlnEiMKG2NsaWVudF9zaWxlbmNlX2Rh",
+            "dGFfdmVyc2lvbhgGIAEoDRISCgpsb2dpbl9yYW5kGAQgASgEEhUKDWlzX25l",
+            "d19wbGF5ZXIYCCABKAgSHgoVY2xpZW50X3ZlcnNpb25fc3VmZml4GJcIIAEo",
+            "CRIQCghnYW1lX2JpehgFIAEoCRIaChFuZXh0X3Jlc291cmNlX3VybBjtBCAB",
+            "KAkSEgoKaXNfcmVsb2dpbhgKIAEoCBIXCg90b3RhbF90aWNrX3RpbWUYfSAB",
+            "KAESJAobaXNfZW5hYmxlX2NsaWVudF9oYXNoX2RlYnVnGKQHIAEoCBIQCgdz",
+            "Y19pbmZvGOgPIAEoDBIZChFhYmlsaXR5X2hhc2hfY29kZRgMIAEoBRIVCgxy",
+            "ZWdpc3Rlcl9jcHMY+A8gASgJEhsKEmlzX2xvZ2luX3JzcF9zcGxpdBjxDCAB",
+            "KAgSGwoTaXNfdXNlX2FiaWxpdHlfaGFzaBgCIAEoCBI9ChBhYmlsaXR5X2hh",
+            "c2hfbWFwGAsgAygLMiMuUGxheWVyTG9naW5Sc3AuQWJpbGl0eUhhc2hNYXBF",
+            "bnRyeRI2ChZzaG9ydF9hYmlsaXR5X2hhc2hfbWFwGPoBIAMoCzIVLlNob3J0",
+            "QWJpbGl0eUhhc2hQYWlyEhMKCmNsaWVudF9tZDUYpg4gASgJEhUKDGNvdW50",
+            "cnlfY29kZRjsDiABKAkSHQoUaXNfZGF0YV9uZWVkX3JlbG9naW4YtwcgASgI",
+            "Ei4KEnJlc192ZXJzaW9uX2NvbmZpZxixDyABKAsyES5SZXNWZXJzaW9uQ29u",
+            "ZmlnEjMKF2ZlYXR1cmVfYmxvY2tfaW5mb19saXN0GMgKIAMoCzIRLkZlYXR1",
+            "cmVCbG9ja0luZm8SEQoIYmlydGhkYXkY8AQgASgJEhIKCnRhcmdldF91aWQY",
+            "DiABKA0SEwoLcGxheWVyX2RhdGEYDSABKAwSJgodY2xpZW50X3NpbGVuY2Vf",
+            "dmVyc2lvbl9zdWZmaXgYkwogASgJEh4KFXRhcmdldF9ob21lX293bmVyX3Vp",
+            "ZBipBCABKA0SGwoTcGxheWVyX2RhdGFfdmVyc2lvbhgHIAEoDRo/ChFCbG9j",
+            "a0luZm9NYXBFbnRyeRILCgNrZXkYASABKA0SGQoFdmFsdWUYAiABKAsyCi5C",
+            "bG9ja0luZm86AjgBGjUKE0FiaWxpdHlIYXNoTWFwRW50cnkSCwoDa2V5GAEg",
+            "ASgJEg0KBXZhbHVlGAIgASgFOgI4AUIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.BlockInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FeatureBlockInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ResVersionConfigReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPairReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerLoginRsp), global::Weedwacker.Shared.Network.Proto.PlayerLoginRsp.Parser, new[]{ "AbilityHashMap", "IsAudit", "IsNewPlayer", "ResVersionConfig", "IsEnableClientHashDebug", "ClientMd5", "ClientDataVersion", "CountryCode", "IsRelogin", "PlayerData", "GameBiz", "BlockInfoMap", "RegisterCps", "NextResVersionConfig", "IsTransfer", "TargetHomeOwnerUid", "ShortAbilityHashMap", "AbilityHashCode", "IsScOpen", "ClientSilenceDataVersion", "Birthday", "IsUseAbilityHash", "ClientSilenceVersionSuffix", "PlayerDataVersion", "IsDataNeedRelogin", "FeatureBlockInfoList", "ClientSilenceMd5", "TargetUid", "TotalTickTime", "LoginRand", "ScInfo", "ClientVersionSuffix", "NextResourceUrl", "Retcode" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerLoginRsp), global::Weedwacker.Shared.Network.Proto.PlayerLoginRsp.Parser, new[]{ "ClientDataVersion", "IsScOpen", "Retcode", "BlockInfoMap", "IsAudit", "IsTransfer", "ClientSilenceMd5", "NextResVersionConfig", "ClientSilenceDataVersion", "LoginRand", "IsNewPlayer", "ClientVersionSuffix", "GameBiz", "NextResourceUrl", "IsRelogin", "TotalTickTime", "IsEnableClientHashDebug", "ScInfo", "AbilityHashCode", "RegisterCps", "IsLoginRspSplit", "IsUseAbilityHash", "AbilityHashMap", "ShortAbilityHashMap", "ClientMd5", "CountryCode", "IsDataNeedRelogin", "ResVersionConfig", "FeatureBlockInfoList", "Birthday", "TargetUid", "PlayerData", "ClientSilenceVersionSuffix", "TargetHomeOwnerUid", "PlayerDataVersion" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
           }));
     }
     #endregion
@@ -103,40 +104,41 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerLoginRsp(PlayerLoginRsp other) : this() {
-      abilityHashMap_ = other.abilityHashMap_.Clone();
-      isAudit_ = other.isAudit_;
-      isNewPlayer_ = other.isNewPlayer_;
-      resVersionConfig_ = other.resVersionConfig_ != null ? other.resVersionConfig_.Clone() : null;
-      isEnableClientHashDebug_ = other.isEnableClientHashDebug_;
-      clientMd5_ = other.clientMd5_;
       clientDataVersion_ = other.clientDataVersion_;
-      countryCode_ = other.countryCode_;
-      isRelogin_ = other.isRelogin_;
-      playerData_ = other.playerData_;
-      gameBiz_ = other.gameBiz_;
-      blockInfoMap_ = other.blockInfoMap_.Clone();
-      registerCps_ = other.registerCps_;
-      nextResVersionConfig_ = other.nextResVersionConfig_ != null ? other.nextResVersionConfig_.Clone() : null;
-      isTransfer_ = other.isTransfer_;
-      targetHomeOwnerUid_ = other.targetHomeOwnerUid_;
-      shortAbilityHashMap_ = other.shortAbilityHashMap_.Clone();
-      abilityHashCode_ = other.abilityHashCode_;
       isScOpen_ = other.isScOpen_;
-      clientSilenceDataVersion_ = other.clientSilenceDataVersion_;
-      birthday_ = other.birthday_;
-      isUseAbilityHash_ = other.isUseAbilityHash_;
-      clientSilenceVersionSuffix_ = other.clientSilenceVersionSuffix_;
-      playerDataVersion_ = other.playerDataVersion_;
-      isDataNeedRelogin_ = other.isDataNeedRelogin_;
-      featureBlockInfoList_ = other.featureBlockInfoList_.Clone();
-      clientSilenceMd5_ = other.clientSilenceMd5_;
-      targetUid_ = other.targetUid_;
-      totalTickTime_ = other.totalTickTime_;
-      loginRand_ = other.loginRand_;
-      scInfo_ = other.scInfo_;
-      clientVersionSuffix_ = other.clientVersionSuffix_;
-      nextResourceUrl_ = other.nextResourceUrl_;
       retcode_ = other.retcode_;
+      blockInfoMap_ = other.blockInfoMap_.Clone();
+      isAudit_ = other.isAudit_;
+      isTransfer_ = other.isTransfer_;
+      clientSilenceMd5_ = other.clientSilenceMd5_;
+      nextResVersionConfig_ = other.nextResVersionConfig_ != null ? other.nextResVersionConfig_.Clone() : null;
+      clientSilenceDataVersion_ = other.clientSilenceDataVersion_;
+      loginRand_ = other.loginRand_;
+      isNewPlayer_ = other.isNewPlayer_;
+      clientVersionSuffix_ = other.clientVersionSuffix_;
+      gameBiz_ = other.gameBiz_;
+      nextResourceUrl_ = other.nextResourceUrl_;
+      isRelogin_ = other.isRelogin_;
+      totalTickTime_ = other.totalTickTime_;
+      isEnableClientHashDebug_ = other.isEnableClientHashDebug_;
+      scInfo_ = other.scInfo_;
+      abilityHashCode_ = other.abilityHashCode_;
+      registerCps_ = other.registerCps_;
+      isLoginRspSplit_ = other.isLoginRspSplit_;
+      isUseAbilityHash_ = other.isUseAbilityHash_;
+      abilityHashMap_ = other.abilityHashMap_.Clone();
+      shortAbilityHashMap_ = other.shortAbilityHashMap_.Clone();
+      clientMd5_ = other.clientMd5_;
+      countryCode_ = other.countryCode_;
+      isDataNeedRelogin_ = other.isDataNeedRelogin_;
+      resVersionConfig_ = other.resVersionConfig_ != null ? other.resVersionConfig_.Clone() : null;
+      featureBlockInfoList_ = other.featureBlockInfoList_.Clone();
+      birthday_ = other.birthday_;
+      targetUid_ = other.targetUid_;
+      playerData_ = other.playerData_;
+      clientSilenceVersionSuffix_ = other.clientSilenceVersionSuffix_;
+      targetHomeOwnerUid_ = other.targetHomeOwnerUid_;
+      playerDataVersion_ = other.playerDataVersion_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -144,77 +146,6 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerLoginRsp Clone() {
       return new PlayerLoginRsp(this);
-    }
-
-    /// <summary>Field number for the "ability_hash_map" field.</summary>
-    public const int AbilityHashMapFieldNumber = 11;
-    private static readonly pbc::MapField<string, int>.Codec _map_abilityHashMap_codec
-        = new pbc::MapField<string, int>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForInt32(16, 0), 90);
-    private readonly pbc::MapField<string, int> abilityHashMap_ = new pbc::MapField<string, int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<string, int> AbilityHashMap {
-      get { return abilityHashMap_; }
-    }
-
-    /// <summary>Field number for the "is_audit" field.</summary>
-    public const int IsAuditFieldNumber = 1685;
-    private bool isAudit_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsAudit {
-      get { return isAudit_; }
-      set {
-        isAudit_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_new_player" field.</summary>
-    public const int IsNewPlayerFieldNumber = 8;
-    private bool isNewPlayer_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsNewPlayer {
-      get { return isNewPlayer_; }
-      set {
-        isNewPlayer_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "res_version_config" field.</summary>
-    public const int ResVersionConfigFieldNumber = 1969;
-    private global::Weedwacker.Shared.Network.Proto.ResVersionConfig resVersionConfig_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.ResVersionConfig ResVersionConfig {
-      get { return resVersionConfig_; }
-      set {
-        resVersionConfig_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_enable_client_hash_debug" field.</summary>
-    public const int IsEnableClientHashDebugFieldNumber = 932;
-    private bool isEnableClientHashDebug_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsEnableClientHashDebug {
-      get { return isEnableClientHashDebug_; }
-      set {
-        isEnableClientHashDebug_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "client_md5" field.</summary>
-    public const int ClientMd5FieldNumber = 1830;
-    private string clientMd5_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ClientMd5 {
-      get { return clientMd5_; }
-      set {
-        clientMd5_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
     }
 
     /// <summary>Field number for the "client_data_version" field.</summary>
@@ -226,136 +157,6 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return clientDataVersion_; }
       set {
         clientDataVersion_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "country_code" field.</summary>
-    public const int CountryCodeFieldNumber = 1900;
-    private string countryCode_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string CountryCode {
-      get { return countryCode_; }
-      set {
-        countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "is_relogin" field.</summary>
-    public const int IsReloginFieldNumber = 10;
-    private bool isRelogin_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsRelogin {
-      get { return isRelogin_; }
-      set {
-        isRelogin_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "player_data" field.</summary>
-    public const int PlayerDataFieldNumber = 13;
-    private pb::ByteString playerData_ = pb::ByteString.Empty;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pb::ByteString PlayerData {
-      get { return playerData_; }
-      set {
-        playerData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "game_biz" field.</summary>
-    public const int GameBizFieldNumber = 5;
-    private string gameBiz_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string GameBiz {
-      get { return gameBiz_; }
-      set {
-        gameBiz_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "block_info_map" field.</summary>
-    public const int BlockInfoMapFieldNumber = 571;
-    private static readonly pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.BlockInfo>.Codec _map_blockInfoMap_codec
-        = new pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.BlockInfo>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForMessage(18, global::Weedwacker.Shared.Network.Proto.BlockInfo.Parser), 4570);
-    private readonly pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.BlockInfo> blockInfoMap_ = new pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.BlockInfo>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.BlockInfo> BlockInfoMap {
-      get { return blockInfoMap_; }
-    }
-
-    /// <summary>Field number for the "register_cps" field.</summary>
-    public const int RegisterCpsFieldNumber = 2040;
-    private string registerCps_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string RegisterCps {
-      get { return registerCps_; }
-      set {
-        registerCps_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "next_res_version_config" field.</summary>
-    public const int NextResVersionConfigFieldNumber = 1573;
-    private global::Weedwacker.Shared.Network.Proto.ResVersionConfig nextResVersionConfig_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.ResVersionConfig NextResVersionConfig {
-      get { return nextResVersionConfig_; }
-      set {
-        nextResVersionConfig_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_transfer" field.</summary>
-    public const int IsTransferFieldNumber = 2018;
-    private bool isTransfer_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsTransfer {
-      get { return isTransfer_; }
-      set {
-        isTransfer_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "target_home_owner_uid" field.</summary>
-    public const int TargetHomeOwnerUidFieldNumber = 553;
-    private uint targetHomeOwnerUid_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint TargetHomeOwnerUid {
-      get { return targetHomeOwnerUid_; }
-      set {
-        targetHomeOwnerUid_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "short_ability_hash_map" field.</summary>
-    public const int ShortAbilityHashMapFieldNumber = 250;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPair> _repeated_shortAbilityHashMap_codec
-        = pb::FieldCodec.ForMessage(2002, global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPair.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPair> shortAbilityHashMap_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPair>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPair> ShortAbilityHashMap {
-      get { return shortAbilityHashMap_; }
-    }
-
-    /// <summary>Field number for the "ability_hash_code" field.</summary>
-    public const int AbilityHashCodeFieldNumber = 12;
-    private int abilityHashCode_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int AbilityHashCode {
-      get { return abilityHashCode_; }
-      set {
-        abilityHashCode_ = value;
       }
     }
 
@@ -371,87 +172,51 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "client_silence_data_version" field.</summary>
-    public const int ClientSilenceDataVersionFieldNumber = 6;
-    private uint clientSilenceDataVersion_;
+    /// <summary>Field number for the "retcode" field.</summary>
+    public const int RetcodeFieldNumber = 15;
+    private int retcode_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint ClientSilenceDataVersion {
-      get { return clientSilenceDataVersion_; }
+    public int Retcode {
+      get { return retcode_; }
       set {
-        clientSilenceDataVersion_ = value;
+        retcode_ = value;
       }
     }
 
-    /// <summary>Field number for the "birthday" field.</summary>
-    public const int BirthdayFieldNumber = 624;
-    private string birthday_ = "";
+    /// <summary>Field number for the "block_info_map" field.</summary>
+    public const int BlockInfoMapFieldNumber = 571;
+    private static readonly pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.BlockInfo>.Codec _map_blockInfoMap_codec
+        = new pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.BlockInfo>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForMessage(18, global::Weedwacker.Shared.Network.Proto.BlockInfo.Parser), 4570);
+    private readonly pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.BlockInfo> blockInfoMap_ = new pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.BlockInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Birthday {
-      get { return birthday_; }
+    public pbc::MapField<uint, global::Weedwacker.Shared.Network.Proto.BlockInfo> BlockInfoMap {
+      get { return blockInfoMap_; }
+    }
+
+    /// <summary>Field number for the "is_audit" field.</summary>
+    public const int IsAuditFieldNumber = 1685;
+    private bool isAudit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsAudit {
+      get { return isAudit_; }
       set {
-        birthday_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        isAudit_ = value;
       }
     }
 
-    /// <summary>Field number for the "is_use_ability_hash" field.</summary>
-    public const int IsUseAbilityHashFieldNumber = 2;
-    private bool isUseAbilityHash_;
+    /// <summary>Field number for the "is_transfer" field.</summary>
+    public const int IsTransferFieldNumber = 2018;
+    private bool isTransfer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsUseAbilityHash {
-      get { return isUseAbilityHash_; }
+    public bool IsTransfer {
+      get { return isTransfer_; }
       set {
-        isUseAbilityHash_ = value;
+        isTransfer_ = value;
       }
-    }
-
-    /// <summary>Field number for the "client_silence_version_suffix" field.</summary>
-    public const int ClientSilenceVersionSuffixFieldNumber = 1299;
-    private string clientSilenceVersionSuffix_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ClientSilenceVersionSuffix {
-      get { return clientSilenceVersionSuffix_; }
-      set {
-        clientSilenceVersionSuffix_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "player_data_version" field.</summary>
-    public const int PlayerDataVersionFieldNumber = 7;
-    private uint playerDataVersion_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint PlayerDataVersion {
-      get { return playerDataVersion_; }
-      set {
-        playerDataVersion_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_data_need_relogin" field.</summary>
-    public const int IsDataNeedReloginFieldNumber = 951;
-    private bool isDataNeedRelogin_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsDataNeedRelogin {
-      get { return isDataNeedRelogin_; }
-      set {
-        isDataNeedRelogin_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "feature_block_info_list" field.</summary>
-    public const int FeatureBlockInfoListFieldNumber = 1352;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.FeatureBlockInfo> _repeated_featureBlockInfoList_codec
-        = pb::FieldCodec.ForMessage(10818, global::Weedwacker.Shared.Network.Proto.FeatureBlockInfo.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.FeatureBlockInfo> featureBlockInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.FeatureBlockInfo>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.FeatureBlockInfo> FeatureBlockInfoList {
-      get { return featureBlockInfoList_; }
     }
 
     /// <summary>Field number for the "client_silence_md5" field.</summary>
@@ -466,27 +231,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "target_uid" field.</summary>
-    public const int TargetUidFieldNumber = 14;
-    private uint targetUid_;
+    /// <summary>Field number for the "next_res_version_config" field.</summary>
+    public const int NextResVersionConfigFieldNumber = 1573;
+    private global::Weedwacker.Shared.Network.Proto.ResVersionConfig nextResVersionConfig_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint TargetUid {
-      get { return targetUid_; }
+    public global::Weedwacker.Shared.Network.Proto.ResVersionConfig NextResVersionConfig {
+      get { return nextResVersionConfig_; }
       set {
-        targetUid_ = value;
+        nextResVersionConfig_ = value;
       }
     }
 
-    /// <summary>Field number for the "total_tick_time" field.</summary>
-    public const int TotalTickTimeFieldNumber = 125;
-    private double totalTickTime_;
+    /// <summary>Field number for the "client_silence_data_version" field.</summary>
+    public const int ClientSilenceDataVersionFieldNumber = 6;
+    private uint clientSilenceDataVersion_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public double TotalTickTime {
-      get { return totalTickTime_; }
+    public uint ClientSilenceDataVersion {
+      get { return clientSilenceDataVersion_; }
       set {
-        totalTickTime_ = value;
+        clientSilenceDataVersion_ = value;
       }
     }
 
@@ -502,15 +267,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "sc_info" field.</summary>
-    public const int ScInfoFieldNumber = 2024;
-    private pb::ByteString scInfo_ = pb::ByteString.Empty;
+    /// <summary>Field number for the "is_new_player" field.</summary>
+    public const int IsNewPlayerFieldNumber = 8;
+    private bool isNewPlayer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pb::ByteString ScInfo {
-      get { return scInfo_; }
+    public bool IsNewPlayer {
+      get { return isNewPlayer_; }
       set {
-        scInfo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        isNewPlayer_ = value;
       }
     }
 
@@ -526,6 +291,18 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
+    /// <summary>Field number for the "game_biz" field.</summary>
+    public const int GameBizFieldNumber = 5;
+    private string gameBiz_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string GameBiz {
+      get { return gameBiz_; }
+      set {
+        gameBiz_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "next_resource_url" field.</summary>
     public const int NextResourceUrlFieldNumber = 621;
     private string nextResourceUrl_ = "";
@@ -538,15 +315,252 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "retcode" field.</summary>
-    public const int RetcodeFieldNumber = 15;
-    private int retcode_;
+    /// <summary>Field number for the "is_relogin" field.</summary>
+    public const int IsReloginFieldNumber = 10;
+    private bool isRelogin_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Retcode {
-      get { return retcode_; }
+    public bool IsRelogin {
+      get { return isRelogin_; }
       set {
-        retcode_ = value;
+        isRelogin_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "total_tick_time" field.</summary>
+    public const int TotalTickTimeFieldNumber = 125;
+    private double totalTickTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double TotalTickTime {
+      get { return totalTickTime_; }
+      set {
+        totalTickTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_enable_client_hash_debug" field.</summary>
+    public const int IsEnableClientHashDebugFieldNumber = 932;
+    private bool isEnableClientHashDebug_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsEnableClientHashDebug {
+      get { return isEnableClientHashDebug_; }
+      set {
+        isEnableClientHashDebug_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sc_info" field.</summary>
+    public const int ScInfoFieldNumber = 2024;
+    private pb::ByteString scInfo_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString ScInfo {
+      get { return scInfo_; }
+      set {
+        scInfo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ability_hash_code" field.</summary>
+    public const int AbilityHashCodeFieldNumber = 12;
+    private int abilityHashCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int AbilityHashCode {
+      get { return abilityHashCode_; }
+      set {
+        abilityHashCode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "register_cps" field.</summary>
+    public const int RegisterCpsFieldNumber = 2040;
+    private string registerCps_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string RegisterCps {
+      get { return registerCps_; }
+      set {
+        registerCps_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "is_login_rsp_split" field.</summary>
+    public const int IsLoginRspSplitFieldNumber = 1649;
+    private bool isLoginRspSplit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsLoginRspSplit {
+      get { return isLoginRspSplit_; }
+      set {
+        isLoginRspSplit_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_use_ability_hash" field.</summary>
+    public const int IsUseAbilityHashFieldNumber = 2;
+    private bool isUseAbilityHash_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsUseAbilityHash {
+      get { return isUseAbilityHash_; }
+      set {
+        isUseAbilityHash_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ability_hash_map" field.</summary>
+    public const int AbilityHashMapFieldNumber = 11;
+    private static readonly pbc::MapField<string, int>.Codec _map_abilityHashMap_codec
+        = new pbc::MapField<string, int>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForInt32(16, 0), 90);
+    private readonly pbc::MapField<string, int> abilityHashMap_ = new pbc::MapField<string, int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<string, int> AbilityHashMap {
+      get { return abilityHashMap_; }
+    }
+
+    /// <summary>Field number for the "short_ability_hash_map" field.</summary>
+    public const int ShortAbilityHashMapFieldNumber = 250;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPair> _repeated_shortAbilityHashMap_codec
+        = pb::FieldCodec.ForMessage(2002, global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPair.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPair> shortAbilityHashMap_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPair>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ShortAbilityHashPair> ShortAbilityHashMap {
+      get { return shortAbilityHashMap_; }
+    }
+
+    /// <summary>Field number for the "client_md5" field.</summary>
+    public const int ClientMd5FieldNumber = 1830;
+    private string clientMd5_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ClientMd5 {
+      get { return clientMd5_; }
+      set {
+        clientMd5_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "country_code" field.</summary>
+    public const int CountryCodeFieldNumber = 1900;
+    private string countryCode_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountryCode {
+      get { return countryCode_; }
+      set {
+        countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "is_data_need_relogin" field.</summary>
+    public const int IsDataNeedReloginFieldNumber = 951;
+    private bool isDataNeedRelogin_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsDataNeedRelogin {
+      get { return isDataNeedRelogin_; }
+      set {
+        isDataNeedRelogin_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "res_version_config" field.</summary>
+    public const int ResVersionConfigFieldNumber = 1969;
+    private global::Weedwacker.Shared.Network.Proto.ResVersionConfig resVersionConfig_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.ResVersionConfig ResVersionConfig {
+      get { return resVersionConfig_; }
+      set {
+        resVersionConfig_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "feature_block_info_list" field.</summary>
+    public const int FeatureBlockInfoListFieldNumber = 1352;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.FeatureBlockInfo> _repeated_featureBlockInfoList_codec
+        = pb::FieldCodec.ForMessage(10818, global::Weedwacker.Shared.Network.Proto.FeatureBlockInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.FeatureBlockInfo> featureBlockInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.FeatureBlockInfo>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.FeatureBlockInfo> FeatureBlockInfoList {
+      get { return featureBlockInfoList_; }
+    }
+
+    /// <summary>Field number for the "birthday" field.</summary>
+    public const int BirthdayFieldNumber = 624;
+    private string birthday_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Birthday {
+      get { return birthday_; }
+      set {
+        birthday_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "target_uid" field.</summary>
+    public const int TargetUidFieldNumber = 14;
+    private uint targetUid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint TargetUid {
+      get { return targetUid_; }
+      set {
+        targetUid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "player_data" field.</summary>
+    public const int PlayerDataFieldNumber = 13;
+    private pb::ByteString playerData_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString PlayerData {
+      get { return playerData_; }
+      set {
+        playerData_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "client_silence_version_suffix" field.</summary>
+    public const int ClientSilenceVersionSuffixFieldNumber = 1299;
+    private string clientSilenceVersionSuffix_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ClientSilenceVersionSuffix {
+      get { return clientSilenceVersionSuffix_; }
+      set {
+        clientSilenceVersionSuffix_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "target_home_owner_uid" field.</summary>
+    public const int TargetHomeOwnerUidFieldNumber = 553;
+    private uint targetHomeOwnerUid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint TargetHomeOwnerUid {
+      get { return targetHomeOwnerUid_; }
+      set {
+        targetHomeOwnerUid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "player_data_version" field.</summary>
+    public const int PlayerDataVersionFieldNumber = 7;
+    private uint playerDataVersion_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint PlayerDataVersion {
+      get { return playerDataVersion_; }
+      set {
+        playerDataVersion_ = value;
       }
     }
 
@@ -565,40 +579,41 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!AbilityHashMap.Equals(other.AbilityHashMap)) return false;
-      if (IsAudit != other.IsAudit) return false;
-      if (IsNewPlayer != other.IsNewPlayer) return false;
-      if (!object.Equals(ResVersionConfig, other.ResVersionConfig)) return false;
-      if (IsEnableClientHashDebug != other.IsEnableClientHashDebug) return false;
-      if (ClientMd5 != other.ClientMd5) return false;
       if (ClientDataVersion != other.ClientDataVersion) return false;
-      if (CountryCode != other.CountryCode) return false;
-      if (IsRelogin != other.IsRelogin) return false;
-      if (PlayerData != other.PlayerData) return false;
-      if (GameBiz != other.GameBiz) return false;
-      if (!BlockInfoMap.Equals(other.BlockInfoMap)) return false;
-      if (RegisterCps != other.RegisterCps) return false;
-      if (!object.Equals(NextResVersionConfig, other.NextResVersionConfig)) return false;
-      if (IsTransfer != other.IsTransfer) return false;
-      if (TargetHomeOwnerUid != other.TargetHomeOwnerUid) return false;
-      if(!shortAbilityHashMap_.Equals(other.shortAbilityHashMap_)) return false;
-      if (AbilityHashCode != other.AbilityHashCode) return false;
       if (IsScOpen != other.IsScOpen) return false;
-      if (ClientSilenceDataVersion != other.ClientSilenceDataVersion) return false;
-      if (Birthday != other.Birthday) return false;
-      if (IsUseAbilityHash != other.IsUseAbilityHash) return false;
-      if (ClientSilenceVersionSuffix != other.ClientSilenceVersionSuffix) return false;
-      if (PlayerDataVersion != other.PlayerDataVersion) return false;
-      if (IsDataNeedRelogin != other.IsDataNeedRelogin) return false;
-      if(!featureBlockInfoList_.Equals(other.featureBlockInfoList_)) return false;
-      if (ClientSilenceMd5 != other.ClientSilenceMd5) return false;
-      if (TargetUid != other.TargetUid) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TotalTickTime, other.TotalTickTime)) return false;
-      if (LoginRand != other.LoginRand) return false;
-      if (ScInfo != other.ScInfo) return false;
-      if (ClientVersionSuffix != other.ClientVersionSuffix) return false;
-      if (NextResourceUrl != other.NextResourceUrl) return false;
       if (Retcode != other.Retcode) return false;
+      if (!BlockInfoMap.Equals(other.BlockInfoMap)) return false;
+      if (IsAudit != other.IsAudit) return false;
+      if (IsTransfer != other.IsTransfer) return false;
+      if (ClientSilenceMd5 != other.ClientSilenceMd5) return false;
+      if (!object.Equals(NextResVersionConfig, other.NextResVersionConfig)) return false;
+      if (ClientSilenceDataVersion != other.ClientSilenceDataVersion) return false;
+      if (LoginRand != other.LoginRand) return false;
+      if (IsNewPlayer != other.IsNewPlayer) return false;
+      if (ClientVersionSuffix != other.ClientVersionSuffix) return false;
+      if (GameBiz != other.GameBiz) return false;
+      if (NextResourceUrl != other.NextResourceUrl) return false;
+      if (IsRelogin != other.IsRelogin) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TotalTickTime, other.TotalTickTime)) return false;
+      if (IsEnableClientHashDebug != other.IsEnableClientHashDebug) return false;
+      if (ScInfo != other.ScInfo) return false;
+      if (AbilityHashCode != other.AbilityHashCode) return false;
+      if (RegisterCps != other.RegisterCps) return false;
+      if (IsLoginRspSplit != other.IsLoginRspSplit) return false;
+      if (IsUseAbilityHash != other.IsUseAbilityHash) return false;
+      if (!AbilityHashMap.Equals(other.AbilityHashMap)) return false;
+      if(!shortAbilityHashMap_.Equals(other.shortAbilityHashMap_)) return false;
+      if (ClientMd5 != other.ClientMd5) return false;
+      if (CountryCode != other.CountryCode) return false;
+      if (IsDataNeedRelogin != other.IsDataNeedRelogin) return false;
+      if (!object.Equals(ResVersionConfig, other.ResVersionConfig)) return false;
+      if(!featureBlockInfoList_.Equals(other.featureBlockInfoList_)) return false;
+      if (Birthday != other.Birthday) return false;
+      if (TargetUid != other.TargetUid) return false;
+      if (PlayerData != other.PlayerData) return false;
+      if (ClientSilenceVersionSuffix != other.ClientSilenceVersionSuffix) return false;
+      if (TargetHomeOwnerUid != other.TargetHomeOwnerUid) return false;
+      if (PlayerDataVersion != other.PlayerDataVersion) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -606,40 +621,41 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= AbilityHashMap.GetHashCode();
-      if (IsAudit != false) hash ^= IsAudit.GetHashCode();
-      if (IsNewPlayer != false) hash ^= IsNewPlayer.GetHashCode();
-      if (resVersionConfig_ != null) hash ^= ResVersionConfig.GetHashCode();
-      if (IsEnableClientHashDebug != false) hash ^= IsEnableClientHashDebug.GetHashCode();
-      if (ClientMd5.Length != 0) hash ^= ClientMd5.GetHashCode();
       if (ClientDataVersion != 0) hash ^= ClientDataVersion.GetHashCode();
-      if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
-      if (IsRelogin != false) hash ^= IsRelogin.GetHashCode();
-      if (PlayerData.Length != 0) hash ^= PlayerData.GetHashCode();
-      if (GameBiz.Length != 0) hash ^= GameBiz.GetHashCode();
-      hash ^= BlockInfoMap.GetHashCode();
-      if (RegisterCps.Length != 0) hash ^= RegisterCps.GetHashCode();
-      if (nextResVersionConfig_ != null) hash ^= NextResVersionConfig.GetHashCode();
-      if (IsTransfer != false) hash ^= IsTransfer.GetHashCode();
-      if (TargetHomeOwnerUid != 0) hash ^= TargetHomeOwnerUid.GetHashCode();
-      hash ^= shortAbilityHashMap_.GetHashCode();
-      if (AbilityHashCode != 0) hash ^= AbilityHashCode.GetHashCode();
       if (IsScOpen != false) hash ^= IsScOpen.GetHashCode();
-      if (ClientSilenceDataVersion != 0) hash ^= ClientSilenceDataVersion.GetHashCode();
-      if (Birthday.Length != 0) hash ^= Birthday.GetHashCode();
-      if (IsUseAbilityHash != false) hash ^= IsUseAbilityHash.GetHashCode();
-      if (ClientSilenceVersionSuffix.Length != 0) hash ^= ClientSilenceVersionSuffix.GetHashCode();
-      if (PlayerDataVersion != 0) hash ^= PlayerDataVersion.GetHashCode();
-      if (IsDataNeedRelogin != false) hash ^= IsDataNeedRelogin.GetHashCode();
-      hash ^= featureBlockInfoList_.GetHashCode();
-      if (ClientSilenceMd5.Length != 0) hash ^= ClientSilenceMd5.GetHashCode();
-      if (TargetUid != 0) hash ^= TargetUid.GetHashCode();
-      if (TotalTickTime != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TotalTickTime);
-      if (LoginRand != 0UL) hash ^= LoginRand.GetHashCode();
-      if (ScInfo.Length != 0) hash ^= ScInfo.GetHashCode();
-      if (ClientVersionSuffix.Length != 0) hash ^= ClientVersionSuffix.GetHashCode();
-      if (NextResourceUrl.Length != 0) hash ^= NextResourceUrl.GetHashCode();
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
+      hash ^= BlockInfoMap.GetHashCode();
+      if (IsAudit != false) hash ^= IsAudit.GetHashCode();
+      if (IsTransfer != false) hash ^= IsTransfer.GetHashCode();
+      if (ClientSilenceMd5.Length != 0) hash ^= ClientSilenceMd5.GetHashCode();
+      if (nextResVersionConfig_ != null) hash ^= NextResVersionConfig.GetHashCode();
+      if (ClientSilenceDataVersion != 0) hash ^= ClientSilenceDataVersion.GetHashCode();
+      if (LoginRand != 0UL) hash ^= LoginRand.GetHashCode();
+      if (IsNewPlayer != false) hash ^= IsNewPlayer.GetHashCode();
+      if (ClientVersionSuffix.Length != 0) hash ^= ClientVersionSuffix.GetHashCode();
+      if (GameBiz.Length != 0) hash ^= GameBiz.GetHashCode();
+      if (NextResourceUrl.Length != 0) hash ^= NextResourceUrl.GetHashCode();
+      if (IsRelogin != false) hash ^= IsRelogin.GetHashCode();
+      if (TotalTickTime != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TotalTickTime);
+      if (IsEnableClientHashDebug != false) hash ^= IsEnableClientHashDebug.GetHashCode();
+      if (ScInfo.Length != 0) hash ^= ScInfo.GetHashCode();
+      if (AbilityHashCode != 0) hash ^= AbilityHashCode.GetHashCode();
+      if (RegisterCps.Length != 0) hash ^= RegisterCps.GetHashCode();
+      if (IsLoginRspSplit != false) hash ^= IsLoginRspSplit.GetHashCode();
+      if (IsUseAbilityHash != false) hash ^= IsUseAbilityHash.GetHashCode();
+      hash ^= AbilityHashMap.GetHashCode();
+      hash ^= shortAbilityHashMap_.GetHashCode();
+      if (ClientMd5.Length != 0) hash ^= ClientMd5.GetHashCode();
+      if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
+      if (IsDataNeedRelogin != false) hash ^= IsDataNeedRelogin.GetHashCode();
+      if (resVersionConfig_ != null) hash ^= ResVersionConfig.GetHashCode();
+      hash ^= featureBlockInfoList_.GetHashCode();
+      if (Birthday.Length != 0) hash ^= Birthday.GetHashCode();
+      if (TargetUid != 0) hash ^= TargetUid.GetHashCode();
+      if (PlayerData.Length != 0) hash ^= PlayerData.GetHashCode();
+      if (ClientSilenceVersionSuffix.Length != 0) hash ^= ClientSilenceVersionSuffix.GetHashCode();
+      if (TargetHomeOwnerUid != 0) hash ^= TargetHomeOwnerUid.GetHashCode();
+      if (PlayerDataVersion != 0) hash ^= PlayerDataVersion.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -749,6 +765,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (nextResVersionConfig_ != null) {
         output.WriteRawTag(170, 98);
         output.WriteMessage(NextResVersionConfig);
+      }
+      if (IsLoginRspSplit != false) {
+        output.WriteRawTag(136, 103);
+        output.WriteBool(IsLoginRspSplit);
       }
       if (IsAudit != false) {
         output.WriteRawTag(168, 105);
@@ -884,6 +904,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(170, 98);
         output.WriteMessage(NextResVersionConfig);
       }
+      if (IsLoginRspSplit != false) {
+        output.WriteRawTag(136, 103);
+        output.WriteBool(IsLoginRspSplit);
+      }
       if (IsAudit != false) {
         output.WriteRawTag(168, 105);
         output.WriteBool(IsAudit);
@@ -926,99 +950,102 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += abilityHashMap_.CalculateSize(_map_abilityHashMap_codec);
-      if (IsAudit != false) {
-        size += 2 + 1;
-      }
-      if (IsNewPlayer != false) {
-        size += 1 + 1;
-      }
-      if (resVersionConfig_ != null) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ResVersionConfig);
-      }
-      if (IsEnableClientHashDebug != false) {
-        size += 2 + 1;
-      }
-      if (ClientMd5.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(ClientMd5);
-      }
       if (ClientDataVersion != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ClientDataVersion);
-      }
-      if (CountryCode.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
-      }
-      if (IsRelogin != false) {
-        size += 1 + 1;
-      }
-      if (PlayerData.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(PlayerData);
-      }
-      if (GameBiz.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(GameBiz);
-      }
-      size += blockInfoMap_.CalculateSize(_map_blockInfoMap_codec);
-      if (RegisterCps.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(RegisterCps);
-      }
-      if (nextResVersionConfig_ != null) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(NextResVersionConfig);
-      }
-      if (IsTransfer != false) {
-        size += 2 + 1;
-      }
-      if (TargetHomeOwnerUid != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(TargetHomeOwnerUid);
-      }
-      size += shortAbilityHashMap_.CalculateSize(_repeated_shortAbilityHashMap_codec);
-      if (AbilityHashCode != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AbilityHashCode);
       }
       if (IsScOpen != false) {
         size += 2 + 1;
       }
-      if (ClientSilenceDataVersion != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ClientSilenceDataVersion);
+      if (Retcode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
       }
-      if (Birthday.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(Birthday);
-      }
-      if (IsUseAbilityHash != false) {
-        size += 1 + 1;
-      }
-      if (ClientSilenceVersionSuffix.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(ClientSilenceVersionSuffix);
-      }
-      if (PlayerDataVersion != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PlayerDataVersion);
-      }
-      if (IsDataNeedRelogin != false) {
+      size += blockInfoMap_.CalculateSize(_map_blockInfoMap_codec);
+      if (IsAudit != false) {
         size += 2 + 1;
       }
-      size += featureBlockInfoList_.CalculateSize(_repeated_featureBlockInfoList_codec);
+      if (IsTransfer != false) {
+        size += 2 + 1;
+      }
       if (ClientSilenceMd5.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(ClientSilenceMd5);
       }
-      if (TargetUid != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TargetUid);
+      if (nextResVersionConfig_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(NextResVersionConfig);
       }
-      if (TotalTickTime != 0D) {
-        size += 2 + 8;
+      if (ClientSilenceDataVersion != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ClientSilenceDataVersion);
       }
       if (LoginRand != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(LoginRand);
       }
-      if (ScInfo.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeBytesSize(ScInfo);
+      if (IsNewPlayer != false) {
+        size += 1 + 1;
       }
       if (ClientVersionSuffix.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(ClientVersionSuffix);
       }
+      if (GameBiz.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(GameBiz);
+      }
       if (NextResourceUrl.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(NextResourceUrl);
       }
-      if (Retcode != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
+      if (IsRelogin != false) {
+        size += 1 + 1;
+      }
+      if (TotalTickTime != 0D) {
+        size += 2 + 8;
+      }
+      if (IsEnableClientHashDebug != false) {
+        size += 2 + 1;
+      }
+      if (ScInfo.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeBytesSize(ScInfo);
+      }
+      if (AbilityHashCode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AbilityHashCode);
+      }
+      if (RegisterCps.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(RegisterCps);
+      }
+      if (IsLoginRspSplit != false) {
+        size += 2 + 1;
+      }
+      if (IsUseAbilityHash != false) {
+        size += 1 + 1;
+      }
+      size += abilityHashMap_.CalculateSize(_map_abilityHashMap_codec);
+      size += shortAbilityHashMap_.CalculateSize(_repeated_shortAbilityHashMap_codec);
+      if (ClientMd5.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(ClientMd5);
+      }
+      if (CountryCode.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
+      }
+      if (IsDataNeedRelogin != false) {
+        size += 2 + 1;
+      }
+      if (resVersionConfig_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ResVersionConfig);
+      }
+      size += featureBlockInfoList_.CalculateSize(_repeated_featureBlockInfoList_codec);
+      if (Birthday.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Birthday);
+      }
+      if (TargetUid != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TargetUid);
+      }
+      if (PlayerData.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(PlayerData);
+      }
+      if (ClientSilenceVersionSuffix.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(ClientSilenceVersionSuffix);
+      }
+      if (TargetHomeOwnerUid != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(TargetHomeOwnerUid);
+      }
+      if (PlayerDataVersion != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PlayerDataVersion);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1032,43 +1059,24 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      abilityHashMap_.Add(other.abilityHashMap_);
-      if (other.IsAudit != false) {
-        IsAudit = other.IsAudit;
-      }
-      if (other.IsNewPlayer != false) {
-        IsNewPlayer = other.IsNewPlayer;
-      }
-      if (other.resVersionConfig_ != null) {
-        if (resVersionConfig_ == null) {
-          ResVersionConfig = new global::Weedwacker.Shared.Network.Proto.ResVersionConfig();
-        }
-        ResVersionConfig.MergeFrom(other.ResVersionConfig);
-      }
-      if (other.IsEnableClientHashDebug != false) {
-        IsEnableClientHashDebug = other.IsEnableClientHashDebug;
-      }
-      if (other.ClientMd5.Length != 0) {
-        ClientMd5 = other.ClientMd5;
-      }
       if (other.ClientDataVersion != 0) {
         ClientDataVersion = other.ClientDataVersion;
       }
-      if (other.CountryCode.Length != 0) {
-        CountryCode = other.CountryCode;
+      if (other.IsScOpen != false) {
+        IsScOpen = other.IsScOpen;
       }
-      if (other.IsRelogin != false) {
-        IsRelogin = other.IsRelogin;
-      }
-      if (other.PlayerData.Length != 0) {
-        PlayerData = other.PlayerData;
-      }
-      if (other.GameBiz.Length != 0) {
-        GameBiz = other.GameBiz;
+      if (other.Retcode != 0) {
+        Retcode = other.Retcode;
       }
       blockInfoMap_.Add(other.blockInfoMap_);
-      if (other.RegisterCps.Length != 0) {
-        RegisterCps = other.RegisterCps;
+      if (other.IsAudit != false) {
+        IsAudit = other.IsAudit;
+      }
+      if (other.IsTransfer != false) {
+        IsTransfer = other.IsTransfer;
+      }
+      if (other.ClientSilenceMd5.Length != 0) {
+        ClientSilenceMd5 = other.ClientSilenceMd5;
       }
       if (other.nextResVersionConfig_ != null) {
         if (nextResVersionConfig_ == null) {
@@ -1076,61 +1084,83 @@ namespace Weedwacker.Shared.Network.Proto {
         }
         NextResVersionConfig.MergeFrom(other.NextResVersionConfig);
       }
-      if (other.IsTransfer != false) {
-        IsTransfer = other.IsTransfer;
-      }
-      if (other.TargetHomeOwnerUid != 0) {
-        TargetHomeOwnerUid = other.TargetHomeOwnerUid;
-      }
-      shortAbilityHashMap_.Add(other.shortAbilityHashMap_);
-      if (other.AbilityHashCode != 0) {
-        AbilityHashCode = other.AbilityHashCode;
-      }
-      if (other.IsScOpen != false) {
-        IsScOpen = other.IsScOpen;
-      }
       if (other.ClientSilenceDataVersion != 0) {
         ClientSilenceDataVersion = other.ClientSilenceDataVersion;
-      }
-      if (other.Birthday.Length != 0) {
-        Birthday = other.Birthday;
-      }
-      if (other.IsUseAbilityHash != false) {
-        IsUseAbilityHash = other.IsUseAbilityHash;
-      }
-      if (other.ClientSilenceVersionSuffix.Length != 0) {
-        ClientSilenceVersionSuffix = other.ClientSilenceVersionSuffix;
-      }
-      if (other.PlayerDataVersion != 0) {
-        PlayerDataVersion = other.PlayerDataVersion;
-      }
-      if (other.IsDataNeedRelogin != false) {
-        IsDataNeedRelogin = other.IsDataNeedRelogin;
-      }
-      featureBlockInfoList_.Add(other.featureBlockInfoList_);
-      if (other.ClientSilenceMd5.Length != 0) {
-        ClientSilenceMd5 = other.ClientSilenceMd5;
-      }
-      if (other.TargetUid != 0) {
-        TargetUid = other.TargetUid;
-      }
-      if (other.TotalTickTime != 0D) {
-        TotalTickTime = other.TotalTickTime;
       }
       if (other.LoginRand != 0UL) {
         LoginRand = other.LoginRand;
       }
-      if (other.ScInfo.Length != 0) {
-        ScInfo = other.ScInfo;
+      if (other.IsNewPlayer != false) {
+        IsNewPlayer = other.IsNewPlayer;
       }
       if (other.ClientVersionSuffix.Length != 0) {
         ClientVersionSuffix = other.ClientVersionSuffix;
       }
+      if (other.GameBiz.Length != 0) {
+        GameBiz = other.GameBiz;
+      }
       if (other.NextResourceUrl.Length != 0) {
         NextResourceUrl = other.NextResourceUrl;
       }
-      if (other.Retcode != 0) {
-        Retcode = other.Retcode;
+      if (other.IsRelogin != false) {
+        IsRelogin = other.IsRelogin;
+      }
+      if (other.TotalTickTime != 0D) {
+        TotalTickTime = other.TotalTickTime;
+      }
+      if (other.IsEnableClientHashDebug != false) {
+        IsEnableClientHashDebug = other.IsEnableClientHashDebug;
+      }
+      if (other.ScInfo.Length != 0) {
+        ScInfo = other.ScInfo;
+      }
+      if (other.AbilityHashCode != 0) {
+        AbilityHashCode = other.AbilityHashCode;
+      }
+      if (other.RegisterCps.Length != 0) {
+        RegisterCps = other.RegisterCps;
+      }
+      if (other.IsLoginRspSplit != false) {
+        IsLoginRspSplit = other.IsLoginRspSplit;
+      }
+      if (other.IsUseAbilityHash != false) {
+        IsUseAbilityHash = other.IsUseAbilityHash;
+      }
+      abilityHashMap_.Add(other.abilityHashMap_);
+      shortAbilityHashMap_.Add(other.shortAbilityHashMap_);
+      if (other.ClientMd5.Length != 0) {
+        ClientMd5 = other.ClientMd5;
+      }
+      if (other.CountryCode.Length != 0) {
+        CountryCode = other.CountryCode;
+      }
+      if (other.IsDataNeedRelogin != false) {
+        IsDataNeedRelogin = other.IsDataNeedRelogin;
+      }
+      if (other.resVersionConfig_ != null) {
+        if (resVersionConfig_ == null) {
+          ResVersionConfig = new global::Weedwacker.Shared.Network.Proto.ResVersionConfig();
+        }
+        ResVersionConfig.MergeFrom(other.ResVersionConfig);
+      }
+      featureBlockInfoList_.Add(other.featureBlockInfoList_);
+      if (other.Birthday.Length != 0) {
+        Birthday = other.Birthday;
+      }
+      if (other.TargetUid != 0) {
+        TargetUid = other.TargetUid;
+      }
+      if (other.PlayerData.Length != 0) {
+        PlayerData = other.PlayerData;
+      }
+      if (other.ClientSilenceVersionSuffix.Length != 0) {
+        ClientSilenceVersionSuffix = other.ClientSilenceVersionSuffix;
+      }
+      if (other.TargetHomeOwnerUid != 0) {
+        TargetHomeOwnerUid = other.TargetHomeOwnerUid;
+      }
+      if (other.PlayerDataVersion != 0) {
+        PlayerDataVersion = other.PlayerDataVersion;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1252,6 +1282,10 @@ namespace Weedwacker.Shared.Network.Proto {
               NextResVersionConfig = new global::Weedwacker.Shared.Network.Proto.ResVersionConfig();
             }
             input.ReadMessage(NextResVersionConfig);
+            break;
+          }
+          case 13192: {
+            IsLoginRspSplit = input.ReadBool();
             break;
           }
           case 13480: {
@@ -1409,6 +1443,10 @@ namespace Weedwacker.Shared.Network.Proto {
               NextResVersionConfig = new global::Weedwacker.Shared.Network.Proto.ResVersionConfig();
             }
             input.ReadMessage(NextResVersionConfig);
+            break;
+          }
+          case 13192: {
+            IsLoginRspSplit = input.ReadBool();
             break;
           }
           case 13480: {

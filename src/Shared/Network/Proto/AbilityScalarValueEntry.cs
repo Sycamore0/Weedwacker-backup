@@ -116,7 +116,7 @@ namespace Weedwacker.Shared.Network.Proto {
 
     /// <summary>Field number for the "value_type" field.</summary>
     public const int ValueTypeFieldNumber = 2;
-    private global::Weedwacker.Shared.Network.Proto.AbilityScalarType valueType_ = global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknow;
+    private global::Weedwacker.Shared.Network.Proto.AbilityScalarType valueType_ = global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Weedwacker.Shared.Network.Proto.AbilityScalarType ValueType {
@@ -227,7 +227,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (key_ != null) hash ^= Key.GetHashCode();
-      if (ValueType != global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknow) hash ^= ValueType.GetHashCode();
+      if (ValueType != global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknown) hash ^= ValueType.GetHashCode();
       if (valueCase_ == ValueOneofCase.FloatValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FloatValue);
       if (valueCase_ == ValueOneofCase.StringValue) hash ^= StringValue.GetHashCode();
       if (valueCase_ == ValueOneofCase.IntValue) hash ^= IntValue.GetHashCode();
@@ -255,7 +255,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(10);
         output.WriteMessage(Key);
       }
-      if (ValueType != global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknow) {
+      if (ValueType != global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknown) {
         output.WriteRawTag(16);
         output.WriteEnum((int) ValueType);
       }
@@ -289,7 +289,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(10);
         output.WriteMessage(Key);
       }
-      if (ValueType != global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknow) {
+      if (ValueType != global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknown) {
         output.WriteRawTag(16);
         output.WriteEnum((int) ValueType);
       }
@@ -322,7 +322,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (key_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Key);
       }
-      if (ValueType != global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknow) {
+      if (ValueType != global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ValueType);
       }
       if (valueCase_ == ValueOneofCase.FloatValue) {
@@ -355,7 +355,7 @@ namespace Weedwacker.Shared.Network.Proto {
         }
         Key.MergeFrom(other.Key);
       }
-      if (other.ValueType != global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknow) {
+      if (other.ValueType != global::Weedwacker.Shared.Network.Proto.AbilityScalarType.Unknown) {
         ValueType = other.ValueType;
       }
       switch (other.ValueCase) {

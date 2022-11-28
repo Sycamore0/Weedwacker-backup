@@ -25,18 +25,18 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiFTY2VuZVBsYXlCYXR0bGVSZXN1bHROb3RpZnkucHJvdG8aJVNjZW5lUGxh",
-            "eUJhdHRsZVNldHRsZVBsYXllckluZm8ucHJvdG8aGVVuazI3MDBfT0hPS0VF",
-            "R1BQQkcucHJvdG8i2gEKG1NjZW5lUGxheUJhdHRsZVJlc3VsdE5vdGlmeRIO",
-            "CgZpc193aW4YASABKAgSEQoJY29zdF90aW1lGAcgASgNEhEKCXBsYXlfdHlw",
-            "ZRgPIAEoDRIPCgdwbGF5X2lkGAsgASgNEkEKF3NldHRsZV9wbGF5ZXJfaW5m",
-            "b19saXN0GAQgAygLMiAuU2NlbmVQbGF5QmF0dGxlU2V0dGxlUGxheWVySW5m",
-            "bxIxChNVbmsyNzAwX0hNRU5BQU1HTUJCGA4gAygLMhQuVW5rMjcwMF9PSE9L",
-            "RUVHUFBCR0IiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IG",
-            "cHJvdG8z"));
+            "eUJhdHRsZVNldHRsZVBsYXllckluZm8ucHJvdG8aJVNjZW5lUGxheUJhdHRs",
+            "ZVNldHRsZVJld2FyZEluZm8ucHJvdG8i6gEKG1NjZW5lUGxheUJhdHRsZVJl",
+            "c3VsdE5vdGlmeRIOCgZpc193aW4YASABKAgSEQoJY29zdF90aW1lGAcgASgN",
+            "EhEKCXBsYXlfdHlwZRgPIAEoDRIPCgdwbGF5X2lkGAsgASgNEkEKF3NldHRs",
+            "ZV9wbGF5ZXJfaW5mb19saXN0GAQgAygLMiAuU2NlbmVQbGF5QmF0dGxlU2V0",
+            "dGxlUGxheWVySW5mbxJBChdzZXR0bGVfcmV3YXJkX2luZm9fbGlzdBgOIAMo",
+            "CzIgLlNjZW5lUGxheUJhdHRsZVNldHRsZVJld2FyZEluZm9CIqoCH1dlZWR3",
+            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ScenePlayBattleSettlePlayerInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700OHOKEEGPPBGReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ScenePlayBattleSettlePlayerInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ScenePlayBattleSettleRewardInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ScenePlayBattleResultNotify), global::Weedwacker.Shared.Network.Proto.ScenePlayBattleResultNotify.Parser, new[]{ "IsWin", "CostTime", "PlayType", "PlayId", "SettlePlayerInfoList", "Unk2700HMENAAMGMBB" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ScenePlayBattleResultNotify), global::Weedwacker.Shared.Network.Proto.ScenePlayBattleResultNotify.Parser, new[]{ "IsWin", "CostTime", "PlayType", "PlayId", "SettlePlayerInfoList", "SettleRewardInfoList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -87,7 +87,7 @@ namespace Weedwacker.Shared.Network.Proto {
       playType_ = other.playType_;
       playId_ = other.playId_;
       settlePlayerInfoList_ = other.settlePlayerInfoList_.Clone();
-      unk2700HMENAAMGMBB_ = other.unk2700HMENAAMGMBB_.Clone();
+      settleRewardInfoList_ = other.settleRewardInfoList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -156,15 +156,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return settlePlayerInfoList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_HMENAAMGMBB" field.</summary>
-    public const int Unk2700HMENAAMGMBBFieldNumber = 14;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2700_OHOKEEGPPBG> _repeated_unk2700HMENAAMGMBB_codec
-        = pb::FieldCodec.ForMessage(114, global::Weedwacker.Shared.Network.Proto.Unk2700_OHOKEEGPPBG.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_OHOKEEGPPBG> unk2700HMENAAMGMBB_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_OHOKEEGPPBG>();
+    /// <summary>Field number for the "settle_reward_info_list" field.</summary>
+    public const int SettleRewardInfoListFieldNumber = 14;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.ScenePlayBattleSettleRewardInfo> _repeated_settleRewardInfoList_codec
+        = pb::FieldCodec.ForMessage(114, global::Weedwacker.Shared.Network.Proto.ScenePlayBattleSettleRewardInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ScenePlayBattleSettleRewardInfo> settleRewardInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ScenePlayBattleSettleRewardInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2700_OHOKEEGPPBG> Unk2700HMENAAMGMBB {
-      get { return unk2700HMENAAMGMBB_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ScenePlayBattleSettleRewardInfo> SettleRewardInfoList {
+      get { return settleRewardInfoList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -187,7 +187,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (PlayType != other.PlayType) return false;
       if (PlayId != other.PlayId) return false;
       if(!settlePlayerInfoList_.Equals(other.settlePlayerInfoList_)) return false;
-      if(!unk2700HMENAAMGMBB_.Equals(other.unk2700HMENAAMGMBB_)) return false;
+      if(!settleRewardInfoList_.Equals(other.settleRewardInfoList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -200,7 +200,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (PlayType != 0) hash ^= PlayType.GetHashCode();
       if (PlayId != 0) hash ^= PlayId.GetHashCode();
       hash ^= settlePlayerInfoList_.GetHashCode();
-      hash ^= unk2700HMENAAMGMBB_.GetHashCode();
+      hash ^= settleRewardInfoList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -232,7 +232,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(88);
         output.WriteUInt32(PlayId);
       }
-      unk2700HMENAAMGMBB_.WriteTo(output, _repeated_unk2700HMENAAMGMBB_codec);
+      settleRewardInfoList_.WriteTo(output, _repeated_settleRewardInfoList_codec);
       if (PlayType != 0) {
         output.WriteRawTag(120);
         output.WriteUInt32(PlayType);
@@ -260,7 +260,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(88);
         output.WriteUInt32(PlayId);
       }
-      unk2700HMENAAMGMBB_.WriteTo(ref output, _repeated_unk2700HMENAAMGMBB_codec);
+      settleRewardInfoList_.WriteTo(ref output, _repeated_settleRewardInfoList_codec);
       if (PlayType != 0) {
         output.WriteRawTag(120);
         output.WriteUInt32(PlayType);
@@ -288,7 +288,7 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PlayId);
       }
       size += settlePlayerInfoList_.CalculateSize(_repeated_settlePlayerInfoList_codec);
-      size += unk2700HMENAAMGMBB_.CalculateSize(_repeated_unk2700HMENAAMGMBB_codec);
+      size += settleRewardInfoList_.CalculateSize(_repeated_settleRewardInfoList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -314,7 +314,7 @@ namespace Weedwacker.Shared.Network.Proto {
         PlayId = other.PlayId;
       }
       settlePlayerInfoList_.Add(other.settlePlayerInfoList_);
-      unk2700HMENAAMGMBB_.Add(other.unk2700HMENAAMGMBB_);
+      settleRewardInfoList_.Add(other.settleRewardInfoList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -347,7 +347,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 114: {
-            unk2700HMENAAMGMBB_.AddEntriesFrom(input, _repeated_unk2700HMENAAMGMBB_codec);
+            settleRewardInfoList_.AddEntriesFrom(input, _repeated_settleRewardInfoList_codec);
             break;
           }
           case 120: {
@@ -386,7 +386,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 114: {
-            unk2700HMENAAMGMBB_.AddEntriesFrom(ref input, _repeated_unk2700HMENAAMGMBB_codec);
+            settleRewardInfoList_.AddEntriesFrom(ref input, _repeated_settleRewardInfoList_codec);
             break;
           }
           case 120: {

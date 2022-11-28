@@ -24,143 +24,156 @@ namespace Weedwacker.Shared.Network.Proto {
     static ActivityInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJBY3Rpdml0eUluZm8ucHJvdG8aGUFjdGl2aXR5V2F0Y2hlckluZm8ucHJv",
-            "dG8aJkFyZW5hQ2hhbGxlbmdlQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGh1B",
-            "c3RlckFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxohQmFydGVuZGVyQWN0aXZp",
-            "dHlEZXRhaWxJbmZvLnByb3RvGiBCbGVzc2luZ0FjdGl2aXR5RGV0YWlsSW5m",
-            "by5wcm90bxohQmxpdHpSdXNoQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGidC",
-            "b3VuY2VDb25qdXJpbmdBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aHUJ1b3lh",
-            "bnRDb21iYXREZXRhaWxJbmZvLnByb3RvGiVDaGFubmVsZXJTbGFiQWN0aXZp",
-            "dHlEZXRhaWxJbmZvLnByb3RvGh1DaGVzc0FjdGl2aXR5RGV0YWlsSW5mby5w",
-            "cm90bxogQ3J1Y2libGVBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aI0NyeXN0",
-            "YWxMaW5rQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGiBEZWxpdmVyeUFjdGl2",
-            "aXR5RGV0YWlsSW5mby5wcm90bxobRGlnQWN0aXZpdHlEZXRhaWxJbmZvLnBy",
-            "b3RvGiNEcmFnb25TcGluZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoZRWNo",
-            "b1NoZWxsRGV0YWlsSW5mby5wcm90bxoeRWZmaWd5QWN0aXZpdHlEZXRhaWxJ",
-            "bmZvLnByb3RvGiJFeHBlZGl0aW9uQWN0aXZpdHlEZXRhaWxJbmZvLnByb3Rv",
-            "Gh1GaW5kSGlsaWNodXJsRGV0YWlsSW5mby5wcm90bxohRmxldXJGYWlyQWN0",
-            "aXZpdHlEZXRhaWxJbmZvLnByb3RvGh5GbGlnaHRBY3Rpdml0eURldGFpbElu",
-            "Zm8ucHJvdG8aHUdhY2hhQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhxHZWFy",
-            "QWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGh9HcmF2ZW5Jbm5vY2VuY2VEZXRh",
-            "aWxJbmZvLnByb3RvGh1IYWNoaUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoj",
-            "SGlkZUFuZFNlZWtBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aHUluc3RhYmxl",
-            "U3ByYXlEZXRhaWxJbmZvLnByb3RvGh9Jcm9kb3JpQWN0aXZpdHlEZXRhaWxJ",
-            "bmZvLnByb3RvGiNJc2xhbmRQYXJ0eUFjdGl2aXR5RGV0YWlsSW5mby5wcm90",
-            "bxojTGFudGVyblJpdGVBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aL0x1bWlu",
-            "YW5jZVN0b25lQ2hhbGxlbmdlQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhhM",
-            "dW5hUml0ZURldGFpbEluZm8ucHJvdG8aJk1pY2hpYWVNYXRzdXJpQWN0aXZp",
-            "dHlEZXRhaWxJbmZvLnByb3RvGiFNaXN0VHJpYWxBY3Rpdml0eURldGFpbElu",
-            "Zm8ucHJvdG8aJE1vb25maW5UcmlhbEFjdGl2aXR5RGV0YWlsSW5mby5wcm90",
-            "bxodTXVxYWRhc1BvdGlvbkRldGFpbEluZm8ucHJvdG8aIU11c2ljR2FtZUFj",
-            "dGl2aXR5RGV0YWlsSW5mby5wcm90bxodUGhvdG9BY3Rpdml0eURldGFpbElu",
-            "Zm8ucHJvdG8aI1BsYW50Rmxvd2VyQWN0aXZpdHlEZXRhaWxJbmZvLnByb3Rv",
-            "Gh5Qb3Rpb25BY3Rpdml0eURldGFpbEluZm8ucHJvdG8aIlJvZ3VlRGlhcnlB",
-            "Y3Rpdml0eURldGFpbEluZm8ucHJvdG8aKFJvZ3VlbGlrZUR1bmdlb25BY3Rp",
-            "dml0eURldGFpbEluZm8ucHJvdG8aIFNhbGVzbWFuQWN0aXZpdHlEZXRhaWxJ",
-            "bmZvLnByb3RvGh9TZWFMYW1wQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhlT",
-            "ZWFMYW1wQWN0aXZpdHlJbmZvLnByb3RvGh1TcGljZUFjdGl2aXR5RGV0YWls",
-            "SW5mby5wcm90bxoaU3VtbWVyVGltZURldGFpbEluZm8ucHJvdG8aHFN1bW1l",
-            "clRpbWVWMkRldGFpbEluZm8ucHJvdG8aHFN1bW9BY3Rpdml0eURldGFpbElu",
-            "Zm8ucHJvdG8aJFRhbnVraVRyYXZlbEFjdGl2aXR5RGV0YWlsSW5mby5wcm90",
-            "bxojVHJlYXN1cmVNYXBBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aHlRyZWFz",
-            "dXJlU2VlbGllRGV0YWlsSW5mby5wcm90bxojVHJpYWxBdmF0YXJBY3Rpdml0",
-            "eURldGFpbEluZm8ucHJvdG8aG1VnY0FjdGl2aXR5RGV0YWlsSW5mby5wcm90",
-            "bxoZVW5rMjgwMF9QSFBITUlMUE9MQy5wcm90bxojV2F0ZXJTcGlyaXRBY3Rp",
-            "dml0eURldGFpbEluZm8ucHJvdG8aIldpbnRlckNhbXBBY3Rpdml0eURldGFp",
-            "bEluZm8ucHJvdG8ikh8KDEFjdGl2aXR5SW5mbxIZChFpc19wbGF5X29wZW5f",
-            "YW5pbRgNIAEoCBITCgtzY2hlZHVsZV9pZBgPIAEoDRISCgljdXJfc2NvcmUY",
-            "8g4gASgNEhMKC2lzX3N0YXJ0aW5nGAkgASgIEhoKEXRha2VuX3Jld2FyZF9s",
-            "aXN0GMkCIAMoDRIbChNVbmsyNzAwX05PTkpGSEFJRkxBGGYgASgIEiIKGXNl",
-            "bGVjdGVkX2F2YXRhcl9yZXdhcmRfaWQYigogASgNEh0KFGZpcnN0X2RheV9z",
-            "dGFydF90aW1lGNAEIAEoDRIUCgtzY29yZV9saW1pdBimDyABKA0SEwoLaXNf",
-            "ZmluaXNoZWQYBiABKAgSEgoJaXNfaGlkZGVuGJcHIAEoCBISCgpiZWdpbl90",
-            "aW1lGAggASgNEhAKCGVuZF90aW1lGAUgASgNEj4KEWFjdGl2aXR5X2NvaW5f",
-            "bWFwGKoFIAMoCzIiLkFjdGl2aXR5SW5mby5BY3Rpdml0eUNvaW5NYXBFbnRy",
-            "eRIVCg1hY3Rpdml0eV90eXBlGAQgASgNEhwKE1VuazI3MDBfRURLTExIQkVF",
-            "R0UYqQsgASgIEjIKE1VuazI4MDBfS09NSVBLS0tPQkUY4AYgAygLMhQuVW5r",
-            "MjgwMF9QSFBITUlMUE9MQxIWCg5tZWV0X2NvbmRfbGlzdBgKIAMoDRJDChNV",
-            "bmsyNzAwX0lGUEJDTkxDS0xHGPcKIAMoCzIlLkFjdGl2aXR5SW5mby5Vbmsy",
-            "NzAwSUZQQkNOTENLTEdFbnRyeRIYChBleHBpcmVfY29uZF9saXN0GAMgAygN",
-            "Ei8KEXdhdGNoZXJfaW5mb19saXN0GAIgAygLMhQuQWN0aXZpdHlXYXRjaGVy",
-            "SW5mbxITCgthY3Rpdml0eV9pZBgMIAEoDRIzCg1zYW1fbGFtcF9pbmZvGAcg",
-            "ASgLMhouU2VhTGFtcEFjdGl2aXR5RGV0YWlsSW5mb0gAEjQKDWNydWNpYmxl",
-            "X2luZm8YDiABKAsyGy5DcnVjaWJsZUFjdGl2aXR5RGV0YWlsSW5mb0gAEjQK",
-            "DXNhbGVzbWFuX2luZm8YCyABKAsyGy5TYWxlc21hbkFjdGl2aXR5RGV0YWls",
-            "SW5mb0gAEjsKEXRyaWFsX2F2YXRhcl9pbmZvGAEgASgLMh4uVHJpYWxBdmF0",
-            "YXJBY3Rpdml0eURldGFpbEluZm9IABI1Cg1kZWxpdmVyeV9pbmZvGMQIIAEo",
-            "CzIbLkRlbGl2ZXJ5QWN0aXZpdHlEZXRhaWxJbmZvSAASLwoKYXN0ZXJfaW5m",
-            "bxitBCABKAsyGC5Bc3RlckFjdGl2aXR5RGV0YWlsSW5mb0gAEjEKC2ZsaWdo",
-            "dF9pbmZvGNUKIAEoCzIZLkZsaWdodEFjdGl2aXR5RGV0YWlsSW5mb0gAEjwK",
-            "EWRyYWdvbl9zcGluZV9pbmZvGL8NIAEoCzIeLkRyYWdvblNwaW5lQWN0aXZp",
-            "dHlEZXRhaWxJbmZvSAASMQoLZWZmaWd5X2luZm8YhwMgASgLMhkuRWZmaWd5",
-            "QWN0aXZpdHlEZXRhaWxJbmZvSAASPAoRdHJlYXN1cmVfbWFwX2luZm8Y2ggg",
-            "ASgLMh4uVHJlYXN1cmVNYXBBY3Rpdml0eURldGFpbEluZm9IABI1Cg1ibGVz",
-            "c2luZ19pbmZvGM0OIAEoCzIbLkJsZXNzaW5nQWN0aXZpdHlEZXRhaWxJbmZv",
-            "SAASLgoNc2VhX2xhbXBfaW5mbxjuAyABKAsyFC5TZWFMYW1wQWN0aXZpdHlJ",
-            "bmZvSAASOQoPZXhwZWRpdGlvbl9pbmZvGMoBIAEoCzIdLkV4cGVkaXRpb25B",
-            "Y3Rpdml0eURldGFpbEluZm9IABJCChRhcmVuYV9jaGFsbGVuZ2VfaW5mbxjb",
-            "BiABKAsyIS5BcmVuYUNoYWxsZW5nZUFjdGl2aXR5RGV0YWlsSW5mb0gAEjgK",
-            "D2ZsZXVyX2ZhaXJfaW5mbxjZBiABKAsyHC5GbGV1ckZhaXJBY3Rpdml0eURl",
-            "dGFpbEluZm9IABI8ChF3YXRlcl9zcGlyaXRfaW5mbxiLDSABKAsyHi5XYXRl",
-            "clNwaXJpdEFjdGl2aXR5RGV0YWlsSW5mb0gAEkAKE2NoYW5uZWxlcl9zbGFi",
-            "X2luZm8Y9wcgASgLMiAuQ2hhbm5lbGVyU2xhYkFjdGl2aXR5RGV0YWlsSW5m",
-            "b0gAEkEKGG1pc3RfdHJpYWxfYWN0aXZpdHlfaW5mbxicASABKAsyHC5NaXN0",
-            "VHJpYWxBY3Rpdml0eURldGFpbEluZm9IABI9ChJoaWRlX2FuZF9zZWVrX2lu",
-            "Zm8YqwMgASgLMh4uSGlkZUFuZFNlZWtBY3Rpdml0eURldGFpbEluZm9IABI4",
-            "ChNmaW5kX2hpbGljaHVybF9pbmZvGIMLIAEoCzIYLkZpbmRIaWxpY2h1cmxE",
-            "ZXRhaWxJbmZvSAASMgoQc3VtbWVyX3RpbWVfaW5mbxjcCiABKAsyFS5TdW1t",
-            "ZXJUaW1lRGV0YWlsSW5mb0gAEjgKE2J1b3lhbnRfY29tYmF0X2luZm8Ysg4g",
-            "ASgLMhguQnVveWFudENvbWJhdERldGFpbEluZm9IABIwCg9lY2hvX3NoZWxs",
-            "X2luZm8Y2QggASgLMhQuRWNob1NoZWxsRGV0YWlsSW5mb0gAEkQKFWJvdW5j",
-            "ZV9jb25qdXJpbmdfaW5mbxj/BSABKAsyIi5Cb3VuY2VDb25qdXJpbmdBY3Rp",
-            "dml0eURldGFpbEluZm9IABI4Cg9ibGl0el9ydXNoX2luZm8YmgYgASgLMhwu",
-            "QmxpdHpSdXNoQWN0aXZpdHlEZXRhaWxJbmZvSAASLwoKY2hlc3NfaW5mbxif",
-            "ByABKAsyGC5DaGVzc0FjdGl2aXR5RGV0YWlsSW5mb0gAEi0KCXN1bW9faW5m",
-            "bxjtCSABKAsyFy5TdW1vQWN0aXZpdHlEZXRhaWxJbmZvSAASPgoSbW9vbmZp",
-            "bl90cmlhbF9pbmZvGLQMIAEoCzIfLk1vb25maW5UcmlhbEFjdGl2aXR5RGV0",
-            "YWlsSW5mb0gAEi4KDmx1bmFfcml0ZV9pbmZvGK4GIAEoCzITLkx1bmFSaXRl",
-            "RGV0YWlsSW5mb0gAEjsKEXBsYW50X2Zsb3dlcl9pbmZvGDYgASgLMh4uUGxh",
-            "bnRGbG93ZXJBY3Rpdml0eURldGFpbEluZm9IABI4Cg9tdXNpY19nYW1lX2lu",
-            "Zm8YzAMgASgLMhwuTXVzaWNHYW1lQWN0aXZpdHlEZXRhaWxJbmZvSAASRgoW",
-            "cm9ndWVsaWtlX2R1bmdlb25faW5mbxjbASABKAsyIy5Sb2d1ZWxpa2VEdW5n",
-            "ZW9uQWN0aXZpdHlEZXRhaWxJbmZvSAASKwoIZGlnX2luZm8YkwMgASgLMhYu",
-            "RGlnQWN0aXZpdHlEZXRhaWxJbmZvSAASLwoKaGFjaGlfaW5mbxjrAyABKAsy",
-            "GC5IYWNoaUFjdGl2aXR5RGV0YWlsSW5mb0gAEjoKEHdpbnRlcl9jYW1wX2lu",
-            "Zm8YuwggASgLMh0uV2ludGVyQ2FtcEFjdGl2aXR5RGV0YWlsSW5mb0gAEjEK",
-            "C3BvdGlvbl9pbmZvGPkJIAEoCzIZLlBvdGlvbkFjdGl2aXR5RGV0YWlsSW5m",
-            "b0gAEkcKG3RhbnVraV90cmF2ZWxfYWN0aXZpdHlfaW5mbxiEDiABKAsyHy5U",
-            "YW51a2lUcmF2ZWxBY3Rpdml0eURldGFpbEluZm9IABJFChpsYW50ZXJuX3Jp",
-            "dGVfYWN0aXZpdHlfaW5mbxjUDiABKAsyHi5MYW50ZXJuUml0ZUFjdGl2aXR5",
-            "RGV0YWlsSW5mb0gAEkIKFG1pY2hpYWVfbWF0c3VyaV9pbmZvGMIBIAEoCzIh",
-            "Lk1pY2hpYWVNYXRzdXJpQWN0aXZpdHlEZXRhaWxJbmZvSAASNwoOYmFydGVu",
-            "ZGVyX2luZm8YvQ0gASgLMhwuQmFydGVuZGVyQWN0aXZpdHlEZXRhaWxJbmZv",
-            "SAASKwoIdWdjX2luZm8YvwUgASgLMhYuVWdjQWN0aXZpdHlEZXRhaWxJbmZv",
-            "SAASPAoRY3J5c3RhbF9saW5rX2luZm8YygkgASgLMh4uQ3J5c3RhbExpbmtB",
-            "Y3Rpdml0eURldGFpbEluZm9IABIzCgxpcm9kb3JpX2luZm8Y7gUgASgLMhou",
-            "SXJvZG9yaUFjdGl2aXR5RGV0YWlsSW5mb0gAEi8KCnBob3RvX2luZm8YyAIg",
-            "ASgLMhguUGhvdG9BY3Rpdml0eURldGFpbEluZm9IABIvCgpzcGljZV9pbmZv",
-            "GOMOIAEoCzIYLlNwaWNlQWN0aXZpdHlEZXRhaWxJbmZvSAASLwoKZ2FjaGFf",
-            "aW5mbxi5BiABKAsyGC5HYWNoYUFjdGl2aXR5RGV0YWlsSW5mb0gAElUKHmx1",
-            "bWluYW5jZV9zdG9uZV9jaGFsbGVuZ2VfaW5mbxicCiABKAsyKi5MdW1pbmFu",
-            "Y2VTdG9uZUNoYWxsZW5nZUFjdGl2aXR5RGV0YWlsSW5mb0gAEjoKEHJvZ3Vl",
-            "X2RpYXJ5X2luZm8YrAYgASgLMh0uUm9ndWVEaWFyeUFjdGl2aXR5RGV0YWls",
-            "SW5mb0gAEjcKE3N1bW1lcl90aW1lX3YyX2luZm8Y7gQgASgLMhcuU3VtbWVy",
-            "VGltZVYyRGV0YWlsSW5mb0gAEjwKEWlzbGFuZF9wYXJ0eV9pbmZvGN0OIAEo",
-            "CzIeLklzbGFuZFBhcnR5QWN0aXZpdHlEZXRhaWxJbmZvSAASLQoJZ2Vhcl9p",
-            "bmZvGNIFIAEoCzIXLkdlYXJBY3Rpdml0eURldGFpbEluZm9IABI8ChVncmF2",
-            "ZW5faW5ub2NlbmNlX2luZm8Y9w4gASgLMhouR3JhdmVuSW5ub2NlbmNlRGV0",
-            "YWlsSW5mb0gAEjgKE2luc3RhYmxlX3NwcmF5X2luZm8YkwggASgLMhguSW5z",
-            "dGFibGVTcHJheURldGFpbEluZm9IABI4ChNtdXFhZGFzX3BvdGlvbl9pbmZv",
-            "GIUJIAEoCzIYLk11cWFkYXNQb3Rpb25EZXRhaWxJbmZvSAASOgoUdHJlYXN1",
-            "cmVfc2VlbGllX2luZm8YxgcgASgLMhkuVHJlYXN1cmVTZWVsaWVEZXRhaWxJ",
-            "bmZvSAAaNgoUQWN0aXZpdHlDb2luTWFwRW50cnkSCwoDa2V5GAEgASgNEg0K",
-            "BXZhbHVlGAIgASgNOgI4ARo5ChdVbmsyNzAwSUZQQkNOTENLTEdFbnRyeRIL",
-            "CgNrZXkYASABKA0SDQoFdmFsdWUYAiABKA06AjgBQggKBmRldGFpbEIiqgIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "ChJBY3Rpdml0eUluZm8ucHJvdG8aGkFjdGl2aXR5UHVzaFRpcHNEYXRhLnBy",
+            "b3RvGhlBY3Rpdml0eVdhdGNoZXJJbmZvLnByb3RvGiZBcmVuYUNoYWxsZW5n",
+            "ZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxodQXN0ZXJBY3Rpdml0eURldGFp",
+            "bEluZm8ucHJvdG8aIUJhcnRlbmRlckFjdGl2aXR5RGV0YWlsSW5mby5wcm90",
+            "bxogQmxlc3NpbmdBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aIUJsaXR6UnVz",
+            "aEFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxonQm91bmNlQ29uanVyaW5nQWN0",
+            "aXZpdHlEZXRhaWxJbmZvLnByb3RvGh1CdW95YW50Q29tYmF0RGV0YWlsSW5m",
+            "by5wcm90bxolQ2hhbm5lbGVyU2xhYkFjdGl2aXR5RGV0YWlsSW5mby5wcm90",
+            "bxodQ2hhckFtdXNlbWVudERldGFpbEluZm8ucHJvdG8aHUNoZXNzQWN0aXZp",
+            "dHlEZXRhaWxJbmZvLnByb3RvGiBDcnVjaWJsZUFjdGl2aXR5RGV0YWlsSW5m",
+            "by5wcm90bxojQ3J5c3RhbExpbmtBY3Rpdml0eURldGFpbEluZm8ucHJvdG8a",
+            "IERlbGl2ZXJ5QWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhtEaWdBY3Rpdml0",
+            "eURldGFpbEluZm8ucHJvdG8aI0RyYWdvblNwaW5lQWN0aXZpdHlEZXRhaWxJ",
+            "bmZvLnByb3RvGhlFY2hvU2hlbGxEZXRhaWxJbmZvLnByb3RvGh5FZmZpZ3lB",
+            "Y3Rpdml0eURldGFpbEluZm8ucHJvdG8aIUVmZmlneUNoYWxsZW5nZVYyRGV0",
+            "YWlsSW5mby5wcm90bxoiRXhwZWRpdGlvbkFjdGl2aXR5RGV0YWlsSW5mby5w",
+            "cm90bxodRmluZEhpbGljaHVybERldGFpbEluZm8ucHJvdG8aIUZsZXVyRmFp",
+            "ckFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoeRmxpZ2h0QWN0aXZpdHlEZXRh",
+            "aWxJbmZvLnByb3RvGh1GdW5ndXNGaWdodGVyRGV0YWlsSW5mby5wcm90bxod",
+            "R2FjaGFBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aHEdlYXJBY3Rpdml0eURl",
+            "dGFpbEluZm8ucHJvdG8aH0dyYXZlbklubm9jZW5jZURldGFpbEluZm8ucHJv",
+            "dG8aHUhhY2hpQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGiNIaWRlQW5kU2Vl",
+            "a0FjdGl2aXR5RGV0YWlsSW5mby5wcm90bxodSW5zdGFibGVTcHJheURldGFp",
+            "bEluZm8ucHJvdG8aH0lyb2RvcmlBY3Rpdml0eURldGFpbEluZm8ucHJvdG8a",
+            "G0lzbGFuZFBhcnR5RGV0YWlsSW5mby5wcm90bxojTGFudGVyblJpdGVBY3Rp",
+            "dml0eURldGFpbEluZm8ucHJvdG8aL0x1bWluYW5jZVN0b25lQ2hhbGxlbmdl",
+            "QWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhhMdW5hUml0ZURldGFpbEluZm8u",
+            "cHJvdG8aJk1pY2hpYWVNYXRzdXJpQWN0aXZpdHlEZXRhaWxJbmZvLnByb3Rv",
+            "GiFNaXN0VHJpYWxBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aJE1vb25maW5U",
+            "cmlhbEFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxolTXVxYWRhc1BvdGlvbkFj",
+            "dGl2aXR5RGV0YWlsSW5mby5wcm90bxohTXVzaWNHYW1lQWN0aXZpdHlEZXRh",
+            "aWxJbmZvLnByb3RvGh1QaG90b0FjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoj",
+            "UGxhbnRGbG93ZXJBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aHlBvdGlvbkFj",
+            "dGl2aXR5RGV0YWlsSW5mby5wcm90bxogUm9ja0JvYXJkRXhwbG9yZURldGFp",
+            "bEluZm8ucHJvdG8aIlJvZ3VlRGlhcnlBY3Rpdml0eURldGFpbEluZm8ucHJv",
+            "dG8aKFJvZ3VlbGlrZUR1bmdlb25BY3Rpdml0eURldGFpbEluZm8ucHJvdG8a",
+            "IFNhbGVzbWFuQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGh9TZWFMYW1wQWN0",
+            "aXZpdHlEZXRhaWxJbmZvLnByb3RvGhlTZWFMYW1wQWN0aXZpdHlJbmZvLnBy",
+            "b3RvGh1TcGljZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoaU3VtbWVyVGlt",
+            "ZURldGFpbEluZm8ucHJvdG8aHFN1bW1lclRpbWVWMkRldGFpbEluZm8ucHJv",
+            "dG8aHFN1bW9BY3Rpdml0eURldGFpbEluZm8ucHJvdG8aJFRhbnVraVRyYXZl",
+            "bEFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxojVHJlYXN1cmVNYXBBY3Rpdml0",
+            "eURldGFpbEluZm8ucHJvdG8aJlRyZWFzdXJlU2VlbGllQWN0aXZpdHlEZXRh",
+            "aWxJbmZvLnByb3RvGiNUcmlhbEF2YXRhckFjdGl2aXR5RGV0YWlsSW5mby5w",
+            "cm90bxobVWdjQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhdWaW50YWdlRGV0",
+            "YWlsSW5mby5wcm90bxojV2F0ZXJTcGlyaXRBY3Rpdml0eURldGFpbEluZm8u",
+            "cHJvdG8aGVdpbmRGaWVsZERldGFpbEluZm8ucHJvdG8aIldpbnRlckNhbXBB",
+            "Y3Rpdml0eURldGFpbEluZm8ucHJvdG8iiSIKDEFjdGl2aXR5SW5mbxITCgtp",
+            "c19maW5pc2hlZBgGIAEoCBIVCg1hY3Rpdml0eV90eXBlGAQgASgNEhIKCmJl",
+            "Z2luX3RpbWUYCCABKA0SGgoRdGFrZW5fcmV3YXJkX2xpc3QYyQIgAygNEhIK",
+            "CWlzX2hpZGRlbhiXByABKAgSFgoNaXNfcXVpY2tfb3BlbhipCyABKAgSFgoO",
+            "bWVldF9jb25kX2xpc3QYCiADKA0SPgoRYWN0aXZpdHlfY29pbl9tYXAYqgUg",
+            "AygLMiIuQWN0aXZpdHlJbmZvLkFjdGl2aXR5Q29pbk1hcEVudHJ5EhkKEWlz",
+            "X2Jhbm5lcl9jbGVhcmVkGGYgASgIEhIKCWN1cl9zY29yZRjyDiABKA0SHQoU",
+            "Zmlyc3RfZGF5X3N0YXJ0X3RpbWUY0AQgASgNEhMKC2FjdGl2aXR5X2lkGAwg",
+            "ASgNEhkKEWlzX3BsYXlfb3Blbl9hbmltGA0gASgIEhAKCGVuZF90aW1lGAUg",
+            "ASgNEhQKC3Njb3JlX2xpbWl0GKYPIAEoDRI9ChF3aXNoX2dpZnRfbnVtX21h",
+            "cBj3CiADKAsyIS5BY3Rpdml0eUluZm8uV2lzaEdpZnROdW1NYXBFbnRyeRIi",
+            "ChlzZWxlY3RlZF9hdmF0YXJfcmV3YXJkX2lkGIoKIAEoDRIhChhpc19jb21t",
+            "b25fY29udGVudF9jbG9zZWQYqw8gASgIEhgKEGV4cGlyZV9jb25kX2xpc3QY",
+            "AyADKA0SPAocYWN0aXZpdHlfcHVzaF90aXBzX2RhdGFfbGlzdBjgBiADKAsy",
+            "FS5BY3Rpdml0eVB1c2hUaXBzRGF0YRIvChF3YXRjaGVyX2luZm9fbGlzdBgC",
+            "IAMoCzIULkFjdGl2aXR5V2F0Y2hlckluZm8SEwoLc2NoZWR1bGVfaWQYDyAB",
+            "KA0SEwoLaXNfc3RhcnRpbmcYCSABKAgSMwoNc2FtX2xhbXBfaW5mbxgHIAEo",
+            "CzIaLlNlYUxhbXBBY3Rpdml0eURldGFpbEluZm9IABI0Cg1jcnVjaWJsZV9p",
+            "bmZvGA4gASgLMhsuQ3J1Y2libGVBY3Rpdml0eURldGFpbEluZm9IABI0Cg1z",
+            "YWxlc21hbl9pbmZvGAsgASgLMhsuU2FsZXNtYW5BY3Rpdml0eURldGFpbElu",
+            "Zm9IABI7ChF0cmlhbF9hdmF0YXJfaW5mbxgBIAEoCzIeLlRyaWFsQXZhdGFy",
+            "QWN0aXZpdHlEZXRhaWxJbmZvSAASNQoNZGVsaXZlcnlfaW5mbxjECCABKAsy",
+            "Gy5EZWxpdmVyeUFjdGl2aXR5RGV0YWlsSW5mb0gAEi8KCmFzdGVyX2luZm8Y",
+            "rQQgASgLMhguQXN0ZXJBY3Rpdml0eURldGFpbEluZm9IABIxCgtmbGlnaHRf",
+            "aW5mbxjVCiABKAsyGS5GbGlnaHRBY3Rpdml0eURldGFpbEluZm9IABI8ChFk",
+            "cmFnb25fc3BpbmVfaW5mbxi/DSABKAsyHi5EcmFnb25TcGluZUFjdGl2aXR5",
+            "RGV0YWlsSW5mb0gAEjEKC2VmZmlneV9pbmZvGIcDIAEoCzIZLkVmZmlneUFj",
+            "dGl2aXR5RGV0YWlsSW5mb0gAEjwKEXRyZWFzdXJlX21hcF9pbmZvGNoIIAEo",
+            "CzIeLlRyZWFzdXJlTWFwQWN0aXZpdHlEZXRhaWxJbmZvSAASNQoNYmxlc3Np",
+            "bmdfaW5mbxjNDiABKAsyGy5CbGVzc2luZ0FjdGl2aXR5RGV0YWlsSW5mb0gA",
+            "Ei4KDXNlYV9sYW1wX2luZm8Y7gMgASgLMhQuU2VhTGFtcEFjdGl2aXR5SW5m",
+            "b0gAEjkKD2V4cGVkaXRpb25faW5mbxjKASABKAsyHS5FeHBlZGl0aW9uQWN0",
+            "aXZpdHlEZXRhaWxJbmZvSAASQgoUYXJlbmFfY2hhbGxlbmdlX2luZm8Y2wYg",
+            "ASgLMiEuQXJlbmFDaGFsbGVuZ2VBY3Rpdml0eURldGFpbEluZm9IABI4Cg9m",
+            "bGV1cl9mYWlyX2luZm8Y2QYgASgLMhwuRmxldXJGYWlyQWN0aXZpdHlEZXRh",
+            "aWxJbmZvSAASPAoRd2F0ZXJfc3Bpcml0X2luZm8Yiw0gASgLMh4uV2F0ZXJT",
+            "cGlyaXRBY3Rpdml0eURldGFpbEluZm9IABJAChNjaGFubmVsZXJfc2xhYl9p",
+            "bmZvGPcHIAEoCzIgLkNoYW5uZWxlclNsYWJBY3Rpdml0eURldGFpbEluZm9I",
+            "ABJBChhtaXN0X3RyaWFsX2FjdGl2aXR5X2luZm8YnAEgASgLMhwuTWlzdFRy",
+            "aWFsQWN0aXZpdHlEZXRhaWxJbmZvSAASPQoSaGlkZV9hbmRfc2Vla19pbmZv",
+            "GKsDIAEoCzIeLkhpZGVBbmRTZWVrQWN0aXZpdHlEZXRhaWxJbmZvSAASOAoT",
+            "ZmluZF9oaWxpY2h1cmxfaW5mbxiDCyABKAsyGC5GaW5kSGlsaWNodXJsRGV0",
+            "YWlsSW5mb0gAEjIKEHN1bW1lcl90aW1lX2luZm8Y3AogASgLMhUuU3VtbWVy",
+            "VGltZURldGFpbEluZm9IABI4ChNidW95YW50X2NvbWJhdF9pbmZvGLIOIAEo",
+            "CzIYLkJ1b3lhbnRDb21iYXREZXRhaWxJbmZvSAASMAoPZWNob19zaGVsbF9p",
+            "bmZvGNkIIAEoCzIULkVjaG9TaGVsbERldGFpbEluZm9IABJEChVib3VuY2Vf",
+            "Y29uanVyaW5nX2luZm8Y/wUgASgLMiIuQm91bmNlQ29uanVyaW5nQWN0aXZp",
+            "dHlEZXRhaWxJbmZvSAASOAoPYmxpdHpfcnVzaF9pbmZvGJoGIAEoCzIcLkJs",
+            "aXR6UnVzaEFjdGl2aXR5RGV0YWlsSW5mb0gAEi8KCmNoZXNzX2luZm8Ynwcg",
+            "ASgLMhguQ2hlc3NBY3Rpdml0eURldGFpbEluZm9IABItCglzdW1vX2luZm8Y",
+            "7QkgASgLMhcuU3Vtb0FjdGl2aXR5RGV0YWlsSW5mb0gAEj4KEm1vb25maW5f",
+            "dHJpYWxfaW5mbxi0DCABKAsyHy5Nb29uZmluVHJpYWxBY3Rpdml0eURldGFp",
+            "bEluZm9IABIuCg5sdW5hX3JpdGVfaW5mbxiuBiABKAsyEy5MdW5hUml0ZURl",
+            "dGFpbEluZm9IABI7ChFwbGFudF9mbG93ZXJfaW5mbxg2IAEoCzIeLlBsYW50",
+            "Rmxvd2VyQWN0aXZpdHlEZXRhaWxJbmZvSAASOAoPbXVzaWNfZ2FtZV9pbmZv",
+            "GMwDIAEoCzIcLk11c2ljR2FtZUFjdGl2aXR5RGV0YWlsSW5mb0gAEkYKFnJv",
+            "Z3VlbGlrZV9kdW5nZW9uX2luZm8Y2wEgASgLMiMuUm9ndWVsaWtlRHVuZ2Vv",
+            "bkFjdGl2aXR5RGV0YWlsSW5mb0gAEisKCGRpZ19pbmZvGJMDIAEoCzIWLkRp",
+            "Z0FjdGl2aXR5RGV0YWlsSW5mb0gAEi8KCmhhY2hpX2luZm8Y6wMgASgLMhgu",
+            "SGFjaGlBY3Rpdml0eURldGFpbEluZm9IABI6ChB3aW50ZXJfY2FtcF9pbmZv",
+            "GLsIIAEoCzIdLldpbnRlckNhbXBBY3Rpdml0eURldGFpbEluZm9IABIxCgtw",
+            "b3Rpb25faW5mbxj5CSABKAsyGS5Qb3Rpb25BY3Rpdml0eURldGFpbEluZm9I",
+            "ABJHCht0YW51a2lfdHJhdmVsX2FjdGl2aXR5X2luZm8YhA4gASgLMh8uVGFu",
+            "dWtpVHJhdmVsQWN0aXZpdHlEZXRhaWxJbmZvSAASRQoabGFudGVybl9yaXRl",
+            "X2FjdGl2aXR5X2luZm8Y1A4gASgLMh4uTGFudGVyblJpdGVBY3Rpdml0eURl",
+            "dGFpbEluZm9IABJCChRtaWNoaWFlX21hdHN1cmlfaW5mbxjCASABKAsyIS5N",
+            "aWNoaWFlTWF0c3VyaUFjdGl2aXR5RGV0YWlsSW5mb0gAEjcKDmJhcnRlbmRl",
+            "cl9pbmZvGL0NIAEoCzIcLkJhcnRlbmRlckFjdGl2aXR5RGV0YWlsSW5mb0gA",
+            "EisKCHVnY19pbmZvGL8FIAEoCzIWLlVnY0FjdGl2aXR5RGV0YWlsSW5mb0gA",
+            "EjwKEWNyeXN0YWxfbGlua19pbmZvGMoJIAEoCzIeLkNyeXN0YWxMaW5rQWN0",
+            "aXZpdHlEZXRhaWxJbmZvSAASMwoMaXJvZG9yaV9pbmZvGO4FIAEoCzIaLkly",
+            "b2RvcmlBY3Rpdml0eURldGFpbEluZm9IABIvCgpwaG90b19pbmZvGMgCIAEo",
+            "CzIYLlBob3RvQWN0aXZpdHlEZXRhaWxJbmZvSAASLwoKc3BpY2VfaW5mbxjj",
+            "DiABKAsyGC5TcGljZUFjdGl2aXR5RGV0YWlsSW5mb0gAEi8KCmdhY2hhX2lu",
+            "Zm8YuQYgASgLMhguR2FjaGFBY3Rpdml0eURldGFpbEluZm9IABJVCh5sdW1p",
+            "bmFuY2Vfc3RvbmVfY2hhbGxlbmdlX2luZm8YnAogASgLMiouTHVtaW5hbmNl",
+            "U3RvbmVDaGFsbGVuZ2VBY3Rpdml0eURldGFpbEluZm9IABI6ChByb2d1ZV9k",
+            "aWFyeV9pbmZvGKwGIAEoCzIdLlJvZ3VlRGlhcnlBY3Rpdml0eURldGFpbElu",
+            "Zm9IABI3ChNzdW1tZXJfdGltZV92Ml9pbmZvGO4EIAEoCzIXLlN1bW1lclRp",
+            "bWVWMkRldGFpbEluZm9IABI0ChFpc2xhbmRfcGFydHlfaW5mbxjdDiABKAsy",
+            "Fi5Jc2xhbmRQYXJ0eURldGFpbEluZm9IABItCglnZWFyX2luZm8Y0gUgASgL",
+            "MhcuR2VhckFjdGl2aXR5RGV0YWlsSW5mb0gAEjwKFWdyYXZlbl9pbm5vY2Vu",
+            "Y2VfaW5mbxj3DiABKAsyGi5HcmF2ZW5Jbm5vY2VuY2VEZXRhaWxJbmZvSAAS",
+            "OAoTaW5zdGFibGVfc3ByYXlfaW5mbxiTCCABKAsyGC5JbnN0YWJsZVNwcmF5",
+            "RGV0YWlsSW5mb0gAEkAKE211cWFkYXNfcG90aW9uX2luZm8YhQkgASgLMiAu",
+            "TXVxYWRhc1BvdGlvbkFjdGl2aXR5RGV0YWlsSW5mb0gAEkIKFHRyZWFzdXJl",
+            "X3NlZWxpZV9pbmZvGMYHIAEoCzIhLlRyZWFzdXJlU2VlbGllQWN0aXZpdHlE",
+            "ZXRhaWxJbmZvSAASPwoXcm9ja19ib2FyZF9leHBsb3JlX2luZm8YtgggASgL",
+            "MhsuUm9ja0JvYXJkRXhwbG9yZURldGFpbEluZm9IABIrCgx2aW50YWdlX2lu",
+            "Zm8YvQMgASgLMhIuVmludGFnZURldGFpbEluZm9IABIwCg93aW5kX2ZpZWxk",
+            "X2luZm8Y4AIgASgLMhQuV2luZEZpZWxkRGV0YWlsSW5mb0gAEjgKE2Z1bmd1",
+            "c19maWdodGVyX2luZm8Y6gMgASgLMhguRnVuZ3VzRmlnaHRlckRldGFpbElu",
+            "Zm9IABI4ChNjaGFyX2FtdXNlbWVudF9pbmZvGNgLIAEoCzIYLkNoYXJBbXVz",
+            "ZW1lbnREZXRhaWxJbmZvSAASPgoVZWZmaWd5X2NoYWxsZW5nZV9pbmZvGIEI",
+            "IAEoCzIcLkVmZmlneUNoYWxsZW5nZVYyRGV0YWlsSW5mb0gAGjYKFEFjdGl2",
+            "aXR5Q29pbk1hcEVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1ZRgCIAEoDToC",
+            "OAEaNQoTV2lzaEdpZnROdW1NYXBFbnRyeRILCgNrZXkYASABKA0SDQoFdmFs",
+            "dWUYAiABKA06AjgBQggKBmRldGFpbEIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ActivityWatcherInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ArenaChallengeActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.AsterActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BartenderActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BlessingActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BlitzRushActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BounceConjuringActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BuoyantCombatDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChannelerSlabActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChessActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CrucibleActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CrystalLinkActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DeliveryActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DigActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DragonSpineActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EchoShellDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EffigyActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ExpeditionActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FindHilichurlDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FleurFairActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FlightActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GachaActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GearActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GravenInnocenceDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HachiActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HideAndSeekActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IrodoriActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IslandPartyActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LanternRiteActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LuminanceStoneChallengeActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LunaRiteDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MistTrialActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MoonfinTrialActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MuqadasPotionDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MusicGameActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PhotoActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PlantFlowerActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PotionActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RogueDiaryActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RoguelikeDungeonActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SalesmanActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SeaLampActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SeaLampActivityInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SpiceActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SummerTimeDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SummerTimeV2DetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SumoActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TanukiTravelActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TreasureMapActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TreasureSeelieDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TrialAvatarActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.UgcActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2800PHPHMILPOLCReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WaterSpiritActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WinterCampActivityDetailInfoReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ActivityPushTipsDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ActivityWatcherInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ArenaChallengeActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.AsterActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BartenderActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BlessingActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BlitzRushActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BounceConjuringActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BuoyantCombatDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChannelerSlabActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CharAmusementDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChessActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CrucibleActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CrystalLinkActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DeliveryActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DigActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DragonSpineActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EchoShellDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EffigyActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2DetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ExpeditionActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FindHilichurlDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FleurFairActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FlightActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FungusFighterDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GachaActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GearActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GravenInnocenceDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HachiActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HideAndSeekActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IrodoriActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IslandPartyDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LanternRiteActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LuminanceStoneChallengeActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LunaRiteDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MistTrialActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MoonfinTrialActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MuqadasPotionActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MusicGameActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PhotoActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PlantFlowerActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PotionActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RockBoardExploreDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RogueDiaryActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RoguelikeDungeonActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SalesmanActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SeaLampActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SeaLampActivityInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SpiceActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SummerTimeDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SummerTimeV2DetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SumoActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TanukiTravelActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TreasureMapActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TreasureSeelieActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TrialAvatarActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.UgcActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VintageDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WaterSpiritActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WindFieldDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WinterCampActivityDetailInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ActivityInfo), global::Weedwacker.Shared.Network.Proto.ActivityInfo.Parser, new[]{ "IsPlayOpenAnim", "ScheduleId", "CurScore", "IsStarting", "TakenRewardList", "Unk2700NONJFHAIFLA", "SelectedAvatarRewardId", "FirstDayStartTime", "ScoreLimit", "IsFinished", "IsHidden", "BeginTime", "EndTime", "ActivityCoinMap", "ActivityType", "Unk2700EDKLLHBEEGE", "Unk2800KOMIPKKKOBE", "MeetCondList", "Unk2700IFPBCNLCKLG", "ExpireCondList", "WatcherInfoList", "ActivityId", "SamLampInfo", "CrucibleInfo", "SalesmanInfo", "TrialAvatarInfo", "DeliveryInfo", "AsterInfo", "FlightInfo", "DragonSpineInfo", "EffigyInfo", "TreasureMapInfo", "BlessingInfo", "SeaLampInfo", "ExpeditionInfo", "ArenaChallengeInfo", "FleurFairInfo", "WaterSpiritInfo", "ChannelerSlabInfo", "MistTrialActivityInfo", "HideAndSeekInfo", "FindHilichurlInfo", "SummerTimeInfo", "BuoyantCombatInfo", "EchoShellInfo", "BounceConjuringInfo", "BlitzRushInfo", "ChessInfo", "SumoInfo", "MoonfinTrialInfo", "LunaRiteInfo", "PlantFlowerInfo", "MusicGameInfo", "RoguelikeDungeonInfo", "DigInfo", "HachiInfo", "WinterCampInfo", "PotionInfo", "TanukiTravelActivityInfo", "LanternRiteActivityInfo", "MichiaeMatsuriInfo", "BartenderInfo", "UgcInfo", "CrystalLinkInfo", "IrodoriInfo", "PhotoInfo", "SpiceInfo", "GachaInfo", "LuminanceStoneChallengeInfo", "RogueDiaryInfo", "SummerTimeV2Info", "IslandPartyInfo", "GearInfo", "GravenInnocenceInfo", "InstableSprayInfo", "MuqadasPotionInfo", "TreasureSeelieInfo" }, new[]{ "Detail" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ActivityInfo), global::Weedwacker.Shared.Network.Proto.ActivityInfo.Parser, new[]{ "IsFinished", "ActivityType", "BeginTime", "TakenRewardList", "IsHidden", "IsQuickOpen", "MeetCondList", "ActivityCoinMap", "IsBannerCleared", "CurScore", "FirstDayStartTime", "ActivityId", "IsPlayOpenAnim", "EndTime", "ScoreLimit", "WishGiftNumMap", "SelectedAvatarRewardId", "IsCommonContentClosed", "ExpireCondList", "ActivityPushTipsDataList", "WatcherInfoList", "ScheduleId", "IsStarting", "SamLampInfo", "CrucibleInfo", "SalesmanInfo", "TrialAvatarInfo", "DeliveryInfo", "AsterInfo", "FlightInfo", "DragonSpineInfo", "EffigyInfo", "TreasureMapInfo", "BlessingInfo", "SeaLampInfo", "ExpeditionInfo", "ArenaChallengeInfo", "FleurFairInfo", "WaterSpiritInfo", "ChannelerSlabInfo", "MistTrialActivityInfo", "HideAndSeekInfo", "FindHilichurlInfo", "SummerTimeInfo", "BuoyantCombatInfo", "EchoShellInfo", "BounceConjuringInfo", "BlitzRushInfo", "ChessInfo", "SumoInfo", "MoonfinTrialInfo", "LunaRiteInfo", "PlantFlowerInfo", "MusicGameInfo", "RoguelikeDungeonInfo", "DigInfo", "HachiInfo", "WinterCampInfo", "PotionInfo", "TanukiTravelActivityInfo", "LanternRiteActivityInfo", "MichiaeMatsuriInfo", "BartenderInfo", "UgcInfo", "CrystalLinkInfo", "IrodoriInfo", "PhotoInfo", "SpiceInfo", "GachaInfo", "LuminanceStoneChallengeInfo", "RogueDiaryInfo", "SummerTimeV2Info", "IslandPartyInfo", "GearInfo", "GravenInnocenceInfo", "InstableSprayInfo", "MuqadasPotionInfo", "TreasureSeelieInfo", "RockBoardExploreInfo", "VintageInfo", "WindFieldInfo", "FungusFighterInfo", "CharAmusementInfo", "EffigyChallengeInfo" }, new[]{ "Detail" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
           }));
     }
     #endregion
@@ -201,28 +214,29 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ActivityInfo(ActivityInfo other) : this() {
-      isPlayOpenAnim_ = other.isPlayOpenAnim_;
-      scheduleId_ = other.scheduleId_;
-      curScore_ = other.curScore_;
-      isStarting_ = other.isStarting_;
-      takenRewardList_ = other.takenRewardList_.Clone();
-      unk2700NONJFHAIFLA_ = other.unk2700NONJFHAIFLA_;
-      selectedAvatarRewardId_ = other.selectedAvatarRewardId_;
-      firstDayStartTime_ = other.firstDayStartTime_;
-      scoreLimit_ = other.scoreLimit_;
       isFinished_ = other.isFinished_;
-      isHidden_ = other.isHidden_;
-      beginTime_ = other.beginTime_;
-      endTime_ = other.endTime_;
-      activityCoinMap_ = other.activityCoinMap_.Clone();
       activityType_ = other.activityType_;
-      unk2700EDKLLHBEEGE_ = other.unk2700EDKLLHBEEGE_;
-      unk2800KOMIPKKKOBE_ = other.unk2800KOMIPKKKOBE_.Clone();
+      beginTime_ = other.beginTime_;
+      takenRewardList_ = other.takenRewardList_.Clone();
+      isHidden_ = other.isHidden_;
+      isQuickOpen_ = other.isQuickOpen_;
       meetCondList_ = other.meetCondList_.Clone();
-      unk2700IFPBCNLCKLG_ = other.unk2700IFPBCNLCKLG_.Clone();
-      expireCondList_ = other.expireCondList_.Clone();
-      watcherInfoList_ = other.watcherInfoList_.Clone();
+      activityCoinMap_ = other.activityCoinMap_.Clone();
+      isBannerCleared_ = other.isBannerCleared_;
+      curScore_ = other.curScore_;
+      firstDayStartTime_ = other.firstDayStartTime_;
       activityId_ = other.activityId_;
+      isPlayOpenAnim_ = other.isPlayOpenAnim_;
+      endTime_ = other.endTime_;
+      scoreLimit_ = other.scoreLimit_;
+      wishGiftNumMap_ = other.wishGiftNumMap_.Clone();
+      selectedAvatarRewardId_ = other.selectedAvatarRewardId_;
+      isCommonContentClosed_ = other.isCommonContentClosed_;
+      expireCondList_ = other.expireCondList_.Clone();
+      activityPushTipsDataList_ = other.activityPushTipsDataList_.Clone();
+      watcherInfoList_ = other.watcherInfoList_.Clone();
+      scheduleId_ = other.scheduleId_;
+      isStarting_ = other.isStarting_;
       switch (other.DetailCase) {
         case DetailOneofCase.SamLampInfo:
           SamLampInfo = other.SamLampInfo.Clone();
@@ -389,6 +403,24 @@ namespace Weedwacker.Shared.Network.Proto {
         case DetailOneofCase.TreasureSeelieInfo:
           TreasureSeelieInfo = other.TreasureSeelieInfo.Clone();
           break;
+        case DetailOneofCase.RockBoardExploreInfo:
+          RockBoardExploreInfo = other.RockBoardExploreInfo.Clone();
+          break;
+        case DetailOneofCase.VintageInfo:
+          VintageInfo = other.VintageInfo.Clone();
+          break;
+        case DetailOneofCase.WindFieldInfo:
+          WindFieldInfo = other.WindFieldInfo.Clone();
+          break;
+        case DetailOneofCase.FungusFighterInfo:
+          FungusFighterInfo = other.FungusFighterInfo.Clone();
+          break;
+        case DetailOneofCase.CharAmusementInfo:
+          CharAmusementInfo = other.CharAmusementInfo.Clone();
+          break;
+        case DetailOneofCase.EffigyChallengeInfo:
+          EffigyChallengeInfo = other.EffigyChallengeInfo.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -398,113 +430,6 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ActivityInfo Clone() {
       return new ActivityInfo(this);
-    }
-
-    /// <summary>Field number for the "is_play_open_anim" field.</summary>
-    public const int IsPlayOpenAnimFieldNumber = 13;
-    private bool isPlayOpenAnim_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsPlayOpenAnim {
-      get { return isPlayOpenAnim_; }
-      set {
-        isPlayOpenAnim_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "schedule_id" field.</summary>
-    public const int ScheduleIdFieldNumber = 15;
-    private uint scheduleId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint ScheduleId {
-      get { return scheduleId_; }
-      set {
-        scheduleId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cur_score" field.</summary>
-    public const int CurScoreFieldNumber = 1906;
-    private uint curScore_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint CurScore {
-      get { return curScore_; }
-      set {
-        curScore_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_starting" field.</summary>
-    public const int IsStartingFieldNumber = 9;
-    private bool isStarting_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsStarting {
-      get { return isStarting_; }
-      set {
-        isStarting_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "taken_reward_list" field.</summary>
-    public const int TakenRewardListFieldNumber = 329;
-    private static readonly pb::FieldCodec<uint> _repeated_takenRewardList_codec
-        = pb::FieldCodec.ForUInt32(2634);
-    private readonly pbc::RepeatedField<uint> takenRewardList_ = new pbc::RepeatedField<uint>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> TakenRewardList {
-      get { return takenRewardList_; }
-    }
-
-    /// <summary>Field number for the "Unk2700_NONJFHAIFLA" field.</summary>
-    public const int Unk2700NONJFHAIFLAFieldNumber = 102;
-    private bool unk2700NONJFHAIFLA_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700NONJFHAIFLA {
-      get { return unk2700NONJFHAIFLA_; }
-      set {
-        unk2700NONJFHAIFLA_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "selected_avatar_reward_id" field.</summary>
-    public const int SelectedAvatarRewardIdFieldNumber = 1290;
-    private uint selectedAvatarRewardId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint SelectedAvatarRewardId {
-      get { return selectedAvatarRewardId_; }
-      set {
-        selectedAvatarRewardId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "first_day_start_time" field.</summary>
-    public const int FirstDayStartTimeFieldNumber = 592;
-    private uint firstDayStartTime_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint FirstDayStartTime {
-      get { return firstDayStartTime_; }
-      set {
-        firstDayStartTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "score_limit" field.</summary>
-    public const int ScoreLimitFieldNumber = 1958;
-    private uint scoreLimit_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint ScoreLimit {
-      get { return scoreLimit_; }
-      set {
-        scoreLimit_ = value;
-      }
     }
 
     /// <summary>Field number for the "is_finished" field.</summary>
@@ -519,15 +444,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "is_hidden" field.</summary>
-    public const int IsHiddenFieldNumber = 919;
-    private bool isHidden_;
+    /// <summary>Field number for the "activity_type" field.</summary>
+    public const int ActivityTypeFieldNumber = 4;
+    private uint activityType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsHidden {
-      get { return isHidden_; }
+    public uint ActivityType {
+      get { return activityType_; }
       set {
-        isHidden_ = value;
+        activityType_ = value;
       }
     }
 
@@ -543,62 +468,39 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "end_time" field.</summary>
-    public const int EndTimeFieldNumber = 5;
-    private uint endTime_;
+    /// <summary>Field number for the "taken_reward_list" field.</summary>
+    public const int TakenRewardListFieldNumber = 329;
+    private static readonly pb::FieldCodec<uint> _repeated_takenRewardList_codec
+        = pb::FieldCodec.ForUInt32(2634);
+    private readonly pbc::RepeatedField<uint> takenRewardList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint EndTime {
-      get { return endTime_; }
+    public pbc::RepeatedField<uint> TakenRewardList {
+      get { return takenRewardList_; }
+    }
+
+    /// <summary>Field number for the "is_hidden" field.</summary>
+    public const int IsHiddenFieldNumber = 919;
+    private bool isHidden_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsHidden {
+      get { return isHidden_; }
       set {
-        endTime_ = value;
+        isHidden_ = value;
       }
     }
 
-    /// <summary>Field number for the "activity_coin_map" field.</summary>
-    public const int ActivityCoinMapFieldNumber = 682;
-    private static readonly pbc::MapField<uint, uint>.Codec _map_activityCoinMap_codec
-        = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 5458);
-    private readonly pbc::MapField<uint, uint> activityCoinMap_ = new pbc::MapField<uint, uint>();
+    /// <summary>Field number for the "is_quick_open" field.</summary>
+    public const int IsQuickOpenFieldNumber = 1449;
+    private bool isQuickOpen_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, uint> ActivityCoinMap {
-      get { return activityCoinMap_; }
-    }
-
-    /// <summary>Field number for the "activity_type" field.</summary>
-    public const int ActivityTypeFieldNumber = 4;
-    private uint activityType_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint ActivityType {
-      get { return activityType_; }
+    public bool IsQuickOpen {
+      get { return isQuickOpen_; }
       set {
-        activityType_ = value;
+        isQuickOpen_ = value;
       }
-    }
-
-    /// <summary>Field number for the "Unk2700_EDKLLHBEEGE" field.</summary>
-    public const int Unk2700EDKLLHBEEGEFieldNumber = 1449;
-    private bool unk2700EDKLLHBEEGE_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700EDKLLHBEEGE {
-      get { return unk2700EDKLLHBEEGE_; }
-      set {
-        unk2700EDKLLHBEEGE_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "Unk2800_KOMIPKKKOBE" field.</summary>
-    public const int Unk2800KOMIPKKKOBEFieldNumber = 864;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2800_PHPHMILPOLC> _repeated_unk2800KOMIPKKKOBE_codec
-        = pb::FieldCodec.ForMessage(6914, global::Weedwacker.Shared.Network.Proto.Unk2800_PHPHMILPOLC.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_PHPHMILPOLC> unk2800KOMIPKKKOBE_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_PHPHMILPOLC>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_PHPHMILPOLC> Unk2800KOMIPKKKOBE {
-      get { return unk2800KOMIPKKKOBE_; }
     }
 
     /// <summary>Field number for the "meet_cond_list" field.</summary>
@@ -612,15 +514,134 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return meetCondList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_IFPBCNLCKLG" field.</summary>
-    public const int Unk2700IFPBCNLCKLGFieldNumber = 1399;
-    private static readonly pbc::MapField<uint, uint>.Codec _map_unk2700IFPBCNLCKLG_codec
-        = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 11194);
-    private readonly pbc::MapField<uint, uint> unk2700IFPBCNLCKLG_ = new pbc::MapField<uint, uint>();
+    /// <summary>Field number for the "activity_coin_map" field.</summary>
+    public const int ActivityCoinMapFieldNumber = 682;
+    private static readonly pbc::MapField<uint, uint>.Codec _map_activityCoinMap_codec
+        = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 5458);
+    private readonly pbc::MapField<uint, uint> activityCoinMap_ = new pbc::MapField<uint, uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, uint> Unk2700IFPBCNLCKLG {
-      get { return unk2700IFPBCNLCKLG_; }
+    public pbc::MapField<uint, uint> ActivityCoinMap {
+      get { return activityCoinMap_; }
+    }
+
+    /// <summary>Field number for the "is_banner_cleared" field.</summary>
+    public const int IsBannerClearedFieldNumber = 102;
+    private bool isBannerCleared_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsBannerCleared {
+      get { return isBannerCleared_; }
+      set {
+        isBannerCleared_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "cur_score" field.</summary>
+    public const int CurScoreFieldNumber = 1906;
+    private uint curScore_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint CurScore {
+      get { return curScore_; }
+      set {
+        curScore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "first_day_start_time" field.</summary>
+    public const int FirstDayStartTimeFieldNumber = 592;
+    private uint firstDayStartTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint FirstDayStartTime {
+      get { return firstDayStartTime_; }
+      set {
+        firstDayStartTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "activity_id" field.</summary>
+    public const int ActivityIdFieldNumber = 12;
+    private uint activityId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint ActivityId {
+      get { return activityId_; }
+      set {
+        activityId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_play_open_anim" field.</summary>
+    public const int IsPlayOpenAnimFieldNumber = 13;
+    private bool isPlayOpenAnim_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsPlayOpenAnim {
+      get { return isPlayOpenAnim_; }
+      set {
+        isPlayOpenAnim_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "end_time" field.</summary>
+    public const int EndTimeFieldNumber = 5;
+    private uint endTime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint EndTime {
+      get { return endTime_; }
+      set {
+        endTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "score_limit" field.</summary>
+    public const int ScoreLimitFieldNumber = 1958;
+    private uint scoreLimit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint ScoreLimit {
+      get { return scoreLimit_; }
+      set {
+        scoreLimit_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "wish_gift_num_map" field.</summary>
+    public const int WishGiftNumMapFieldNumber = 1399;
+    private static readonly pbc::MapField<uint, uint>.Codec _map_wishGiftNumMap_codec
+        = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 11194);
+    private readonly pbc::MapField<uint, uint> wishGiftNumMap_ = new pbc::MapField<uint, uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::MapField<uint, uint> WishGiftNumMap {
+      get { return wishGiftNumMap_; }
+    }
+
+    /// <summary>Field number for the "selected_avatar_reward_id" field.</summary>
+    public const int SelectedAvatarRewardIdFieldNumber = 1290;
+    private uint selectedAvatarRewardId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint SelectedAvatarRewardId {
+      get { return selectedAvatarRewardId_; }
+      set {
+        selectedAvatarRewardId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_common_content_closed" field.</summary>
+    public const int IsCommonContentClosedFieldNumber = 1963;
+    private bool isCommonContentClosed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsCommonContentClosed {
+      get { return isCommonContentClosed_; }
+      set {
+        isCommonContentClosed_ = value;
+      }
     }
 
     /// <summary>Field number for the "expire_cond_list" field.</summary>
@@ -634,6 +655,17 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return expireCondList_; }
     }
 
+    /// <summary>Field number for the "activity_push_tips_data_list" field.</summary>
+    public const int ActivityPushTipsDataListFieldNumber = 864;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.ActivityPushTipsData> _repeated_activityPushTipsDataList_codec
+        = pb::FieldCodec.ForMessage(6914, global::Weedwacker.Shared.Network.Proto.ActivityPushTipsData.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ActivityPushTipsData> activityPushTipsDataList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ActivityPushTipsData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ActivityPushTipsData> ActivityPushTipsDataList {
+      get { return activityPushTipsDataList_; }
+    }
+
     /// <summary>Field number for the "watcher_info_list" field.</summary>
     public const int WatcherInfoListFieldNumber = 2;
     private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.ActivityWatcherInfo> _repeated_watcherInfoList_codec
@@ -645,15 +677,27 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return watcherInfoList_; }
     }
 
-    /// <summary>Field number for the "activity_id" field.</summary>
-    public const int ActivityIdFieldNumber = 12;
-    private uint activityId_;
+    /// <summary>Field number for the "schedule_id" field.</summary>
+    public const int ScheduleIdFieldNumber = 15;
+    private uint scheduleId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint ActivityId {
-      get { return activityId_; }
+    public uint ScheduleId {
+      get { return scheduleId_; }
       set {
-        activityId_ = value;
+        scheduleId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_starting" field.</summary>
+    public const int IsStartingFieldNumber = 9;
+    private bool isStarting_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsStarting {
+      get { return isStarting_; }
+      set {
+        isStarting_ = value;
       }
     }
 
@@ -1249,8 +1293,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public const int IslandPartyInfoFieldNumber = 1885;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.IslandPartyActivityDetailInfo IslandPartyInfo {
-      get { return detailCase_ == DetailOneofCase.IslandPartyInfo ? (global::Weedwacker.Shared.Network.Proto.IslandPartyActivityDetailInfo) detail_ : null; }
+    public global::Weedwacker.Shared.Network.Proto.IslandPartyDetailInfo IslandPartyInfo {
+      get { return detailCase_ == DetailOneofCase.IslandPartyInfo ? (global::Weedwacker.Shared.Network.Proto.IslandPartyDetailInfo) detail_ : null; }
       set {
         detail_ = value;
         detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.IslandPartyInfo;
@@ -1297,8 +1341,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public const int MuqadasPotionInfoFieldNumber = 1157;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.MuqadasPotionDetailInfo MuqadasPotionInfo {
-      get { return detailCase_ == DetailOneofCase.MuqadasPotionInfo ? (global::Weedwacker.Shared.Network.Proto.MuqadasPotionDetailInfo) detail_ : null; }
+    public global::Weedwacker.Shared.Network.Proto.MuqadasPotionActivityDetailInfo MuqadasPotionInfo {
+      get { return detailCase_ == DetailOneofCase.MuqadasPotionInfo ? (global::Weedwacker.Shared.Network.Proto.MuqadasPotionActivityDetailInfo) detail_ : null; }
       set {
         detail_ = value;
         detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.MuqadasPotionInfo;
@@ -1309,11 +1353,83 @@ namespace Weedwacker.Shared.Network.Proto {
     public const int TreasureSeelieInfoFieldNumber = 966;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.TreasureSeelieDetailInfo TreasureSeelieInfo {
-      get { return detailCase_ == DetailOneofCase.TreasureSeelieInfo ? (global::Weedwacker.Shared.Network.Proto.TreasureSeelieDetailInfo) detail_ : null; }
+    public global::Weedwacker.Shared.Network.Proto.TreasureSeelieActivityDetailInfo TreasureSeelieInfo {
+      get { return detailCase_ == DetailOneofCase.TreasureSeelieInfo ? (global::Weedwacker.Shared.Network.Proto.TreasureSeelieActivityDetailInfo) detail_ : null; }
       set {
         detail_ = value;
         detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.TreasureSeelieInfo;
+      }
+    }
+
+    /// <summary>Field number for the "rock_board_explore_info" field.</summary>
+    public const int RockBoardExploreInfoFieldNumber = 1078;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.RockBoardExploreDetailInfo RockBoardExploreInfo {
+      get { return detailCase_ == DetailOneofCase.RockBoardExploreInfo ? (global::Weedwacker.Shared.Network.Proto.RockBoardExploreDetailInfo) detail_ : null; }
+      set {
+        detail_ = value;
+        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.RockBoardExploreInfo;
+      }
+    }
+
+    /// <summary>Field number for the "vintage_info" field.</summary>
+    public const int VintageInfoFieldNumber = 445;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.VintageDetailInfo VintageInfo {
+      get { return detailCase_ == DetailOneofCase.VintageInfo ? (global::Weedwacker.Shared.Network.Proto.VintageDetailInfo) detail_ : null; }
+      set {
+        detail_ = value;
+        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.VintageInfo;
+      }
+    }
+
+    /// <summary>Field number for the "wind_field_info" field.</summary>
+    public const int WindFieldInfoFieldNumber = 352;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.WindFieldDetailInfo WindFieldInfo {
+      get { return detailCase_ == DetailOneofCase.WindFieldInfo ? (global::Weedwacker.Shared.Network.Proto.WindFieldDetailInfo) detail_ : null; }
+      set {
+        detail_ = value;
+        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.WindFieldInfo;
+      }
+    }
+
+    /// <summary>Field number for the "fungus_fighter_info" field.</summary>
+    public const int FungusFighterInfoFieldNumber = 490;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.FungusFighterDetailInfo FungusFighterInfo {
+      get { return detailCase_ == DetailOneofCase.FungusFighterInfo ? (global::Weedwacker.Shared.Network.Proto.FungusFighterDetailInfo) detail_ : null; }
+      set {
+        detail_ = value;
+        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.FungusFighterInfo;
+      }
+    }
+
+    /// <summary>Field number for the "char_amusement_info" field.</summary>
+    public const int CharAmusementInfoFieldNumber = 1496;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.CharAmusementDetailInfo CharAmusementInfo {
+      get { return detailCase_ == DetailOneofCase.CharAmusementInfo ? (global::Weedwacker.Shared.Network.Proto.CharAmusementDetailInfo) detail_ : null; }
+      set {
+        detail_ = value;
+        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.CharAmusementInfo;
+      }
+    }
+
+    /// <summary>Field number for the "effigy_challenge_info" field.</summary>
+    public const int EffigyChallengeInfoFieldNumber = 1025;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2DetailInfo EffigyChallengeInfo {
+      get { return detailCase_ == DetailOneofCase.EffigyChallengeInfo ? (global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2DetailInfo) detail_ : null; }
+      set {
+        detail_ = value;
+        detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.EffigyChallengeInfo;
       }
     }
 
@@ -1376,6 +1492,12 @@ namespace Weedwacker.Shared.Network.Proto {
       InstableSprayInfo = 1043,
       MuqadasPotionInfo = 1157,
       TreasureSeelieInfo = 966,
+      RockBoardExploreInfo = 1078,
+      VintageInfo = 445,
+      WindFieldInfo = 352,
+      FungusFighterInfo = 490,
+      CharAmusementInfo = 1496,
+      EffigyChallengeInfo = 1025,
     }
     private DetailOneofCase detailCase_ = DetailOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1406,28 +1528,29 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (IsPlayOpenAnim != other.IsPlayOpenAnim) return false;
-      if (ScheduleId != other.ScheduleId) return false;
-      if (CurScore != other.CurScore) return false;
-      if (IsStarting != other.IsStarting) return false;
-      if(!takenRewardList_.Equals(other.takenRewardList_)) return false;
-      if (Unk2700NONJFHAIFLA != other.Unk2700NONJFHAIFLA) return false;
-      if (SelectedAvatarRewardId != other.SelectedAvatarRewardId) return false;
-      if (FirstDayStartTime != other.FirstDayStartTime) return false;
-      if (ScoreLimit != other.ScoreLimit) return false;
       if (IsFinished != other.IsFinished) return false;
-      if (IsHidden != other.IsHidden) return false;
-      if (BeginTime != other.BeginTime) return false;
-      if (EndTime != other.EndTime) return false;
-      if (!ActivityCoinMap.Equals(other.ActivityCoinMap)) return false;
       if (ActivityType != other.ActivityType) return false;
-      if (Unk2700EDKLLHBEEGE != other.Unk2700EDKLLHBEEGE) return false;
-      if(!unk2800KOMIPKKKOBE_.Equals(other.unk2800KOMIPKKKOBE_)) return false;
+      if (BeginTime != other.BeginTime) return false;
+      if(!takenRewardList_.Equals(other.takenRewardList_)) return false;
+      if (IsHidden != other.IsHidden) return false;
+      if (IsQuickOpen != other.IsQuickOpen) return false;
       if(!meetCondList_.Equals(other.meetCondList_)) return false;
-      if (!Unk2700IFPBCNLCKLG.Equals(other.Unk2700IFPBCNLCKLG)) return false;
-      if(!expireCondList_.Equals(other.expireCondList_)) return false;
-      if(!watcherInfoList_.Equals(other.watcherInfoList_)) return false;
+      if (!ActivityCoinMap.Equals(other.ActivityCoinMap)) return false;
+      if (IsBannerCleared != other.IsBannerCleared) return false;
+      if (CurScore != other.CurScore) return false;
+      if (FirstDayStartTime != other.FirstDayStartTime) return false;
       if (ActivityId != other.ActivityId) return false;
+      if (IsPlayOpenAnim != other.IsPlayOpenAnim) return false;
+      if (EndTime != other.EndTime) return false;
+      if (ScoreLimit != other.ScoreLimit) return false;
+      if (!WishGiftNumMap.Equals(other.WishGiftNumMap)) return false;
+      if (SelectedAvatarRewardId != other.SelectedAvatarRewardId) return false;
+      if (IsCommonContentClosed != other.IsCommonContentClosed) return false;
+      if(!expireCondList_.Equals(other.expireCondList_)) return false;
+      if(!activityPushTipsDataList_.Equals(other.activityPushTipsDataList_)) return false;
+      if(!watcherInfoList_.Equals(other.watcherInfoList_)) return false;
+      if (ScheduleId != other.ScheduleId) return false;
+      if (IsStarting != other.IsStarting) return false;
       if (!object.Equals(SamLampInfo, other.SamLampInfo)) return false;
       if (!object.Equals(CrucibleInfo, other.CrucibleInfo)) return false;
       if (!object.Equals(SalesmanInfo, other.SalesmanInfo)) return false;
@@ -1483,6 +1606,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (!object.Equals(InstableSprayInfo, other.InstableSprayInfo)) return false;
       if (!object.Equals(MuqadasPotionInfo, other.MuqadasPotionInfo)) return false;
       if (!object.Equals(TreasureSeelieInfo, other.TreasureSeelieInfo)) return false;
+      if (!object.Equals(RockBoardExploreInfo, other.RockBoardExploreInfo)) return false;
+      if (!object.Equals(VintageInfo, other.VintageInfo)) return false;
+      if (!object.Equals(WindFieldInfo, other.WindFieldInfo)) return false;
+      if (!object.Equals(FungusFighterInfo, other.FungusFighterInfo)) return false;
+      if (!object.Equals(CharAmusementInfo, other.CharAmusementInfo)) return false;
+      if (!object.Equals(EffigyChallengeInfo, other.EffigyChallengeInfo)) return false;
       if (DetailCase != other.DetailCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1491,28 +1620,29 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (IsPlayOpenAnim != false) hash ^= IsPlayOpenAnim.GetHashCode();
-      if (ScheduleId != 0) hash ^= ScheduleId.GetHashCode();
-      if (CurScore != 0) hash ^= CurScore.GetHashCode();
-      if (IsStarting != false) hash ^= IsStarting.GetHashCode();
-      hash ^= takenRewardList_.GetHashCode();
-      if (Unk2700NONJFHAIFLA != false) hash ^= Unk2700NONJFHAIFLA.GetHashCode();
-      if (SelectedAvatarRewardId != 0) hash ^= SelectedAvatarRewardId.GetHashCode();
-      if (FirstDayStartTime != 0) hash ^= FirstDayStartTime.GetHashCode();
-      if (ScoreLimit != 0) hash ^= ScoreLimit.GetHashCode();
       if (IsFinished != false) hash ^= IsFinished.GetHashCode();
-      if (IsHidden != false) hash ^= IsHidden.GetHashCode();
-      if (BeginTime != 0) hash ^= BeginTime.GetHashCode();
-      if (EndTime != 0) hash ^= EndTime.GetHashCode();
-      hash ^= ActivityCoinMap.GetHashCode();
       if (ActivityType != 0) hash ^= ActivityType.GetHashCode();
-      if (Unk2700EDKLLHBEEGE != false) hash ^= Unk2700EDKLLHBEEGE.GetHashCode();
-      hash ^= unk2800KOMIPKKKOBE_.GetHashCode();
+      if (BeginTime != 0) hash ^= BeginTime.GetHashCode();
+      hash ^= takenRewardList_.GetHashCode();
+      if (IsHidden != false) hash ^= IsHidden.GetHashCode();
+      if (IsQuickOpen != false) hash ^= IsQuickOpen.GetHashCode();
       hash ^= meetCondList_.GetHashCode();
-      hash ^= Unk2700IFPBCNLCKLG.GetHashCode();
-      hash ^= expireCondList_.GetHashCode();
-      hash ^= watcherInfoList_.GetHashCode();
+      hash ^= ActivityCoinMap.GetHashCode();
+      if (IsBannerCleared != false) hash ^= IsBannerCleared.GetHashCode();
+      if (CurScore != 0) hash ^= CurScore.GetHashCode();
+      if (FirstDayStartTime != 0) hash ^= FirstDayStartTime.GetHashCode();
       if (ActivityId != 0) hash ^= ActivityId.GetHashCode();
+      if (IsPlayOpenAnim != false) hash ^= IsPlayOpenAnim.GetHashCode();
+      if (EndTime != 0) hash ^= EndTime.GetHashCode();
+      if (ScoreLimit != 0) hash ^= ScoreLimit.GetHashCode();
+      hash ^= WishGiftNumMap.GetHashCode();
+      if (SelectedAvatarRewardId != 0) hash ^= SelectedAvatarRewardId.GetHashCode();
+      if (IsCommonContentClosed != false) hash ^= IsCommonContentClosed.GetHashCode();
+      hash ^= expireCondList_.GetHashCode();
+      hash ^= activityPushTipsDataList_.GetHashCode();
+      hash ^= watcherInfoList_.GetHashCode();
+      if (ScheduleId != 0) hash ^= ScheduleId.GetHashCode();
+      if (IsStarting != false) hash ^= IsStarting.GetHashCode();
       if (detailCase_ == DetailOneofCase.SamLampInfo) hash ^= SamLampInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.CrucibleInfo) hash ^= CrucibleInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.SalesmanInfo) hash ^= SalesmanInfo.GetHashCode();
@@ -1568,6 +1698,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (detailCase_ == DetailOneofCase.InstableSprayInfo) hash ^= InstableSprayInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.MuqadasPotionInfo) hash ^= MuqadasPotionInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.TreasureSeelieInfo) hash ^= TreasureSeelieInfo.GetHashCode();
+      if (detailCase_ == DetailOneofCase.RockBoardExploreInfo) hash ^= RockBoardExploreInfo.GetHashCode();
+      if (detailCase_ == DetailOneofCase.VintageInfo) hash ^= VintageInfo.GetHashCode();
+      if (detailCase_ == DetailOneofCase.WindFieldInfo) hash ^= WindFieldInfo.GetHashCode();
+      if (detailCase_ == DetailOneofCase.FungusFighterInfo) hash ^= FungusFighterInfo.GetHashCode();
+      if (detailCase_ == DetailOneofCase.CharAmusementInfo) hash ^= CharAmusementInfo.GetHashCode();
+      if (detailCase_ == DetailOneofCase.EffigyChallengeInfo) hash ^= EffigyChallengeInfo.GetHashCode();
       hash ^= (int) detailCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1642,9 +1778,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(178, 3);
         output.WriteMessage(PlantFlowerInfo);
       }
-      if (Unk2700NONJFHAIFLA != false) {
+      if (IsBannerCleared != false) {
         output.WriteRawTag(176, 6);
-        output.WriteBool(Unk2700NONJFHAIFLA);
+        output.WriteBool(IsBannerCleared);
       }
       if (detailCase_ == DetailOneofCase.MistTrialActivityInfo) {
         output.WriteRawTag(226, 9);
@@ -1667,6 +1803,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteMessage(PhotoInfo);
       }
       takenRewardList_.WriteTo(output, _repeated_takenRewardList_codec);
+      if (detailCase_ == DetailOneofCase.WindFieldInfo) {
+        output.WriteRawTag(130, 22);
+        output.WriteMessage(WindFieldInfo);
+      }
       if (detailCase_ == DetailOneofCase.EffigyInfo) {
         output.WriteRawTag(186, 24);
         output.WriteMessage(EffigyInfo);
@@ -1679,9 +1819,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(218, 26);
         output.WriteMessage(HideAndSeekInfo);
       }
+      if (detailCase_ == DetailOneofCase.VintageInfo) {
+        output.WriteRawTag(234, 27);
+        output.WriteMessage(VintageInfo);
+      }
       if (detailCase_ == DetailOneofCase.MusicGameInfo) {
         output.WriteRawTag(226, 28);
         output.WriteMessage(MusicGameInfo);
+      }
+      if (detailCase_ == DetailOneofCase.FungusFighterInfo) {
+        output.WriteRawTag(210, 30);
+        output.WriteMessage(FungusFighterInfo);
       }
       if (detailCase_ == DetailOneofCase.HachiInfo) {
         output.WriteRawTag(218, 30);
@@ -1744,7 +1892,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(218, 53);
         output.WriteMessage(ArenaChallengeInfo);
       }
-      unk2800KOMIPKKKOBE_.WriteTo(output, _repeated_unk2800KOMIPKKKOBE_codec);
+      activityPushTipsDataList_.WriteTo(output, _repeated_activityPushTipsDataList_codec);
       if (IsHidden != false) {
         output.WriteRawTag(184, 57);
         output.WriteBool(IsHidden);
@@ -1761,9 +1909,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(186, 63);
         output.WriteMessage(ChannelerSlabInfo);
       }
+      if (detailCase_ == DetailOneofCase.EffigyChallengeInfo) {
+        output.WriteRawTag(138, 64);
+        output.WriteMessage(EffigyChallengeInfo);
+      }
       if (detailCase_ == DetailOneofCase.InstableSprayInfo) {
         output.WriteRawTag(154, 65);
         output.WriteMessage(InstableSprayInfo);
+      }
+      if (detailCase_ == DetailOneofCase.RockBoardExploreInfo) {
+        output.WriteRawTag(178, 67);
+        output.WriteMessage(RockBoardExploreInfo);
       }
       if (detailCase_ == DetailOneofCase.WinterCampInfo) {
         output.WriteRawTag(218, 67);
@@ -1813,14 +1969,18 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(226, 85);
         output.WriteMessage(SummerTimeInfo);
       }
-      unk2700IFPBCNLCKLG_.WriteTo(output, _map_unk2700IFPBCNLCKLG_codec);
+      wishGiftNumMap_.WriteTo(output, _map_wishGiftNumMap_codec);
       if (detailCase_ == DetailOneofCase.FindHilichurlInfo) {
         output.WriteRawTag(154, 88);
         output.WriteMessage(FindHilichurlInfo);
       }
-      if (Unk2700EDKLLHBEEGE != false) {
+      if (IsQuickOpen != false) {
         output.WriteRawTag(200, 90);
-        output.WriteBool(Unk2700EDKLLHBEEGE);
+        output.WriteBool(IsQuickOpen);
+      }
+      if (detailCase_ == DetailOneofCase.CharAmusementInfo) {
+        output.WriteRawTag(194, 93);
+        output.WriteMessage(CharAmusementInfo);
       }
       if (detailCase_ == DetailOneofCase.MoonfinTrialInfo) {
         output.WriteRawTag(162, 99);
@@ -1873,6 +2033,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ScoreLimit != 0) {
         output.WriteRawTag(176, 122);
         output.WriteUInt32(ScoreLimit);
+      }
+      if (IsCommonContentClosed != false) {
+        output.WriteRawTag(216, 122);
+        output.WriteBool(IsCommonContentClosed);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1939,9 +2103,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(178, 3);
         output.WriteMessage(PlantFlowerInfo);
       }
-      if (Unk2700NONJFHAIFLA != false) {
+      if (IsBannerCleared != false) {
         output.WriteRawTag(176, 6);
-        output.WriteBool(Unk2700NONJFHAIFLA);
+        output.WriteBool(IsBannerCleared);
       }
       if (detailCase_ == DetailOneofCase.MistTrialActivityInfo) {
         output.WriteRawTag(226, 9);
@@ -1964,6 +2128,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteMessage(PhotoInfo);
       }
       takenRewardList_.WriteTo(ref output, _repeated_takenRewardList_codec);
+      if (detailCase_ == DetailOneofCase.WindFieldInfo) {
+        output.WriteRawTag(130, 22);
+        output.WriteMessage(WindFieldInfo);
+      }
       if (detailCase_ == DetailOneofCase.EffigyInfo) {
         output.WriteRawTag(186, 24);
         output.WriteMessage(EffigyInfo);
@@ -1976,9 +2144,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(218, 26);
         output.WriteMessage(HideAndSeekInfo);
       }
+      if (detailCase_ == DetailOneofCase.VintageInfo) {
+        output.WriteRawTag(234, 27);
+        output.WriteMessage(VintageInfo);
+      }
       if (detailCase_ == DetailOneofCase.MusicGameInfo) {
         output.WriteRawTag(226, 28);
         output.WriteMessage(MusicGameInfo);
+      }
+      if (detailCase_ == DetailOneofCase.FungusFighterInfo) {
+        output.WriteRawTag(210, 30);
+        output.WriteMessage(FungusFighterInfo);
       }
       if (detailCase_ == DetailOneofCase.HachiInfo) {
         output.WriteRawTag(218, 30);
@@ -2041,7 +2217,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(218, 53);
         output.WriteMessage(ArenaChallengeInfo);
       }
-      unk2800KOMIPKKKOBE_.WriteTo(ref output, _repeated_unk2800KOMIPKKKOBE_codec);
+      activityPushTipsDataList_.WriteTo(ref output, _repeated_activityPushTipsDataList_codec);
       if (IsHidden != false) {
         output.WriteRawTag(184, 57);
         output.WriteBool(IsHidden);
@@ -2058,9 +2234,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(186, 63);
         output.WriteMessage(ChannelerSlabInfo);
       }
+      if (detailCase_ == DetailOneofCase.EffigyChallengeInfo) {
+        output.WriteRawTag(138, 64);
+        output.WriteMessage(EffigyChallengeInfo);
+      }
       if (detailCase_ == DetailOneofCase.InstableSprayInfo) {
         output.WriteRawTag(154, 65);
         output.WriteMessage(InstableSprayInfo);
+      }
+      if (detailCase_ == DetailOneofCase.RockBoardExploreInfo) {
+        output.WriteRawTag(178, 67);
+        output.WriteMessage(RockBoardExploreInfo);
       }
       if (detailCase_ == DetailOneofCase.WinterCampInfo) {
         output.WriteRawTag(218, 67);
@@ -2110,14 +2294,18 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(226, 85);
         output.WriteMessage(SummerTimeInfo);
       }
-      unk2700IFPBCNLCKLG_.WriteTo(ref output, _map_unk2700IFPBCNLCKLG_codec);
+      wishGiftNumMap_.WriteTo(ref output, _map_wishGiftNumMap_codec);
       if (detailCase_ == DetailOneofCase.FindHilichurlInfo) {
         output.WriteRawTag(154, 88);
         output.WriteMessage(FindHilichurlInfo);
       }
-      if (Unk2700EDKLLHBEEGE != false) {
+      if (IsQuickOpen != false) {
         output.WriteRawTag(200, 90);
-        output.WriteBool(Unk2700EDKLLHBEEGE);
+        output.WriteBool(IsQuickOpen);
+      }
+      if (detailCase_ == DetailOneofCase.CharAmusementInfo) {
+        output.WriteRawTag(194, 93);
+        output.WriteMessage(CharAmusementInfo);
       }
       if (detailCase_ == DetailOneofCase.MoonfinTrialInfo) {
         output.WriteRawTag(162, 99);
@@ -2171,6 +2359,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(176, 122);
         output.WriteUInt32(ScoreLimit);
       }
+      if (IsCommonContentClosed != false) {
+        output.WriteRawTag(216, 122);
+        output.WriteBool(IsCommonContentClosed);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2181,57 +2373,60 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (IsPlayOpenAnim != false) {
-        size += 1 + 1;
-      }
-      if (ScheduleId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ScheduleId);
-      }
-      if (CurScore != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(CurScore);
-      }
-      if (IsStarting != false) {
-        size += 1 + 1;
-      }
-      size += takenRewardList_.CalculateSize(_repeated_takenRewardList_codec);
-      if (Unk2700NONJFHAIFLA != false) {
-        size += 2 + 1;
-      }
-      if (SelectedAvatarRewardId != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(SelectedAvatarRewardId);
-      }
-      if (FirstDayStartTime != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(FirstDayStartTime);
-      }
-      if (ScoreLimit != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(ScoreLimit);
-      }
       if (IsFinished != false) {
         size += 1 + 1;
       }
-      if (IsHidden != false) {
-        size += 2 + 1;
+      if (ActivityType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ActivityType);
       }
       if (BeginTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BeginTime);
       }
+      size += takenRewardList_.CalculateSize(_repeated_takenRewardList_codec);
+      if (IsHidden != false) {
+        size += 2 + 1;
+      }
+      if (IsQuickOpen != false) {
+        size += 2 + 1;
+      }
+      size += meetCondList_.CalculateSize(_repeated_meetCondList_codec);
+      size += activityCoinMap_.CalculateSize(_map_activityCoinMap_codec);
+      if (IsBannerCleared != false) {
+        size += 2 + 1;
+      }
+      if (CurScore != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(CurScore);
+      }
+      if (FirstDayStartTime != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(FirstDayStartTime);
+      }
+      if (ActivityId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ActivityId);
+      }
+      if (IsPlayOpenAnim != false) {
+        size += 1 + 1;
+      }
       if (EndTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EndTime);
       }
-      size += activityCoinMap_.CalculateSize(_map_activityCoinMap_codec);
-      if (ActivityType != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ActivityType);
+      if (ScoreLimit != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(ScoreLimit);
       }
-      if (Unk2700EDKLLHBEEGE != false) {
+      size += wishGiftNumMap_.CalculateSize(_map_wishGiftNumMap_codec);
+      if (SelectedAvatarRewardId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(SelectedAvatarRewardId);
+      }
+      if (IsCommonContentClosed != false) {
         size += 2 + 1;
       }
-      size += unk2800KOMIPKKKOBE_.CalculateSize(_repeated_unk2800KOMIPKKKOBE_codec);
-      size += meetCondList_.CalculateSize(_repeated_meetCondList_codec);
-      size += unk2700IFPBCNLCKLG_.CalculateSize(_map_unk2700IFPBCNLCKLG_codec);
       size += expireCondList_.CalculateSize(_repeated_expireCondList_codec);
+      size += activityPushTipsDataList_.CalculateSize(_repeated_activityPushTipsDataList_codec);
       size += watcherInfoList_.CalculateSize(_repeated_watcherInfoList_codec);
-      if (ActivityId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ActivityId);
+      if (ScheduleId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ScheduleId);
+      }
+      if (IsStarting != false) {
+        size += 1 + 1;
       }
       if (detailCase_ == DetailOneofCase.SamLampInfo) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SamLampInfo);
@@ -2398,6 +2593,24 @@ namespace Weedwacker.Shared.Network.Proto {
       if (detailCase_ == DetailOneofCase.TreasureSeelieInfo) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TreasureSeelieInfo);
       }
+      if (detailCase_ == DetailOneofCase.RockBoardExploreInfo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(RockBoardExploreInfo);
+      }
+      if (detailCase_ == DetailOneofCase.VintageInfo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VintageInfo);
+      }
+      if (detailCase_ == DetailOneofCase.WindFieldInfo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(WindFieldInfo);
+      }
+      if (detailCase_ == DetailOneofCase.FungusFighterInfo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(FungusFighterInfo);
+      }
+      if (detailCase_ == DetailOneofCase.CharAmusementInfo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(CharAmusementInfo);
+      }
+      if (detailCase_ == DetailOneofCase.EffigyChallengeInfo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(EffigyChallengeInfo);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2410,57 +2623,60 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.IsPlayOpenAnim != false) {
-        IsPlayOpenAnim = other.IsPlayOpenAnim;
-      }
-      if (other.ScheduleId != 0) {
-        ScheduleId = other.ScheduleId;
-      }
-      if (other.CurScore != 0) {
-        CurScore = other.CurScore;
-      }
-      if (other.IsStarting != false) {
-        IsStarting = other.IsStarting;
-      }
-      takenRewardList_.Add(other.takenRewardList_);
-      if (other.Unk2700NONJFHAIFLA != false) {
-        Unk2700NONJFHAIFLA = other.Unk2700NONJFHAIFLA;
-      }
-      if (other.SelectedAvatarRewardId != 0) {
-        SelectedAvatarRewardId = other.SelectedAvatarRewardId;
-      }
-      if (other.FirstDayStartTime != 0) {
-        FirstDayStartTime = other.FirstDayStartTime;
-      }
-      if (other.ScoreLimit != 0) {
-        ScoreLimit = other.ScoreLimit;
-      }
       if (other.IsFinished != false) {
         IsFinished = other.IsFinished;
       }
-      if (other.IsHidden != false) {
-        IsHidden = other.IsHidden;
+      if (other.ActivityType != 0) {
+        ActivityType = other.ActivityType;
       }
       if (other.BeginTime != 0) {
         BeginTime = other.BeginTime;
       }
+      takenRewardList_.Add(other.takenRewardList_);
+      if (other.IsHidden != false) {
+        IsHidden = other.IsHidden;
+      }
+      if (other.IsQuickOpen != false) {
+        IsQuickOpen = other.IsQuickOpen;
+      }
+      meetCondList_.Add(other.meetCondList_);
+      activityCoinMap_.Add(other.activityCoinMap_);
+      if (other.IsBannerCleared != false) {
+        IsBannerCleared = other.IsBannerCleared;
+      }
+      if (other.CurScore != 0) {
+        CurScore = other.CurScore;
+      }
+      if (other.FirstDayStartTime != 0) {
+        FirstDayStartTime = other.FirstDayStartTime;
+      }
+      if (other.ActivityId != 0) {
+        ActivityId = other.ActivityId;
+      }
+      if (other.IsPlayOpenAnim != false) {
+        IsPlayOpenAnim = other.IsPlayOpenAnim;
+      }
       if (other.EndTime != 0) {
         EndTime = other.EndTime;
       }
-      activityCoinMap_.Add(other.activityCoinMap_);
-      if (other.ActivityType != 0) {
-        ActivityType = other.ActivityType;
+      if (other.ScoreLimit != 0) {
+        ScoreLimit = other.ScoreLimit;
       }
-      if (other.Unk2700EDKLLHBEEGE != false) {
-        Unk2700EDKLLHBEEGE = other.Unk2700EDKLLHBEEGE;
+      wishGiftNumMap_.Add(other.wishGiftNumMap_);
+      if (other.SelectedAvatarRewardId != 0) {
+        SelectedAvatarRewardId = other.SelectedAvatarRewardId;
       }
-      unk2800KOMIPKKKOBE_.Add(other.unk2800KOMIPKKKOBE_);
-      meetCondList_.Add(other.meetCondList_);
-      unk2700IFPBCNLCKLG_.Add(other.unk2700IFPBCNLCKLG_);
+      if (other.IsCommonContentClosed != false) {
+        IsCommonContentClosed = other.IsCommonContentClosed;
+      }
       expireCondList_.Add(other.expireCondList_);
+      activityPushTipsDataList_.Add(other.activityPushTipsDataList_);
       watcherInfoList_.Add(other.watcherInfoList_);
-      if (other.ActivityId != 0) {
-        ActivityId = other.ActivityId;
+      if (other.ScheduleId != 0) {
+        ScheduleId = other.ScheduleId;
+      }
+      if (other.IsStarting != false) {
+        IsStarting = other.IsStarting;
       }
       switch (other.DetailCase) {
         case DetailOneofCase.SamLampInfo:
@@ -2759,7 +2975,7 @@ namespace Weedwacker.Shared.Network.Proto {
           break;
         case DetailOneofCase.IslandPartyInfo:
           if (IslandPartyInfo == null) {
-            IslandPartyInfo = new global::Weedwacker.Shared.Network.Proto.IslandPartyActivityDetailInfo();
+            IslandPartyInfo = new global::Weedwacker.Shared.Network.Proto.IslandPartyDetailInfo();
           }
           IslandPartyInfo.MergeFrom(other.IslandPartyInfo);
           break;
@@ -2783,15 +2999,51 @@ namespace Weedwacker.Shared.Network.Proto {
           break;
         case DetailOneofCase.MuqadasPotionInfo:
           if (MuqadasPotionInfo == null) {
-            MuqadasPotionInfo = new global::Weedwacker.Shared.Network.Proto.MuqadasPotionDetailInfo();
+            MuqadasPotionInfo = new global::Weedwacker.Shared.Network.Proto.MuqadasPotionActivityDetailInfo();
           }
           MuqadasPotionInfo.MergeFrom(other.MuqadasPotionInfo);
           break;
         case DetailOneofCase.TreasureSeelieInfo:
           if (TreasureSeelieInfo == null) {
-            TreasureSeelieInfo = new global::Weedwacker.Shared.Network.Proto.TreasureSeelieDetailInfo();
+            TreasureSeelieInfo = new global::Weedwacker.Shared.Network.Proto.TreasureSeelieActivityDetailInfo();
           }
           TreasureSeelieInfo.MergeFrom(other.TreasureSeelieInfo);
+          break;
+        case DetailOneofCase.RockBoardExploreInfo:
+          if (RockBoardExploreInfo == null) {
+            RockBoardExploreInfo = new global::Weedwacker.Shared.Network.Proto.RockBoardExploreDetailInfo();
+          }
+          RockBoardExploreInfo.MergeFrom(other.RockBoardExploreInfo);
+          break;
+        case DetailOneofCase.VintageInfo:
+          if (VintageInfo == null) {
+            VintageInfo = new global::Weedwacker.Shared.Network.Proto.VintageDetailInfo();
+          }
+          VintageInfo.MergeFrom(other.VintageInfo);
+          break;
+        case DetailOneofCase.WindFieldInfo:
+          if (WindFieldInfo == null) {
+            WindFieldInfo = new global::Weedwacker.Shared.Network.Proto.WindFieldDetailInfo();
+          }
+          WindFieldInfo.MergeFrom(other.WindFieldInfo);
+          break;
+        case DetailOneofCase.FungusFighterInfo:
+          if (FungusFighterInfo == null) {
+            FungusFighterInfo = new global::Weedwacker.Shared.Network.Proto.FungusFighterDetailInfo();
+          }
+          FungusFighterInfo.MergeFrom(other.FungusFighterInfo);
+          break;
+        case DetailOneofCase.CharAmusementInfo:
+          if (CharAmusementInfo == null) {
+            CharAmusementInfo = new global::Weedwacker.Shared.Network.Proto.CharAmusementDetailInfo();
+          }
+          CharAmusementInfo.MergeFrom(other.CharAmusementInfo);
+          break;
+        case DetailOneofCase.EffigyChallengeInfo:
+          if (EffigyChallengeInfo == null) {
+            EffigyChallengeInfo = new global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2DetailInfo();
+          }
+          EffigyChallengeInfo.MergeFrom(other.EffigyChallengeInfo);
           break;
       }
 
@@ -2902,7 +3154,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 816: {
-            Unk2700NONJFHAIFLA = input.ReadBool();
+            IsBannerCleared = input.ReadBool();
             break;
           }
           case 1250: {
@@ -2955,6 +3207,15 @@ namespace Weedwacker.Shared.Network.Proto {
             takenRewardList_.AddEntriesFrom(input, _repeated_takenRewardList_codec);
             break;
           }
+          case 2818: {
+            global::Weedwacker.Shared.Network.Proto.WindFieldDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.WindFieldDetailInfo();
+            if (detailCase_ == DetailOneofCase.WindFieldInfo) {
+              subBuilder.MergeFrom(WindFieldInfo);
+            }
+            input.ReadMessage(subBuilder);
+            WindFieldInfo = subBuilder;
+            break;
+          }
           case 3130: {
             global::Weedwacker.Shared.Network.Proto.EffigyActivityDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.EffigyActivityDetailInfo();
             if (detailCase_ == DetailOneofCase.EffigyInfo) {
@@ -2982,6 +3243,15 @@ namespace Weedwacker.Shared.Network.Proto {
             HideAndSeekInfo = subBuilder;
             break;
           }
+          case 3562: {
+            global::Weedwacker.Shared.Network.Proto.VintageDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.VintageDetailInfo();
+            if (detailCase_ == DetailOneofCase.VintageInfo) {
+              subBuilder.MergeFrom(VintageInfo);
+            }
+            input.ReadMessage(subBuilder);
+            VintageInfo = subBuilder;
+            break;
+          }
           case 3682: {
             global::Weedwacker.Shared.Network.Proto.MusicGameActivityDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.MusicGameActivityDetailInfo();
             if (detailCase_ == DetailOneofCase.MusicGameInfo) {
@@ -2989,6 +3259,15 @@ namespace Weedwacker.Shared.Network.Proto {
             }
             input.ReadMessage(subBuilder);
             MusicGameInfo = subBuilder;
+            break;
+          }
+          case 3922: {
+            global::Weedwacker.Shared.Network.Proto.FungusFighterDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.FungusFighterDetailInfo();
+            if (detailCase_ == DetailOneofCase.FungusFighterInfo) {
+              subBuilder.MergeFrom(FungusFighterInfo);
+            }
+            input.ReadMessage(subBuilder);
+            FungusFighterInfo = subBuilder;
             break;
           }
           case 3930: {
@@ -3126,7 +3405,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 6914: {
-            unk2800KOMIPKKKOBE_.AddEntriesFrom(input, _repeated_unk2800KOMIPKKKOBE_codec);
+            activityPushTipsDataList_.AddEntriesFrom(input, _repeated_activityPushTipsDataList_codec);
             break;
           }
           case 7352: {
@@ -3143,7 +3422,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 7730: {
-            global::Weedwacker.Shared.Network.Proto.TreasureSeelieDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.TreasureSeelieDetailInfo();
+            global::Weedwacker.Shared.Network.Proto.TreasureSeelieActivityDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.TreasureSeelieActivityDetailInfo();
             if (detailCase_ == DetailOneofCase.TreasureSeelieInfo) {
               subBuilder.MergeFrom(TreasureSeelieInfo);
             }
@@ -3160,6 +3439,15 @@ namespace Weedwacker.Shared.Network.Proto {
             ChannelerSlabInfo = subBuilder;
             break;
           }
+          case 8202: {
+            global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2DetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2DetailInfo();
+            if (detailCase_ == DetailOneofCase.EffigyChallengeInfo) {
+              subBuilder.MergeFrom(EffigyChallengeInfo);
+            }
+            input.ReadMessage(subBuilder);
+            EffigyChallengeInfo = subBuilder;
+            break;
+          }
           case 8346: {
             global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfo();
             if (detailCase_ == DetailOneofCase.InstableSprayInfo) {
@@ -3167,6 +3455,15 @@ namespace Weedwacker.Shared.Network.Proto {
             }
             input.ReadMessage(subBuilder);
             InstableSprayInfo = subBuilder;
+            break;
+          }
+          case 8626: {
+            global::Weedwacker.Shared.Network.Proto.RockBoardExploreDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.RockBoardExploreDetailInfo();
+            if (detailCase_ == DetailOneofCase.RockBoardExploreInfo) {
+              subBuilder.MergeFrom(RockBoardExploreInfo);
+            }
+            input.ReadMessage(subBuilder);
+            RockBoardExploreInfo = subBuilder;
             break;
           }
           case 8666: {
@@ -3206,7 +3503,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 9258: {
-            global::Weedwacker.Shared.Network.Proto.MuqadasPotionDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.MuqadasPotionDetailInfo();
+            global::Weedwacker.Shared.Network.Proto.MuqadasPotionActivityDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.MuqadasPotionActivityDetailInfo();
             if (detailCase_ == DetailOneofCase.MuqadasPotionInfo) {
               subBuilder.MergeFrom(MuqadasPotionInfo);
             }
@@ -3273,7 +3570,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 11194: {
-            unk2700IFPBCNLCKLG_.AddEntriesFrom(input, _map_unk2700IFPBCNLCKLG_codec);
+            wishGiftNumMap_.AddEntriesFrom(input, _map_wishGiftNumMap_codec);
             break;
           }
           case 11290: {
@@ -3286,7 +3583,16 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 11592: {
-            Unk2700EDKLLHBEEGE = input.ReadBool();
+            IsQuickOpen = input.ReadBool();
+            break;
+          }
+          case 11970: {
+            global::Weedwacker.Shared.Network.Proto.CharAmusementDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.CharAmusementDetailInfo();
+            if (detailCase_ == DetailOneofCase.CharAmusementInfo) {
+              subBuilder.MergeFrom(CharAmusementInfo);
+            }
+            input.ReadMessage(subBuilder);
+            CharAmusementInfo = subBuilder;
             break;
           }
           case 12706: {
@@ -3362,7 +3668,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 15082: {
-            global::Weedwacker.Shared.Network.Proto.IslandPartyActivityDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.IslandPartyActivityDetailInfo();
+            global::Weedwacker.Shared.Network.Proto.IslandPartyDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.IslandPartyDetailInfo();
             if (detailCase_ == DetailOneofCase.IslandPartyInfo) {
               subBuilder.MergeFrom(IslandPartyInfo);
             }
@@ -3394,6 +3700,10 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 15664: {
             ScoreLimit = input.ReadUInt32();
+            break;
+          }
+          case 15704: {
+            IsCommonContentClosed = input.ReadBool();
             break;
           }
         }
@@ -3503,7 +3813,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 816: {
-            Unk2700NONJFHAIFLA = input.ReadBool();
+            IsBannerCleared = input.ReadBool();
             break;
           }
           case 1250: {
@@ -3556,6 +3866,15 @@ namespace Weedwacker.Shared.Network.Proto {
             takenRewardList_.AddEntriesFrom(ref input, _repeated_takenRewardList_codec);
             break;
           }
+          case 2818: {
+            global::Weedwacker.Shared.Network.Proto.WindFieldDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.WindFieldDetailInfo();
+            if (detailCase_ == DetailOneofCase.WindFieldInfo) {
+              subBuilder.MergeFrom(WindFieldInfo);
+            }
+            input.ReadMessage(subBuilder);
+            WindFieldInfo = subBuilder;
+            break;
+          }
           case 3130: {
             global::Weedwacker.Shared.Network.Proto.EffigyActivityDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.EffigyActivityDetailInfo();
             if (detailCase_ == DetailOneofCase.EffigyInfo) {
@@ -3583,6 +3902,15 @@ namespace Weedwacker.Shared.Network.Proto {
             HideAndSeekInfo = subBuilder;
             break;
           }
+          case 3562: {
+            global::Weedwacker.Shared.Network.Proto.VintageDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.VintageDetailInfo();
+            if (detailCase_ == DetailOneofCase.VintageInfo) {
+              subBuilder.MergeFrom(VintageInfo);
+            }
+            input.ReadMessage(subBuilder);
+            VintageInfo = subBuilder;
+            break;
+          }
           case 3682: {
             global::Weedwacker.Shared.Network.Proto.MusicGameActivityDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.MusicGameActivityDetailInfo();
             if (detailCase_ == DetailOneofCase.MusicGameInfo) {
@@ -3590,6 +3918,15 @@ namespace Weedwacker.Shared.Network.Proto {
             }
             input.ReadMessage(subBuilder);
             MusicGameInfo = subBuilder;
+            break;
+          }
+          case 3922: {
+            global::Weedwacker.Shared.Network.Proto.FungusFighterDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.FungusFighterDetailInfo();
+            if (detailCase_ == DetailOneofCase.FungusFighterInfo) {
+              subBuilder.MergeFrom(FungusFighterInfo);
+            }
+            input.ReadMessage(subBuilder);
+            FungusFighterInfo = subBuilder;
             break;
           }
           case 3930: {
@@ -3727,7 +4064,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 6914: {
-            unk2800KOMIPKKKOBE_.AddEntriesFrom(ref input, _repeated_unk2800KOMIPKKKOBE_codec);
+            activityPushTipsDataList_.AddEntriesFrom(ref input, _repeated_activityPushTipsDataList_codec);
             break;
           }
           case 7352: {
@@ -3744,7 +4081,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 7730: {
-            global::Weedwacker.Shared.Network.Proto.TreasureSeelieDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.TreasureSeelieDetailInfo();
+            global::Weedwacker.Shared.Network.Proto.TreasureSeelieActivityDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.TreasureSeelieActivityDetailInfo();
             if (detailCase_ == DetailOneofCase.TreasureSeelieInfo) {
               subBuilder.MergeFrom(TreasureSeelieInfo);
             }
@@ -3761,6 +4098,15 @@ namespace Weedwacker.Shared.Network.Proto {
             ChannelerSlabInfo = subBuilder;
             break;
           }
+          case 8202: {
+            global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2DetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2DetailInfo();
+            if (detailCase_ == DetailOneofCase.EffigyChallengeInfo) {
+              subBuilder.MergeFrom(EffigyChallengeInfo);
+            }
+            input.ReadMessage(subBuilder);
+            EffigyChallengeInfo = subBuilder;
+            break;
+          }
           case 8346: {
             global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfo();
             if (detailCase_ == DetailOneofCase.InstableSprayInfo) {
@@ -3768,6 +4114,15 @@ namespace Weedwacker.Shared.Network.Proto {
             }
             input.ReadMessage(subBuilder);
             InstableSprayInfo = subBuilder;
+            break;
+          }
+          case 8626: {
+            global::Weedwacker.Shared.Network.Proto.RockBoardExploreDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.RockBoardExploreDetailInfo();
+            if (detailCase_ == DetailOneofCase.RockBoardExploreInfo) {
+              subBuilder.MergeFrom(RockBoardExploreInfo);
+            }
+            input.ReadMessage(subBuilder);
+            RockBoardExploreInfo = subBuilder;
             break;
           }
           case 8666: {
@@ -3807,7 +4162,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 9258: {
-            global::Weedwacker.Shared.Network.Proto.MuqadasPotionDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.MuqadasPotionDetailInfo();
+            global::Weedwacker.Shared.Network.Proto.MuqadasPotionActivityDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.MuqadasPotionActivityDetailInfo();
             if (detailCase_ == DetailOneofCase.MuqadasPotionInfo) {
               subBuilder.MergeFrom(MuqadasPotionInfo);
             }
@@ -3874,7 +4229,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 11194: {
-            unk2700IFPBCNLCKLG_.AddEntriesFrom(ref input, _map_unk2700IFPBCNLCKLG_codec);
+            wishGiftNumMap_.AddEntriesFrom(ref input, _map_wishGiftNumMap_codec);
             break;
           }
           case 11290: {
@@ -3887,7 +4242,16 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 11592: {
-            Unk2700EDKLLHBEEGE = input.ReadBool();
+            IsQuickOpen = input.ReadBool();
+            break;
+          }
+          case 11970: {
+            global::Weedwacker.Shared.Network.Proto.CharAmusementDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.CharAmusementDetailInfo();
+            if (detailCase_ == DetailOneofCase.CharAmusementInfo) {
+              subBuilder.MergeFrom(CharAmusementInfo);
+            }
+            input.ReadMessage(subBuilder);
+            CharAmusementInfo = subBuilder;
             break;
           }
           case 12706: {
@@ -3963,7 +4327,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 15082: {
-            global::Weedwacker.Shared.Network.Proto.IslandPartyActivityDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.IslandPartyActivityDetailInfo();
+            global::Weedwacker.Shared.Network.Proto.IslandPartyDetailInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.IslandPartyDetailInfo();
             if (detailCase_ == DetailOneofCase.IslandPartyInfo) {
               subBuilder.MergeFrom(IslandPartyInfo);
             }
@@ -3995,6 +4359,10 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 15664: {
             ScoreLimit = input.ReadUInt32();
+            break;
+          }
+          case 15704: {
+            IsCommonContentClosed = input.ReadBool();
             break;
           }
         }

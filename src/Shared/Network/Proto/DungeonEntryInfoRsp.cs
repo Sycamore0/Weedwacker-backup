@@ -25,16 +25,17 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChlEdW5nZW9uRW50cnlJbmZvUnNwLnByb3RvGhZEdW5nZW9uRW50cnlJbmZv",
-            "LnByb3RvGhlVbmsyODAwX01IQ0ZBR0NLR0lCLnByb3RvIrgBChNEdW5nZW9u",
-            "RW50cnlJbmZvUnNwEi0KEmR1bmdlb25fZW50cnlfbGlzdBgMIAMoCzIRLkR1",
-            "bmdlb25FbnRyeUluZm8SEAoIcG9pbnRfaWQYDyABKA0SMQoTVW5rMjgwMF9K",
-            "SkZMRENMTUVIRBgEIAMoCzIULlVuazI4MDBfTUhDRkFHQ0tHSUISHAoUcmVj",
-            "b21tZW5kX2R1bmdlb25faWQYDiABKA0SDwoHcmV0Y29kZRgLIAEoBUIiqgIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "LnByb3RvGhtEdW5nZW9uRW50cnlQb2ludEluZm8ucHJvdG8ivwEKE0R1bmdl",
+            "b25FbnRyeUluZm9Sc3ASLQoSZHVuZ2Vvbl9lbnRyeV9saXN0GAwgAygLMhEu",
+            "RHVuZ2VvbkVudHJ5SW5mbxIQCghwb2ludF9pZBgPIAEoDRI4ChhkdW5nZW9u",
+            "X2VudHJ5X3BvaW50X2xpc3QYBCADKAsyFi5EdW5nZW9uRW50cnlQb2ludElu",
+            "Zm8SHAoUcmVjb21tZW5kX2R1bmdlb25faWQYDiABKA0SDwoHcmV0Y29kZRgL",
+            "IAEoBUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.DungeonEntryInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2800MHCFAGCKGIBReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.DungeonEntryInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DungeonEntryPointInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonEntryInfoRsp), global::Weedwacker.Shared.Network.Proto.DungeonEntryInfoRsp.Parser, new[]{ "DungeonEntryList", "PointId", "Unk2800JJFLDCLMEHD", "RecommendDungeonId", "Retcode" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonEntryInfoRsp), global::Weedwacker.Shared.Network.Proto.DungeonEntryInfoRsp.Parser, new[]{ "DungeonEntryList", "PointId", "DungeonEntryPointList", "RecommendDungeonId", "Retcode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -82,7 +83,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public DungeonEntryInfoRsp(DungeonEntryInfoRsp other) : this() {
       dungeonEntryList_ = other.dungeonEntryList_.Clone();
       pointId_ = other.pointId_;
-      unk2800JJFLDCLMEHD_ = other.unk2800JJFLDCLMEHD_.Clone();
+      dungeonEntryPointList_ = other.dungeonEntryPointList_.Clone();
       recommendDungeonId_ = other.recommendDungeonId_;
       retcode_ = other.retcode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -117,15 +118,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2800_JJFLDCLMEHD" field.</summary>
-    public const int Unk2800JJFLDCLMEHDFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2800_MHCFAGCKGIB> _repeated_unk2800JJFLDCLMEHD_codec
-        = pb::FieldCodec.ForMessage(34, global::Weedwacker.Shared.Network.Proto.Unk2800_MHCFAGCKGIB.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_MHCFAGCKGIB> unk2800JJFLDCLMEHD_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_MHCFAGCKGIB>();
+    /// <summary>Field number for the "dungeon_entry_point_list" field.</summary>
+    public const int DungeonEntryPointListFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.DungeonEntryPointInfo> _repeated_dungeonEntryPointList_codec
+        = pb::FieldCodec.ForMessage(34, global::Weedwacker.Shared.Network.Proto.DungeonEntryPointInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.DungeonEntryPointInfo> dungeonEntryPointList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.DungeonEntryPointInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_MHCFAGCKGIB> Unk2800JJFLDCLMEHD {
-      get { return unk2800JJFLDCLMEHD_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.DungeonEntryPointInfo> DungeonEntryPointList {
+      get { return dungeonEntryPointList_; }
     }
 
     /// <summary>Field number for the "recommend_dungeon_id" field.</summary>
@@ -169,7 +170,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if(!dungeonEntryList_.Equals(other.dungeonEntryList_)) return false;
       if (PointId != other.PointId) return false;
-      if(!unk2800JJFLDCLMEHD_.Equals(other.unk2800JJFLDCLMEHD_)) return false;
+      if(!dungeonEntryPointList_.Equals(other.dungeonEntryPointList_)) return false;
       if (RecommendDungeonId != other.RecommendDungeonId) return false;
       if (Retcode != other.Retcode) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -181,7 +182,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       hash ^= dungeonEntryList_.GetHashCode();
       if (PointId != 0) hash ^= PointId.GetHashCode();
-      hash ^= unk2800JJFLDCLMEHD_.GetHashCode();
+      hash ^= dungeonEntryPointList_.GetHashCode();
       if (RecommendDungeonId != 0) hash ^= RecommendDungeonId.GetHashCode();
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
       if (_unknownFields != null) {
@@ -202,7 +203,7 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk2800JJFLDCLMEHD_.WriteTo(output, _repeated_unk2800JJFLDCLMEHD_codec);
+      dungeonEntryPointList_.WriteTo(output, _repeated_dungeonEntryPointList_codec);
       if (Retcode != 0) {
         output.WriteRawTag(88);
         output.WriteInt32(Retcode);
@@ -226,7 +227,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk2800JJFLDCLMEHD_.WriteTo(ref output, _repeated_unk2800JJFLDCLMEHD_codec);
+      dungeonEntryPointList_.WriteTo(ref output, _repeated_dungeonEntryPointList_codec);
       if (Retcode != 0) {
         output.WriteRawTag(88);
         output.WriteInt32(Retcode);
@@ -254,7 +255,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (PointId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PointId);
       }
-      size += unk2800JJFLDCLMEHD_.CalculateSize(_repeated_unk2800JJFLDCLMEHD_codec);
+      size += dungeonEntryPointList_.CalculateSize(_repeated_dungeonEntryPointList_codec);
       if (RecommendDungeonId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RecommendDungeonId);
       }
@@ -277,7 +278,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.PointId != 0) {
         PointId = other.PointId;
       }
-      unk2800JJFLDCLMEHD_.Add(other.unk2800JJFLDCLMEHD_);
+      dungeonEntryPointList_.Add(other.dungeonEntryPointList_);
       if (other.RecommendDungeonId != 0) {
         RecommendDungeonId = other.RecommendDungeonId;
       }
@@ -300,7 +301,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 34: {
-            unk2800JJFLDCLMEHD_.AddEntriesFrom(input, _repeated_unk2800JJFLDCLMEHD_codec);
+            dungeonEntryPointList_.AddEntriesFrom(input, _repeated_dungeonEntryPointList_codec);
             break;
           }
           case 88: {
@@ -335,7 +336,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 34: {
-            unk2800JJFLDCLMEHD_.AddEntriesFrom(ref input, _repeated_unk2800JJFLDCLMEHD_codec);
+            dungeonEntryPointList_.AddEntriesFrom(ref input, _repeated_dungeonEntryPointList_codec);
             break;
           }
           case 88: {

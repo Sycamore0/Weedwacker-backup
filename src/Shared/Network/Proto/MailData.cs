@@ -24,20 +24,20 @@ namespace Weedwacker.Shared.Network.Proto {
     static MailDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg5NYWlsRGF0YS5wcm90bxoOTWFpbEl0ZW0ucHJvdG8aFU1haWxUZXh0Q29u",
-            "dGVudC5wcm90bxoZVW5rMjcwMF9DQkpFRE1HT0JQTC5wcm90byKrAgoITWFp",
-            "bERhdGESDwoHbWFpbF9pZBgBIAEoDRIrChFtYWlsX3RleHRfY29udGVudBgE",
-            "IAEoCzIQLk1haWxUZXh0Q29udGVudBIcCglpdGVtX2xpc3QYByADKAsyCS5N",
-            "YWlsSXRlbRIRCglzZW5kX3RpbWUYCCABKA0SEwoLZXhwaXJlX3RpbWUYCSAB",
-            "KA0SEgoKaW1wb3J0YW5jZRgKIAEoDRIPCgdpc19yZWFkGAsgASgIEhkKEWlz",
-            "X2F0dGFjaG1lbnRfZ290GAwgASgIEhEKCWNvbmZpZ19pZBgNIAEoDRIVCg1h",
-            "cmd1bWVudF9saXN0GA4gAygJEjEKE1VuazI3MDBfTkRQUEdKS0pPTUgYDyAB",
-            "KA4yFC5VbmsyNzAwX0NCSkVETUdPQlBMQiKqAh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "Cg5NYWlsRGF0YS5wcm90bxoWTWFpbENvbGxlY3RTdGF0ZS5wcm90bxoOTWFp",
+            "bEl0ZW0ucHJvdG8aFU1haWxUZXh0Q29udGVudC5wcm90byKiAgoITWFpbERh",
+            "dGESDwoHbWFpbF9pZBgBIAEoDRIrChFtYWlsX3RleHRfY29udGVudBgEIAEo",
+            "CzIQLk1haWxUZXh0Q29udGVudBIcCglpdGVtX2xpc3QYByADKAsyCS5NYWls",
+            "SXRlbRIRCglzZW5kX3RpbWUYCCABKA0SEwoLZXhwaXJlX3RpbWUYCSABKA0S",
+            "EgoKaW1wb3J0YW5jZRgKIAEoDRIPCgdpc19yZWFkGAsgASgIEhkKEWlzX2F0",
+            "dGFjaG1lbnRfZ290GAwgASgIEhEKCWNvbmZpZ19pZBgNIAEoDRIVCg1hcmd1",
+            "bWVudF9saXN0GA4gAygJEigKDWNvbGxlY3Rfc3RhdGUYDyABKA4yES5NYWls",
+            "Q29sbGVjdFN0YXRlQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
+            "b3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MailItemReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MailTextContentReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700CBJEDMGOBPLReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MailCollectStateReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MailItemReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MailTextContentReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MailData), global::Weedwacker.Shared.Network.Proto.MailData.Parser, new[]{ "MailId", "MailTextContent", "ItemList", "SendTime", "ExpireTime", "Importance", "IsRead", "IsAttachmentGot", "ConfigId", "ArgumentList", "Unk2700NDPPGJKJOMH" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MailData), global::Weedwacker.Shared.Network.Proto.MailData.Parser, new[]{ "MailId", "MailTextContent", "ItemList", "SendTime", "ExpireTime", "Importance", "IsRead", "IsAttachmentGot", "ConfigId", "ArgumentList", "CollectState" }, null, null, null, null)
           }));
     }
     #endregion
@@ -88,7 +88,7 @@ namespace Weedwacker.Shared.Network.Proto {
       isAttachmentGot_ = other.isAttachmentGot_;
       configId_ = other.configId_;
       argumentList_ = other.argumentList_.Clone();
-      unk2700NDPPGJKJOMH_ = other.unk2700NDPPGJKJOMH_;
+      collectState_ = other.collectState_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -216,15 +216,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return argumentList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_NDPPGJKJOMH" field.</summary>
-    public const int Unk2700NDPPGJKJOMHFieldNumber = 15;
-    private global::Weedwacker.Shared.Network.Proto.Unk2700_CBJEDMGOBPL unk2700NDPPGJKJOMH_ = global::Weedwacker.Shared.Network.Proto.Unk2700_CBJEDMGOBPL.Unk2700Mbldljoklbl;
+    /// <summary>Field number for the "collect_state" field.</summary>
+    public const int CollectStateFieldNumber = 15;
+    private global::Weedwacker.Shared.Network.Proto.MailCollectState collectState_ = global::Weedwacker.Shared.Network.Proto.MailCollectState.CollectibleUnknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2700_CBJEDMGOBPL Unk2700NDPPGJKJOMH {
-      get { return unk2700NDPPGJKJOMH_; }
+    public global::Weedwacker.Shared.Network.Proto.MailCollectState CollectState {
+      get { return collectState_; }
       set {
-        unk2700NDPPGJKJOMH_ = value;
+        collectState_ = value;
       }
     }
 
@@ -253,7 +253,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsAttachmentGot != other.IsAttachmentGot) return false;
       if (ConfigId != other.ConfigId) return false;
       if(!argumentList_.Equals(other.argumentList_)) return false;
-      if (Unk2700NDPPGJKJOMH != other.Unk2700NDPPGJKJOMH) return false;
+      if (CollectState != other.CollectState) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -271,7 +271,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsAttachmentGot != false) hash ^= IsAttachmentGot.GetHashCode();
       if (ConfigId != 0) hash ^= ConfigId.GetHashCode();
       hash ^= argumentList_.GetHashCode();
-      if (Unk2700NDPPGJKJOMH != global::Weedwacker.Shared.Network.Proto.Unk2700_CBJEDMGOBPL.Unk2700Mbldljoklbl) hash ^= Unk2700NDPPGJKJOMH.GetHashCode();
+      if (CollectState != global::Weedwacker.Shared.Network.Proto.MailCollectState.CollectibleUnknown) hash ^= CollectState.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -324,9 +324,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteUInt32(ConfigId);
       }
       argumentList_.WriteTo(output, _repeated_argumentList_codec);
-      if (Unk2700NDPPGJKJOMH != global::Weedwacker.Shared.Network.Proto.Unk2700_CBJEDMGOBPL.Unk2700Mbldljoklbl) {
+      if (CollectState != global::Weedwacker.Shared.Network.Proto.MailCollectState.CollectibleUnknown) {
         output.WriteRawTag(120);
-        output.WriteEnum((int) Unk2700NDPPGJKJOMH);
+        output.WriteEnum((int) CollectState);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -372,9 +372,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteUInt32(ConfigId);
       }
       argumentList_.WriteTo(ref output, _repeated_argumentList_codec);
-      if (Unk2700NDPPGJKJOMH != global::Weedwacker.Shared.Network.Proto.Unk2700_CBJEDMGOBPL.Unk2700Mbldljoklbl) {
+      if (CollectState != global::Weedwacker.Shared.Network.Proto.MailCollectState.CollectibleUnknown) {
         output.WriteRawTag(120);
-        output.WriteEnum((int) Unk2700NDPPGJKJOMH);
+        output.WriteEnum((int) CollectState);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -412,8 +412,8 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ConfigId);
       }
       size += argumentList_.CalculateSize(_repeated_argumentList_codec);
-      if (Unk2700NDPPGJKJOMH != global::Weedwacker.Shared.Network.Proto.Unk2700_CBJEDMGOBPL.Unk2700Mbldljoklbl) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk2700NDPPGJKJOMH);
+      if (CollectState != global::Weedwacker.Shared.Network.Proto.MailCollectState.CollectibleUnknown) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CollectState);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -456,8 +456,8 @@ namespace Weedwacker.Shared.Network.Proto {
         ConfigId = other.ConfigId;
       }
       argumentList_.Add(other.argumentList_);
-      if (other.Unk2700NDPPGJKJOMH != global::Weedwacker.Shared.Network.Proto.Unk2700_CBJEDMGOBPL.Unk2700Mbldljoklbl) {
-        Unk2700NDPPGJKJOMH = other.Unk2700NDPPGJKJOMH;
+      if (other.CollectState != global::Weedwacker.Shared.Network.Proto.MailCollectState.CollectibleUnknown) {
+        CollectState = other.CollectState;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -518,7 +518,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk2700NDPPGJKJOMH = (global::Weedwacker.Shared.Network.Proto.Unk2700_CBJEDMGOBPL) input.ReadEnum();
+            CollectState = (global::Weedwacker.Shared.Network.Proto.MailCollectState) input.ReadEnum();
             break;
           }
         }
@@ -580,7 +580,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk2700NDPPGJKJOMH = (global::Weedwacker.Shared.Network.Proto.Unk2700_CBJEDMGOBPL) input.ReadEnum();
+            CollectState = (global::Weedwacker.Shared.Network.Proto.MailCollectState) input.ReadEnum();
             break;
           }
         }

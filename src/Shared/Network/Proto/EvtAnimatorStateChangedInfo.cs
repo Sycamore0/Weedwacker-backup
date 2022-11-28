@@ -25,17 +25,17 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiFFdnRBbmltYXRvclN0YXRlQ2hhbmdlZEluZm8ucHJvdG8aDFZlY3Rvci5w",
-            "cm90byKIAgobRXZ0QW5pbWF0b3JTdGF0ZUNoYW5nZWRJbmZvEhoKEmZhY2Vf",
+            "cm90byL/AQobRXZ0QW5pbWF0b3JTdGF0ZUNoYW5nZWRJbmZvEhoKEmZhY2Vf",
             "YW5nbGVfY29tcGFjdBgOIAEoBRIVCg10b19zdGF0ZV9oYXNoGAUgASgNEh8K",
-            "F25vcm1hbGl6ZWRfdGltZV9jb21wYWN0GAkgASgNEhsKE1VuazI3MDBfSEVN",
-            "R05ES01BRk8YAiABKA0SFAoDcG9zGA0gASgLMgcuVmVjdG9yEhUKDWZhZGVf",
-            "ZHVyYXRpb24YAyABKAISGwoTVW5rMjcwMF9DSkNKTEdISUJQSxgBIAEoCBIR",
-            "CgllbnRpdHlfaWQYDyABKA0SGwoTVW5rMjcwMF9KRUNCTFBOTEpNShgHIAEo",
-            "CEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "F25vcm1hbGl6ZWRfdGltZV9jb21wYWN0GAkgASgNEg0KBWxheWVyGAIgASgN",
+            "EhQKA3BvcxgNIAEoCzIHLlZlY3RvchIVCg1mYWRlX2R1cmF0aW9uGAMgASgC",
+            "EhIKCmZvcmNlX3N5bmMYASABKAgSEQoJZW50aXR5X2lkGA8gASgNEikKIWhh",
+            "bmRsZV9hbmltYXRvcl9zdGF0ZV9pbW1lZGlhdGVseRgHIAEoCEIiqgIfV2Vl",
+            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtAnimatorStateChangedInfo), global::Weedwacker.Shared.Network.Proto.EvtAnimatorStateChangedInfo.Parser, new[]{ "FaceAngleCompact", "ToStateHash", "NormalizedTimeCompact", "Unk2700HEMGNDKMAFO", "Pos", "FadeDuration", "Unk2700CJCJLGHIBPK", "EntityId", "Unk2700JECBLPNLJMJ" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtAnimatorStateChangedInfo), global::Weedwacker.Shared.Network.Proto.EvtAnimatorStateChangedInfo.Parser, new[]{ "FaceAngleCompact", "ToStateHash", "NormalizedTimeCompact", "Layer", "Pos", "FadeDuration", "ForceSync", "EntityId", "HandleAnimatorStateImmediately" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,12 +79,12 @@ namespace Weedwacker.Shared.Network.Proto {
       faceAngleCompact_ = other.faceAngleCompact_;
       toStateHash_ = other.toStateHash_;
       normalizedTimeCompact_ = other.normalizedTimeCompact_;
-      unk2700HEMGNDKMAFO_ = other.unk2700HEMGNDKMAFO_;
+      layer_ = other.layer_;
       pos_ = other.pos_ != null ? other.pos_.Clone() : null;
       fadeDuration_ = other.fadeDuration_;
-      unk2700CJCJLGHIBPK_ = other.unk2700CJCJLGHIBPK_;
+      forceSync_ = other.forceSync_;
       entityId_ = other.entityId_;
-      unk2700JECBLPNLJMJ_ = other.unk2700JECBLPNLJMJ_;
+      handleAnimatorStateImmediately_ = other.handleAnimatorStateImmediately_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -130,15 +130,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_HEMGNDKMAFO" field.</summary>
-    public const int Unk2700HEMGNDKMAFOFieldNumber = 2;
-    private uint unk2700HEMGNDKMAFO_;
+    /// <summary>Field number for the "layer" field.</summary>
+    public const int LayerFieldNumber = 2;
+    private uint layer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700HEMGNDKMAFO {
-      get { return unk2700HEMGNDKMAFO_; }
+    public uint Layer {
+      get { return layer_; }
       set {
-        unk2700HEMGNDKMAFO_ = value;
+        layer_ = value;
       }
     }
 
@@ -166,15 +166,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_CJCJLGHIBPK" field.</summary>
-    public const int Unk2700CJCJLGHIBPKFieldNumber = 1;
-    private bool unk2700CJCJLGHIBPK_;
+    /// <summary>Field number for the "force_sync" field.</summary>
+    public const int ForceSyncFieldNumber = 1;
+    private bool forceSync_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700CJCJLGHIBPK {
-      get { return unk2700CJCJLGHIBPK_; }
+    public bool ForceSync {
+      get { return forceSync_; }
       set {
-        unk2700CJCJLGHIBPK_ = value;
+        forceSync_ = value;
       }
     }
 
@@ -190,15 +190,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_JECBLPNLJMJ" field.</summary>
-    public const int Unk2700JECBLPNLJMJFieldNumber = 7;
-    private bool unk2700JECBLPNLJMJ_;
+    /// <summary>Field number for the "handle_animator_state_immediately" field.</summary>
+    public const int HandleAnimatorStateImmediatelyFieldNumber = 7;
+    private bool handleAnimatorStateImmediately_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700JECBLPNLJMJ {
-      get { return unk2700JECBLPNLJMJ_; }
+    public bool HandleAnimatorStateImmediately {
+      get { return handleAnimatorStateImmediately_; }
       set {
-        unk2700JECBLPNLJMJ_ = value;
+        handleAnimatorStateImmediately_ = value;
       }
     }
 
@@ -220,12 +220,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (FaceAngleCompact != other.FaceAngleCompact) return false;
       if (ToStateHash != other.ToStateHash) return false;
       if (NormalizedTimeCompact != other.NormalizedTimeCompact) return false;
-      if (Unk2700HEMGNDKMAFO != other.Unk2700HEMGNDKMAFO) return false;
+      if (Layer != other.Layer) return false;
       if (!object.Equals(Pos, other.Pos)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(FadeDuration, other.FadeDuration)) return false;
-      if (Unk2700CJCJLGHIBPK != other.Unk2700CJCJLGHIBPK) return false;
+      if (ForceSync != other.ForceSync) return false;
       if (EntityId != other.EntityId) return false;
-      if (Unk2700JECBLPNLJMJ != other.Unk2700JECBLPNLJMJ) return false;
+      if (HandleAnimatorStateImmediately != other.HandleAnimatorStateImmediately) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -236,12 +236,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (FaceAngleCompact != 0) hash ^= FaceAngleCompact.GetHashCode();
       if (ToStateHash != 0) hash ^= ToStateHash.GetHashCode();
       if (NormalizedTimeCompact != 0) hash ^= NormalizedTimeCompact.GetHashCode();
-      if (Unk2700HEMGNDKMAFO != 0) hash ^= Unk2700HEMGNDKMAFO.GetHashCode();
+      if (Layer != 0) hash ^= Layer.GetHashCode();
       if (pos_ != null) hash ^= Pos.GetHashCode();
       if (FadeDuration != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FadeDuration);
-      if (Unk2700CJCJLGHIBPK != false) hash ^= Unk2700CJCJLGHIBPK.GetHashCode();
+      if (ForceSync != false) hash ^= ForceSync.GetHashCode();
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (Unk2700JECBLPNLJMJ != false) hash ^= Unk2700JECBLPNLJMJ.GetHashCode();
+      if (HandleAnimatorStateImmediately != false) hash ^= HandleAnimatorStateImmediately.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -260,13 +260,13 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700CJCJLGHIBPK != false) {
+      if (ForceSync != false) {
         output.WriteRawTag(8);
-        output.WriteBool(Unk2700CJCJLGHIBPK);
+        output.WriteBool(ForceSync);
       }
-      if (Unk2700HEMGNDKMAFO != 0) {
+      if (Layer != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk2700HEMGNDKMAFO);
+        output.WriteUInt32(Layer);
       }
       if (FadeDuration != 0F) {
         output.WriteRawTag(29);
@@ -276,9 +276,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(ToStateHash);
       }
-      if (Unk2700JECBLPNLJMJ != false) {
+      if (HandleAnimatorStateImmediately != false) {
         output.WriteRawTag(56);
-        output.WriteBool(Unk2700JECBLPNLJMJ);
+        output.WriteBool(HandleAnimatorStateImmediately);
       }
       if (NormalizedTimeCompact != 0) {
         output.WriteRawTag(72);
@@ -306,13 +306,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700CJCJLGHIBPK != false) {
+      if (ForceSync != false) {
         output.WriteRawTag(8);
-        output.WriteBool(Unk2700CJCJLGHIBPK);
+        output.WriteBool(ForceSync);
       }
-      if (Unk2700HEMGNDKMAFO != 0) {
+      if (Layer != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk2700HEMGNDKMAFO);
+        output.WriteUInt32(Layer);
       }
       if (FadeDuration != 0F) {
         output.WriteRawTag(29);
@@ -322,9 +322,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(ToStateHash);
       }
-      if (Unk2700JECBLPNLJMJ != false) {
+      if (HandleAnimatorStateImmediately != false) {
         output.WriteRawTag(56);
-        output.WriteBool(Unk2700JECBLPNLJMJ);
+        output.WriteBool(HandleAnimatorStateImmediately);
       }
       if (NormalizedTimeCompact != 0) {
         output.WriteRawTag(72);
@@ -361,8 +361,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (NormalizedTimeCompact != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NormalizedTimeCompact);
       }
-      if (Unk2700HEMGNDKMAFO != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700HEMGNDKMAFO);
+      if (Layer != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Layer);
       }
       if (pos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pos);
@@ -370,13 +370,13 @@ namespace Weedwacker.Shared.Network.Proto {
       if (FadeDuration != 0F) {
         size += 1 + 4;
       }
-      if (Unk2700CJCJLGHIBPK != false) {
+      if (ForceSync != false) {
         size += 1 + 1;
       }
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EntityId);
       }
-      if (Unk2700JECBLPNLJMJ != false) {
+      if (HandleAnimatorStateImmediately != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -400,8 +400,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.NormalizedTimeCompact != 0) {
         NormalizedTimeCompact = other.NormalizedTimeCompact;
       }
-      if (other.Unk2700HEMGNDKMAFO != 0) {
-        Unk2700HEMGNDKMAFO = other.Unk2700HEMGNDKMAFO;
+      if (other.Layer != 0) {
+        Layer = other.Layer;
       }
       if (other.pos_ != null) {
         if (pos_ == null) {
@@ -412,14 +412,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.FadeDuration != 0F) {
         FadeDuration = other.FadeDuration;
       }
-      if (other.Unk2700CJCJLGHIBPK != false) {
-        Unk2700CJCJLGHIBPK = other.Unk2700CJCJLGHIBPK;
+      if (other.ForceSync != false) {
+        ForceSync = other.ForceSync;
       }
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.Unk2700JECBLPNLJMJ != false) {
-        Unk2700JECBLPNLJMJ = other.Unk2700JECBLPNLJMJ;
+      if (other.HandleAnimatorStateImmediately != false) {
+        HandleAnimatorStateImmediately = other.HandleAnimatorStateImmediately;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -437,11 +437,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Unk2700CJCJLGHIBPK = input.ReadBool();
+            ForceSync = input.ReadBool();
             break;
           }
           case 16: {
-            Unk2700HEMGNDKMAFO = input.ReadUInt32();
+            Layer = input.ReadUInt32();
             break;
           }
           case 29: {
@@ -453,7 +453,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2700JECBLPNLJMJ = input.ReadBool();
+            HandleAnimatorStateImmediately = input.ReadBool();
             break;
           }
           case 72: {
@@ -491,11 +491,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Unk2700CJCJLGHIBPK = input.ReadBool();
+            ForceSync = input.ReadBool();
             break;
           }
           case 16: {
-            Unk2700HEMGNDKMAFO = input.ReadUInt32();
+            Layer = input.ReadUInt32();
             break;
           }
           case 29: {
@@ -507,7 +507,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2700JECBLPNLJMJ = input.ReadBool();
+            HandleAnimatorStateImmediately = input.ReadBool();
             break;
           }
           case 72: {

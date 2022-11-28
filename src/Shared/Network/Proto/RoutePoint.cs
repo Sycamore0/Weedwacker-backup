@@ -25,17 +25,18 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChBSb3V0ZVBvaW50LnByb3RvGhRNYXRoUXVhdGVybmlvbi5wcm90bxoMVmVj",
-            "dG9yLnByb3RvIvABCgpSb3V0ZVBvaW50EhkKCHBvc2l0aW9uGAEgASgLMgcu",
-            "VmVjdG9yEhQKDGFycml2ZV9yYW5nZRgCIAEoAhISCgh2ZWxvY2l0eRgLIAEo",
-            "AkgAEg4KBHRpbWUYDCABKAJIABIbCghyb3RhdGlvbhgVIAEoCzIHLlZlY3Rv",
-            "ckgBEikKDnJvdGF0aW9uX3NwZWVkGBYgASgLMg8uTWF0aFF1YXRlcm5pb25I",
-            "ARIlCgpheGlzX3NwZWVkGBcgASgLMg8uTWF0aFF1YXRlcm5pb25IAUINCgtt",
-            "b3ZlX3BhcmFtc0IPCg1yb3RhdGVfcGFyYW1zQiKqAh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "dG9yLnByb3RvIokCCgpSb3V0ZVBvaW50EhkKCHBvc2l0aW9uGAEgASgLMgcu",
+            "VmVjdG9yEhQKDGFycml2ZV9yYW5nZRgCIAEoAhIXCg9oYXNfcmVhY2hfZXZl",
+            "bnQYAyABKAgSEgoIdmVsb2NpdHkYCyABKAJIABIOCgR0aW1lGAwgASgCSAAS",
+            "GwoIcm90YXRpb24YFSABKAsyBy5WZWN0b3JIARIpCg5yb3RhdGlvbl9zcGVl",
+            "ZBgWIAEoCzIPLk1hdGhRdWF0ZXJuaW9uSAESJQoKYXhpc19zcGVlZBgXIAEo",
+            "CzIPLk1hdGhRdWF0ZXJuaW9uSAFCDQoLbW92ZV9wYXJhbXNCDwoNcm90YXRl",
+            "X3BhcmFtc0IiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MathQuaternionReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RoutePoint), global::Weedwacker.Shared.Network.Proto.RoutePoint.Parser, new[]{ "Position", "ArriveRange", "Velocity", "Time", "Rotation", "RotationSpeed", "AxisSpeed" }, new[]{ "MoveParams", "RotateParams" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RoutePoint), global::Weedwacker.Shared.Network.Proto.RoutePoint.Parser, new[]{ "Position", "ArriveRange", "HasReachEvent", "Velocity", "Time", "Rotation", "RotationSpeed", "AxisSpeed" }, new[]{ "MoveParams", "RotateParams" }, null, null, null)
           }));
     }
     #endregion
@@ -78,6 +79,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public RoutePoint(RoutePoint other) : this() {
       position_ = other.position_ != null ? other.position_.Clone() : null;
       arriveRange_ = other.arriveRange_;
+      hasReachEvent_ = other.hasReachEvent_;
       switch (other.MoveParamsCase) {
         case MoveParamsOneofCase.Velocity:
           Velocity = other.Velocity;
@@ -129,6 +131,18 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return arriveRange_; }
       set {
         arriveRange_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "has_reach_event" field.</summary>
+    public const int HasReachEventFieldNumber = 3;
+    private bool hasReachEvent_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasReachEvent {
+      get { return hasReachEvent_; }
+      set {
+        hasReachEvent_ = value;
       }
     }
 
@@ -252,6 +266,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (!object.Equals(Position, other.Position)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ArriveRange, other.ArriveRange)) return false;
+      if (HasReachEvent != other.HasReachEvent) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Velocity, other.Velocity)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Time, other.Time)) return false;
       if (!object.Equals(Rotation, other.Rotation)) return false;
@@ -268,6 +283,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (position_ != null) hash ^= Position.GetHashCode();
       if (ArriveRange != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ArriveRange);
+      if (HasReachEvent != false) hash ^= HasReachEvent.GetHashCode();
       if (moveParamsCase_ == MoveParamsOneofCase.Velocity) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Velocity);
       if (moveParamsCase_ == MoveParamsOneofCase.Time) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Time);
       if (rotateParamsCase_ == RotateParamsOneofCase.Rotation) hash ^= Rotation.GetHashCode();
@@ -300,6 +316,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ArriveRange != 0F) {
         output.WriteRawTag(21);
         output.WriteFloat(ArriveRange);
+      }
+      if (HasReachEvent != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(HasReachEvent);
       }
       if (moveParamsCase_ == MoveParamsOneofCase.Velocity) {
         output.WriteRawTag(93);
@@ -339,6 +359,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(21);
         output.WriteFloat(ArriveRange);
       }
+      if (HasReachEvent != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(HasReachEvent);
+      }
       if (moveParamsCase_ == MoveParamsOneofCase.Velocity) {
         output.WriteRawTag(93);
         output.WriteFloat(Velocity);
@@ -375,6 +399,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ArriveRange != 0F) {
         size += 1 + 4;
       }
+      if (HasReachEvent != false) {
+        size += 1 + 1;
+      }
       if (moveParamsCase_ == MoveParamsOneofCase.Velocity) {
         size += 1 + 4;
       }
@@ -410,6 +437,9 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (other.ArriveRange != 0F) {
         ArriveRange = other.ArriveRange;
+      }
+      if (other.HasReachEvent != false) {
+        HasReachEvent = other.HasReachEvent;
       }
       switch (other.MoveParamsCase) {
         case MoveParamsOneofCase.Velocity:
@@ -465,6 +495,10 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 21: {
             ArriveRange = input.ReadFloat();
+            break;
+          }
+          case 24: {
+            HasReachEvent = input.ReadBool();
             break;
           }
           case 93: {
@@ -526,6 +560,10 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 21: {
             ArriveRange = input.ReadFloat();
+            break;
+          }
+          case 24: {
+            HasReachEvent = input.ReadBool();
             break;
           }
           case 93: {

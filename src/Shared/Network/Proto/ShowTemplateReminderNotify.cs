@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static ShowTemplateReminderNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBTaG93VGVtcGxhdGVSZW1pbmRlck5vdGlmeS5wcm90byJ5ChpTaG93VGVt",
-            "cGxhdGVSZW1pbmRlck5vdGlmeRIWCg5wYXJhbV91aWRfbGlzdBgDIAMoDRIS",
-            "CgpwYXJhbV9saXN0GAogAygFEhwKFHRlbXBsYXRlX3JlbWluZGVyX2lkGA4g",
-            "ASgNEhEKCWlzX3Jldm9rZRgBIAEoCEIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "CiBTaG93VGVtcGxhdGVSZW1pbmRlck5vdGlmeS5wcm90byKQAQoaU2hvd1Rl",
+            "bXBsYXRlUmVtaW5kZXJOb3RpZnkSEQoJaXNfcmV2b2tlGAEgASgIEhwKFHRl",
+            "bXBsYXRlX3JlbWluZGVyX2lkGA4gASgNEhYKDnBhcmFtX3VpZF9saXN0GAMg",
+            "AygNEhIKCnBhcmFtX2xpc3QYCiADKAUSFQoNaXNfbmVlZF9jYWNoZRgPIAEo",
+            "CEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ShowTemplateReminderNotify), global::Weedwacker.Shared.Network.Proto.ShowTemplateReminderNotify.Parser, new[]{ "ParamUidList", "ParamList", "TemplateReminderId", "IsRevoke" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ShowTemplateReminderNotify), global::Weedwacker.Shared.Network.Proto.ShowTemplateReminderNotify.Parser, new[]{ "IsRevoke", "TemplateReminderId", "ParamUidList", "ParamList", "IsNeedCache" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,10 +78,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ShowTemplateReminderNotify(ShowTemplateReminderNotify other) : this() {
+      isRevoke_ = other.isRevoke_;
+      templateReminderId_ = other.templateReminderId_;
       paramUidList_ = other.paramUidList_.Clone();
       paramList_ = other.paramList_.Clone();
-      templateReminderId_ = other.templateReminderId_;
-      isRevoke_ = other.isRevoke_;
+      isNeedCache_ = other.isNeedCache_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -89,6 +90,30 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ShowTemplateReminderNotify Clone() {
       return new ShowTemplateReminderNotify(this);
+    }
+
+    /// <summary>Field number for the "is_revoke" field.</summary>
+    public const int IsRevokeFieldNumber = 1;
+    private bool isRevoke_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsRevoke {
+      get { return isRevoke_; }
+      set {
+        isRevoke_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "template_reminder_id" field.</summary>
+    public const int TemplateReminderIdFieldNumber = 14;
+    private uint templateReminderId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint TemplateReminderId {
+      get { return templateReminderId_; }
+      set {
+        templateReminderId_ = value;
+      }
     }
 
     /// <summary>Field number for the "param_uid_list" field.</summary>
@@ -113,27 +138,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return paramList_; }
     }
 
-    /// <summary>Field number for the "template_reminder_id" field.</summary>
-    public const int TemplateReminderIdFieldNumber = 14;
-    private uint templateReminderId_;
+    /// <summary>Field number for the "is_need_cache" field.</summary>
+    public const int IsNeedCacheFieldNumber = 15;
+    private bool isNeedCache_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint TemplateReminderId {
-      get { return templateReminderId_; }
+    public bool IsNeedCache {
+      get { return isNeedCache_; }
       set {
-        templateReminderId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_revoke" field.</summary>
-    public const int IsRevokeFieldNumber = 1;
-    private bool isRevoke_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsRevoke {
-      get { return isRevoke_; }
-      set {
-        isRevoke_ = value;
+        isNeedCache_ = value;
       }
     }
 
@@ -152,10 +165,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (IsRevoke != other.IsRevoke) return false;
+      if (TemplateReminderId != other.TemplateReminderId) return false;
       if(!paramUidList_.Equals(other.paramUidList_)) return false;
       if(!paramList_.Equals(other.paramList_)) return false;
-      if (TemplateReminderId != other.TemplateReminderId) return false;
-      if (IsRevoke != other.IsRevoke) return false;
+      if (IsNeedCache != other.IsNeedCache) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -163,10 +177,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (IsRevoke != false) hash ^= IsRevoke.GetHashCode();
+      if (TemplateReminderId != 0) hash ^= TemplateReminderId.GetHashCode();
       hash ^= paramUidList_.GetHashCode();
       hash ^= paramList_.GetHashCode();
-      if (TemplateReminderId != 0) hash ^= TemplateReminderId.GetHashCode();
-      if (IsRevoke != false) hash ^= IsRevoke.GetHashCode();
+      if (IsNeedCache != false) hash ^= IsNeedCache.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -195,6 +210,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(112);
         output.WriteUInt32(TemplateReminderId);
       }
+      if (IsNeedCache != false) {
+        output.WriteRawTag(120);
+        output.WriteBool(IsNeedCache);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -215,6 +234,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(112);
         output.WriteUInt32(TemplateReminderId);
       }
+      if (IsNeedCache != false) {
+        output.WriteRawTag(120);
+        output.WriteBool(IsNeedCache);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -225,12 +248,15 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += paramUidList_.CalculateSize(_repeated_paramUidList_codec);
-      size += paramList_.CalculateSize(_repeated_paramList_codec);
+      if (IsRevoke != false) {
+        size += 1 + 1;
+      }
       if (TemplateReminderId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TemplateReminderId);
       }
-      if (IsRevoke != false) {
+      size += paramUidList_.CalculateSize(_repeated_paramUidList_codec);
+      size += paramList_.CalculateSize(_repeated_paramList_codec);
+      if (IsNeedCache != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -245,13 +271,16 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      paramUidList_.Add(other.paramUidList_);
-      paramList_.Add(other.paramList_);
+      if (other.IsRevoke != false) {
+        IsRevoke = other.IsRevoke;
+      }
       if (other.TemplateReminderId != 0) {
         TemplateReminderId = other.TemplateReminderId;
       }
-      if (other.IsRevoke != false) {
-        IsRevoke = other.IsRevoke;
+      paramUidList_.Add(other.paramUidList_);
+      paramList_.Add(other.paramList_);
+      if (other.IsNeedCache != false) {
+        IsNeedCache = other.IsNeedCache;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -286,6 +315,10 @@ namespace Weedwacker.Shared.Network.Proto {
             TemplateReminderId = input.ReadUInt32();
             break;
           }
+          case 120: {
+            IsNeedCache = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -317,6 +350,10 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 112: {
             TemplateReminderId = input.ReadUInt32();
+            break;
+          }
+          case 120: {
+            IsNeedCache = input.ReadBool();
             break;
           }
         }

@@ -25,17 +25,18 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBNdWx0aXN0YWdlUGxheVNldHRsZU5vdGlmeS5wcm90bxodSW5CYXR0bGVD",
-            "aGVzc1NldHRsZUluZm8ucHJvdG8aIkluQmF0dGxlTWVjaGFuaWN1c1NldHRs",
-            "ZUluZm8ucHJvdG8aHElyb2RvcmlDaGVzc1NldHRsZUluZm8ucHJvdG8ihQIK",
-            "Gk11bHRpc3RhZ2VQbGF5U2V0dGxlTm90aWZ5EhIKCnBsYXlfaW5kZXgYDiAB",
-            "KA0SEAoIZ3JvdXBfaWQYBCABKA0SQAoWbWVjaGFuaWN1c19zZXR0bGVfaW5m",
-            "bxj6CiABKAsyHS5JbkJhdHRsZU1lY2hhbmljdXNTZXR0bGVJbmZvSAASNgoR",
-            "Y2hlc3Nfc2V0dGxlX2luZm8YgwogASgLMhguSW5CYXR0bGVDaGVzc1NldHRs",
-            "ZUluZm9IABI9Chlpcm9kb3JpX2NoZXNzX3NldHRsZV9pbmZvGOQEIAEoCzIX",
-            "Lklyb2RvcmlDaGVzc1NldHRsZUluZm9IAEIICgZkZXRhaWxCIqoCH1dlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "aGVzc1NldHRsZUluZm8ucHJvdG8aJEluQmF0dGxlSXJvZG9yaUNoZXNzU2V0",
+            "dGxlSW5mby5wcm90bxoiSW5CYXR0bGVNZWNoYW5pY3VzU2V0dGxlSW5mby5w",
+            "cm90byKNAgoaTXVsdGlzdGFnZVBsYXlTZXR0bGVOb3RpZnkSEgoKcGxheV9p",
+            "bmRleBgOIAEoDRIQCghncm91cF9pZBgEIAEoDRJAChZtZWNoYW5pY3VzX3Nl",
+            "dHRsZV9pbmZvGPoKIAEoCzIdLkluQmF0dGxlTWVjaGFuaWN1c1NldHRsZUlu",
+            "Zm9IABI2ChFjaGVzc19zZXR0bGVfaW5mbxiDCiABKAsyGC5JbkJhdHRsZUNo",
+            "ZXNzU2V0dGxlSW5mb0gAEkUKGWlyb2RvcmlfY2hlc3Nfc2V0dGxlX2luZm8Y",
+            "5AQgASgLMh8uSW5CYXR0bGVJcm9kb3JpQ2hlc3NTZXR0bGVJbmZvSABCCAoG",
+            "ZGV0YWlsQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.InBattleChessSettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.InBattleMechanicusSettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IrodoriChessSettleInfoReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.InBattleChessSettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.InBattleIrodoriChessSettleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.InBattleMechanicusSettleInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MultistagePlaySettleNotify), global::Weedwacker.Shared.Network.Proto.MultistagePlaySettleNotify.Parser, new[]{ "PlayIndex", "GroupId", "MechanicusSettleInfo", "ChessSettleInfo", "IrodoriChessSettleInfo" }, new[]{ "Detail" }, null, null, null)
           }));
@@ -158,8 +159,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public const int IrodoriChessSettleInfoFieldNumber = 612;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.IrodoriChessSettleInfo IrodoriChessSettleInfo {
-      get { return detailCase_ == DetailOneofCase.IrodoriChessSettleInfo ? (global::Weedwacker.Shared.Network.Proto.IrodoriChessSettleInfo) detail_ : null; }
+    public global::Weedwacker.Shared.Network.Proto.InBattleIrodoriChessSettleInfo IrodoriChessSettleInfo {
+      get { return detailCase_ == DetailOneofCase.IrodoriChessSettleInfo ? (global::Weedwacker.Shared.Network.Proto.InBattleIrodoriChessSettleInfo) detail_ : null; }
       set {
         detail_ = value;
         detailCase_ = value == null ? DetailOneofCase.None : DetailOneofCase.IrodoriChessSettleInfo;
@@ -348,7 +349,7 @@ namespace Weedwacker.Shared.Network.Proto {
           break;
         case DetailOneofCase.IrodoriChessSettleInfo:
           if (IrodoriChessSettleInfo == null) {
-            IrodoriChessSettleInfo = new global::Weedwacker.Shared.Network.Proto.IrodoriChessSettleInfo();
+            IrodoriChessSettleInfo = new global::Weedwacker.Shared.Network.Proto.InBattleIrodoriChessSettleInfo();
           }
           IrodoriChessSettleInfo.MergeFrom(other.IrodoriChessSettleInfo);
           break;
@@ -378,7 +379,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 4898: {
-            global::Weedwacker.Shared.Network.Proto.IrodoriChessSettleInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.IrodoriChessSettleInfo();
+            global::Weedwacker.Shared.Network.Proto.InBattleIrodoriChessSettleInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.InBattleIrodoriChessSettleInfo();
             if (detailCase_ == DetailOneofCase.IrodoriChessSettleInfo) {
               subBuilder.MergeFrom(IrodoriChessSettleInfo);
             }
@@ -428,7 +429,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 4898: {
-            global::Weedwacker.Shared.Network.Proto.IrodoriChessSettleInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.IrodoriChessSettleInfo();
+            global::Weedwacker.Shared.Network.Proto.InBattleIrodoriChessSettleInfo subBuilder = new global::Weedwacker.Shared.Network.Proto.InBattleIrodoriChessSettleInfo();
             if (detailCase_ == DetailOneofCase.IrodoriChessSettleInfo) {
               subBuilder.MergeFrom(IrodoriChessSettleInfo);
             }

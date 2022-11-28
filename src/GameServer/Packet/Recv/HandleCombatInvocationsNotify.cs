@@ -85,17 +85,17 @@ namespace Weedwacker.GameServer.Packet.Recv
                         info = EvtLightCoreMove.Parser.ParseFrom(data);
                         //TODO
                         break;
-                    case CombatTypeArgument.Unk2700Kpdnfkcmkpg:
-                        //TODO?
-                        goto default;
+                    case CombatTypeArgument.BeingHealedNtf:
+                        //TODO
+                        info = EvtLightCoreMove.Parser.ParseFrom(data);
                         break;
-                    case CombatTypeArgument.Unk2700Kplomoialgf:
-                        //TODO?
-                        goto default;
+                    case CombatTypeArgument.GrapplingHookMove:
+                        //TODO
+                        info = EvtLightCoreMove.Parser.ParseFrom(data);
                         break;
-                    case CombatTypeArgument.Unk3000Bjehmplcfhn:
-                        //TODO?
-                        goto default;
+                    case CombatTypeArgument.SkillAnchorPositionNtf:
+                        //TODO
+                        info = EvtLightCoreMove.Parser.ParseFrom(data);
                         break;
                     default:
                         info = new EntityMoveInfo();

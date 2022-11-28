@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static AbilityMixinElementShieldReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9BYmlsaXR5TWl4aW5FbGVtZW50U2hpZWxkLnByb3RvIp8BChlBYmlsaXR5",
+            "Ch9BYmlsaXR5TWl4aW5FbGVtZW50U2hpZWxkLnByb3RvIpYBChlBYmlsaXR5",
             "TWl4aW5FbGVtZW50U2hpZWxkEhIKCnN1Yl9zaGllbGQYCiABKAISDgoGc2hp",
-            "ZWxkGAggASgCEhMKC2Fic29yYl90eXBlGAEgASgNEhsKE1VuazI3MDBfUEJL",
-            "QkRETE5CRUEYBCABKA0SGAoQaXNfc2hpZWxkX2Jyb2tlbhgJIAEoCBISCgpt",
-            "YXhfc2hpZWxkGAwgASgCQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvYgZwcm90bzM="));
+            "ZWxkGAggASgCEhMKC2Fic29yYl90eXBlGAEgASgNEhIKCnBsYXllcl9udW0Y",
+            "BCABKA0SGAoQaXNfc2hpZWxkX2Jyb2tlbhgJIAEoCBISCgptYXhfc2hpZWxk",
+            "GAwgASgCQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityMixinElementShield), global::Weedwacker.Shared.Network.Proto.AbilityMixinElementShield.Parser, new[]{ "SubShield", "Shield", "AbsorbType", "Unk2700PBKBDDLNBEA", "IsShieldBroken", "MaxShield" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityMixinElementShield), global::Weedwacker.Shared.Network.Proto.AbilityMixinElementShield.Parser, new[]{ "SubShield", "Shield", "AbsorbType", "PlayerNum", "IsShieldBroken", "MaxShield" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,7 +77,7 @@ namespace Weedwacker.Shared.Network.Proto {
       subShield_ = other.subShield_;
       shield_ = other.shield_;
       absorbType_ = other.absorbType_;
-      unk2700PBKBDDLNBEA_ = other.unk2700PBKBDDLNBEA_;
+      playerNum_ = other.playerNum_;
       isShieldBroken_ = other.isShieldBroken_;
       maxShield_ = other.maxShield_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -125,15 +125,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_PBKBDDLNBEA" field.</summary>
-    public const int Unk2700PBKBDDLNBEAFieldNumber = 4;
-    private uint unk2700PBKBDDLNBEA_;
+    /// <summary>Field number for the "player_num" field.</summary>
+    public const int PlayerNumFieldNumber = 4;
+    private uint playerNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700PBKBDDLNBEA {
-      get { return unk2700PBKBDDLNBEA_; }
+    public uint PlayerNum {
+      get { return playerNum_; }
       set {
-        unk2700PBKBDDLNBEA_ = value;
+        playerNum_ = value;
       }
     }
 
@@ -179,7 +179,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SubShield, other.SubShield)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Shield, other.Shield)) return false;
       if (AbsorbType != other.AbsorbType) return false;
-      if (Unk2700PBKBDDLNBEA != other.Unk2700PBKBDDLNBEA) return false;
+      if (PlayerNum != other.PlayerNum) return false;
       if (IsShieldBroken != other.IsShieldBroken) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MaxShield, other.MaxShield)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -192,7 +192,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (SubShield != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SubShield);
       if (Shield != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Shield);
       if (AbsorbType != 0) hash ^= AbsorbType.GetHashCode();
-      if (Unk2700PBKBDDLNBEA != 0) hash ^= Unk2700PBKBDDLNBEA.GetHashCode();
+      if (PlayerNum != 0) hash ^= PlayerNum.GetHashCode();
       if (IsShieldBroken != false) hash ^= IsShieldBroken.GetHashCode();
       if (MaxShield != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MaxShield);
       if (_unknownFields != null) {
@@ -217,9 +217,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(AbsorbType);
       }
-      if (Unk2700PBKBDDLNBEA != 0) {
+      if (PlayerNum != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk2700PBKBDDLNBEA);
+        output.WriteUInt32(PlayerNum);
       }
       if (Shield != 0F) {
         output.WriteRawTag(69);
@@ -251,9 +251,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(AbsorbType);
       }
-      if (Unk2700PBKBDDLNBEA != 0) {
+      if (PlayerNum != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk2700PBKBDDLNBEA);
+        output.WriteUInt32(PlayerNum);
       }
       if (Shield != 0F) {
         output.WriteRawTag(69);
@@ -290,8 +290,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (AbsorbType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AbsorbType);
       }
-      if (Unk2700PBKBDDLNBEA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700PBKBDDLNBEA);
+      if (PlayerNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PlayerNum);
       }
       if (IsShieldBroken != false) {
         size += 1 + 1;
@@ -320,8 +320,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.AbsorbType != 0) {
         AbsorbType = other.AbsorbType;
       }
-      if (other.Unk2700PBKBDDLNBEA != 0) {
-        Unk2700PBKBDDLNBEA = other.Unk2700PBKBDDLNBEA;
+      if (other.PlayerNum != 0) {
+        PlayerNum = other.PlayerNum;
       }
       if (other.IsShieldBroken != false) {
         IsShieldBroken = other.IsShieldBroken;
@@ -349,7 +349,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 32: {
-            Unk2700PBKBDDLNBEA = input.ReadUInt32();
+            PlayerNum = input.ReadUInt32();
             break;
           }
           case 69: {
@@ -388,7 +388,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 32: {
-            Unk2700PBKBDDLNBEA = input.ReadUInt32();
+            PlayerNum = input.ReadUInt32();
             break;
           }
           case 69: {

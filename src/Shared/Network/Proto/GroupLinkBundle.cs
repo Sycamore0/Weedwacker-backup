@@ -24,16 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static GroupLinkBundleReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVHcm91cExpbmtCdW5kbGUucHJvdG8aDFZlY3Rvci5wcm90byKSAQoPR3Jv",
+            "ChVHcm91cExpbmtCdW5kbGUucHJvdG8aDFZlY3Rvci5wcm90byKLAQoPR3Jv",
             "dXBMaW5rQnVuZGxlEhcKBmNlbnRlchgEIAEoCzIHLlZlY3RvchIUCgxpc19h",
-            "Y3RpdmF0ZWQYDCABKAgSEQoJYnVuZGxlX2lkGAMgASgNEhsKE1VuazI3MDBf",
-            "SktETk9QR0tKQUMYDiABKAgSEAoIc2NlbmVfaWQYBSABKA0SDgoGcmFkaXVz",
-            "GAEgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
-            "cm90bzM="));
+            "Y3RpdmF0ZWQYDCABKAgSEQoJYnVuZGxlX2lkGAMgASgNEhQKDGlzX3Nob3df",
+            "bWFyaxgOIAEoCBIQCghzY2VuZV9pZBgFIAEoDRIOCgZyYWRpdXMYASABKA1C",
+            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GroupLinkBundle), global::Weedwacker.Shared.Network.Proto.GroupLinkBundle.Parser, new[]{ "Center", "IsActivated", "BundleId", "Unk2700JKDNOPGKJAC", "SceneId", "Radius" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GroupLinkBundle), global::Weedwacker.Shared.Network.Proto.GroupLinkBundle.Parser, new[]{ "Center", "IsActivated", "BundleId", "IsShowMark", "SceneId", "Radius" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,7 +76,7 @@ namespace Weedwacker.Shared.Network.Proto {
       center_ = other.center_ != null ? other.center_.Clone() : null;
       isActivated_ = other.isActivated_;
       bundleId_ = other.bundleId_;
-      unk2700JKDNOPGKJAC_ = other.unk2700JKDNOPGKJAC_;
+      isShowMark_ = other.isShowMark_;
       sceneId_ = other.sceneId_;
       radius_ = other.radius_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -125,15 +124,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_JKDNOPGKJAC" field.</summary>
-    public const int Unk2700JKDNOPGKJACFieldNumber = 14;
-    private bool unk2700JKDNOPGKJAC_;
+    /// <summary>Field number for the "is_show_mark" field.</summary>
+    public const int IsShowMarkFieldNumber = 14;
+    private bool isShowMark_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700JKDNOPGKJAC {
-      get { return unk2700JKDNOPGKJAC_; }
+    public bool IsShowMark {
+      get { return isShowMark_; }
       set {
-        unk2700JKDNOPGKJAC_ = value;
+        isShowMark_ = value;
       }
     }
 
@@ -179,7 +178,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (!object.Equals(Center, other.Center)) return false;
       if (IsActivated != other.IsActivated) return false;
       if (BundleId != other.BundleId) return false;
-      if (Unk2700JKDNOPGKJAC != other.Unk2700JKDNOPGKJAC) return false;
+      if (IsShowMark != other.IsShowMark) return false;
       if (SceneId != other.SceneId) return false;
       if (Radius != other.Radius) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -192,7 +191,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (center_ != null) hash ^= Center.GetHashCode();
       if (IsActivated != false) hash ^= IsActivated.GetHashCode();
       if (BundleId != 0) hash ^= BundleId.GetHashCode();
-      if (Unk2700JKDNOPGKJAC != false) hash ^= Unk2700JKDNOPGKJAC.GetHashCode();
+      if (IsShowMark != false) hash ^= IsShowMark.GetHashCode();
       if (SceneId != 0) hash ^= SceneId.GetHashCode();
       if (Radius != 0) hash ^= Radius.GetHashCode();
       if (_unknownFields != null) {
@@ -233,9 +232,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(96);
         output.WriteBool(IsActivated);
       }
-      if (Unk2700JKDNOPGKJAC != false) {
+      if (IsShowMark != false) {
         output.WriteRawTag(112);
-        output.WriteBool(Unk2700JKDNOPGKJAC);
+        output.WriteBool(IsShowMark);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -267,9 +266,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(96);
         output.WriteBool(IsActivated);
       }
-      if (Unk2700JKDNOPGKJAC != false) {
+      if (IsShowMark != false) {
         output.WriteRawTag(112);
-        output.WriteBool(Unk2700JKDNOPGKJAC);
+        output.WriteBool(IsShowMark);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -290,7 +289,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (BundleId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BundleId);
       }
-      if (Unk2700JKDNOPGKJAC != false) {
+      if (IsShowMark != false) {
         size += 1 + 1;
       }
       if (SceneId != 0) {
@@ -323,8 +322,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.BundleId != 0) {
         BundleId = other.BundleId;
       }
-      if (other.Unk2700JKDNOPGKJAC != false) {
-        Unk2700JKDNOPGKJAC = other.Unk2700JKDNOPGKJAC;
+      if (other.IsShowMark != false) {
+        IsShowMark = other.IsShowMark;
       }
       if (other.SceneId != 0) {
         SceneId = other.SceneId;
@@ -371,7 +370,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk2700JKDNOPGKJAC = input.ReadBool();
+            IsShowMark = input.ReadBool();
             break;
           }
         }
@@ -413,7 +412,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk2700JKDNOPGKJAC = input.ReadBool();
+            IsShowMark = input.ReadBool();
             break;
           }
         }

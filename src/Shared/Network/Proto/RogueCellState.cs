@@ -24,12 +24,12 @@ namespace Weedwacker.Shared.Network.Proto {
     static RogueCellStateReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRSb2d1ZUNlbGxTdGF0ZS5wcm90byqtAQoOUm9ndWVDZWxsU3RhdGUSGQoV",
+            "ChRSb2d1ZUNlbGxTdGF0ZS5wcm90byqlAQoOUm9ndWVDZWxsU3RhdGUSGQoV",
             "Uk9HVUVfQ0VMTF9TVEFURV9OT05FEAASGwoXUk9HVUVfQ0VMTF9TVEFURV9C",
             "QVRUTEUQARIcChhST0dVRV9DRUxMX1NUQVRFX1NVQ0NFU1MQAhIbChdST0dV",
-            "RV9DRUxMX1NUQVRFX0ZJTklTSBADEigKJFJPR1VFX0NFTExfU1RBVEVfVW5r",
-            "MjIwMF9LS0hHS09CQ0ZLShAEQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvYgZwcm90bzM="));
+            "RV9DRUxMX1NUQVRFX0ZJTklTSBADEiAKHFJPR1VFX0NFTExfU1RBVEVfVEFL",
+            "RU5fQ0hFU1QQBEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.RogueCellState), }, null, null));
@@ -43,7 +43,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [pbr::OriginalName("ROGUE_CELL_STATE_BATTLE")] Battle = 1,
     [pbr::OriginalName("ROGUE_CELL_STATE_SUCCESS")] Success = 2,
     [pbr::OriginalName("ROGUE_CELL_STATE_FINISH")] Finish = 3,
-    [pbr::OriginalName("ROGUE_CELL_STATE_Unk2200_KKHGKOBCFKJ")] Unk2200Kkhgkobcfkj = 4,
+    [pbr::OriginalName("ROGUE_CELL_STATE_TAKEN_CHEST")] TakenChest = 4,
   }
 
   #endregion

@@ -25,15 +25,15 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChlDb2RleERhdGFGdWxsTm90aWZ5LnByb3RvGhNDb2RleFR5cGVEYXRhLnBy",
-            "b3RvIpQBChNDb2RleERhdGFGdWxsTm90aWZ5EhsKE1VuazI3MDBfQlBLT0xI",
-            "T09HRk8YBCABKA0SGwoTVW5rMjcwMF9ERkpKSEZISElIRhgCIAMoDRIbChNV",
-            "bmsyNzAwX0hKRE5CQlBNT0FQGAMgASgNEiYKDnR5cGVfZGF0YV9saXN0GAYg",
-            "AygLMg4uQ29kZXhUeXBlRGF0YUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90b2IGcHJvdG8z"));
+            "b3RvIqsBChNDb2RleERhdGFGdWxsTm90aWZ5EiMKG2xhc3RfcmVhZF9wdXNo",
+            "dGlwc19jb2RleF9pZBgEIAEoDRIjChtyZWNlbnRfdmlld2VkX3B1c2h0aXBz",
+            "X2xpc3QYAiADKA0SIgoabGFzdF9yZWFkX3B1c2h0aXBzX3R5cGVfaWQYAyAB",
+            "KA0SJgoOdHlwZV9kYXRhX2xpc3QYBiADKAsyDi5Db2RleFR5cGVEYXRhQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.CodexTypeDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CodexDataFullNotify), global::Weedwacker.Shared.Network.Proto.CodexDataFullNotify.Parser, new[]{ "Unk2700BPKOLHOOGFO", "Unk2700DFJJHFHHIHF", "Unk2700HJDNBBPMOAP", "TypeDataList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CodexDataFullNotify), global::Weedwacker.Shared.Network.Proto.CodexDataFullNotify.Parser, new[]{ "LastReadPushtipsCodexId", "RecentViewedPushtipsList", "LastReadPushtipsTypeId", "TypeDataList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,9 +79,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CodexDataFullNotify(CodexDataFullNotify other) : this() {
-      unk2700BPKOLHOOGFO_ = other.unk2700BPKOLHOOGFO_;
-      unk2700DFJJHFHHIHF_ = other.unk2700DFJJHFHHIHF_.Clone();
-      unk2700HJDNBBPMOAP_ = other.unk2700HJDNBBPMOAP_;
+      lastReadPushtipsCodexId_ = other.lastReadPushtipsCodexId_;
+      recentViewedPushtipsList_ = other.recentViewedPushtipsList_.Clone();
+      lastReadPushtipsTypeId_ = other.lastReadPushtipsTypeId_;
       typeDataList_ = other.typeDataList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -92,38 +92,38 @@ namespace Weedwacker.Shared.Network.Proto {
       return new CodexDataFullNotify(this);
     }
 
-    /// <summary>Field number for the "Unk2700_BPKOLHOOGFO" field.</summary>
-    public const int Unk2700BPKOLHOOGFOFieldNumber = 4;
-    private uint unk2700BPKOLHOOGFO_;
+    /// <summary>Field number for the "last_read_pushtips_codex_id" field.</summary>
+    public const int LastReadPushtipsCodexIdFieldNumber = 4;
+    private uint lastReadPushtipsCodexId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700BPKOLHOOGFO {
-      get { return unk2700BPKOLHOOGFO_; }
+    public uint LastReadPushtipsCodexId {
+      get { return lastReadPushtipsCodexId_; }
       set {
-        unk2700BPKOLHOOGFO_ = value;
+        lastReadPushtipsCodexId_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_DFJJHFHHIHF" field.</summary>
-    public const int Unk2700DFJJHFHHIHFFieldNumber = 2;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700DFJJHFHHIHF_codec
+    /// <summary>Field number for the "recent_viewed_pushtips_list" field.</summary>
+    public const int RecentViewedPushtipsListFieldNumber = 2;
+    private static readonly pb::FieldCodec<uint> _repeated_recentViewedPushtipsList_codec
         = pb::FieldCodec.ForUInt32(18);
-    private readonly pbc::RepeatedField<uint> unk2700DFJJHFHHIHF_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> recentViewedPushtipsList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700DFJJHFHHIHF {
-      get { return unk2700DFJJHFHHIHF_; }
+    public pbc::RepeatedField<uint> RecentViewedPushtipsList {
+      get { return recentViewedPushtipsList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_HJDNBBPMOAP" field.</summary>
-    public const int Unk2700HJDNBBPMOAPFieldNumber = 3;
-    private uint unk2700HJDNBBPMOAP_;
+    /// <summary>Field number for the "last_read_pushtips_type_id" field.</summary>
+    public const int LastReadPushtipsTypeIdFieldNumber = 3;
+    private uint lastReadPushtipsTypeId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700HJDNBBPMOAP {
-      get { return unk2700HJDNBBPMOAP_; }
+    public uint LastReadPushtipsTypeId {
+      get { return lastReadPushtipsTypeId_; }
       set {
-        unk2700HJDNBBPMOAP_ = value;
+        lastReadPushtipsTypeId_ = value;
       }
     }
 
@@ -153,9 +153,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700BPKOLHOOGFO != other.Unk2700BPKOLHOOGFO) return false;
-      if(!unk2700DFJJHFHHIHF_.Equals(other.unk2700DFJJHFHHIHF_)) return false;
-      if (Unk2700HJDNBBPMOAP != other.Unk2700HJDNBBPMOAP) return false;
+      if (LastReadPushtipsCodexId != other.LastReadPushtipsCodexId) return false;
+      if(!recentViewedPushtipsList_.Equals(other.recentViewedPushtipsList_)) return false;
+      if (LastReadPushtipsTypeId != other.LastReadPushtipsTypeId) return false;
       if(!typeDataList_.Equals(other.typeDataList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -164,9 +164,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700BPKOLHOOGFO != 0) hash ^= Unk2700BPKOLHOOGFO.GetHashCode();
-      hash ^= unk2700DFJJHFHHIHF_.GetHashCode();
-      if (Unk2700HJDNBBPMOAP != 0) hash ^= Unk2700HJDNBBPMOAP.GetHashCode();
+      if (LastReadPushtipsCodexId != 0) hash ^= LastReadPushtipsCodexId.GetHashCode();
+      hash ^= recentViewedPushtipsList_.GetHashCode();
+      if (LastReadPushtipsTypeId != 0) hash ^= LastReadPushtipsTypeId.GetHashCode();
       hash ^= typeDataList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -186,14 +186,14 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk2700DFJJHFHHIHF_.WriteTo(output, _repeated_unk2700DFJJHFHHIHF_codec);
-      if (Unk2700HJDNBBPMOAP != 0) {
+      recentViewedPushtipsList_.WriteTo(output, _repeated_recentViewedPushtipsList_codec);
+      if (LastReadPushtipsTypeId != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk2700HJDNBBPMOAP);
+        output.WriteUInt32(LastReadPushtipsTypeId);
       }
-      if (Unk2700BPKOLHOOGFO != 0) {
+      if (LastReadPushtipsCodexId != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk2700BPKOLHOOGFO);
+        output.WriteUInt32(LastReadPushtipsCodexId);
       }
       typeDataList_.WriteTo(output, _repeated_typeDataList_codec);
       if (_unknownFields != null) {
@@ -206,14 +206,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk2700DFJJHFHHIHF_.WriteTo(ref output, _repeated_unk2700DFJJHFHHIHF_codec);
-      if (Unk2700HJDNBBPMOAP != 0) {
+      recentViewedPushtipsList_.WriteTo(ref output, _repeated_recentViewedPushtipsList_codec);
+      if (LastReadPushtipsTypeId != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk2700HJDNBBPMOAP);
+        output.WriteUInt32(LastReadPushtipsTypeId);
       }
-      if (Unk2700BPKOLHOOGFO != 0) {
+      if (LastReadPushtipsCodexId != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk2700BPKOLHOOGFO);
+        output.WriteUInt32(LastReadPushtipsCodexId);
       }
       typeDataList_.WriteTo(ref output, _repeated_typeDataList_codec);
       if (_unknownFields != null) {
@@ -226,12 +226,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700BPKOLHOOGFO != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700BPKOLHOOGFO);
+      if (LastReadPushtipsCodexId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LastReadPushtipsCodexId);
       }
-      size += unk2700DFJJHFHHIHF_.CalculateSize(_repeated_unk2700DFJJHFHHIHF_codec);
-      if (Unk2700HJDNBBPMOAP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700HJDNBBPMOAP);
+      size += recentViewedPushtipsList_.CalculateSize(_repeated_recentViewedPushtipsList_codec);
+      if (LastReadPushtipsTypeId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LastReadPushtipsTypeId);
       }
       size += typeDataList_.CalculateSize(_repeated_typeDataList_codec);
       if (_unknownFields != null) {
@@ -246,12 +246,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700BPKOLHOOGFO != 0) {
-        Unk2700BPKOLHOOGFO = other.Unk2700BPKOLHOOGFO;
+      if (other.LastReadPushtipsCodexId != 0) {
+        LastReadPushtipsCodexId = other.LastReadPushtipsCodexId;
       }
-      unk2700DFJJHFHHIHF_.Add(other.unk2700DFJJHFHHIHF_);
-      if (other.Unk2700HJDNBBPMOAP != 0) {
-        Unk2700HJDNBBPMOAP = other.Unk2700HJDNBBPMOAP;
+      recentViewedPushtipsList_.Add(other.recentViewedPushtipsList_);
+      if (other.LastReadPushtipsTypeId != 0) {
+        LastReadPushtipsTypeId = other.LastReadPushtipsTypeId;
       }
       typeDataList_.Add(other.typeDataList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -271,15 +271,15 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 18:
           case 16: {
-            unk2700DFJJHFHHIHF_.AddEntriesFrom(input, _repeated_unk2700DFJJHFHHIHF_codec);
+            recentViewedPushtipsList_.AddEntriesFrom(input, _repeated_recentViewedPushtipsList_codec);
             break;
           }
           case 24: {
-            Unk2700HJDNBBPMOAP = input.ReadUInt32();
+            LastReadPushtipsTypeId = input.ReadUInt32();
             break;
           }
           case 32: {
-            Unk2700BPKOLHOOGFO = input.ReadUInt32();
+            LastReadPushtipsCodexId = input.ReadUInt32();
             break;
           }
           case 50: {
@@ -303,15 +303,15 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 18:
           case 16: {
-            unk2700DFJJHFHHIHF_.AddEntriesFrom(ref input, _repeated_unk2700DFJJHFHHIHF_codec);
+            recentViewedPushtipsList_.AddEntriesFrom(ref input, _repeated_recentViewedPushtipsList_codec);
             break;
           }
           case 24: {
-            Unk2700HJDNBBPMOAP = input.ReadUInt32();
+            LastReadPushtipsTypeId = input.ReadUInt32();
             break;
           }
           case 32: {
-            Unk2700BPKOLHOOGFO = input.ReadUInt32();
+            LastReadPushtipsCodexId = input.ReadUInt32();
             break;
           }
           case 50: {

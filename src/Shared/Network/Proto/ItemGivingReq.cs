@@ -24,20 +24,20 @@ namespace Weedwacker.Shared.Network.Proto {
     static ItemGivingReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNJdGVtR2l2aW5nUmVxLnByb3RvGg9JdGVtUGFyYW0ucHJvdG8i5wIKDUl0",
+            "ChNJdGVtR2l2aW5nUmVxLnByb3RvGg9JdGVtUGFyYW0ucHJvdG8ixwIKDUl0",
             "ZW1HaXZpbmdSZXESQQoTaXRlbV9ndWlkX2NvdW50X21hcBgPIAMoCzIkLkl0",
             "ZW1HaXZpbmdSZXEuSXRlbUd1aWRDb3VudE1hcEVudHJ5EhEKCWdpdmluZ19p",
             "ZBgNIAEoDRIjCg9pdGVtX3BhcmFtX2xpc3QYBCADKAsyCi5JdGVtUGFyYW0S",
-            "PwoTVW5rMjgwMF9QSE5JSkpNRUNHThgCIAEoDjIiLkl0ZW1HaXZpbmdSZXEu",
-            "VW5rMjgwMF9MRU5DREZKQUNGTho3ChVJdGVtR3VpZENvdW50TWFwRW50cnkS",
-            "CwoDa2V5GAEgASgEEg0KBXZhbHVlGAIgASgNOgI4ASJhChNVbmsyODAwX0xF",
-            "TkNERkpBQ0ZOEh0KGVVuazI4MDBfTEVOQ0RGSkFDRk5fUVVFU1QQABIrCidV",
-            "bmsyODAwX0xFTkNERkpBQ0ZOX1VuazI4MDBfSEhIT1BFSElQRkcQAUIiqgIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "NwoQaXRlbV9naXZpbmdfdHlwZRgCIAEoDjIdLkl0ZW1HaXZpbmdSZXEuSXRl",
+            "bUdpdmluZ1R5cGUaNwoVSXRlbUd1aWRDb3VudE1hcEVudHJ5EgsKA2tleRgB",
+            "IAEoBBINCgV2YWx1ZRgCIAEoDToCOAEiSQoOSXRlbUdpdmluZ1R5cGUSGgoW",
+            "SVRFTV9HSVZJTkdfVFlQRV9RVUVTVBAAEhsKF0lURU1fR0lWSU5HX1RZUEVf",
+            "R0FER0VUEAFCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ItemParamReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ItemGivingReq), global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Parser, new[]{ "ItemGuidCountMap", "GivingId", "ItemParamList", "Unk2800PHNIJJMECGN" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN) }, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ItemGivingReq), global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Parser, new[]{ "ItemGuidCountMap", "GivingId", "ItemParamList", "ItemGivingType" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType) }, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -87,7 +87,7 @@ namespace Weedwacker.Shared.Network.Proto {
       itemGuidCountMap_ = other.itemGuidCountMap_.Clone();
       givingId_ = other.givingId_;
       itemParamList_ = other.itemParamList_.Clone();
-      unk2800PHNIJJMECGN_ = other.unk2800PHNIJJMECGN_;
+      itemGivingType_ = other.itemGivingType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -131,15 +131,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return itemParamList_; }
     }
 
-    /// <summary>Field number for the "Unk2800_PHNIJJMECGN" field.</summary>
-    public const int Unk2800PHNIJJMECGNFieldNumber = 2;
-    private global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN unk2800PHNIJJMECGN_ = global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN.Quest;
+    /// <summary>Field number for the "item_giving_type" field.</summary>
+    public const int ItemGivingTypeFieldNumber = 2;
+    private global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType itemGivingType_ = global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType.Quest;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN Unk2800PHNIJJMECGN {
-      get { return unk2800PHNIJJMECGN_; }
+    public global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType ItemGivingType {
+      get { return itemGivingType_; }
       set {
-        unk2800PHNIJJMECGN_ = value;
+        itemGivingType_ = value;
       }
     }
 
@@ -161,7 +161,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (!ItemGuidCountMap.Equals(other.ItemGuidCountMap)) return false;
       if (GivingId != other.GivingId) return false;
       if(!itemParamList_.Equals(other.itemParamList_)) return false;
-      if (Unk2800PHNIJJMECGN != other.Unk2800PHNIJJMECGN) return false;
+      if (ItemGivingType != other.ItemGivingType) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -172,7 +172,7 @@ namespace Weedwacker.Shared.Network.Proto {
       hash ^= ItemGuidCountMap.GetHashCode();
       if (GivingId != 0) hash ^= GivingId.GetHashCode();
       hash ^= itemParamList_.GetHashCode();
-      if (Unk2800PHNIJJMECGN != global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN.Quest) hash ^= Unk2800PHNIJJMECGN.GetHashCode();
+      if (ItemGivingType != global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType.Quest) hash ^= ItemGivingType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -191,9 +191,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2800PHNIJJMECGN != global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN.Quest) {
+      if (ItemGivingType != global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType.Quest) {
         output.WriteRawTag(16);
-        output.WriteEnum((int) Unk2800PHNIJJMECGN);
+        output.WriteEnum((int) ItemGivingType);
       }
       itemParamList_.WriteTo(output, _repeated_itemParamList_codec);
       if (GivingId != 0) {
@@ -211,9 +211,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2800PHNIJJMECGN != global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN.Quest) {
+      if (ItemGivingType != global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType.Quest) {
         output.WriteRawTag(16);
-        output.WriteEnum((int) Unk2800PHNIJJMECGN);
+        output.WriteEnum((int) ItemGivingType);
       }
       itemParamList_.WriteTo(ref output, _repeated_itemParamList_codec);
       if (GivingId != 0) {
@@ -236,8 +236,8 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GivingId);
       }
       size += itemParamList_.CalculateSize(_repeated_itemParamList_codec);
-      if (Unk2800PHNIJJMECGN != global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN.Quest) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk2800PHNIJJMECGN);
+      if (ItemGivingType != global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType.Quest) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ItemGivingType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -256,8 +256,8 @@ namespace Weedwacker.Shared.Network.Proto {
         GivingId = other.GivingId;
       }
       itemParamList_.Add(other.itemParamList_);
-      if (other.Unk2800PHNIJJMECGN != global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN.Quest) {
-        Unk2800PHNIJJMECGN = other.Unk2800PHNIJJMECGN;
+      if (other.ItemGivingType != global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType.Quest) {
+        ItemGivingType = other.ItemGivingType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -275,7 +275,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 16: {
-            Unk2800PHNIJJMECGN = (global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN) input.ReadEnum();
+            ItemGivingType = (global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType) input.ReadEnum();
             break;
           }
           case 34: {
@@ -306,7 +306,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 16: {
-            Unk2800PHNIJJMECGN = (global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.Unk2800_LENCDFJACFN) input.ReadEnum();
+            ItemGivingType = (global::Weedwacker.Shared.Network.Proto.ItemGivingReq.Types.ItemGivingType) input.ReadEnum();
             break;
           }
           case 34: {
@@ -331,9 +331,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
-      public enum Unk2800_LENCDFJACFN {
-        [pbr::OriginalName("Unk2800_LENCDFJACFN_QUEST")] Quest = 0,
-        [pbr::OriginalName("Unk2800_LENCDFJACFN_Unk2800_HHHOPEHIPFG")] Unk2800Hhhopehipfg = 1,
+      public enum ItemGivingType {
+        [pbr::OriginalName("ITEM_GIVING_TYPE_QUEST")] Quest = 0,
+        [pbr::OriginalName("ITEM_GIVING_TYPE_GADGET")] Gadget = 1,
       }
 
     }

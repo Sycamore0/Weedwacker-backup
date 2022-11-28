@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerLuaShellNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpQbGF5ZXJMdWFTaGVsbE5vdGlmeS5wcm90bxoZVW5rMjcwMF9KT0VQSUdO",
-            "UERHSC5wcm90byJ6ChRQbGF5ZXJMdWFTaGVsbE5vdGlmeRIxChNVbmsyNzAw",
-            "X0pKTUhGRkhOSkpPGAcgASgOMhQuVW5rMjcwMF9KT0VQSUdOUERHSBIKCgJp",
-            "ZBgFIAEoDRIRCglsdWFfc2hlbGwYDCABKAwSEAoIdXNlX3R5cGUYCiABKA1C",
-            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "ChpQbGF5ZXJMdWFTaGVsbE5vdGlmeS5wcm90bxoSTHVhU2hlbGxUeXBlLnBy",
+            "b3RvImoKFFBsYXllckx1YVNoZWxsTm90aWZ5EiEKCnNoZWxsX3R5cGUYByAB",
+            "KA4yDS5MdWFTaGVsbFR5cGUSCgoCaWQYBSABKA0SEQoJbHVhX3NoZWxsGAwg",
+            "ASgMEhAKCHVzZV90eXBlGAogASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5O",
+            "ZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2700JOEPIGNPDGHReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.LuaShellTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerLuaShellNotify), global::Weedwacker.Shared.Network.Proto.PlayerLuaShellNotify.Parser, new[]{ "Unk2700JJMHFFHNJJO", "Id", "LuaShell", "UseType" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerLuaShellNotify), global::Weedwacker.Shared.Network.Proto.PlayerLuaShellNotify.Parser, new[]{ "ShellType", "Id", "LuaShell", "UseType" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,7 +78,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerLuaShellNotify(PlayerLuaShellNotify other) : this() {
-      unk2700JJMHFFHNJJO_ = other.unk2700JJMHFFHNJJO_;
+      shellType_ = other.shellType_;
       id_ = other.id_;
       luaShell_ = other.luaShell_;
       useType_ = other.useType_;
@@ -91,15 +91,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new PlayerLuaShellNotify(this);
     }
 
-    /// <summary>Field number for the "Unk2700_JJMHFFHNJJO" field.</summary>
-    public const int Unk2700JJMHFFHNJJOFieldNumber = 7;
-    private global::Weedwacker.Shared.Network.Proto.Unk2700_JOEPIGNPDGH unk2700JJMHFFHNJJO_ = global::Weedwacker.Shared.Network.Proto.Unk2700_JOEPIGNPDGH.Unk2700Gigonjigkbm;
+    /// <summary>Field number for the "shell_type" field.</summary>
+    public const int ShellTypeFieldNumber = 7;
+    private global::Weedwacker.Shared.Network.Proto.LuaShellType shellType_ = global::Weedwacker.Shared.Network.Proto.LuaShellType.LuashellNone;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2700_JOEPIGNPDGH Unk2700JJMHFFHNJJO {
-      get { return unk2700JJMHFFHNJJO_; }
+    public global::Weedwacker.Shared.Network.Proto.LuaShellType ShellType {
+      get { return shellType_; }
       set {
-        unk2700JJMHFFHNJJO_ = value;
+        shellType_ = value;
       }
     }
 
@@ -154,7 +154,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700JJMHFFHNJJO != other.Unk2700JJMHFFHNJJO) return false;
+      if (ShellType != other.ShellType) return false;
       if (Id != other.Id) return false;
       if (LuaShell != other.LuaShell) return false;
       if (UseType != other.UseType) return false;
@@ -165,7 +165,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700JJMHFFHNJJO != global::Weedwacker.Shared.Network.Proto.Unk2700_JOEPIGNPDGH.Unk2700Gigonjigkbm) hash ^= Unk2700JJMHFFHNJJO.GetHashCode();
+      if (ShellType != global::Weedwacker.Shared.Network.Proto.LuaShellType.LuashellNone) hash ^= ShellType.GetHashCode();
       if (Id != 0) hash ^= Id.GetHashCode();
       if (LuaShell.Length != 0) hash ^= LuaShell.GetHashCode();
       if (UseType != 0) hash ^= UseType.GetHashCode();
@@ -191,9 +191,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(Id);
       }
-      if (Unk2700JJMHFFHNJJO != global::Weedwacker.Shared.Network.Proto.Unk2700_JOEPIGNPDGH.Unk2700Gigonjigkbm) {
+      if (ShellType != global::Weedwacker.Shared.Network.Proto.LuaShellType.LuashellNone) {
         output.WriteRawTag(56);
-        output.WriteEnum((int) Unk2700JJMHFFHNJJO);
+        output.WriteEnum((int) ShellType);
       }
       if (UseType != 0) {
         output.WriteRawTag(80);
@@ -217,9 +217,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(Id);
       }
-      if (Unk2700JJMHFFHNJJO != global::Weedwacker.Shared.Network.Proto.Unk2700_JOEPIGNPDGH.Unk2700Gigonjigkbm) {
+      if (ShellType != global::Weedwacker.Shared.Network.Proto.LuaShellType.LuashellNone) {
         output.WriteRawTag(56);
-        output.WriteEnum((int) Unk2700JJMHFFHNJJO);
+        output.WriteEnum((int) ShellType);
       }
       if (UseType != 0) {
         output.WriteRawTag(80);
@@ -239,8 +239,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700JJMHFFHNJJO != global::Weedwacker.Shared.Network.Proto.Unk2700_JOEPIGNPDGH.Unk2700Gigonjigkbm) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk2700JJMHFFHNJJO);
+      if (ShellType != global::Weedwacker.Shared.Network.Proto.LuaShellType.LuashellNone) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ShellType);
       }
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
@@ -263,8 +263,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700JJMHFFHNJJO != global::Weedwacker.Shared.Network.Proto.Unk2700_JOEPIGNPDGH.Unk2700Gigonjigkbm) {
-        Unk2700JJMHFFHNJJO = other.Unk2700JJMHFFHNJJO;
+      if (other.ShellType != global::Weedwacker.Shared.Network.Proto.LuaShellType.LuashellNone) {
+        ShellType = other.ShellType;
       }
       if (other.Id != 0) {
         Id = other.Id;
@@ -295,7 +295,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2700JJMHFFHNJJO = (global::Weedwacker.Shared.Network.Proto.Unk2700_JOEPIGNPDGH) input.ReadEnum();
+            ShellType = (global::Weedwacker.Shared.Network.Proto.LuaShellType) input.ReadEnum();
             break;
           }
           case 80: {
@@ -326,7 +326,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk2700JJMHFFHNJJO = (global::Weedwacker.Shared.Network.Proto.Unk2700_JOEPIGNPDGH) input.ReadEnum();
+            ShellType = (global::Weedwacker.Shared.Network.Proto.LuaShellType) input.ReadEnum();
             break;
           }
           case 80: {

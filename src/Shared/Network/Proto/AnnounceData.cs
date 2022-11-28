@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static AnnounceDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJBbm5vdW5jZURhdGEucHJvdG8ihwIKDEFubm91bmNlRGF0YRIXCg9jb3Vu",
+            "ChJBbm5vdW5jZURhdGEucHJvdG8iiAIKDEFubm91bmNlRGF0YRIXCg9jb3Vu",
             "dF9kb3duX3RleHQYCSABKAkSGgoSY2VudGVyX3N5c3RlbV90ZXh0GAggASgJ",
             "EhwKFGNvdW50X2Rvd25fZnJlcXVlbmN5GAEgASgNEhEKCWNvbmZpZ19pZBgH",
             "IAEoDRISCgpiZWdpbl90aW1lGAQgASgNEh8KF2NlbnRlcl9zeXN0ZW1fZnJl",
-            "cXVlbmN5GAsgASgNEhwKFGR1bmdlb25fY29uZmlybV90ZXh0GAIgASgJEiwK",
-            "JGlzX2NlbnRlcl9zeXN0ZW1fbGFzdDVfZXZlcnlfbWludXRlcxgOIAEoCBIQ",
-            "CghlbmRfdGltZRgKIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90b2IGcHJvdG8z"));
+            "cXVlbmN5GAsgASgNEhwKFGR1bmdlb25fY29uZmlybV90ZXh0GAIgASgJEi0K",
+            "JWlzX2NlbnRlcl9zeXN0ZW1fbGFzdF81X2V2ZXJ5X21pbnV0ZXMYDiABKAgS",
+            "EAoIZW5kX3RpbWUYCiABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
+            "cmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -178,7 +178,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "is_center_system_last5_every_minutes" field.</summary>
+    /// <summary>Field number for the "is_center_system_last_5_every_minutes" field.</summary>
     public const int IsCenterSystemLast5EveryMinutesFieldNumber = 14;
     private bool isCenterSystemLast5EveryMinutes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

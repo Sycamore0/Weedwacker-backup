@@ -24,12 +24,12 @@ namespace Weedwacker.Shared.Network.Proto {
     static GMShowObstacleRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdHTVNob3dPYnN0YWNsZVJzcC5wcm90bxoST2JzdGFjbGVJbmZvLnByb3Rv",
-            "IkYKEUdNU2hvd09ic3RhY2xlUnNwEg8KB3JldGNvZGUYBSABKAUSIAoJb2Jz",
-            "dGFjbGVzGAYgAygLMg0uT2JzdGFjbGVJbmZvQiKqAh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "ChdHTVNob3dPYnN0YWNsZVJzcC5wcm90bxoUR01PYnN0YWNsZUluZm8ucHJv",
+            "dG8iSAoRR01TaG93T2JzdGFjbGVSc3ASDwoHcmV0Y29kZRgFIAEoBRIiCglv",
+            "YnN0YWNsZXMYBiADKAsyDy5HTU9ic3RhY2xlSW5mb0IiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ObstacleInfoReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GMObstacleInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GMShowObstacleRsp), global::Weedwacker.Shared.Network.Proto.GMShowObstacleRsp.Parser, new[]{ "Retcode", "Obstacles" }, null, null, null, null)
           }));
@@ -102,12 +102,12 @@ namespace Weedwacker.Shared.Network.Proto {
 
     /// <summary>Field number for the "obstacles" field.</summary>
     public const int ObstaclesFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.ObstacleInfo> _repeated_obstacles_codec
-        = pb::FieldCodec.ForMessage(50, global::Weedwacker.Shared.Network.Proto.ObstacleInfo.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ObstacleInfo> obstacles_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ObstacleInfo>();
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.GMObstacleInfo> _repeated_obstacles_codec
+        = pb::FieldCodec.ForMessage(50, global::Weedwacker.Shared.Network.Proto.GMObstacleInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GMObstacleInfo> obstacles_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GMObstacleInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.ObstacleInfo> Obstacles {
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.GMObstacleInfo> Obstacles {
       get { return obstacles_; }
     }
 

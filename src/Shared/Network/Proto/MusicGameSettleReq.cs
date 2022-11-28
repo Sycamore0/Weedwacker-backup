@@ -24,23 +24,21 @@ namespace Weedwacker.Shared.Network.Proto {
     static MusicGameSettleReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhNdXNpY0dhbWVTZXR0bGVSZXEucHJvdG8i5AMKEk11c2ljR2FtZVNldHRs",
-            "ZVJlcRIcChNVbmsyNzAwX0dEUEtPQU5FREVCGIADIAMoDRIcChNVbmsyNzAw",
-            "X05NSEdBRExBTk1NGJsGIAEoDRIbChNVbmsyNzAwX05OSEdPQ0pMS0ZIGAQg",
-            "AygNEhsKE1VuazI3MDBfTkNISEVKTkZFQ0cYDyABKA0SDQoFc2NvcmUYCSAB",
-            "KA0SGwoTVW5rMjcwMF9DRVBHTUtBSEhDRBgGIAEoBBIbChNVbmsyNzAwX01N",
-            "SEhHQUxGSEdBGA0gASgNEhwKE1VuazI3MDBfQ0JMSUpIREZLSEEYpgMgASgI",
-            "EhEKCW1heF9jb21ibxgFIAEoDRIcChNVbmsyNzAwX0ZCTEJHUEhNTEFMGKII",
-            "IAEoDRIOCgVzcGVlZBiZAyABKAISGwoTVW5rMjcwMF9JT0tQSUtKREVIRxgD",
-            "IAEoCBINCgVjb21ibxgBIAEoDRIWCg5tdXNpY19iYXNpY19pZBgHIAEoDRIb",
-            "ChNVbmsyNzAwX0RJTUJBQk9HTkVNGAIgASgNEhwKE1VuazI3MDBfSU9NT0hF",
-            "S0pKTEoYoQ8gASgNEhMKC2NvcnJlY3RfaGl0GA4gASgNEhwKE1VuazI3MDBf",
-            "TEtKTkxESkFHR0wYhQogASgIQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvYgZwcm90bzM="));
+            "ChhNdXNpY0dhbWVTZXR0bGVSZXEucHJvdG8igwMKEk11c2ljR2FtZVNldHRs",
+            "ZVJlcRIUCgtidXR0b25fbGlzdBiAAyADKA0SDgoFZGVsYXkYmwYgASgNEhEK",
+            "CW5vdGVfbGlzdBgEIAMoDRIUCgxzY29yZV9yYXRpbmcYDyABKA0SDQoFc2Nv",
+            "cmUYCSABKA0SEAoIdWdjX2d1aWQYBiABKAQSFQoNcmVzdGFydF90aW1lcxgN",
+            "IAEoDRIYCg9pc19jdXN0b21fZGVsYXkYpgMgASgIEhEKCW1heF9jb21ibxgF",
+            "IAEoDRIWCg1pc19mdWxsX2NvbWJvGKIIIAEoDRIOCgVzcGVlZBiZAyABKAIS",
+            "FQoNaXNfc2F2ZV9zY29yZRgDIAEoCBINCgVjb21ibxgBIAEoDRIWCg5tdXNp",
+            "Y19iYXNpY19pZBgHIAEoDRITCgtzdGFyX3JhdGluZxgCIAEoDRIPCgZ2b2x1",
+            "bWUYoQ8gASgNEhMKC2NvcnJlY3RfaGl0GA4gASgNEhgKD2lzX2N1c3RvbV9z",
+            "cGVlZBiFCiABKAhCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MusicGameSettleReq), global::Weedwacker.Shared.Network.Proto.MusicGameSettleReq.Parser, new[]{ "Unk2700GDPKOANEDEB", "Unk2700NMHGADLANMM", "Unk2700NNHGOCJLKFH", "Unk2700NCHHEJNFECG", "Score", "Unk2700CEPGMKAHHCD", "Unk2700MMHHGALFHGA", "Unk2700CBLIJHDFKHA", "MaxCombo", "Unk2700FBLBGPHMLAL", "Speed", "Unk2700IOKPIKJDEHG", "Combo", "MusicBasicId", "Unk2700DIMBABOGNEM", "Unk2700IOMOHEKJJLJ", "CorrectHit", "Unk2700LKJNLDJAGGL" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MusicGameSettleReq), global::Weedwacker.Shared.Network.Proto.MusicGameSettleReq.Parser, new[]{ "ButtonList", "Delay", "NoteList", "ScoreRating", "Score", "UgcGuid", "RestartTimes", "IsCustomDelay", "MaxCombo", "IsFullCombo", "Speed", "IsSaveScore", "Combo", "MusicBasicId", "StarRating", "Volume", "CorrectHit", "IsCustomSpeed" }, null, null, null, null)
           }));
     }
     #endregion
@@ -87,24 +85,24 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MusicGameSettleReq(MusicGameSettleReq other) : this() {
-      unk2700GDPKOANEDEB_ = other.unk2700GDPKOANEDEB_.Clone();
-      unk2700NMHGADLANMM_ = other.unk2700NMHGADLANMM_;
-      unk2700NNHGOCJLKFH_ = other.unk2700NNHGOCJLKFH_.Clone();
-      unk2700NCHHEJNFECG_ = other.unk2700NCHHEJNFECG_;
+      buttonList_ = other.buttonList_.Clone();
+      delay_ = other.delay_;
+      noteList_ = other.noteList_.Clone();
+      scoreRating_ = other.scoreRating_;
       score_ = other.score_;
-      unk2700CEPGMKAHHCD_ = other.unk2700CEPGMKAHHCD_;
-      unk2700MMHHGALFHGA_ = other.unk2700MMHHGALFHGA_;
-      unk2700CBLIJHDFKHA_ = other.unk2700CBLIJHDFKHA_;
+      ugcGuid_ = other.ugcGuid_;
+      restartTimes_ = other.restartTimes_;
+      isCustomDelay_ = other.isCustomDelay_;
       maxCombo_ = other.maxCombo_;
-      unk2700FBLBGPHMLAL_ = other.unk2700FBLBGPHMLAL_;
+      isFullCombo_ = other.isFullCombo_;
       speed_ = other.speed_;
-      unk2700IOKPIKJDEHG_ = other.unk2700IOKPIKJDEHG_;
+      isSaveScore_ = other.isSaveScore_;
       combo_ = other.combo_;
       musicBasicId_ = other.musicBasicId_;
-      unk2700DIMBABOGNEM_ = other.unk2700DIMBABOGNEM_;
-      unk2700IOMOHEKJJLJ_ = other.unk2700IOMOHEKJJLJ_;
+      starRating_ = other.starRating_;
+      volume_ = other.volume_;
       correctHit_ = other.correctHit_;
-      unk2700LKJNLDJAGGL_ = other.unk2700LKJNLDJAGGL_;
+      isCustomSpeed_ = other.isCustomSpeed_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -114,49 +112,49 @@ namespace Weedwacker.Shared.Network.Proto {
       return new MusicGameSettleReq(this);
     }
 
-    /// <summary>Field number for the "Unk2700_GDPKOANEDEB" field.</summary>
-    public const int Unk2700GDPKOANEDEBFieldNumber = 384;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700GDPKOANEDEB_codec
+    /// <summary>Field number for the "button_list" field.</summary>
+    public const int ButtonListFieldNumber = 384;
+    private static readonly pb::FieldCodec<uint> _repeated_buttonList_codec
         = pb::FieldCodec.ForUInt32(3074);
-    private readonly pbc::RepeatedField<uint> unk2700GDPKOANEDEB_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> buttonList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700GDPKOANEDEB {
-      get { return unk2700GDPKOANEDEB_; }
+    public pbc::RepeatedField<uint> ButtonList {
+      get { return buttonList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_NMHGADLANMM" field.</summary>
-    public const int Unk2700NMHGADLANMMFieldNumber = 795;
-    private uint unk2700NMHGADLANMM_;
+    /// <summary>Field number for the "delay" field.</summary>
+    public const int DelayFieldNumber = 795;
+    private uint delay_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700NMHGADLANMM {
-      get { return unk2700NMHGADLANMM_; }
+    public uint Delay {
+      get { return delay_; }
       set {
-        unk2700NMHGADLANMM_ = value;
+        delay_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_NNHGOCJLKFH" field.</summary>
-    public const int Unk2700NNHGOCJLKFHFieldNumber = 4;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2700NNHGOCJLKFH_codec
+    /// <summary>Field number for the "note_list" field.</summary>
+    public const int NoteListFieldNumber = 4;
+    private static readonly pb::FieldCodec<uint> _repeated_noteList_codec
         = pb::FieldCodec.ForUInt32(34);
-    private readonly pbc::RepeatedField<uint> unk2700NNHGOCJLKFH_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> noteList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2700NNHGOCJLKFH {
-      get { return unk2700NNHGOCJLKFH_; }
+    public pbc::RepeatedField<uint> NoteList {
+      get { return noteList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_NCHHEJNFECG" field.</summary>
-    public const int Unk2700NCHHEJNFECGFieldNumber = 15;
-    private uint unk2700NCHHEJNFECG_;
+    /// <summary>Field number for the "score_rating" field.</summary>
+    public const int ScoreRatingFieldNumber = 15;
+    private uint scoreRating_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700NCHHEJNFECG {
-      get { return unk2700NCHHEJNFECG_; }
+    public uint ScoreRating {
+      get { return scoreRating_; }
       set {
-        unk2700NCHHEJNFECG_ = value;
+        scoreRating_ = value;
       }
     }
 
@@ -172,39 +170,39 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_CEPGMKAHHCD" field.</summary>
-    public const int Unk2700CEPGMKAHHCDFieldNumber = 6;
-    private ulong unk2700CEPGMKAHHCD_;
+    /// <summary>Field number for the "ugc_guid" field.</summary>
+    public const int UgcGuidFieldNumber = 6;
+    private ulong ugcGuid_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong Unk2700CEPGMKAHHCD {
-      get { return unk2700CEPGMKAHHCD_; }
+    public ulong UgcGuid {
+      get { return ugcGuid_; }
       set {
-        unk2700CEPGMKAHHCD_ = value;
+        ugcGuid_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_MMHHGALFHGA" field.</summary>
-    public const int Unk2700MMHHGALFHGAFieldNumber = 13;
-    private uint unk2700MMHHGALFHGA_;
+    /// <summary>Field number for the "restart_times" field.</summary>
+    public const int RestartTimesFieldNumber = 13;
+    private uint restartTimes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700MMHHGALFHGA {
-      get { return unk2700MMHHGALFHGA_; }
+    public uint RestartTimes {
+      get { return restartTimes_; }
       set {
-        unk2700MMHHGALFHGA_ = value;
+        restartTimes_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_CBLIJHDFKHA" field.</summary>
-    public const int Unk2700CBLIJHDFKHAFieldNumber = 422;
-    private bool unk2700CBLIJHDFKHA_;
+    /// <summary>Field number for the "is_custom_delay" field.</summary>
+    public const int IsCustomDelayFieldNumber = 422;
+    private bool isCustomDelay_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700CBLIJHDFKHA {
-      get { return unk2700CBLIJHDFKHA_; }
+    public bool IsCustomDelay {
+      get { return isCustomDelay_; }
       set {
-        unk2700CBLIJHDFKHA_ = value;
+        isCustomDelay_ = value;
       }
     }
 
@@ -220,15 +218,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_FBLBGPHMLAL" field.</summary>
-    public const int Unk2700FBLBGPHMLALFieldNumber = 1058;
-    private uint unk2700FBLBGPHMLAL_;
+    /// <summary>Field number for the "is_full_combo" field.</summary>
+    public const int IsFullComboFieldNumber = 1058;
+    private uint isFullCombo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700FBLBGPHMLAL {
-      get { return unk2700FBLBGPHMLAL_; }
+    public uint IsFullCombo {
+      get { return isFullCombo_; }
       set {
-        unk2700FBLBGPHMLAL_ = value;
+        isFullCombo_ = value;
       }
     }
 
@@ -244,15 +242,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_IOKPIKJDEHG" field.</summary>
-    public const int Unk2700IOKPIKJDEHGFieldNumber = 3;
-    private bool unk2700IOKPIKJDEHG_;
+    /// <summary>Field number for the "is_save_score" field.</summary>
+    public const int IsSaveScoreFieldNumber = 3;
+    private bool isSaveScore_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700IOKPIKJDEHG {
-      get { return unk2700IOKPIKJDEHG_; }
+    public bool IsSaveScore {
+      get { return isSaveScore_; }
       set {
-        unk2700IOKPIKJDEHG_ = value;
+        isSaveScore_ = value;
       }
     }
 
@@ -280,27 +278,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_DIMBABOGNEM" field.</summary>
-    public const int Unk2700DIMBABOGNEMFieldNumber = 2;
-    private uint unk2700DIMBABOGNEM_;
+    /// <summary>Field number for the "star_rating" field.</summary>
+    public const int StarRatingFieldNumber = 2;
+    private uint starRating_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700DIMBABOGNEM {
-      get { return unk2700DIMBABOGNEM_; }
+    public uint StarRating {
+      get { return starRating_; }
       set {
-        unk2700DIMBABOGNEM_ = value;
+        starRating_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_IOMOHEKJJLJ" field.</summary>
-    public const int Unk2700IOMOHEKJJLJFieldNumber = 1953;
-    private uint unk2700IOMOHEKJJLJ_;
+    /// <summary>Field number for the "volume" field.</summary>
+    public const int VolumeFieldNumber = 1953;
+    private uint volume_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700IOMOHEKJJLJ {
-      get { return unk2700IOMOHEKJJLJ_; }
+    public uint Volume {
+      get { return volume_; }
       set {
-        unk2700IOMOHEKJJLJ_ = value;
+        volume_ = value;
       }
     }
 
@@ -316,15 +314,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_LKJNLDJAGGL" field.</summary>
-    public const int Unk2700LKJNLDJAGGLFieldNumber = 1285;
-    private bool unk2700LKJNLDJAGGL_;
+    /// <summary>Field number for the "is_custom_speed" field.</summary>
+    public const int IsCustomSpeedFieldNumber = 1285;
+    private bool isCustomSpeed_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk2700LKJNLDJAGGL {
-      get { return unk2700LKJNLDJAGGL_; }
+    public bool IsCustomSpeed {
+      get { return isCustomSpeed_; }
       set {
-        unk2700LKJNLDJAGGL_ = value;
+        isCustomSpeed_ = value;
       }
     }
 
@@ -343,24 +341,24 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2700GDPKOANEDEB_.Equals(other.unk2700GDPKOANEDEB_)) return false;
-      if (Unk2700NMHGADLANMM != other.Unk2700NMHGADLANMM) return false;
-      if(!unk2700NNHGOCJLKFH_.Equals(other.unk2700NNHGOCJLKFH_)) return false;
-      if (Unk2700NCHHEJNFECG != other.Unk2700NCHHEJNFECG) return false;
+      if(!buttonList_.Equals(other.buttonList_)) return false;
+      if (Delay != other.Delay) return false;
+      if(!noteList_.Equals(other.noteList_)) return false;
+      if (ScoreRating != other.ScoreRating) return false;
       if (Score != other.Score) return false;
-      if (Unk2700CEPGMKAHHCD != other.Unk2700CEPGMKAHHCD) return false;
-      if (Unk2700MMHHGALFHGA != other.Unk2700MMHHGALFHGA) return false;
-      if (Unk2700CBLIJHDFKHA != other.Unk2700CBLIJHDFKHA) return false;
+      if (UgcGuid != other.UgcGuid) return false;
+      if (RestartTimes != other.RestartTimes) return false;
+      if (IsCustomDelay != other.IsCustomDelay) return false;
       if (MaxCombo != other.MaxCombo) return false;
-      if (Unk2700FBLBGPHMLAL != other.Unk2700FBLBGPHMLAL) return false;
+      if (IsFullCombo != other.IsFullCombo) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Speed, other.Speed)) return false;
-      if (Unk2700IOKPIKJDEHG != other.Unk2700IOKPIKJDEHG) return false;
+      if (IsSaveScore != other.IsSaveScore) return false;
       if (Combo != other.Combo) return false;
       if (MusicBasicId != other.MusicBasicId) return false;
-      if (Unk2700DIMBABOGNEM != other.Unk2700DIMBABOGNEM) return false;
-      if (Unk2700IOMOHEKJJLJ != other.Unk2700IOMOHEKJJLJ) return false;
+      if (StarRating != other.StarRating) return false;
+      if (Volume != other.Volume) return false;
       if (CorrectHit != other.CorrectHit) return false;
-      if (Unk2700LKJNLDJAGGL != other.Unk2700LKJNLDJAGGL) return false;
+      if (IsCustomSpeed != other.IsCustomSpeed) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -368,24 +366,24 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2700GDPKOANEDEB_.GetHashCode();
-      if (Unk2700NMHGADLANMM != 0) hash ^= Unk2700NMHGADLANMM.GetHashCode();
-      hash ^= unk2700NNHGOCJLKFH_.GetHashCode();
-      if (Unk2700NCHHEJNFECG != 0) hash ^= Unk2700NCHHEJNFECG.GetHashCode();
+      hash ^= buttonList_.GetHashCode();
+      if (Delay != 0) hash ^= Delay.GetHashCode();
+      hash ^= noteList_.GetHashCode();
+      if (ScoreRating != 0) hash ^= ScoreRating.GetHashCode();
       if (Score != 0) hash ^= Score.GetHashCode();
-      if (Unk2700CEPGMKAHHCD != 0UL) hash ^= Unk2700CEPGMKAHHCD.GetHashCode();
-      if (Unk2700MMHHGALFHGA != 0) hash ^= Unk2700MMHHGALFHGA.GetHashCode();
-      if (Unk2700CBLIJHDFKHA != false) hash ^= Unk2700CBLIJHDFKHA.GetHashCode();
+      if (UgcGuid != 0UL) hash ^= UgcGuid.GetHashCode();
+      if (RestartTimes != 0) hash ^= RestartTimes.GetHashCode();
+      if (IsCustomDelay != false) hash ^= IsCustomDelay.GetHashCode();
       if (MaxCombo != 0) hash ^= MaxCombo.GetHashCode();
-      if (Unk2700FBLBGPHMLAL != 0) hash ^= Unk2700FBLBGPHMLAL.GetHashCode();
+      if (IsFullCombo != 0) hash ^= IsFullCombo.GetHashCode();
       if (Speed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Speed);
-      if (Unk2700IOKPIKJDEHG != false) hash ^= Unk2700IOKPIKJDEHG.GetHashCode();
+      if (IsSaveScore != false) hash ^= IsSaveScore.GetHashCode();
       if (Combo != 0) hash ^= Combo.GetHashCode();
       if (MusicBasicId != 0) hash ^= MusicBasicId.GetHashCode();
-      if (Unk2700DIMBABOGNEM != 0) hash ^= Unk2700DIMBABOGNEM.GetHashCode();
-      if (Unk2700IOMOHEKJJLJ != 0) hash ^= Unk2700IOMOHEKJJLJ.GetHashCode();
+      if (StarRating != 0) hash ^= StarRating.GetHashCode();
+      if (Volume != 0) hash ^= Volume.GetHashCode();
       if (CorrectHit != 0) hash ^= CorrectHit.GetHashCode();
-      if (Unk2700LKJNLDJAGGL != false) hash ^= Unk2700LKJNLDJAGGL.GetHashCode();
+      if (IsCustomSpeed != false) hash ^= IsCustomSpeed.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -408,22 +406,22 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(Combo);
       }
-      if (Unk2700DIMBABOGNEM != 0) {
+      if (StarRating != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk2700DIMBABOGNEM);
+        output.WriteUInt32(StarRating);
       }
-      if (Unk2700IOKPIKJDEHG != false) {
+      if (IsSaveScore != false) {
         output.WriteRawTag(24);
-        output.WriteBool(Unk2700IOKPIKJDEHG);
+        output.WriteBool(IsSaveScore);
       }
-      unk2700NNHGOCJLKFH_.WriteTo(output, _repeated_unk2700NNHGOCJLKFH_codec);
+      noteList_.WriteTo(output, _repeated_noteList_codec);
       if (MaxCombo != 0) {
         output.WriteRawTag(40);
         output.WriteUInt32(MaxCombo);
       }
-      if (Unk2700CEPGMKAHHCD != 0UL) {
+      if (UgcGuid != 0UL) {
         output.WriteRawTag(48);
-        output.WriteUInt64(Unk2700CEPGMKAHHCD);
+        output.WriteUInt64(UgcGuid);
       }
       if (MusicBasicId != 0) {
         output.WriteRawTag(56);
@@ -433,42 +431,42 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(72);
         output.WriteUInt32(Score);
       }
-      if (Unk2700MMHHGALFHGA != 0) {
+      if (RestartTimes != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk2700MMHHGALFHGA);
+        output.WriteUInt32(RestartTimes);
       }
       if (CorrectHit != 0) {
         output.WriteRawTag(112);
         output.WriteUInt32(CorrectHit);
       }
-      if (Unk2700NCHHEJNFECG != 0) {
+      if (ScoreRating != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk2700NCHHEJNFECG);
+        output.WriteUInt32(ScoreRating);
       }
-      unk2700GDPKOANEDEB_.WriteTo(output, _repeated_unk2700GDPKOANEDEB_codec);
+      buttonList_.WriteTo(output, _repeated_buttonList_codec);
       if (Speed != 0F) {
         output.WriteRawTag(205, 25);
         output.WriteFloat(Speed);
       }
-      if (Unk2700CBLIJHDFKHA != false) {
+      if (IsCustomDelay != false) {
         output.WriteRawTag(176, 26);
-        output.WriteBool(Unk2700CBLIJHDFKHA);
+        output.WriteBool(IsCustomDelay);
       }
-      if (Unk2700NMHGADLANMM != 0) {
+      if (Delay != 0) {
         output.WriteRawTag(216, 49);
-        output.WriteUInt32(Unk2700NMHGADLANMM);
+        output.WriteUInt32(Delay);
       }
-      if (Unk2700FBLBGPHMLAL != 0) {
+      if (IsFullCombo != 0) {
         output.WriteRawTag(144, 66);
-        output.WriteUInt32(Unk2700FBLBGPHMLAL);
+        output.WriteUInt32(IsFullCombo);
       }
-      if (Unk2700LKJNLDJAGGL != false) {
+      if (IsCustomSpeed != false) {
         output.WriteRawTag(168, 80);
-        output.WriteBool(Unk2700LKJNLDJAGGL);
+        output.WriteBool(IsCustomSpeed);
       }
-      if (Unk2700IOMOHEKJJLJ != 0) {
+      if (Volume != 0) {
         output.WriteRawTag(136, 122);
-        output.WriteUInt32(Unk2700IOMOHEKJJLJ);
+        output.WriteUInt32(Volume);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -484,22 +482,22 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(Combo);
       }
-      if (Unk2700DIMBABOGNEM != 0) {
+      if (StarRating != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk2700DIMBABOGNEM);
+        output.WriteUInt32(StarRating);
       }
-      if (Unk2700IOKPIKJDEHG != false) {
+      if (IsSaveScore != false) {
         output.WriteRawTag(24);
-        output.WriteBool(Unk2700IOKPIKJDEHG);
+        output.WriteBool(IsSaveScore);
       }
-      unk2700NNHGOCJLKFH_.WriteTo(ref output, _repeated_unk2700NNHGOCJLKFH_codec);
+      noteList_.WriteTo(ref output, _repeated_noteList_codec);
       if (MaxCombo != 0) {
         output.WriteRawTag(40);
         output.WriteUInt32(MaxCombo);
       }
-      if (Unk2700CEPGMKAHHCD != 0UL) {
+      if (UgcGuid != 0UL) {
         output.WriteRawTag(48);
-        output.WriteUInt64(Unk2700CEPGMKAHHCD);
+        output.WriteUInt64(UgcGuid);
       }
       if (MusicBasicId != 0) {
         output.WriteRawTag(56);
@@ -509,42 +507,42 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(72);
         output.WriteUInt32(Score);
       }
-      if (Unk2700MMHHGALFHGA != 0) {
+      if (RestartTimes != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk2700MMHHGALFHGA);
+        output.WriteUInt32(RestartTimes);
       }
       if (CorrectHit != 0) {
         output.WriteRawTag(112);
         output.WriteUInt32(CorrectHit);
       }
-      if (Unk2700NCHHEJNFECG != 0) {
+      if (ScoreRating != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk2700NCHHEJNFECG);
+        output.WriteUInt32(ScoreRating);
       }
-      unk2700GDPKOANEDEB_.WriteTo(ref output, _repeated_unk2700GDPKOANEDEB_codec);
+      buttonList_.WriteTo(ref output, _repeated_buttonList_codec);
       if (Speed != 0F) {
         output.WriteRawTag(205, 25);
         output.WriteFloat(Speed);
       }
-      if (Unk2700CBLIJHDFKHA != false) {
+      if (IsCustomDelay != false) {
         output.WriteRawTag(176, 26);
-        output.WriteBool(Unk2700CBLIJHDFKHA);
+        output.WriteBool(IsCustomDelay);
       }
-      if (Unk2700NMHGADLANMM != 0) {
+      if (Delay != 0) {
         output.WriteRawTag(216, 49);
-        output.WriteUInt32(Unk2700NMHGADLANMM);
+        output.WriteUInt32(Delay);
       }
-      if (Unk2700FBLBGPHMLAL != 0) {
+      if (IsFullCombo != 0) {
         output.WriteRawTag(144, 66);
-        output.WriteUInt32(Unk2700FBLBGPHMLAL);
+        output.WriteUInt32(IsFullCombo);
       }
-      if (Unk2700LKJNLDJAGGL != false) {
+      if (IsCustomSpeed != false) {
         output.WriteRawTag(168, 80);
-        output.WriteBool(Unk2700LKJNLDJAGGL);
+        output.WriteBool(IsCustomSpeed);
       }
-      if (Unk2700IOMOHEKJJLJ != 0) {
+      if (Volume != 0) {
         output.WriteRawTag(136, 122);
-        output.WriteUInt32(Unk2700IOMOHEKJJLJ);
+        output.WriteUInt32(Volume);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -556,36 +554,36 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2700GDPKOANEDEB_.CalculateSize(_repeated_unk2700GDPKOANEDEB_codec);
-      if (Unk2700NMHGADLANMM != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700NMHGADLANMM);
+      size += buttonList_.CalculateSize(_repeated_buttonList_codec);
+      if (Delay != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Delay);
       }
-      size += unk2700NNHGOCJLKFH_.CalculateSize(_repeated_unk2700NNHGOCJLKFH_codec);
-      if (Unk2700NCHHEJNFECG != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700NCHHEJNFECG);
+      size += noteList_.CalculateSize(_repeated_noteList_codec);
+      if (ScoreRating != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ScoreRating);
       }
       if (Score != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Score);
       }
-      if (Unk2700CEPGMKAHHCD != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Unk2700CEPGMKAHHCD);
+      if (UgcGuid != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(UgcGuid);
       }
-      if (Unk2700MMHHGALFHGA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700MMHHGALFHGA);
+      if (RestartTimes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RestartTimes);
       }
-      if (Unk2700CBLIJHDFKHA != false) {
+      if (IsCustomDelay != false) {
         size += 2 + 1;
       }
       if (MaxCombo != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxCombo);
       }
-      if (Unk2700FBLBGPHMLAL != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700FBLBGPHMLAL);
+      if (IsFullCombo != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(IsFullCombo);
       }
       if (Speed != 0F) {
         size += 2 + 4;
       }
-      if (Unk2700IOKPIKJDEHG != false) {
+      if (IsSaveScore != false) {
         size += 1 + 1;
       }
       if (Combo != 0) {
@@ -594,16 +592,16 @@ namespace Weedwacker.Shared.Network.Proto {
       if (MusicBasicId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MusicBasicId);
       }
-      if (Unk2700DIMBABOGNEM != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700DIMBABOGNEM);
+      if (StarRating != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(StarRating);
       }
-      if (Unk2700IOMOHEKJJLJ != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700IOMOHEKJJLJ);
+      if (Volume != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Volume);
       }
       if (CorrectHit != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CorrectHit);
       }
-      if (Unk2700LKJNLDJAGGL != false) {
+      if (IsCustomSpeed != false) {
         size += 2 + 1;
       }
       if (_unknownFields != null) {
@@ -618,37 +616,37 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2700GDPKOANEDEB_.Add(other.unk2700GDPKOANEDEB_);
-      if (other.Unk2700NMHGADLANMM != 0) {
-        Unk2700NMHGADLANMM = other.Unk2700NMHGADLANMM;
+      buttonList_.Add(other.buttonList_);
+      if (other.Delay != 0) {
+        Delay = other.Delay;
       }
-      unk2700NNHGOCJLKFH_.Add(other.unk2700NNHGOCJLKFH_);
-      if (other.Unk2700NCHHEJNFECG != 0) {
-        Unk2700NCHHEJNFECG = other.Unk2700NCHHEJNFECG;
+      noteList_.Add(other.noteList_);
+      if (other.ScoreRating != 0) {
+        ScoreRating = other.ScoreRating;
       }
       if (other.Score != 0) {
         Score = other.Score;
       }
-      if (other.Unk2700CEPGMKAHHCD != 0UL) {
-        Unk2700CEPGMKAHHCD = other.Unk2700CEPGMKAHHCD;
+      if (other.UgcGuid != 0UL) {
+        UgcGuid = other.UgcGuid;
       }
-      if (other.Unk2700MMHHGALFHGA != 0) {
-        Unk2700MMHHGALFHGA = other.Unk2700MMHHGALFHGA;
+      if (other.RestartTimes != 0) {
+        RestartTimes = other.RestartTimes;
       }
-      if (other.Unk2700CBLIJHDFKHA != false) {
-        Unk2700CBLIJHDFKHA = other.Unk2700CBLIJHDFKHA;
+      if (other.IsCustomDelay != false) {
+        IsCustomDelay = other.IsCustomDelay;
       }
       if (other.MaxCombo != 0) {
         MaxCombo = other.MaxCombo;
       }
-      if (other.Unk2700FBLBGPHMLAL != 0) {
-        Unk2700FBLBGPHMLAL = other.Unk2700FBLBGPHMLAL;
+      if (other.IsFullCombo != 0) {
+        IsFullCombo = other.IsFullCombo;
       }
       if (other.Speed != 0F) {
         Speed = other.Speed;
       }
-      if (other.Unk2700IOKPIKJDEHG != false) {
-        Unk2700IOKPIKJDEHG = other.Unk2700IOKPIKJDEHG;
+      if (other.IsSaveScore != false) {
+        IsSaveScore = other.IsSaveScore;
       }
       if (other.Combo != 0) {
         Combo = other.Combo;
@@ -656,17 +654,17 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.MusicBasicId != 0) {
         MusicBasicId = other.MusicBasicId;
       }
-      if (other.Unk2700DIMBABOGNEM != 0) {
-        Unk2700DIMBABOGNEM = other.Unk2700DIMBABOGNEM;
+      if (other.StarRating != 0) {
+        StarRating = other.StarRating;
       }
-      if (other.Unk2700IOMOHEKJJLJ != 0) {
-        Unk2700IOMOHEKJJLJ = other.Unk2700IOMOHEKJJLJ;
+      if (other.Volume != 0) {
+        Volume = other.Volume;
       }
       if (other.CorrectHit != 0) {
         CorrectHit = other.CorrectHit;
       }
-      if (other.Unk2700LKJNLDJAGGL != false) {
-        Unk2700LKJNLDJAGGL = other.Unk2700LKJNLDJAGGL;
+      if (other.IsCustomSpeed != false) {
+        IsCustomSpeed = other.IsCustomSpeed;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -688,16 +686,16 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 16: {
-            Unk2700DIMBABOGNEM = input.ReadUInt32();
+            StarRating = input.ReadUInt32();
             break;
           }
           case 24: {
-            Unk2700IOKPIKJDEHG = input.ReadBool();
+            IsSaveScore = input.ReadBool();
             break;
           }
           case 34:
           case 32: {
-            unk2700NNHGOCJLKFH_.AddEntriesFrom(input, _repeated_unk2700NNHGOCJLKFH_codec);
+            noteList_.AddEntriesFrom(input, _repeated_noteList_codec);
             break;
           }
           case 40: {
@@ -705,7 +703,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk2700CEPGMKAHHCD = input.ReadUInt64();
+            UgcGuid = input.ReadUInt64();
             break;
           }
           case 56: {
@@ -717,7 +715,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk2700MMHHGALFHGA = input.ReadUInt32();
+            RestartTimes = input.ReadUInt32();
             break;
           }
           case 112: {
@@ -725,12 +723,12 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk2700NCHHEJNFECG = input.ReadUInt32();
+            ScoreRating = input.ReadUInt32();
             break;
           }
           case 3074:
           case 3072: {
-            unk2700GDPKOANEDEB_.AddEntriesFrom(input, _repeated_unk2700GDPKOANEDEB_codec);
+            buttonList_.AddEntriesFrom(input, _repeated_buttonList_codec);
             break;
           }
           case 3277: {
@@ -738,23 +736,23 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 3376: {
-            Unk2700CBLIJHDFKHA = input.ReadBool();
+            IsCustomDelay = input.ReadBool();
             break;
           }
           case 6360: {
-            Unk2700NMHGADLANMM = input.ReadUInt32();
+            Delay = input.ReadUInt32();
             break;
           }
           case 8464: {
-            Unk2700FBLBGPHMLAL = input.ReadUInt32();
+            IsFullCombo = input.ReadUInt32();
             break;
           }
           case 10280: {
-            Unk2700LKJNLDJAGGL = input.ReadBool();
+            IsCustomSpeed = input.ReadBool();
             break;
           }
           case 15624: {
-            Unk2700IOMOHEKJJLJ = input.ReadUInt32();
+            Volume = input.ReadUInt32();
             break;
           }
         }
@@ -777,16 +775,16 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 16: {
-            Unk2700DIMBABOGNEM = input.ReadUInt32();
+            StarRating = input.ReadUInt32();
             break;
           }
           case 24: {
-            Unk2700IOKPIKJDEHG = input.ReadBool();
+            IsSaveScore = input.ReadBool();
             break;
           }
           case 34:
           case 32: {
-            unk2700NNHGOCJLKFH_.AddEntriesFrom(ref input, _repeated_unk2700NNHGOCJLKFH_codec);
+            noteList_.AddEntriesFrom(ref input, _repeated_noteList_codec);
             break;
           }
           case 40: {
@@ -794,7 +792,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk2700CEPGMKAHHCD = input.ReadUInt64();
+            UgcGuid = input.ReadUInt64();
             break;
           }
           case 56: {
@@ -806,7 +804,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk2700MMHHGALFHGA = input.ReadUInt32();
+            RestartTimes = input.ReadUInt32();
             break;
           }
           case 112: {
@@ -814,12 +812,12 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk2700NCHHEJNFECG = input.ReadUInt32();
+            ScoreRating = input.ReadUInt32();
             break;
           }
           case 3074:
           case 3072: {
-            unk2700GDPKOANEDEB_.AddEntriesFrom(ref input, _repeated_unk2700GDPKOANEDEB_codec);
+            buttonList_.AddEntriesFrom(ref input, _repeated_buttonList_codec);
             break;
           }
           case 3277: {
@@ -827,23 +825,23 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 3376: {
-            Unk2700CBLIJHDFKHA = input.ReadBool();
+            IsCustomDelay = input.ReadBool();
             break;
           }
           case 6360: {
-            Unk2700NMHGADLANMM = input.ReadUInt32();
+            Delay = input.ReadUInt32();
             break;
           }
           case 8464: {
-            Unk2700FBLBGPHMLAL = input.ReadUInt32();
+            IsFullCombo = input.ReadUInt32();
             break;
           }
           case 10280: {
-            Unk2700LKJNLDJAGGL = input.ReadBool();
+            IsCustomSpeed = input.ReadBool();
             break;
           }
           case 15624: {
-            Unk2700IOMOHEKJJLJ = input.ReadUInt32();
+            Volume = input.ReadUInt32();
             break;
           }
         }

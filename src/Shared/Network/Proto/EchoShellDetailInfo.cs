@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static EchoShellDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlFY2hvU2hlbGxEZXRhaWxJbmZvLnByb3RvGhlVbmsyODAwX0NFQUVDR0dC",
-            "T0tMLnByb3RvIpQBChNFY2hvU2hlbGxEZXRhaWxJbmZvEjEKE1VuazI4MDBf",
-            "S0VNQ0ZCQ0FNTU0YCCADKAsyFC5VbmsyODAwX0NFQUVDR0dCT0tMEhIKCnNo",
-            "ZWxsX2xpc3QYDSADKA0SGwoTVW5rMjgwMF9CRk9ORE1KR05LTBgEIAMoDRIZ",
-            "ChF0YWtlbl9yZXdhcmRfbGlzdBgCIAMoDUIiqgIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
+            "ChlFY2hvU2hlbGxEZXRhaWxJbmZvLnByb3RvGhtTdW1tZXJUaW1lRHVuZ2Vv",
+            "bkluZm8ucHJvdG8imQEKE0VjaG9TaGVsbERldGFpbEluZm8SOAoYc3VtbWVy",
+            "X3RpbWVfZHVuZ2Vvbl9saXN0GAggAygLMhYuU3VtbWVyVGltZUR1bmdlb25J",
+            "bmZvEhIKCnNoZWxsX2xpc3QYDSADKA0SGQoRcGFzc19kdW5nZW9uX2xpc3QY",
+            "BCADKA0SGQoRdGFrZW5fcmV3YXJkX2xpc3QYAiADKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.Unk2800CEAECGGBOKLReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.SummerTimeDungeonInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EchoShellDetailInfo), global::Weedwacker.Shared.Network.Proto.EchoShellDetailInfo.Parser, new[]{ "Unk2800KEMCFBCAMMM", "ShellList", "Unk2800BFONDMJGNKL", "TakenRewardList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EchoShellDetailInfo), global::Weedwacker.Shared.Network.Proto.EchoShellDetailInfo.Parser, new[]{ "SummerTimeDungeonList", "ShellList", "PassDungeonList", "TakenRewardList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -74,9 +74,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EchoShellDetailInfo(EchoShellDetailInfo other) : this() {
-      unk2800KEMCFBCAMMM_ = other.unk2800KEMCFBCAMMM_.Clone();
+      summerTimeDungeonList_ = other.summerTimeDungeonList_.Clone();
       shellList_ = other.shellList_.Clone();
-      unk2800BFONDMJGNKL_ = other.unk2800BFONDMJGNKL_.Clone();
+      passDungeonList_ = other.passDungeonList_.Clone();
       takenRewardList_ = other.takenRewardList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -87,15 +87,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new EchoShellDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2800_KEMCFBCAMMM" field.</summary>
-    public const int Unk2800KEMCFBCAMMMFieldNumber = 8;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.Unk2800_CEAECGGBOKL> _repeated_unk2800KEMCFBCAMMM_codec
-        = pb::FieldCodec.ForMessage(66, global::Weedwacker.Shared.Network.Proto.Unk2800_CEAECGGBOKL.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_CEAECGGBOKL> unk2800KEMCFBCAMMM_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_CEAECGGBOKL>();
+    /// <summary>Field number for the "summer_time_dungeon_list" field.</summary>
+    public const int SummerTimeDungeonListFieldNumber = 8;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.SummerTimeDungeonInfo> _repeated_summerTimeDungeonList_codec
+        = pb::FieldCodec.ForMessage(66, global::Weedwacker.Shared.Network.Proto.SummerTimeDungeonInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SummerTimeDungeonInfo> summerTimeDungeonList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SummerTimeDungeonInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.Unk2800_CEAECGGBOKL> Unk2800KEMCFBCAMMM {
-      get { return unk2800KEMCFBCAMMM_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SummerTimeDungeonInfo> SummerTimeDungeonList {
+      get { return summerTimeDungeonList_; }
     }
 
     /// <summary>Field number for the "shell_list" field.</summary>
@@ -109,15 +109,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return shellList_; }
     }
 
-    /// <summary>Field number for the "Unk2800_BFONDMJGNKL" field.</summary>
-    public const int Unk2800BFONDMJGNKLFieldNumber = 4;
-    private static readonly pb::FieldCodec<uint> _repeated_unk2800BFONDMJGNKL_codec
+    /// <summary>Field number for the "pass_dungeon_list" field.</summary>
+    public const int PassDungeonListFieldNumber = 4;
+    private static readonly pb::FieldCodec<uint> _repeated_passDungeonList_codec
         = pb::FieldCodec.ForUInt32(34);
-    private readonly pbc::RepeatedField<uint> unk2800BFONDMJGNKL_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> passDungeonList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk2800BFONDMJGNKL {
-      get { return unk2800BFONDMJGNKL_; }
+    public pbc::RepeatedField<uint> PassDungeonList {
+      get { return passDungeonList_; }
     }
 
     /// <summary>Field number for the "taken_reward_list" field.</summary>
@@ -146,9 +146,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk2800KEMCFBCAMMM_.Equals(other.unk2800KEMCFBCAMMM_)) return false;
+      if(!summerTimeDungeonList_.Equals(other.summerTimeDungeonList_)) return false;
       if(!shellList_.Equals(other.shellList_)) return false;
-      if(!unk2800BFONDMJGNKL_.Equals(other.unk2800BFONDMJGNKL_)) return false;
+      if(!passDungeonList_.Equals(other.passDungeonList_)) return false;
       if(!takenRewardList_.Equals(other.takenRewardList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -157,9 +157,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk2800KEMCFBCAMMM_.GetHashCode();
+      hash ^= summerTimeDungeonList_.GetHashCode();
       hash ^= shellList_.GetHashCode();
-      hash ^= unk2800BFONDMJGNKL_.GetHashCode();
+      hash ^= passDungeonList_.GetHashCode();
       hash ^= takenRewardList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -180,8 +180,8 @@ namespace Weedwacker.Shared.Network.Proto {
       output.WriteRawMessage(this);
     #else
       takenRewardList_.WriteTo(output, _repeated_takenRewardList_codec);
-      unk2800BFONDMJGNKL_.WriteTo(output, _repeated_unk2800BFONDMJGNKL_codec);
-      unk2800KEMCFBCAMMM_.WriteTo(output, _repeated_unk2800KEMCFBCAMMM_codec);
+      passDungeonList_.WriteTo(output, _repeated_passDungeonList_codec);
+      summerTimeDungeonList_.WriteTo(output, _repeated_summerTimeDungeonList_codec);
       shellList_.WriteTo(output, _repeated_shellList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -194,8 +194,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       takenRewardList_.WriteTo(ref output, _repeated_takenRewardList_codec);
-      unk2800BFONDMJGNKL_.WriteTo(ref output, _repeated_unk2800BFONDMJGNKL_codec);
-      unk2800KEMCFBCAMMM_.WriteTo(ref output, _repeated_unk2800KEMCFBCAMMM_codec);
+      passDungeonList_.WriteTo(ref output, _repeated_passDungeonList_codec);
+      summerTimeDungeonList_.WriteTo(ref output, _repeated_summerTimeDungeonList_codec);
       shellList_.WriteTo(ref output, _repeated_shellList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -207,9 +207,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk2800KEMCFBCAMMM_.CalculateSize(_repeated_unk2800KEMCFBCAMMM_codec);
+      size += summerTimeDungeonList_.CalculateSize(_repeated_summerTimeDungeonList_codec);
       size += shellList_.CalculateSize(_repeated_shellList_codec);
-      size += unk2800BFONDMJGNKL_.CalculateSize(_repeated_unk2800BFONDMJGNKL_codec);
+      size += passDungeonList_.CalculateSize(_repeated_passDungeonList_codec);
       size += takenRewardList_.CalculateSize(_repeated_takenRewardList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -223,9 +223,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk2800KEMCFBCAMMM_.Add(other.unk2800KEMCFBCAMMM_);
+      summerTimeDungeonList_.Add(other.summerTimeDungeonList_);
       shellList_.Add(other.shellList_);
-      unk2800BFONDMJGNKL_.Add(other.unk2800BFONDMJGNKL_);
+      passDungeonList_.Add(other.passDungeonList_);
       takenRewardList_.Add(other.takenRewardList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -249,11 +249,11 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 34:
           case 32: {
-            unk2800BFONDMJGNKL_.AddEntriesFrom(input, _repeated_unk2800BFONDMJGNKL_codec);
+            passDungeonList_.AddEntriesFrom(input, _repeated_passDungeonList_codec);
             break;
           }
           case 66: {
-            unk2800KEMCFBCAMMM_.AddEntriesFrom(input, _repeated_unk2800KEMCFBCAMMM_codec);
+            summerTimeDungeonList_.AddEntriesFrom(input, _repeated_summerTimeDungeonList_codec);
             break;
           }
           case 106:
@@ -283,11 +283,11 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 34:
           case 32: {
-            unk2800BFONDMJGNKL_.AddEntriesFrom(ref input, _repeated_unk2800BFONDMJGNKL_codec);
+            passDungeonList_.AddEntriesFrom(ref input, _repeated_passDungeonList_codec);
             break;
           }
           case 66: {
-            unk2800KEMCFBCAMMM_.AddEntriesFrom(ref input, _repeated_unk2800KEMCFBCAMMM_codec);
+            summerTimeDungeonList_.AddEntriesFrom(ref input, _repeated_summerTimeDungeonList_codec);
             break;
           }
           case 106:

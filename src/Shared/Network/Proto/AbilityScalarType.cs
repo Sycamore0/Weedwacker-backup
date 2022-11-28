@@ -24,13 +24,13 @@ namespace Weedwacker.Shared.Network.Proto {
     static AbilityScalarTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdBYmlsaXR5U2NhbGFyVHlwZS5wcm90byrsAQoRQWJpbGl0eVNjYWxhclR5",
-            "cGUSHgoaQUJJTElUWV9TQ0FMQVJfVFlQRV9VTktOT1cQABIdChlBQklMSVRZ",
-            "X1NDQUxBUl9UWVBFX0ZMT0FUEAESGwoXQUJJTElUWV9TQ0FMQVJfVFlQRV9J",
-            "TlQQAhIcChhBQklMSVRZX1NDQUxBUl9UWVBFX0JPT0wQAxIfChtBQklMSVRZ",
-            "X1NDQUxBUl9UWVBFX1RSSUdHRVIQBBIeChpBQklMSVRZX1NDQUxBUl9UWVBF",
-            "X1NUUklORxAFEhwKGEFCSUxJVFlfU0NBTEFSX1RZUEVfVUlOVBAGQiKqAh9X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
+            "ChdBYmlsaXR5U2NhbGFyVHlwZS5wcm90byrtAQoRQWJpbGl0eVNjYWxhclR5",
+            "cGUSHwobQUJJTElUWV9TQ0FMQVJfVFlQRV9VTktOT1dOEAASHQoZQUJJTElU",
+            "WV9TQ0FMQVJfVFlQRV9GTE9BVBABEhsKF0FCSUxJVFlfU0NBTEFSX1RZUEVf",
+            "SU5UEAISHAoYQUJJTElUWV9TQ0FMQVJfVFlQRV9CT09MEAMSHwobQUJJTElU",
+            "WV9TQ0FMQVJfVFlQRV9UUklHR0VSEAQSHgoaQUJJTElUWV9TQ0FMQVJfVFlQ",
+            "RV9TVFJJTkcQBRIcChhBQklMSVRZX1NDQUxBUl9UWVBFX1VJTlQQBkIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.AbilityScalarType), }, null, null));
@@ -40,7 +40,7 @@ namespace Weedwacker.Shared.Network.Proto {
   }
   #region Enums
   public enum AbilityScalarType {
-    [pbr::OriginalName("ABILITY_SCALAR_TYPE_UNKNOW")] Unknow = 0,
+    [pbr::OriginalName("ABILITY_SCALAR_TYPE_UNKNOWN")] Unknown = 0,
     [pbr::OriginalName("ABILITY_SCALAR_TYPE_FLOAT")] Float = 1,
     [pbr::OriginalName("ABILITY_SCALAR_TYPE_INT")] Int = 2,
     [pbr::OriginalName("ABILITY_SCALAR_TYPE_BOOL")] Bool = 3,

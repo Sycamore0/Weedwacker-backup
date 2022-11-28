@@ -24,15 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static SpiceActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1TcGljZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoQU3BpY2VTdGFnZS5w",
-            "cm90byJ6ChdTcGljZUFjdGl2aXR5RGV0YWlsSW5mbxIbChNVbmsyNzAwX0lH",
-            "TUhORE5HTlBHGA8gASgNEiUKEHNwaWNlX3N0YWdlX2xpc3QYByADKAsyCy5T",
-            "cGljZVN0YWdlEhsKE1VuazI3MDBfS0lBSEpLR09MR08YDSABKA1CIqoCH1dl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "Ch1TcGljZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoUU3BpY2VTdGFnZURh",
+            "dGEucHJvdG8ingEKF1NwaWNlQWN0aXZpdHlEZXRhaWxJbmZvEiwKJGN1cnJl",
+            "bnRfaW5jcmVhc2VfYXZhdGFyX2ZldHRlcl90aW1lcxgPIAEoDRIpChBzcGlj",
+            "ZV9zdGFnZV9saXN0GAcgAygLMg8uU3BpY2VTdGFnZURhdGESKgoiaW5jcmVh",
+            "c2VfYXZhdGFyX2ZldHRlcl9saW1pdF90aW1lcxgNIAEoDUIiqgIfV2VlZHdh",
+            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.SpiceStageReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.SpiceStageDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SpiceActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.SpiceActivityDetailInfo.Parser, new[]{ "Unk2700IGMHNDNGNPG", "SpiceStageList", "Unk2700KIAHJKGOLGO" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SpiceActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.SpiceActivityDetailInfo.Parser, new[]{ "CurrentIncreaseAvatarFetterTimes", "SpiceStageList", "IncreaseAvatarFetterLimitTimes" }, null, null, null, null)
           }));
     }
     #endregion
@@ -73,9 +74,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SpiceActivityDetailInfo(SpiceActivityDetailInfo other) : this() {
-      unk2700IGMHNDNGNPG_ = other.unk2700IGMHNDNGNPG_;
+      currentIncreaseAvatarFetterTimes_ = other.currentIncreaseAvatarFetterTimes_;
       spiceStageList_ = other.spiceStageList_.Clone();
-      unk2700KIAHJKGOLGO_ = other.unk2700KIAHJKGOLGO_;
+      increaseAvatarFetterLimitTimes_ = other.increaseAvatarFetterLimitTimes_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -85,38 +86,38 @@ namespace Weedwacker.Shared.Network.Proto {
       return new SpiceActivityDetailInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_IGMHNDNGNPG" field.</summary>
-    public const int Unk2700IGMHNDNGNPGFieldNumber = 15;
-    private uint unk2700IGMHNDNGNPG_;
+    /// <summary>Field number for the "current_increase_avatar_fetter_times" field.</summary>
+    public const int CurrentIncreaseAvatarFetterTimesFieldNumber = 15;
+    private uint currentIncreaseAvatarFetterTimes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700IGMHNDNGNPG {
-      get { return unk2700IGMHNDNGNPG_; }
+    public uint CurrentIncreaseAvatarFetterTimes {
+      get { return currentIncreaseAvatarFetterTimes_; }
       set {
-        unk2700IGMHNDNGNPG_ = value;
+        currentIncreaseAvatarFetterTimes_ = value;
       }
     }
 
     /// <summary>Field number for the "spice_stage_list" field.</summary>
     public const int SpiceStageListFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.SpiceStage> _repeated_spiceStageList_codec
-        = pb::FieldCodec.ForMessage(58, global::Weedwacker.Shared.Network.Proto.SpiceStage.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SpiceStage> spiceStageList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SpiceStage>();
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.SpiceStageData> _repeated_spiceStageList_codec
+        = pb::FieldCodec.ForMessage(58, global::Weedwacker.Shared.Network.Proto.SpiceStageData.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SpiceStageData> spiceStageList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SpiceStageData>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SpiceStage> SpiceStageList {
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.SpiceStageData> SpiceStageList {
       get { return spiceStageList_; }
     }
 
-    /// <summary>Field number for the "Unk2700_KIAHJKGOLGO" field.</summary>
-    public const int Unk2700KIAHJKGOLGOFieldNumber = 13;
-    private uint unk2700KIAHJKGOLGO_;
+    /// <summary>Field number for the "increase_avatar_fetter_limit_times" field.</summary>
+    public const int IncreaseAvatarFetterLimitTimesFieldNumber = 13;
+    private uint increaseAvatarFetterLimitTimes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700KIAHJKGOLGO {
-      get { return unk2700KIAHJKGOLGO_; }
+    public uint IncreaseAvatarFetterLimitTimes {
+      get { return increaseAvatarFetterLimitTimes_; }
       set {
-        unk2700KIAHJKGOLGO_ = value;
+        increaseAvatarFetterLimitTimes_ = value;
       }
     }
 
@@ -135,9 +136,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700IGMHNDNGNPG != other.Unk2700IGMHNDNGNPG) return false;
+      if (CurrentIncreaseAvatarFetterTimes != other.CurrentIncreaseAvatarFetterTimes) return false;
       if(!spiceStageList_.Equals(other.spiceStageList_)) return false;
-      if (Unk2700KIAHJKGOLGO != other.Unk2700KIAHJKGOLGO) return false;
+      if (IncreaseAvatarFetterLimitTimes != other.IncreaseAvatarFetterLimitTimes) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -145,9 +146,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700IGMHNDNGNPG != 0) hash ^= Unk2700IGMHNDNGNPG.GetHashCode();
+      if (CurrentIncreaseAvatarFetterTimes != 0) hash ^= CurrentIncreaseAvatarFetterTimes.GetHashCode();
       hash ^= spiceStageList_.GetHashCode();
-      if (Unk2700KIAHJKGOLGO != 0) hash ^= Unk2700KIAHJKGOLGO.GetHashCode();
+      if (IncreaseAvatarFetterLimitTimes != 0) hash ^= IncreaseAvatarFetterLimitTimes.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -167,13 +168,13 @@ namespace Weedwacker.Shared.Network.Proto {
       output.WriteRawMessage(this);
     #else
       spiceStageList_.WriteTo(output, _repeated_spiceStageList_codec);
-      if (Unk2700KIAHJKGOLGO != 0) {
+      if (IncreaseAvatarFetterLimitTimes != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk2700KIAHJKGOLGO);
+        output.WriteUInt32(IncreaseAvatarFetterLimitTimes);
       }
-      if (Unk2700IGMHNDNGNPG != 0) {
+      if (CurrentIncreaseAvatarFetterTimes != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk2700IGMHNDNGNPG);
+        output.WriteUInt32(CurrentIncreaseAvatarFetterTimes);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -186,13 +187,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       spiceStageList_.WriteTo(ref output, _repeated_spiceStageList_codec);
-      if (Unk2700KIAHJKGOLGO != 0) {
+      if (IncreaseAvatarFetterLimitTimes != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk2700KIAHJKGOLGO);
+        output.WriteUInt32(IncreaseAvatarFetterLimitTimes);
       }
-      if (Unk2700IGMHNDNGNPG != 0) {
+      if (CurrentIncreaseAvatarFetterTimes != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk2700IGMHNDNGNPG);
+        output.WriteUInt32(CurrentIncreaseAvatarFetterTimes);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -204,12 +205,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700IGMHNDNGNPG != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700IGMHNDNGNPG);
+      if (CurrentIncreaseAvatarFetterTimes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurrentIncreaseAvatarFetterTimes);
       }
       size += spiceStageList_.CalculateSize(_repeated_spiceStageList_codec);
-      if (Unk2700KIAHJKGOLGO != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700KIAHJKGOLGO);
+      if (IncreaseAvatarFetterLimitTimes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(IncreaseAvatarFetterLimitTimes);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -223,12 +224,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700IGMHNDNGNPG != 0) {
-        Unk2700IGMHNDNGNPG = other.Unk2700IGMHNDNGNPG;
+      if (other.CurrentIncreaseAvatarFetterTimes != 0) {
+        CurrentIncreaseAvatarFetterTimes = other.CurrentIncreaseAvatarFetterTimes;
       }
       spiceStageList_.Add(other.spiceStageList_);
-      if (other.Unk2700KIAHJKGOLGO != 0) {
-        Unk2700KIAHJKGOLGO = other.Unk2700KIAHJKGOLGO;
+      if (other.IncreaseAvatarFetterLimitTimes != 0) {
+        IncreaseAvatarFetterLimitTimes = other.IncreaseAvatarFetterLimitTimes;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -250,11 +251,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk2700KIAHJKGOLGO = input.ReadUInt32();
+            IncreaseAvatarFetterLimitTimes = input.ReadUInt32();
             break;
           }
           case 120: {
-            Unk2700IGMHNDNGNPG = input.ReadUInt32();
+            CurrentIncreaseAvatarFetterTimes = input.ReadUInt32();
             break;
           }
         }
@@ -277,11 +278,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk2700KIAHJKGOLGO = input.ReadUInt32();
+            IncreaseAvatarFetterLimitTimes = input.ReadUInt32();
             break;
           }
           case 120: {
-            Unk2700IGMHNDNGNPG = input.ReadUInt32();
+            CurrentIncreaseAvatarFetterTimes = input.ReadUInt32();
             break;
           }
         }

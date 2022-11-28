@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static RogueDiaryActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJSb2d1ZURpYXJ5QWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhVSb2d1ZURp",
-            "YXJ5U3RhZ2UucHJvdG8aGVVuazI3MDBfUElMSUxEUE1OTkEucHJvdG8ipQEK",
-            "HFJvZ3VlRGlhcnlBY3Rpdml0eURldGFpbEluZm8SJAoKc3RhZ2VfbGlzdBgL",
-            "IAMoCzIQLlJvZ3VlRGlhcnlTdGFnZRIYChBpc19oYXZlX3Byb2dyZXNzGAog",
-            "ASgIEhkKEWlzX2NvbnRlbnRfY2xvc2VkGAIgASgIEioKDGN1cl9wcm9ncmVz",
-            "cxgHIAEoCzIULlVuazI3MDBfUElMSUxEUE1OTkFCIqoCH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "CiJSb2d1ZURpYXJ5QWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhhSb2d1ZURp",
+            "YXJ5UHJvZ3Jlc3MucHJvdG8aGVJvZ3VlRGlhcnlTdGFnZUluZm8ucHJvdG8i",
+            "qAEKHFJvZ3VlRGlhcnlBY3Rpdml0eURldGFpbEluZm8SKAoKc3RhZ2VfbGlz",
+            "dBgLIAMoCzIULlJvZ3VlRGlhcnlTdGFnZUluZm8SGAoQaXNfaGF2ZV9wcm9n",
+            "cmVzcxgKIAEoCBIZChFpc19jb250ZW50X2Nsb3NlZBgCIAEoCBIpCgxjdXJf",
+            "cHJvZ3Jlc3MYByABKAsyEy5Sb2d1ZURpYXJ5UHJvZ3Jlc3NCIqoCH1dlZWR3",
+            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.RogueDiaryStageReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Unk2700PILILDPMNNAReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.RogueDiaryProgressReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RogueDiaryStageInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RogueDiaryActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.RogueDiaryActivityDetailInfo.Parser, new[]{ "StageList", "IsHaveProgress", "IsContentClosed", "CurProgress" }, null, null, null, null)
           }));
@@ -90,12 +90,12 @@ namespace Weedwacker.Shared.Network.Proto {
 
     /// <summary>Field number for the "stage_list" field.</summary>
     public const int StageListFieldNumber = 11;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.RogueDiaryStage> _repeated_stageList_codec
-        = pb::FieldCodec.ForMessage(90, global::Weedwacker.Shared.Network.Proto.RogueDiaryStage.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.RogueDiaryStage> stageList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.RogueDiaryStage>();
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.RogueDiaryStageInfo> _repeated_stageList_codec
+        = pb::FieldCodec.ForMessage(90, global::Weedwacker.Shared.Network.Proto.RogueDiaryStageInfo.Parser);
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.RogueDiaryStageInfo> stageList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.RogueDiaryStageInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.RogueDiaryStage> StageList {
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.RogueDiaryStageInfo> StageList {
       get { return stageList_; }
     }
 
@@ -125,10 +125,10 @@ namespace Weedwacker.Shared.Network.Proto {
 
     /// <summary>Field number for the "cur_progress" field.</summary>
     public const int CurProgressFieldNumber = 7;
-    private global::Weedwacker.Shared.Network.Proto.Unk2700_PILILDPMNNA curProgress_;
+    private global::Weedwacker.Shared.Network.Proto.RogueDiaryProgress curProgress_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Unk2700_PILILDPMNNA CurProgress {
+    public global::Weedwacker.Shared.Network.Proto.RogueDiaryProgress CurProgress {
       get { return curProgress_; }
       set {
         curProgress_ = value;
@@ -260,7 +260,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (other.curProgress_ != null) {
         if (curProgress_ == null) {
-          CurProgress = new global::Weedwacker.Shared.Network.Proto.Unk2700_PILILDPMNNA();
+          CurProgress = new global::Weedwacker.Shared.Network.Proto.RogueDiaryProgress();
         }
         CurProgress.MergeFrom(other.CurProgress);
       }
@@ -285,7 +285,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 58: {
             if (curProgress_ == null) {
-              CurProgress = new global::Weedwacker.Shared.Network.Proto.Unk2700_PILILDPMNNA();
+              CurProgress = new global::Weedwacker.Shared.Network.Proto.RogueDiaryProgress();
             }
             input.ReadMessage(CurProgress);
             break;
@@ -319,7 +319,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 58: {
             if (curProgress_ == null) {
-              CurProgress = new global::Weedwacker.Shared.Network.Proto.Unk2700_PILILDPMNNA();
+              CurProgress = new global::Weedwacker.Shared.Network.Proto.RogueDiaryProgress();
             }
             input.ReadMessage(CurProgress);
             break;

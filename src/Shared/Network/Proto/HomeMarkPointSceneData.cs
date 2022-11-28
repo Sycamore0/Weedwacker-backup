@@ -25,16 +25,16 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChxIb21lTWFya1BvaW50U2NlbmVEYXRhLnByb3RvGiBIb21lTWFya1BvaW50",
-            "RnVybml0dXJlRGF0YS5wcm90bxoMVmVjdG9yLnByb3RvIpYBChZIb21lTWFy",
+            "RnVybml0dXJlRGF0YS5wcm90bxoMVmVjdG9yLnByb3RvIrcBChZIb21lTWFy",
             "a1BvaW50U2NlbmVEYXRhEjMKDmZ1cm5pdHVyZV9saXN0GAYgAygLMhsuSG9t",
-            "ZU1hcmtQb2ludEZ1cm5pdHVyZURhdGESEQoJbW9kdWxlX2lkGAUgASgNEhAK",
-            "CHNjZW5lX2lkGAIgASgNEiIKEXRlYXBvdF9zcGlyaXRfcG9zGAQgASgLMgcu",
-            "VmVjdG9yQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
-            "cm90bzM="));
+            "ZU1hcmtQb2ludEZ1cm5pdHVyZURhdGESIgoRdGVhcG90X3NwaXJpdF9wb3MY",
+            "BCABKAsyBy5WZWN0b3ISEAoIc2NlbmVfaWQYAiABKA0SEQoJbW9kdWxlX2lk",
+            "GAUgASgNEh8KDnNhZmVfcG9pbnRfcG9zGAsgASgLMgcuVmVjdG9yQiKqAh9X",
+            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.HomeMarkPointFurnitureDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HomeMarkPointSceneData), global::Weedwacker.Shared.Network.Proto.HomeMarkPointSceneData.Parser, new[]{ "FurnitureList", "ModuleId", "SceneId", "TeapotSpiritPos" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HomeMarkPointSceneData), global::Weedwacker.Shared.Network.Proto.HomeMarkPointSceneData.Parser, new[]{ "FurnitureList", "TeapotSpiritPos", "SceneId", "ModuleId", "SafePointPos" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,9 +76,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public HomeMarkPointSceneData(HomeMarkPointSceneData other) : this() {
       furnitureList_ = other.furnitureList_.Clone();
-      moduleId_ = other.moduleId_;
-      sceneId_ = other.sceneId_;
       teapotSpiritPos_ = other.teapotSpiritPos_ != null ? other.teapotSpiritPos_.Clone() : null;
+      sceneId_ = other.sceneId_;
+      moduleId_ = other.moduleId_;
+      safePointPos_ = other.safePointPos_ != null ? other.safePointPos_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -99,15 +100,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return furnitureList_; }
     }
 
-    /// <summary>Field number for the "module_id" field.</summary>
-    public const int ModuleIdFieldNumber = 5;
-    private uint moduleId_;
+    /// <summary>Field number for the "teapot_spirit_pos" field.</summary>
+    public const int TeapotSpiritPosFieldNumber = 4;
+    private global::Weedwacker.Shared.Network.Proto.Vector teapotSpiritPos_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint ModuleId {
-      get { return moduleId_; }
+    public global::Weedwacker.Shared.Network.Proto.Vector TeapotSpiritPos {
+      get { return teapotSpiritPos_; }
       set {
-        moduleId_ = value;
+        teapotSpiritPos_ = value;
       }
     }
 
@@ -123,15 +124,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "teapot_spirit_pos" field.</summary>
-    public const int TeapotSpiritPosFieldNumber = 4;
-    private global::Weedwacker.Shared.Network.Proto.Vector teapotSpiritPos_;
+    /// <summary>Field number for the "module_id" field.</summary>
+    public const int ModuleIdFieldNumber = 5;
+    private uint moduleId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Vector TeapotSpiritPos {
-      get { return teapotSpiritPos_; }
+    public uint ModuleId {
+      get { return moduleId_; }
       set {
-        teapotSpiritPos_ = value;
+        moduleId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "safe_point_pos" field.</summary>
+    public const int SafePointPosFieldNumber = 11;
+    private global::Weedwacker.Shared.Network.Proto.Vector safePointPos_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Weedwacker.Shared.Network.Proto.Vector SafePointPos {
+      get { return safePointPos_; }
+      set {
+        safePointPos_ = value;
       }
     }
 
@@ -151,9 +164,10 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if(!furnitureList_.Equals(other.furnitureList_)) return false;
-      if (ModuleId != other.ModuleId) return false;
-      if (SceneId != other.SceneId) return false;
       if (!object.Equals(TeapotSpiritPos, other.TeapotSpiritPos)) return false;
+      if (SceneId != other.SceneId) return false;
+      if (ModuleId != other.ModuleId) return false;
+      if (!object.Equals(SafePointPos, other.SafePointPos)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -162,9 +176,10 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= furnitureList_.GetHashCode();
-      if (ModuleId != 0) hash ^= ModuleId.GetHashCode();
-      if (SceneId != 0) hash ^= SceneId.GetHashCode();
       if (teapotSpiritPos_ != null) hash ^= TeapotSpiritPos.GetHashCode();
+      if (SceneId != 0) hash ^= SceneId.GetHashCode();
+      if (ModuleId != 0) hash ^= ModuleId.GetHashCode();
+      if (safePointPos_ != null) hash ^= SafePointPos.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -196,6 +211,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteUInt32(ModuleId);
       }
       furnitureList_.WriteTo(output, _repeated_furnitureList_codec);
+      if (safePointPos_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(SafePointPos);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -219,6 +238,10 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteUInt32(ModuleId);
       }
       furnitureList_.WriteTo(ref output, _repeated_furnitureList_codec);
+      if (safePointPos_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(SafePointPos);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -230,14 +253,17 @@ namespace Weedwacker.Shared.Network.Proto {
     public int CalculateSize() {
       int size = 0;
       size += furnitureList_.CalculateSize(_repeated_furnitureList_codec);
-      if (ModuleId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ModuleId);
+      if (teapotSpiritPos_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TeapotSpiritPos);
       }
       if (SceneId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SceneId);
       }
-      if (teapotSpiritPos_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TeapotSpiritPos);
+      if (ModuleId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ModuleId);
+      }
+      if (safePointPos_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SafePointPos);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -252,17 +278,23 @@ namespace Weedwacker.Shared.Network.Proto {
         return;
       }
       furnitureList_.Add(other.furnitureList_);
-      if (other.ModuleId != 0) {
-        ModuleId = other.ModuleId;
-      }
-      if (other.SceneId != 0) {
-        SceneId = other.SceneId;
-      }
       if (other.teapotSpiritPos_ != null) {
         if (teapotSpiritPos_ == null) {
           TeapotSpiritPos = new global::Weedwacker.Shared.Network.Proto.Vector();
         }
         TeapotSpiritPos.MergeFrom(other.TeapotSpiritPos);
+      }
+      if (other.SceneId != 0) {
+        SceneId = other.SceneId;
+      }
+      if (other.ModuleId != 0) {
+        ModuleId = other.ModuleId;
+      }
+      if (other.safePointPos_ != null) {
+        if (safePointPos_ == null) {
+          SafePointPos = new global::Weedwacker.Shared.Network.Proto.Vector();
+        }
+        SafePointPos.MergeFrom(other.SafePointPos);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -298,6 +330,13 @@ namespace Weedwacker.Shared.Network.Proto {
             furnitureList_.AddEntriesFrom(input, _repeated_furnitureList_codec);
             break;
           }
+          case 90: {
+            if (safePointPos_ == null) {
+              SafePointPos = new global::Weedwacker.Shared.Network.Proto.Vector();
+            }
+            input.ReadMessage(SafePointPos);
+            break;
+          }
         }
       }
     #endif
@@ -330,6 +369,13 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 50: {
             furnitureList_.AddEntriesFrom(ref input, _repeated_furnitureList_codec);
+            break;
+          }
+          case 90: {
+            if (safePointPos_ == null) {
+              SafePointPos = new global::Weedwacker.Shared.Network.Proto.Vector();
+            }
+            input.ReadMessage(SafePointPos);
             break;
           }
         }

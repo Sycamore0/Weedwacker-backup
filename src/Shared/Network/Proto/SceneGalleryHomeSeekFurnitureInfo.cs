@@ -24,18 +24,18 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGalleryHomeSeekFurnitureInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CidTY2VuZUdhbGxlcnlIb21lU2Vla0Z1cm5pdHVyZUluZm8ucHJvdG8ijgIK",
-            "IVNjZW5lR2FsbGVyeUhvbWVTZWVrRnVybml0dXJlSW5mbxIbChNVbmsyNzAw",
-            "X0tEQkVOQkJPREdQGAYgASgNElcKE1VuazI3MDBfRERIT0pIT0lDQkwYCCAD",
-            "KAsyOi5TY2VuZUdhbGxlcnlIb21lU2Vla0Z1cm5pdHVyZUluZm8uVW5rMjcw",
-            "MERESE9KSE9JQ0JMRW50cnkSGwoTVW5rMjcwMF9MT0RGRkNQRkpMQxgMIAEo",
-            "DRIbChNVbmsyNzAwX0hMQ0lIQ0NHRkZDGAkgASgNGjkKF1VuazI3MDBEREhP",
-            "SkhPSUNCTEVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1ZRgCIAEoDToCOAFC",
-            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
+            "CidTY2VuZUdhbGxlcnlIb21lU2Vla0Z1cm5pdHVyZUluZm8ucHJvdG8igwIK",
+            "IVNjZW5lR2FsbGVyeUhvbWVTZWVrRnVybml0dXJlSW5mbxIZChFjdXJfdGlk",
+            "ZV9sZWZ0X251bRgGIAEoDRJQChBwbGF5ZXJfc2NvcmVfbWFwGAggAygLMjYu",
+            "U2NlbmVHYWxsZXJ5SG9tZVNlZWtGdXJuaXR1cmVJbmZvLlBsYXllclNjb3Jl",
+            "TWFwRW50cnkSHgoWY3VyX3RpZGVfZHVyYXRpb25fdGltZRgMIAEoDRIaChJj",
+            "dXJfdGlkZV90b3RhbF9udW0YCSABKA0aNQoTUGxheWVyU2NvcmVNYXBFbnRy",
+            "eRILCgNrZXkYASABKA0SDQoFdmFsdWUYAiABKA06AjgBQiKqAh9XZWVkd2Fj",
+            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryHomeSeekFurnitureInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryHomeSeekFurnitureInfo.Parser, new[]{ "Unk2700KDBENBBODGP", "Unk2700DDHOJHOICBL", "Unk2700LODFFCPFJLC", "Unk2700HLCIHCCGFFC" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneGalleryHomeSeekFurnitureInfo), global::Weedwacker.Shared.Network.Proto.SceneGalleryHomeSeekFurnitureInfo.Parser, new[]{ "CurTideLeftNum", "PlayerScoreMap", "CurTideDurationTime", "CurTideTotalNum" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -76,10 +76,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SceneGalleryHomeSeekFurnitureInfo(SceneGalleryHomeSeekFurnitureInfo other) : this() {
-      unk2700KDBENBBODGP_ = other.unk2700KDBENBBODGP_;
-      unk2700DDHOJHOICBL_ = other.unk2700DDHOJHOICBL_.Clone();
-      unk2700LODFFCPFJLC_ = other.unk2700LODFFCPFJLC_;
-      unk2700HLCIHCCGFFC_ = other.unk2700HLCIHCCGFFC_;
+      curTideLeftNum_ = other.curTideLeftNum_;
+      playerScoreMap_ = other.playerScoreMap_.Clone();
+      curTideDurationTime_ = other.curTideDurationTime_;
+      curTideTotalNum_ = other.curTideTotalNum_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -89,50 +89,50 @@ namespace Weedwacker.Shared.Network.Proto {
       return new SceneGalleryHomeSeekFurnitureInfo(this);
     }
 
-    /// <summary>Field number for the "Unk2700_KDBENBBODGP" field.</summary>
-    public const int Unk2700KDBENBBODGPFieldNumber = 6;
-    private uint unk2700KDBENBBODGP_;
+    /// <summary>Field number for the "cur_tide_left_num" field.</summary>
+    public const int CurTideLeftNumFieldNumber = 6;
+    private uint curTideLeftNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700KDBENBBODGP {
-      get { return unk2700KDBENBBODGP_; }
+    public uint CurTideLeftNum {
+      get { return curTideLeftNum_; }
       set {
-        unk2700KDBENBBODGP_ = value;
+        curTideLeftNum_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_DDHOJHOICBL" field.</summary>
-    public const int Unk2700DDHOJHOICBLFieldNumber = 8;
-    private static readonly pbc::MapField<uint, uint>.Codec _map_unk2700DDHOJHOICBL_codec
+    /// <summary>Field number for the "player_score_map" field.</summary>
+    public const int PlayerScoreMapFieldNumber = 8;
+    private static readonly pbc::MapField<uint, uint>.Codec _map_playerScoreMap_codec
         = new pbc::MapField<uint, uint>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForUInt32(16, 0), 66);
-    private readonly pbc::MapField<uint, uint> unk2700DDHOJHOICBL_ = new pbc::MapField<uint, uint>();
+    private readonly pbc::MapField<uint, uint> playerScoreMap_ = new pbc::MapField<uint, uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, uint> Unk2700DDHOJHOICBL {
-      get { return unk2700DDHOJHOICBL_; }
+    public pbc::MapField<uint, uint> PlayerScoreMap {
+      get { return playerScoreMap_; }
     }
 
-    /// <summary>Field number for the "Unk2700_LODFFCPFJLC" field.</summary>
-    public const int Unk2700LODFFCPFJLCFieldNumber = 12;
-    private uint unk2700LODFFCPFJLC_;
+    /// <summary>Field number for the "cur_tide_duration_time" field.</summary>
+    public const int CurTideDurationTimeFieldNumber = 12;
+    private uint curTideDurationTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700LODFFCPFJLC {
-      get { return unk2700LODFFCPFJLC_; }
+    public uint CurTideDurationTime {
+      get { return curTideDurationTime_; }
       set {
-        unk2700LODFFCPFJLC_ = value;
+        curTideDurationTime_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk2700_HLCIHCCGFFC" field.</summary>
-    public const int Unk2700HLCIHCCGFFCFieldNumber = 9;
-    private uint unk2700HLCIHCCGFFC_;
+    /// <summary>Field number for the "cur_tide_total_num" field.</summary>
+    public const int CurTideTotalNumFieldNumber = 9;
+    private uint curTideTotalNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700HLCIHCCGFFC {
-      get { return unk2700HLCIHCCGFFC_; }
+    public uint CurTideTotalNum {
+      get { return curTideTotalNum_; }
       set {
-        unk2700HLCIHCCGFFC_ = value;
+        curTideTotalNum_ = value;
       }
     }
 
@@ -151,10 +151,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700KDBENBBODGP != other.Unk2700KDBENBBODGP) return false;
-      if (!Unk2700DDHOJHOICBL.Equals(other.Unk2700DDHOJHOICBL)) return false;
-      if (Unk2700LODFFCPFJLC != other.Unk2700LODFFCPFJLC) return false;
-      if (Unk2700HLCIHCCGFFC != other.Unk2700HLCIHCCGFFC) return false;
+      if (CurTideLeftNum != other.CurTideLeftNum) return false;
+      if (!PlayerScoreMap.Equals(other.PlayerScoreMap)) return false;
+      if (CurTideDurationTime != other.CurTideDurationTime) return false;
+      if (CurTideTotalNum != other.CurTideTotalNum) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -162,10 +162,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700KDBENBBODGP != 0) hash ^= Unk2700KDBENBBODGP.GetHashCode();
-      hash ^= Unk2700DDHOJHOICBL.GetHashCode();
-      if (Unk2700LODFFCPFJLC != 0) hash ^= Unk2700LODFFCPFJLC.GetHashCode();
-      if (Unk2700HLCIHCCGFFC != 0) hash ^= Unk2700HLCIHCCGFFC.GetHashCode();
+      if (CurTideLeftNum != 0) hash ^= CurTideLeftNum.GetHashCode();
+      hash ^= PlayerScoreMap.GetHashCode();
+      if (CurTideDurationTime != 0) hash ^= CurTideDurationTime.GetHashCode();
+      if (CurTideTotalNum != 0) hash ^= CurTideTotalNum.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -184,18 +184,18 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700KDBENBBODGP != 0) {
+      if (CurTideLeftNum != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(Unk2700KDBENBBODGP);
+        output.WriteUInt32(CurTideLeftNum);
       }
-      unk2700DDHOJHOICBL_.WriteTo(output, _map_unk2700DDHOJHOICBL_codec);
-      if (Unk2700HLCIHCCGFFC != 0) {
+      playerScoreMap_.WriteTo(output, _map_playerScoreMap_codec);
+      if (CurTideTotalNum != 0) {
         output.WriteRawTag(72);
-        output.WriteUInt32(Unk2700HLCIHCCGFFC);
+        output.WriteUInt32(CurTideTotalNum);
       }
-      if (Unk2700LODFFCPFJLC != 0) {
+      if (CurTideDurationTime != 0) {
         output.WriteRawTag(96);
-        output.WriteUInt32(Unk2700LODFFCPFJLC);
+        output.WriteUInt32(CurTideDurationTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -207,18 +207,18 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700KDBENBBODGP != 0) {
+      if (CurTideLeftNum != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(Unk2700KDBENBBODGP);
+        output.WriteUInt32(CurTideLeftNum);
       }
-      unk2700DDHOJHOICBL_.WriteTo(ref output, _map_unk2700DDHOJHOICBL_codec);
-      if (Unk2700HLCIHCCGFFC != 0) {
+      playerScoreMap_.WriteTo(ref output, _map_playerScoreMap_codec);
+      if (CurTideTotalNum != 0) {
         output.WriteRawTag(72);
-        output.WriteUInt32(Unk2700HLCIHCCGFFC);
+        output.WriteUInt32(CurTideTotalNum);
       }
-      if (Unk2700LODFFCPFJLC != 0) {
+      if (CurTideDurationTime != 0) {
         output.WriteRawTag(96);
-        output.WriteUInt32(Unk2700LODFFCPFJLC);
+        output.WriteUInt32(CurTideDurationTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -230,15 +230,15 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700KDBENBBODGP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700KDBENBBODGP);
+      if (CurTideLeftNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurTideLeftNum);
       }
-      size += unk2700DDHOJHOICBL_.CalculateSize(_map_unk2700DDHOJHOICBL_codec);
-      if (Unk2700LODFFCPFJLC != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700LODFFCPFJLC);
+      size += playerScoreMap_.CalculateSize(_map_playerScoreMap_codec);
+      if (CurTideDurationTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurTideDurationTime);
       }
-      if (Unk2700HLCIHCCGFFC != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700HLCIHCCGFFC);
+      if (CurTideTotalNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurTideTotalNum);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -252,15 +252,15 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700KDBENBBODGP != 0) {
-        Unk2700KDBENBBODGP = other.Unk2700KDBENBBODGP;
+      if (other.CurTideLeftNum != 0) {
+        CurTideLeftNum = other.CurTideLeftNum;
       }
-      unk2700DDHOJHOICBL_.Add(other.unk2700DDHOJHOICBL_);
-      if (other.Unk2700LODFFCPFJLC != 0) {
-        Unk2700LODFFCPFJLC = other.Unk2700LODFFCPFJLC;
+      playerScoreMap_.Add(other.playerScoreMap_);
+      if (other.CurTideDurationTime != 0) {
+        CurTideDurationTime = other.CurTideDurationTime;
       }
-      if (other.Unk2700HLCIHCCGFFC != 0) {
-        Unk2700HLCIHCCGFFC = other.Unk2700HLCIHCCGFFC;
+      if (other.CurTideTotalNum != 0) {
+        CurTideTotalNum = other.CurTideTotalNum;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -278,19 +278,19 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 48: {
-            Unk2700KDBENBBODGP = input.ReadUInt32();
+            CurTideLeftNum = input.ReadUInt32();
             break;
           }
           case 66: {
-            unk2700DDHOJHOICBL_.AddEntriesFrom(input, _map_unk2700DDHOJHOICBL_codec);
+            playerScoreMap_.AddEntriesFrom(input, _map_playerScoreMap_codec);
             break;
           }
           case 72: {
-            Unk2700HLCIHCCGFFC = input.ReadUInt32();
+            CurTideTotalNum = input.ReadUInt32();
             break;
           }
           case 96: {
-            Unk2700LODFFCPFJLC = input.ReadUInt32();
+            CurTideDurationTime = input.ReadUInt32();
             break;
           }
         }
@@ -309,19 +309,19 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 48: {
-            Unk2700KDBENBBODGP = input.ReadUInt32();
+            CurTideLeftNum = input.ReadUInt32();
             break;
           }
           case 66: {
-            unk2700DDHOJHOICBL_.AddEntriesFrom(ref input, _map_unk2700DDHOJHOICBL_codec);
+            playerScoreMap_.AddEntriesFrom(ref input, _map_playerScoreMap_codec);
             break;
           }
           case 72: {
-            Unk2700HLCIHCCGFFC = input.ReadUInt32();
+            CurTideTotalNum = input.ReadUInt32();
             break;
           }
           case 96: {
-            Unk2700LODFFCPFJLC = input.ReadUInt32();
+            CurTideDurationTime = input.ReadUInt32();
             break;
           }
         }

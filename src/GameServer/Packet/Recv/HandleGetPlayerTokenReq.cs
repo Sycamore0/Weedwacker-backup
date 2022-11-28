@@ -54,7 +54,7 @@ namespace Weedwacker.GameServer.Packet.Recv
                 {
                     RSA signer = Crypto.CurSigner;
 
-                    byte[] client_seed_encrypted = Convert.FromBase64String(req.ClientSeed);
+                    byte[] client_seed_encrypted = Convert.FromBase64String(req.ClientRandKey);
                     byte[] client_seed = signer.Decrypt(client_seed_encrypted, RSAEncryptionPadding.Pkcs1);
                     byte[] encryptSeed = BitConverter.GetBytes(randSeed);
                     Crypto.Xor(client_seed, encryptSeed);
@@ -73,7 +73,7 @@ namespace Weedwacker.GameServer.Packet.Recv
                 catch (Exception ignore)
                 {
                     // Only UA Patch users will have exception
-                    byte[] clientBytes = Convert.FromBase64String(req.ClientSeed);
+                    byte[] clientBytes = Convert.FromBase64String(req.ClientRandKey);
                     byte[] seed = BitConverter.GetBytes(randSeed);
                     Crypto.Xor(clientBytes, seed);
 

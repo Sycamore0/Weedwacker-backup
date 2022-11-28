@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneFishInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNTY2VuZUZpc2hJbmZvLnByb3RvGgxWZWN0b3IucHJvdG8ilwEKDVNjZW5l",
+            "ChNTY2VuZUZpc2hJbmZvLnByb3RvGgxWZWN0b3IucHJvdG8ikwEKDVNjZW5l",
             "RmlzaEluZm8SDwoHZmlzaF9pZBgBIAEoDRIbChNmaXNoX3Bvb2xfZW50aXR5",
             "X2lkGAIgASgNEh4KDWZpc2hfcG9vbF9wb3MYAyABKAsyBy5WZWN0b3ISGwoT",
-            "ZmlzaF9wb29sX2dhZGdldF9pZBgEIAEoDRIbChNVbmsyNzAwX0hJUEZIS0ZN",
-            "QkJFGAUgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
-            "YgZwcm90bzM="));
+            "ZmlzaF9wb29sX2dhZGdldF9pZBgEIAEoDRIXCg9sYXN0X3Nob2NrX3RpbWUY",
+            "BSABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneFishInfo), global::Weedwacker.Shared.Network.Proto.SceneFishInfo.Parser, new[]{ "FishId", "FishPoolEntityId", "FishPoolPos", "FishPoolGadgetId", "Unk2700HIPFHKFMBBE" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SceneFishInfo), global::Weedwacker.Shared.Network.Proto.SceneFishInfo.Parser, new[]{ "FishId", "FishPoolEntityId", "FishPoolPos", "FishPoolGadgetId", "LastShockTime" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,7 +78,7 @@ namespace Weedwacker.Shared.Network.Proto {
       fishPoolEntityId_ = other.fishPoolEntityId_;
       fishPoolPos_ = other.fishPoolPos_ != null ? other.fishPoolPos_.Clone() : null;
       fishPoolGadgetId_ = other.fishPoolGadgetId_;
-      unk2700HIPFHKFMBBE_ = other.unk2700HIPFHKFMBBE_;
+      lastShockTime_ = other.lastShockTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -136,15 +136,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk2700_HIPFHKFMBBE" field.</summary>
-    public const int Unk2700HIPFHKFMBBEFieldNumber = 5;
-    private uint unk2700HIPFHKFMBBE_;
+    /// <summary>Field number for the "last_shock_time" field.</summary>
+    public const int LastShockTimeFieldNumber = 5;
+    private uint lastShockTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700HIPFHKFMBBE {
-      get { return unk2700HIPFHKFMBBE_; }
+    public uint LastShockTime {
+      get { return lastShockTime_; }
       set {
-        unk2700HIPFHKFMBBE_ = value;
+        lastShockTime_ = value;
       }
     }
 
@@ -167,7 +167,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (FishPoolEntityId != other.FishPoolEntityId) return false;
       if (!object.Equals(FishPoolPos, other.FishPoolPos)) return false;
       if (FishPoolGadgetId != other.FishPoolGadgetId) return false;
-      if (Unk2700HIPFHKFMBBE != other.Unk2700HIPFHKFMBBE) return false;
+      if (LastShockTime != other.LastShockTime) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -179,7 +179,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (FishPoolEntityId != 0) hash ^= FishPoolEntityId.GetHashCode();
       if (fishPoolPos_ != null) hash ^= FishPoolPos.GetHashCode();
       if (FishPoolGadgetId != 0) hash ^= FishPoolGadgetId.GetHashCode();
-      if (Unk2700HIPFHKFMBBE != 0) hash ^= Unk2700HIPFHKFMBBE.GetHashCode();
+      if (LastShockTime != 0) hash ^= LastShockTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -214,9 +214,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(32);
         output.WriteUInt32(FishPoolGadgetId);
       }
-      if (Unk2700HIPFHKFMBBE != 0) {
+      if (LastShockTime != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk2700HIPFHKFMBBE);
+        output.WriteUInt32(LastShockTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -244,9 +244,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(32);
         output.WriteUInt32(FishPoolGadgetId);
       }
-      if (Unk2700HIPFHKFMBBE != 0) {
+      if (LastShockTime != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk2700HIPFHKFMBBE);
+        output.WriteUInt32(LastShockTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -270,8 +270,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (FishPoolGadgetId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FishPoolGadgetId);
       }
-      if (Unk2700HIPFHKFMBBE != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700HIPFHKFMBBE);
+      if (LastShockTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LastShockTime);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -300,8 +300,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.FishPoolGadgetId != 0) {
         FishPoolGadgetId = other.FishPoolGadgetId;
       }
-      if (other.Unk2700HIPFHKFMBBE != 0) {
-        Unk2700HIPFHKFMBBE = other.Unk2700HIPFHKFMBBE;
+      if (other.LastShockTime != 0) {
+        LastShockTime = other.LastShockTime;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -338,7 +338,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk2700HIPFHKFMBBE = input.ReadUInt32();
+            LastShockTime = input.ReadUInt32();
             break;
           }
         }
@@ -376,7 +376,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk2700HIPFHKFMBBE = input.ReadUInt32();
+            LastShockTime = input.ReadUInt32();
             break;
           }
         }

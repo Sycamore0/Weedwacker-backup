@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static ItemGivingRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNJdGVtR2l2aW5nUnNwLnByb3RvIlAKDUl0ZW1HaXZpbmdSc3ASGwoTVW5r",
-            "MjcwMF9NSElQSERGRU9PThgBIAEoDRIRCglnaXZpbmdfaWQYDSABKA0SDwoH",
-            "cmV0Y29kZRgDIAEoBUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90b2IGcHJvdG8z"));
+            "ChNJdGVtR2l2aW5nUnNwLnByb3RvIkwKDUl0ZW1HaXZpbmdSc3ASFwoPZ2l2",
+            "aW5nX2dyb3VwX2lkGAEgASgNEhEKCWdpdmluZ19pZBgNIAEoDRIPCgdyZXRj",
+            "b2RlGAMgASgFQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ItemGivingRsp), global::Weedwacker.Shared.Network.Proto.ItemGivingRsp.Parser, new[]{ "Unk2700MHIPHDFEOON", "GivingId", "Retcode" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ItemGivingRsp), global::Weedwacker.Shared.Network.Proto.ItemGivingRsp.Parser, new[]{ "GivingGroupId", "GivingId", "Retcode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,7 +77,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ItemGivingRsp(ItemGivingRsp other) : this() {
-      unk2700MHIPHDFEOON_ = other.unk2700MHIPHDFEOON_;
+      givingGroupId_ = other.givingGroupId_;
       givingId_ = other.givingId_;
       retcode_ = other.retcode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -89,15 +89,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new ItemGivingRsp(this);
     }
 
-    /// <summary>Field number for the "Unk2700_MHIPHDFEOON" field.</summary>
-    public const int Unk2700MHIPHDFEOONFieldNumber = 1;
-    private uint unk2700MHIPHDFEOON_;
+    /// <summary>Field number for the "giving_group_id" field.</summary>
+    public const int GivingGroupIdFieldNumber = 1;
+    private uint givingGroupId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk2700MHIPHDFEOON {
-      get { return unk2700MHIPHDFEOON_; }
+    public uint GivingGroupId {
+      get { return givingGroupId_; }
       set {
-        unk2700MHIPHDFEOON_ = value;
+        givingGroupId_ = value;
       }
     }
 
@@ -140,7 +140,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk2700MHIPHDFEOON != other.Unk2700MHIPHDFEOON) return false;
+      if (GivingGroupId != other.GivingGroupId) return false;
       if (GivingId != other.GivingId) return false;
       if (Retcode != other.Retcode) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -150,7 +150,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk2700MHIPHDFEOON != 0) hash ^= Unk2700MHIPHDFEOON.GetHashCode();
+      if (GivingGroupId != 0) hash ^= GivingGroupId.GetHashCode();
       if (GivingId != 0) hash ^= GivingId.GetHashCode();
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
       if (_unknownFields != null) {
@@ -171,9 +171,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk2700MHIPHDFEOON != 0) {
+      if (GivingGroupId != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk2700MHIPHDFEOON);
+        output.WriteUInt32(GivingGroupId);
       }
       if (Retcode != 0) {
         output.WriteRawTag(24);
@@ -193,9 +193,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk2700MHIPHDFEOON != 0) {
+      if (GivingGroupId != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk2700MHIPHDFEOON);
+        output.WriteUInt32(GivingGroupId);
       }
       if (Retcode != 0) {
         output.WriteRawTag(24);
@@ -215,8 +215,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk2700MHIPHDFEOON != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk2700MHIPHDFEOON);
+      if (GivingGroupId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GivingGroupId);
       }
       if (GivingId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GivingId);
@@ -236,8 +236,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk2700MHIPHDFEOON != 0) {
-        Unk2700MHIPHDFEOON = other.Unk2700MHIPHDFEOON;
+      if (other.GivingGroupId != 0) {
+        GivingGroupId = other.GivingGroupId;
       }
       if (other.GivingId != 0) {
         GivingId = other.GivingId;
@@ -261,7 +261,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Unk2700MHIPHDFEOON = input.ReadUInt32();
+            GivingGroupId = input.ReadUInt32();
             break;
           }
           case 24: {
@@ -288,7 +288,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Unk2700MHIPHDFEOON = input.ReadUInt32();
+            GivingGroupId = input.ReadUInt32();
             break;
           }
           case 24: {
