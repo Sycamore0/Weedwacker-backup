@@ -17,6 +17,7 @@ namespace Weedwacker.GameServer.Systems.Inventory
             Id = uniqueId;
             Level = level;
             Refinement = refinement;
+            PromoteLevel = GetMinPromoteLevel(Level);
 
             if (ItemData.skillAffix != null)
             {
