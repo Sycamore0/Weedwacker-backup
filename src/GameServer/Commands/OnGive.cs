@@ -22,7 +22,7 @@ namespace Weedwacker.GameServer.Commands
             int refinement = 1;
             if (args.Length >= 3 && !int.TryParse(args[2], out count))
             {
-                return "no count";
+                return "invalid amount";
             }
             if (args.Length >= 4 && (!int.TryParse(args[3], out lvl) || lvl < 1 || lvl > 90))
             {
@@ -33,7 +33,7 @@ namespace Weedwacker.GameServer.Commands
                 return "invalid refinement";
             }
 
-            await GameServer.OnlinePlayers[guid].Player.Inventory.AddItemByIdAsync(itemId, count, ActionReason.None, true, lvl, refinement-1); //convert refinement
+            await GameServer.OnlinePlayers[guid].Player.Inventory.AddItemByIdAsync(itemId, count, ActionReason.None, true, lvl, refinement-1); //convert refinement to code value
             return $"Added item {itemId} to player {guid} at level {lvl} and refinement {refinement}";
         }
     }
