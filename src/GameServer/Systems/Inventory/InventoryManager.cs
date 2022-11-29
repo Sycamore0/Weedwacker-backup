@@ -142,8 +142,7 @@ namespace Weedwacker.GameServer.Systems.Inventory
             if (updatedItem != null)
             {
                 // Add a reference by Guid
-                if(!GuidMap.TryGetValue(updatedItem.Guid, out _))
-                 GuidMap.Add(updatedItem.Guid, updatedItem);
+                GuidMap[updatedItem.Guid] = updatedItem;
 
                 if (notifyClient)
                 {

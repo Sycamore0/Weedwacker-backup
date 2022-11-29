@@ -32,9 +32,19 @@ namespace Weedwacker.GameServer.Commands
             {
                 return "invalid refinement";
             }
-
-            await GameServer.OnlinePlayers[guid].Player.Inventory.AddItemByIdAsync(itemId, count, ActionReason.None, true, lvl, refinement-1); //convert refinement to code value
-            return $"Added item {itemId} to player {guid} at level {lvl} and refinement {refinement}";
+            if (GameData.ItemDataMap[itemId].itemType == ItemType.ITEM_RELIQUARY || GameData.ItemDataMap[itemId].itemType == ItemType.ITEM_WEAPON)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    await GameServer.OnlinePlayers[guid].Player.Inventory.AddItemByIdAsync(itemId, 1, ActionReason.None, true, lvl, refinement - 1); //convert refinement to code value
+                }   
+            }
+            else
+            {
+                await GameServer.OnlinePlayers[guid].Player.Inventory.AddItemByIdAsync(itemId, count, ActionReason.None, true);
+            }
+            
+            return $"Added {count} item {itemId} to player {guid} at level {lvl} and refinement {refinement}";
         }
     }
 }
