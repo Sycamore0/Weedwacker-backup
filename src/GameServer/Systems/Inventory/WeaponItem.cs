@@ -12,10 +12,11 @@ namespace Weedwacker.GameServer.Systems.Inventory
         [BsonIgnore] public uint WeaponEntityId;
         [BsonIgnore] public new WeaponData ItemData => (WeaponData)GameData.ItemDataMap[ItemId];
 
-        public WeaponItem(ulong guid, int itemId, int uniqueId) : base(guid, itemId)
+        public WeaponItem(ulong guid, int itemId, int uniqueId, int level = 1, int refinement = 0) : base(guid, itemId)
         {
             Id = uniqueId;
-            Level = 1;
+            Level = level;
+            Refinement = refinement;
 
             if (ItemData.skillAffix != null)
             {
