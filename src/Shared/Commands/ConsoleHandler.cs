@@ -18,10 +18,11 @@ namespace Weedwacker.Shared.Commands
         }
         public static async Task Start()
         {
-        Start:
+            Start:
             try
             {
             CommandHandler:
+                Console.Write(">");
                 string cmd = ParseCommandString(Console.ReadLine(), out string[] args);
                 Logger.WriteLine(await ExecuteCommand(cmd, UserRank.Console, args));
                 goto CommandHandler;
