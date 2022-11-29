@@ -102,8 +102,12 @@ namespace Weedwacker.Shared.Utils
             RSA.ImportFromPem(ByteConverter.GetString(Crypto.AUTH_KEY));
             try
             {
+                var decryptedpwd = RSA.Decrypt(Convert.FromBase64String(encryptedpwd), false);
                 var ret = new MD5CryptoServiceProvider().ComputeHash(
-                    RSA.Decrypt(Convert.FromBase64String(encryptedpwd), false));
+                    decryptedpwd
+                    );
+
+                Logger.DebugWriteWarningLine($"decrypted password:{ByteConverter.GetString(decryptedpwd)}");
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < ret.Length; i++)
                 {
