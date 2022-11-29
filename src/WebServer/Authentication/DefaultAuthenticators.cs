@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+using System.Security.Cryptography;
+using System.Text;
 using Weedwacker.Shared.Authentication;
 using Weedwacker.Shared.Utils;
 using Weedwacker.WebServer.Authentication.Objects;
@@ -22,6 +25,33 @@ namespace Weedwacker.WebServer.Authentication
             string address = request.Context.Connection.RemoteIpAddress.ToString();
             string responseMessage = "Username not found.";
             string loggerMessage = "";
+            string decryptedPassword = "";
+
+            if (WebServer.Configuration.Server.Account.UsePassword)
+            {
+                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                {
+
+                    UTF8Encoding ByteConverter = new UTF8Encoding();
+                    int bytesread = 0;
+                    //RSA.ImportPkcs8PrivateKey(Crypto.AUTH_KEY,out bytesread);
+
+                    RSA.ImportFromPem(ByteConverter.GetString(Crypto.AUTH_KEY));
+                    //Pass the data to DECRYPT, the private key information 
+                    //(using RSACryptoServiceProvider.ExportParameters(true),
+                    //and a boolean flag specifying no OAEP padding.
+                    try
+                    {
+                        decryptedPassword = ByteConverter.GetString(
+                            Crypto.RSADecrypt(Convert.FromBase64String(requestData.password),
+                            RSA.ExportParameters(true), false));
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.WriteErrorLine(ex.Message);
+                    }
+                }
+            }
 
             // Get account from database.
             Account? account = await DatabaseManager.GetAccountByNameAsync(requestData.account);
@@ -31,7 +61,14 @@ namespace Weedwacker.WebServer.Authentication
                 if (account == null && WebServer.Configuration.Server.Account.AutoCreate)
                 {
                     // This account has been created AUTOMATICALLY. There will be no permissions added.
-                    account = DatabaseManager.CreateAccountWithUid(requestData.account, "0");
+                    if (WebServer.Configuration.Server.Account.UsePassword)
+                    {
+                        account = DatabaseManager.CreateAccountWithUid(requestData.account, decryptedPassword, "0");
+                    }
+                    else
+                    {
+                        account = DatabaseManager.CreateAccountWithUid(requestData.account, "", "0");
+                    }
 
                     // Check if the account was created successfully.
                     if (account == null)
@@ -49,7 +86,31 @@ namespace Weedwacker.WebServer.Authentication
                     }
                 }
                 else if (account != null)
-                    successfulLogin = true;
+                {
+                    if (!WebServer.Configuration.Server.Account.UsePassword)
+                    {
+                        successfulLogin = true;
+                    }
+                    else if (string.IsNullOrEmpty(account.Password))
+                    {
+                        account.Password = decryptedPassword;
+                        DatabaseManager.SaveAccount(account);
+                        successfulLogin = true;
+
+                    }
+                    else
+                    {
+                        if (decryptedPassword == account.Password)
+                        {
+                            successfulLogin = true;
+                        }
+                        else
+                        {
+                            successfulLogin = false;
+                            responseMessage = "Incorrect password!";
+                        }
+                    }
+                }
                 else
                     loggerMessage = $"Client {address} failed to log in: Account not found.";
             }

@@ -8,6 +8,8 @@ namespace Weedwacker.Shared.Utils
         public static byte[] DISPATCH_KEY;
         public static byte[] DISPATCH_SEED;
 
+
+        public static byte[] AUTH_KEY;
         public static byte[] ENCRYPT_KEY;
         public static ulong ENCRYPT_SEED = 0x0;
         public static byte[] ENCRYPT_SEED_BUFFER = new byte[0];
@@ -29,6 +31,7 @@ namespace Weedwacker.Shared.Utils
             var seedpath = Path.Combine(path, "dispatchSeed.bin");
             var encryptkeypath = Path.Combine(path, "secretKey.bin");
             var encryptseedbufferpath = Path.Combine(path, "secretKeyBuffer.bin");
+            var authkeypath = Path.Combine(path, "auth_private-key.pem");
             if (File.Exists(keypath))
                 DISPATCH_KEY = File.ReadAllBytes(keypath);
             if (File.Exists(seedpath))
@@ -37,7 +40,8 @@ namespace Weedwacker.Shared.Utils
                 ENCRYPT_KEY = File.ReadAllBytes(encryptkeypath);
             if (File.Exists(encryptseedbufferpath))
                 ENCRYPT_SEED_BUFFER = File.ReadAllBytes(encryptseedbufferpath);
-
+            if (File.Exists(authkeypath))
+                AUTH_KEY = File.ReadAllBytes(authkeypath);
             try
             {
                 Cur3Encryptor.ImportFromPem(File.ReadAllText(path + "3.pem").ToCharArray());
@@ -86,7 +90,60 @@ namespace Weedwacker.Shared.Utils
             return System.Security.Cryptography.RandomNumberGenerator.GetBytes(length);
         }
 
+        public static byte[] RSAEncrypt(byte[] DataToEncrypt, RSAParameters RSAKeyInfo, bool DoOAEPPadding)
+        {
+            try
+            {
+                byte[] encryptedData;
+                //Create a new instance of RSACryptoServiceProvider.
+                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                {
 
+                    //Import the RSA Key information. This only needs
+                    //toinclude the public key information.
+                    RSA.ImportParameters(RSAKeyInfo);
+
+                    //Encrypt the passed byte array and specify OAEP padding.  
+                    //OAEP padding is only available on Microsoft Windows XP or
+                    //later.  
+                    encryptedData = RSA.Encrypt(DataToEncrypt, DoOAEPPadding);
+                }
+                return encryptedData;
+            }
+            //Catch and display a CryptographicException  
+            //to the console.
+            catch
+            {
+                throw;
+            }
+        }
+
+        public static byte[] RSADecrypt(byte[] DataToDecrypt, RSAParameters RSAKeyInfo, bool DoOAEPPadding)
+        {
+            try
+            {
+                byte[] decryptedData;
+                //Create a new instance of RSACryptoServiceProvider.
+                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                {
+                    //Import the RSA Key information. This needs
+                    //to include the private key information.
+                    RSA.ImportParameters(RSAKeyInfo);
+
+                    //Decrypt the passed byte array and specify OAEP padding.  
+                    //OAEP padding is only available on Microsoft Windows XP or
+                    //later.  
+                    decryptedData = RSA.Decrypt(DataToDecrypt, DoOAEPPadding);
+                }
+                return decryptedData;
+            }
+            //Catch and display a CryptographicException  
+            //to the console.
+            catch
+            {
+                throw;
+            }
+        }
 
         // Mersenne Twister 19937 using uint64 instead of uint32. Used to generate the encryption key for the game session
         public class MT19937
