@@ -18,7 +18,7 @@ namespace Weedwacker.Shared.Commands
         }
         public static async Task Start()
         {
-        Start:
+            Start:
             try
             {
             CommandHandler:
