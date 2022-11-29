@@ -25,32 +25,11 @@ namespace Weedwacker.WebServer.Authentication
             string address = request.Context.Connection.RemoteIpAddress.ToString();
             string responseMessage = "Username not found.";
             string loggerMessage = "";
-            string decryptedPassword = "";
+            string decryptedPasswordMd5 = "";
 
             if (WebServer.Configuration.Server.Account.UsePassword)
             {
-                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
-                {
-
-                    UTF8Encoding ByteConverter = new UTF8Encoding();
-                    int bytesread = 0;
-                    //RSA.ImportPkcs8PrivateKey(Crypto.AUTH_KEY,out bytesread);
-
-                    RSA.ImportFromPem(ByteConverter.GetString(Crypto.AUTH_KEY));
-                    //Pass the data to DECRYPT, the private key information 
-                    //(using RSACryptoServiceProvider.ExportParameters(true),
-                    //and a boolean flag specifying no OAEP padding.
-                    try
-                    {
-                        decryptedPassword = ByteConverter.GetString(
-                            Crypto.RSADecrypt(Convert.FromBase64String(requestData.password),
-                            RSA.ExportParameters(true), false));
-                    }
-                    catch (Exception ex)
-                    {
-                        Logger.WriteErrorLine(ex.Message);
-                    }
-                }
+                decryptedPasswordMd5 = Crypto.GetPasswordHash(requestData.password);
             }
 
             // Get account from database.
@@ -63,7 +42,7 @@ namespace Weedwacker.WebServer.Authentication
                     // This account has been created AUTOMATICALLY. There will be no permissions added.
                     if (WebServer.Configuration.Server.Account.UsePassword)
                     {
-                        account = DatabaseManager.CreateAccountWithUid(requestData.account, decryptedPassword, "0");
+                        account = DatabaseManager.CreateAccountWithUid(requestData.account, decryptedPasswordMd5, "0");
                     }
                     else
                     {
@@ -93,14 +72,14 @@ namespace Weedwacker.WebServer.Authentication
                     }
                     else if (string.IsNullOrEmpty(account.Password))
                     {
-                        account.Password = decryptedPassword;
+                        account.Password = decryptedPasswordMd5;
                         DatabaseManager.SaveAccount(account);
                         successfulLogin = true;
 
                     }
                     else
                     {
-                        if (decryptedPassword == account.Password)
+                        if (decryptedPasswordMd5 == account.Password)
                         {
                             successfulLogin = true;
                         }
