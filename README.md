@@ -12,7 +12,7 @@ Join us on our [discord](https://discord.gg/XJgJcf6nPf)!
 - Use of the Official c# driver for mongodb (with godly documentation), the ability to update, save, delete documents as needed
 - Resource loading and management of $type polymorphism
 - Extensive debug logging and the option to save to disk (only in the DEBUG build)
-- Some basic console commands
+- Microsoft's System.CommandLine library to handle both shell and ingame commands (via the chat)
 
 ### Contributing:
 Any contributions, small and large are welcome. The code has to be understandable,
