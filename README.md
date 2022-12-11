@@ -29,7 +29,7 @@ any .NET 6 compatible compiler
 
 ### Running:
 Weedwacker has 2 different executables. one for the HTTP web server, one for the UDP game server
-- 1) Download and put at the root of the project the [resources](https://git.crepe.moe/tamilpp25/Grasscutter_Resources/-/tree/3.2/) folder
+- 1) Download and put at the root of the project the [resources](https://git.crepe.moe/grasscutters/Grasscutter_Resources/-/tree/3.3) folder
 - 1b) Check out [DataParser](https://github.com/WeedwackerPS/DataParser) if you're interested.
 - 2) Run both the WebServer and the GameServer executables (also generates the configuration jsons if not present).
 - 2b) If you plan to host multiple game server instances, or run over a network, make the appropriate changes/additions to the  config jsons (each server should have its own MongoDB Database).
