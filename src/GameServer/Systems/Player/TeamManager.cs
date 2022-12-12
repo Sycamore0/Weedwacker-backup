@@ -1,9 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
-using System.Collections.Generic;
-using Vim.Math3d;
 using Weedwacker.GameServer.Database;
 using Weedwacker.GameServer.Enums;
-using Weedwacker.GameServer.Packet;
 using Weedwacker.GameServer.Packet.Send;
 using Weedwacker.GameServer.Systems.Ability;
 using Weedwacker.GameServer.Systems.Avatar;
