@@ -1,5 +1,5 @@
-﻿using Google.Protobuf;
-using Vim.Math3d;
+﻿using System.Numerics;
+using Google.Protobuf;
 using Weedwacker.GameServer.Enums;
 using Weedwacker.GameServer.Systems.Player;
 using Weedwacker.GameServer.Systems.World;
@@ -19,7 +19,7 @@ namespace Weedwacker.GameServer.Packet.Send
 
             PlayerEnterSceneNotify proto = new PlayerEnterSceneNotify()
             {
-                SceneId = (uint)newScene.GetId(),
+                SceneId = (uint)newScene.SceneId,
                 Pos = new() { X = newPos.X, Y = newPos.Y, Z = newPos.Z },
                 SceneBeginTime = (ulong)DateTimeOffset.Now.ToUnixTimeMilliseconds(),
                 Type = type,
@@ -28,7 +28,7 @@ namespace Weedwacker.GameServer.Packet.Send
                 WorldLevel = (uint)target.World.WorldLevel, // we need to use the world level of the world the player is in, NOT their own world level
                 EnterReason = (uint)reason,
                 WorldType = 1,
-                SceneTransaction = newScene.GetId() + "-" + target.GameUid + "-" + (int)(DateTimeOffset.Now.ToUnixTimeMilliseconds() / 1000) + "-" + 18402
+                SceneTransaction = newScene.SceneId + "-" + target.GameUid + "-" + (int)(DateTimeOffset.Now.ToUnixTimeMilliseconds() / 1000) + "-" + 18402
             };
 
             if (newScene.DungeonData != null) proto.DungeonId = (uint)newScene.DungeonData.id;
