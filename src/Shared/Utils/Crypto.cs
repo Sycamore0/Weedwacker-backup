@@ -45,17 +45,17 @@ namespace Weedwacker.Shared.Utils
                 AUTH_KEY = File.ReadAllBytes(authkeypath);
             try
             {
-                Cur3Encryptor.ImportFromPem(File.ReadAllText(path + "3.pem").ToCharArray());
+                Cur3Encryptor.ImportFromPem(File.ReadAllText(Path.Combine(path, "3.pem")).ToCharArray());
                 var OSparams = Cur3Encryptor.ExportParameters(true);
                 DispatchEncryptionKeys[3] = Cur3Encryptor;
-                Cur2Encryptor.ImportFromPem(File.ReadAllText(path + "2.pem").ToCharArray());
+                Cur2Encryptor.ImportFromPem(File.ReadAllText(Path.Combine(path, "2.pem")).ToCharArray());
                 DispatchEncryptionKeys[2] = Cur2Encryptor;
-                Cur4Encryptor.ImportFromPem(File.ReadAllText(path + "4.pem").ToCharArray());
+                Cur4Encryptor.ImportFromPem(File.ReadAllText(Path.Combine(path, "4.pem")).ToCharArray());
                 DispatchEncryptionKeys[4] = Cur4Encryptor;
-                Cur5Encryptor.ImportFromPem(File.ReadAllText(path + "5.pem").ToCharArray());
+                Cur5Encryptor.ImportFromPem(File.ReadAllText(Path.Combine(path, "5.pem")).ToCharArray());
                 DispatchEncryptionKeys[5] = Cur5Encryptor;
 
-                CurSigner.ImportFromPem(File.ReadAllText(path + "SigningKey.pem").ToCharArray());
+                CurSigner.ImportFromPem(File.ReadAllText(Path.Combine(path, "SigningKey.pem")).ToCharArray());
                 var signParams = CurSigner.ExportParameters(true);
 
             }
@@ -63,7 +63,6 @@ namespace Weedwacker.Shared.Utils
             {
                 Logger.WriteErrorLine("An error occurred while loading keys.", e);
             }
-
         }
 
         public static RSA GetDispatchEncryptionKey(int key)

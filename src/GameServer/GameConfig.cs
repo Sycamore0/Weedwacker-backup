@@ -1,6 +1,5 @@
 ﻿using Weedwacker.GameServer.Enums;
 using Weedwacker.Shared.Network.Proto;
-using Weedwacker.Shared.Utils;
 using Weedwacker.Shared.Utils.Configuration;
 
 namespace Weedwacker.GameServer
@@ -17,13 +16,9 @@ namespace Weedwacker.GameServer
         }
         public new class StructureJson
         {
-            public string Resources = "..\\..\\..\\resources\\";
-            public string Scripts = "..\\..\\..\\resources\\Scripts\\";
-            public string keys = "..\\..\\..\\keys\\";
-
-
-            // UNUSED (potentially added later?)
-            // public String dumps = "./dumps/";
+            public string Resources = Path.Combine("..","..","..","resources");
+            public string Scripts = Path.Combine("..", "..", "..", "resources","Scripts");
+            public string keys = Path.Combine("..", "..", "..","keys");
         }
         public class ServerJson
         {
@@ -35,7 +30,7 @@ namespace Weedwacker.GameServer
                 OpCode.ClientAbilityChangeNotify,
             };
             public bool KeepLog = true;
-            public string LogLocation = ".\\packetLogs";
+            public string LogLocation = Path.Combine(".","packetLogs");
             public bool LogCombatInvocations = true;
             public CombatTypeArgument[] CombatArgTypeBlacklist = new[] { CombatTypeArgument.EntityMove };
             public bool LogAbilityInvocations = true;
@@ -57,7 +52,7 @@ namespace Weedwacker.GameServer
             public Shared.Enums.ServerDebugMode LogPackets = Shared.Enums.ServerDebugMode.BLACKLIST;
 
             /* needed for authentication, and for some game systems */
-            public string WebServerUrl = "https://127.0.0.1";
+            public string WebServerUrl = "https://127.0.0.1:443";
 
             public GameOptions GameOptions = new GameOptions();
             public JoinOptions JoinOptions = new JoinOptions();
@@ -84,7 +79,7 @@ namespace Weedwacker.GameServer
 
             public class ConstantsJson
             {
-                public string VERSION = "3.0.0";
+                public string VERSION = "3.3.0";
 
                 public int DEFAULT_TEAMS = 4;
                 public int MAX_TEAMS = 10;
@@ -99,8 +94,6 @@ namespace Weedwacker.GameServer
                 public int BATTLE_PASS_POINT_PER_WEEK = 10000;
                 public int BATTLE_PASS_LEVEL_PRICE = 150;
                 public int BATTLE_PASS_CURRENT_INDEX = 2;
-
-                public ulong DEFAULT_ABILITY_NAME = Utils.AbilityHash("Default");
             }
 
             public class InventoryLimitsJson

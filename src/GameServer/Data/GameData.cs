@@ -254,7 +254,7 @@ namespace Weedwacker.GameServer.Data
             foreach (var fileAndPath in dirs)
             {
                 string fullPath = Path.GetFullPath(fileAndPath);
-                int sceneId = int.Parse(fullPath.Split("\\").Last());
+                int sceneId = int.Parse(fullPath.Split(Path.DirectorySeparatorChar).Last());
                 if (GameServer.Configuration.Server.DynamicLoadScenes && sceneId != 3) continue;
                 tasks.Add(LoadSceneScripts(sceneId, path));
             }

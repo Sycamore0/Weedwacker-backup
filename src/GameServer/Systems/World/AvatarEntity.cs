@@ -256,8 +256,8 @@ namespace Weedwacker.GameServer.Systems.World
                 AbilityEmbryo emb = new()
                 {
                     AbilityId = ++embryoId,
-                    AbilityNameHash = (uint)Utils.AbilityHash(resonance.openConfig),
-                    AbilityOverrideNameHash = (uint)GameServer.Configuration.Server.GameOptions.Constants.DEFAULT_ABILITY_NAME
+                    AbilityNameHash = Utils.AbilityHash(resonance.openConfig),
+                    AbilityOverrideNameHash = Utils.AbilityHash("Default")
                 };
 
                 abilityControlBlock.AbilityEmbryoList.Add(emb);
@@ -270,7 +270,7 @@ namespace Weedwacker.GameServer.Systems.World
                 {
                     AbilityId = ++embryoId,
                     AbilityNameHash = (uint)hash,
-                    AbilityOverrideNameHash = (uint)GameServer.Configuration.Server.GameOptions.Constants.DEFAULT_ABILITY_NAME
+                    AbilityOverrideNameHash = Utils.AbilityHash("Default")
                 };
                 abilityControlBlock.AbilityEmbryoList.Add(emb);
             }
@@ -283,8 +283,8 @@ namespace Weedwacker.GameServer.Systems.World
                     AbilityEmbryo emb = new AbilityEmbryo()
                     {
                         AbilityId = ++embryoId,
-                        AbilityNameHash = (uint)Utils.AbilityHash(ability),
-                        AbilityOverrideNameHash = (uint)GameServer.Configuration.Server.GameOptions.Constants.DEFAULT_ABILITY_NAME
+                        AbilityNameHash = Utils.AbilityHash(ability),
+                        AbilityOverrideNameHash = Utils.AbilityHash("Default")
                     };
 
                     abilityControlBlock.AbilityEmbryoList.Add(emb);
