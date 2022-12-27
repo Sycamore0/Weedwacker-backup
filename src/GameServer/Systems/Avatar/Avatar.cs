@@ -34,13 +34,15 @@ namespace Weedwacker.GameServer.Systems.Avatar
         [BsonElement] public int CurrentDepotId { get; private set; }
         [BsonSerializer(typeof(IntDictionarySerializer<SkillDepot>))]
         [BsonElement] public Dictionary<int, SkillDepot> SkillDepots { get; private set; } = new();
+        [BsonIgnore] public SkillDepot CurSkillDepot => SkillDepots[CurrentDepotId];
 
         [BsonElement] public FetterSystem Fetters { get; private set; }
         [BsonIgnore] public Dictionary<EquipType, EquipItem> Equips { get; private set; } = new(); // Loaded through the inventory system
+        [BsonIgnore] public WeaponItem? Weapon => (WeaponItem?)Equips.GetValueOrDefault(EquipType.EQUIP_WEAPON);
         [BsonElement] public Dictionary<FightProperty, float> FightProp { get; private set; } = new();
         [BsonElement] public HashSet<string> AppliedOpenConfigs { get; private set; } = new();
 
-        [BsonElement] public int FlyCloak { get; private set; } = 140001;
+        [BsonElement] public int FlyCloak { get; set; } = 140001;
         [BsonElement] public int Costume { get; private set; } = default; // no costume
 
         [BsonIgnore] public AvatarEntity AsEntity;
@@ -117,10 +119,6 @@ namespace Weedwacker.GameServer.Systems.Avatar
             if (notifyClient) await Owner.SendPacketAsync(new PacketAvatarFightPropUpdateNotify(this, FightProperty.FIGHT_PROP_CUR_HP));
             return true;
         }
-        public SkillDepot GetCurSkillDepot()
-        {
-            return SkillDepots[CurrentDepotId];
-        }
         public async Task<bool> SetFlyCloakAsync(int cloakId)
         {
             FlyCloak = cloakId;
@@ -161,11 +159,6 @@ namespace Weedwacker.GameServer.Systems.Avatar
             return 0;
         }
 
-        public WeaponItem? GetWeapon()
-        {
-            return (WeaponItem?)Equips.GetValueOrDefault(EquipType.EQUIP_WEAPON);
-        }
-
         public GameItem? GetRelic(EquipType slot)
         {
             if (slot == EquipType.EQUIP_WEAPON)
@@ -178,27 +171,27 @@ namespace Weedwacker.GameServer.Systems.Avatar
 
         public float GetCurrentEnergy()
         {
-            if (GetCurSkillDepot().Element != null)
-                return GetCurSkillDepot().Element.CurEnergy;
+            if (CurSkillDepot.Element != null)
+                return CurSkillDepot.Element.CurEnergy;
             else
                 return 0;
         }
         public async Task<bool> SetCurrentEnergy(float currentEnergy, bool update = true)
         {
-            if (GetCurSkillDepot().Element != null)
+            if (CurSkillDepot.Element != null)
             {
-                GetCurSkillDepot().Element.CurEnergy = currentEnergy;
-                FightProp[GetCurSkillDepot().Element.CurEnergyProp] = currentEnergy;
+                CurSkillDepot.Element.CurEnergy = currentEnergy;
+                FightProp[CurSkillDepot.Element.CurEnergyProp] = currentEnergy;
 
                 // false = used in RecalcStatsAsync or is in Tower team
                 if (update)
                 {
                     // Update
                     var filter = Builders<AvatarManager>.Filter.Where(w => w.OwnerId == Owner.GameUid);
-                    var updateQuery = Builders<AvatarManager>.Update.Set($"{nameof(AvatarManager.Avatars)}.{AvatarId}.{GetCurSkillDepot().Element.CurEnergyProp}", currentEnergy);
+                    var updateQuery = Builders<AvatarManager>.Update.Set($"{nameof(AvatarManager.Avatars)}.{AvatarId}.{CurSkillDepot.Element.CurEnergyProp}", currentEnergy);
                     await DatabaseManager.UpdateAvatarsAsync(filter, updateQuery);
 
-                    await Owner.SendPacketAsync(new PacketAvatarFightPropUpdateNotify(this, GetCurSkillDepot().Element.CurEnergyProp));
+                    await Owner.SendPacketAsync(new PacketAvatarFightPropUpdateNotify(this, CurSkillDepot.Element.CurEnergyProp));
                 }
                 return true;
             }
@@ -260,7 +253,7 @@ namespace Weedwacker.GameServer.Systems.Avatar
         }
         public async Task<bool> EquipWeapon(WeaponItem item, bool notifyClient = true)
         {
-            if (GetWeapon() != null)
+            if (Weapon != null)
             {
                 // Unequip item in current slot if it exists
                 await UnequipWeapon(notifyClient);
@@ -350,8 +343,8 @@ namespace Weedwacker.GameServer.Systems.Avatar
 
             // Clear properties
             FightProp.Clear();
-            if (GetCurSkillDepot().Element != null)
-                GetCurSkillDepot().Element.CurEnergy = 0;
+            if (CurSkillDepot.Element != null)
+                CurSkillDepot.Element.CurEnergy = 0;
 
             // Base stats
             FightProp[FightProperty.FIGHT_PROP_BASE_HP] = Data.GetBaseHp(Level);
@@ -452,7 +445,7 @@ namespace Weedwacker.GameServer.Systems.Avatar
             }
 
             // Weapon
-            WeaponItem weapon = GetWeapon();
+            WeaponItem weapon = Weapon;
             if (weapon != null)
             {
                 // Add stats
@@ -509,7 +502,7 @@ namespace Weedwacker.GameServer.Systems.Avatar
             }
 
             // Proud skills
-            foreach (ProudSkillData proudSkill in GetCurSkillDepot().InherentProudSkillOpens)
+            foreach (ProudSkillData proudSkill in CurSkillDepot.InherentProudSkillOpens)
             {
                 // Add properties from this proud skill to our avatar
                 if (proudSkill.addProps != null)
@@ -574,32 +567,32 @@ namespace Weedwacker.GameServer.Systems.Avatar
                 SkillDepotId = (uint)CurrentDepotId,
                 LifeState = (uint)LifeState,
                 AvatarType = 1,
-                CoreProudSkillLevel = GetCurSkillDepot().GetCoreProudSkillLevel()
+                CoreProudSkillLevel = CurSkillDepot.GetCoreProudSkillLevel()
             };
 
-            foreach (ProudSkillData proud in GetCurSkillDepot().InherentProudSkillOpens)
+            foreach (ProudSkillData proud in CurSkillDepot.InherentProudSkillOpens)
             {
                 avatarInfo.InherentProudSkillList.Add((uint)proud.proudSkillId);
             }
-            foreach (int talent in GetCurSkillDepot().Talents)
+            foreach (int talent in CurSkillDepot.Talents)
             {
                 avatarInfo.TalentIdList.Add((uint)talent);
             }
-            foreach (int skill in GetCurSkillDepot().GetSkillLevelMap().Keys)
+            foreach (int skill in CurSkillDepot.GetSkillLevelMap().Keys)
             {
-                avatarInfo.SkillLevelMap.Add((uint)skill, (uint)GetCurSkillDepot().GetSkillLevelMap()[skill]);
+                avatarInfo.SkillLevelMap.Add((uint)skill, (uint)CurSkillDepot.GetSkillLevelMap()[skill]);
             }
             foreach (FightProperty prop in FightProp.Keys)
             {
                 avatarInfo.FightPropMap.Add((uint)prop, FightProp[prop]);
             }
-            foreach (int groupId in GetCurSkillDepot().ProudSkillExtraLevelMap.Keys)
+            foreach (int groupId in CurSkillDepot.ProudSkillExtraLevelMap.Keys)
             {
-                avatarInfo.ProudSkillExtraLevelMap.Add((uint)groupId, (uint)GetCurSkillDepot().ProudSkillExtraLevelMap[groupId]);
+                avatarInfo.ProudSkillExtraLevelMap.Add((uint)groupId, (uint)CurSkillDepot.ProudSkillExtraLevelMap[groupId]);
             }
-            foreach (int skillId in GetCurSkillDepot().SkillExtraChargeMap.Keys)
+            foreach (int skillId in CurSkillDepot.SkillExtraChargeMap.Keys)
             {
-                avatarInfo.SkillMap.Add((uint)skillId, new AvatarSkillInfo() { MaxChargeCount = (uint)GetCurSkillDepot().SkillExtraChargeMap[skillId] });
+                avatarInfo.SkillMap.Add((uint)skillId, new AvatarSkillInfo() { MaxChargeCount = (uint)CurSkillDepot.SkillExtraChargeMap[skillId] });
             }
 
             foreach (GameItem item in Equips.Values)
@@ -627,24 +620,24 @@ namespace Weedwacker.GameServer.Systems.Avatar
                 AvatarId = (uint)AvatarId,
                 CostumeId = (uint)Costume,
                 SkillDepotId = (uint)CurrentDepotId,
-                CoreProudSkillLevel = GetCurSkillDepot().GetCoreProudSkillLevel(),
+                CoreProudSkillLevel = CurSkillDepot.GetCoreProudSkillLevel(),
                 FetterInfo = avatarFetter
             };
-            foreach (int talent in GetCurSkillDepot().Talents)
+            foreach (int talent in CurSkillDepot.Talents)
             {
                 showAvatarInfo.TalentIdList.Add((uint)talent);
             }
-            foreach (ProudSkillData proudSkill in GetCurSkillDepot().InherentProudSkillOpens)
+            foreach (ProudSkillData proudSkill in CurSkillDepot.InherentProudSkillOpens)
             {
                 showAvatarInfo.InherentProudSkillList.Add((uint)proudSkill.proudSkillId);
             }
-            foreach (int skill in GetCurSkillDepot().GetSkillLevelMap().Keys)
+            foreach (int skill in CurSkillDepot.GetSkillLevelMap().Keys)
             {
-                showAvatarInfo.SkillLevelMap.Add((uint)skill, (uint)GetCurSkillDepot().GetSkillLevelMap()[skill]);
+                showAvatarInfo.SkillLevelMap.Add((uint)skill, (uint)CurSkillDepot.GetSkillLevelMap()[skill]);
             }
-            foreach (int groupId in GetCurSkillDepot().ProudSkillExtraLevelMap.Keys)
+            foreach (int groupId in CurSkillDepot.ProudSkillExtraLevelMap.Keys)
             {
-                showAvatarInfo.ProudSkillExtraLevelMap.Add((uint)groupId, (uint)GetCurSkillDepot().ProudSkillExtraLevelMap[groupId]);
+                showAvatarInfo.ProudSkillExtraLevelMap.Add((uint)groupId, (uint)CurSkillDepot.ProudSkillExtraLevelMap[groupId]);
             }
             foreach (FightProperty prop in FightProp.Keys)
             {

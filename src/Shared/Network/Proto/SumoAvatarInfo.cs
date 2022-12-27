@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static SumoAvatarInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRTdW1vQXZhdGFySW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90byI1Cg5TdW1vQXZhdGFySW5mbxIQCghpc190cmlhbBgJIAEo",
-            "CBIRCglhdmF0YXJfaWQYDSABKARiBnByb3RvMw=="));
+            "ChRTdW1vQXZhdGFySW5mby5wcm90byI1Cg5TdW1vQXZhdGFySW5mbxIQCghp",
+            "c190cmlhbBgJIAEoCBIRCglhdmF0YXJfaWQYDSABKARCIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

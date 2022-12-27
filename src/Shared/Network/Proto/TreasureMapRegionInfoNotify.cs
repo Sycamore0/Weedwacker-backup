@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static TreasureMapRegionInfoNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFUcmVhc3VyZU1hcFJlZ2lvbkluZm9Ob3RpZnkucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8aG1RyZWFzdXJlTWFwUmVnaW9uSW5m",
-            "by5wcm90byJqChtUcmVhc3VyZU1hcFJlZ2lvbkluZm9Ob3RpZnkSSwoLcmVn",
-            "aW9uX2luZm8YByABKAsyNi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvLlRyZWFzdXJlTWFwUmVnaW9uSW5mb2IGcHJvdG8z"));
+            "CiFUcmVhc3VyZU1hcFJlZ2lvbkluZm9Ob3RpZnkucHJvdG8aG1RyZWFzdXJl",
+            "TWFwUmVnaW9uSW5mby5wcm90byJKChtUcmVhc3VyZU1hcFJlZ2lvbkluZm9O",
+            "b3RpZnkSKwoLcmVnaW9uX2luZm8YByABKAsyFi5UcmVhc3VyZU1hcFJlZ2lv",
+            "bkluZm9CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.TreasureMapRegionInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

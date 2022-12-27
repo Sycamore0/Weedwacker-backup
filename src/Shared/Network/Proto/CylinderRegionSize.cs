@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static CylinderRegionSizeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhDeWxpbmRlclJlZ2lvblNpemUucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8iNAoSQ3lsaW5kZXJSZWdpb25TaXplEg4KBnJhZGl1",
-            "cxgHIAEoAhIOCgZoZWlnaHQYDyABKAJiBnByb3RvMw=="));
+            "ChhDeWxpbmRlclJlZ2lvblNpemUucHJvdG8iNAoSQ3lsaW5kZXJSZWdpb25T",
+            "aXplEg4KBnJhZGl1cxgHIAEoAhIOCgZoZWlnaHQYDyABKAJCIqoCH1dlZWR3",
+            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,18 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGSkillPreviewNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtHQ0dTa2lsbFByZXZpZXdOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8aGkdDR0NoYW5nZU9uc3RhZ2VJbmZvLnByb3Rv",
-            "GhlHQ0dTa2lsbFByZXZpZXdJbmZvLnByb3RvGiFHQ0dTa2lsbFByZXZpZXdQ",
-            "bGF5Q2FyZEluZm8ucHJvdG8izQIKFUdDR1NraWxsUHJldmlld05vdGlmeRIV",
-            "Cg1jb250cm9sbGVyX2lkGA0gASgNElAKEnNraWxsX3ByZXZpZXdfbGlzdBgP",
-            "IAMoCzI0LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uR0NHU2tp",
-            "bGxQcmV2aWV3SW5mbxJaChtjaGFuZ2Vfb25zdGFnZV9wcmV2aWV3X2xpc3QY",
-            "AyADKAsyNS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkdDR0No",
-            "YW5nZU9uc3RhZ2VJbmZvElQKDnBsYXlfY2FyZF9saXN0GAsgAygLMjwuV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5HQ0dTa2lsbFByZXZpZXdQ",
-            "bGF5Q2FyZEluZm8SGQoRb25zdGFnZV9jYXJkX2d1aWQYBiABKA1iBnByb3Rv",
-            "Mw=="));
+            "ChtHQ0dTa2lsbFByZXZpZXdOb3RpZnkucHJvdG8aGkdDR0NoYW5nZU9uc3Rh",
+            "Z2VJbmZvLnByb3RvGhlHQ0dTa2lsbFByZXZpZXdJbmZvLnByb3RvGiFHQ0dT",
+            "a2lsbFByZXZpZXdQbGF5Q2FyZEluZm8ucHJvdG8i7QEKFUdDR1NraWxsUHJl",
+            "dmlld05vdGlmeRIVCg1jb250cm9sbGVyX2lkGA0gASgNEjAKEnNraWxsX3By",
+            "ZXZpZXdfbGlzdBgPIAMoCzIULkdDR1NraWxsUHJldmlld0luZm8SOgobY2hh",
+            "bmdlX29uc3RhZ2VfcHJldmlld19saXN0GAMgAygLMhUuR0NHQ2hhbmdlT25z",
+            "dGFnZUluZm8SNAoOcGxheV9jYXJkX2xpc3QYCyADKAsyHC5HQ0dTa2lsbFBy",
+            "ZXZpZXdQbGF5Q2FyZEluZm8SGQoRb25zdGFnZV9jYXJkX2d1aWQYBiABKA1C",
+            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GCGChangeOnstageInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GCGSkillPreviewInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GCGSkillPreviewPlayCardInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

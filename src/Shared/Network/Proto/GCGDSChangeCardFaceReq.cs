@@ -24,9 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGDSChangeCardFaceReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxHQ0dEU0NoYW5nZUNhcmRGYWNlUmVxLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvIjwKFkdDR0RTQ2hhbmdlQ2FyZEZhY2VSZXES",
-            "DwoHY2FyZF9pZBgJIAEoDRIRCglmYWNlX3R5cGUYDiABKA1iBnByb3RvMw=="));
+            "ChxHQ0dEU0NoYW5nZUNhcmRGYWNlUmVxLnByb3RvIjwKFkdDR0RTQ2hhbmdl",
+            "Q2FyZEZhY2VSZXESDwoHY2FyZF9pZBgJIAEoDRIRCglmYWNlX3R5cGUYDiAB",
+            "KA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

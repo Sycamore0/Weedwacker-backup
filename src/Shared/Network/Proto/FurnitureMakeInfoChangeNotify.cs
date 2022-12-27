@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static FurnitureMakeInfoChangeNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNGdXJuaXR1cmVNYWtlSW5mb0NoYW5nZU5vdGlmeS5wcm90bxIfV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90bxoXRnVybml0dXJlTWFrZUluZm8u",
-            "cHJvdG8iZgodRnVybml0dXJlTWFrZUluZm9DaGFuZ2VOb3RpZnkSRQoJbWFr",
-            "ZV9pbmZvGAogASgLMjIuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
-            "by5GdXJuaXR1cmVNYWtlSW5mb2IGcHJvdG8z"));
+            "CiNGdXJuaXR1cmVNYWtlSW5mb0NoYW5nZU5vdGlmeS5wcm90bxoXRnVybml0",
+            "dXJlTWFrZUluZm8ucHJvdG8iRgodRnVybml0dXJlTWFrZUluZm9DaGFuZ2VO",
+            "b3RpZnkSJQoJbWFrZV9pbmZvGAogASgLMhIuRnVybml0dXJlTWFrZUluZm9C",
+            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.FurnitureMakeInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

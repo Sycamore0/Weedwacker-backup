@@ -12,8 +12,8 @@ namespace Weedwacker.GameServer.Packet.Send
             WeaponPromoteRsp proto = new()
             {
                 TargetWeaponGuid = item.Guid,
-                Unk3300GGFCIPAKKDP = (uint)oldPromoteLevel,
-                Unk3300MBEBIACJNBB = (uint)item.PromoteLevel
+                OldPromoteLevel = (uint)oldPromoteLevel,
+                CurPromoteLevel = (uint)item.PromoteLevel
             };
             Data = proto.ToByteArray();
         }

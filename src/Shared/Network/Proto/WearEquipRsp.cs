@@ -24,9 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static WearEquipRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJXZWFyRXF1aXBSc3AucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8iSAoMV2VhckVxdWlwUnNwEg8KB3JldGNvZGUYAyABKAUSEgoK",
-            "ZXF1aXBfZ3VpZBgBIAEoBBITCgthdmF0YXJfZ3VpZBgOIAEoBGIGcHJvdG8z"));
+            "ChJXZWFyRXF1aXBSc3AucHJvdG8iSAoMV2VhckVxdWlwUnNwEg8KB3JldGNv",
+            "ZGUYAyABKAUSEgoKZXF1aXBfZ3VpZBgBIAEoBBITCgthdmF0YXJfZ3VpZBgO",
+            "IAEoBEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

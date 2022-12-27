@@ -65,8 +65,8 @@ namespace Weedwacker.GameServer.Systems.Avatar
             ushort num = 0;
             foreach (var avatar in AvatarInfo.Values)
             {
-                if (avatar == null || avatar.GetCurSkillDepot().Element == null) continue;
-                if (avatar.GetCurSkillDepot().Element.Type == element)
+                if (avatar == null || avatar.CurSkillDepot.Element == null) continue;
+                if (avatar.CurSkillDepot.Element.Type == element)
                     num++;
             }
             return num;

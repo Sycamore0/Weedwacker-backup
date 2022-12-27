@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static EvtDestroyServerGadgetNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJFdnREZXN0cm95U2VydmVyR2FkZ2V0Tm90aWZ5LnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIjEKHEV2dERlc3Ryb3lTZXJ2ZXJH",
-            "YWRnZXROb3RpZnkSEQoJZW50aXR5X2lkGAMgASgNYgZwcm90bzM="));
+            "CiJFdnREZXN0cm95U2VydmVyR2FkZ2V0Tm90aWZ5LnByb3RvIjEKHEV2dERl",
+            "c3Ryb3lTZXJ2ZXJHYWRnZXROb3RpZnkSEQoJZW50aXR5X2lkGAMgASgNQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

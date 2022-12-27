@@ -24,22 +24,22 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetPlayerTokenReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdHZXRQbGF5ZXJUb2tlblJlcS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byLOAwoRR2V0UGxheWVyVG9rZW5SZXESCwoDdWlkGAog",
-            "ASgNEhwKE1VuazMzMDBfRElMTU9QUExQRU0Yxw0gASgNEhUKDXBsYXRmb3Jt",
-            "X3R5cGUYAiABKA0SEAoIaXNfZ3Vlc3QYDiABKAgSEQoJb25saW5lX2lkGAwg",
-            "ASgJEhQKDGFjY291bnRfdHlwZRgGIAEoDRISCgpjaGFubmVsX2lkGAggASgN",
-            "EhgKD2NsaWVudF9yYW5kX2tleRiQAyABKAkSGwoTVW5rMzMwMF9QSE5PSENL",
-            "SUhJQRgDIAEoCRINCgRsYW5nGIwMIAEoDRIbChNVbmszMzAwX1BLT05BT0lE",
-            "TkZLGA0gASgJEhsKE1VuazMzMDBfUE1HRkJNSk5OQ0wYASABKA0SDgoGcHNu",
-            "X2lkGAUgASgJEg8KBmtleV9pZBiXCSABKA0SEwoLYWNjb3VudF91aWQYBCAB",
-            "KAkSFQoNY2xpZW50X2lwX3N0chgPIAEoCRIVCg1hY2NvdW50X3Rva2VuGAkg",
-            "ASgJEhQKDGNvdW50cnlfY29kZRgLIAEoCRIRCghiaXJ0aGRheRikAiABKAkS",
-            "GwoTVW5rMzMwMF9JQURGSkhORktJQhgHIAEoDWIGcHJvdG8z"));
+            "ChdHZXRQbGF5ZXJUb2tlblJlcS5wcm90byLFAwoRR2V0UGxheWVyVG9rZW5S",
+            "ZXESCwoDdWlkGAogASgNEhgKD2Nsb3VkX2NsaWVudF9pcBjHDSABKA0SFQoN",
+            "cGxhdGZvcm1fdHlwZRgCIAEoDRIQCghpc19ndWVzdBgOIAEoCBIRCglvbmxp",
+            "bmVfaWQYDCABKAkSFAoMYWNjb3VudF90eXBlGAYgASgNEhIKCmNoYW5uZWxf",
+            "aWQYCCABKA0SGAoPY2xpZW50X3JhbmRfa2V5GJADIAEoCRIbChNVbmszMzAw",
+            "X1BITk9IQ0tJSElBGAMgASgJEg0KBGxhbmcYjAwgASgNEhsKE1VuazMzMDBf",
+            "UEtPTkFPSURORksYDSABKAkSGwoTVW5rMzMwMF9QTUdGQk1KTk5DTBgBIAEo",
+            "DRIOCgZwc25faWQYBSABKAkSDwoGa2V5X2lkGJcJIAEoDRITCgthY2NvdW50",
+            "X3VpZBgEIAEoCRIVCg1jbGllbnRfaXBfc3RyGA8gASgJEhUKDWFjY291bnRf",
+            "dG9rZW4YCSABKAkSFAoMY291bnRyeV9jb2RlGAsgASgJEhEKCGJpcnRoZGF5",
+            "GKQCIAEoCRIWCg5zdWJfY2hhbm5lbF9pZBgHIAEoDUIiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetPlayerTokenReq), global::Weedwacker.Shared.Network.Proto.GetPlayerTokenReq.Parser, new[]{ "Uid", "Unk3300DILMOPPLPEM", "PlatformType", "IsGuest", "OnlineId", "AccountType", "ChannelId", "ClientRandKey", "Unk3300PHNOHCKIHIA", "Lang", "Unk3300PKONAOIDNFK", "Unk3300PMGFBMJNNCL", "PsnId", "KeyId", "AccountUid", "ClientIpStr", "AccountToken", "CountryCode", "Birthday", "Unk3300IADFJHNFKIB" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetPlayerTokenReq), global::Weedwacker.Shared.Network.Proto.GetPlayerTokenReq.Parser, new[]{ "Uid", "CloudClientIp", "PlatformType", "IsGuest", "OnlineId", "AccountType", "ChannelId", "ClientRandKey", "Unk3300PHNOHCKIHIA", "Lang", "Unk3300PKONAOIDNFK", "Unk3300PMGFBMJNNCL", "PsnId", "KeyId", "AccountUid", "ClientIpStr", "AccountToken", "CountryCode", "Birthday", "SubChannelId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -91,7 +91,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetPlayerTokenReq(GetPlayerTokenReq other) : this() {
       uid_ = other.uid_;
-      unk3300DILMOPPLPEM_ = other.unk3300DILMOPPLPEM_;
+      cloudClientIp_ = other.cloudClientIp_;
       platformType_ = other.platformType_;
       isGuest_ = other.isGuest_;
       onlineId_ = other.onlineId_;
@@ -109,7 +109,7 @@ namespace Weedwacker.Shared.Network.Proto {
       accountToken_ = other.accountToken_;
       countryCode_ = other.countryCode_;
       birthday_ = other.birthday_;
-      unk3300IADFJHNFKIB_ = other.unk3300IADFJHNFKIB_;
+      subChannelId_ = other.subChannelId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -131,15 +131,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_DILMOPPLPEM" field.</summary>
-    public const int Unk3300DILMOPPLPEMFieldNumber = 1735;
-    private uint unk3300DILMOPPLPEM_;
+    /// <summary>Field number for the "cloud_client_ip" field.</summary>
+    public const int CloudClientIpFieldNumber = 1735;
+    private uint cloudClientIp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300DILMOPPLPEM {
-      get { return unk3300DILMOPPLPEM_; }
+    public uint CloudClientIp {
+      get { return cloudClientIp_; }
       set {
-        unk3300DILMOPPLPEM_ = value;
+        cloudClientIp_ = value;
       }
     }
 
@@ -347,15 +347,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_IADFJHNFKIB" field.</summary>
-    public const int Unk3300IADFJHNFKIBFieldNumber = 7;
-    private uint unk3300IADFJHNFKIB_;
+    /// <summary>Field number for the "sub_channel_id" field.</summary>
+    public const int SubChannelIdFieldNumber = 7;
+    private uint subChannelId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300IADFJHNFKIB {
-      get { return unk3300IADFJHNFKIB_; }
+    public uint SubChannelId {
+      get { return subChannelId_; }
       set {
-        unk3300IADFJHNFKIB_ = value;
+        subChannelId_ = value;
       }
     }
 
@@ -375,7 +375,7 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (Uid != other.Uid) return false;
-      if (Unk3300DILMOPPLPEM != other.Unk3300DILMOPPLPEM) return false;
+      if (CloudClientIp != other.CloudClientIp) return false;
       if (PlatformType != other.PlatformType) return false;
       if (IsGuest != other.IsGuest) return false;
       if (OnlineId != other.OnlineId) return false;
@@ -393,7 +393,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (AccountToken != other.AccountToken) return false;
       if (CountryCode != other.CountryCode) return false;
       if (Birthday != other.Birthday) return false;
-      if (Unk3300IADFJHNFKIB != other.Unk3300IADFJHNFKIB) return false;
+      if (SubChannelId != other.SubChannelId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -402,7 +402,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Uid != 0) hash ^= Uid.GetHashCode();
-      if (Unk3300DILMOPPLPEM != 0) hash ^= Unk3300DILMOPPLPEM.GetHashCode();
+      if (CloudClientIp != 0) hash ^= CloudClientIp.GetHashCode();
       if (PlatformType != 0) hash ^= PlatformType.GetHashCode();
       if (IsGuest != false) hash ^= IsGuest.GetHashCode();
       if (OnlineId.Length != 0) hash ^= OnlineId.GetHashCode();
@@ -420,7 +420,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (AccountToken.Length != 0) hash ^= AccountToken.GetHashCode();
       if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
       if (Birthday.Length != 0) hash ^= Birthday.GetHashCode();
-      if (Unk3300IADFJHNFKIB != 0) hash ^= Unk3300IADFJHNFKIB.GetHashCode();
+      if (SubChannelId != 0) hash ^= SubChannelId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -463,9 +463,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(AccountType);
       }
-      if (Unk3300IADFJHNFKIB != 0) {
+      if (SubChannelId != 0) {
         output.WriteRawTag(56);
-        output.WriteUInt32(Unk3300IADFJHNFKIB);
+        output.WriteUInt32(SubChannelId);
       }
       if (ChannelId != 0) {
         output.WriteRawTag(64);
@@ -515,9 +515,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(224, 96);
         output.WriteUInt32(Lang);
       }
-      if (Unk3300DILMOPPLPEM != 0) {
+      if (CloudClientIp != 0) {
         output.WriteRawTag(184, 108);
-        output.WriteUInt32(Unk3300DILMOPPLPEM);
+        output.WriteUInt32(CloudClientIp);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -553,9 +553,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(AccountType);
       }
-      if (Unk3300IADFJHNFKIB != 0) {
+      if (SubChannelId != 0) {
         output.WriteRawTag(56);
-        output.WriteUInt32(Unk3300IADFJHNFKIB);
+        output.WriteUInt32(SubChannelId);
       }
       if (ChannelId != 0) {
         output.WriteRawTag(64);
@@ -605,9 +605,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(224, 96);
         output.WriteUInt32(Lang);
       }
-      if (Unk3300DILMOPPLPEM != 0) {
+      if (CloudClientIp != 0) {
         output.WriteRawTag(184, 108);
-        output.WriteUInt32(Unk3300DILMOPPLPEM);
+        output.WriteUInt32(CloudClientIp);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -622,8 +622,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Uid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Uid);
       }
-      if (Unk3300DILMOPPLPEM != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300DILMOPPLPEM);
+      if (CloudClientIp != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(CloudClientIp);
       }
       if (PlatformType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PlatformType);
@@ -676,8 +676,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Birthday.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Birthday);
       }
-      if (Unk3300IADFJHNFKIB != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300IADFJHNFKIB);
+      if (SubChannelId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SubChannelId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -694,8 +694,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Uid != 0) {
         Uid = other.Uid;
       }
-      if (other.Unk3300DILMOPPLPEM != 0) {
-        Unk3300DILMOPPLPEM = other.Unk3300DILMOPPLPEM;
+      if (other.CloudClientIp != 0) {
+        CloudClientIp = other.CloudClientIp;
       }
       if (other.PlatformType != 0) {
         PlatformType = other.PlatformType;
@@ -748,8 +748,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Birthday.Length != 0) {
         Birthday = other.Birthday;
       }
-      if (other.Unk3300IADFJHNFKIB != 0) {
-        Unk3300IADFJHNFKIB = other.Unk3300IADFJHNFKIB;
+      if (other.SubChannelId != 0) {
+        SubChannelId = other.SubChannelId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -791,7 +791,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk3300IADFJHNFKIB = input.ReadUInt32();
+            SubChannelId = input.ReadUInt32();
             break;
           }
           case 64: {
@@ -843,7 +843,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 13880: {
-            Unk3300DILMOPPLPEM = input.ReadUInt32();
+            CloudClientIp = input.ReadUInt32();
             break;
           }
         }
@@ -886,7 +886,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 56: {
-            Unk3300IADFJHNFKIB = input.ReadUInt32();
+            SubChannelId = input.ReadUInt32();
             break;
           }
           case 64: {
@@ -938,7 +938,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 13880: {
-            Unk3300DILMOPPLPEM = input.ReadUInt32();
+            CloudClientIp = input.ReadUInt32();
             break;
           }
         }

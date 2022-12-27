@@ -24,36 +24,29 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGPlayerFieldReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRHQ0dQbGF5ZXJGaWVsZC5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90bxoVR0NHRGljZVNpZGVUeXBlLnByb3RvGhVHQ0dQVkVJbnRl",
-            "bnRpb24ucHJvdG8aGUdDR1dhaXRpbmdDaGFyYWN0ZXIucHJvdG8aDUdDR1pv",
-            "bmUucHJvdG8i6gcKDkdDR1BsYXllckZpZWxkEhsKE1VuazMzMDBfSUtKTUdB",
-            "SENGUE0YBSABKA0SWwoPbW9kaWZ5X3pvbmVfbWFwGAcgAygLMkIuV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5HQ0dQbGF5ZXJGaWVsZC5Nb2Rp",
-            "Znlab25lTWFwRW50cnkSHAoTVW5rMzMwMF9HR0hLRkZBREVBTBjbBSABKA0S",
-            "RQoTVW5rMzMwMF9BT1BKSU9ITVBPRhgKIAEoCzIoLldlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8uR0NHWm9uZRIbChNVbmszMzAwX0ZERlBITkRP",
-            "Sk1MGAwgASgNEkUKE1VuazMzMDBfSVBMTUhLQ05ETEUYASABKAsyKC5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkdDR1pvbmUSRQoTVW5rMzMw",
-            "MF9FSUhPTURMRU5NSxgJIAEoCzIoLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uR0NHWm9uZRJKCgx3YWl0aW5nX2xpc3QYAiADKAsyNC5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkdDR1dhaXRpbmdDaGFyYWN0",
-            "ZXISGwoTVW5rMzMwMF9QQkVDSU5LS0hORBgPIAEoDRIVCg1jb250cm9sbGVy",
-            "X2lkGAYgASgNEkUKE1VuazMzMDBfSU5ESk5KSkpOS0wYCyABKAsyKC5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkdDR1pvbmUSRQoTVW5rMzMw",
-            "MF9FRk5BRUZCRUNIRBgEIAEoCzIoLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uR0NHWm9uZRIRCglpc19wYXNzZWQYCCABKAgSSQoOaW50ZW50",
-            "aW9uX2xpc3QYsAIgAygLMjAuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90by5HQ0dQVkVJbnRlbnRpb24SSAoOZGljZV9zaWRlX2xpc3QYDSADKA4y",
-            "MC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkdDR0RpY2VTaWRl",
-            "VHlwZRIbChNVbmszMzAwX0ZKTlBGQklIRkdEGAMgASgNEhsKE1VuazMzMDBf",
-            "R0xOSUZMT0tCUE0YDiABKA0aXgoSTW9kaWZ5Wm9uZU1hcEVudHJ5EgsKA2tl",
-            "eRgBIAEoDRI3CgV2YWx1ZRgCIAEoCzIoLldlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8uR0NHWm9uZToCOAFiBnByb3RvMw=="));
+            "ChRHQ0dQbGF5ZXJGaWVsZC5wcm90bxoVR0NHRGljZVNpZGVUeXBlLnByb3Rv",
+            "GhVHQ0dQVkVJbnRlbnRpb24ucHJvdG8aGUdDR1dhaXRpbmdDaGFyYWN0ZXIu",
+            "cHJvdG8aDUdDR1pvbmUucHJvdG8ipAUKDkdDR1BsYXllckZpZWxkEhsKE1Vu",
+            "azMzMDBfSUtKTUdBSENGUE0YBSABKA0SOwoPbW9kaWZ5X3pvbmVfbWFwGAcg",
+            "AygLMiIuR0NHUGxheWVyRmllbGQuTW9kaWZ5Wm9uZU1hcEVudHJ5EhwKE1Vu",
+            "azMzMDBfR0dIS0ZGQURFQUwY2wUgASgNEiUKE1VuazMzMDBfQU9QSklPSE1Q",
+            "T0YYCiABKAsyCC5HQ0dab25lEhsKE1VuazMzMDBfRkRGUEhORE9KTUwYDCAB",
+            "KA0SJQoTVW5rMzMwMF9JUExNSEtDTkRMRRgBIAEoCzIILkdDR1pvbmUSJQoT",
+            "VW5rMzMwMF9FSUhPTURMRU5NSxgJIAEoCzIILkdDR1pvbmUSKgoMd2FpdGlu",
+            "Z19saXN0GAIgAygLMhQuR0NHV2FpdGluZ0NoYXJhY3RlchIbChNVbmszMzAw",
+            "X1BCRUNJTktLSE5EGA8gASgNEhUKDWNvbnRyb2xsZXJfaWQYBiABKA0SJQoT",
+            "VW5rMzMwMF9JTkRKTkpKSk5LTBgLIAEoCzIILkdDR1pvbmUSJQoTVW5rMzMw",
+            "MF9FRk5BRUZCRUNIRBgEIAEoCzIILkdDR1pvbmUSEQoJaXNfcGFzc2VkGAgg",
+            "ASgIEikKDmludGVudGlvbl9saXN0GLACIAMoCzIQLkdDR1BWRUludGVudGlv",
+            "bhIoCg5kaWNlX3NpZGVfbGlzdBgNIAMoDjIQLkdDR0RpY2VTaWRlVHlwZRIV",
+            "Cg1kZWNrX2NhcmRfbnVtGAMgASgNEhsKE1VuazMzMDBfR0xOSUZMT0tCUE0Y",
+            "DiABKA0aPgoSTW9kaWZ5Wm9uZU1hcEVudHJ5EgsKA2tleRgBIAEoDRIXCgV2",
+            "YWx1ZRgCIAEoCzIILkdDR1pvbmU6AjgBQiKqAh9XZWVkd2Fja2VyLlNoYXJl",
+            "ZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GCGDiceSideTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GCGPVEIntentionReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GCGWaitingCharacterReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GCGZoneReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GCGPlayerField), global::Weedwacker.Shared.Network.Proto.GCGPlayerField.Parser, new[]{ "Unk3300IKJMGAHCFPM", "ModifyZoneMap", "Unk3300GGHKFFADEAL", "Unk3300AOPJIOHMPOF", "Unk3300FDFPHNDOJML", "Unk3300IPLMHKCNDLE", "Unk3300EIHOMDLENMK", "WaitingList", "Unk3300PBECINKKHND", "ControllerId", "Unk3300INDJNJJJNKL", "Unk3300EFNAEFBECHD", "IsPassed", "IntentionList", "DiceSideList", "Unk3300FJNPFBIHFGD", "Unk3300GLNIFLOKBPM" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GCGPlayerField), global::Weedwacker.Shared.Network.Proto.GCGPlayerField.Parser, new[]{ "Unk3300IKJMGAHCFPM", "ModifyZoneMap", "Unk3300GGHKFFADEAL", "Unk3300AOPJIOHMPOF", "Unk3300FDFPHNDOJML", "Unk3300IPLMHKCNDLE", "Unk3300EIHOMDLENMK", "WaitingList", "Unk3300PBECINKKHND", "ControllerId", "Unk3300INDJNJJJNKL", "Unk3300EFNAEFBECHD", "IsPassed", "IntentionList", "DiceSideList", "DeckCardNum", "Unk3300GLNIFLOKBPM" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -109,7 +102,7 @@ namespace Weedwacker.Shared.Network.Proto {
       isPassed_ = other.isPassed_;
       intentionList_ = other.intentionList_.Clone();
       diceSideList_ = other.diceSideList_.Clone();
-      unk3300FJNPFBIHFGD_ = other.unk3300FJNPFBIHFGD_;
+      deckCardNum_ = other.deckCardNum_;
       unk3300GLNIFLOKBPM_ = other.unk3300GLNIFLOKBPM_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -296,15 +289,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return diceSideList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_FJNPFBIHFGD" field.</summary>
-    public const int Unk3300FJNPFBIHFGDFieldNumber = 3;
-    private uint unk3300FJNPFBIHFGD_;
+    /// <summary>Field number for the "deck_card_num" field.</summary>
+    public const int DeckCardNumFieldNumber = 3;
+    private uint deckCardNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300FJNPFBIHFGD {
-      get { return unk3300FJNPFBIHFGD_; }
+    public uint DeckCardNum {
+      get { return deckCardNum_; }
       set {
-        unk3300FJNPFBIHFGD_ = value;
+        deckCardNum_ = value;
       }
     }
 
@@ -350,7 +343,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsPassed != other.IsPassed) return false;
       if(!intentionList_.Equals(other.intentionList_)) return false;
       if(!diceSideList_.Equals(other.diceSideList_)) return false;
-      if (Unk3300FJNPFBIHFGD != other.Unk3300FJNPFBIHFGD) return false;
+      if (DeckCardNum != other.DeckCardNum) return false;
       if (Unk3300GLNIFLOKBPM != other.Unk3300GLNIFLOKBPM) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -374,7 +367,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsPassed != false) hash ^= IsPassed.GetHashCode();
       hash ^= intentionList_.GetHashCode();
       hash ^= diceSideList_.GetHashCode();
-      if (Unk3300FJNPFBIHFGD != 0) hash ^= Unk3300FJNPFBIHFGD.GetHashCode();
+      if (DeckCardNum != 0) hash ^= DeckCardNum.GetHashCode();
       if (Unk3300GLNIFLOKBPM != 0) hash ^= Unk3300GLNIFLOKBPM.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -399,9 +392,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteMessage(Unk3300IPLMHKCNDLE);
       }
       waitingList_.WriteTo(output, _repeated_waitingList_codec);
-      if (Unk3300FJNPFBIHFGD != 0) {
+      if (DeckCardNum != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300FJNPFBIHFGD);
+        output.WriteUInt32(DeckCardNum);
       }
       if (unk3300EFNAEFBECHD_ != null) {
         output.WriteRawTag(34);
@@ -465,9 +458,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteMessage(Unk3300IPLMHKCNDLE);
       }
       waitingList_.WriteTo(ref output, _repeated_waitingList_codec);
-      if (Unk3300FJNPFBIHFGD != 0) {
+      if (DeckCardNum != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300FJNPFBIHFGD);
+        output.WriteUInt32(DeckCardNum);
       }
       if (unk3300EFNAEFBECHD_ != null) {
         output.WriteRawTag(34);
@@ -563,8 +556,8 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       size += intentionList_.CalculateSize(_repeated_intentionList_codec);
       size += diceSideList_.CalculateSize(_repeated_diceSideList_codec);
-      if (Unk3300FJNPFBIHFGD != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300FJNPFBIHFGD);
+      if (DeckCardNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DeckCardNum);
       }
       if (Unk3300GLNIFLOKBPM != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300GLNIFLOKBPM);
@@ -633,8 +626,8 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       intentionList_.Add(other.intentionList_);
       diceSideList_.Add(other.diceSideList_);
-      if (other.Unk3300FJNPFBIHFGD != 0) {
-        Unk3300FJNPFBIHFGD = other.Unk3300FJNPFBIHFGD;
+      if (other.DeckCardNum != 0) {
+        DeckCardNum = other.DeckCardNum;
       }
       if (other.Unk3300GLNIFLOKBPM != 0) {
         Unk3300GLNIFLOKBPM = other.Unk3300GLNIFLOKBPM;
@@ -666,7 +659,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300FJNPFBIHFGD = input.ReadUInt32();
+            DeckCardNum = input.ReadUInt32();
             break;
           }
           case 34: {
@@ -765,7 +758,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300FJNPFBIHFGD = input.ReadUInt32();
+            DeckCardNum = input.ReadUInt32();
             break;
           }
           case 34: {

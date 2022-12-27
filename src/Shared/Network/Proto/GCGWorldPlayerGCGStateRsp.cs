@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGWorldPlayerGCGStateRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9HQ0dXb3JsZFBsYXllckdDR1N0YXRlUnNwLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvGhdHQ0dQbGF5ZXJHQ0dTdGF0ZS5wcm90",
-            "byJ2ChlHQ0dXb3JsZFBsYXllckdDR1N0YXRlUnNwEg8KB3JldGNvZGUYDyAB",
-            "KAUSSAoMcGxheWVyX3N0YXRlGAIgAygLMjIuV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90by5HQ0dQbGF5ZXJHQ0dTdGF0ZWIGcHJvdG8z"));
+            "Ch9HQ0dXb3JsZFBsYXllckdDR1N0YXRlUnNwLnByb3RvGhdHQ0dQbGF5ZXJH",
+            "Q0dTdGF0ZS5wcm90byJWChlHQ0dXb3JsZFBsYXllckdDR1N0YXRlUnNwEg8K",
+            "B3JldGNvZGUYDyABKAUSKAoMcGxheWVyX3N0YXRlGAIgAygLMhIuR0NHUGxh",
+            "eWVyR0NHU3RhdGVCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GCGPlayerGCGStateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static MuqadasPotionRestartDungeonReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiRNdXFhZGFzUG90aW9uUmVzdGFydER1bmdlb25SZXEucHJvdG8SH1dlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iIAoeTXVxYWRhc1BvdGlvblJl",
-            "c3RhcnREdW5nZW9uUmVxYgZwcm90bzM="));
+            "CiRNdXFhZGFzUG90aW9uUmVzdGFydER1bmdlb25SZXEucHJvdG8iIAoeTXVx",
+            "YWRhc1BvdGlvblJlc3RhcnREdW5nZW9uUmVxQiKqAh9XZWVkd2Fja2VyLlNo",
+            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

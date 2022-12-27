@@ -24,13 +24,12 @@ namespace Weedwacker.Shared.Network.Proto {
     static VintageMarketStoreChooseStrategyReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CilWaW50YWdlTWFya2V0U3RvcmVDaG9vc2VTdHJhdGVneVJlcS5wcm90bxIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90bxoeVmludGFnZU1hcmtl",
-            "dFN0b3JlT3BJbmZvLnByb3RvIqABCiNWaW50YWdlTWFya2V0U3RvcmVDaG9v",
-            "c2VTdHJhdGVneVJlcRJQCg1zdG9yZV9vcF9saXN0GAUgAygLMjkuV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5WaW50YWdlTWFya2V0U3RvcmVP",
-            "cEluZm8SFQoNc3RyYXRlZ3lfbGlzdBgPIAMoDRIQCghzdG9yZV9pZBgOIAEo",
-            "DWIGcHJvdG8z"));
+            "CilWaW50YWdlTWFya2V0U3RvcmVDaG9vc2VTdHJhdGVneVJlcS5wcm90bxoe",
+            "VmludGFnZU1hcmtldFN0b3JlT3BJbmZvLnByb3RvIoABCiNWaW50YWdlTWFy",
+            "a2V0U3RvcmVDaG9vc2VTdHJhdGVneVJlcRIwCg1zdG9yZV9vcF9saXN0GAUg",
+            "AygLMhkuVmludGFnZU1hcmtldFN0b3JlT3BJbmZvEhUKDXN0cmF0ZWd5X2xp",
+            "c3QYDyADKA0SEAoIc3RvcmVfaWQYDiABKA1CIqoCH1dlZWR3YWNrZXIuU2hh",
+            "cmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VintageMarketStoreOpInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

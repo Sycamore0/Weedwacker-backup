@@ -24,18 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetQuestLackingResourceRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBHZXRRdWVzdExhY2tpbmdSZXNvdXJjZVJzcC5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byKxAwoaR2V0UXVlc3RMYWNraW5nUmVz",
-            "b3VyY2VSc3ASaQoQbGFja2VkX3BsYWNlX21hcBgCIAMoCzJPLldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uR2V0UXVlc3RMYWNraW5nUmVzb3Vy",
-            "Y2VSc3AuTGFja2VkUGxhY2VNYXBFbnRyeRJlCg5sYWNrZWRfbnBjX21hcBgH",
-            "IAMoCzJNLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uR2V0UXVl",
-            "c3RMYWNraW5nUmVzb3VyY2VSc3AuTGFja2VkTnBjTWFwRW50cnkSGQoRbGFj",
-            "a2VkX3BsYWNlX2xpc3QYCyADKA0SEAoIcXVlc3RfaWQYAyABKA0SDwoHcmV0",
-            "Y29kZRgGIAEoBRIXCg9sYWNrZWRfbnBjX2xpc3QYDiADKA0aNQoTTGFja2Vk",
-            "UGxhY2VNYXBFbnRyeRILCgNrZXkYASABKA0SDQoFdmFsdWUYAiABKA06AjgB",
-            "GjMKEUxhY2tlZE5wY01hcEVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1ZRgC",
-            "IAEoDToCOAFiBnByb3RvMw=="));
+            "CiBHZXRRdWVzdExhY2tpbmdSZXNvdXJjZVJzcC5wcm90byLxAgoaR2V0UXVl",
+            "c3RMYWNraW5nUmVzb3VyY2VSc3ASSQoQbGFja2VkX3BsYWNlX21hcBgCIAMo",
+            "CzIvLkdldFF1ZXN0TGFja2luZ1Jlc291cmNlUnNwLkxhY2tlZFBsYWNlTWFw",
+            "RW50cnkSRQoObGFja2VkX25wY19tYXAYByADKAsyLS5HZXRRdWVzdExhY2tp",
+            "bmdSZXNvdXJjZVJzcC5MYWNrZWROcGNNYXBFbnRyeRIZChFsYWNrZWRfcGxh",
+            "Y2VfbGlzdBgLIAMoDRIQCghxdWVzdF9pZBgDIAEoDRIPCgdyZXRjb2RlGAYg",
+            "ASgFEhcKD2xhY2tlZF9ucGNfbGlzdBgOIAMoDRo1ChNMYWNrZWRQbGFjZU1h",
+            "cEVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1ZRgCIAEoDToCOAEaMwoRTGFj",
+            "a2VkTnBjTWFwRW50cnkSCwoDa2V5GAEgASgNEg0KBXZhbHVlGAIgASgNOgI4",
+            "AUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static TreasureSeelieCollectOrbsNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiVUcmVhc3VyZVNlZWxpZUNvbGxlY3RPcmJzTm90aWZ5LnByb3RvEh9XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIkkKH1RyZWFzdXJlU2VlbGll",
-            "Q29sbGVjdE9yYnNOb3RpZnkSEwoLY3VycmVudF9udW0YDCABKA0SEQoJdG90",
-            "YWxfbnVtGAIgASgNYgZwcm90bzM="));
+            "CiVUcmVhc3VyZVNlZWxpZUNvbGxlY3RPcmJzTm90aWZ5LnByb3RvIkkKH1Ry",
+            "ZWFzdXJlU2VlbGllQ29sbGVjdE9yYnNOb3RpZnkSEwoLY3VycmVudF9udW0Y",
+            "DCABKA0SEQoJdG90YWxfbnVtGAIgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJl",
+            "ZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static TreasureMapGuideTaskDoneNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiRUcmVhc3VyZU1hcEd1aWRlVGFza0RvbmVOb3RpZnkucHJvdG8SH1dlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iIAoeVHJlYXN1cmVNYXBHdWlk",
-            "ZVRhc2tEb25lTm90aWZ5YgZwcm90bzM="));
+            "CiRUcmVhc3VyZU1hcEd1aWRlVGFza0RvbmVOb3RpZnkucHJvdG8iIAoeVHJl",
+            "YXN1cmVNYXBHdWlkZVRhc2tEb25lTm90aWZ5QiKqAh9XZWVkd2Fja2VyLlNo",
+            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

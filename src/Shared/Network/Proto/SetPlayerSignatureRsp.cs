@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static SetPlayerSignatureRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtTZXRQbGF5ZXJTaWduYXR1cmVSc3AucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8iOwoVU2V0UGxheWVyU2lnbmF0dXJlUnNwEg8K",
-            "B3JldGNvZGUYBiABKAUSEQoJc2lnbmF0dXJlGAwgASgJYgZwcm90bzM="));
+            "ChtTZXRQbGF5ZXJTaWduYXR1cmVSc3AucHJvdG8iOwoVU2V0UGxheWVyU2ln",
+            "bmF0dXJlUnNwEg8KB3JldGNvZGUYBiABKAUSEQoJc2lnbmF0dXJlGAwgASgJ",
+            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

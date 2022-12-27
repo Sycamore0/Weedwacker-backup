@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static MuqadasPotionLevelDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxNdXFhZGFzUG90aW9uTGV2ZWxEYXRhLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvIk4KFk11cWFkYXNQb3Rpb25MZXZlbERhdGES",
-            "DwoHaXNfb3BlbhgBIAEoCBIQCghsZXZlbF9pZBgCIAEoDRIRCgltYXhfc2Nv",
-            "cmUYCSABKA1iBnByb3RvMw=="));
+            "ChxNdXFhZGFzUG90aW9uTGV2ZWxEYXRhLnByb3RvIk4KFk11cWFkYXNQb3Rp",
+            "b25MZXZlbERhdGESDwoHaXNfb3BlbhgBIAEoCBIQCghsZXZlbF9pZBgCIAEo",
+            "DRIRCgltYXhfc2NvcmUYCSABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
+            "dHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static UpdatePS4BlockListReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtVcGRhdGVQUzRCbG9ja0xpc3RSZXEucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8iLAoVVXBkYXRlUFM0QmxvY2tMaXN0UmVxEhMK",
-            "C3Bzbl9pZF9saXN0GAogAygJYgZwcm90bzM="));
+            "ChtVcGRhdGVQUzRCbG9ja0xpc3RSZXEucHJvdG8iLAoVVXBkYXRlUFM0Qmxv",
+            "Y2tMaXN0UmVxEhMKC3Bzbl9pZF9saXN0GAogAygJQiKqAh9XZWVkd2Fja2Vy",
+            "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

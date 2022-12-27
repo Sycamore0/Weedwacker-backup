@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static AddNoGachaAvatarCardTransferItemReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiZBZGROb0dhY2hhQXZhdGFyQ2FyZFRyYW5zZmVySXRlbS5wcm90bxIfV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90byJSCiBBZGROb0dhY2hhQXZh",
-            "dGFyQ2FyZFRyYW5zZmVySXRlbRINCgVjb3VudBgFIAEoDRIOCgZpc19uZXcY",
-            "CCABKAgSDwoHaXRlbV9pZBgLIAEoDWIGcHJvdG8z"));
+            "CiZBZGROb0dhY2hhQXZhdGFyQ2FyZFRyYW5zZmVySXRlbS5wcm90byJSCiBB",
+            "ZGROb0dhY2hhQXZhdGFyQ2FyZFRyYW5zZmVySXRlbRINCgVjb3VudBgFIAEo",
+            "DRIOCgZpc19uZXcYCCABKAgSDwoHaXRlbV9pZBgLIAEoDUIiqgIfV2VlZHdh",
+            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

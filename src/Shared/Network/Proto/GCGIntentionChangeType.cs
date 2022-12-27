@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGIntentionChangeTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxHQ0dJbnRlbnRpb25DaGFuZ2VUeXBlLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvKl4KFkdDR0ludGVudGlvbkNoYW5nZVR5cGUS",
-            "IgoeR0NHX0lOVEVOVElPTl9DSEFOR0VfVFlQRV9OT05FEAASIAocR0NHX0lO",
-            "VEVOVElPTl9DSEFOR0VfVFlQRV9STRABYgZwcm90bzM="));
+            "ChxHQ0dJbnRlbnRpb25DaGFuZ2VUeXBlLnByb3RvKl4KFkdDR0ludGVudGlv",
+            "bkNoYW5nZVR5cGUSIgoeR0NHX0lOVEVOVElPTl9DSEFOR0VfVFlQRV9OT05F",
+            "EAASIAocR0NHX0lOVEVOVElPTl9DSEFOR0VfVFlQRV9STRABQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.GCGIntentionChangeType), }, null, null));

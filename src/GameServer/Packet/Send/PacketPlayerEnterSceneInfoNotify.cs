@@ -32,7 +32,7 @@ namespace Weedwacker.GameServer.Packet.Send
 
             foreach (AvatarEntity avatar in player.TeamManager.ActiveTeam.Values)
             {
-                WeaponItem weapon = avatar.Avatar.GetWeapon();
+                WeaponItem weapon = avatar.Avatar.Weapon;
 
                 AvatarEnterSceneInfo avatarInfo = new AvatarEnterSceneInfo()
                 {

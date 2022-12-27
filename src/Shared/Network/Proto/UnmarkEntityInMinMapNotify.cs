@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static UnmarkEntityInMinMapNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBVbm1hcmtFbnRpdHlJbk1pbk1hcE5vdGlmeS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byIvChpVbm1hcmtFbnRpdHlJbk1pbk1h",
-            "cE5vdGlmeRIRCgllbnRpdHlfaWQYAyABKA1iBnByb3RvMw=="));
+            "CiBVbm1hcmtFbnRpdHlJbk1pbk1hcE5vdGlmeS5wcm90byIvChpVbm1hcmtF",
+            "bnRpdHlJbk1pbk1hcE5vdGlmeRIRCgllbnRpdHlfaWQYAyABKA1CIqoCH1dl",
+            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

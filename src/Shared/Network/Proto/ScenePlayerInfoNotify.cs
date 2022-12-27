@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static ScenePlayerInfoNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtTY2VuZVBsYXllckluZm9Ob3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8aFVNjZW5lUGxheWVySW5mby5wcm90byJjChVT",
-            "Y2VuZVBsYXllckluZm9Ob3RpZnkSSgoQcGxheWVyX2luZm9fbGlzdBgLIAMo",
-            "CzIwLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU2NlbmVQbGF5",
-            "ZXJJbmZvYgZwcm90bzM="));
+            "ChtTY2VuZVBsYXllckluZm9Ob3RpZnkucHJvdG8aFVNjZW5lUGxheWVySW5m",
+            "by5wcm90byJDChVTY2VuZVBsYXllckluZm9Ob3RpZnkSKgoQcGxheWVyX2lu",
+            "Zm9fbGlzdBgLIAMoCzIQLlNjZW5lUGxheWVySW5mb0IiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ScenePlayerInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,17 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static VintageCampChallengeStageDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNWaW50YWdlQ2FtcENoYWxsZW5nZVN0YWdlRGF0YS5wcm90bxIfV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90bxojVmludGFnZUNhbXBDaGFsbGVu",
-            "Z2VMZXZlbERhdGEucHJvdG8i4wIKHVZpbnRhZ2VDYW1wQ2hhbGxlbmdlU3Rh",
-            "Z2VEYXRhEhoKEm1heF9maW5pc2hlZF9sZXZlbBgEIAEoDRIRCglpc19maW5p",
-            "c2gYDiABKAgSaAoOY2FtcF9sZXZlbF9tYXAYBiADKAsyUC5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLlZpbnRhZ2VDYW1wQ2hhbGxlbmdlU3Rh",
-            "Z2VEYXRhLkNhbXBMZXZlbE1hcEVudHJ5Eg8KB2lzX29wZW4YAiABKAgSEAoI",
-            "c3RhZ2VfaWQYDSABKA0SEQoJb3Blbl90aW1lGAcgASgNGnMKEUNhbXBMZXZl",
-            "bE1hcEVudHJ5EgsKA2tleRgBIAEoDRJNCgV2YWx1ZRgCIAEoCzI+LldlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uVmludGFnZUNhbXBDaGFsbGVu",
-            "Z2VMZXZlbERhdGE6AjgBYgZwcm90bzM="));
+            "CiNWaW50YWdlQ2FtcENoYWxsZW5nZVN0YWdlRGF0YS5wcm90bxojVmludGFn",
+            "ZUNhbXBDaGFsbGVuZ2VMZXZlbERhdGEucHJvdG8iowIKHVZpbnRhZ2VDYW1w",
+            "Q2hhbGxlbmdlU3RhZ2VEYXRhEhoKEm1heF9maW5pc2hlZF9sZXZlbBgEIAEo",
+            "DRIRCglpc19maW5pc2gYDiABKAgSSAoOY2FtcF9sZXZlbF9tYXAYBiADKAsy",
+            "MC5WaW50YWdlQ2FtcENoYWxsZW5nZVN0YWdlRGF0YS5DYW1wTGV2ZWxNYXBF",
+            "bnRyeRIPCgdpc19vcGVuGAIgASgIEhAKCHN0YWdlX2lkGA0gASgNEhEKCW9w",
+            "ZW5fdGltZRgHIAEoDRpTChFDYW1wTGV2ZWxNYXBFbnRyeRILCgNrZXkYASAB",
+            "KA0SLQoFdmFsdWUYAiABKAsyHi5WaW50YWdlQ2FtcENoYWxsZW5nZUxldmVs",
+            "RGF0YToCOAFCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VintageCampChallengeLevelDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

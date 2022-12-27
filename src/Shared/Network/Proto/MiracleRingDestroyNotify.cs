@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static MiracleRingDestroyNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5NaXJhY2xlUmluZ0Rlc3Ryb3lOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8iLQoYTWlyYWNsZVJpbmdEZXN0cm95Tm90",
-            "aWZ5EhEKCWVudGl0eV9pZBgIIAEoDWIGcHJvdG8z"));
+            "Ch5NaXJhY2xlUmluZ0Rlc3Ryb3lOb3RpZnkucHJvdG8iLQoYTWlyYWNsZVJp",
+            "bmdEZXN0cm95Tm90aWZ5EhEKCWVudGl0eV9pZBgIIAEoDUIiqgIfV2VlZHdh",
+            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

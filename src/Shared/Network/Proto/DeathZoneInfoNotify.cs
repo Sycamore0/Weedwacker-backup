@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static DeathZoneInfoNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlEZWF0aFpvbmVJbmZvTm90aWZ5LnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvGhNEZWF0aFpvbmVJbmZvLnByb3RvImMKE0RlYXRo",
-            "Wm9uZUluZm9Ob3RpZnkSTAoUZGVhdGhfem9uZV9pbmZvX2xpc3QYDyADKAsy",
-            "Li5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkRlYXRoWm9uZUlu",
-            "Zm9iBnByb3RvMw=="));
+            "ChlEZWF0aFpvbmVJbmZvTm90aWZ5LnByb3RvGhNEZWF0aFpvbmVJbmZvLnBy",
+            "b3RvIkMKE0RlYXRoWm9uZUluZm9Ob3RpZnkSLAoUZGVhdGhfem9uZV9pbmZv",
+            "X2xpc3QYDyADKAsyDi5EZWF0aFpvbmVJbmZvQiKqAh9XZWVkd2Fja2VyLlNo",
+            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.DeathZoneInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

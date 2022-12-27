@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static SecurityCheckTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdTZWN1cml0eUNoZWNrVHlwZS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90bypQChFTZWN1cml0eUNoZWNrVHlwZRIcChhTRUNVUklU",
-            "WV9DSEVDS19UWVBFX05PTkUQABIdChlTRUNVUklUWV9DSEVDS19UWVBFX0xP",
-            "R0lOEAFiBnByb3RvMw=="));
+            "ChdTZWN1cml0eUNoZWNrVHlwZS5wcm90bypQChFTZWN1cml0eUNoZWNrVHlw",
+            "ZRIcChhTRUNVUklUWV9DSEVDS19UWVBFX05PTkUQABIdChlTRUNVUklUWV9D",
+            "SEVDS19UWVBFX0xPR0lOEAFCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
+            "cmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.SecurityCheckType), }, null, null));

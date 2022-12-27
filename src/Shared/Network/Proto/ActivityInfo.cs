@@ -24,209 +24,161 @@ namespace Weedwacker.Shared.Network.Proto {
     static ActivityInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJBY3Rpdml0eUluZm8ucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8aGkFjdGl2aXR5UHVzaFRpcHNEYXRhLnByb3RvGhlBY3Rpdml0",
-            "eVdhdGNoZXJJbmZvLnByb3RvGiZBcmVuYUNoYWxsZW5nZUFjdGl2aXR5RGV0",
-            "YWlsSW5mby5wcm90bxodQXN0ZXJBY3Rpdml0eURldGFpbEluZm8ucHJvdG8a",
-            "IUJhcnRlbmRlckFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxogQmxlc3NpbmdB",
-            "Y3Rpdml0eURldGFpbEluZm8ucHJvdG8aIUJsaXR6UnVzaEFjdGl2aXR5RGV0",
-            "YWlsSW5mby5wcm90bxonQm91bmNlQ29uanVyaW5nQWN0aXZpdHlEZXRhaWxJ",
-            "bmZvLnByb3RvGhxCcmlja0JyZWFrZXJEZXRhaWxJbmZvLnByb3RvGh1CdW95",
-            "YW50Q29tYmF0RGV0YWlsSW5mby5wcm90bxolQ2hhbm5lbGVyU2xhYkFjdGl2",
-            "aXR5RGV0YWlsSW5mby5wcm90bxodQ2hhckFtdXNlbWVudERldGFpbEluZm8u",
-            "cHJvdG8aHUNoZXNzQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhtDb2luQ29s",
-            "bGVjdERldGFpbEluZm8ucHJvdG8aIENydWNpYmxlQWN0aXZpdHlEZXRhaWxJ",
-            "bmZvLnByb3RvGiNDcnlzdGFsTGlua0FjdGl2aXR5RGV0YWlsSW5mby5wcm90",
-            "bxogRGVsaXZlcnlBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aG0RpZ0FjdGl2",
-            "aXR5RGV0YWlsSW5mby5wcm90bxojRHJhZ29uU3BpbmVBY3Rpdml0eURldGFp",
-            "bEluZm8ucHJvdG8aGUVjaG9TaGVsbERldGFpbEluZm8ucHJvdG8aHkVmZmln",
-            "eUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxohRWZmaWd5Q2hhbGxlbmdlVjJE",
-            "ZXRhaWxJbmZvLnByb3RvGiJFeHBlZGl0aW9uQWN0aXZpdHlEZXRhaWxJbmZv",
-            "LnByb3RvGh1GaW5kSGlsaWNodXJsRGV0YWlsSW5mby5wcm90bxohRmxldXJG",
-            "YWlyQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGh5GbGlnaHRBY3Rpdml0eURl",
-            "dGFpbEluZm8ucHJvdG8aHUZ1bmd1c0ZpZ2h0ZXJEZXRhaWxJbmZvLnByb3Rv",
-            "Gh1HYWNoYUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxocR2VhckFjdGl2aXR5",
-            "RGV0YWlsSW5mby5wcm90bxofR3JhdmVuSW5ub2NlbmNlRGV0YWlsSW5mby5w",
-            "cm90bxodSGFjaGlBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aI0hpZGVBbmRT",
-            "ZWVrQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGh1JbnN0YWJsZVNwcmF5RGV0",
-            "YWlsSW5mby5wcm90bxofSXJvZG9yaUFjdGl2aXR5RGV0YWlsSW5mby5wcm90",
-            "bxobSXNsYW5kUGFydHlEZXRhaWxJbmZvLnByb3RvGiNMYW50ZXJuUml0ZUFj",
-            "dGl2aXR5RGV0YWlsSW5mby5wcm90bxovTHVtaW5hbmNlU3RvbmVDaGFsbGVu",
-            "Z2VBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aGEx1bmFSaXRlRGV0YWlsSW5m",
-            "by5wcm90bxomTWljaGlhZU1hdHN1cmlBY3Rpdml0eURldGFpbEluZm8ucHJv",
-            "dG8aIU1pc3RUcmlhbEFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxokTW9vbmZp",
-            "blRyaWFsQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGiVNdXFhZGFzUG90aW9u",
-            "QWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGiFNdXNpY0dhbWVBY3Rpdml0eURl",
-            "dGFpbEluZm8ucHJvdG8aHVBob3RvQWN0aXZpdHlEZXRhaWxJbmZvLnByb3Rv",
-            "GiNQbGFudEZsb3dlckFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoeUG90aW9u",
-            "QWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGiBSb2NrQm9hcmRFeHBsb3JlRGV0",
-            "YWlsSW5mby5wcm90bxoiUm9ndWVEaWFyeUFjdGl2aXR5RGV0YWlsSW5mby5w",
-            "cm90bxooUm9ndWVsaWtlRHVuZ2VvbkFjdGl2aXR5RGV0YWlsSW5mby5wcm90",
-            "bxogU2FsZXNtYW5BY3Rpdml0eURldGFpbEluZm8ucHJvdG8aH1NlYUxhbXBB",
-            "Y3Rpdml0eURldGFpbEluZm8ucHJvdG8aGVNlYUxhbXBBY3Rpdml0eUluZm8u",
-            "cHJvdG8aHVNwaWNlQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhpTdW1tZXJU",
-            "aW1lRGV0YWlsSW5mby5wcm90bxocU3VtbWVyVGltZVYyRGV0YWlsSW5mby5w",
-            "cm90bxocU3Vtb0FjdGl2aXR5RGV0YWlsSW5mby5wcm90bxokVGFudWtpVHJh",
-            "dmVsQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGiNUcmVhc3VyZU1hcEFjdGl2",
-            "aXR5RGV0YWlsSW5mby5wcm90bxomVHJlYXN1cmVTZWVsaWVBY3Rpdml0eURl",
-            "dGFpbEluZm8ucHJvdG8aI1RyaWFsQXZhdGFyQWN0aXZpdHlEZXRhaWxJbmZv",
-            "LnByb3RvGhtVZ2NBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aH1ZpbnRhZ2VB",
-            "Y3Rpdml0eURldGFpbEluZm8ucHJvdG8aI1dhdGVyU3Bpcml0QWN0aXZpdHlE",
-            "ZXRhaWxJbmZvLnByb3RvGhlXaW5kRmllbGREZXRhaWxJbmZvLnByb3RvGiJX",
-            "aW50ZXJDYW1wQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvIoY0CgxBY3Rpdml0",
-            "eUluZm8SHAoTVW5rMzMwMF9NSk5QR0VLTE9DRxjoAiABKAgSEwoLaXNfZmlu",
-            "aXNoZWQYCCABKAgSEgoJY3VyX3Njb3JlGPQJIAEoDRITCgtzY2hlZHVsZV9p",
-            "ZBgHIAEoDRIcChNVbmszMzAwX0pBRUFMQUlPT0lEGM4OIAEoDRIbChNVbmsz",
-            "MzAwX0lDTkpKS0RIUENIGA4gASgIEhsKE1VuazMzMDBfQkdOSUJMS0NQQ0EY",
-            "CyADKA0SHAoTVW5rMzMwMF9ORVBLTExCSkZLSxjtDCABKAgSTwoRd2F0Y2hl",
-            "cl9pbmZvX2xpc3QYBiADKAsyNC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvLkFjdGl2aXR5V2F0Y2hlckluZm8SXAocYWN0aXZpdHlfcHVzaF90",
-            "aXBzX2RhdGFfbGlzdBjLDiADKAsyNS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvLkFjdGl2aXR5UHVzaFRpcHNEYXRhEhMKC2FjdGl2aXR5X2lk",
-            "GA0gASgNEhoKEXRha2VuX3Jld2FyZF9saXN0GOEOIAMoDRIcChNVbmszMzAw",
-            "X0dDRUFLRU1NSkVBGLkFIAEoDRJdChFhY3Rpdml0eV9jb2luX21hcBgkIAMo",
-            "CzJCLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQWN0aXZpdHlJ",
-            "bmZvLkFjdGl2aXR5Q29pbk1hcEVudHJ5Eh0KFGZpcnN0X2RheV9zdGFydF90",
-            "aW1lGJIGIAEoDRIcChNVbmszMzAwX0FCSktMQUxLTERHGM4LIAEoCBIbChNV",
-            "bmszMzAwX0RNSUxPT05CRUxIGAMgASgNEhwKE1VuazMzMDBfQ0JDRUhMSkpP",
-            "R0kY3wogASgIEhIKCmJlZ2luX3RpbWUYASABKA0SGwoTVW5rMzMwMF9NREJE",
-            "UElCRUdHSBgMIAEoCBJdChF3aXNoX2dpZnRfbnVtX21hcBirByADKAsyQS5X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkFjdGl2aXR5SW5mby5X",
-            "aXNoR2lmdE51bU1hcEVudHJ5EhAKCGVuZF90aW1lGAogASgNEhsKE1VuazMz",
-            "MDBfSEtLTklITkJIQUUYBSADKA0SUwoNc2FtX2xhbXBfaW5mbxgCIAEoCzI6",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU2VhTGFtcEFjdGl2",
-            "aXR5RGV0YWlsSW5mb0gAElQKDWNydWNpYmxlX2luZm8YDyABKAsyOy5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkNydWNpYmxlQWN0aXZpdHlE",
-            "ZXRhaWxJbmZvSAASVAoNc2FsZXNtYW5faW5mbxgJIAEoCzI7LldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU2FsZXNtYW5BY3Rpdml0eURldGFp",
-            "bEluZm9IABJbChF0cmlhbF9hdmF0YXJfaW5mbxgEIAEoCzI+LldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uVHJpYWxBdmF0YXJBY3Rpdml0eURl",
-            "dGFpbEluZm9IABJVCg1kZWxpdmVyeV9pbmZvGPUIIAEoCzI7LldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uRGVsaXZlcnlBY3Rpdml0eURldGFp",
-            "bEluZm9IABJPCgphc3Rlcl9pbmZvGLkPIAEoCzI4LldlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8uQXN0ZXJBY3Rpdml0eURldGFpbEluZm9IABJR",
-            "CgtmbGlnaHRfaW5mbxjbDyABKAsyOS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvLkZsaWdodEFjdGl2aXR5RGV0YWlsSW5mb0gAElwKEWRyYWdv",
-            "bl9zcGluZV9pbmZvGJ4KIAEoCzI+LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uRHJhZ29uU3BpbmVBY3Rpdml0eURldGFpbEluZm9IABJRCgtl",
-            "ZmZpZ3lfaW5mbxjeCiABKAsyOS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvLkVmZmlneUFjdGl2aXR5RGV0YWlsSW5mb0gAElwKEXRyZWFzdXJl",
-            "X21hcF9pbmZvGIUPIAEoCzI+LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
-            "UHJvdG8uVHJlYXN1cmVNYXBBY3Rpdml0eURldGFpbEluZm9IABJVCg1ibGVz",
-            "c2luZ19pbmZvGKoPIAEoCzI7LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
-            "UHJvdG8uQmxlc3NpbmdBY3Rpdml0eURldGFpbEluZm9IABJOCg1zZWFfbGFt",
-            "cF9pbmZvGPcBIAEoCzI0LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
-            "dG8uU2VhTGFtcEFjdGl2aXR5SW5mb0gAElkKD2V4cGVkaXRpb25faW5mbxjY",
-            "DSABKAsyPS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkV4cGVk",
-            "aXRpb25BY3Rpdml0eURldGFpbEluZm9IABJiChRhcmVuYV9jaGFsbGVuZ2Vf",
-            "aW5mbxiaBCABKAsyQS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
-            "LkFyZW5hQ2hhbGxlbmdlQWN0aXZpdHlEZXRhaWxJbmZvSAASWAoPZmxldXJf",
-            "ZmFpcl9pbmZvGKcLIAEoCzI8LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
-            "UHJvdG8uRmxldXJGYWlyQWN0aXZpdHlEZXRhaWxJbmZvSAASXAoRd2F0ZXJf",
-            "c3Bpcml0X2luZm8Y+wQgASgLMj4uV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90by5XYXRlclNwaXJpdEFjdGl2aXR5RGV0YWlsSW5mb0gAEmAKE2No",
-            "YW5uZWxlcl9zbGFiX2luZm8YzgYgASgLMkAuV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90by5DaGFubmVsZXJTbGFiQWN0aXZpdHlEZXRhaWxJbmZv",
-            "SAASYQoYbWlzdF90cmlhbF9hY3Rpdml0eV9pbmZvGLADIAEoCzI8LldlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uTWlzdFRyaWFsQWN0aXZpdHlE",
-            "ZXRhaWxJbmZvSAASXQoSaGlkZV9hbmRfc2Vla19pbmZvGMcGIAEoCzI+Lldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uSGlkZUFuZFNlZWtBY3Rp",
-            "dml0eURldGFpbEluZm9IABJYChNmaW5kX2hpbGljaHVybF9pbmZvGPoCIAEo",
-            "CzI4LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uRmluZEhpbGlj",
-            "aHVybERldGFpbEluZm9IABJSChBzdW1tZXJfdGltZV9pbmZvGPYOIAEoCzI1",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU3VtbWVyVGltZURl",
-            "dGFpbEluZm9IABJYChNidW95YW50X2NvbWJhdF9pbmZvGK4FIAEoCzI4Lldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQnVveWFudENvbWJhdERl",
-            "dGFpbEluZm9IABJQCg9lY2hvX3NoZWxsX2luZm8YigkgASgLMjQuV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5FY2hvU2hlbGxEZXRhaWxJbmZv",
-            "SAASZAoVYm91bmNlX2Nvbmp1cmluZ19pbmZvGJoHIAEoCzJCLldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQm91bmNlQ29uanVyaW5nQWN0aXZp",
-            "dHlEZXRhaWxJbmZvSAASVwoPYmxpdHpfcnVzaF9pbmZvGEAgASgLMjwuV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5CbGl0elJ1c2hBY3Rpdml0",
-            "eURldGFpbEluZm9IABJPCgpjaGVzc19pbmZvGO4HIAEoCzI4LldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQ2hlc3NBY3Rpdml0eURldGFpbElu",
-            "Zm9IABJNCglzdW1vX2luZm8Y+QMgASgLMjcuV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90by5TdW1vQWN0aXZpdHlEZXRhaWxJbmZvSAASXgoSbW9v",
-            "bmZpbl90cmlhbF9pbmZvGP4FIAEoCzI/LldlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8uTW9vbmZpblRyaWFsQWN0aXZpdHlEZXRhaWxJbmZvSAAS",
-            "TgoObHVuYV9yaXRlX2luZm8YiQwgASgLMjMuV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90by5MdW5hUml0ZURldGFpbEluZm9IABJcChFwbGFudF9m",
-            "bG93ZXJfaW5mbxj6CSABKAsyPi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvLlBsYW50Rmxvd2VyQWN0aXZpdHlEZXRhaWxJbmZvSAASWAoPbXVz",
-            "aWNfZ2FtZV9pbmZvGMUPIAEoCzI8LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uTXVzaWNHYW1lQWN0aXZpdHlEZXRhaWxJbmZvSAASZgoWcm9n",
-            "dWVsaWtlX2R1bmdlb25faW5mbxjKByABKAsyQy5XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvLlJvZ3VlbGlrZUR1bmdlb25BY3Rpdml0eURldGFp",
-            "bEluZm9IABJLCghkaWdfaW5mbxjGDiABKAsyNi5XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvLkRpZ0FjdGl2aXR5RGV0YWlsSW5mb0gAEk8KCmhh",
-            "Y2hpX2luZm8Y/wMgASgLMjguV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90by5IYWNoaUFjdGl2aXR5RGV0YWlsSW5mb0gAEloKEHdpbnRlcl9jYW1w",
-            "X2luZm8YuwUgASgLMj0uV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
-            "by5XaW50ZXJDYW1wQWN0aXZpdHlEZXRhaWxJbmZvSAASUQoLcG90aW9uX2lu",
-            "Zm8YnwwgASgLMjkuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5Q",
-            "b3Rpb25BY3Rpdml0eURldGFpbEluZm9IABJnCht0YW51a2lfdHJhdmVsX2Fj",
-            "dGl2aXR5X2luZm8YxAogASgLMj8uV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90by5UYW51a2lUcmF2ZWxBY3Rpdml0eURldGFpbEluZm9IABJlChps",
-            "YW50ZXJuX3JpdGVfYWN0aXZpdHlfaW5mbxjtASABKAsyPi5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLkxhbnRlcm5SaXRlQWN0aXZpdHlEZXRh",
-            "aWxJbmZvSAASYgoUbWljaGlhZV9tYXRzdXJpX2luZm8Yrw4gASgLMkEuV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5NaWNoaWFlTWF0c3VyaUFj",
-            "dGl2aXR5RGV0YWlsSW5mb0gAElcKDmJhcnRlbmRlcl9pbmZvGKcEIAEoCzI8",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQmFydGVuZGVyQWN0",
-            "aXZpdHlEZXRhaWxJbmZvSAASSwoIdWdjX2luZm8YngkgASgLMjYuV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5VZ2NBY3Rpdml0eURldGFpbElu",
-            "Zm9IABJcChFjcnlzdGFsX2xpbmtfaW5mbxisBiABKAsyPi5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLkNyeXN0YWxMaW5rQWN0aXZpdHlEZXRh",
-            "aWxJbmZvSAASUwoMaXJvZG9yaV9pbmZvGKAIIAEoCzI6LldlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8uSXJvZG9yaUFjdGl2aXR5RGV0YWlsSW5m",
-            "b0gAEk8KCnBob3RvX2luZm8Yng4gASgLMjguV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90by5QaG90b0FjdGl2aXR5RGV0YWlsSW5mb0gAEk8KCnNw",
-            "aWNlX2luZm8YlQYgASgLMjguV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90by5TcGljZUFjdGl2aXR5RGV0YWlsSW5mb0gAEk8KCmdhY2hhX2luZm8Y",
-            "kQogASgLMjguV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5HYWNo",
-            "YUFjdGl2aXR5RGV0YWlsSW5mb0gAEnUKHmx1bWluYW5jZV9zdG9uZV9jaGFs",
-            "bGVuZ2VfaW5mbxi8AyABKAsySi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvLkx1bWluYW5jZVN0b25lQ2hhbGxlbmdlQWN0aXZpdHlEZXRhaWxJ",
-            "bmZvSAASWgoQcm9ndWVfZGlhcnlfaW5mbxiwBCABKAsyPS5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLlJvZ3VlRGlhcnlBY3Rpdml0eURldGFp",
-            "bEluZm9IABJXChNzdW1tZXJfdGltZV92Ml9pbmZvGJsDIAEoCzI3LldlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU3VtbWVyVGltZVYyRGV0YWls",
-            "SW5mb0gAElQKEWlzbGFuZF9wYXJ0eV9pbmZvGOQFIAEoCzI2LldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uSXNsYW5kUGFydHlEZXRhaWxJbmZv",
-            "SAASTQoJZ2Vhcl9pbmZvGMoLIAEoCzI3LldlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8uR2VhckFjdGl2aXR5RGV0YWlsSW5mb0gAElwKFWdyYXZl",
-            "bl9pbm5vY2VuY2VfaW5mbxiIDyABKAsyOi5XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvLkdyYXZlbklubm9jZW5jZURldGFpbEluZm9IABJYChNp",
-            "bnN0YWJsZV9zcHJheV9pbmZvGPkIIAEoCzI4LldlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8uSW5zdGFibGVTcHJheURldGFpbEluZm9IABJgChNt",
-            "dXFhZGFzX3BvdGlvbl9pbmZvGP4MIAEoCzJALldlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8uTXVxYWRhc1BvdGlvbkFjdGl2aXR5RGV0YWlsSW5m",
-            "b0gAEmIKFHRyZWFzdXJlX3NlZWxpZV9pbmZvGIgIIAEoCzJBLldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uVHJlYXN1cmVTZWVsaWVBY3Rpdml0",
-            "eURldGFpbEluZm9IABJfChdyb2NrX2JvYXJkX2V4cGxvcmVfaW5mbxjxCSAB",
-            "KAsyOy5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlJvY2tCb2Fy",
-            "ZEV4cGxvcmVEZXRhaWxJbmZvSAASUwoMdmludGFnZV9pbmZvGJwKIAEoCzI6",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uVmludGFnZUFjdGl2",
-            "aXR5RGV0YWlsSW5mb0gAElAKD3dpbmRfZmllbGRfaW5mbxjUAyABKAsyNC5X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLldpbmRGaWVsZERldGFp",
-            "bEluZm9IABJYChNmdW5ndXNfZmlnaHRlcl9pbmZvGN0NIAEoCzI4LldlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uRnVuZ3VzRmlnaHRlckRldGFp",
-            "bEluZm9IABJYChNjaGFyX2FtdXNlbWVudF9pbmZvGO0EIAEoCzI4LldlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQ2hhckFtdXNlbWVudERldGFp",
-            "bEluZm9IABJeChVlZmZpZ3lfY2hhbGxlbmdlX2luZm8Y6QEgASgLMjwuV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5FZmZpZ3lDaGFsbGVuZ2VW",
-            "MkRldGFpbEluZm9IABJUChFjb2luX2NvbGxlY3RfaW5mbxjSDyABKAsyNi5X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkNvaW5Db2xsZWN0RGV0",
-            "YWlsSW5mb0gAElYKEmJyaWNrX2JyZWFrZXJfaW5mbxjyCyABKAsyNy5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkJyaWNrQnJlYWtlckRldGFp",
-            "bEluZm9IABo2ChRBY3Rpdml0eUNvaW5NYXBFbnRyeRILCgNrZXkYASABKA0S",
-            "DQoFdmFsdWUYAiABKA06AjgBGjUKE1dpc2hHaWZ0TnVtTWFwRW50cnkSCwoD",
-            "a2V5GAEgASgNEg0KBXZhbHVlGAIgASgNOgI4AUIICgZkZXRhaWxiBnByb3Rv",
-            "Mw=="));
+            "ChJBY3Rpdml0eUluZm8ucHJvdG8aGkFjdGl2aXR5UHVzaFRpcHNEYXRhLnBy",
+            "b3RvGhlBY3Rpdml0eVdhdGNoZXJJbmZvLnByb3RvGiZBcmVuYUNoYWxsZW5n",
+            "ZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxodQXN0ZXJBY3Rpdml0eURldGFp",
+            "bEluZm8ucHJvdG8aIUJhcnRlbmRlckFjdGl2aXR5RGV0YWlsSW5mby5wcm90",
+            "bxogQmxlc3NpbmdBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aIUJsaXR6UnVz",
+            "aEFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxonQm91bmNlQ29uanVyaW5nQWN0",
+            "aXZpdHlEZXRhaWxJbmZvLnByb3RvGhxCcmlja0JyZWFrZXJEZXRhaWxJbmZv",
+            "LnByb3RvGh1CdW95YW50Q29tYmF0RGV0YWlsSW5mby5wcm90bxolQ2hhbm5l",
+            "bGVyU2xhYkFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxodQ2hhckFtdXNlbWVu",
+            "dERldGFpbEluZm8ucHJvdG8aHUNoZXNzQWN0aXZpdHlEZXRhaWxJbmZvLnBy",
+            "b3RvGhtDb2luQ29sbGVjdERldGFpbEluZm8ucHJvdG8aIENydWNpYmxlQWN0",
+            "aXZpdHlEZXRhaWxJbmZvLnByb3RvGiNDcnlzdGFsTGlua0FjdGl2aXR5RGV0",
+            "YWlsSW5mby5wcm90bxogRGVsaXZlcnlBY3Rpdml0eURldGFpbEluZm8ucHJv",
+            "dG8aG0RpZ0FjdGl2aXR5RGV0YWlsSW5mby5wcm90bxojRHJhZ29uU3BpbmVB",
+            "Y3Rpdml0eURldGFpbEluZm8ucHJvdG8aGUVjaG9TaGVsbERldGFpbEluZm8u",
+            "cHJvdG8aHkVmZmlneUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxohRWZmaWd5",
+            "Q2hhbGxlbmdlVjJEZXRhaWxJbmZvLnByb3RvGiJFeHBlZGl0aW9uQWN0aXZp",
+            "dHlEZXRhaWxJbmZvLnByb3RvGh1GaW5kSGlsaWNodXJsRGV0YWlsSW5mby5w",
+            "cm90bxohRmxldXJGYWlyQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGh5GbGln",
+            "aHRBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aHUZ1bmd1c0ZpZ2h0ZXJEZXRh",
+            "aWxJbmZvLnByb3RvGh1HYWNoYUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoc",
+            "R2VhckFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxofR3JhdmVuSW5ub2NlbmNl",
+            "RGV0YWlsSW5mby5wcm90bxodSGFjaGlBY3Rpdml0eURldGFpbEluZm8ucHJv",
+            "dG8aI0hpZGVBbmRTZWVrQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGh1JbnN0",
+            "YWJsZVNwcmF5RGV0YWlsSW5mby5wcm90bxofSXJvZG9yaUFjdGl2aXR5RGV0",
+            "YWlsSW5mby5wcm90bxobSXNsYW5kUGFydHlEZXRhaWxJbmZvLnByb3RvGiNM",
+            "YW50ZXJuUml0ZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxovTHVtaW5hbmNl",
+            "U3RvbmVDaGFsbGVuZ2VBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aGEx1bmFS",
+            "aXRlRGV0YWlsSW5mby5wcm90bxomTWljaGlhZU1hdHN1cmlBY3Rpdml0eURl",
+            "dGFpbEluZm8ucHJvdG8aIU1pc3RUcmlhbEFjdGl2aXR5RGV0YWlsSW5mby5w",
+            "cm90bxokTW9vbmZpblRyaWFsQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGiVN",
+            "dXFhZGFzUG90aW9uQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGiFNdXNpY0dh",
+            "bWVBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aHVBob3RvQWN0aXZpdHlEZXRh",
+            "aWxJbmZvLnByb3RvGiNQbGFudEZsb3dlckFjdGl2aXR5RGV0YWlsSW5mby5w",
+            "cm90bxoeUG90aW9uQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGiBSb2NrQm9h",
+            "cmRFeHBsb3JlRGV0YWlsSW5mby5wcm90bxoiUm9ndWVEaWFyeUFjdGl2aXR5",
+            "RGV0YWlsSW5mby5wcm90bxooUm9ndWVsaWtlRHVuZ2VvbkFjdGl2aXR5RGV0",
+            "YWlsSW5mby5wcm90bxogU2FsZXNtYW5BY3Rpdml0eURldGFpbEluZm8ucHJv",
+            "dG8aH1NlYUxhbXBBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aGVNlYUxhbXBB",
+            "Y3Rpdml0eUluZm8ucHJvdG8aHVNwaWNlQWN0aXZpdHlEZXRhaWxJbmZvLnBy",
+            "b3RvGhpTdW1tZXJUaW1lRGV0YWlsSW5mby5wcm90bxocU3VtbWVyVGltZVYy",
+            "RGV0YWlsSW5mby5wcm90bxocU3Vtb0FjdGl2aXR5RGV0YWlsSW5mby5wcm90",
+            "bxokVGFudWtpVHJhdmVsQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGiNUcmVh",
+            "c3VyZU1hcEFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxomVHJlYXN1cmVTZWVs",
+            "aWVBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aI1RyaWFsQXZhdGFyQWN0aXZp",
+            "dHlEZXRhaWxJbmZvLnByb3RvGhtVZ2NBY3Rpdml0eURldGFpbEluZm8ucHJv",
+            "dG8aH1ZpbnRhZ2VBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aI1dhdGVyU3Bp",
+            "cml0QWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhlXaW5kRmllbGREZXRhaWxJ",
+            "bmZvLnByb3RvGiJXaW50ZXJDYW1wQWN0aXZpdHlEZXRhaWxJbmZvLnByb3Rv",
+            "IpYjCgxBY3Rpdml0eUluZm8SHAoTVW5rMzMwMF9NSk5QR0VLTE9DRxjoAiAB",
+            "KAgSEwoLaXNfZmluaXNoZWQYCCABKAgSEgoJY3VyX3Njb3JlGPQJIAEoDRIT",
+            "CgtzY2hlZHVsZV9pZBgHIAEoDRIUCgtzY29yZV9saW1pdBjODiABKA0SGwoT",
+            "VW5rMzMwMF9JQ05KSktESFBDSBgOIAEoCBIWCg5tZWV0X2NvbmRfbGlzdBgL",
+            "IAMoDRIcChNVbmszMzAwX05FUEtMTEJKRktLGO0MIAEoCBIvChF3YXRjaGVy",
+            "X2luZm9fbGlzdBgGIAMoCzIULkFjdGl2aXR5V2F0Y2hlckluZm8SPAocYWN0",
+            "aXZpdHlfcHVzaF90aXBzX2RhdGFfbGlzdBjLDiADKAsyFS5BY3Rpdml0eVB1",
+            "c2hUaXBzRGF0YRITCgthY3Rpdml0eV9pZBgNIAEoDRIaChF0YWtlbl9yZXdh",
+            "cmRfbGlzdBjhDiADKA0SIgoZc2VsZWN0ZWRfYXZhdGFyX3Jld2FyZF9pZBi5",
+            "BSABKA0SPQoRYWN0aXZpdHlfY29pbl9tYXAYJCADKAsyIi5BY3Rpdml0eUlu",
+            "Zm8uQWN0aXZpdHlDb2luTWFwRW50cnkSHQoUZmlyc3RfZGF5X3N0YXJ0X3Rp",
+            "bWUYkgYgASgNEhwKE1VuazMzMDBfQUJKS0xBTEtMREcYzgsgASgIEhUKDWFj",
+            "dGl2aXR5X3R5cGUYAyABKA0SHAoTVW5rMzMwMF9DQkNFSExKSk9HSRjfCiAB",
+            "KAgSEgoKYmVnaW5fdGltZRgBIAEoDRIbChNVbmszMzAwX01EQkRQSUJFR0dI",
+            "GAwgASgIEj0KEXdpc2hfZ2lmdF9udW1fbWFwGKsHIAMoCzIhLkFjdGl2aXR5",
+            "SW5mby5XaXNoR2lmdE51bU1hcEVudHJ5EhAKCGVuZF90aW1lGAogASgNEhgK",
+            "EGV4cGlyZV9jb25kX2xpc3QYBSADKA0SMwoNc2FtX2xhbXBfaW5mbxgCIAEo",
+            "CzIaLlNlYUxhbXBBY3Rpdml0eURldGFpbEluZm9IABI0Cg1jcnVjaWJsZV9p",
+            "bmZvGA8gASgLMhsuQ3J1Y2libGVBY3Rpdml0eURldGFpbEluZm9IABI0Cg1z",
+            "YWxlc21hbl9pbmZvGAkgASgLMhsuU2FsZXNtYW5BY3Rpdml0eURldGFpbElu",
+            "Zm9IABI7ChF0cmlhbF9hdmF0YXJfaW5mbxgEIAEoCzIeLlRyaWFsQXZhdGFy",
+            "QWN0aXZpdHlEZXRhaWxJbmZvSAASNQoNZGVsaXZlcnlfaW5mbxj1CCABKAsy",
+            "Gy5EZWxpdmVyeUFjdGl2aXR5RGV0YWlsSW5mb0gAEi8KCmFzdGVyX2luZm8Y",
+            "uQ8gASgLMhguQXN0ZXJBY3Rpdml0eURldGFpbEluZm9IABIxCgtmbGlnaHRf",
+            "aW5mbxjbDyABKAsyGS5GbGlnaHRBY3Rpdml0eURldGFpbEluZm9IABI8ChFk",
+            "cmFnb25fc3BpbmVfaW5mbxieCiABKAsyHi5EcmFnb25TcGluZUFjdGl2aXR5",
+            "RGV0YWlsSW5mb0gAEjEKC2VmZmlneV9pbmZvGN4KIAEoCzIZLkVmZmlneUFj",
+            "dGl2aXR5RGV0YWlsSW5mb0gAEjwKEXRyZWFzdXJlX21hcF9pbmZvGIUPIAEo",
+            "CzIeLlRyZWFzdXJlTWFwQWN0aXZpdHlEZXRhaWxJbmZvSAASNQoNYmxlc3Np",
+            "bmdfaW5mbxiqDyABKAsyGy5CbGVzc2luZ0FjdGl2aXR5RGV0YWlsSW5mb0gA",
+            "Ei4KDXNlYV9sYW1wX2luZm8Y9wEgASgLMhQuU2VhTGFtcEFjdGl2aXR5SW5m",
+            "b0gAEjkKD2V4cGVkaXRpb25faW5mbxjYDSABKAsyHS5FeHBlZGl0aW9uQWN0",
+            "aXZpdHlEZXRhaWxJbmZvSAASQgoUYXJlbmFfY2hhbGxlbmdlX2luZm8YmgQg",
+            "ASgLMiEuQXJlbmFDaGFsbGVuZ2VBY3Rpdml0eURldGFpbEluZm9IABI4Cg9m",
+            "bGV1cl9mYWlyX2luZm8YpwsgASgLMhwuRmxldXJGYWlyQWN0aXZpdHlEZXRh",
+            "aWxJbmZvSAASPAoRd2F0ZXJfc3Bpcml0X2luZm8Y+wQgASgLMh4uV2F0ZXJT",
+            "cGlyaXRBY3Rpdml0eURldGFpbEluZm9IABJAChNjaGFubmVsZXJfc2xhYl9p",
+            "bmZvGM4GIAEoCzIgLkNoYW5uZWxlclNsYWJBY3Rpdml0eURldGFpbEluZm9I",
+            "ABJBChhtaXN0X3RyaWFsX2FjdGl2aXR5X2luZm8YsAMgASgLMhwuTWlzdFRy",
+            "aWFsQWN0aXZpdHlEZXRhaWxJbmZvSAASPQoSaGlkZV9hbmRfc2Vla19pbmZv",
+            "GMcGIAEoCzIeLkhpZGVBbmRTZWVrQWN0aXZpdHlEZXRhaWxJbmZvSAASOAoT",
+            "ZmluZF9oaWxpY2h1cmxfaW5mbxj6AiABKAsyGC5GaW5kSGlsaWNodXJsRGV0",
+            "YWlsSW5mb0gAEjIKEHN1bW1lcl90aW1lX2luZm8Y9g4gASgLMhUuU3VtbWVy",
+            "VGltZURldGFpbEluZm9IABI4ChNidW95YW50X2NvbWJhdF9pbmZvGK4FIAEo",
+            "CzIYLkJ1b3lhbnRDb21iYXREZXRhaWxJbmZvSAASMAoPZWNob19zaGVsbF9p",
+            "bmZvGIoJIAEoCzIULkVjaG9TaGVsbERldGFpbEluZm9IABJEChVib3VuY2Vf",
+            "Y29uanVyaW5nX2luZm8YmgcgASgLMiIuQm91bmNlQ29uanVyaW5nQWN0aXZp",
+            "dHlEZXRhaWxJbmZvSAASNwoPYmxpdHpfcnVzaF9pbmZvGEAgASgLMhwuQmxp",
+            "dHpSdXNoQWN0aXZpdHlEZXRhaWxJbmZvSAASLwoKY2hlc3NfaW5mbxjuByAB",
+            "KAsyGC5DaGVzc0FjdGl2aXR5RGV0YWlsSW5mb0gAEi0KCXN1bW9faW5mbxj5",
+            "AyABKAsyFy5TdW1vQWN0aXZpdHlEZXRhaWxJbmZvSAASPgoSbW9vbmZpbl90",
+            "cmlhbF9pbmZvGP4FIAEoCzIfLk1vb25maW5UcmlhbEFjdGl2aXR5RGV0YWls",
+            "SW5mb0gAEi4KDmx1bmFfcml0ZV9pbmZvGIkMIAEoCzITLkx1bmFSaXRlRGV0",
+            "YWlsSW5mb0gAEjwKEXBsYW50X2Zsb3dlcl9pbmZvGPoJIAEoCzIeLlBsYW50",
+            "Rmxvd2VyQWN0aXZpdHlEZXRhaWxJbmZvSAASOAoPbXVzaWNfZ2FtZV9pbmZv",
+            "GMUPIAEoCzIcLk11c2ljR2FtZUFjdGl2aXR5RGV0YWlsSW5mb0gAEkYKFnJv",
+            "Z3VlbGlrZV9kdW5nZW9uX2luZm8YygcgASgLMiMuUm9ndWVsaWtlRHVuZ2Vv",
+            "bkFjdGl2aXR5RGV0YWlsSW5mb0gAEisKCGRpZ19pbmZvGMYOIAEoCzIWLkRp",
+            "Z0FjdGl2aXR5RGV0YWlsSW5mb0gAEi8KCmhhY2hpX2luZm8Y/wMgASgLMhgu",
+            "SGFjaGlBY3Rpdml0eURldGFpbEluZm9IABI6ChB3aW50ZXJfY2FtcF9pbmZv",
+            "GLsFIAEoCzIdLldpbnRlckNhbXBBY3Rpdml0eURldGFpbEluZm9IABIxCgtw",
+            "b3Rpb25faW5mbxifDCABKAsyGS5Qb3Rpb25BY3Rpdml0eURldGFpbEluZm9I",
+            "ABJHCht0YW51a2lfdHJhdmVsX2FjdGl2aXR5X2luZm8YxAogASgLMh8uVGFu",
+            "dWtpVHJhdmVsQWN0aXZpdHlEZXRhaWxJbmZvSAASRQoabGFudGVybl9yaXRl",
+            "X2FjdGl2aXR5X2luZm8Y7QEgASgLMh4uTGFudGVyblJpdGVBY3Rpdml0eURl",
+            "dGFpbEluZm9IABJCChRtaWNoaWFlX21hdHN1cmlfaW5mbxivDiABKAsyIS5N",
+            "aWNoaWFlTWF0c3VyaUFjdGl2aXR5RGV0YWlsSW5mb0gAEjcKDmJhcnRlbmRl",
+            "cl9pbmZvGKcEIAEoCzIcLkJhcnRlbmRlckFjdGl2aXR5RGV0YWlsSW5mb0gA",
+            "EisKCHVnY19pbmZvGJ4JIAEoCzIWLlVnY0FjdGl2aXR5RGV0YWlsSW5mb0gA",
+            "EjwKEWNyeXN0YWxfbGlua19pbmZvGKwGIAEoCzIeLkNyeXN0YWxMaW5rQWN0",
+            "aXZpdHlEZXRhaWxJbmZvSAASMwoMaXJvZG9yaV9pbmZvGKAIIAEoCzIaLkly",
+            "b2RvcmlBY3Rpdml0eURldGFpbEluZm9IABIvCgpwaG90b19pbmZvGJ4OIAEo",
+            "CzIYLlBob3RvQWN0aXZpdHlEZXRhaWxJbmZvSAASLwoKc3BpY2VfaW5mbxiV",
+            "BiABKAsyGC5TcGljZUFjdGl2aXR5RGV0YWlsSW5mb0gAEi8KCmdhY2hhX2lu",
+            "Zm8YkQogASgLMhguR2FjaGFBY3Rpdml0eURldGFpbEluZm9IABJVCh5sdW1p",
+            "bmFuY2Vfc3RvbmVfY2hhbGxlbmdlX2luZm8YvAMgASgLMiouTHVtaW5hbmNl",
+            "U3RvbmVDaGFsbGVuZ2VBY3Rpdml0eURldGFpbEluZm9IABI6ChByb2d1ZV9k",
+            "aWFyeV9pbmZvGLAEIAEoCzIdLlJvZ3VlRGlhcnlBY3Rpdml0eURldGFpbElu",
+            "Zm9IABI3ChNzdW1tZXJfdGltZV92Ml9pbmZvGJsDIAEoCzIXLlN1bW1lclRp",
+            "bWVWMkRldGFpbEluZm9IABI0ChFpc2xhbmRfcGFydHlfaW5mbxjkBSABKAsy",
+            "Fi5Jc2xhbmRQYXJ0eURldGFpbEluZm9IABItCglnZWFyX2luZm8YygsgASgL",
+            "MhcuR2VhckFjdGl2aXR5RGV0YWlsSW5mb0gAEjwKFWdyYXZlbl9pbm5vY2Vu",
+            "Y2VfaW5mbxiIDyABKAsyGi5HcmF2ZW5Jbm5vY2VuY2VEZXRhaWxJbmZvSAAS",
+            "OAoTaW5zdGFibGVfc3ByYXlfaW5mbxj5CCABKAsyGC5JbnN0YWJsZVNwcmF5",
+            "RGV0YWlsSW5mb0gAEkAKE211cWFkYXNfcG90aW9uX2luZm8Y/gwgASgLMiAu",
+            "TXVxYWRhc1BvdGlvbkFjdGl2aXR5RGV0YWlsSW5mb0gAEkIKFHRyZWFzdXJl",
+            "X3NlZWxpZV9pbmZvGIgIIAEoCzIhLlRyZWFzdXJlU2VlbGllQWN0aXZpdHlE",
+            "ZXRhaWxJbmZvSAASPwoXcm9ja19ib2FyZF9leHBsb3JlX2luZm8Y8QkgASgL",
+            "MhsuUm9ja0JvYXJkRXhwbG9yZURldGFpbEluZm9IABIzCgx2aW50YWdlX2lu",
+            "Zm8YnAogASgLMhouVmludGFnZUFjdGl2aXR5RGV0YWlsSW5mb0gAEjAKD3dp",
+            "bmRfZmllbGRfaW5mbxjUAyABKAsyFC5XaW5kRmllbGREZXRhaWxJbmZvSAAS",
+            "OAoTZnVuZ3VzX2ZpZ2h0ZXJfaW5mbxjdDSABKAsyGC5GdW5ndXNGaWdodGVy",
+            "RGV0YWlsSW5mb0gAEjgKE2NoYXJfYW11c2VtZW50X2luZm8Y7QQgASgLMhgu",
+            "Q2hhckFtdXNlbWVudERldGFpbEluZm9IABI+ChVlZmZpZ3lfY2hhbGxlbmdl",
+            "X2luZm8Y6QEgASgLMhwuRWZmaWd5Q2hhbGxlbmdlVjJEZXRhaWxJbmZvSAAS",
+            "NAoRY29pbl9jb2xsZWN0X2luZm8Y0g8gASgLMhYuQ29pbkNvbGxlY3REZXRh",
+            "aWxJbmZvSAASNgoSYnJpY2tfYnJlYWtlcl9pbmZvGPILIAEoCzIXLkJyaWNr",
+            "QnJlYWtlckRldGFpbEluZm9IABo2ChRBY3Rpdml0eUNvaW5NYXBFbnRyeRIL",
+            "CgNrZXkYASABKA0SDQoFdmFsdWUYAiABKA06AjgBGjUKE1dpc2hHaWZ0TnVt",
+            "TWFwRW50cnkSCwoDa2V5GAEgASgNEg0KBXZhbHVlGAIgASgNOgI4AUIICgZk",
+            "ZXRhaWxCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ActivityPushTipsDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ActivityWatcherInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ArenaChallengeActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.AsterActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BartenderActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BlessingActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BlitzRushActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BounceConjuringActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BrickBreakerDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BuoyantCombatDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChannelerSlabActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CharAmusementDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChessActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CoinCollectDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CrucibleActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CrystalLinkActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DeliveryActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DigActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DragonSpineActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EchoShellDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EffigyActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.EffigyChallengeV2DetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ExpeditionActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FindHilichurlDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FleurFairActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FlightActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FungusFighterDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GachaActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GearActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GravenInnocenceDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HachiActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HideAndSeekActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.InstableSprayDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IrodoriActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IslandPartyDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LanternRiteActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LuminanceStoneChallengeActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LunaRiteDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MistTrialActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MoonfinTrialActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MuqadasPotionActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MusicGameActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PhotoActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PlantFlowerActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PotionActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RockBoardExploreDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RogueDiaryActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RoguelikeDungeonActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SalesmanActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SeaLampActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SeaLampActivityInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SpiceActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SummerTimeDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SummerTimeV2DetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SumoActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TanukiTravelActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TreasureMapActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TreasureSeelieActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TrialAvatarActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.UgcActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VintageActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WaterSpiritActivityDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WindFieldDetailInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WinterCampActivityDetailInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ActivityInfo), global::Weedwacker.Shared.Network.Proto.ActivityInfo.Parser, new[]{ "Unk3300MJNPGEKLOCG", "IsFinished", "CurScore", "ScheduleId", "Unk3300JAEALAIOOID", "Unk3300ICNJJKDHPCH", "Unk3300BGNIBLKCPCA", "Unk3300NEPKLLBJFKK", "WatcherInfoList", "ActivityPushTipsDataList", "ActivityId", "TakenRewardList", "Unk3300GCEAKEMMJEA", "ActivityCoinMap", "FirstDayStartTime", "Unk3300ABJKLALKLDG", "Unk3300DMILOONBELH", "Unk3300CBCEHLJJOGI", "BeginTime", "Unk3300MDBDPIBEGGH", "WishGiftNumMap", "EndTime", "Unk3300HKKNIHNBHAE", "SamLampInfo", "CrucibleInfo", "SalesmanInfo", "TrialAvatarInfo", "DeliveryInfo", "AsterInfo", "FlightInfo", "DragonSpineInfo", "EffigyInfo", "TreasureMapInfo", "BlessingInfo", "SeaLampInfo", "ExpeditionInfo", "ArenaChallengeInfo", "FleurFairInfo", "WaterSpiritInfo", "ChannelerSlabInfo", "MistTrialActivityInfo", "HideAndSeekInfo", "FindHilichurlInfo", "SummerTimeInfo", "BuoyantCombatInfo", "EchoShellInfo", "BounceConjuringInfo", "BlitzRushInfo", "ChessInfo", "SumoInfo", "MoonfinTrialInfo", "LunaRiteInfo", "PlantFlowerInfo", "MusicGameInfo", "RoguelikeDungeonInfo", "DigInfo", "HachiInfo", "WinterCampInfo", "PotionInfo", "TanukiTravelActivityInfo", "LanternRiteActivityInfo", "MichiaeMatsuriInfo", "BartenderInfo", "UgcInfo", "CrystalLinkInfo", "IrodoriInfo", "PhotoInfo", "SpiceInfo", "GachaInfo", "LuminanceStoneChallengeInfo", "RogueDiaryInfo", "SummerTimeV2Info", "IslandPartyInfo", "GearInfo", "GravenInnocenceInfo", "InstableSprayInfo", "MuqadasPotionInfo", "TreasureSeelieInfo", "RockBoardExploreInfo", "VintageInfo", "WindFieldInfo", "FungusFighterInfo", "CharAmusementInfo", "EffigyChallengeInfo", "CoinCollectInfo", "BrickBreakerInfo" }, new[]{ "Detail" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ActivityInfo), global::Weedwacker.Shared.Network.Proto.ActivityInfo.Parser, new[]{ "Unk3300MJNPGEKLOCG", "IsFinished", "CurScore", "ScheduleId", "ScoreLimit", "Unk3300ICNJJKDHPCH", "MeetCondList", "Unk3300NEPKLLBJFKK", "WatcherInfoList", "ActivityPushTipsDataList", "ActivityId", "TakenRewardList", "SelectedAvatarRewardId", "ActivityCoinMap", "FirstDayStartTime", "Unk3300ABJKLALKLDG", "ActivityType", "Unk3300CBCEHLJJOGI", "BeginTime", "Unk3300MDBDPIBEGGH", "WishGiftNumMap", "EndTime", "ExpireCondList", "SamLampInfo", "CrucibleInfo", "SalesmanInfo", "TrialAvatarInfo", "DeliveryInfo", "AsterInfo", "FlightInfo", "DragonSpineInfo", "EffigyInfo", "TreasureMapInfo", "BlessingInfo", "SeaLampInfo", "ExpeditionInfo", "ArenaChallengeInfo", "FleurFairInfo", "WaterSpiritInfo", "ChannelerSlabInfo", "MistTrialActivityInfo", "HideAndSeekInfo", "FindHilichurlInfo", "SummerTimeInfo", "BuoyantCombatInfo", "EchoShellInfo", "BounceConjuringInfo", "BlitzRushInfo", "ChessInfo", "SumoInfo", "MoonfinTrialInfo", "LunaRiteInfo", "PlantFlowerInfo", "MusicGameInfo", "RoguelikeDungeonInfo", "DigInfo", "HachiInfo", "WinterCampInfo", "PotionInfo", "TanukiTravelActivityInfo", "LanternRiteActivityInfo", "MichiaeMatsuriInfo", "BartenderInfo", "UgcInfo", "CrystalLinkInfo", "IrodoriInfo", "PhotoInfo", "SpiceInfo", "GachaInfo", "LuminanceStoneChallengeInfo", "RogueDiaryInfo", "SummerTimeV2Info", "IslandPartyInfo", "GearInfo", "GravenInnocenceInfo", "InstableSprayInfo", "MuqadasPotionInfo", "TreasureSeelieInfo", "RockBoardExploreInfo", "VintageInfo", "WindFieldInfo", "FungusFighterInfo", "CharAmusementInfo", "EffigyChallengeInfo", "CoinCollectInfo", "BrickBreakerInfo" }, new[]{ "Detail" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
           }));
     }
     #endregion
@@ -271,25 +223,25 @@ namespace Weedwacker.Shared.Network.Proto {
       isFinished_ = other.isFinished_;
       curScore_ = other.curScore_;
       scheduleId_ = other.scheduleId_;
-      unk3300JAEALAIOOID_ = other.unk3300JAEALAIOOID_;
+      scoreLimit_ = other.scoreLimit_;
       unk3300ICNJJKDHPCH_ = other.unk3300ICNJJKDHPCH_;
-      unk3300BGNIBLKCPCA_ = other.unk3300BGNIBLKCPCA_.Clone();
+      meetCondList_ = other.meetCondList_.Clone();
       unk3300NEPKLLBJFKK_ = other.unk3300NEPKLLBJFKK_;
       watcherInfoList_ = other.watcherInfoList_.Clone();
       activityPushTipsDataList_ = other.activityPushTipsDataList_.Clone();
       activityId_ = other.activityId_;
       takenRewardList_ = other.takenRewardList_.Clone();
-      unk3300GCEAKEMMJEA_ = other.unk3300GCEAKEMMJEA_;
+      selectedAvatarRewardId_ = other.selectedAvatarRewardId_;
       activityCoinMap_ = other.activityCoinMap_.Clone();
       firstDayStartTime_ = other.firstDayStartTime_;
       unk3300ABJKLALKLDG_ = other.unk3300ABJKLALKLDG_;
-      unk3300DMILOONBELH_ = other.unk3300DMILOONBELH_;
+      activityType_ = other.activityType_;
       unk3300CBCEHLJJOGI_ = other.unk3300CBCEHLJJOGI_;
       beginTime_ = other.beginTime_;
       unk3300MDBDPIBEGGH_ = other.unk3300MDBDPIBEGGH_;
       wishGiftNumMap_ = other.wishGiftNumMap_.Clone();
       endTime_ = other.endTime_;
-      unk3300HKKNIHNBHAE_ = other.unk3300HKKNIHNBHAE_.Clone();
+      expireCondList_ = other.expireCondList_.Clone();
       switch (other.DetailCase) {
         case DetailOneofCase.SamLampInfo:
           SamLampInfo = other.SamLampInfo.Clone();
@@ -539,15 +491,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_JAEALAIOOID" field.</summary>
-    public const int Unk3300JAEALAIOOIDFieldNumber = 1870;
-    private uint unk3300JAEALAIOOID_;
+    /// <summary>Field number for the "score_limit" field.</summary>
+    public const int ScoreLimitFieldNumber = 1870;
+    private uint scoreLimit_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300JAEALAIOOID {
-      get { return unk3300JAEALAIOOID_; }
+    public uint ScoreLimit {
+      get { return scoreLimit_; }
       set {
-        unk3300JAEALAIOOID_ = value;
+        scoreLimit_ = value;
       }
     }
 
@@ -563,15 +515,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_BGNIBLKCPCA" field.</summary>
-    public const int Unk3300BGNIBLKCPCAFieldNumber = 11;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300BGNIBLKCPCA_codec
+    /// <summary>Field number for the "meet_cond_list" field.</summary>
+    public const int MeetCondListFieldNumber = 11;
+    private static readonly pb::FieldCodec<uint> _repeated_meetCondList_codec
         = pb::FieldCodec.ForUInt32(90);
-    private readonly pbc::RepeatedField<uint> unk3300BGNIBLKCPCA_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> meetCondList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300BGNIBLKCPCA {
-      get { return unk3300BGNIBLKCPCA_; }
+    public pbc::RepeatedField<uint> MeetCondList {
+      get { return meetCondList_; }
     }
 
     /// <summary>Field number for the "Unk3300_NEPKLLBJFKK" field.</summary>
@@ -631,15 +583,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return takenRewardList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_GCEAKEMMJEA" field.</summary>
-    public const int Unk3300GCEAKEMMJEAFieldNumber = 697;
-    private uint unk3300GCEAKEMMJEA_;
+    /// <summary>Field number for the "selected_avatar_reward_id" field.</summary>
+    public const int SelectedAvatarRewardIdFieldNumber = 697;
+    private uint selectedAvatarRewardId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300GCEAKEMMJEA {
-      get { return unk3300GCEAKEMMJEA_; }
+    public uint SelectedAvatarRewardId {
+      get { return selectedAvatarRewardId_; }
       set {
-        unk3300GCEAKEMMJEA_ = value;
+        selectedAvatarRewardId_ = value;
       }
     }
 
@@ -678,15 +630,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_DMILOONBELH" field.</summary>
-    public const int Unk3300DMILOONBELHFieldNumber = 3;
-    private uint unk3300DMILOONBELH_;
+    /// <summary>Field number for the "activity_type" field.</summary>
+    public const int ActivityTypeFieldNumber = 3;
+    private uint activityType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300DMILOONBELH {
-      get { return unk3300DMILOONBELH_; }
+    public uint ActivityType {
+      get { return activityType_; }
       set {
-        unk3300DMILOONBELH_ = value;
+        activityType_ = value;
       }
     }
 
@@ -749,15 +701,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_HKKNIHNBHAE" field.</summary>
-    public const int Unk3300HKKNIHNBHAEFieldNumber = 5;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300HKKNIHNBHAE_codec
+    /// <summary>Field number for the "expire_cond_list" field.</summary>
+    public const int ExpireCondListFieldNumber = 5;
+    private static readonly pb::FieldCodec<uint> _repeated_expireCondList_codec
         = pb::FieldCodec.ForUInt32(42);
-    private readonly pbc::RepeatedField<uint> unk3300HKKNIHNBHAE_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> expireCondList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300HKKNIHNBHAE {
-      get { return unk3300HKKNIHNBHAE_; }
+    public pbc::RepeatedField<uint> ExpireCondList {
+      get { return expireCondList_; }
     }
 
     /// <summary>Field number for the "sam_lamp_info" field.</summary>
@@ -1617,25 +1569,25 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsFinished != other.IsFinished) return false;
       if (CurScore != other.CurScore) return false;
       if (ScheduleId != other.ScheduleId) return false;
-      if (Unk3300JAEALAIOOID != other.Unk3300JAEALAIOOID) return false;
+      if (ScoreLimit != other.ScoreLimit) return false;
       if (Unk3300ICNJJKDHPCH != other.Unk3300ICNJJKDHPCH) return false;
-      if(!unk3300BGNIBLKCPCA_.Equals(other.unk3300BGNIBLKCPCA_)) return false;
+      if(!meetCondList_.Equals(other.meetCondList_)) return false;
       if (Unk3300NEPKLLBJFKK != other.Unk3300NEPKLLBJFKK) return false;
       if(!watcherInfoList_.Equals(other.watcherInfoList_)) return false;
       if(!activityPushTipsDataList_.Equals(other.activityPushTipsDataList_)) return false;
       if (ActivityId != other.ActivityId) return false;
       if(!takenRewardList_.Equals(other.takenRewardList_)) return false;
-      if (Unk3300GCEAKEMMJEA != other.Unk3300GCEAKEMMJEA) return false;
+      if (SelectedAvatarRewardId != other.SelectedAvatarRewardId) return false;
       if (!ActivityCoinMap.Equals(other.ActivityCoinMap)) return false;
       if (FirstDayStartTime != other.FirstDayStartTime) return false;
       if (Unk3300ABJKLALKLDG != other.Unk3300ABJKLALKLDG) return false;
-      if (Unk3300DMILOONBELH != other.Unk3300DMILOONBELH) return false;
+      if (ActivityType != other.ActivityType) return false;
       if (Unk3300CBCEHLJJOGI != other.Unk3300CBCEHLJJOGI) return false;
       if (BeginTime != other.BeginTime) return false;
       if (Unk3300MDBDPIBEGGH != other.Unk3300MDBDPIBEGGH) return false;
       if (!WishGiftNumMap.Equals(other.WishGiftNumMap)) return false;
       if (EndTime != other.EndTime) return false;
-      if(!unk3300HKKNIHNBHAE_.Equals(other.unk3300HKKNIHNBHAE_)) return false;
+      if(!expireCondList_.Equals(other.expireCondList_)) return false;
       if (!object.Equals(SamLampInfo, other.SamLampInfo)) return false;
       if (!object.Equals(CrucibleInfo, other.CrucibleInfo)) return false;
       if (!object.Equals(SalesmanInfo, other.SalesmanInfo)) return false;
@@ -1711,25 +1663,25 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsFinished != false) hash ^= IsFinished.GetHashCode();
       if (CurScore != 0) hash ^= CurScore.GetHashCode();
       if (ScheduleId != 0) hash ^= ScheduleId.GetHashCode();
-      if (Unk3300JAEALAIOOID != 0) hash ^= Unk3300JAEALAIOOID.GetHashCode();
+      if (ScoreLimit != 0) hash ^= ScoreLimit.GetHashCode();
       if (Unk3300ICNJJKDHPCH != false) hash ^= Unk3300ICNJJKDHPCH.GetHashCode();
-      hash ^= unk3300BGNIBLKCPCA_.GetHashCode();
+      hash ^= meetCondList_.GetHashCode();
       if (Unk3300NEPKLLBJFKK != false) hash ^= Unk3300NEPKLLBJFKK.GetHashCode();
       hash ^= watcherInfoList_.GetHashCode();
       hash ^= activityPushTipsDataList_.GetHashCode();
       if (ActivityId != 0) hash ^= ActivityId.GetHashCode();
       hash ^= takenRewardList_.GetHashCode();
-      if (Unk3300GCEAKEMMJEA != 0) hash ^= Unk3300GCEAKEMMJEA.GetHashCode();
+      if (SelectedAvatarRewardId != 0) hash ^= SelectedAvatarRewardId.GetHashCode();
       hash ^= ActivityCoinMap.GetHashCode();
       if (FirstDayStartTime != 0) hash ^= FirstDayStartTime.GetHashCode();
       if (Unk3300ABJKLALKLDG != false) hash ^= Unk3300ABJKLALKLDG.GetHashCode();
-      if (Unk3300DMILOONBELH != 0) hash ^= Unk3300DMILOONBELH.GetHashCode();
+      if (ActivityType != 0) hash ^= ActivityType.GetHashCode();
       if (Unk3300CBCEHLJJOGI != false) hash ^= Unk3300CBCEHLJJOGI.GetHashCode();
       if (BeginTime != 0) hash ^= BeginTime.GetHashCode();
       if (Unk3300MDBDPIBEGGH != false) hash ^= Unk3300MDBDPIBEGGH.GetHashCode();
       hash ^= WishGiftNumMap.GetHashCode();
       if (EndTime != 0) hash ^= EndTime.GetHashCode();
-      hash ^= unk3300HKKNIHNBHAE_.GetHashCode();
+      hash ^= expireCondList_.GetHashCode();
       if (detailCase_ == DetailOneofCase.SamLampInfo) hash ^= SamLampInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.CrucibleInfo) hash ^= CrucibleInfo.GetHashCode();
       if (detailCase_ == DetailOneofCase.SalesmanInfo) hash ^= SalesmanInfo.GetHashCode();
@@ -1820,15 +1772,15 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(18);
         output.WriteMessage(SamLampInfo);
       }
-      if (Unk3300DMILOONBELH != 0) {
+      if (ActivityType != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300DMILOONBELH);
+        output.WriteUInt32(ActivityType);
       }
       if (detailCase_ == DetailOneofCase.TrialAvatarInfo) {
         output.WriteRawTag(34);
         output.WriteMessage(TrialAvatarInfo);
       }
-      unk3300HKKNIHNBHAE_.WriteTo(output, _repeated_unk3300HKKNIHNBHAE_codec);
+      expireCondList_.WriteTo(output, _repeated_expireCondList_codec);
       watcherInfoList_.WriteTo(output, _repeated_watcherInfoList_codec);
       if (ScheduleId != 0) {
         output.WriteRawTag(56);
@@ -1846,7 +1798,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(80);
         output.WriteUInt32(EndTime);
       }
-      unk3300BGNIBLKCPCA_.WriteTo(output, _repeated_unk3300BGNIBLKCPCA_codec);
+      meetCondList_.WriteTo(output, _repeated_meetCondList_codec);
       if (Unk3300MDBDPIBEGGH != false) {
         output.WriteRawTag(96);
         output.WriteBool(Unk3300MDBDPIBEGGH);
@@ -1936,9 +1888,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(242, 42);
         output.WriteMessage(BuoyantCombatInfo);
       }
-      if (Unk3300GCEAKEMMJEA != 0) {
+      if (SelectedAvatarRewardId != 0) {
         output.WriteRawTag(200, 43);
-        output.WriteUInt32(Unk3300GCEAKEMMJEA);
+        output.WriteUInt32(SelectedAvatarRewardId);
       }
       if (detailCase_ == DetailOneofCase.WinterCampInfo) {
         output.WriteRawTag(218, 43);
@@ -2098,9 +2050,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteMessage(DigInfo);
       }
       activityPushTipsDataList_.WriteTo(output, _repeated_activityPushTipsDataList_codec);
-      if (Unk3300JAEALAIOOID != 0) {
+      if (ScoreLimit != 0) {
         output.WriteRawTag(240, 116);
-        output.WriteUInt32(Unk3300JAEALAIOOID);
+        output.WriteUInt32(ScoreLimit);
       }
       takenRewardList_.WriteTo(output, _repeated_takenRewardList_codec);
       if (detailCase_ == DetailOneofCase.SummerTimeInfo) {
@@ -2153,15 +2105,15 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(18);
         output.WriteMessage(SamLampInfo);
       }
-      if (Unk3300DMILOONBELH != 0) {
+      if (ActivityType != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300DMILOONBELH);
+        output.WriteUInt32(ActivityType);
       }
       if (detailCase_ == DetailOneofCase.TrialAvatarInfo) {
         output.WriteRawTag(34);
         output.WriteMessage(TrialAvatarInfo);
       }
-      unk3300HKKNIHNBHAE_.WriteTo(ref output, _repeated_unk3300HKKNIHNBHAE_codec);
+      expireCondList_.WriteTo(ref output, _repeated_expireCondList_codec);
       watcherInfoList_.WriteTo(ref output, _repeated_watcherInfoList_codec);
       if (ScheduleId != 0) {
         output.WriteRawTag(56);
@@ -2179,7 +2131,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(80);
         output.WriteUInt32(EndTime);
       }
-      unk3300BGNIBLKCPCA_.WriteTo(ref output, _repeated_unk3300BGNIBLKCPCA_codec);
+      meetCondList_.WriteTo(ref output, _repeated_meetCondList_codec);
       if (Unk3300MDBDPIBEGGH != false) {
         output.WriteRawTag(96);
         output.WriteBool(Unk3300MDBDPIBEGGH);
@@ -2269,9 +2221,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(242, 42);
         output.WriteMessage(BuoyantCombatInfo);
       }
-      if (Unk3300GCEAKEMMJEA != 0) {
+      if (SelectedAvatarRewardId != 0) {
         output.WriteRawTag(200, 43);
-        output.WriteUInt32(Unk3300GCEAKEMMJEA);
+        output.WriteUInt32(SelectedAvatarRewardId);
       }
       if (detailCase_ == DetailOneofCase.WinterCampInfo) {
         output.WriteRawTag(218, 43);
@@ -2431,9 +2383,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteMessage(DigInfo);
       }
       activityPushTipsDataList_.WriteTo(ref output, _repeated_activityPushTipsDataList_codec);
-      if (Unk3300JAEALAIOOID != 0) {
+      if (ScoreLimit != 0) {
         output.WriteRawTag(240, 116);
-        output.WriteUInt32(Unk3300JAEALAIOOID);
+        output.WriteUInt32(ScoreLimit);
       }
       takenRewardList_.WriteTo(ref output, _repeated_takenRewardList_codec);
       if (detailCase_ == DetailOneofCase.SummerTimeInfo) {
@@ -2490,13 +2442,13 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ScheduleId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ScheduleId);
       }
-      if (Unk3300JAEALAIOOID != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300JAEALAIOOID);
+      if (ScoreLimit != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(ScoreLimit);
       }
       if (Unk3300ICNJJKDHPCH != false) {
         size += 1 + 1;
       }
-      size += unk3300BGNIBLKCPCA_.CalculateSize(_repeated_unk3300BGNIBLKCPCA_codec);
+      size += meetCondList_.CalculateSize(_repeated_meetCondList_codec);
       if (Unk3300NEPKLLBJFKK != false) {
         size += 2 + 1;
       }
@@ -2506,8 +2458,8 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ActivityId);
       }
       size += takenRewardList_.CalculateSize(_repeated_takenRewardList_codec);
-      if (Unk3300GCEAKEMMJEA != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300GCEAKEMMJEA);
+      if (SelectedAvatarRewardId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(SelectedAvatarRewardId);
       }
       size += activityCoinMap_.CalculateSize(_map_activityCoinMap_codec);
       if (FirstDayStartTime != 0) {
@@ -2516,8 +2468,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Unk3300ABJKLALKLDG != false) {
         size += 2 + 1;
       }
-      if (Unk3300DMILOONBELH != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300DMILOONBELH);
+      if (ActivityType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ActivityType);
       }
       if (Unk3300CBCEHLJJOGI != false) {
         size += 2 + 1;
@@ -2532,7 +2484,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (EndTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EndTime);
       }
-      size += unk3300HKKNIHNBHAE_.CalculateSize(_repeated_unk3300HKKNIHNBHAE_codec);
+      size += expireCondList_.CalculateSize(_repeated_expireCondList_codec);
       if (detailCase_ == DetailOneofCase.SamLampInfo) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SamLampInfo);
       }
@@ -2746,13 +2698,13 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.ScheduleId != 0) {
         ScheduleId = other.ScheduleId;
       }
-      if (other.Unk3300JAEALAIOOID != 0) {
-        Unk3300JAEALAIOOID = other.Unk3300JAEALAIOOID;
+      if (other.ScoreLimit != 0) {
+        ScoreLimit = other.ScoreLimit;
       }
       if (other.Unk3300ICNJJKDHPCH != false) {
         Unk3300ICNJJKDHPCH = other.Unk3300ICNJJKDHPCH;
       }
-      unk3300BGNIBLKCPCA_.Add(other.unk3300BGNIBLKCPCA_);
+      meetCondList_.Add(other.meetCondList_);
       if (other.Unk3300NEPKLLBJFKK != false) {
         Unk3300NEPKLLBJFKK = other.Unk3300NEPKLLBJFKK;
       }
@@ -2762,8 +2714,8 @@ namespace Weedwacker.Shared.Network.Proto {
         ActivityId = other.ActivityId;
       }
       takenRewardList_.Add(other.takenRewardList_);
-      if (other.Unk3300GCEAKEMMJEA != 0) {
-        Unk3300GCEAKEMMJEA = other.Unk3300GCEAKEMMJEA;
+      if (other.SelectedAvatarRewardId != 0) {
+        SelectedAvatarRewardId = other.SelectedAvatarRewardId;
       }
       activityCoinMap_.Add(other.activityCoinMap_);
       if (other.FirstDayStartTime != 0) {
@@ -2772,8 +2724,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Unk3300ABJKLALKLDG != false) {
         Unk3300ABJKLALKLDG = other.Unk3300ABJKLALKLDG;
       }
-      if (other.Unk3300DMILOONBELH != 0) {
-        Unk3300DMILOONBELH = other.Unk3300DMILOONBELH;
+      if (other.ActivityType != 0) {
+        ActivityType = other.ActivityType;
       }
       if (other.Unk3300CBCEHLJJOGI != false) {
         Unk3300CBCEHLJJOGI = other.Unk3300CBCEHLJJOGI;
@@ -2788,7 +2740,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.EndTime != 0) {
         EndTime = other.EndTime;
       }
-      unk3300HKKNIHNBHAE_.Add(other.unk3300HKKNIHNBHAE_);
+      expireCondList_.Add(other.expireCondList_);
       switch (other.DetailCase) {
         case DetailOneofCase.SamLampInfo:
           if (SamLampInfo == null) {
@@ -3199,7 +3151,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300DMILOONBELH = input.ReadUInt32();
+            ActivityType = input.ReadUInt32();
             break;
           }
           case 34: {
@@ -3213,7 +3165,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 42:
           case 40: {
-            unk3300HKKNIHNBHAE_.AddEntriesFrom(input, _repeated_unk3300HKKNIHNBHAE_codec);
+            expireCondList_.AddEntriesFrom(input, _repeated_expireCondList_codec);
             break;
           }
           case 50: {
@@ -3243,7 +3195,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 90:
           case 88: {
-            unk3300BGNIBLKCPCA_.AddEntriesFrom(input, _repeated_unk3300BGNIBLKCPCA_codec);
+            meetCondList_.AddEntriesFrom(input, _repeated_meetCondList_codec);
             break;
           }
           case 96: {
@@ -3429,7 +3381,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 5576: {
-            Unk3300GCEAKEMMJEA = input.ReadUInt32();
+            SelectedAvatarRewardId = input.ReadUInt32();
             break;
           }
           case 5594: {
@@ -3767,7 +3719,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 14960: {
-            Unk3300JAEALAIOOID = input.ReadUInt32();
+            ScoreLimit = input.ReadUInt32();
             break;
           }
           case 15114:
@@ -3876,7 +3828,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300DMILOONBELH = input.ReadUInt32();
+            ActivityType = input.ReadUInt32();
             break;
           }
           case 34: {
@@ -3890,7 +3842,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 42:
           case 40: {
-            unk3300HKKNIHNBHAE_.AddEntriesFrom(ref input, _repeated_unk3300HKKNIHNBHAE_codec);
+            expireCondList_.AddEntriesFrom(ref input, _repeated_expireCondList_codec);
             break;
           }
           case 50: {
@@ -3920,7 +3872,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 90:
           case 88: {
-            unk3300BGNIBLKCPCA_.AddEntriesFrom(ref input, _repeated_unk3300BGNIBLKCPCA_codec);
+            meetCondList_.AddEntriesFrom(ref input, _repeated_meetCondList_codec);
             break;
           }
           case 96: {
@@ -4106,7 +4058,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 5576: {
-            Unk3300GCEAKEMMJEA = input.ReadUInt32();
+            SelectedAvatarRewardId = input.ReadUInt32();
             break;
           }
           case 5594: {
@@ -4444,7 +4396,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 14960: {
-            Unk3300JAEALAIOOID = input.ReadUInt32();
+            ScoreLimit = input.ReadUInt32();
             break;
           }
           case 15114:

@@ -24,17 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetAllMailResultNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxHZXRBbGxNYWlsUmVzdWx0Tm90aWZ5LnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvGg5NYWlsRGF0YS5wcm90byLMAQoWR2V0QWxs",
-            "TWFpbFJlc3VsdE5vdGlmeRIbChNVbmszMzAwX0xNQ0FBRFBBSUNNGA0gASgN",
-            "EhMKC3RyYW5zYWN0aW9uGA4gASgJEhQKDGlzX2NvbGxlY3RlZBgMIAEoCBIP",
-            "CgdyZXRjb2RlGAcgASgFEjwKCW1haWxfbGlzdBgCIAMoCzIpLldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uTWFpbERhdGESGwoTVW5rMzMwMF9Q",
-            "R0pJSEVMS0NFQRgGIAEoDWIGcHJvdG8z"));
+            "ChxHZXRBbGxNYWlsUmVzdWx0Tm90aWZ5LnByb3RvGg5NYWlsRGF0YS5wcm90",
+            "byKgAQoWR2V0QWxsTWFpbFJlc3VsdE5vdGlmeRISCgpwYWdlX2luZGV4GA0g",
+            "ASgNEhMKC3RyYW5zYWN0aW9uGA4gASgJEhQKDGlzX2NvbGxlY3RlZBgMIAEo",
+            "CBIPCgdyZXRjb2RlGAcgASgFEhwKCW1haWxfbGlzdBgCIAMoCzIJLk1haWxE",
+            "YXRhEhgKEHRvdGFsX3BhZ2VfY291bnQYBiABKA1CIqoCH1dlZWR3YWNrZXIu",
+            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MailDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetAllMailResultNotify), global::Weedwacker.Shared.Network.Proto.GetAllMailResultNotify.Parser, new[]{ "Unk3300LMCAADPAICM", "Transaction", "IsCollected", "Retcode", "MailList", "Unk3300PGJIHELKCEA" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetAllMailResultNotify), global::Weedwacker.Shared.Network.Proto.GetAllMailResultNotify.Parser, new[]{ "PageIndex", "Transaction", "IsCollected", "Retcode", "MailList", "TotalPageCount" }, null, null, null, null)
           }));
     }
     #endregion
@@ -84,12 +83,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetAllMailResultNotify(GetAllMailResultNotify other) : this() {
-      unk3300LMCAADPAICM_ = other.unk3300LMCAADPAICM_;
+      pageIndex_ = other.pageIndex_;
       transaction_ = other.transaction_;
       isCollected_ = other.isCollected_;
       retcode_ = other.retcode_;
       mailList_ = other.mailList_.Clone();
-      unk3300PGJIHELKCEA_ = other.unk3300PGJIHELKCEA_;
+      totalPageCount_ = other.totalPageCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -99,15 +98,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new GetAllMailResultNotify(this);
     }
 
-    /// <summary>Field number for the "Unk3300_LMCAADPAICM" field.</summary>
-    public const int Unk3300LMCAADPAICMFieldNumber = 13;
-    private uint unk3300LMCAADPAICM_;
+    /// <summary>Field number for the "page_index" field.</summary>
+    public const int PageIndexFieldNumber = 13;
+    private uint pageIndex_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300LMCAADPAICM {
-      get { return unk3300LMCAADPAICM_; }
+    public uint PageIndex {
+      get { return pageIndex_; }
       set {
-        unk3300LMCAADPAICM_ = value;
+        pageIndex_ = value;
       }
     }
 
@@ -158,15 +157,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return mailList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_PGJIHELKCEA" field.</summary>
-    public const int Unk3300PGJIHELKCEAFieldNumber = 6;
-    private uint unk3300PGJIHELKCEA_;
+    /// <summary>Field number for the "total_page_count" field.</summary>
+    public const int TotalPageCountFieldNumber = 6;
+    private uint totalPageCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300PGJIHELKCEA {
-      get { return unk3300PGJIHELKCEA_; }
+    public uint TotalPageCount {
+      get { return totalPageCount_; }
       set {
-        unk3300PGJIHELKCEA_ = value;
+        totalPageCount_ = value;
       }
     }
 
@@ -185,12 +184,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300LMCAADPAICM != other.Unk3300LMCAADPAICM) return false;
+      if (PageIndex != other.PageIndex) return false;
       if (Transaction != other.Transaction) return false;
       if (IsCollected != other.IsCollected) return false;
       if (Retcode != other.Retcode) return false;
       if(!mailList_.Equals(other.mailList_)) return false;
-      if (Unk3300PGJIHELKCEA != other.Unk3300PGJIHELKCEA) return false;
+      if (TotalPageCount != other.TotalPageCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -198,12 +197,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300LMCAADPAICM != 0) hash ^= Unk3300LMCAADPAICM.GetHashCode();
+      if (PageIndex != 0) hash ^= PageIndex.GetHashCode();
       if (Transaction.Length != 0) hash ^= Transaction.GetHashCode();
       if (IsCollected != false) hash ^= IsCollected.GetHashCode();
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
       hash ^= mailList_.GetHashCode();
-      if (Unk3300PGJIHELKCEA != 0) hash ^= Unk3300PGJIHELKCEA.GetHashCode();
+      if (TotalPageCount != 0) hash ^= TotalPageCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -223,9 +222,9 @@ namespace Weedwacker.Shared.Network.Proto {
       output.WriteRawMessage(this);
     #else
       mailList_.WriteTo(output, _repeated_mailList_codec);
-      if (Unk3300PGJIHELKCEA != 0) {
+      if (TotalPageCount != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(Unk3300PGJIHELKCEA);
+        output.WriteUInt32(TotalPageCount);
       }
       if (Retcode != 0) {
         output.WriteRawTag(56);
@@ -235,9 +234,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(96);
         output.WriteBool(IsCollected);
       }
-      if (Unk3300LMCAADPAICM != 0) {
+      if (PageIndex != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk3300LMCAADPAICM);
+        output.WriteUInt32(PageIndex);
       }
       if (Transaction.Length != 0) {
         output.WriteRawTag(114);
@@ -254,9 +253,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       mailList_.WriteTo(ref output, _repeated_mailList_codec);
-      if (Unk3300PGJIHELKCEA != 0) {
+      if (TotalPageCount != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(Unk3300PGJIHELKCEA);
+        output.WriteUInt32(TotalPageCount);
       }
       if (Retcode != 0) {
         output.WriteRawTag(56);
@@ -266,9 +265,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(96);
         output.WriteBool(IsCollected);
       }
-      if (Unk3300LMCAADPAICM != 0) {
+      if (PageIndex != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk3300LMCAADPAICM);
+        output.WriteUInt32(PageIndex);
       }
       if (Transaction.Length != 0) {
         output.WriteRawTag(114);
@@ -284,8 +283,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300LMCAADPAICM != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300LMCAADPAICM);
+      if (PageIndex != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PageIndex);
       }
       if (Transaction.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Transaction);
@@ -297,8 +296,8 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
       }
       size += mailList_.CalculateSize(_repeated_mailList_codec);
-      if (Unk3300PGJIHELKCEA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300PGJIHELKCEA);
+      if (TotalPageCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TotalPageCount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -312,8 +311,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300LMCAADPAICM != 0) {
-        Unk3300LMCAADPAICM = other.Unk3300LMCAADPAICM;
+      if (other.PageIndex != 0) {
+        PageIndex = other.PageIndex;
       }
       if (other.Transaction.Length != 0) {
         Transaction = other.Transaction;
@@ -325,8 +324,8 @@ namespace Weedwacker.Shared.Network.Proto {
         Retcode = other.Retcode;
       }
       mailList_.Add(other.mailList_);
-      if (other.Unk3300PGJIHELKCEA != 0) {
-        Unk3300PGJIHELKCEA = other.Unk3300PGJIHELKCEA;
+      if (other.TotalPageCount != 0) {
+        TotalPageCount = other.TotalPageCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -348,7 +347,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk3300PGJIHELKCEA = input.ReadUInt32();
+            TotalPageCount = input.ReadUInt32();
             break;
           }
           case 56: {
@@ -360,7 +359,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk3300LMCAADPAICM = input.ReadUInt32();
+            PageIndex = input.ReadUInt32();
             break;
           }
           case 114: {
@@ -387,7 +386,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk3300PGJIHELKCEA = input.ReadUInt32();
+            TotalPageCount = input.ReadUInt32();
             break;
           }
           case 56: {
@@ -399,7 +398,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk3300LMCAADPAICM = input.ReadUInt32();
+            PageIndex = input.ReadUInt32();
             break;
           }
           case 114: {

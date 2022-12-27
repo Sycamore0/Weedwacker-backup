@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneForceLockNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpTY2VuZUZvcmNlTG9ja05vdGlmeS5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90byItChRTY2VuZUZvcmNlTG9ja05vdGlmeRIVCg1m",
-            "b3JjZV9pZF9saXN0GAEgAygNYgZwcm90bzM="));
+            "ChpTY2VuZUZvcmNlTG9ja05vdGlmeS5wcm90byItChRTY2VuZUZvcmNlTG9j",
+            "a05vdGlmeRIVCg1mb3JjZV9pZF9saXN0GAEgAygNQiKqAh9XZWVkd2Fja2Vy",
+            "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

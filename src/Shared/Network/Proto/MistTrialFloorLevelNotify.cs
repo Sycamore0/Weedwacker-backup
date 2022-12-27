@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static MistTrialFloorLevelNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9NaXN0VHJpYWxGbG9vckxldmVsTm90aWZ5LnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvIkoKGU1pc3RUcmlhbEZsb29yTGV2ZWxO",
-            "b3RpZnkSGAoQZHVuZ2Vvbl9zY2VuZV9pZBgGIAEoDRITCgtmbG9vcl9sZXZl",
-            "bBgHIAEoDWIGcHJvdG8z"));
+            "Ch9NaXN0VHJpYWxGbG9vckxldmVsTm90aWZ5LnByb3RvIkoKGU1pc3RUcmlh",
+            "bEZsb29yTGV2ZWxOb3RpZnkSGAoQZHVuZ2Vvbl9zY2VuZV9pZBgGIAEoDRIT",
+            "CgtmbG9vcl9sZXZlbBgHIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
+            "d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

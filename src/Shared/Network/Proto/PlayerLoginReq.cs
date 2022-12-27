@@ -24,38 +24,36 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerLoginReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRQbGF5ZXJMb2dpblJlcS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90bxoYQWRqdXN0VHJhY2tpbmdJbmZvLnByb3RvGhRUcmFja2lu",
-            "Z0lPSW5mby5wcm90byLtCAoOUGxheWVyTG9naW5SZXESEwoLZGV2aWNlX3V1",
-            "aWQYBSABKAkSEgoKdGFyZ2V0X3VpZBgKIAEoDRIXCg5leHRyYV9iaW5fZGF0",
-            "YRj+DyABKAwSEAoIcGxhdGZvcm0YBCABKAkSEQoIY2hlY2tzdW0YtgogASgJ",
-            "EhMKCmNoYW5uZWxfaWQYnQwgASgNEhwKE2NsaWVudF92ZXJpc29uX2hhc2gY",
-            "+A8gASgJEhUKDWxhbmd1YWdlX3R5cGUYCyABKA0SHAoTY2xpZW50X2RhdGFf",
-            "dmVyc2lvbhjPBiABKA0SFAoMYWNjb3VudF90eXBlGAcgASgNEh0KFHNlY3Vy",
-            "aXR5X2xpYnJhcnlfbWQ1GOQGIAEoCRISCglvbmxpbmVfaWQYwQQgASgJEhsK",
-            "E1VuazMzMDBfUE1HRkJNSk5OQ0wYUiABKA0SEwoLZGV2aWNlX25hbWUYDCAB",
-            "KAkSEQoIYmlydGhkYXkY6wYgASgJEgwKA3RhZxiNBCABKA0SEwoLYWNjb3Vu",
-            "dF91aWQYDiABKAkSEwoLZGV2aWNlX2luZm8YDyABKAkSHAoTVW5rMzMwMF9J",
-            "QURGSkhORktJQhiyCyABKA0SEQoJaXNfZWRpdG9yGAEgASgIEg0KBXRva2Vu",
-            "GAggASgJEhUKDHJlZ19wbGF0Zm9ybRioAyABKA0SIAoXY2hlY2tzdW1fY2xp",
-            "ZW50X3ZlcnNpb24YxQQgASgJEhsKE1VuazMzMDBfT09CSEFJSUlQSEgYVSAB",
-            "KA0SHAoTVW5rMzMwMF9ORExBTkJFSUdFRxioCiABKA0SFAoMY291bnRyeV9j",
-            "b2RlGGggASgJEhwKE1VuazMzMDBfUElQTERFQVBNTU4Y/g0gASgNEkoKEHRy",
-            "YWNraW5nX2lvX2luZm8YsQ0gASgLMi8uV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90by5UcmFja2luZ0lPSW5mbxIUCgtpc190cmFuc2ZlchjwBCAB",
-            "KAgSIQoYc2VjdXJpdHlfbGlicmFyeV92ZXJzaW9uGLwGIAEoCRIWCg5jbGll",
-            "bnRfdmVyc2lvbhgCIAEoCRIQCghpc19ndWVzdBgNIAEoCBIWCg5zeXN0ZW1f",
-            "dmVyc2lvbhgGIAEoCRIeChV0YXJnZXRfaG9tZV9vd25lcl91aWQYgwcgASgN",
-            "Eg8KBnBzbl9pZBj6CCABKAkSGwoSc2VjdXJpdHlfY21kX3JlcGx5GOoGIAEo",
-            "DBIcChNVbmszMzAwX09GRkhQQUZJRkdEGIQIIAEoDRISCgpsb2dpbl9yYW5k",
-            "GAkgASgEElEKFGFkanVzdF90cmFja2luZ19pbmZvGEAgASgLMjMuV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5BZGp1c3RUcmFja2luZ0luZm8S",
-            "HwoWZW52aXJvbm1lbnRfZXJyb3JfY29kZRiAAiABKAwSFQoNcGxhdGZvcm1f",
-            "dHlwZRgDIAEoDRIMCgNjcHMYvw8gASgJYgZwcm90bzM="));
+            "ChRQbGF5ZXJMb2dpblJlcS5wcm90bxoYQWRqdXN0VHJhY2tpbmdJbmZvLnBy",
+            "b3RvGhRUcmFja2luZ0lPSW5mby5wcm90byKbCAoOUGxheWVyTG9naW5SZXES",
+            "EwoLZGV2aWNlX3V1aWQYBSABKAkSEgoKdGFyZ2V0X3VpZBgKIAEoDRIXCg5l",
+            "eHRyYV9iaW5fZGF0YRj+DyABKAwSEAoIcGxhdGZvcm0YBCABKAkSEQoIY2hl",
+            "Y2tzdW0YtgogASgJEhMKCmNoYW5uZWxfaWQYnQwgASgNEhwKE2NsaWVudF92",
+            "ZXJpc29uX2hhc2gY+A8gASgJEhUKDWxhbmd1YWdlX3R5cGUYCyABKA0SHAoT",
+            "Y2xpZW50X2RhdGFfdmVyc2lvbhjPBiABKA0SFAoMYWNjb3VudF90eXBlGAcg",
+            "ASgNEh0KFHNlY3VyaXR5X2xpYnJhcnlfbWQ1GOQGIAEoCRISCglvbmxpbmVf",
+            "aWQYwQQgASgJEhsKE1VuazMzMDBfUE1HRkJNSk5OQ0wYUiABKA0SEwoLZGV2",
+            "aWNlX25hbWUYDCABKAkSEQoIYmlydGhkYXkY6wYgASgJEgwKA3RhZxiNBCAB",
+            "KA0SEwoLYWNjb3VudF91aWQYDiABKAkSEwoLZGV2aWNlX2luZm8YDyABKAkS",
+            "FwoOc3ViX2NoYW5uZWxfaWQYsgsgASgNEhEKCWlzX2VkaXRvchgBIAEoCBIN",
+            "CgV0b2tlbhgIIAEoCRIVCgxyZWdfcGxhdGZvcm0YqAMgASgNEiAKF2NoZWNr",
+            "c3VtX2NsaWVudF92ZXJzaW9uGMUEIAEoCRIbChNVbmszMzAwX09PQkhBSUlJ",
+            "UEhIGFUgASgNEhwKE1VuazMzMDBfTkRMQU5CRUlHRUcYqAogASgNEhQKDGNv",
+            "dW50cnlfY29kZRhoIAEoCRIPCgZnbV91aWQY/g0gASgNEioKEHRyYWNraW5n",
+            "X2lvX2luZm8YsQ0gASgLMg8uVHJhY2tpbmdJT0luZm8SFAoLaXNfdHJhbnNm",
+            "ZXIY8AQgASgIEiEKGHNlY3VyaXR5X2xpYnJhcnlfdmVyc2lvbhi8BiABKAkS",
+            "FgoOY2xpZW50X3ZlcnNpb24YAiABKAkSEAoIaXNfZ3Vlc3QYDSABKAgSFgoO",
+            "c3lzdGVtX3ZlcnNpb24YBiABKAkSHgoVdGFyZ2V0X2hvbWVfb3duZXJfdWlk",
+            "GIMHIAEoDRIPCgZwc25faWQY+gggASgJEhsKEnNlY3VyaXR5X2NtZF9yZXBs",
+            "eRjqBiABKAwSHAoTVW5rMzMwMF9PRkZIUEFGSUZHRBiECCABKA0SEgoKbG9n",
+            "aW5fcmFuZBgJIAEoBBIxChRhZGp1c3RfdHJhY2tpbmdfaW5mbxhAIAEoCzIT",
+            "LkFkanVzdFRyYWNraW5nSW5mbxIfChZlbnZpcm9ubWVudF9lcnJvcl9jb2Rl",
+            "GIACIAEoDBIVCg1wbGF0Zm9ybV90eXBlGAMgASgNEgwKA2Nwcxi/DyABKAlC",
+            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AdjustTrackingInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TrackingIOInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerLoginReq), global::Weedwacker.Shared.Network.Proto.PlayerLoginReq.Parser, new[]{ "DeviceUuid", "TargetUid", "ExtraBinData", "Platform", "Checksum", "ChannelId", "ClientVerisonHash", "LanguageType", "ClientDataVersion", "AccountType", "SecurityLibraryMd5", "OnlineId", "Unk3300PMGFBMJNNCL", "DeviceName", "Birthday", "Tag", "AccountUid", "DeviceInfo", "Unk3300IADFJHNFKIB", "IsEditor", "Token", "RegPlatform", "ChecksumClientVersion", "Unk3300OOBHAIIIPHH", "Unk3300NDLANBEIGEG", "CountryCode", "Unk3300PIPLDEAPMMN", "TrackingIoInfo", "IsTransfer", "SecurityLibraryVersion", "ClientVersion", "IsGuest", "SystemVersion", "TargetHomeOwnerUid", "PsnId", "SecurityCmdReply", "Unk3300OFFHPAFIFGD", "LoginRand", "AdjustTrackingInfo", "EnvironmentErrorCode", "PlatformType", "Cps" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerLoginReq), global::Weedwacker.Shared.Network.Proto.PlayerLoginReq.Parser, new[]{ "DeviceUuid", "TargetUid", "ExtraBinData", "Platform", "Checksum", "ChannelId", "ClientVerisonHash", "LanguageType", "ClientDataVersion", "AccountType", "SecurityLibraryMd5", "OnlineId", "Unk3300PMGFBMJNNCL", "DeviceName", "Birthday", "Tag", "AccountUid", "DeviceInfo", "SubChannelId", "IsEditor", "Token", "RegPlatform", "ChecksumClientVersion", "Unk3300OOBHAIIIPHH", "Unk3300NDLANBEIGEG", "CountryCode", "GmUid", "TrackingIoInfo", "IsTransfer", "SecurityLibraryVersion", "ClientVersion", "IsGuest", "SystemVersion", "TargetHomeOwnerUid", "PsnId", "SecurityCmdReply", "Unk3300OFFHPAFIFGD", "LoginRand", "AdjustTrackingInfo", "EnvironmentErrorCode", "PlatformType", "Cps" }, null, null, null, null)
           }));
     }
     #endregion
@@ -124,7 +122,7 @@ namespace Weedwacker.Shared.Network.Proto {
       tag_ = other.tag_;
       accountUid_ = other.accountUid_;
       deviceInfo_ = other.deviceInfo_;
-      unk3300IADFJHNFKIB_ = other.unk3300IADFJHNFKIB_;
+      subChannelId_ = other.subChannelId_;
       isEditor_ = other.isEditor_;
       token_ = other.token_;
       regPlatform_ = other.regPlatform_;
@@ -132,7 +130,7 @@ namespace Weedwacker.Shared.Network.Proto {
       unk3300OOBHAIIIPHH_ = other.unk3300OOBHAIIIPHH_;
       unk3300NDLANBEIGEG_ = other.unk3300NDLANBEIGEG_;
       countryCode_ = other.countryCode_;
-      unk3300PIPLDEAPMMN_ = other.unk3300PIPLDEAPMMN_;
+      gmUid_ = other.gmUid_;
       trackingIoInfo_ = other.trackingIoInfo_ != null ? other.trackingIoInfo_.Clone() : null;
       isTransfer_ = other.isTransfer_;
       securityLibraryVersion_ = other.securityLibraryVersion_;
@@ -373,15 +371,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_IADFJHNFKIB" field.</summary>
-    public const int Unk3300IADFJHNFKIBFieldNumber = 1458;
-    private uint unk3300IADFJHNFKIB_;
+    /// <summary>Field number for the "sub_channel_id" field.</summary>
+    public const int SubChannelIdFieldNumber = 1458;
+    private uint subChannelId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300IADFJHNFKIB {
-      get { return unk3300IADFJHNFKIB_; }
+    public uint SubChannelId {
+      get { return subChannelId_; }
       set {
-        unk3300IADFJHNFKIB_ = value;
+        subChannelId_ = value;
       }
     }
 
@@ -469,15 +467,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_PIPLDEAPMMN" field.</summary>
-    public const int Unk3300PIPLDEAPMMNFieldNumber = 1790;
-    private uint unk3300PIPLDEAPMMN_;
+    /// <summary>Field number for the "gm_uid" field.</summary>
+    public const int GmUidFieldNumber = 1790;
+    private uint gmUid_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300PIPLDEAPMMN {
-      get { return unk3300PIPLDEAPMMN_; }
+    public uint GmUid {
+      get { return gmUid_; }
       set {
-        unk3300PIPLDEAPMMN_ = value;
+        gmUid_ = value;
       }
     }
 
@@ -694,7 +692,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Tag != other.Tag) return false;
       if (AccountUid != other.AccountUid) return false;
       if (DeviceInfo != other.DeviceInfo) return false;
-      if (Unk3300IADFJHNFKIB != other.Unk3300IADFJHNFKIB) return false;
+      if (SubChannelId != other.SubChannelId) return false;
       if (IsEditor != other.IsEditor) return false;
       if (Token != other.Token) return false;
       if (RegPlatform != other.RegPlatform) return false;
@@ -702,7 +700,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Unk3300OOBHAIIIPHH != other.Unk3300OOBHAIIIPHH) return false;
       if (Unk3300NDLANBEIGEG != other.Unk3300NDLANBEIGEG) return false;
       if (CountryCode != other.CountryCode) return false;
-      if (Unk3300PIPLDEAPMMN != other.Unk3300PIPLDEAPMMN) return false;
+      if (GmUid != other.GmUid) return false;
       if (!object.Equals(TrackingIoInfo, other.TrackingIoInfo)) return false;
       if (IsTransfer != other.IsTransfer) return false;
       if (SecurityLibraryVersion != other.SecurityLibraryVersion) return false;
@@ -743,7 +741,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Tag != 0) hash ^= Tag.GetHashCode();
       if (AccountUid.Length != 0) hash ^= AccountUid.GetHashCode();
       if (DeviceInfo.Length != 0) hash ^= DeviceInfo.GetHashCode();
-      if (Unk3300IADFJHNFKIB != 0) hash ^= Unk3300IADFJHNFKIB.GetHashCode();
+      if (SubChannelId != 0) hash ^= SubChannelId.GetHashCode();
       if (IsEditor != false) hash ^= IsEditor.GetHashCode();
       if (Token.Length != 0) hash ^= Token.GetHashCode();
       if (RegPlatform != 0) hash ^= RegPlatform.GetHashCode();
@@ -751,7 +749,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Unk3300OOBHAIIIPHH != 0) hash ^= Unk3300OOBHAIIIPHH.GetHashCode();
       if (Unk3300NDLANBEIGEG != 0) hash ^= Unk3300NDLANBEIGEG.GetHashCode();
       if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
-      if (Unk3300PIPLDEAPMMN != 0) hash ^= Unk3300PIPLDEAPMMN.GetHashCode();
+      if (GmUid != 0) hash ^= GmUid.GetHashCode();
       if (trackingIoInfo_ != null) hash ^= TrackingIoInfo.GetHashCode();
       if (IsTransfer != false) hash ^= IsTransfer.GetHashCode();
       if (SecurityLibraryVersion.Length != 0) hash ^= SecurityLibraryVersion.GetHashCode();
@@ -925,9 +923,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(178, 83);
         output.WriteString(Checksum);
       }
-      if (Unk3300IADFJHNFKIB != 0) {
+      if (SubChannelId != 0) {
         output.WriteRawTag(144, 91);
-        output.WriteUInt32(Unk3300IADFJHNFKIB);
+        output.WriteUInt32(SubChannelId);
       }
       if (ChannelId != 0) {
         output.WriteRawTag(232, 97);
@@ -937,9 +935,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(138, 107);
         output.WriteMessage(TrackingIoInfo);
       }
-      if (Unk3300PIPLDEAPMMN != 0) {
+      if (GmUid != 0) {
         output.WriteRawTag(240, 111);
-        output.WriteUInt32(Unk3300PIPLDEAPMMN);
+        output.WriteUInt32(GmUid);
       }
       if (Cps.Length != 0) {
         output.WriteRawTag(250, 123);
@@ -1103,9 +1101,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(178, 83);
         output.WriteString(Checksum);
       }
-      if (Unk3300IADFJHNFKIB != 0) {
+      if (SubChannelId != 0) {
         output.WriteRawTag(144, 91);
-        output.WriteUInt32(Unk3300IADFJHNFKIB);
+        output.WriteUInt32(SubChannelId);
       }
       if (ChannelId != 0) {
         output.WriteRawTag(232, 97);
@@ -1115,9 +1113,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(138, 107);
         output.WriteMessage(TrackingIoInfo);
       }
-      if (Unk3300PIPLDEAPMMN != 0) {
+      if (GmUid != 0) {
         output.WriteRawTag(240, 111);
-        output.WriteUInt32(Unk3300PIPLDEAPMMN);
+        output.WriteUInt32(GmUid);
       }
       if (Cps.Length != 0) {
         output.WriteRawTag(250, 123);
@@ -1195,8 +1193,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (DeviceInfo.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(DeviceInfo);
       }
-      if (Unk3300IADFJHNFKIB != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300IADFJHNFKIB);
+      if (SubChannelId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(SubChannelId);
       }
       if (IsEditor != false) {
         size += 1 + 1;
@@ -1219,8 +1217,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (CountryCode.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
       }
-      if (Unk3300PIPLDEAPMMN != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300PIPLDEAPMMN);
+      if (GmUid != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(GmUid);
       }
       if (trackingIoInfo_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TrackingIoInfo);
@@ -1333,8 +1331,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.DeviceInfo.Length != 0) {
         DeviceInfo = other.DeviceInfo;
       }
-      if (other.Unk3300IADFJHNFKIB != 0) {
-        Unk3300IADFJHNFKIB = other.Unk3300IADFJHNFKIB;
+      if (other.SubChannelId != 0) {
+        SubChannelId = other.SubChannelId;
       }
       if (other.IsEditor != false) {
         IsEditor = other.IsEditor;
@@ -1357,8 +1355,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.CountryCode.Length != 0) {
         CountryCode = other.CountryCode;
       }
-      if (other.Unk3300PIPLDEAPMMN != 0) {
-        Unk3300PIPLDEAPMMN = other.Unk3300PIPLDEAPMMN;
+      if (other.GmUid != 0) {
+        GmUid = other.GmUid;
       }
       if (other.trackingIoInfo_ != null) {
         if (trackingIoInfo_ == null) {
@@ -1570,7 +1568,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 11664: {
-            Unk3300IADFJHNFKIB = input.ReadUInt32();
+            SubChannelId = input.ReadUInt32();
             break;
           }
           case 12520: {
@@ -1585,7 +1583,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 14320: {
-            Unk3300PIPLDEAPMMN = input.ReadUInt32();
+            GmUid = input.ReadUInt32();
             break;
           }
           case 15866: {
@@ -1759,7 +1757,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 11664: {
-            Unk3300IADFJHNFKIB = input.ReadUInt32();
+            SubChannelId = input.ReadUInt32();
             break;
           }
           case 12520: {
@@ -1774,7 +1772,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 14320: {
-            Unk3300PIPLDEAPMMN = input.ReadUInt32();
+            GmUid = input.ReadUInt32();
             break;
           }
           case 15866: {

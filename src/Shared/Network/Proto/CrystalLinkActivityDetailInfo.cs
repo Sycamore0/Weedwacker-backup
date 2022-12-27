@@ -24,12 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static CrystalLinkActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNDcnlzdGFsTGlua0FjdGl2aXR5RGV0YWlsSW5mby5wcm90bxIfV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90bxoaQ3J5c3RhbExpbmtMZXZlbElu",
-            "Zm8ucHJvdG8ihgEKHUNyeXN0YWxMaW5rQWN0aXZpdHlEZXRhaWxJbmZvEk4K",
-            "D2xldmVsX2luZm9fbGlzdBgFIAMoCzI1LldlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8uQ3J5c3RhbExpbmtMZXZlbEluZm8SFQoNZGlmZmljdWx0",
-            "eV9pZBgMIAEoDWIGcHJvdG8z"));
+            "CiNDcnlzdGFsTGlua0FjdGl2aXR5RGV0YWlsSW5mby5wcm90bxoaQ3J5c3Rh",
+            "bExpbmtMZXZlbEluZm8ucHJvdG8iZgodQ3J5c3RhbExpbmtBY3Rpdml0eURl",
+            "dGFpbEluZm8SLgoPbGV2ZWxfaW5mb19saXN0GAUgAygLMhUuQ3J5c3RhbExp",
+            "bmtMZXZlbEluZm8SFQoNZGlmZmljdWx0eV9pZBgMIAEoDUIiqgIfV2VlZHdh",
+            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.CrystalLinkLevelInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

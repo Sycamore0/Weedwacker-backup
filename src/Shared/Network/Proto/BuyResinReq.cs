@@ -24,8 +24,8 @@ namespace Weedwacker.Shared.Network.Proto {
     static BuyResinReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFCdXlSZXNpblJlcS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90byINCgtCdXlSZXNpblJlcWIGcHJvdG8z"));
+            "ChFCdXlSZXNpblJlcS5wcm90byINCgtCdXlSZXNpblJlcUIiqgIfV2VlZHdh",
+            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

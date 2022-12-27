@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static WatcherChangeNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlXYXRjaGVyQ2hhbmdlTm90aWZ5LnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvIk8KE1dhdGNoZXJDaGFuZ2VOb3RpZnkSGwoTVW5r",
-            "MzMwMF9FTEROT05PQ0ZNTRgKIAMoDRIbChNVbmszMzAwX0ZETUpBQ0ZNT0xH",
-            "GAUgAygNYgZwcm90bzM="));
+            "ChlXYXRjaGVyQ2hhbmdlTm90aWZ5LnByb3RvIk0KE1dhdGNoZXJDaGFuZ2VO",
+            "b3RpZnkSHAoUcmVtb3ZlZF93YXRjaGVyX2xpc3QYCiADKA0SGAoQbmV3X3dh",
+            "dGNoZXJfbGlzdBgFIAMoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
+            "ay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.WatcherChangeNotify), global::Weedwacker.Shared.Network.Proto.WatcherChangeNotify.Parser, new[]{ "Unk3300ELDNONOCFMM", "Unk3300FDMJACFMOLG" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.WatcherChangeNotify), global::Weedwacker.Shared.Network.Proto.WatcherChangeNotify.Parser, new[]{ "RemovedWatcherList", "NewWatcherList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -81,8 +81,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public WatcherChangeNotify(WatcherChangeNotify other) : this() {
-      unk3300ELDNONOCFMM_ = other.unk3300ELDNONOCFMM_.Clone();
-      unk3300FDMJACFMOLG_ = other.unk3300FDMJACFMOLG_.Clone();
+      removedWatcherList_ = other.removedWatcherList_.Clone();
+      newWatcherList_ = other.newWatcherList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -92,26 +92,26 @@ namespace Weedwacker.Shared.Network.Proto {
       return new WatcherChangeNotify(this);
     }
 
-    /// <summary>Field number for the "Unk3300_ELDNONOCFMM" field.</summary>
-    public const int Unk3300ELDNONOCFMMFieldNumber = 10;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300ELDNONOCFMM_codec
+    /// <summary>Field number for the "removed_watcher_list" field.</summary>
+    public const int RemovedWatcherListFieldNumber = 10;
+    private static readonly pb::FieldCodec<uint> _repeated_removedWatcherList_codec
         = pb::FieldCodec.ForUInt32(82);
-    private readonly pbc::RepeatedField<uint> unk3300ELDNONOCFMM_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> removedWatcherList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300ELDNONOCFMM {
-      get { return unk3300ELDNONOCFMM_; }
+    public pbc::RepeatedField<uint> RemovedWatcherList {
+      get { return removedWatcherList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_FDMJACFMOLG" field.</summary>
-    public const int Unk3300FDMJACFMOLGFieldNumber = 5;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300FDMJACFMOLG_codec
+    /// <summary>Field number for the "new_watcher_list" field.</summary>
+    public const int NewWatcherListFieldNumber = 5;
+    private static readonly pb::FieldCodec<uint> _repeated_newWatcherList_codec
         = pb::FieldCodec.ForUInt32(42);
-    private readonly pbc::RepeatedField<uint> unk3300FDMJACFMOLG_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> newWatcherList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300FDMJACFMOLG {
-      get { return unk3300FDMJACFMOLG_; }
+    public pbc::RepeatedField<uint> NewWatcherList {
+      get { return newWatcherList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -129,8 +129,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk3300ELDNONOCFMM_.Equals(other.unk3300ELDNONOCFMM_)) return false;
-      if(!unk3300FDMJACFMOLG_.Equals(other.unk3300FDMJACFMOLG_)) return false;
+      if(!removedWatcherList_.Equals(other.removedWatcherList_)) return false;
+      if(!newWatcherList_.Equals(other.newWatcherList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -138,8 +138,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk3300ELDNONOCFMM_.GetHashCode();
-      hash ^= unk3300FDMJACFMOLG_.GetHashCode();
+      hash ^= removedWatcherList_.GetHashCode();
+      hash ^= newWatcherList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -158,8 +158,8 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk3300FDMJACFMOLG_.WriteTo(output, _repeated_unk3300FDMJACFMOLG_codec);
-      unk3300ELDNONOCFMM_.WriteTo(output, _repeated_unk3300ELDNONOCFMM_codec);
+      newWatcherList_.WriteTo(output, _repeated_newWatcherList_codec);
+      removedWatcherList_.WriteTo(output, _repeated_removedWatcherList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -170,8 +170,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk3300FDMJACFMOLG_.WriteTo(ref output, _repeated_unk3300FDMJACFMOLG_codec);
-      unk3300ELDNONOCFMM_.WriteTo(ref output, _repeated_unk3300ELDNONOCFMM_codec);
+      newWatcherList_.WriteTo(ref output, _repeated_newWatcherList_codec);
+      removedWatcherList_.WriteTo(ref output, _repeated_removedWatcherList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -182,8 +182,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk3300ELDNONOCFMM_.CalculateSize(_repeated_unk3300ELDNONOCFMM_codec);
-      size += unk3300FDMJACFMOLG_.CalculateSize(_repeated_unk3300FDMJACFMOLG_codec);
+      size += removedWatcherList_.CalculateSize(_repeated_removedWatcherList_codec);
+      size += newWatcherList_.CalculateSize(_repeated_newWatcherList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -196,8 +196,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk3300ELDNONOCFMM_.Add(other.unk3300ELDNONOCFMM_);
-      unk3300FDMJACFMOLG_.Add(other.unk3300FDMJACFMOLG_);
+      removedWatcherList_.Add(other.removedWatcherList_);
+      newWatcherList_.Add(other.newWatcherList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -215,12 +215,12 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 42:
           case 40: {
-            unk3300FDMJACFMOLG_.AddEntriesFrom(input, _repeated_unk3300FDMJACFMOLG_codec);
+            newWatcherList_.AddEntriesFrom(input, _repeated_newWatcherList_codec);
             break;
           }
           case 82:
           case 80: {
-            unk3300ELDNONOCFMM_.AddEntriesFrom(input, _repeated_unk3300ELDNONOCFMM_codec);
+            removedWatcherList_.AddEntriesFrom(input, _repeated_removedWatcherList_codec);
             break;
           }
         }
@@ -240,12 +240,12 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 42:
           case 40: {
-            unk3300FDMJACFMOLG_.AddEntriesFrom(ref input, _repeated_unk3300FDMJACFMOLG_codec);
+            newWatcherList_.AddEntriesFrom(ref input, _repeated_newWatcherList_codec);
             break;
           }
           case 82:
           case 80: {
-            unk3300ELDNONOCFMM_.AddEntriesFrom(ref input, _repeated_unk3300ELDNONOCFMM_codec);
+            removedWatcherList_.AddEntriesFrom(ref input, _repeated_removedWatcherList_codec);
             break;
           }
         }

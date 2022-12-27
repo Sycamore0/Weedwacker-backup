@@ -24,17 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGSettleNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVHQ0dTZXR0bGVOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8aEkdDR0VuZFJlYXNvbi5wcm90bxoZR0NHR2FtZUJ1c2lu",
-            "ZXNzVHlwZS5wcm90bxoPSXRlbVBhcmFtLnByb3RvIukCCg9HQ0dTZXR0bGVO",
-            "b3RpZnkSRAoQcmV3YXJkX2l0ZW1fbGlzdBgIIAMoCzIqLldlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8uSXRlbVBhcmFtEiIKGmZpbmlzaGVkX2No",
-            "YWxsZW5nZV9pZF9saXN0GAEgAygNEg8KB2dhbWVfaWQYAyABKA0SDgoGaXNf",
-            "d2luGAIgASgIEksKDWJ1c2luZXNzX3R5cGUYBSABKA4yNC5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLkdDR0dhbWVCdXNpbmVzc1R5cGUSGQoR",
-            "d2luX2NvbnRyb2xsZXJfaWQYCyABKA0SJAocZm9yYmlkX2ZpbmlzaF9jaGFs",
-            "bGVuZ2VfbGlzdBgKIAMoDRI9CgZyZWFzb24YBCABKA4yLS5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLkdDR0VuZFJlYXNvbmIGcHJvdG8z"));
+            "ChVHQ0dTZXR0bGVOb3RpZnkucHJvdG8aEkdDR0VuZFJlYXNvbi5wcm90bxoZ",
+            "R0NHR2FtZUJ1c2luZXNzVHlwZS5wcm90bxoPSXRlbVBhcmFtLnByb3RvIokC",
+            "Cg9HQ0dTZXR0bGVOb3RpZnkSJAoQcmV3YXJkX2l0ZW1fbGlzdBgIIAMoCzIK",
+            "Lkl0ZW1QYXJhbRIiChpmaW5pc2hlZF9jaGFsbGVuZ2VfaWRfbGlzdBgBIAMo",
+            "DRIPCgdnYW1lX2lkGAMgASgNEg4KBmlzX3dpbhgCIAEoCBIrCg1idXNpbmVz",
+            "c190eXBlGAUgASgOMhQuR0NHR2FtZUJ1c2luZXNzVHlwZRIZChF3aW5fY29u",
+            "dHJvbGxlcl9pZBgLIAEoDRIkChxmb3JiaWRfZmluaXNoX2NoYWxsZW5nZV9s",
+            "aXN0GAogAygNEh0KBnJlYXNvbhgEIAEoDjINLkdDR0VuZFJlYXNvbkIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GCGEndReasonReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GCGGameBusinessTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ItemParamReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

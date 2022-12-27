@@ -24,19 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static QuickUseWidgetReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdRdWlja1VzZVdpZGdldFJlcS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90bxoWV2lkZ2V0Q2FtZXJhSW5mby5wcm90bxoeV2lkZ2V0",
-            "Q3JlYXRlTG9jYXRpb25JbmZvLnByb3RvGhdXaWRnZXRDcmVhdG9ySW5mby5w",
-            "cm90bxoiV2lkZ2V0VGh1bmRlckJpcmRGZWF0aGVySW5mby5wcm90byLtAgoR",
-            "UXVpY2tVc2VXaWRnZXRSZXESUwoNbG9jYXRpb25faW5mbxjQDiABKAsyOS5X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLldpZGdldENyZWF0ZUxv",
-            "Y2F0aW9uSW5mb0gAEkkKC2NhbWVyYV9pbmZvGKsOIAEoCzIxLldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uV2lkZ2V0Q2FtZXJhSW5mb0gAEkoK",
-            "DGNyZWF0b3JfaW5mbxhIIAEoCzIyLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uV2lkZ2V0Q3JlYXRvckluZm9IABJjChl0aHVuZGVyX2JpcmRf",
-            "ZmVhdGhlcl9pbmZvGOsDIAEoCzI9LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uV2lkZ2V0VGh1bmRlckJpcmRGZWF0aGVySW5mb0gAQgcKBXBh",
-            "cmFtYgZwcm90bzM="));
+            "ChdRdWlja1VzZVdpZGdldFJlcS5wcm90bxoWV2lkZ2V0Q2FtZXJhSW5mby5w",
+            "cm90bxoeV2lkZ2V0Q3JlYXRlTG9jYXRpb25JbmZvLnByb3RvGhdXaWRnZXRD",
+            "cmVhdG9ySW5mby5wcm90bxoiV2lkZ2V0VGh1bmRlckJpcmRGZWF0aGVySW5m",
+            "by5wcm90byLtAQoRUXVpY2tVc2VXaWRnZXRSZXESMwoNbG9jYXRpb25faW5m",
+            "bxjQDiABKAsyGS5XaWRnZXRDcmVhdGVMb2NhdGlvbkluZm9IABIpCgtjYW1l",
+            "cmFfaW5mbxirDiABKAsyES5XaWRnZXRDYW1lcmFJbmZvSAASKgoMY3JlYXRv",
+            "cl9pbmZvGEggASgLMhIuV2lkZ2V0Q3JlYXRvckluZm9IABJDChl0aHVuZGVy",
+            "X2JpcmRfZmVhdGhlcl9pbmZvGOsDIAEoCzIdLldpZGdldFRodW5kZXJCaXJk",
+            "RmVhdGhlckluZm9IAEIHCgVwYXJhbUIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.WidgetCameraInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WidgetCreateLocationInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WidgetCreatorInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WidgetThunderBirdFeatherInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

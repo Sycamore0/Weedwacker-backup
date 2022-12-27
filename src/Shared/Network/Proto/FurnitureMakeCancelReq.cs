@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static FurnitureMakeCancelReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxGdXJuaXR1cmVNYWtlQ2FuY2VsUmVxLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvIjgKFkZ1cm5pdHVyZU1ha2VDYW5jZWxSZXES",
-            "DwoHbWFrZV9pZBgOIAEoDRINCgVpbmRleBgEIAEoDWIGcHJvdG8z"));
+            "ChxGdXJuaXR1cmVNYWtlQ2FuY2VsUmVxLnByb3RvIjgKFkZ1cm5pdHVyZU1h",
+            "a2VDYW5jZWxSZXESDwoHbWFrZV9pZBgOIAEoDRINCgVpbmRleBgEIAEoDUIi",
+            "qgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

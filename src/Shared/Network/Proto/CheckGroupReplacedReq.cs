@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static CheckGroupReplacedReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtDaGVja0dyb3VwUmVwbGFjZWRSZXEucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8iLgoVQ2hlY2tHcm91cFJlcGxhY2VkUmVxEhUK",
-            "DWdyb3VwX2lkX2xpc3QYByADKA1iBnByb3RvMw=="));
+            "ChtDaGVja0dyb3VwUmVwbGFjZWRSZXEucHJvdG8iLgoVQ2hlY2tHcm91cFJl",
+            "cGxhY2VkUmVxEhUKDWdyb3VwX2lkX2xpc3QYByADKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

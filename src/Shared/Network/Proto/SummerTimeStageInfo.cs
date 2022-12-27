@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static SummerTimeStageInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlTdW1tZXJUaW1lU3RhZ2VJbmZvLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvIksKE1N1bW1lclRpbWVTdGFnZUluZm8SEQoJb3Bl",
-            "bl90aW1lGAsgASgNEhAKCHN0YWdlX2lkGAIgASgNEg8KB2lzX29wZW4YDiAB",
-            "KAhiBnByb3RvMw=="));
+            "ChlTdW1tZXJUaW1lU3RhZ2VJbmZvLnByb3RvIksKE1N1bW1lclRpbWVTdGFn",
+            "ZUluZm8SEQoJb3Blbl90aW1lGAsgASgNEhAKCHN0YWdlX2lkGAIgASgNEg8K",
+            "B2lzX29wZW4YDiABKAhCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static RoguelikeTakeStageFirstPassRewardReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CipSb2d1ZWxpa2VUYWtlU3RhZ2VGaXJzdFBhc3NSZXdhcmRSZXEucHJvdG8S",
-            "H1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iOAokUm9ndWVsaWtl",
-            "VGFrZVN0YWdlRmlyc3RQYXNzUmV3YXJkUmVxEhAKCHN0YWdlX2lkGAIgASgN",
-            "YgZwcm90bzM="));
+            "CipSb2d1ZWxpa2VUYWtlU3RhZ2VGaXJzdFBhc3NSZXdhcmRSZXEucHJvdG8i",
+            "OAokUm9ndWVsaWtlVGFrZVN0YWdlRmlyc3RQYXNzUmV3YXJkUmVxEhAKCHN0",
+            "YWdlX2lkGAIgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
+            "b3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

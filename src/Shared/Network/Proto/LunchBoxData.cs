@@ -24,12 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static LunchBoxDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJMdW5jaEJveERhdGEucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8ipQEKDEx1bmNoQm94RGF0YRJdChFzbG90X21hdGVyaWFsX21h",
-            "cBgEIAMoCzJCLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uTHVu",
-            "Y2hCb3hEYXRhLlNsb3RNYXRlcmlhbE1hcEVudHJ5GjYKFFNsb3RNYXRlcmlh",
-            "bE1hcEVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1ZRgCIAEoDToCOAFiBnBy",
-            "b3RvMw=="));
+            "ChJMdW5jaEJveERhdGEucHJvdG8ihQEKDEx1bmNoQm94RGF0YRI9ChFzbG90",
+            "X21hdGVyaWFsX21hcBgEIAMoCzIiLkx1bmNoQm94RGF0YS5TbG90TWF0ZXJp",
+            "YWxNYXBFbnRyeRo2ChRTbG90TWF0ZXJpYWxNYXBFbnRyeRILCgNrZXkYASAB",
+            "KA0SDQoFdmFsdWUYAiABKA06AjgBQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5O",
+            "ZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

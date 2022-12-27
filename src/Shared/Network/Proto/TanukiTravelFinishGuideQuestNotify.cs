@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static TanukiTravelFinishGuideQuestNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CihUYW51a2lUcmF2ZWxGaW5pc2hHdWlkZVF1ZXN0Tm90aWZ5LnByb3RvEh9X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIjkKIlRhbnVraVRyYXZl",
-            "bEZpbmlzaEd1aWRlUXVlc3ROb3RpZnkSEwoLYWN0aXZpdHlfaWQYASABKA1i",
-            "BnByb3RvMw=="));
+            "CihUYW51a2lUcmF2ZWxGaW5pc2hHdWlkZVF1ZXN0Tm90aWZ5LnByb3RvIjkK",
+            "IlRhbnVraVRyYXZlbEZpbmlzaEd1aWRlUXVlc3ROb3RpZnkSEwoLYWN0aXZp",
+            "dHlfaWQYASABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

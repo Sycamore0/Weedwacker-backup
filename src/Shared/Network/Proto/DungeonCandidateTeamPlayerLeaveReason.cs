@@ -25,14 +25,14 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CitEdW5nZW9uQ2FuZGlkYXRlVGVhbVBsYXllckxlYXZlUmVhc29uLnByb3Rv",
-            "Eh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvKpkCCiVEdW5nZW9u",
-            "Q2FuZGlkYXRlVGVhbVBsYXllckxlYXZlUmVhc29uEjoKNkRVTkdFT05fQ0FO",
-            "RElEQVRFX1RFQU1fUExBWUVSX0xFQVZFX1JFQVNPTl9UUExSX05PUk1BTBAA",
-            "EjcKM0RVTkdFT05fQ0FORElEQVRFX1RFQU1fUExBWUVSX0xFQVZFX1JFQVNP",
-            "Tl9UUExSX0RJRRABEjsKN0RVTkdFT05fQ0FORElEQVRFX1RFQU1fUExBWUVS",
-            "X0xFQVZFX1JFQVNPTl9UUExSX0JFX0tJQ0sQAhI+CjpEVU5HRU9OX0NBTkRJ",
-            "REFURV9URUFNX1BMQVlFUl9MRUFWRV9SRUFTT05fVFBMUl9ESVNDT05ORUNU",
-            "EANiBnByb3RvMw=="));
+            "KpkCCiVEdW5nZW9uQ2FuZGlkYXRlVGVhbVBsYXllckxlYXZlUmVhc29uEjoK",
+            "NkRVTkdFT05fQ0FORElEQVRFX1RFQU1fUExBWUVSX0xFQVZFX1JFQVNPTl9U",
+            "UExSX05PUk1BTBAAEjcKM0RVTkdFT05fQ0FORElEQVRFX1RFQU1fUExBWUVS",
+            "X0xFQVZFX1JFQVNPTl9UUExSX0RJRRABEjsKN0RVTkdFT05fQ0FORElEQVRF",
+            "X1RFQU1fUExBWUVSX0xFQVZFX1JFQVNPTl9UUExSX0JFX0tJQ0sQAhI+CjpE",
+            "VU5HRU9OX0NBTkRJREFURV9URUFNX1BMQVlFUl9MRUFWRV9SRUFTT05fVFBM",
+            "Ul9ESVNDT05ORUNUEANCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.DungeonCandidateTeamPlayerLeaveReason), }, null, null));

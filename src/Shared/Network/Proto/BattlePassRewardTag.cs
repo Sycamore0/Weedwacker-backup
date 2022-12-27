@@ -24,12 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static BattlePassRewardTagReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlCYXR0bGVQYXNzUmV3YXJkVGFnLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvGhxCYXR0bGVQYXNzVW5sb2NrU3RhdHVzLnByb3Rv",
-            "IocBChNCYXR0bGVQYXNzUmV3YXJkVGFnEk4KDXVubG9ja19zdGF0dXMYCyAB",
-            "KA4yNy5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkJhdHRsZVBh",
-            "c3NVbmxvY2tTdGF0dXMSEQoJcmV3YXJkX2lkGAQgASgNEg0KBWxldmVsGAEg",
-            "ASgNYgZwcm90bzM="));
+            "ChlCYXR0bGVQYXNzUmV3YXJkVGFnLnByb3RvGhxCYXR0bGVQYXNzVW5sb2Nr",
+            "U3RhdHVzLnByb3RvImcKE0JhdHRsZVBhc3NSZXdhcmRUYWcSLgoNdW5sb2Nr",
+            "X3N0YXR1cxgLIAEoDjIXLkJhdHRsZVBhc3NVbmxvY2tTdGF0dXMSEQoJcmV3",
+            "YXJkX2lkGAQgASgNEg0KBWxldmVsGAEgASgNQiKqAh9XZWVkd2Fja2VyLlNo",
+            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.BattlePassUnlockStatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

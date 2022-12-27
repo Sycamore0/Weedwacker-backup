@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static AsterMidInfoNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhBc3Rlck1pZEluZm9Ob3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8aGEFzdGVyTWlkRGV0YWlsSW5mby5wcm90byJXChJB",
-            "c3Rlck1pZEluZm9Ob3RpZnkSQQoEaW5mbxgHIAEoCzIzLldlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8uQXN0ZXJNaWREZXRhaWxJbmZvYgZwcm90",
-            "bzM="));
+            "ChhBc3Rlck1pZEluZm9Ob3RpZnkucHJvdG8aGEFzdGVyTWlkRGV0YWlsSW5m",
+            "by5wcm90byI3ChJBc3Rlck1pZEluZm9Ob3RpZnkSIQoEaW5mbxgHIAEoCzIT",
+            "LkFzdGVyTWlkRGV0YWlsSW5mb0IiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
+            "d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AsterMidDetailInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

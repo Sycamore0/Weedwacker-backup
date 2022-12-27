@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static BartenderCompleteOrderRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9CYXJ0ZW5kZXJDb21wbGV0ZU9yZGVyUnNwLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvIo8BChlCYXJ0ZW5kZXJDb21wbGV0ZU9y",
-            "ZGVyUnNwEhIKCmZvcm11bGFfaWQYCSABKA0SEAoIcXVlc3RfaWQYByABKA0S",
-            "FwoPZmluaXNoX29yZGVyX2lkGAYgASgNEg8KB3JldGNvZGUYCiABKAUSDgoG",
-            "aXNfbmV3GAggASgIEhIKCmFmZml4X2xpc3QYASADKA1iBnByb3RvMw=="));
+            "Ch9CYXJ0ZW5kZXJDb21wbGV0ZU9yZGVyUnNwLnByb3RvIo8BChlCYXJ0ZW5k",
+            "ZXJDb21wbGV0ZU9yZGVyUnNwEhIKCmZvcm11bGFfaWQYCSABKA0SEAoIcXVl",
+            "c3RfaWQYByABKA0SFwoPZmluaXNoX29yZGVyX2lkGAYgASgNEg8KB3JldGNv",
+            "ZGUYCiABKAUSDgoGaXNfbmV3GAggASgIEhIKCmFmZml4X2xpc3QYASADKA1C",
+            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

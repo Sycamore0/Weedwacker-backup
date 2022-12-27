@@ -24,17 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static IslandPartySettleNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1Jc2xhbmRQYXJ0eVNldHRsZU5vdGlmeS5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90bxobRXhoaWJpdGlvbkRpc3BsYXlJbmZvLnBy",
-            "b3RvGhdHYWxsZXJ5U3RvcFJlYXNvbi5wcm90bxoiSXNsYW5kUGFydHlHYWxs",
-            "ZXJ5U2V0dGxlSW5mby5wcm90byKuAgoXSXNsYW5kUGFydHlTZXR0bGVOb3Rp",
-            "ZnkSEwoLdGltZV9yZW1haW4YCSABKA0SFQoNaXNfbmV3X3JlY29yZBgDIAEo",
-            "CBJKCgpzY29yZV9saXN0GAUgAygLMjYuV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90by5FeGhpYml0aW9uRGlzcGxheUluZm8SQgoGcmVhc29uGAwg",
-            "ASgOMjIuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5HYWxsZXJ5",
-            "U3RvcFJlYXNvbhJXChBzZXR0bGVfaW5mb19saXN0GA0gAygLMj0uV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5Jc2xhbmRQYXJ0eUdhbGxlcnlT",
-            "ZXR0bGVJbmZvYgZwcm90bzM="));
+            "Ch1Jc2xhbmRQYXJ0eVNldHRsZU5vdGlmeS5wcm90bxobRXhoaWJpdGlvbkRp",
+            "c3BsYXlJbmZvLnByb3RvGhdHYWxsZXJ5U3RvcFJlYXNvbi5wcm90bxoiSXNs",
+            "YW5kUGFydHlHYWxsZXJ5U2V0dGxlSW5mby5wcm90byLOAQoXSXNsYW5kUGFy",
+            "dHlTZXR0bGVOb3RpZnkSEwoLdGltZV9yZW1haW4YCSABKA0SFQoNaXNfbmV3",
+            "X3JlY29yZBgDIAEoCBIqCgpzY29yZV9saXN0GAUgAygLMhYuRXhoaWJpdGlv",
+            "bkRpc3BsYXlJbmZvEiIKBnJlYXNvbhgMIAEoDjISLkdhbGxlcnlTdG9wUmVh",
+            "c29uEjcKEHNldHRsZV9pbmZvX2xpc3QYDSADKAsyHS5Jc2xhbmRQYXJ0eUdh",
+            "bGxlcnlTZXR0bGVJbmZvQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ExhibitionDisplayInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GalleryStopReasonReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IslandPartyGallerySettleInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

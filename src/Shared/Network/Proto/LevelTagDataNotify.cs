@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static LevelTagDataNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhMZXZlbFRhZ0RhdGFOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8iLwoSTGV2ZWxUYWdEYXRhTm90aWZ5EhkKEWxldmVs",
-            "X3RhZ19pZF9saXN0GA8gAygNYgZwcm90bzM="));
+            "ChhMZXZlbFRhZ0RhdGFOb3RpZnkucHJvdG8iLwoSTGV2ZWxUYWdEYXRhTm90",
+            "aWZ5EhkKEWxldmVsX3RhZ19pZF9saXN0GA8gAygNQiKqAh9XZWVkd2Fja2Vy",
+            "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

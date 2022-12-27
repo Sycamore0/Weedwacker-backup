@@ -24,19 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static MichiaeMatsuriActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiZNaWNoaWFlTWF0c3VyaUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxIfV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90bxopTWljaGlhZU1hdHN1cmlD",
-            "aGFsbGVuZ2VQb3NpdGlvbkluZm8ucHJvdG8aJU1pY2hpYWVNYXRzdXJpQ2hl",
-            "c3RQb3NpdGlvbkluZm8ucHJvdG8aGU1pY2hpYWVNYXRzdXJpU3RhZ2UucHJv",
-            "dG8i5wIKIE1pY2hpYWVNYXRzdXJpQWN0aXZpdHlEZXRhaWxJbmZvEhgKEGdh",
-            "aW5fY3J5c3RhbF9leHAYCyABKA0SSAoKc3RhZ2VfbGlzdBgOIAMoCzI0Lldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uTWljaGlhZU1hdHN1cmlT",
-            "dGFnZRIjCht1bmxvY2tlZF9jcnlzdGFsX3NraWxsX2xpc3QYBSADKA0SYAoS",
-            "Y2hhbGxlbmdlX3Bvc19saXN0GAMgAygLMkQuV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90by5NaWNoaWFlTWF0c3VyaUNoYWxsZW5nZVBvc2l0aW9u",
-            "SW5mbxJYCg5jaGVzdF9wb3NfbGlzdBgMIAMoCzJALldlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8uTWljaGlhZU1hdHN1cmlDaGVzdFBvc2l0aW9u",
-            "SW5mb2IGcHJvdG8z"));
+            "CiZNaWNoaWFlTWF0c3VyaUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxopTWlj",
+            "aGlhZU1hdHN1cmlDaGFsbGVuZ2VQb3NpdGlvbkluZm8ucHJvdG8aJU1pY2hp",
+            "YWVNYXRzdXJpQ2hlc3RQb3NpdGlvbkluZm8ucHJvdG8aGU1pY2hpYWVNYXRz",
+            "dXJpU3RhZ2UucHJvdG8ihwIKIE1pY2hpYWVNYXRzdXJpQWN0aXZpdHlEZXRh",
+            "aWxJbmZvEhgKEGdhaW5fY3J5c3RhbF9leHAYCyABKA0SKAoKc3RhZ2VfbGlz",
+            "dBgOIAMoCzIULk1pY2hpYWVNYXRzdXJpU3RhZ2USIwobdW5sb2NrZWRfY3J5",
+            "c3RhbF9za2lsbF9saXN0GAUgAygNEkAKEmNoYWxsZW5nZV9wb3NfbGlzdBgD",
+            "IAMoCzIkLk1pY2hpYWVNYXRzdXJpQ2hhbGxlbmdlUG9zaXRpb25JbmZvEjgK",
+            "DmNoZXN0X3Bvc19saXN0GAwgAygLMiAuTWljaGlhZU1hdHN1cmlDaGVzdFBv",
+            "c2l0aW9uSW5mb0IiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChallengePositionInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriChestPositionInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MichiaeMatsuriStageReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

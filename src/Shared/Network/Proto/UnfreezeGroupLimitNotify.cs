@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static UnfreezeGroupLimitNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5VbmZyZWV6ZUdyb3VwTGltaXROb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8iPgoYVW5mcmVlemVHcm91cExpbWl0Tm90",
-            "aWZ5EhAKCHBvaW50X2lkGA8gASgNEhAKCHNjZW5lX2lkGA0gASgNYgZwcm90",
-            "bzM="));
+            "Ch5VbmZyZWV6ZUdyb3VwTGltaXROb3RpZnkucHJvdG8iPgoYVW5mcmVlemVH",
+            "cm91cExpbWl0Tm90aWZ5EhAKCHBvaW50X2lkGA8gASgNEhAKCHNjZW5lX2lk",
+            "GA0gASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static EvtAvatarLockChairReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtFdnRBdmF0YXJMb2NrQ2hhaXJSZXEucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8aDFZlY3Rvci5wcm90byJkChVFdnRBdmF0YXJM",
-            "b2NrQ2hhaXJSZXESOQoIcG9zaXRpb24YAiABKAsyJy5XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvLlZlY3RvchIQCghjaGFpcl9pZBgFIAEoBGIG",
-            "cHJvdG8z"));
+            "ChtFdnRBdmF0YXJMb2NrQ2hhaXJSZXEucHJvdG8aDFZlY3Rvci5wcm90byJE",
+            "ChVFdnRBdmF0YXJMb2NrQ2hhaXJSZXESGQoIcG9zaXRpb24YAiABKAsyBy5W",
+            "ZWN0b3ISEAoIY2hhaXJfaWQYBSABKARCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

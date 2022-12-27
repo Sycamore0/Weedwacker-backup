@@ -24,22 +24,19 @@ namespace Weedwacker.Shared.Network.Proto {
     static EvtBulletHitNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhFdnRCdWxsZXRIaXROb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8aEUZvcndhcmRUeXBlLnByb3RvGhVIaXRDb2xsaWRl",
-            "clR5cGUucHJvdG8aDFZlY3Rvci5wcm90byKYAwoSRXZ0QnVsbGV0SGl0Tm90",
-            "aWZ5EkIKDGZvcndhcmRfdHlwZRgCIAEoDjIsLldlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8uRm9yd2FyZFR5cGUSGwoTVW5rMzMwMF9FTE5GREtO",
-            "R0hGUBgEIAEoDRI7CgpoaXRfbm9ybWFsGAkgASgLMicuV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90by5WZWN0b3ISGwoTVW5rMzMwMF9LQU5BSkJK",
-            "SENMRxgGIAEoDRI6CgloaXRfcG9pbnQYCCABKAsyJy5XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvLlZlY3RvchJLChFoaXRfY29sbGlkZXJfdHlw",
-            "ZRgKIAEoDjIwLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uSGl0",
-            "Q29sbGlkZXJUeXBlEhEKCWVudGl0eV9pZBgOIAEoDRIUCgxmb3J3YXJkX3Bl",
-            "ZXIYAyABKA0SFQoNaGl0X2JveF9pbmRleBgBIAEoBWIGcHJvdG8z"));
+            "ChhFdnRCdWxsZXRIaXROb3RpZnkucHJvdG8aEUZvcndhcmRUeXBlLnByb3Rv",
+            "GhVIaXRDb2xsaWRlclR5cGUucHJvdG8aDFZlY3Rvci5wcm90byKPAgoSRXZ0",
+            "QnVsbGV0SGl0Tm90aWZ5EiIKDGZvcndhcmRfdHlwZRgCIAEoDjIMLkZvcndh",
+            "cmRUeXBlEhgKEHNpbmdsZV9idWxsZXRfaWQYBCABKA0SGwoKaGl0X25vcm1h",
+            "bBgJIAEoCzIHLlZlY3RvchIVCg1oaXRfZW50aXR5X2lkGAYgASgNEhoKCWhp",
+            "dF9wb2ludBgIIAEoCzIHLlZlY3RvchIrChFoaXRfY29sbGlkZXJfdHlwZRgK",
+            "IAEoDjIQLkhpdENvbGxpZGVyVHlwZRIRCgllbnRpdHlfaWQYDiABKA0SFAoM",
+            "Zm9yd2FyZF9wZWVyGAMgASgNEhUKDWhpdF9ib3hfaW5kZXgYASABKAVCIqoC",
+            "H1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ForwardTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HitColliderTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtBulletHitNotify), global::Weedwacker.Shared.Network.Proto.EvtBulletHitNotify.Parser, new[]{ "ForwardType", "Unk3300ELNFDKNGHFP", "HitNormal", "Unk3300KANAJBJHCLG", "HitPoint", "HitColliderType", "EntityId", "ForwardPeer", "HitBoxIndex" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtBulletHitNotify), global::Weedwacker.Shared.Network.Proto.EvtBulletHitNotify.Parser, new[]{ "ForwardType", "SingleBulletId", "HitNormal", "HitEntityId", "HitPoint", "HitColliderType", "EntityId", "ForwardPeer", "HitBoxIndex" }, null, null, null, null)
           }));
     }
     #endregion
@@ -91,9 +88,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EvtBulletHitNotify(EvtBulletHitNotify other) : this() {
       forwardType_ = other.forwardType_;
-      unk3300ELNFDKNGHFP_ = other.unk3300ELNFDKNGHFP_;
+      singleBulletId_ = other.singleBulletId_;
       hitNormal_ = other.hitNormal_ != null ? other.hitNormal_.Clone() : null;
-      unk3300KANAJBJHCLG_ = other.unk3300KANAJBJHCLG_;
+      hitEntityId_ = other.hitEntityId_;
       hitPoint_ = other.hitPoint_ != null ? other.hitPoint_.Clone() : null;
       hitColliderType_ = other.hitColliderType_;
       entityId_ = other.entityId_;
@@ -120,15 +117,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_ELNFDKNGHFP" field.</summary>
-    public const int Unk3300ELNFDKNGHFPFieldNumber = 4;
-    private uint unk3300ELNFDKNGHFP_;
+    /// <summary>Field number for the "single_bullet_id" field.</summary>
+    public const int SingleBulletIdFieldNumber = 4;
+    private uint singleBulletId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300ELNFDKNGHFP {
-      get { return unk3300ELNFDKNGHFP_; }
+    public uint SingleBulletId {
+      get { return singleBulletId_; }
       set {
-        unk3300ELNFDKNGHFP_ = value;
+        singleBulletId_ = value;
       }
     }
 
@@ -144,15 +141,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_KANAJBJHCLG" field.</summary>
-    public const int Unk3300KANAJBJHCLGFieldNumber = 6;
-    private uint unk3300KANAJBJHCLG_;
+    /// <summary>Field number for the "hit_entity_id" field.</summary>
+    public const int HitEntityIdFieldNumber = 6;
+    private uint hitEntityId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300KANAJBJHCLG {
-      get { return unk3300KANAJBJHCLG_; }
+    public uint HitEntityId {
+      get { return hitEntityId_; }
       set {
-        unk3300KANAJBJHCLG_ = value;
+        hitEntityId_ = value;
       }
     }
 
@@ -232,9 +229,9 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (ForwardType != other.ForwardType) return false;
-      if (Unk3300ELNFDKNGHFP != other.Unk3300ELNFDKNGHFP) return false;
+      if (SingleBulletId != other.SingleBulletId) return false;
       if (!object.Equals(HitNormal, other.HitNormal)) return false;
-      if (Unk3300KANAJBJHCLG != other.Unk3300KANAJBJHCLG) return false;
+      if (HitEntityId != other.HitEntityId) return false;
       if (!object.Equals(HitPoint, other.HitPoint)) return false;
       if (HitColliderType != other.HitColliderType) return false;
       if (EntityId != other.EntityId) return false;
@@ -248,9 +245,9 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (ForwardType != global::Weedwacker.Shared.Network.Proto.ForwardType.Local) hash ^= ForwardType.GetHashCode();
-      if (Unk3300ELNFDKNGHFP != 0) hash ^= Unk3300ELNFDKNGHFP.GetHashCode();
+      if (SingleBulletId != 0) hash ^= SingleBulletId.GetHashCode();
       if (hitNormal_ != null) hash ^= HitNormal.GetHashCode();
-      if (Unk3300KANAJBJHCLG != 0) hash ^= Unk3300KANAJBJHCLG.GetHashCode();
+      if (HitEntityId != 0) hash ^= HitEntityId.GetHashCode();
       if (hitPoint_ != null) hash ^= HitPoint.GetHashCode();
       if (HitColliderType != global::Weedwacker.Shared.Network.Proto.HitColliderType.Invalid) hash ^= HitColliderType.GetHashCode();
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
@@ -286,13 +283,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(24);
         output.WriteUInt32(ForwardPeer);
       }
-      if (Unk3300ELNFDKNGHFP != 0) {
+      if (SingleBulletId != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk3300ELNFDKNGHFP);
+        output.WriteUInt32(SingleBulletId);
       }
-      if (Unk3300KANAJBJHCLG != 0) {
+      if (HitEntityId != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(Unk3300KANAJBJHCLG);
+        output.WriteUInt32(HitEntityId);
       }
       if (hitPoint_ != null) {
         output.WriteRawTag(66);
@@ -332,13 +329,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(24);
         output.WriteUInt32(ForwardPeer);
       }
-      if (Unk3300ELNFDKNGHFP != 0) {
+      if (SingleBulletId != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk3300ELNFDKNGHFP);
+        output.WriteUInt32(SingleBulletId);
       }
-      if (Unk3300KANAJBJHCLG != 0) {
+      if (HitEntityId != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(Unk3300KANAJBJHCLG);
+        output.WriteUInt32(HitEntityId);
       }
       if (hitPoint_ != null) {
         output.WriteRawTag(66);
@@ -369,14 +366,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ForwardType != global::Weedwacker.Shared.Network.Proto.ForwardType.Local) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ForwardType);
       }
-      if (Unk3300ELNFDKNGHFP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300ELNFDKNGHFP);
+      if (SingleBulletId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SingleBulletId);
       }
       if (hitNormal_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(HitNormal);
       }
-      if (Unk3300KANAJBJHCLG != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300KANAJBJHCLG);
+      if (HitEntityId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(HitEntityId);
       }
       if (hitPoint_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(HitPoint);
@@ -408,8 +405,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.ForwardType != global::Weedwacker.Shared.Network.Proto.ForwardType.Local) {
         ForwardType = other.ForwardType;
       }
-      if (other.Unk3300ELNFDKNGHFP != 0) {
-        Unk3300ELNFDKNGHFP = other.Unk3300ELNFDKNGHFP;
+      if (other.SingleBulletId != 0) {
+        SingleBulletId = other.SingleBulletId;
       }
       if (other.hitNormal_ != null) {
         if (hitNormal_ == null) {
@@ -417,8 +414,8 @@ namespace Weedwacker.Shared.Network.Proto {
         }
         HitNormal.MergeFrom(other.HitNormal);
       }
-      if (other.Unk3300KANAJBJHCLG != 0) {
-        Unk3300KANAJBJHCLG = other.Unk3300KANAJBJHCLG;
+      if (other.HitEntityId != 0) {
+        HitEntityId = other.HitEntityId;
       }
       if (other.hitPoint_ != null) {
         if (hitPoint_ == null) {
@@ -466,11 +463,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 32: {
-            Unk3300ELNFDKNGHFP = input.ReadUInt32();
+            SingleBulletId = input.ReadUInt32();
             break;
           }
           case 48: {
-            Unk3300KANAJBJHCLG = input.ReadUInt32();
+            HitEntityId = input.ReadUInt32();
             break;
           }
           case 66: {
@@ -523,11 +520,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 32: {
-            Unk3300ELNFDKNGHFP = input.ReadUInt32();
+            SingleBulletId = input.ReadUInt32();
             break;
           }
           case 48: {
-            Unk3300KANAJBJHCLG = input.ReadUInt32();
+            HitEntityId = input.ReadUInt32();
             break;
           }
           case 66: {

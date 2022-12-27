@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static UpgradeRoguelikeShikigamiReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJVcGdyYWRlUm9ndWVsaWtlU2hpa2lnYW1pUmVxLnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIlEKHFVwZ3JhZGVSb2d1ZWxpa2VT",
-            "aGlraWdhbWlSZXESGgoSc2hpa2lnYW1pX2dyb3VwX2lkGA8gASgNEhUKDXVw",
-            "Z3JhZGVfbGV2ZWwYCiABKA1iBnByb3RvMw=="));
+            "CiJVcGdyYWRlUm9ndWVsaWtlU2hpa2lnYW1pUmVxLnByb3RvIlEKHFVwZ3Jh",
+            "ZGVSb2d1ZWxpa2VTaGlraWdhbWlSZXESGgoSc2hpa2lnYW1pX2dyb3VwX2lk",
+            "GA8gASgNEhUKDXVwZ3JhZGVfbGV2ZWwYCiABKA1CIqoCH1dlZWR3YWNrZXIu",
+            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static FleurFairFallInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdGbGV1ckZhaXJGYWxsSW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byInChFGbGV1ckZhaXJGYWxsSW5mbxISCgpiZXN0X3Nj",
-            "b3JlGAsgASgNYgZwcm90bzM="));
+            "ChdGbGV1ckZhaXJGYWxsSW5mby5wcm90byInChFGbGV1ckZhaXJGYWxsSW5m",
+            "bxISCgpiZXN0X3Njb3JlGAsgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5O",
+            "ZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,19 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerCookRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNQbGF5ZXJDb29rUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvGhRDb29rUmVjaXBlRGF0YS5wcm90bxoPSXRlbVBhcmFtLnBy",
-            "b3RvIqQCCg1QbGF5ZXJDb29rUnNwEg8KB3JldGNvZGUYBCABKAUSRAoLcmVj",
-            "aXBlX2RhdGEYDCABKAsyLy5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvLkNvb2tSZWNpcGVEYXRhEj0KCWl0ZW1fbGlzdBgFIAMoCzIqLldlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uSXRlbVBhcmFtEhsKE1VuazMz",
-            "MDBfTkRQSE5OT0ZFQkwYASABKA0SQwoPZXh0cmFfaXRlbV9saXN0GAMgAygL",
-            "MiouV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5JdGVtUGFyYW0S",
-            "GwoTVW5rMzMwMF9KUElDTElETElFQxgLIAEoDWIGcHJvdG8z"));
+            "ChNQbGF5ZXJDb29rUnNwLnByb3RvGhRDb29rUmVjaXBlRGF0YS5wcm90bxoP",
+            "SXRlbVBhcmFtLnByb3RvIrMBCg1QbGF5ZXJDb29rUnNwEg8KB3JldGNvZGUY",
+            "BCABKAUSJAoLcmVjaXBlX2RhdGEYDCABKAsyDy5Db29rUmVjaXBlRGF0YRId",
+            "CglpdGVtX2xpc3QYBSADKAsyCi5JdGVtUGFyYW0SEwoLcXRlX3F1YWxpdHkY",
+            "ASABKA0SIwoPZXh0cmFfaXRlbV9saXN0GAMgAygLMgouSXRlbVBhcmFtEhIK",
+            "CmNvb2tfY291bnQYCyABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
+            "cmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.CookRecipeDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ItemParamReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerCookRsp), global::Weedwacker.Shared.Network.Proto.PlayerCookRsp.Parser, new[]{ "Retcode", "RecipeData", "ItemList", "Unk3300NDPHNNOFEBL", "ExtraItemList", "Unk3300JPICLIDLIEC" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerCookRsp), global::Weedwacker.Shared.Network.Proto.PlayerCookRsp.Parser, new[]{ "Retcode", "RecipeData", "ItemList", "QteQuality", "ExtraItemList", "CookCount" }, null, null, null, null)
           }));
     }
     #endregion
@@ -89,9 +87,9 @@ namespace Weedwacker.Shared.Network.Proto {
       retcode_ = other.retcode_;
       recipeData_ = other.recipeData_ != null ? other.recipeData_.Clone() : null;
       itemList_ = other.itemList_.Clone();
-      unk3300NDPHNNOFEBL_ = other.unk3300NDPHNNOFEBL_;
+      qteQuality_ = other.qteQuality_;
       extraItemList_ = other.extraItemList_.Clone();
-      unk3300JPICLIDLIEC_ = other.unk3300JPICLIDLIEC_;
+      cookCount_ = other.cookCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -136,15 +134,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return itemList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_NDPHNNOFEBL" field.</summary>
-    public const int Unk3300NDPHNNOFEBLFieldNumber = 1;
-    private uint unk3300NDPHNNOFEBL_;
+    /// <summary>Field number for the "qte_quality" field.</summary>
+    public const int QteQualityFieldNumber = 1;
+    private uint qteQuality_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300NDPHNNOFEBL {
-      get { return unk3300NDPHNNOFEBL_; }
+    public uint QteQuality {
+      get { return qteQuality_; }
       set {
-        unk3300NDPHNNOFEBL_ = value;
+        qteQuality_ = value;
       }
     }
 
@@ -159,15 +157,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return extraItemList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_JPICLIDLIEC" field.</summary>
-    public const int Unk3300JPICLIDLIECFieldNumber = 11;
-    private uint unk3300JPICLIDLIEC_;
+    /// <summary>Field number for the "cook_count" field.</summary>
+    public const int CookCountFieldNumber = 11;
+    private uint cookCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300JPICLIDLIEC {
-      get { return unk3300JPICLIDLIEC_; }
+    public uint CookCount {
+      get { return cookCount_; }
       set {
-        unk3300JPICLIDLIEC_ = value;
+        cookCount_ = value;
       }
     }
 
@@ -189,9 +187,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Retcode != other.Retcode) return false;
       if (!object.Equals(RecipeData, other.RecipeData)) return false;
       if(!itemList_.Equals(other.itemList_)) return false;
-      if (Unk3300NDPHNNOFEBL != other.Unk3300NDPHNNOFEBL) return false;
+      if (QteQuality != other.QteQuality) return false;
       if(!extraItemList_.Equals(other.extraItemList_)) return false;
-      if (Unk3300JPICLIDLIEC != other.Unk3300JPICLIDLIEC) return false;
+      if (CookCount != other.CookCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -202,9 +200,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
       if (recipeData_ != null) hash ^= RecipeData.GetHashCode();
       hash ^= itemList_.GetHashCode();
-      if (Unk3300NDPHNNOFEBL != 0) hash ^= Unk3300NDPHNNOFEBL.GetHashCode();
+      if (QteQuality != 0) hash ^= QteQuality.GetHashCode();
       hash ^= extraItemList_.GetHashCode();
-      if (Unk3300JPICLIDLIEC != 0) hash ^= Unk3300JPICLIDLIEC.GetHashCode();
+      if (CookCount != 0) hash ^= CookCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -223,9 +221,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300NDPHNNOFEBL != 0) {
+      if (QteQuality != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk3300NDPHNNOFEBL);
+        output.WriteUInt32(QteQuality);
       }
       extraItemList_.WriteTo(output, _repeated_extraItemList_codec);
       if (Retcode != 0) {
@@ -233,9 +231,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteInt32(Retcode);
       }
       itemList_.WriteTo(output, _repeated_itemList_codec);
-      if (Unk3300JPICLIDLIEC != 0) {
+      if (CookCount != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk3300JPICLIDLIEC);
+        output.WriteUInt32(CookCount);
       }
       if (recipeData_ != null) {
         output.WriteRawTag(98);
@@ -251,9 +249,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300NDPHNNOFEBL != 0) {
+      if (QteQuality != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk3300NDPHNNOFEBL);
+        output.WriteUInt32(QteQuality);
       }
       extraItemList_.WriteTo(ref output, _repeated_extraItemList_codec);
       if (Retcode != 0) {
@@ -261,9 +259,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteInt32(Retcode);
       }
       itemList_.WriteTo(ref output, _repeated_itemList_codec);
-      if (Unk3300JPICLIDLIEC != 0) {
+      if (CookCount != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk3300JPICLIDLIEC);
+        output.WriteUInt32(CookCount);
       }
       if (recipeData_ != null) {
         output.WriteRawTag(98);
@@ -286,12 +284,12 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RecipeData);
       }
       size += itemList_.CalculateSize(_repeated_itemList_codec);
-      if (Unk3300NDPHNNOFEBL != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300NDPHNNOFEBL);
+      if (QteQuality != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(QteQuality);
       }
       size += extraItemList_.CalculateSize(_repeated_extraItemList_codec);
-      if (Unk3300JPICLIDLIEC != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300JPICLIDLIEC);
+      if (CookCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CookCount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -315,12 +313,12 @@ namespace Weedwacker.Shared.Network.Proto {
         RecipeData.MergeFrom(other.RecipeData);
       }
       itemList_.Add(other.itemList_);
-      if (other.Unk3300NDPHNNOFEBL != 0) {
-        Unk3300NDPHNNOFEBL = other.Unk3300NDPHNNOFEBL;
+      if (other.QteQuality != 0) {
+        QteQuality = other.QteQuality;
       }
       extraItemList_.Add(other.extraItemList_);
-      if (other.Unk3300JPICLIDLIEC != 0) {
-        Unk3300JPICLIDLIEC = other.Unk3300JPICLIDLIEC;
+      if (other.CookCount != 0) {
+        CookCount = other.CookCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -338,7 +336,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Unk3300NDPHNNOFEBL = input.ReadUInt32();
+            QteQuality = input.ReadUInt32();
             break;
           }
           case 26: {
@@ -354,7 +352,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk3300JPICLIDLIEC = input.ReadUInt32();
+            CookCount = input.ReadUInt32();
             break;
           }
           case 98: {
@@ -380,7 +378,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Unk3300NDPHNNOFEBL = input.ReadUInt32();
+            QteQuality = input.ReadUInt32();
             break;
           }
           case 26: {
@@ -396,7 +394,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk3300JPICLIDLIEC = input.ReadUInt32();
+            CookCount = input.ReadUInt32();
             break;
           }
           case 98: {

@@ -24,19 +24,18 @@ namespace Weedwacker.Shared.Network.Proto {
     static EvtAnimatorStateChangedInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFFdnRBbmltYXRvclN0YXRlQ2hhbmdlZEluZm8ucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8aDFZlY3Rvci5wcm90byKuAgobRXZ0",
-            "QW5pbWF0b3JTdGF0ZUNoYW5nZWRJbmZvEhUKDWZhZGVfZHVyYXRpb24YBCAB",
-            "KAISGwoTVW5rMzMwMF9CS0JQR0lBT0JFTBgLIAEoDRIbChNVbmszMzAwX05N",
-            "Q0NMSUtNT0VOGAEgASgNEjQKA3BvcxgFIAEoCzInLldlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8uVmVjdG9yEhsKE1VuazMzMDBfS0xNRUtNR0ZH",
-            "UEQYAyABKAgSHwoXbm9ybWFsaXplZF90aW1lX2NvbXBhY3QYBiABKA0SGwoT",
-            "VW5rMzMwMF9NRU9QS0VESkNJThgHIAEoCBIaChJmYWNlX2FuZ2xlX2NvbXBh",
-            "Y3QYDyABKAUSEQoJZW50aXR5X2lkGAIgASgNYgZwcm90bzM="));
+            "CiFFdnRBbmltYXRvclN0YXRlQ2hhbmdlZEluZm8ucHJvdG8aDFZlY3Rvci5w",
+            "cm90byL6AQobRXZ0QW5pbWF0b3JTdGF0ZUNoYW5nZWRJbmZvEhUKDWZhZGVf",
+            "ZHVyYXRpb24YBCABKAISFQoNdG9fc3RhdGVfaGFzaBgLIAEoDRINCgVsYXll",
+            "chgBIAEoDRIUCgNwb3MYBSABKAsyBy5WZWN0b3ISGwoTVW5rMzMwMF9LTE1F",
+            "S01HRkdQRBgDIAEoCBIfChdub3JtYWxpemVkX3RpbWVfY29tcGFjdBgGIAEo",
+            "DRIbChNVbmszMzAwX01FT1BLRURKQ0lOGAcgASgIEhoKEmZhY2VfYW5nbGVf",
+            "Y29tcGFjdBgPIAEoBRIRCgllbnRpdHlfaWQYAiABKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtAnimatorStateChangedInfo), global::Weedwacker.Shared.Network.Proto.EvtAnimatorStateChangedInfo.Parser, new[]{ "FadeDuration", "Unk3300BKBPGIAOBEL", "Unk3300NMCCLIKMOEN", "Pos", "Unk3300KLMEKMGFGPD", "NormalizedTimeCompact", "Unk3300MEOPKEDJCIN", "FaceAngleCompact", "EntityId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtAnimatorStateChangedInfo), global::Weedwacker.Shared.Network.Proto.EvtAnimatorStateChangedInfo.Parser, new[]{ "FadeDuration", "ToStateHash", "Layer", "Pos", "Unk3300KLMEKMGFGPD", "NormalizedTimeCompact", "Unk3300MEOPKEDJCIN", "FaceAngleCompact", "EntityId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,8 +77,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EvtAnimatorStateChangedInfo(EvtAnimatorStateChangedInfo other) : this() {
       fadeDuration_ = other.fadeDuration_;
-      unk3300BKBPGIAOBEL_ = other.unk3300BKBPGIAOBEL_;
-      unk3300NMCCLIKMOEN_ = other.unk3300NMCCLIKMOEN_;
+      toStateHash_ = other.toStateHash_;
+      layer_ = other.layer_;
       pos_ = other.pos_ != null ? other.pos_.Clone() : null;
       unk3300KLMEKMGFGPD_ = other.unk3300KLMEKMGFGPD_;
       normalizedTimeCompact_ = other.normalizedTimeCompact_;
@@ -107,27 +106,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_BKBPGIAOBEL" field.</summary>
-    public const int Unk3300BKBPGIAOBELFieldNumber = 11;
-    private uint unk3300BKBPGIAOBEL_;
+    /// <summary>Field number for the "to_state_hash" field.</summary>
+    public const int ToStateHashFieldNumber = 11;
+    private uint toStateHash_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300BKBPGIAOBEL {
-      get { return unk3300BKBPGIAOBEL_; }
+    public uint ToStateHash {
+      get { return toStateHash_; }
       set {
-        unk3300BKBPGIAOBEL_ = value;
+        toStateHash_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_NMCCLIKMOEN" field.</summary>
-    public const int Unk3300NMCCLIKMOENFieldNumber = 1;
-    private uint unk3300NMCCLIKMOEN_;
+    /// <summary>Field number for the "layer" field.</summary>
+    public const int LayerFieldNumber = 1;
+    private uint layer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300NMCCLIKMOEN {
-      get { return unk3300NMCCLIKMOEN_; }
+    public uint Layer {
+      get { return layer_; }
       set {
-        unk3300NMCCLIKMOEN_ = value;
+        layer_ = value;
       }
     }
 
@@ -219,8 +218,8 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(FadeDuration, other.FadeDuration)) return false;
-      if (Unk3300BKBPGIAOBEL != other.Unk3300BKBPGIAOBEL) return false;
-      if (Unk3300NMCCLIKMOEN != other.Unk3300NMCCLIKMOEN) return false;
+      if (ToStateHash != other.ToStateHash) return false;
+      if (Layer != other.Layer) return false;
       if (!object.Equals(Pos, other.Pos)) return false;
       if (Unk3300KLMEKMGFGPD != other.Unk3300KLMEKMGFGPD) return false;
       if (NormalizedTimeCompact != other.NormalizedTimeCompact) return false;
@@ -235,8 +234,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (FadeDuration != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FadeDuration);
-      if (Unk3300BKBPGIAOBEL != 0) hash ^= Unk3300BKBPGIAOBEL.GetHashCode();
-      if (Unk3300NMCCLIKMOEN != 0) hash ^= Unk3300NMCCLIKMOEN.GetHashCode();
+      if (ToStateHash != 0) hash ^= ToStateHash.GetHashCode();
+      if (Layer != 0) hash ^= Layer.GetHashCode();
       if (pos_ != null) hash ^= Pos.GetHashCode();
       if (Unk3300KLMEKMGFGPD != false) hash ^= Unk3300KLMEKMGFGPD.GetHashCode();
       if (NormalizedTimeCompact != 0) hash ^= NormalizedTimeCompact.GetHashCode();
@@ -261,9 +260,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300NMCCLIKMOEN != 0) {
+      if (Layer != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk3300NMCCLIKMOEN);
+        output.WriteUInt32(Layer);
       }
       if (EntityId != 0) {
         output.WriteRawTag(16);
@@ -289,9 +288,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteBool(Unk3300MEOPKEDJCIN);
       }
-      if (Unk3300BKBPGIAOBEL != 0) {
+      if (ToStateHash != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk3300BKBPGIAOBEL);
+        output.WriteUInt32(ToStateHash);
       }
       if (FaceAngleCompact != 0) {
         output.WriteRawTag(120);
@@ -307,9 +306,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300NMCCLIKMOEN != 0) {
+      if (Layer != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk3300NMCCLIKMOEN);
+        output.WriteUInt32(Layer);
       }
       if (EntityId != 0) {
         output.WriteRawTag(16);
@@ -335,9 +334,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteBool(Unk3300MEOPKEDJCIN);
       }
-      if (Unk3300BKBPGIAOBEL != 0) {
+      if (ToStateHash != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk3300BKBPGIAOBEL);
+        output.WriteUInt32(ToStateHash);
       }
       if (FaceAngleCompact != 0) {
         output.WriteRawTag(120);
@@ -356,11 +355,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (FadeDuration != 0F) {
         size += 1 + 4;
       }
-      if (Unk3300BKBPGIAOBEL != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300BKBPGIAOBEL);
+      if (ToStateHash != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ToStateHash);
       }
-      if (Unk3300NMCCLIKMOEN != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300NMCCLIKMOEN);
+      if (Layer != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Layer);
       }
       if (pos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pos);
@@ -395,11 +394,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.FadeDuration != 0F) {
         FadeDuration = other.FadeDuration;
       }
-      if (other.Unk3300BKBPGIAOBEL != 0) {
-        Unk3300BKBPGIAOBEL = other.Unk3300BKBPGIAOBEL;
+      if (other.ToStateHash != 0) {
+        ToStateHash = other.ToStateHash;
       }
-      if (other.Unk3300NMCCLIKMOEN != 0) {
-        Unk3300NMCCLIKMOEN = other.Unk3300NMCCLIKMOEN;
+      if (other.Layer != 0) {
+        Layer = other.Layer;
       }
       if (other.pos_ != null) {
         if (pos_ == null) {
@@ -438,7 +437,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Unk3300NMCCLIKMOEN = input.ReadUInt32();
+            Layer = input.ReadUInt32();
             break;
           }
           case 16: {
@@ -469,7 +468,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk3300BKBPGIAOBEL = input.ReadUInt32();
+            ToStateHash = input.ReadUInt32();
             break;
           }
           case 120: {
@@ -492,7 +491,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Unk3300NMCCLIKMOEN = input.ReadUInt32();
+            Layer = input.ReadUInt32();
             break;
           }
           case 16: {
@@ -523,7 +522,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk3300BKBPGIAOBEL = input.ReadUInt32();
+            ToStateHash = input.ReadUInt32();
             break;
           }
           case 120: {

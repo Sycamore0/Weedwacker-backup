@@ -24,19 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static ShopReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgpTaG9wLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
-            "GhVTaG9wQ2FyZFByb2R1Y3QucHJvdG8aGFNob3BDb25jZXJ0UHJvZHVjdC5w",
-            "cm90bxoPU2hvcEdvb2RzLnByb3RvGhZTaG9wTWNvaW5Qcm9kdWN0LnByb3Rv",
-            "IpMDCgRTaG9wEhEKCXNob3BfdHlwZRgBIAEoDRIZChFuZXh0X3JlZnJlc2hf",
-            "dGltZRgFIAEoDRIPCgdjaXR5X2lkGAwgASgNEh0KFWNpdHlfcmVwdXRhdGlv",
-            "bl9sZXZlbBgIIAEoDRI+Cgpnb29kc19saXN0GAMgAygLMiouV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90by5TaG9wR29vZHMSSwoRY2FyZF9wcm9k",
-            "dWN0X2xpc3QYCyADKAsyMC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvLlNob3BDYXJkUHJvZHVjdBJRChRjb25jZXJ0X3Byb2R1Y3RfbGlzdBgJ",
-            "IAMoCzIzLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU2hvcENv",
-            "bmNlcnRQcm9kdWN0Ek0KEm1jb2luX3Byb2R1Y3RfbGlzdBgHIAMoCzIxLldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU2hvcE1jb2luUHJvZHVj",
-            "dGIGcHJvdG8z"));
+            "CgpTaG9wLnByb3RvGhVTaG9wQ2FyZFByb2R1Y3QucHJvdG8aGFNob3BDb25j",
+            "ZXJ0UHJvZHVjdC5wcm90bxoPU2hvcEdvb2RzLnByb3RvGhZTaG9wTWNvaW5Q",
+            "cm9kdWN0LnByb3RvIpMCCgRTaG9wEhEKCXNob3BfdHlwZRgBIAEoDRIZChFu",
+            "ZXh0X3JlZnJlc2hfdGltZRgFIAEoDRIPCgdjaXR5X2lkGAwgASgNEh0KFWNp",
+            "dHlfcmVwdXRhdGlvbl9sZXZlbBgIIAEoDRIeCgpnb29kc19saXN0GAMgAygL",
+            "MgouU2hvcEdvb2RzEisKEWNhcmRfcHJvZHVjdF9saXN0GAsgAygLMhAuU2hv",
+            "cENhcmRQcm9kdWN0EjEKFGNvbmNlcnRfcHJvZHVjdF9saXN0GAkgAygLMhMu",
+            "U2hvcENvbmNlcnRQcm9kdWN0Ei0KEm1jb2luX3Byb2R1Y3RfbGlzdBgHIAMo",
+            "CzIRLlNob3BNY29pblByb2R1Y3RCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
+            "dHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ShopCardProductReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ShopConcertProductReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ShopGoodsReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ShopMcoinProductReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

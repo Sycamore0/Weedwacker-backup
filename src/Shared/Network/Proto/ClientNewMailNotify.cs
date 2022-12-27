@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static ClientNewMailNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlDbGllbnROZXdNYWlsTm90aWZ5LnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvIk8KE0NsaWVudE5ld01haWxOb3RpZnkSGwoTVW5r",
-            "MzMwMF9GQkRHQ0ZBQUxGThgNIAEoDRIbChNVbmszMzAwX01BTkpNQ1BFTExK",
-            "GAIgASgNYgZwcm90bzM="));
+            "ChlDbGllbnROZXdNYWlsTm90aWZ5LnByb3RvIksKE0NsaWVudE5ld01haWxO",
+            "b3RpZnkSHgoWbm90X2dvdF9hdHRhY2htZW50X251bRgNIAEoDRIUCgxub3Rf",
+            "cmVhZF9udW0YAiABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ClientNewMailNotify), global::Weedwacker.Shared.Network.Proto.ClientNewMailNotify.Parser, new[]{ "Unk3300FBDGCFAALFN", "Unk3300MANJMCPELLJ" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ClientNewMailNotify), global::Weedwacker.Shared.Network.Proto.ClientNewMailNotify.Parser, new[]{ "NotGotAttachmentNum", "NotReadNum" }, null, null, null, null)
           }));
     }
     #endregion
@@ -81,8 +81,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientNewMailNotify(ClientNewMailNotify other) : this() {
-      unk3300FBDGCFAALFN_ = other.unk3300FBDGCFAALFN_;
-      unk3300MANJMCPELLJ_ = other.unk3300MANJMCPELLJ_;
+      notGotAttachmentNum_ = other.notGotAttachmentNum_;
+      notReadNum_ = other.notReadNum_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -92,27 +92,27 @@ namespace Weedwacker.Shared.Network.Proto {
       return new ClientNewMailNotify(this);
     }
 
-    /// <summary>Field number for the "Unk3300_FBDGCFAALFN" field.</summary>
-    public const int Unk3300FBDGCFAALFNFieldNumber = 13;
-    private uint unk3300FBDGCFAALFN_;
+    /// <summary>Field number for the "not_got_attachment_num" field.</summary>
+    public const int NotGotAttachmentNumFieldNumber = 13;
+    private uint notGotAttachmentNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300FBDGCFAALFN {
-      get { return unk3300FBDGCFAALFN_; }
+    public uint NotGotAttachmentNum {
+      get { return notGotAttachmentNum_; }
       set {
-        unk3300FBDGCFAALFN_ = value;
+        notGotAttachmentNum_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_MANJMCPELLJ" field.</summary>
-    public const int Unk3300MANJMCPELLJFieldNumber = 2;
-    private uint unk3300MANJMCPELLJ_;
+    /// <summary>Field number for the "not_read_num" field.</summary>
+    public const int NotReadNumFieldNumber = 2;
+    private uint notReadNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300MANJMCPELLJ {
-      get { return unk3300MANJMCPELLJ_; }
+    public uint NotReadNum {
+      get { return notReadNum_; }
       set {
-        unk3300MANJMCPELLJ_ = value;
+        notReadNum_ = value;
       }
     }
 
@@ -131,8 +131,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300FBDGCFAALFN != other.Unk3300FBDGCFAALFN) return false;
-      if (Unk3300MANJMCPELLJ != other.Unk3300MANJMCPELLJ) return false;
+      if (NotGotAttachmentNum != other.NotGotAttachmentNum) return false;
+      if (NotReadNum != other.NotReadNum) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -140,8 +140,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300FBDGCFAALFN != 0) hash ^= Unk3300FBDGCFAALFN.GetHashCode();
-      if (Unk3300MANJMCPELLJ != 0) hash ^= Unk3300MANJMCPELLJ.GetHashCode();
+      if (NotGotAttachmentNum != 0) hash ^= NotGotAttachmentNum.GetHashCode();
+      if (NotReadNum != 0) hash ^= NotReadNum.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -160,13 +160,13 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300MANJMCPELLJ != 0) {
+      if (NotReadNum != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk3300MANJMCPELLJ);
+        output.WriteUInt32(NotReadNum);
       }
-      if (Unk3300FBDGCFAALFN != 0) {
+      if (NotGotAttachmentNum != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk3300FBDGCFAALFN);
+        output.WriteUInt32(NotGotAttachmentNum);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -178,13 +178,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300MANJMCPELLJ != 0) {
+      if (NotReadNum != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk3300MANJMCPELLJ);
+        output.WriteUInt32(NotReadNum);
       }
-      if (Unk3300FBDGCFAALFN != 0) {
+      if (NotGotAttachmentNum != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk3300FBDGCFAALFN);
+        output.WriteUInt32(NotGotAttachmentNum);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -196,11 +196,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300FBDGCFAALFN != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300FBDGCFAALFN);
+      if (NotGotAttachmentNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NotGotAttachmentNum);
       }
-      if (Unk3300MANJMCPELLJ != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300MANJMCPELLJ);
+      if (NotReadNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NotReadNum);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -214,11 +214,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300FBDGCFAALFN != 0) {
-        Unk3300FBDGCFAALFN = other.Unk3300FBDGCFAALFN;
+      if (other.NotGotAttachmentNum != 0) {
+        NotGotAttachmentNum = other.NotGotAttachmentNum;
       }
-      if (other.Unk3300MANJMCPELLJ != 0) {
-        Unk3300MANJMCPELLJ = other.Unk3300MANJMCPELLJ;
+      if (other.NotReadNum != 0) {
+        NotReadNum = other.NotReadNum;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -236,11 +236,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 16: {
-            Unk3300MANJMCPELLJ = input.ReadUInt32();
+            NotReadNum = input.ReadUInt32();
             break;
           }
           case 104: {
-            Unk3300FBDGCFAALFN = input.ReadUInt32();
+            NotGotAttachmentNum = input.ReadUInt32();
             break;
           }
         }
@@ -259,11 +259,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 16: {
-            Unk3300MANJMCPELLJ = input.ReadUInt32();
+            NotReadNum = input.ReadUInt32();
             break;
           }
           case 104: {
-            Unk3300FBDGCFAALFN = input.ReadUInt32();
+            NotGotAttachmentNum = input.ReadUInt32();
             break;
           }
         }

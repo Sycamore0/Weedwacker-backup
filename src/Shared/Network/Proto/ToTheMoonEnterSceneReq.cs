@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ToTheMoonEnterSceneReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxUb1RoZU1vb25FbnRlclNjZW5lUmVxLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvIjsKFlRvVGhlTW9vbkVudGVyU2NlbmVSZXES",
-            "DwoHdmVyc2lvbhgLIAEoDRIQCghzY2VuZV9pZBgNIAEoDWIGcHJvdG8z"));
+            "ChxUb1RoZU1vb25FbnRlclNjZW5lUmVxLnByb3RvIjsKFlRvVGhlTW9vbkVu",
+            "dGVyU2NlbmVSZXESDwoHdmVyc2lvbhgLIAEoDRIQCghzY2VuZV9pZBgNIAEo",
+            "DUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,9 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static WidgetWeatherWizardDataNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNXaWRnZXRXZWF0aGVyV2l6YXJkRGF0YU5vdGlmeS5wcm90bxIfV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90byI1Ch1XaWRnZXRXZWF0aGVyV2l6",
-            "YXJkRGF0YU5vdGlmeRIUCgxzaGllbGRfdmFsdWUYDCABKA1iBnByb3RvMw=="));
+            "CiNXaWRnZXRXZWF0aGVyV2l6YXJkRGF0YU5vdGlmeS5wcm90byI1Ch1XaWRn",
+            "ZXRXZWF0aGVyV2l6YXJkRGF0YU5vdGlmeRIUCgxzaGllbGRfdmFsdWUYDCAB",
+            "KA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

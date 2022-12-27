@@ -24,18 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static FungusTrainingProgressDetailReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJGdW5ndXNUcmFpbmluZ1Byb2dyZXNzRGV0YWlsLnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvGiBGdW5ndXNGaWdodGVyTW9uc3Rl",
-            "ckRldGFpbC5wcm90bxolRnVuZ3VzVHJhaW5pbmdQb29sUHJldmlld0RldGFp",
-            "bC5wcm90byLXAgocRnVuZ3VzVHJhaW5pbmdQcm9ncmVzc0RldGFpbBIbChNV",
-            "bmszMzAwX0VFT0lNREpPSENNGAogAygNEhcKD3RvdGFsX3VzZWRfdGltZRgD",
-            "IAEoDRJYChNtb25zdGVyX2RldGFpbF9saXN0GA4gAygLMjsuV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90by5GdW5ndXNGaWdodGVyTW9uc3RlckRl",
-            "dGFpbBISCgpkdW5nZW9uX2lkGAEgASgNEmMKGW1vbnN0ZXJfcG9vbF9wcmV2",
-            "aWV3X2xpc3QYBSADKAsyQC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvLkZ1bmd1c1RyYWluaW5nUG9vbFByZXZpZXdEZXRhaWwSEQoJY3VyX3Jv",
-            "dW5kGAkgASgNEhsKE1VuazMzMDBfTkxIRUZHQkVPQUMYBCADKA1iBnByb3Rv",
-            "Mw=="));
+            "CiJGdW5ndXNUcmFpbmluZ1Byb2dyZXNzRGV0YWlsLnByb3RvGiBGdW5ndXNG",
+            "aWdodGVyTW9uc3RlckRldGFpbC5wcm90bxolRnVuZ3VzVHJhaW5pbmdQb29s",
+            "UHJldmlld0RldGFpbC5wcm90byKXAgocRnVuZ3VzVHJhaW5pbmdQcm9ncmVz",
+            "c0RldGFpbBIbChNVbmszMzAwX0VFT0lNREpPSENNGAogAygNEhcKD3RvdGFs",
+            "X3VzZWRfdGltZRgDIAEoDRI4ChNtb25zdGVyX2RldGFpbF9saXN0GA4gAygL",
+            "MhsuRnVuZ3VzRmlnaHRlck1vbnN0ZXJEZXRhaWwSEgoKZHVuZ2Vvbl9pZBgB",
+            "IAEoDRJDChltb25zdGVyX3Bvb2xfcHJldmlld19saXN0GAUgAygLMiAuRnVu",
+            "Z3VzVHJhaW5pbmdQb29sUHJldmlld0RldGFpbBIRCgljdXJfcm91bmQYCSAB",
+            "KA0SGwoTVW5rMzMwMF9OTEhFRkdCRU9BQxgEIAMoDUIiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.FungusFighterMonsterDetailReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FungusTrainingPoolPreviewDetailReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

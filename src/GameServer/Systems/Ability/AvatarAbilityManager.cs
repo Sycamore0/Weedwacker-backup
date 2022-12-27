@@ -10,7 +10,7 @@ namespace Weedwacker.GameServer.Systems.Ability
 {
     internal class AvatarAbilityManager : BaseAbilityManager
     {
-        private SkillDepot CurDepot => (Owner as AvatarEntity).Avatar.GetCurSkillDepot();
+        private SkillDepot CurDepot => (Owner as AvatarEntity).Avatar.CurSkillDepot;
         private int CurDepotId => CurDepot.DepotId;
         protected override Dictionary<uint, ConfigAbility> ConfigAbilityHashMap => CurDepot.Abilities;
 

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static WinterCampGetFriendWishListReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiRXaW50ZXJDYW1wR2V0RnJpZW5kV2lzaExpc3RSZXEucHJvdG8SH1dlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iIAoeV2ludGVyQ2FtcEdldEZy",
-            "aWVuZFdpc2hMaXN0UmVxYgZwcm90bzM="));
+            "CiRXaW50ZXJDYW1wR2V0RnJpZW5kV2lzaExpc3RSZXEucHJvdG8iIAoeV2lu",
+            "dGVyQ2FtcEdldEZyaWVuZFdpc2hMaXN0UmVxQiKqAh9XZWVkd2Fja2VyLlNo",
+            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

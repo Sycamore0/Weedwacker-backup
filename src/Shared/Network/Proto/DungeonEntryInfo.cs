@@ -24,20 +24,19 @@ namespace Weedwacker.Shared.Network.Proto {
     static DungeonEntryInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZEdW5nZW9uRW50cnlJbmZvLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvGiFXZWVrbHlCb3NzUmVzaW5EaXNjb3VudEluZm8ucHJv",
-            "dG8iuAIKEER1bmdlb25FbnRyeUluZm8SEAoIZW5kX3RpbWUYDiABKA0SGwoT",
-            "VW5rMzMwMF9LTktGQ09LTUVDSRgJIAEoDRIRCglpc19wYXNzZWQYDSABKAgS",
-            "ZQofd2Vla2x5X2Jvc3NfcmVzaW5fZGlzY291bnRfaW5mbxgGIAEoCzI8Lldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uV2Vla2x5Qm9zc1Jlc2lu",
-            "RGlzY291bnRJbmZvEhIKCmR1bmdlb25faWQYCCABKA0SGwoTVW5rMzMwMF9J",
-            "RE1QR1BLTU1FSBgFIAEoDRIZChFuZXh0X3JlZnJlc2hfdGltZRgKIAEoDRIb",
-            "ChNVbmszMzAwX09OTEFMQ0NLSUVFGAMgASgNEhIKCnN0YXJ0X3RpbWUYCyAB",
-            "KA1iBnByb3RvMw=="));
+            "ChZEdW5nZW9uRW50cnlJbmZvLnByb3RvGiFXZWVrbHlCb3NzUmVzaW5EaXNj",
+            "b3VudEluZm8ucHJvdG8ilwIKEER1bmdlb25FbnRyeUluZm8SEAoIZW5kX3Rp",
+            "bWUYDiABKA0SGgoSbWF4X2Jvc3NfY2hlc3RfbnVtGAkgASgNEhEKCWlzX3Bh",
+            "c3NlZBgNIAEoCBJFCh93ZWVrbHlfYm9zc19yZXNpbl9kaXNjb3VudF9pbmZv",
+            "GAYgASgLMhwuV2Vla2x5Qm9zc1Jlc2luRGlzY291bnRJbmZvEhIKCmR1bmdl",
+            "b25faWQYCCABKA0SEgoKbGVmdF90aW1lcxgFIAEoDRIZChFuZXh0X3JlZnJl",
+            "c2hfdGltZRgKIAEoDRIkChxuZXh0X2Jvc3NfY2hlc3RfcmVmcmVzaF90aW1l",
+            "GAMgASgNEhIKCnN0YXJ0X3RpbWUYCyABKA1CIqoCH1dlZWR3YWNrZXIuU2hh",
+            "cmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.WeeklyBossResinDiscountInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonEntryInfo), global::Weedwacker.Shared.Network.Proto.DungeonEntryInfo.Parser, new[]{ "EndTime", "Unk3300KNKFCOKMECI", "IsPassed", "WeeklyBossResinDiscountInfo", "DungeonId", "Unk3300IDMPGPKMMEH", "NextRefreshTime", "Unk3300ONLALCCKIEE", "StartTime" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonEntryInfo), global::Weedwacker.Shared.Network.Proto.DungeonEntryInfo.Parser, new[]{ "EndTime", "MaxBossChestNum", "IsPassed", "WeeklyBossResinDiscountInfo", "DungeonId", "LeftTimes", "NextRefreshTime", "NextBossChestRefreshTime", "StartTime" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,13 +78,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DungeonEntryInfo(DungeonEntryInfo other) : this() {
       endTime_ = other.endTime_;
-      unk3300KNKFCOKMECI_ = other.unk3300KNKFCOKMECI_;
+      maxBossChestNum_ = other.maxBossChestNum_;
       isPassed_ = other.isPassed_;
       weeklyBossResinDiscountInfo_ = other.weeklyBossResinDiscountInfo_ != null ? other.weeklyBossResinDiscountInfo_.Clone() : null;
       dungeonId_ = other.dungeonId_;
-      unk3300IDMPGPKMMEH_ = other.unk3300IDMPGPKMMEH_;
+      leftTimes_ = other.leftTimes_;
       nextRefreshTime_ = other.nextRefreshTime_;
-      unk3300ONLALCCKIEE_ = other.unk3300ONLALCCKIEE_;
+      nextBossChestRefreshTime_ = other.nextBossChestRefreshTime_;
       startTime_ = other.startTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -108,15 +107,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_KNKFCOKMECI" field.</summary>
-    public const int Unk3300KNKFCOKMECIFieldNumber = 9;
-    private uint unk3300KNKFCOKMECI_;
+    /// <summary>Field number for the "max_boss_chest_num" field.</summary>
+    public const int MaxBossChestNumFieldNumber = 9;
+    private uint maxBossChestNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300KNKFCOKMECI {
-      get { return unk3300KNKFCOKMECI_; }
+    public uint MaxBossChestNum {
+      get { return maxBossChestNum_; }
       set {
-        unk3300KNKFCOKMECI_ = value;
+        maxBossChestNum_ = value;
       }
     }
 
@@ -156,15 +155,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_IDMPGPKMMEH" field.</summary>
-    public const int Unk3300IDMPGPKMMEHFieldNumber = 5;
-    private uint unk3300IDMPGPKMMEH_;
+    /// <summary>Field number for the "left_times" field.</summary>
+    public const int LeftTimesFieldNumber = 5;
+    private uint leftTimes_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300IDMPGPKMMEH {
-      get { return unk3300IDMPGPKMMEH_; }
+    public uint LeftTimes {
+      get { return leftTimes_; }
       set {
-        unk3300IDMPGPKMMEH_ = value;
+        leftTimes_ = value;
       }
     }
 
@@ -180,15 +179,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_ONLALCCKIEE" field.</summary>
-    public const int Unk3300ONLALCCKIEEFieldNumber = 3;
-    private uint unk3300ONLALCCKIEE_;
+    /// <summary>Field number for the "next_boss_chest_refresh_time" field.</summary>
+    public const int NextBossChestRefreshTimeFieldNumber = 3;
+    private uint nextBossChestRefreshTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300ONLALCCKIEE {
-      get { return unk3300ONLALCCKIEE_; }
+    public uint NextBossChestRefreshTime {
+      get { return nextBossChestRefreshTime_; }
       set {
-        unk3300ONLALCCKIEE_ = value;
+        nextBossChestRefreshTime_ = value;
       }
     }
 
@@ -220,13 +219,13 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (EndTime != other.EndTime) return false;
-      if (Unk3300KNKFCOKMECI != other.Unk3300KNKFCOKMECI) return false;
+      if (MaxBossChestNum != other.MaxBossChestNum) return false;
       if (IsPassed != other.IsPassed) return false;
       if (!object.Equals(WeeklyBossResinDiscountInfo, other.WeeklyBossResinDiscountInfo)) return false;
       if (DungeonId != other.DungeonId) return false;
-      if (Unk3300IDMPGPKMMEH != other.Unk3300IDMPGPKMMEH) return false;
+      if (LeftTimes != other.LeftTimes) return false;
       if (NextRefreshTime != other.NextRefreshTime) return false;
-      if (Unk3300ONLALCCKIEE != other.Unk3300ONLALCCKIEE) return false;
+      if (NextBossChestRefreshTime != other.NextBossChestRefreshTime) return false;
       if (StartTime != other.StartTime) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -236,13 +235,13 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (EndTime != 0) hash ^= EndTime.GetHashCode();
-      if (Unk3300KNKFCOKMECI != 0) hash ^= Unk3300KNKFCOKMECI.GetHashCode();
+      if (MaxBossChestNum != 0) hash ^= MaxBossChestNum.GetHashCode();
       if (IsPassed != false) hash ^= IsPassed.GetHashCode();
       if (weeklyBossResinDiscountInfo_ != null) hash ^= WeeklyBossResinDiscountInfo.GetHashCode();
       if (DungeonId != 0) hash ^= DungeonId.GetHashCode();
-      if (Unk3300IDMPGPKMMEH != 0) hash ^= Unk3300IDMPGPKMMEH.GetHashCode();
+      if (LeftTimes != 0) hash ^= LeftTimes.GetHashCode();
       if (NextRefreshTime != 0) hash ^= NextRefreshTime.GetHashCode();
-      if (Unk3300ONLALCCKIEE != 0) hash ^= Unk3300ONLALCCKIEE.GetHashCode();
+      if (NextBossChestRefreshTime != 0) hash ^= NextBossChestRefreshTime.GetHashCode();
       if (StartTime != 0) hash ^= StartTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -262,13 +261,13 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300ONLALCCKIEE != 0) {
+      if (NextBossChestRefreshTime != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300ONLALCCKIEE);
+        output.WriteUInt32(NextBossChestRefreshTime);
       }
-      if (Unk3300IDMPGPKMMEH != 0) {
+      if (LeftTimes != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk3300IDMPGPKMMEH);
+        output.WriteUInt32(LeftTimes);
       }
       if (weeklyBossResinDiscountInfo_ != null) {
         output.WriteRawTag(50);
@@ -278,9 +277,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(64);
         output.WriteUInt32(DungeonId);
       }
-      if (Unk3300KNKFCOKMECI != 0) {
+      if (MaxBossChestNum != 0) {
         output.WriteRawTag(72);
-        output.WriteUInt32(Unk3300KNKFCOKMECI);
+        output.WriteUInt32(MaxBossChestNum);
       }
       if (NextRefreshTime != 0) {
         output.WriteRawTag(80);
@@ -308,13 +307,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300ONLALCCKIEE != 0) {
+      if (NextBossChestRefreshTime != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300ONLALCCKIEE);
+        output.WriteUInt32(NextBossChestRefreshTime);
       }
-      if (Unk3300IDMPGPKMMEH != 0) {
+      if (LeftTimes != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk3300IDMPGPKMMEH);
+        output.WriteUInt32(LeftTimes);
       }
       if (weeklyBossResinDiscountInfo_ != null) {
         output.WriteRawTag(50);
@@ -324,9 +323,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(64);
         output.WriteUInt32(DungeonId);
       }
-      if (Unk3300KNKFCOKMECI != 0) {
+      if (MaxBossChestNum != 0) {
         output.WriteRawTag(72);
-        output.WriteUInt32(Unk3300KNKFCOKMECI);
+        output.WriteUInt32(MaxBossChestNum);
       }
       if (NextRefreshTime != 0) {
         output.WriteRawTag(80);
@@ -357,8 +356,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (EndTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EndTime);
       }
-      if (Unk3300KNKFCOKMECI != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300KNKFCOKMECI);
+      if (MaxBossChestNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxBossChestNum);
       }
       if (IsPassed != false) {
         size += 1 + 1;
@@ -369,14 +368,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (DungeonId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DungeonId);
       }
-      if (Unk3300IDMPGPKMMEH != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300IDMPGPKMMEH);
+      if (LeftTimes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LeftTimes);
       }
       if (NextRefreshTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NextRefreshTime);
       }
-      if (Unk3300ONLALCCKIEE != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300ONLALCCKIEE);
+      if (NextBossChestRefreshTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NextBossChestRefreshTime);
       }
       if (StartTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(StartTime);
@@ -396,8 +395,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.EndTime != 0) {
         EndTime = other.EndTime;
       }
-      if (other.Unk3300KNKFCOKMECI != 0) {
-        Unk3300KNKFCOKMECI = other.Unk3300KNKFCOKMECI;
+      if (other.MaxBossChestNum != 0) {
+        MaxBossChestNum = other.MaxBossChestNum;
       }
       if (other.IsPassed != false) {
         IsPassed = other.IsPassed;
@@ -411,14 +410,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.DungeonId != 0) {
         DungeonId = other.DungeonId;
       }
-      if (other.Unk3300IDMPGPKMMEH != 0) {
-        Unk3300IDMPGPKMMEH = other.Unk3300IDMPGPKMMEH;
+      if (other.LeftTimes != 0) {
+        LeftTimes = other.LeftTimes;
       }
       if (other.NextRefreshTime != 0) {
         NextRefreshTime = other.NextRefreshTime;
       }
-      if (other.Unk3300ONLALCCKIEE != 0) {
-        Unk3300ONLALCCKIEE = other.Unk3300ONLALCCKIEE;
+      if (other.NextBossChestRefreshTime != 0) {
+        NextBossChestRefreshTime = other.NextBossChestRefreshTime;
       }
       if (other.StartTime != 0) {
         StartTime = other.StartTime;
@@ -439,11 +438,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 24: {
-            Unk3300ONLALCCKIEE = input.ReadUInt32();
+            NextBossChestRefreshTime = input.ReadUInt32();
             break;
           }
           case 40: {
-            Unk3300IDMPGPKMMEH = input.ReadUInt32();
+            LeftTimes = input.ReadUInt32();
             break;
           }
           case 50: {
@@ -458,7 +457,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 72: {
-            Unk3300KNKFCOKMECI = input.ReadUInt32();
+            MaxBossChestNum = input.ReadUInt32();
             break;
           }
           case 80: {
@@ -493,11 +492,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 24: {
-            Unk3300ONLALCCKIEE = input.ReadUInt32();
+            NextBossChestRefreshTime = input.ReadUInt32();
             break;
           }
           case 40: {
-            Unk3300IDMPGPKMMEH = input.ReadUInt32();
+            LeftTimes = input.ReadUInt32();
             break;
           }
           case 50: {
@@ -512,7 +511,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 72: {
-            Unk3300KNKFCOKMECI = input.ReadUInt32();
+            MaxBossChestNum = input.ReadUInt32();
             break;
           }
           case 80: {

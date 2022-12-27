@@ -24,17 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetUgcRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg9HZXRVZ2NSc3AucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
-            "UHJvdG8aEVJlY29yZFVzYWdlLnByb3RvGhdVZ2NNdXNpY0JyaWVmSW5mby5w",
-            "cm90bxoUVWdjTXVzaWNSZWNvcmQucHJvdG8aDVVnY1R5cGUucHJvdG8i3wIK",
-            "CUdldFVnY1JzcBIPCgdyZXRjb2RlGAogASgFEkYKEHVnY19yZWNvcmRfdXNh",
-            "Z2UYBSABKA4yLC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlJl",
-            "Y29yZFVzYWdlEjoKCHVnY190eXBlGAYgASgOMiguV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90by5VZ2NUeXBlEhAKCHVnY19ndWlkGAMgASgEEkcK",
-            "DG11c2ljX3JlY29yZBgCIAEoCzIvLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uVWdjTXVzaWNSZWNvcmRIABJPChBtdXNpY19icmllZl9pbmZv",
-            "GIQMIAEoCzIyLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uVWdj",
-            "TXVzaWNCcmllZkluZm9IAUIICgZyZWNvcmRCBwoFYnJpZWZiBnByb3RvMw=="));
+            "Cg9HZXRVZ2NSc3AucHJvdG8aEVJlY29yZFVzYWdlLnByb3RvGhdVZ2NNdXNp",
+            "Y0JyaWVmSW5mby5wcm90bxoUVWdjTXVzaWNSZWNvcmQucHJvdG8aDVVnY1R5",
+            "cGUucHJvdG8i3wEKCUdldFVnY1JzcBIPCgdyZXRjb2RlGAogASgFEiYKEHVn",
+            "Y19yZWNvcmRfdXNhZ2UYBSABKA4yDC5SZWNvcmRVc2FnZRIaCgh1Z2NfdHlw",
+            "ZRgGIAEoDjIILlVnY1R5cGUSEAoIdWdjX2d1aWQYAyABKAQSJwoMbXVzaWNf",
+            "cmVjb3JkGAIgASgLMg8uVWdjTXVzaWNSZWNvcmRIABIvChBtdXNpY19icmll",
+            "Zl9pbmZvGIQMIAEoCzISLlVnY011c2ljQnJpZWZJbmZvSAFCCAoGcmVjb3Jk",
+            "QgcKBWJyaWVmQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.RecordUsageReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.UgcMusicBriefInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.UgcMusicRecordReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.UgcTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -31,7 +31,7 @@ namespace Weedwacker.GameServer.Systems.Inventory
             {
                 item.Guid = Owner.GetNextGameGuid();
                 Inventory.GuidMap.Add(item.Guid, item);
-                if (item.EquippedAvatar != 0) await inventory.EquipWeapon(owner.Avatars.Avatars[item.EquippedAvatar].Guid, item.Guid);
+                if (item.EquippedAvatar != 0) await inventory.EquipWeaponAsync(owner.Avatars.Avatars[item.EquippedAvatar].Guid, item.Guid);
             }
             foreach (MaterialItem item in UpgradeMaterials.Values)
             {
@@ -264,6 +264,43 @@ namespace Weedwacker.GameServer.Systems.Inventory
                 Logger.WriteErrorLine("Tried to remove inexistent item");
                 return false;
             }
+        }
+        public async Task<bool> EquipWeaponAsync(ulong avatarGuid, ulong equipGuid)
+        {
+            Avatar.Avatar? avatar = Owner.Avatars.GetAvatarByGuid(avatarGuid);
+
+            if (avatar != null && Inventory.GuidMap.TryGetValue(equipGuid, out GameItem weapon) && weapon.ItemData.itemType == ItemType.ITEM_WEAPON)
+            {
+                // Is it equipped at another avatar?
+                Avatar.Avatar? otherAvatar = Owner.Avatars.Avatars.Values.Where(a => a.Weapon == weapon && a != avatar).FirstOrDefault();
+                if (otherAvatar != null)
+                {
+                    await UnequipWeaponAsync(otherAvatar.Guid);
+                }
+                WeaponItem asWeapon = (WeaponItem)weapon;
+                if (avatar.Data.GeneralData.weaponType == asWeapon.ItemData.weaponType)
+                {
+                    if (await avatar.EquipWeapon(asWeapon, true))
+                        asWeapon.EquippedAvatar = avatar.AvatarId;
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public async Task<bool> UnequipWeaponAsync(ulong avatarGuid)
+        {
+            Avatar.Avatar? avatar = Owner.Avatars.GetAvatarByGuid(avatarGuid);
+
+            if (avatar != null)
+            {
+
+                return await avatar.UnequipWeapon();
+
+            }
+
+            return false;
         }
     }
 }

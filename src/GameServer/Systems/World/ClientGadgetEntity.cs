@@ -27,7 +27,7 @@ namespace Weedwacker.GameServer.Systems.World
             CampType = (int)notify.CampType;
             OwnerEntityId = notify.PropOwnerEntityId;
             TargetEntityId = notify.TargetEntityId;
-            AsyncLoad = notify.IsAsyncLoad;
+            //AsyncLoad = notify.IsAsyncLoad;
 
             SceneEntity owner = scene.GetEntityById(OwnerEntityId) as SceneEntity;
             if (owner is ClientGadgetEntity ownerGadget)

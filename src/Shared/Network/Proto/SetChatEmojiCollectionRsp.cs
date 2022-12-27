@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static SetChatEmojiCollectionRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9TZXRDaGF0RW1vamlDb2xsZWN0aW9uUnNwLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvIiwKGVNldENoYXRFbW9qaUNvbGxlY3Rp",
-            "b25Sc3ASDwoHcmV0Y29kZRgPIAEoBWIGcHJvdG8z"));
+            "Ch9TZXRDaGF0RW1vamlDb2xsZWN0aW9uUnNwLnByb3RvIiwKGVNldENoYXRF",
+            "bW9qaUNvbGxlY3Rpb25Sc3ASDwoHcmV0Y29kZRgPIAEoBUIiqgIfV2VlZHdh",
+            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

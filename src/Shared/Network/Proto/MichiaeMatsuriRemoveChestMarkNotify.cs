@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static MichiaeMatsuriRemoveChestMarkNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CilNaWNoaWFlTWF0c3VyaVJlbW92ZUNoZXN0TWFya05vdGlmeS5wcm90bxIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90byJKCiNNaWNoaWFlTWF0",
-            "c3VyaVJlbW92ZUNoZXN0TWFya05vdGlmeRIQCghncm91cF9pZBgFIAEoDRIR",
-            "Cgljb25maWdfaWQYBiABKA1iBnByb3RvMw=="));
+            "CilNaWNoaWFlTWF0c3VyaVJlbW92ZUNoZXN0TWFya05vdGlmeS5wcm90byJK",
+            "CiNNaWNoaWFlTWF0c3VyaVJlbW92ZUNoZXN0TWFya05vdGlmeRIQCghncm91",
+            "cF9pZBgFIAEoDRIRCgljb25maWdfaWQYBiABKA1CIqoCH1dlZWR3YWNrZXIu",
+            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

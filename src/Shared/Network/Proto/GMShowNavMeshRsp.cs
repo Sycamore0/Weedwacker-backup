@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static GMShowNavMeshRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZHTVNob3dOYXZNZXNoUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvGhNQQk5hdk1lc2hUaWxlLnByb3RvImIKEEdNU2hvd05h",
-            "dk1lc2hSc3ASDwoHcmV0Y29kZRgBIAEoBRI9CgV0aWxlcxgKIAMoCzIuLldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uUEJOYXZNZXNoVGlsZWIG",
-            "cHJvdG8z"));
+            "ChZHTVNob3dOYXZNZXNoUnNwLnByb3RvGhNQQk5hdk1lc2hUaWxlLnByb3Rv",
+            "IkIKEEdNU2hvd05hdk1lc2hSc3ASDwoHcmV0Y29kZRgBIAEoBRIdCgV0aWxl",
+            "cxgKIAMoCzIOLlBCTmF2TWVzaFRpbGVCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.PBNavMeshTileReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

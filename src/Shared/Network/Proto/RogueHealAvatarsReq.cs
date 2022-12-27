@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static RogueHealAvatarsReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlSb2d1ZUhlYWxBdmF0YXJzUmVxLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvIjoKE1JvZ3VlSGVhbEF2YXRhcnNSZXESDwoHY2Vs",
-            "bF9pZBgCIAEoDRISCgpkdW5nZW9uX2lkGA8gASgNYgZwcm90bzM="));
+            "ChlSb2d1ZUhlYWxBdmF0YXJzUmVxLnByb3RvIjoKE1JvZ3VlSGVhbEF2YXRh",
+            "cnNSZXESDwoHY2VsbF9pZBgCIAEoDRISCgpkdW5nZW9uX2lkGA8gASgNQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

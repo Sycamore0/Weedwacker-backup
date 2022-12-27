@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static BartenderCancelOrderReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1CYXJ0ZW5kZXJDYW5jZWxPcmRlclJlcS5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90byIrChdCYXJ0ZW5kZXJDYW5jZWxPcmRlclJl",
-            "cRIQCghxdWVzdF9pZBgFIAEoDWIGcHJvdG8z"));
+            "Ch1CYXJ0ZW5kZXJDYW5jZWxPcmRlclJlcS5wcm90byIrChdCYXJ0ZW5kZXJD",
+            "YW5jZWxPcmRlclJlcRIQCghxdWVzdF9pZBgFIAEoDUIiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

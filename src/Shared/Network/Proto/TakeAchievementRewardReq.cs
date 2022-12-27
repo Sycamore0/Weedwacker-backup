@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static TakeAchievementRewardReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5UYWtlQWNoaWV2ZW1lbnRSZXdhcmRSZXEucHJvdG8SH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8iKwoYVGFrZUFjaGlldmVtZW50UmV3YXJk",
-            "UmVxEg8KB2lkX2xpc3QYCSADKA1iBnByb3RvMw=="));
+            "Ch5UYWtlQWNoaWV2ZW1lbnRSZXdhcmRSZXEucHJvdG8iKwoYVGFrZUFjaGll",
+            "dmVtZW50UmV3YXJkUmVxEg8KB2lkX2xpc3QYCSADKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

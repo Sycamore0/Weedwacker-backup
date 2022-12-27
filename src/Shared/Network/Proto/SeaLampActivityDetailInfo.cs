@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static SeaLampActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9TZWFMYW1wQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvIsEBChlTZWFMYW1wQWN0aXZpdHlEZXRh",
-            "aWxJbmZvEhsKE1VuazMzMDBfT0RCRkZBSUlQTUIYAiADKA0SDAoEZGF5cxgG",
-            "IAEoDRIbChNVbmszMzAwX0RHTUdOSkxIRk1CGAggASgNEhAKCHByb2dyZXNz",
-            "GAUgASgNEhsKE1VuazMzMDBfRkdIREpKQ0xORk4YDiADKA0SGwoTVW5rMzMw",
-            "MF9HQkNDSk1CUEJCSRgLIAEoDRIQCghwaGFzZV9pZBgDIAEoDWIGcHJvdG8z"));
+            "Ch9TZWFMYW1wQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvIq0BChlTZWFMYW1w",
+            "QWN0aXZpdHlEZXRhaWxJbmZvEhsKE1VuazMzMDBfT0RCRkZBSUlQTUIYAiAD",
+            "KA0SDAoEZGF5cxgGIAEoDRIOCgZmYWN0b3IYCCABKA0SEAoIcHJvZ3Jlc3MY",
+            "BSABKA0SGwoTVW5rMzMwMF9GR0hESkpDTE5GThgOIAMoDRIUCgxjb250cmli",
+            "dXRpb24YCyABKA0SEAoIcGhhc2VfaWQYAyABKA1CIqoCH1dlZWR3YWNrZXIu",
+            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SeaLampActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.SeaLampActivityDetailInfo.Parser, new[]{ "Unk3300ODBFFAIIPMB", "Days", "Unk3300DGMGNJLHFMB", "Progress", "Unk3300FGHDJJCLNFN", "Unk3300GBCCJMBPBBI", "PhaseId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SeaLampActivityDetailInfo), global::Weedwacker.Shared.Network.Proto.SeaLampActivityDetailInfo.Parser, new[]{ "Unk3300ODBFFAIIPMB", "Days", "Factor", "Progress", "Unk3300FGHDJJCLNFN", "Contribution", "PhaseId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,10 +76,10 @@ namespace Weedwacker.Shared.Network.Proto {
     public SeaLampActivityDetailInfo(SeaLampActivityDetailInfo other) : this() {
       unk3300ODBFFAIIPMB_ = other.unk3300ODBFFAIIPMB_.Clone();
       days_ = other.days_;
-      unk3300DGMGNJLHFMB_ = other.unk3300DGMGNJLHFMB_;
+      factor_ = other.factor_;
       progress_ = other.progress_;
       unk3300FGHDJJCLNFN_ = other.unk3300FGHDJJCLNFN_.Clone();
-      unk3300GBCCJMBPBBI_ = other.unk3300GBCCJMBPBBI_;
+      contribution_ = other.contribution_;
       phaseId_ = other.phaseId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -113,15 +113,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_DGMGNJLHFMB" field.</summary>
-    public const int Unk3300DGMGNJLHFMBFieldNumber = 8;
-    private uint unk3300DGMGNJLHFMB_;
+    /// <summary>Field number for the "factor" field.</summary>
+    public const int FactorFieldNumber = 8;
+    private uint factor_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300DGMGNJLHFMB {
-      get { return unk3300DGMGNJLHFMB_; }
+    public uint Factor {
+      get { return factor_; }
       set {
-        unk3300DGMGNJLHFMB_ = value;
+        factor_ = value;
       }
     }
 
@@ -148,15 +148,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return unk3300FGHDJJCLNFN_; }
     }
 
-    /// <summary>Field number for the "Unk3300_GBCCJMBPBBI" field.</summary>
-    public const int Unk3300GBCCJMBPBBIFieldNumber = 11;
-    private uint unk3300GBCCJMBPBBI_;
+    /// <summary>Field number for the "contribution" field.</summary>
+    public const int ContributionFieldNumber = 11;
+    private uint contribution_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300GBCCJMBPBBI {
-      get { return unk3300GBCCJMBPBBI_; }
+    public uint Contribution {
+      get { return contribution_; }
       set {
-        unk3300GBCCJMBPBBI_ = value;
+        contribution_ = value;
       }
     }
 
@@ -189,10 +189,10 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if(!unk3300ODBFFAIIPMB_.Equals(other.unk3300ODBFFAIIPMB_)) return false;
       if (Days != other.Days) return false;
-      if (Unk3300DGMGNJLHFMB != other.Unk3300DGMGNJLHFMB) return false;
+      if (Factor != other.Factor) return false;
       if (Progress != other.Progress) return false;
       if(!unk3300FGHDJJCLNFN_.Equals(other.unk3300FGHDJJCLNFN_)) return false;
-      if (Unk3300GBCCJMBPBBI != other.Unk3300GBCCJMBPBBI) return false;
+      if (Contribution != other.Contribution) return false;
       if (PhaseId != other.PhaseId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -203,10 +203,10 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       hash ^= unk3300ODBFFAIIPMB_.GetHashCode();
       if (Days != 0) hash ^= Days.GetHashCode();
-      if (Unk3300DGMGNJLHFMB != 0) hash ^= Unk3300DGMGNJLHFMB.GetHashCode();
+      if (Factor != 0) hash ^= Factor.GetHashCode();
       if (Progress != 0) hash ^= Progress.GetHashCode();
       hash ^= unk3300FGHDJJCLNFN_.GetHashCode();
-      if (Unk3300GBCCJMBPBBI != 0) hash ^= Unk3300GBCCJMBPBBI.GetHashCode();
+      if (Contribution != 0) hash ^= Contribution.GetHashCode();
       if (PhaseId != 0) hash ^= PhaseId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -239,13 +239,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(Days);
       }
-      if (Unk3300DGMGNJLHFMB != 0) {
+      if (Factor != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk3300DGMGNJLHFMB);
+        output.WriteUInt32(Factor);
       }
-      if (Unk3300GBCCJMBPBBI != 0) {
+      if (Contribution != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk3300GBCCJMBPBBI);
+        output.WriteUInt32(Contribution);
       }
       unk3300FGHDJJCLNFN_.WriteTo(output, _repeated_unk3300FGHDJJCLNFN_codec);
       if (_unknownFields != null) {
@@ -271,13 +271,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(Days);
       }
-      if (Unk3300DGMGNJLHFMB != 0) {
+      if (Factor != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk3300DGMGNJLHFMB);
+        output.WriteUInt32(Factor);
       }
-      if (Unk3300GBCCJMBPBBI != 0) {
+      if (Contribution != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk3300GBCCJMBPBBI);
+        output.WriteUInt32(Contribution);
       }
       unk3300FGHDJJCLNFN_.WriteTo(ref output, _repeated_unk3300FGHDJJCLNFN_codec);
       if (_unknownFields != null) {
@@ -294,15 +294,15 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Days != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Days);
       }
-      if (Unk3300DGMGNJLHFMB != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300DGMGNJLHFMB);
+      if (Factor != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Factor);
       }
       if (Progress != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Progress);
       }
       size += unk3300FGHDJJCLNFN_.CalculateSize(_repeated_unk3300FGHDJJCLNFN_codec);
-      if (Unk3300GBCCJMBPBBI != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300GBCCJMBPBBI);
+      if (Contribution != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Contribution);
       }
       if (PhaseId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PhaseId);
@@ -323,15 +323,15 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Days != 0) {
         Days = other.Days;
       }
-      if (other.Unk3300DGMGNJLHFMB != 0) {
-        Unk3300DGMGNJLHFMB = other.Unk3300DGMGNJLHFMB;
+      if (other.Factor != 0) {
+        Factor = other.Factor;
       }
       if (other.Progress != 0) {
         Progress = other.Progress;
       }
       unk3300FGHDJJCLNFN_.Add(other.unk3300FGHDJJCLNFN_);
-      if (other.Unk3300GBCCJMBPBBI != 0) {
-        Unk3300GBCCJMBPBBI = other.Unk3300GBCCJMBPBBI;
+      if (other.Contribution != 0) {
+        Contribution = other.Contribution;
       }
       if (other.PhaseId != 0) {
         PhaseId = other.PhaseId;
@@ -369,11 +369,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk3300DGMGNJLHFMB = input.ReadUInt32();
+            Factor = input.ReadUInt32();
             break;
           }
           case 88: {
-            Unk3300GBCCJMBPBBI = input.ReadUInt32();
+            Contribution = input.ReadUInt32();
             break;
           }
           case 114:
@@ -414,11 +414,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk3300DGMGNJLHFMB = input.ReadUInt32();
+            Factor = input.ReadUInt32();
             break;
           }
           case 88: {
-            Unk3300GBCCJMBPBBI = input.ReadUInt32();
+            Contribution = input.ReadUInt32();
             break;
           }
           case 114:

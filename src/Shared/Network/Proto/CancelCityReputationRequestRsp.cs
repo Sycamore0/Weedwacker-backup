@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static CancelCityReputationRequestRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiRDYW5jZWxDaXR5UmVwdXRhdGlvblJlcXVlc3RSc3AucHJvdG8SH1dlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iVgoeQ2FuY2VsQ2l0eVJlcHV0",
-            "YXRpb25SZXF1ZXN0UnNwEg8KB2NpdHlfaWQYByABKA0SDwoHcmV0Y29kZRgO",
-            "IAEoBRISCgpyZXF1ZXN0X2lkGAUgASgNYgZwcm90bzM="));
+            "CiRDYW5jZWxDaXR5UmVwdXRhdGlvblJlcXVlc3RSc3AucHJvdG8iVgoeQ2Fu",
+            "Y2VsQ2l0eVJlcHV0YXRpb25SZXF1ZXN0UnNwEg8KB2NpdHlfaWQYByABKA0S",
+            "DwoHcmV0Y29kZRgOIAEoBRISCgpyZXF1ZXN0X2lkGAUgASgNQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

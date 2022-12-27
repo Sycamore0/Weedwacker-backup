@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ChildQuestReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChBDaGlsZFF1ZXN0LnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvIkYKCkNoaWxkUXVlc3QSDQoFc3RhdGUYDyABKA0SFwoPcXVlc3Rf",
-            "Y29uZmlnX2lkGAkgASgNEhAKCHF1ZXN0X2lkGA0gASgNYgZwcm90bzM="));
+            "ChBDaGlsZFF1ZXN0LnByb3RvIkYKCkNoaWxkUXVlc3QSDQoFc3RhdGUYDyAB",
+            "KA0SFwoPcXVlc3RfY29uZmlnX2lkGAkgASgNEhAKCHF1ZXN0X2lkGA0gASgN",
+            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,9 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static WidgetThunderBirdFeatherInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJXaWRnZXRUaHVuZGVyQmlyZEZlYXRoZXJJbmZvLnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIjYKHFdpZGdldFRodW5kZXJCaXJk",
-            "RmVhdGhlckluZm8SFgoOZW50aXR5X2lkX2xpc3QYCSADKA1iBnByb3RvMw=="));
+            "CiJXaWRnZXRUaHVuZGVyQmlyZEZlYXRoZXJJbmZvLnByb3RvIjYKHFdpZGdl",
+            "dFRodW5kZXJCaXJkRmVhdGhlckluZm8SFgoOZW50aXR5X2lkX2xpc3QYCSAD",
+            "KA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

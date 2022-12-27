@@ -24,22 +24,19 @@ namespace Weedwacker.Shared.Network.Proto {
     static FungusFighterDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1GdW5ndXNGaWdodGVyRGV0YWlsSW5mby5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90bxoSRnVuZ3VzRGV0YWlsLnByb3RvGhtGdW5n",
-            "dXNQbG90U3RhZ2VEZXRhaWwucHJvdG8aIUZ1bmd1c1RyYWluaW5nRHVuZ2Vv",
-            "bkRldGFpbC5wcm90bxoiRnVuZ3VzVHJhaW5pbmdQcm9ncmVzc0RldGFpbC5w",
-            "cm90byLlAwoXRnVuZ3VzRmlnaHRlckRldGFpbEluZm8SSQoSZnVuZ3VzX2Rl",
-            "dGFpbF9saXN0GAYgAygLMi0uV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90by5GdW5ndXNEZXRhaWwSGwoTVW5rMzMwMF9HSUhBS0tBSkhESBgBIAMo",
-            "DRIbChNVbmszMzAwX0tHS0ZKSkhGSEFCGAggAygNEmwKJXRyYWluaW5nX2R1",
-            "bmdlb25fcHJvZ3Jlc3NfZGV0YWlsX2xpc3QYAyADKAsyPS5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLkZ1bmd1c1RyYWluaW5nUHJvZ3Jlc3NE",
-            "ZXRhaWwSGwoTVW5rMzMwMF9IUERPSk9CUEZNShgJIAMoDRJWChZwbG90X3N0",
-            "YWdlX2RldGFpbF9saXN0GAsgAygLMjYuV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90by5GdW5ndXNQbG90U3RhZ2VEZXRhaWwSYgocdHJhaW5pbmdf",
-            "ZHVuZ2Vvbl9kZXRhaWxfbGlzdBgCIAMoCzI8LldlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8uRnVuZ3VzVHJhaW5pbmdEdW5nZW9uRGV0YWlsYgZw",
-            "cm90bzM="));
+            "Ch1GdW5ndXNGaWdodGVyRGV0YWlsSW5mby5wcm90bxoSRnVuZ3VzRGV0YWls",
+            "LnByb3RvGhtGdW5ndXNQbG90U3RhZ2VEZXRhaWwucHJvdG8aIUZ1bmd1c1Ry",
+            "YWluaW5nRHVuZ2VvbkRldGFpbC5wcm90bxoiRnVuZ3VzVHJhaW5pbmdQcm9n",
+            "cmVzc0RldGFpbC5wcm90byLlAgoXRnVuZ3VzRmlnaHRlckRldGFpbEluZm8S",
+            "KQoSZnVuZ3VzX2RldGFpbF9saXN0GAYgAygLMg0uRnVuZ3VzRGV0YWlsEhsK",
+            "E1VuazMzMDBfR0lIQUtLQUpIREgYASADKA0SGwoTVW5rMzMwMF9LR0tGSkpI",
+            "RkhBQhgIIAMoDRJMCiV0cmFpbmluZ19kdW5nZW9uX3Byb2dyZXNzX2RldGFp",
+            "bF9saXN0GAMgAygLMh0uRnVuZ3VzVHJhaW5pbmdQcm9ncmVzc0RldGFpbBIb",
+            "ChNVbmszMzAwX0hQRE9KT0JQRk1KGAkgAygNEjYKFnBsb3Rfc3RhZ2VfZGV0",
+            "YWlsX2xpc3QYCyADKAsyFi5GdW5ndXNQbG90U3RhZ2VEZXRhaWwSQgocdHJh",
+            "aW5pbmdfZHVuZ2Vvbl9kZXRhaWxfbGlzdBgCIAMoCzIcLkZ1bmd1c1RyYWlu",
+            "aW5nRHVuZ2VvbkRldGFpbEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
+            "ay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.FungusDetailReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FungusPlotStageDetailReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FungusTrainingDungeonDetailReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FungusTrainingProgressDetailReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

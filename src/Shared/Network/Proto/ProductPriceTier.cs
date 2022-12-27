@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ProductPriceTierReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZQcm9kdWN0UHJpY2VUaWVyLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvIjoKEFByb2R1Y3RQcmljZVRpZXISEgoKcHJpY2VfdGll",
-            "chgDIAEoCRISCgpwcm9kdWN0X2lkGA4gASgJYgZwcm90bzM="));
+            "ChZQcm9kdWN0UHJpY2VUaWVyLnByb3RvIjoKEFByb2R1Y3RQcmljZVRpZXIS",
+            "EgoKcHJpY2VfdGllchgDIAEoCRISCgpwcm9kdWN0X2lkGA4gASgJQiKqAh9X",
+            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

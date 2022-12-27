@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static CoopCgReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgxDb29wQ2cucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
-            "dG8iJwoGQ29vcENnEgoKAmlkGAUgASgNEhEKCWlzX3VubG9jaxgHIAEoCGIG",
-            "cHJvdG8z"));
+            "CgxDb29wQ2cucHJvdG8iJwoGQ29vcENnEgoKAmlkGAUgASgNEhEKCWlzX3Vu",
+            "bG9jaxgHIAEoCEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

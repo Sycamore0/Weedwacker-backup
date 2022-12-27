@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static FindHilichurlFinishSecondQuestNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CipGaW5kSGlsaWNodXJsRmluaXNoU2Vjb25kUXVlc3ROb3RpZnkucHJvdG8S",
-            "H1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iOQokRmluZEhpbGlj",
-            "aHVybEZpbmlzaFNlY29uZFF1ZXN0Tm90aWZ5EhEKCWRheV9pbmRleBgEIAEo",
-            "DWIGcHJvdG8z"));
+            "CipGaW5kSGlsaWNodXJsRmluaXNoU2Vjb25kUXVlc3ROb3RpZnkucHJvdG8i",
+            "OQokRmluZEhpbGljaHVybEZpbmlzaFNlY29uZFF1ZXN0Tm90aWZ5EhEKCWRh",
+            "eV9pbmRleBgEIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

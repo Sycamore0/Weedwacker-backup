@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static FleurFairBuffEnergyNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9GbGV1ckZhaXJCdWZmRW5lcmd5Tm90aWZ5LnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvIisKGUZsZXVyRmFpckJ1ZmZFbmVyZ3lO",
-            "b3RpZnkSDgoGZW5lcmd5GA0gASgNYgZwcm90bzM="));
+            "Ch9GbGV1ckZhaXJCdWZmRW5lcmd5Tm90aWZ5LnByb3RvIisKGUZsZXVyRmFp",
+            "ckJ1ZmZFbmVyZ3lOb3RpZnkSDgoGZW5lcmd5GA0gASgNQiKqAh9XZWVkd2Fj",
+            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

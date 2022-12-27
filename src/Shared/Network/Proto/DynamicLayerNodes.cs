@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static DynamicLayerNodesReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdEeW5hbWljTGF5ZXJOb2Rlcy5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90bxoURHluYW1pY1NWT05vZGUucHJvdG8iYgoRRHluYW1p",
-            "Y0xheWVyTm9kZXMSDQoFbGV2ZWwYByABKAUSPgoFbm9kZXMYBCADKAsyLy5X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkR5bmFtaWNTVk9Ob2Rl",
-            "YgZwcm90bzM="));
+            "ChdEeW5hbWljTGF5ZXJOb2Rlcy5wcm90bxoURHluYW1pY1NWT05vZGUucHJv",
+            "dG8iQgoRRHluYW1pY0xheWVyTm9kZXMSDQoFbGV2ZWwYByABKAUSHgoFbm9k",
+            "ZXMYBCADKAsyDy5EeW5hbWljU1ZPTm9kZUIiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.DynamicSVONodeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

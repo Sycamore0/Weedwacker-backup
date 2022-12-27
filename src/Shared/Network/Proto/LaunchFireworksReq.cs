@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static LaunchFireworksReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhMYXVuY2hGaXJld29ya3NSZXEucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8aH0ZpcmV3b3Jrc0xhdW5jaFNjaGVtZURhdGEucHJv",
-            "dG8iZQoSTGF1bmNoRmlyZXdvcmtzUmVxEk8KC3NjaGVtZV9kYXRhGAggASgL",
-            "MjouV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5GaXJld29ya3NM",
-            "YXVuY2hTY2hlbWVEYXRhYgZwcm90bzM="));
+            "ChhMYXVuY2hGaXJld29ya3NSZXEucHJvdG8aH0ZpcmV3b3Jrc0xhdW5jaFNj",
+            "aGVtZURhdGEucHJvdG8iRQoSTGF1bmNoRmlyZXdvcmtzUmVxEi8KC3NjaGVt",
+            "ZV9kYXRhGAggASgLMhouRmlyZXdvcmtzTGF1bmNoU2NoZW1lRGF0YUIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.FireworksLaunchSchemeDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

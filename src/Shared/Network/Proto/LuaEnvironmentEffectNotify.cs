@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static LuaEnvironmentEffectNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBMdWFFbnZpcm9ubWVudEVmZmVjdE5vdGlmeS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byJyChpMdWFFbnZpcm9ubWVudEVmZmVj",
-            "dE5vdGlmeRIMCgR0eXBlGAggASgNEhYKDmludF9wYXJhbV9saXN0GAogAygF",
-            "EhQKDGVmZmVjdF9hbGlhcxgDIAEoCRIYChBmbG9hdF9wYXJhbV9saXN0GAwg",
-            "AygCYgZwcm90bzM="));
+            "CiBMdWFFbnZpcm9ubWVudEVmZmVjdE5vdGlmeS5wcm90byJyChpMdWFFbnZp",
+            "cm9ubWVudEVmZmVjdE5vdGlmeRIMCgR0eXBlGAggASgNEhYKDmludF9wYXJh",
+            "bV9saXN0GAogAygFEhQKDGVmZmVjdF9hbGlhcxgDIAEoCRIYChBmbG9hdF9w",
+            "YXJhbV9saXN0GAwgAygCQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

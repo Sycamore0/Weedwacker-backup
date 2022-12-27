@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static PathfindingPingNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtQYXRoZmluZGluZ1BpbmdOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8iFwoVUGF0aGZpbmRpbmdQaW5nTm90aWZ5YgZw",
-            "cm90bzM="));
+            "ChtQYXRoZmluZGluZ1BpbmdOb3RpZnkucHJvdG8iFwoVUGF0aGZpbmRpbmdQ",
+            "aW5nTm90aWZ5QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

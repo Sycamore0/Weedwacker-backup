@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static DungeonReviseLevelNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5EdW5nZW9uUmV2aXNlTGV2ZWxOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8iaAoYRHVuZ2VvblJldmlzZUxldmVsTm90",
-            "aWZ5EhIKCmR1bmdlb25faWQYAiABKA0SGwoTVW5rMzMwMF9BTE1FQ0xDSEhG",
-            "QRgDIAEoDRIbChNVbmszMzAwX0RLSU1NS0lIRENLGA8gASgNYgZwcm90bzM="));
+            "Ch5EdW5nZW9uUmV2aXNlTGV2ZWxOb3RpZnkucHJvdG8iWQoYRHVuZ2VvblJl",
+            "dmlzZUxldmVsTm90aWZ5EhIKCmR1bmdlb25faWQYAiABKA0SFAoMcmV2aXNl",
+            "X2xldmVsGAMgASgNEhMKC3NjZW5lX2xldmVsGA8gASgNQiKqAh9XZWVkd2Fj",
+            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonReviseLevelNotify), global::Weedwacker.Shared.Network.Proto.DungeonReviseLevelNotify.Parser, new[]{ "DungeonId", "Unk3300ALMECLCHHFA", "Unk3300DKIMMKIHDCK" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.DungeonReviseLevelNotify), global::Weedwacker.Shared.Network.Proto.DungeonReviseLevelNotify.Parser, new[]{ "DungeonId", "ReviseLevel", "SceneLevel" }, null, null, null, null)
           }));
     }
     #endregion
@@ -83,8 +83,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DungeonReviseLevelNotify(DungeonReviseLevelNotify other) : this() {
       dungeonId_ = other.dungeonId_;
-      unk3300ALMECLCHHFA_ = other.unk3300ALMECLCHHFA_;
-      unk3300DKIMMKIHDCK_ = other.unk3300DKIMMKIHDCK_;
+      reviseLevel_ = other.reviseLevel_;
+      sceneLevel_ = other.sceneLevel_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -106,27 +106,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_ALMECLCHHFA" field.</summary>
-    public const int Unk3300ALMECLCHHFAFieldNumber = 3;
-    private uint unk3300ALMECLCHHFA_;
+    /// <summary>Field number for the "revise_level" field.</summary>
+    public const int ReviseLevelFieldNumber = 3;
+    private uint reviseLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300ALMECLCHHFA {
-      get { return unk3300ALMECLCHHFA_; }
+    public uint ReviseLevel {
+      get { return reviseLevel_; }
       set {
-        unk3300ALMECLCHHFA_ = value;
+        reviseLevel_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_DKIMMKIHDCK" field.</summary>
-    public const int Unk3300DKIMMKIHDCKFieldNumber = 15;
-    private uint unk3300DKIMMKIHDCK_;
+    /// <summary>Field number for the "scene_level" field.</summary>
+    public const int SceneLevelFieldNumber = 15;
+    private uint sceneLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300DKIMMKIHDCK {
-      get { return unk3300DKIMMKIHDCK_; }
+    public uint SceneLevel {
+      get { return sceneLevel_; }
       set {
-        unk3300DKIMMKIHDCK_ = value;
+        sceneLevel_ = value;
       }
     }
 
@@ -146,8 +146,8 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (DungeonId != other.DungeonId) return false;
-      if (Unk3300ALMECLCHHFA != other.Unk3300ALMECLCHHFA) return false;
-      if (Unk3300DKIMMKIHDCK != other.Unk3300DKIMMKIHDCK) return false;
+      if (ReviseLevel != other.ReviseLevel) return false;
+      if (SceneLevel != other.SceneLevel) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -156,8 +156,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (DungeonId != 0) hash ^= DungeonId.GetHashCode();
-      if (Unk3300ALMECLCHHFA != 0) hash ^= Unk3300ALMECLCHHFA.GetHashCode();
-      if (Unk3300DKIMMKIHDCK != 0) hash ^= Unk3300DKIMMKIHDCK.GetHashCode();
+      if (ReviseLevel != 0) hash ^= ReviseLevel.GetHashCode();
+      if (SceneLevel != 0) hash ^= SceneLevel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -180,13 +180,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(DungeonId);
       }
-      if (Unk3300ALMECLCHHFA != 0) {
+      if (ReviseLevel != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300ALMECLCHHFA);
+        output.WriteUInt32(ReviseLevel);
       }
-      if (Unk3300DKIMMKIHDCK != 0) {
+      if (SceneLevel != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk3300DKIMMKIHDCK);
+        output.WriteUInt32(SceneLevel);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -202,13 +202,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(DungeonId);
       }
-      if (Unk3300ALMECLCHHFA != 0) {
+      if (ReviseLevel != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300ALMECLCHHFA);
+        output.WriteUInt32(ReviseLevel);
       }
-      if (Unk3300DKIMMKIHDCK != 0) {
+      if (SceneLevel != 0) {
         output.WriteRawTag(120);
-        output.WriteUInt32(Unk3300DKIMMKIHDCK);
+        output.WriteUInt32(SceneLevel);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -223,11 +223,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (DungeonId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DungeonId);
       }
-      if (Unk3300ALMECLCHHFA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300ALMECLCHHFA);
+      if (ReviseLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ReviseLevel);
       }
-      if (Unk3300DKIMMKIHDCK != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300DKIMMKIHDCK);
+      if (SceneLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SceneLevel);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -244,11 +244,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.DungeonId != 0) {
         DungeonId = other.DungeonId;
       }
-      if (other.Unk3300ALMECLCHHFA != 0) {
-        Unk3300ALMECLCHHFA = other.Unk3300ALMECLCHHFA;
+      if (other.ReviseLevel != 0) {
+        ReviseLevel = other.ReviseLevel;
       }
-      if (other.Unk3300DKIMMKIHDCK != 0) {
-        Unk3300DKIMMKIHDCK = other.Unk3300DKIMMKIHDCK;
+      if (other.SceneLevel != 0) {
+        SceneLevel = other.SceneLevel;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -270,11 +270,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300ALMECLCHHFA = input.ReadUInt32();
+            ReviseLevel = input.ReadUInt32();
             break;
           }
           case 120: {
-            Unk3300DKIMMKIHDCK = input.ReadUInt32();
+            SceneLevel = input.ReadUInt32();
             break;
           }
         }
@@ -297,11 +297,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300ALMECLCHHFA = input.ReadUInt32();
+            ReviseLevel = input.ReadUInt32();
             break;
           }
           case 120: {
-            Unk3300DKIMMKIHDCK = input.ReadUInt32();
+            SceneLevel = input.ReadUInt32();
             break;
           }
         }

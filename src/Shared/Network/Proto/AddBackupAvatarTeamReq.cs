@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static AddBackupAvatarTeamReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxBZGRCYWNrdXBBdmF0YXJUZWFtUmVxLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvIhgKFkFkZEJhY2t1cEF2YXRhclRlYW1SZXFi",
-            "BnByb3RvMw=="));
+            "ChxBZGRCYWNrdXBBdmF0YXJUZWFtUmVxLnByb3RvIhgKFkFkZEJhY2t1cEF2",
+            "YXRhclRlYW1SZXFCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

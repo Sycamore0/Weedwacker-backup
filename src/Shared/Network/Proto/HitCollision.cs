@@ -24,19 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static HitCollisionReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJIaXRDb2xsaXNpb24ucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8aFUhpdENvbGxpZGVyVHlwZS5wcm90bxoMVmVjdG9yLnByb3Rv",
-            "IqICCgxIaXRDb2xsaXNpb24SFQoNaGl0X2JveF9pbmRleBgIIAEoBRJLChFo",
-            "aXRfY29sbGlkZXJfdHlwZRgFIAEoDjIwLldlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8uSGl0Q29sbGlkZXJUeXBlEhsKE1VuazMzMDBfTE5ISU9M",
-            "Rk1HQ04YByABKAISOAoHaGl0X2RpchgDIAEoCzInLldlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8uVmVjdG9yEjoKCWhpdF9wb2ludBgOIAEoCzIn",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uVmVjdG9yEhsKE1Vu",
-            "azMzMDBfT0pIQk1MSUFQSk4YCiABKAJiBnByb3RvMw=="));
+            "ChJIaXRDb2xsaXNpb24ucHJvdG8aFUhpdENvbGxpZGVyVHlwZS5wcm90bxoM",
+            "VmVjdG9yLnByb3RvIs0BCgxIaXRDb2xsaXNpb24SFQoNaGl0X2JveF9pbmRl",
+            "eBgIIAEoBRIrChFoaXRfY29sbGlkZXJfdHlwZRgFIAEoDjIQLkhpdENvbGxp",
+            "ZGVyVHlwZRIhChlhdHRhY2tlZV9oaXRfZW50aXR5X2FuZ2xlGAcgASgCEhgK",
+            "B2hpdF9kaXIYAyABKAsyBy5WZWN0b3ISGgoJaGl0X3BvaW50GA4gASgLMgcu",
+            "VmVjdG9yEiAKGGF0dGFja2VlX2hpdF9mb3JjZV9hbmdsZRgKIAEoAkIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.HitColliderTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HitCollision), global::Weedwacker.Shared.Network.Proto.HitCollision.Parser, new[]{ "HitBoxIndex", "HitColliderType", "Unk3300LNHIOLFMGCN", "HitDir", "HitPoint", "Unk3300OJHBMLIAPJN" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HitCollision), global::Weedwacker.Shared.Network.Proto.HitCollision.Parser, new[]{ "HitBoxIndex", "HitColliderType", "AttackeeHitEntityAngle", "HitDir", "HitPoint", "AttackeeHitForceAngle" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,10 +77,10 @@ namespace Weedwacker.Shared.Network.Proto {
     public HitCollision(HitCollision other) : this() {
       hitBoxIndex_ = other.hitBoxIndex_;
       hitColliderType_ = other.hitColliderType_;
-      unk3300LNHIOLFMGCN_ = other.unk3300LNHIOLFMGCN_;
+      attackeeHitEntityAngle_ = other.attackeeHitEntityAngle_;
       hitDir_ = other.hitDir_ != null ? other.hitDir_.Clone() : null;
       hitPoint_ = other.hitPoint_ != null ? other.hitPoint_.Clone() : null;
-      unk3300OJHBMLIAPJN_ = other.unk3300OJHBMLIAPJN_;
+      attackeeHitForceAngle_ = other.attackeeHitForceAngle_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -116,15 +114,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_LNHIOLFMGCN" field.</summary>
-    public const int Unk3300LNHIOLFMGCNFieldNumber = 7;
-    private float unk3300LNHIOLFMGCN_;
+    /// <summary>Field number for the "attackee_hit_entity_angle" field.</summary>
+    public const int AttackeeHitEntityAngleFieldNumber = 7;
+    private float attackeeHitEntityAngle_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3300LNHIOLFMGCN {
-      get { return unk3300LNHIOLFMGCN_; }
+    public float AttackeeHitEntityAngle {
+      get { return attackeeHitEntityAngle_; }
       set {
-        unk3300LNHIOLFMGCN_ = value;
+        attackeeHitEntityAngle_ = value;
       }
     }
 
@@ -152,15 +150,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_OJHBMLIAPJN" field.</summary>
-    public const int Unk3300OJHBMLIAPJNFieldNumber = 10;
-    private float unk3300OJHBMLIAPJN_;
+    /// <summary>Field number for the "attackee_hit_force_angle" field.</summary>
+    public const int AttackeeHitForceAngleFieldNumber = 10;
+    private float attackeeHitForceAngle_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3300OJHBMLIAPJN {
-      get { return unk3300OJHBMLIAPJN_; }
+    public float AttackeeHitForceAngle {
+      get { return attackeeHitForceAngle_; }
       set {
-        unk3300OJHBMLIAPJN_ = value;
+        attackeeHitForceAngle_ = value;
       }
     }
 
@@ -181,10 +179,10 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (HitBoxIndex != other.HitBoxIndex) return false;
       if (HitColliderType != other.HitColliderType) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3300LNHIOLFMGCN, other.Unk3300LNHIOLFMGCN)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(AttackeeHitEntityAngle, other.AttackeeHitEntityAngle)) return false;
       if (!object.Equals(HitDir, other.HitDir)) return false;
       if (!object.Equals(HitPoint, other.HitPoint)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3300OJHBMLIAPJN, other.Unk3300OJHBMLIAPJN)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(AttackeeHitForceAngle, other.AttackeeHitForceAngle)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -194,10 +192,10 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (HitBoxIndex != 0) hash ^= HitBoxIndex.GetHashCode();
       if (HitColliderType != global::Weedwacker.Shared.Network.Proto.HitColliderType.Invalid) hash ^= HitColliderType.GetHashCode();
-      if (Unk3300LNHIOLFMGCN != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3300LNHIOLFMGCN);
+      if (AttackeeHitEntityAngle != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(AttackeeHitEntityAngle);
       if (hitDir_ != null) hash ^= HitDir.GetHashCode();
       if (hitPoint_ != null) hash ^= HitPoint.GetHashCode();
-      if (Unk3300OJHBMLIAPJN != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3300OJHBMLIAPJN);
+      if (AttackeeHitForceAngle != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(AttackeeHitForceAngle);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -224,17 +222,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteEnum((int) HitColliderType);
       }
-      if (Unk3300LNHIOLFMGCN != 0F) {
+      if (AttackeeHitEntityAngle != 0F) {
         output.WriteRawTag(61);
-        output.WriteFloat(Unk3300LNHIOLFMGCN);
+        output.WriteFloat(AttackeeHitEntityAngle);
       }
       if (HitBoxIndex != 0) {
         output.WriteRawTag(64);
         output.WriteInt32(HitBoxIndex);
       }
-      if (Unk3300OJHBMLIAPJN != 0F) {
+      if (AttackeeHitForceAngle != 0F) {
         output.WriteRawTag(85);
-        output.WriteFloat(Unk3300OJHBMLIAPJN);
+        output.WriteFloat(AttackeeHitForceAngle);
       }
       if (hitPoint_ != null) {
         output.WriteRawTag(114);
@@ -258,17 +256,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteEnum((int) HitColliderType);
       }
-      if (Unk3300LNHIOLFMGCN != 0F) {
+      if (AttackeeHitEntityAngle != 0F) {
         output.WriteRawTag(61);
-        output.WriteFloat(Unk3300LNHIOLFMGCN);
+        output.WriteFloat(AttackeeHitEntityAngle);
       }
       if (HitBoxIndex != 0) {
         output.WriteRawTag(64);
         output.WriteInt32(HitBoxIndex);
       }
-      if (Unk3300OJHBMLIAPJN != 0F) {
+      if (AttackeeHitForceAngle != 0F) {
         output.WriteRawTag(85);
-        output.WriteFloat(Unk3300OJHBMLIAPJN);
+        output.WriteFloat(AttackeeHitForceAngle);
       }
       if (hitPoint_ != null) {
         output.WriteRawTag(114);
@@ -290,7 +288,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (HitColliderType != global::Weedwacker.Shared.Network.Proto.HitColliderType.Invalid) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) HitColliderType);
       }
-      if (Unk3300LNHIOLFMGCN != 0F) {
+      if (AttackeeHitEntityAngle != 0F) {
         size += 1 + 4;
       }
       if (hitDir_ != null) {
@@ -299,7 +297,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (hitPoint_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(HitPoint);
       }
-      if (Unk3300OJHBMLIAPJN != 0F) {
+      if (AttackeeHitForceAngle != 0F) {
         size += 1 + 4;
       }
       if (_unknownFields != null) {
@@ -320,8 +318,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.HitColliderType != global::Weedwacker.Shared.Network.Proto.HitColliderType.Invalid) {
         HitColliderType = other.HitColliderType;
       }
-      if (other.Unk3300LNHIOLFMGCN != 0F) {
-        Unk3300LNHIOLFMGCN = other.Unk3300LNHIOLFMGCN;
+      if (other.AttackeeHitEntityAngle != 0F) {
+        AttackeeHitEntityAngle = other.AttackeeHitEntityAngle;
       }
       if (other.hitDir_ != null) {
         if (hitDir_ == null) {
@@ -335,8 +333,8 @@ namespace Weedwacker.Shared.Network.Proto {
         }
         HitPoint.MergeFrom(other.HitPoint);
       }
-      if (other.Unk3300OJHBMLIAPJN != 0F) {
-        Unk3300OJHBMLIAPJN = other.Unk3300OJHBMLIAPJN;
+      if (other.AttackeeHitForceAngle != 0F) {
+        AttackeeHitForceAngle = other.AttackeeHitForceAngle;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -365,7 +363,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 61: {
-            Unk3300LNHIOLFMGCN = input.ReadFloat();
+            AttackeeHitEntityAngle = input.ReadFloat();
             break;
           }
           case 64: {
@@ -373,7 +371,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 85: {
-            Unk3300OJHBMLIAPJN = input.ReadFloat();
+            AttackeeHitForceAngle = input.ReadFloat();
             break;
           }
           case 114: {
@@ -410,7 +408,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 61: {
-            Unk3300LNHIOLFMGCN = input.ReadFloat();
+            AttackeeHitEntityAngle = input.ReadFloat();
             break;
           }
           case 64: {
@@ -418,7 +416,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 85: {
-            Unk3300OJHBMLIAPJN = input.ReadFloat();
+            AttackeeHitForceAngle = input.ReadFloat();
             break;
           }
           case 114: {

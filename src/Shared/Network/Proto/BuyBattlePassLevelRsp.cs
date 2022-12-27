@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static BuyBattlePassLevelRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtCdXlCYXR0bGVQYXNzTGV2ZWxSc3AucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8iOwoVQnV5QmF0dGxlUGFzc0xldmVsUnNwEg8K",
-            "B3JldGNvZGUYCyABKAUSEQoJYnV5X2xldmVsGA8gASgNYgZwcm90bzM="));
+            "ChtCdXlCYXR0bGVQYXNzTGV2ZWxSc3AucHJvdG8iOwoVQnV5QmF0dGxlUGFz",
+            "c0xldmVsUnNwEg8KB3JldGNvZGUYCyABKAUSEQoJYnV5X2xldmVsGA8gASgN",
+            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

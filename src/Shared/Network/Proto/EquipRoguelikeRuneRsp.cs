@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static EquipRoguelikeRuneRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtFcXVpcFJvZ3VlbGlrZVJ1bmVSc3AucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8iOwoVRXF1aXBSb2d1ZWxpa2VSdW5lUnNwEhEK",
-            "CXJ1bmVfbGlzdBgGIAMoDRIPCgdyZXRjb2RlGAUgASgFYgZwcm90bzM="));
+            "ChtFcXVpcFJvZ3VlbGlrZVJ1bmVSc3AucHJvdG8iOwoVRXF1aXBSb2d1ZWxp",
+            "a2VSdW5lUnNwEhEKCXJ1bmVfbGlzdBgGIAMoDRIPCgdyZXRjb2RlGAUgASgF",
+            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static ViewLanternProjectionLevelTipsReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CidWaWV3TGFudGVyblByb2plY3Rpb25MZXZlbFRpcHNSZXEucHJvdG8SH1dl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iNQohVmlld0xhbnRlcm5Q",
-            "cm9qZWN0aW9uTGV2ZWxUaXBzUmVxEhAKCGxldmVsX2lkGAUgASgNYgZwcm90",
-            "bzM="));
+            "CidWaWV3TGFudGVyblByb2plY3Rpb25MZXZlbFRpcHNSZXEucHJvdG8iNQoh",
+            "Vmlld0xhbnRlcm5Qcm9qZWN0aW9uTGV2ZWxUaXBzUmVxEhAKCGxldmVsX2lk",
+            "GAUgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

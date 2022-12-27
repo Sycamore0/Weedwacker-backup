@@ -24,18 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static FurnitureMakeRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZGdXJuaXR1cmVNYWtlUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvGh9GdXJuaXR1cmVNYWtlQmVIZWxwZWREYXRhLnByb3Rv",
-            "GhtGdXJuaXR1cmVNYWtlSGVscERhdGEucHJvdG8aF0Z1cm5pdHVyZU1ha2VJ",
-            "bmZvLnByb3RvGhdGdXJuaXR1cmVNYWtlU2xvdC5wcm90byLmAgoQRnVybml0",
-            "dXJlTWFrZVJzcBJPChNmdXJuaXR1cmVfbWFrZV9zbG90GA0gASgLMjIuV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5GdXJuaXR1cmVNYWtlU2xv",
-            "dBJOCg5oZWxwX2RhdGFfbGlzdBgEIAMoCzI2LldlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8uRnVybml0dXJlTWFrZUhlbHBEYXRhEg8KB3JldGNv",
-            "ZGUYCyABKAUSVAoQaGVscGVkX2RhdGFfbGlzdBgGIAMoCzI6LldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uRnVybml0dXJlTWFrZUJlSGVscGVk",
-            "RGF0YRJKCg5tYWtlX2luZm9fbGlzdBgHIAMoCzIyLldlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8uRnVybml0dXJlTWFrZUluZm9iBnByb3RvMw=="));
+            "ChZGdXJuaXR1cmVNYWtlUnNwLnByb3RvGh9GdXJuaXR1cmVNYWtlQmVIZWxw",
+            "ZWREYXRhLnByb3RvGhtGdXJuaXR1cmVNYWtlSGVscERhdGEucHJvdG8aF0Z1",
+            "cm5pdHVyZU1ha2VJbmZvLnByb3RvGhdGdXJuaXR1cmVNYWtlU2xvdC5wcm90",
+            "byLmAQoQRnVybml0dXJlTWFrZVJzcBIvChNmdXJuaXR1cmVfbWFrZV9zbG90",
+            "GA0gASgLMhIuRnVybml0dXJlTWFrZVNsb3QSLgoOaGVscF9kYXRhX2xpc3QY",
+            "BCADKAsyFi5GdXJuaXR1cmVNYWtlSGVscERhdGESDwoHcmV0Y29kZRgLIAEo",
+            "BRI0ChBoZWxwZWRfZGF0YV9saXN0GAYgAygLMhouRnVybml0dXJlTWFrZUJl",
+            "SGVscGVkRGF0YRIqCg5tYWtlX2luZm9fbGlzdBgHIAMoCzISLkZ1cm5pdHVy",
+            "ZU1ha2VJbmZvQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.FurnitureMakeBeHelpedDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FurnitureMakeHelpDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FurnitureMakeInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FurnitureMakeSlotReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

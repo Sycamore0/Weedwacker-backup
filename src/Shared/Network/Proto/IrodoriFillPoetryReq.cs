@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static IrodoriFillPoetryReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpJcm9kb3JpRmlsbFBvZXRyeVJlcS5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90byI5ChRJcm9kb3JpRmlsbFBvZXRyeVJlcRIPCgds",
-            "aW5lX2lkGAYgASgNEhAKCHRoZW1lX2lkGAUgASgNYgZwcm90bzM="));
+            "ChpJcm9kb3JpRmlsbFBvZXRyeVJlcS5wcm90byI5ChRJcm9kb3JpRmlsbFBv",
+            "ZXRyeVJlcRIPCgdsaW5lX2lkGAYgASgNEhAKCHRoZW1lX2lkGAUgASgNQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

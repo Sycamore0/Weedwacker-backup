@@ -24,18 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static ObstacleInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJPYnN0YWNsZUluZm8ucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8aFE1hdGhRdWF0ZXJuaW9uLnByb3RvGgxWZWN0b3IucHJvdG8a",
-            "EFZlY3RvcjNJbnQucHJvdG8i/AIKDE9ic3RhY2xlSW5mbxJBCghyb3RhdGlv",
-            "bhgLIAEoCzIvLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uTWF0",
-            "aFF1YXRlcm5pb24SRgoFc2hhcGUYAiABKA4yNy5XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvLk9ic3RhY2xlSW5mby5TaGFwZVR5cGUSPAoHZXh0",
-            "ZW50cxgEIAEoCzIrLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8u",
-            "VmVjdG9yM0ludBI3CgZjZW50ZXIYByABKAsyJy5XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvLlZlY3RvchITCgtvYnN0YWNsZV9pZBgKIAEoBSJV",
-            "CglTaGFwZVR5cGUSJQohU0hBUEVfVFlQRV9PQlNUQUNMRV9TSEFQRV9DQVBT",
-            "VUxFEAASIQodU0hBUEVfVFlQRV9PQlNUQUNMRV9TSEFQRV9CT1gQAWIGcHJv",
-            "dG8z"));
+            "ChJPYnN0YWNsZUluZm8ucHJvdG8aFE1hdGhRdWF0ZXJuaW9uLnByb3RvGgxW",
+            "ZWN0b3IucHJvdG8aEFZlY3RvcjNJbnQucHJvdG8i/AEKDE9ic3RhY2xlSW5m",
+            "bxIhCghyb3RhdGlvbhgLIAEoCzIPLk1hdGhRdWF0ZXJuaW9uEiYKBXNoYXBl",
+            "GAIgASgOMhcuT2JzdGFjbGVJbmZvLlNoYXBlVHlwZRIcCgdleHRlbnRzGAQg",
+            "ASgLMgsuVmVjdG9yM0ludBIXCgZjZW50ZXIYByABKAsyBy5WZWN0b3ISEwoL",
+            "b2JzdGFjbGVfaWQYCiABKAUiVQoJU2hhcGVUeXBlEiUKIVNIQVBFX1RZUEVf",
+            "T0JTVEFDTEVfU0hBUEVfQ0FQU1VMRRAAEiEKHVNIQVBFX1RZUEVfT0JTVEFD",
+            "TEVfU0hBUEVfQk9YEAFCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MathQuaternionReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Vector3IntReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

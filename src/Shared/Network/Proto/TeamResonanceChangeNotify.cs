@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static TeamResonanceChangeNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9UZWFtUmVzb25hbmNlQ2hhbmdlTm90aWZ5LnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvGh1BdmF0YXJUZWFtUmVzb25hbmNlSW5m",
-            "by5wcm90byJoChlUZWFtUmVzb25hbmNlQ2hhbmdlTm90aWZ5EksKCWluZm9f",
-            "bGlzdBgJIAMoCzI4LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8u",
-            "QXZhdGFyVGVhbVJlc29uYW5jZUluZm9iBnByb3RvMw=="));
+            "Ch9UZWFtUmVzb25hbmNlQ2hhbmdlTm90aWZ5LnByb3RvGh1BdmF0YXJUZWFt",
+            "UmVzb25hbmNlSW5mby5wcm90byJIChlUZWFtUmVzb25hbmNlQ2hhbmdlTm90",
+            "aWZ5EisKCWluZm9fbGlzdBgJIAMoCzIYLkF2YXRhclRlYW1SZXNvbmFuY2VJ",
+            "bmZvQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AvatarTeamResonanceInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

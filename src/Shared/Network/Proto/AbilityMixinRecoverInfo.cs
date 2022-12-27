@@ -24,17 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static AbilityMixinRecoverInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1BYmlsaXR5TWl4aW5SZWNvdmVySW5mby5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90bxoWQnJlYWtvdXRTbmFwU2hvdC5wcm90bxoZ",
-            "TWFzc2l2ZVByb3BTeW5jSW5mby5wcm90byLJAgoXQWJpbGl0eU1peGluUmVj",
-            "b3ZlckluZm8SEAoIbG9jYWxfaWQYAyABKA0SEQoJZGF0YV9saXN0GAQgAygN",
-            "Eh4KFmlzX3NlcnZlcmJ1ZmZfbW9kaWZpZXIYBSABKAgSTwoRbWFzc2l2ZV9w",
-            "cm9wX2xpc3QYBiADKAsyNC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvLk1hc3NpdmVQcm9wU3luY0luZm8STQoSYnJlYWtvdXRfc25hcF9zaG90",
-            "GAcgASgLMjEuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5CcmVh",
-            "a291dFNuYXBTaG90Eh4KFGluc3RhbmNlZF9hYmlsaXR5X2lkGAEgASgNSAAS",
-            "HwoVaW5zdGFuY2VkX21vZGlmaWVyX2lkGAIgASgNSABCCAoGc291cmNlYgZw",
-            "cm90bzM="));
+            "Ch1BYmlsaXR5TWl4aW5SZWNvdmVySW5mby5wcm90bxoWQnJlYWtvdXRTbmFw",
+            "U2hvdC5wcm90bxoZTWFzc2l2ZVByb3BTeW5jSW5mby5wcm90byKJAgoXQWJp",
+            "bGl0eU1peGluUmVjb3ZlckluZm8SEAoIbG9jYWxfaWQYAyABKA0SEQoJZGF0",
+            "YV9saXN0GAQgAygNEh4KFmlzX3NlcnZlcmJ1ZmZfbW9kaWZpZXIYBSABKAgS",
+            "LwoRbWFzc2l2ZV9wcm9wX2xpc3QYBiADKAsyFC5NYXNzaXZlUHJvcFN5bmNJ",
+            "bmZvEi0KEmJyZWFrb3V0X3NuYXBfc2hvdBgHIAEoCzIRLkJyZWFrb3V0U25h",
+            "cFNob3QSHgoUaW5zdGFuY2VkX2FiaWxpdHlfaWQYASABKA1IABIfChVpbnN0",
+            "YW5jZWRfbW9kaWZpZXJfaWQYAiABKA1IAEIICgZzb3VyY2VCIqoCH1dlZWR3",
+            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.BreakoutSnapShotReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MassivePropSyncInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

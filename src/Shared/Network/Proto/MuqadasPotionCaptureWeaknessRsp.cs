@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static MuqadasPotionCaptureWeaknessRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiVNdXFhZGFzUG90aW9uQ2FwdHVyZVdlYWtuZXNzUnNwLnByb3RvEh9XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIjIKH011cWFkYXNQb3Rpb25D",
-            "YXB0dXJlV2Vha25lc3NSc3ASDwoHcmV0Y29kZRgHIAEoBWIGcHJvdG8z"));
+            "CiVNdXFhZGFzUG90aW9uQ2FwdHVyZVdlYWtuZXNzUnNwLnByb3RvIjIKH011",
+            "cWFkYXNQb3Rpb25DYXB0dXJlV2Vha25lc3NSc3ASDwoHcmV0Y29kZRgHIAEo",
+            "BUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

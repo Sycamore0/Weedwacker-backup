@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static IrodoriChessDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZJcm9kb3JpQ2hlc3NEYXRhLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvGhtJcm9kb3JpQ2hlc3NMZXZlbERhdGEucHJvdG8idAoQ",
-            "SXJvZG9yaUNoZXNzRGF0YRIPCgdpc19vcGVuGAggASgIEk8KD2xldmVsX2Rh",
-            "dGFfbGlzdBgNIAMoCzI2LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
-            "dG8uSXJvZG9yaUNoZXNzTGV2ZWxEYXRhYgZwcm90bzM="));
+            "ChZJcm9kb3JpQ2hlc3NEYXRhLnByb3RvGhtJcm9kb3JpQ2hlc3NMZXZlbERh",
+            "dGEucHJvdG8iVAoQSXJvZG9yaUNoZXNzRGF0YRIPCgdpc19vcGVuGAggASgI",
+            "Ei8KD2xldmVsX2RhdGFfbGlzdBgNIAMoCzIWLklyb2RvcmlDaGVzc0xldmVs",
+            "RGF0YUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.IrodoriChessLevelDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

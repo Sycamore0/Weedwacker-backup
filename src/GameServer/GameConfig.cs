@@ -27,7 +27,7 @@ namespace Weedwacker.GameServer
             public OpCode[] DebugBlacklist = new[] {
                 OpCode.PingReq, OpCode.PingRsp, OpCode.PlayerSetPauseReq, OpCode.PlayerSetPauseRsp, OpCode.AbilityInvocationsNotify,
                 OpCode.WorldPlayerRTTNotify, OpCode.PlayerTimeNotify, OpCode.UnionCmdNotify, OpCode.CombatInvocationsNotify,
-                OpCode.ClientAbilityChangeNotify,
+                OpCode.ClientAbilityChangeNotify, OpCode.QueryPathReq, OpCode.QueryPathRsp,
             };
             public bool KeepLog = true;
             public string LogLocation = Path.Combine(".","packetLogs");

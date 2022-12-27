@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetAuthkeyRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNHZXRBdXRoa2V5UnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvIpEBCg1HZXRBdXRoa2V5UnNwEg8KB3JldGNvZGUYCCABKAUS",
-            "DwoHYXV0aGtleRgGIAEoCRIbChNVbmszMzAwX0RPRExGQ05PQU1CGA0gASgN",
-            "EhsKE1VuazMzMDBfRkdCSEhQT0tDSkgYAyABKA0SEgoKYXV0aF9hcHBpZBgH",
-            "IAEoCRIQCghnYW1lX2JpehgBIAEoCWIGcHJvdG8z"));
+            "ChNHZXRBdXRoa2V5UnNwLnByb3RvIn8KDUdldEF1dGhrZXlSc3ASDwoHcmV0",
+            "Y29kZRgIIAEoBRIPCgdhdXRoa2V5GAYgASgJEhMKC2F1dGhrZXlfdmVyGA0g",
+            "ASgNEhEKCXNpZ25fdHlwZRgDIAEoDRISCgphdXRoX2FwcGlkGAcgASgJEhAK",
+            "CGdhbWVfYml6GAEgASgJQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetAuthkeyRsp), global::Weedwacker.Shared.Network.Proto.GetAuthkeyRsp.Parser, new[]{ "Retcode", "Authkey", "Unk3300DODLFCNOAMB", "Unk3300FGBHHPOKCJH", "AuthAppid", "GameBiz" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GetAuthkeyRsp), global::Weedwacker.Shared.Network.Proto.GetAuthkeyRsp.Parser, new[]{ "Retcode", "Authkey", "AuthkeyVer", "SignType", "AuthAppid", "GameBiz" }, null, null, null, null)
           }));
     }
     #endregion
@@ -84,8 +84,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public GetAuthkeyRsp(GetAuthkeyRsp other) : this() {
       retcode_ = other.retcode_;
       authkey_ = other.authkey_;
-      unk3300DODLFCNOAMB_ = other.unk3300DODLFCNOAMB_;
-      unk3300FGBHHPOKCJH_ = other.unk3300FGBHHPOKCJH_;
+      authkeyVer_ = other.authkeyVer_;
+      signType_ = other.signType_;
       authAppid_ = other.authAppid_;
       gameBiz_ = other.gameBiz_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -121,27 +121,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_DODLFCNOAMB" field.</summary>
-    public const int Unk3300DODLFCNOAMBFieldNumber = 13;
-    private uint unk3300DODLFCNOAMB_;
+    /// <summary>Field number for the "authkey_ver" field.</summary>
+    public const int AuthkeyVerFieldNumber = 13;
+    private uint authkeyVer_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300DODLFCNOAMB {
-      get { return unk3300DODLFCNOAMB_; }
+    public uint AuthkeyVer {
+      get { return authkeyVer_; }
       set {
-        unk3300DODLFCNOAMB_ = value;
+        authkeyVer_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_FGBHHPOKCJH" field.</summary>
-    public const int Unk3300FGBHHPOKCJHFieldNumber = 3;
-    private uint unk3300FGBHHPOKCJH_;
+    /// <summary>Field number for the "sign_type" field.</summary>
+    public const int SignTypeFieldNumber = 3;
+    private uint signType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300FGBHHPOKCJH {
-      get { return unk3300FGBHHPOKCJH_; }
+    public uint SignType {
+      get { return signType_; }
       set {
-        unk3300FGBHHPOKCJH_ = value;
+        signType_ = value;
       }
     }
 
@@ -186,8 +186,8 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (Retcode != other.Retcode) return false;
       if (Authkey != other.Authkey) return false;
-      if (Unk3300DODLFCNOAMB != other.Unk3300DODLFCNOAMB) return false;
-      if (Unk3300FGBHHPOKCJH != other.Unk3300FGBHHPOKCJH) return false;
+      if (AuthkeyVer != other.AuthkeyVer) return false;
+      if (SignType != other.SignType) return false;
       if (AuthAppid != other.AuthAppid) return false;
       if (GameBiz != other.GameBiz) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -199,8 +199,8 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
       if (Authkey.Length != 0) hash ^= Authkey.GetHashCode();
-      if (Unk3300DODLFCNOAMB != 0) hash ^= Unk3300DODLFCNOAMB.GetHashCode();
-      if (Unk3300FGBHHPOKCJH != 0) hash ^= Unk3300FGBHHPOKCJH.GetHashCode();
+      if (AuthkeyVer != 0) hash ^= AuthkeyVer.GetHashCode();
+      if (SignType != 0) hash ^= SignType.GetHashCode();
       if (AuthAppid.Length != 0) hash ^= AuthAppid.GetHashCode();
       if (GameBiz.Length != 0) hash ^= GameBiz.GetHashCode();
       if (_unknownFields != null) {
@@ -225,9 +225,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(10);
         output.WriteString(GameBiz);
       }
-      if (Unk3300FGBHHPOKCJH != 0) {
+      if (SignType != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300FGBHHPOKCJH);
+        output.WriteUInt32(SignType);
       }
       if (Authkey.Length != 0) {
         output.WriteRawTag(50);
@@ -241,9 +241,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(64);
         output.WriteInt32(Retcode);
       }
-      if (Unk3300DODLFCNOAMB != 0) {
+      if (AuthkeyVer != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk3300DODLFCNOAMB);
+        output.WriteUInt32(AuthkeyVer);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -259,9 +259,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(10);
         output.WriteString(GameBiz);
       }
-      if (Unk3300FGBHHPOKCJH != 0) {
+      if (SignType != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300FGBHHPOKCJH);
+        output.WriteUInt32(SignType);
       }
       if (Authkey.Length != 0) {
         output.WriteRawTag(50);
@@ -275,9 +275,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(64);
         output.WriteInt32(Retcode);
       }
-      if (Unk3300DODLFCNOAMB != 0) {
+      if (AuthkeyVer != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk3300DODLFCNOAMB);
+        output.WriteUInt32(AuthkeyVer);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -295,11 +295,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Authkey.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Authkey);
       }
-      if (Unk3300DODLFCNOAMB != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300DODLFCNOAMB);
+      if (AuthkeyVer != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AuthkeyVer);
       }
-      if (Unk3300FGBHHPOKCJH != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300FGBHHPOKCJH);
+      if (SignType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SignType);
       }
       if (AuthAppid.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(AuthAppid);
@@ -325,11 +325,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Authkey.Length != 0) {
         Authkey = other.Authkey;
       }
-      if (other.Unk3300DODLFCNOAMB != 0) {
-        Unk3300DODLFCNOAMB = other.Unk3300DODLFCNOAMB;
+      if (other.AuthkeyVer != 0) {
+        AuthkeyVer = other.AuthkeyVer;
       }
-      if (other.Unk3300FGBHHPOKCJH != 0) {
-        Unk3300FGBHHPOKCJH = other.Unk3300FGBHHPOKCJH;
+      if (other.SignType != 0) {
+        SignType = other.SignType;
       }
       if (other.AuthAppid.Length != 0) {
         AuthAppid = other.AuthAppid;
@@ -357,7 +357,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300FGBHHPOKCJH = input.ReadUInt32();
+            SignType = input.ReadUInt32();
             break;
           }
           case 50: {
@@ -373,7 +373,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk3300DODLFCNOAMB = input.ReadUInt32();
+            AuthkeyVer = input.ReadUInt32();
             break;
           }
         }
@@ -396,7 +396,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300FGBHHPOKCJH = input.ReadUInt32();
+            SignType = input.ReadUInt32();
             break;
           }
           case 50: {
@@ -412,7 +412,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk3300DODLFCNOAMB = input.ReadUInt32();
+            AuthkeyVer = input.ReadUInt32();
             break;
           }
         }

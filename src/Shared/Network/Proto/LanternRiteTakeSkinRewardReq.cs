@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static LanternRiteTakeSkinRewardReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJMYW50ZXJuUml0ZVRha2VTa2luUmV3YXJkUmVxLnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIh4KHExhbnRlcm5SaXRlVGFrZVNr",
-            "aW5SZXdhcmRSZXFiBnByb3RvMw=="));
+            "CiJMYW50ZXJuUml0ZVRha2VTa2luUmV3YXJkUmVxLnByb3RvIh4KHExhbnRl",
+            "cm5SaXRlVGFrZVNraW5SZXdhcmRSZXFCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

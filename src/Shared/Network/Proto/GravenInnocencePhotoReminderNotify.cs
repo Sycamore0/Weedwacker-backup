@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static GravenInnocencePhotoReminderNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CihHcmF2ZW5Jbm5vY2VuY2VQaG90b1JlbWluZGVyTm90aWZ5LnByb3RvEh9X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIlIKIkdyYXZlbklubm9j",
-            "ZW5jZVBob3RvUmVtaW5kZXJOb3RpZnkSEwoLcmVtaW5kZXJfaWQYDSABKA0S",
-            "FwoPZ3JvdXBfYnVuZGxlX2lkGAcgASgNYgZwcm90bzM="));
+            "CihHcmF2ZW5Jbm5vY2VuY2VQaG90b1JlbWluZGVyTm90aWZ5LnByb3RvIlIK",
+            "IkdyYXZlbklubm9jZW5jZVBob3RvUmVtaW5kZXJOb3RpZnkSEwoLcmVtaW5k",
+            "ZXJfaWQYDSABKA0SFwoPZ3JvdXBfYnVuZGxlX2lkGAcgASgNQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

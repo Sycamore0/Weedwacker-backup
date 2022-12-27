@@ -24,19 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static TreasureMapActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNUcmVhc3VyZU1hcEFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxIfV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90bxojVHJlYXN1cmVNYXBCb251c0No",
-            "YWxsZW5nZUluZm8ucHJvdG8aG1RyZWFzdXJlTWFwUmVnaW9uSW5mby5wcm90",
-            "byKVAwodVHJlYXN1cmVNYXBBY3Rpdml0eURldGFpbEluZm8SHwoXaXNfbXBf",
-            "Y2hhbGxlbmdlX3RvdWNoZWQYDyABKAgSGQoRdG90YWxfbXBfc3BvdF9udW0Y",
-            "DCABKA0SGwoTYWN0aXZlX3JlZ2lvbl9pbmRleBgDIAEoDRJcChRib251c19j",
-            "aGFsbGVuZ2VfbGlzdBgNIAMoCzI+LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uVHJlYXN1cmVNYXBCb251c0NoYWxsZW5nZUluZm8SHQoVbWlu",
-            "X29wZW5fcGxheWVyX2xldmVsGAggASgNEhkKEXByZXZpZXdfcmV3YXJkX2lk",
-            "GAIgASgNEhsKE3RyZWFzdXJlX2Nsb3NlX3RpbWUYASABKA0SFAoMY3VycmVu",
-            "Y3lfbnVtGAQgASgNElAKEHJlZ2lvbl9pbmZvX2xpc3QYCyADKAsyNi5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlRyZWFzdXJlTWFwUmVnaW9u",
-            "SW5mb2IGcHJvdG8z"));
+            "CiNUcmVhc3VyZU1hcEFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxojVHJlYXN1",
+            "cmVNYXBCb251c0NoYWxsZW5nZUluZm8ucHJvdG8aG1RyZWFzdXJlTWFwUmVn",
+            "aW9uSW5mby5wcm90byLVAgodVHJlYXN1cmVNYXBBY3Rpdml0eURldGFpbElu",
+            "Zm8SHwoXaXNfbXBfY2hhbGxlbmdlX3RvdWNoZWQYDyABKAgSGQoRdG90YWxf",
+            "bXBfc3BvdF9udW0YDCABKA0SGwoTYWN0aXZlX3JlZ2lvbl9pbmRleBgDIAEo",
+            "DRI8ChRib251c19jaGFsbGVuZ2VfbGlzdBgNIAMoCzIeLlRyZWFzdXJlTWFw",
+            "Qm9udXNDaGFsbGVuZ2VJbmZvEh0KFW1pbl9vcGVuX3BsYXllcl9sZXZlbBgI",
+            "IAEoDRIZChFwcmV2aWV3X3Jld2FyZF9pZBgCIAEoDRIbChN0cmVhc3VyZV9j",
+            "bG9zZV90aW1lGAEgASgNEhQKDGN1cnJlbmN5X251bRgEIAEoDRIwChByZWdp",
+            "b25faW5mb19saXN0GAsgAygLMhYuVHJlYXN1cmVNYXBSZWdpb25JbmZvQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.TreasureMapBonusChallengeInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TreasureMapRegionInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

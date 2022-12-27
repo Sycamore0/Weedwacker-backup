@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerCookReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNQbGF5ZXJDb29rUmVxLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvInMKDVBsYXllckNvb2tSZXESEQoJcmVjaXBlX2lkGAEgASgN",
-            "EhsKE1VuazMzMDBfTkRQSE5OT0ZFQkwYBSABKA0SGwoTVW5rMzMwMF9KUElD",
-            "TElETElFQxgHIAEoDRIVCg1hc3Npc3RfYXZhdGFyGAwgASgNYgZwcm90bzM="));
+            "ChNQbGF5ZXJDb29rUmVxLnByb3RvImIKDVBsYXllckNvb2tSZXESEQoJcmVj",
+            "aXBlX2lkGAEgASgNEhMKC3F0ZV9xdWFsaXR5GAUgASgNEhIKCmNvb2tfY291",
+            "bnQYByABKA0SFQoNYXNzaXN0X2F2YXRhchgMIAEoDUIiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerCookReq), global::Weedwacker.Shared.Network.Proto.PlayerCookReq.Parser, new[]{ "RecipeId", "Unk3300NDPHNNOFEBL", "Unk3300JPICLIDLIEC", "AssistAvatar" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerCookReq), global::Weedwacker.Shared.Network.Proto.PlayerCookReq.Parser, new[]{ "RecipeId", "QteQuality", "CookCount", "AssistAvatar" }, null, null, null, null)
           }));
     }
     #endregion
@@ -83,8 +83,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerCookReq(PlayerCookReq other) : this() {
       recipeId_ = other.recipeId_;
-      unk3300NDPHNNOFEBL_ = other.unk3300NDPHNNOFEBL_;
-      unk3300JPICLIDLIEC_ = other.unk3300JPICLIDLIEC_;
+      qteQuality_ = other.qteQuality_;
+      cookCount_ = other.cookCount_;
       assistAvatar_ = other.assistAvatar_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -107,27 +107,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_NDPHNNOFEBL" field.</summary>
-    public const int Unk3300NDPHNNOFEBLFieldNumber = 5;
-    private uint unk3300NDPHNNOFEBL_;
+    /// <summary>Field number for the "qte_quality" field.</summary>
+    public const int QteQualityFieldNumber = 5;
+    private uint qteQuality_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300NDPHNNOFEBL {
-      get { return unk3300NDPHNNOFEBL_; }
+    public uint QteQuality {
+      get { return qteQuality_; }
       set {
-        unk3300NDPHNNOFEBL_ = value;
+        qteQuality_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_JPICLIDLIEC" field.</summary>
-    public const int Unk3300JPICLIDLIECFieldNumber = 7;
-    private uint unk3300JPICLIDLIEC_;
+    /// <summary>Field number for the "cook_count" field.</summary>
+    public const int CookCountFieldNumber = 7;
+    private uint cookCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300JPICLIDLIEC {
-      get { return unk3300JPICLIDLIEC_; }
+    public uint CookCount {
+      get { return cookCount_; }
       set {
-        unk3300JPICLIDLIEC_ = value;
+        cookCount_ = value;
       }
     }
 
@@ -159,8 +159,8 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (RecipeId != other.RecipeId) return false;
-      if (Unk3300NDPHNNOFEBL != other.Unk3300NDPHNNOFEBL) return false;
-      if (Unk3300JPICLIDLIEC != other.Unk3300JPICLIDLIEC) return false;
+      if (QteQuality != other.QteQuality) return false;
+      if (CookCount != other.CookCount) return false;
       if (AssistAvatar != other.AssistAvatar) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -170,8 +170,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (RecipeId != 0) hash ^= RecipeId.GetHashCode();
-      if (Unk3300NDPHNNOFEBL != 0) hash ^= Unk3300NDPHNNOFEBL.GetHashCode();
-      if (Unk3300JPICLIDLIEC != 0) hash ^= Unk3300JPICLIDLIEC.GetHashCode();
+      if (QteQuality != 0) hash ^= QteQuality.GetHashCode();
+      if (CookCount != 0) hash ^= CookCount.GetHashCode();
       if (AssistAvatar != 0) hash ^= AssistAvatar.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -195,13 +195,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(RecipeId);
       }
-      if (Unk3300NDPHNNOFEBL != 0) {
+      if (QteQuality != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk3300NDPHNNOFEBL);
+        output.WriteUInt32(QteQuality);
       }
-      if (Unk3300JPICLIDLIEC != 0) {
+      if (CookCount != 0) {
         output.WriteRawTag(56);
-        output.WriteUInt32(Unk3300JPICLIDLIEC);
+        output.WriteUInt32(CookCount);
       }
       if (AssistAvatar != 0) {
         output.WriteRawTag(96);
@@ -221,13 +221,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(RecipeId);
       }
-      if (Unk3300NDPHNNOFEBL != 0) {
+      if (QteQuality != 0) {
         output.WriteRawTag(40);
-        output.WriteUInt32(Unk3300NDPHNNOFEBL);
+        output.WriteUInt32(QteQuality);
       }
-      if (Unk3300JPICLIDLIEC != 0) {
+      if (CookCount != 0) {
         output.WriteRawTag(56);
-        output.WriteUInt32(Unk3300JPICLIDLIEC);
+        output.WriteUInt32(CookCount);
       }
       if (AssistAvatar != 0) {
         output.WriteRawTag(96);
@@ -246,11 +246,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (RecipeId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RecipeId);
       }
-      if (Unk3300NDPHNNOFEBL != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300NDPHNNOFEBL);
+      if (QteQuality != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(QteQuality);
       }
-      if (Unk3300JPICLIDLIEC != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300JPICLIDLIEC);
+      if (CookCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CookCount);
       }
       if (AssistAvatar != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AssistAvatar);
@@ -270,11 +270,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.RecipeId != 0) {
         RecipeId = other.RecipeId;
       }
-      if (other.Unk3300NDPHNNOFEBL != 0) {
-        Unk3300NDPHNNOFEBL = other.Unk3300NDPHNNOFEBL;
+      if (other.QteQuality != 0) {
+        QteQuality = other.QteQuality;
       }
-      if (other.Unk3300JPICLIDLIEC != 0) {
-        Unk3300JPICLIDLIEC = other.Unk3300JPICLIDLIEC;
+      if (other.CookCount != 0) {
+        CookCount = other.CookCount;
       }
       if (other.AssistAvatar != 0) {
         AssistAvatar = other.AssistAvatar;
@@ -299,11 +299,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk3300NDPHNNOFEBL = input.ReadUInt32();
+            QteQuality = input.ReadUInt32();
             break;
           }
           case 56: {
-            Unk3300JPICLIDLIEC = input.ReadUInt32();
+            CookCount = input.ReadUInt32();
             break;
           }
           case 96: {
@@ -330,11 +330,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk3300NDPHNNOFEBL = input.ReadUInt32();
+            QteQuality = input.ReadUInt32();
             break;
           }
           case 56: {
-            Unk3300JPICLIDLIEC = input.ReadUInt32();
+            CookCount = input.ReadUInt32();
             break;
           }
           case 96: {

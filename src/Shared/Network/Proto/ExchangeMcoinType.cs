@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static ExchangeMcoinTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdFeGNoYW5nZU1jb2luVHlwZS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byp5ChFFeGNoYW5nZU1jb2luVHlwZRIcChhFWENIQU5H",
-            "RV9NQ09JTl9UWVBFX05PTkUQABIiCh5FWENIQU5HRV9NQ09JTl9UWVBFX1BD",
-            "TV9UT19QU04QARIiCh5FWENIQU5HRV9NQ09JTl9UWVBFX1BTTl9UT19QQ00Q",
-            "AmIGcHJvdG8z"));
+            "ChdFeGNoYW5nZU1jb2luVHlwZS5wcm90byp5ChFFeGNoYW5nZU1jb2luVHlw",
+            "ZRIcChhFWENIQU5HRV9NQ09JTl9UWVBFX05PTkUQABIiCh5FWENIQU5HRV9N",
+            "Q09JTl9UWVBFX1BDTV9UT19QU04QARIiCh5FWENIQU5HRV9NQ09JTl9UWVBF",
+            "X1BTTl9UT19QQ00QAkIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.ExchangeMcoinType), }, null, null));

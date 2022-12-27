@@ -24,9 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static AskAddFriendRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVBc2tBZGRGcmllbmRSc3AucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8iRQoPQXNrQWRkRnJpZW5kUnNwEg8KB3JldGNvZGUYCyAB",
-            "KAUSEgoKdGFyZ2V0X3VpZBgJIAEoDRINCgVwYXJhbRgMIAEoDWIGcHJvdG8z"));
+            "ChVBc2tBZGRGcmllbmRSc3AucHJvdG8iRQoPQXNrQWRkRnJpZW5kUnNwEg8K",
+            "B3JldGNvZGUYCyABKAUSEgoKdGFyZ2V0X3VpZBgJIAEoDRINCgVwYXJhbRgM",
+            "IAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

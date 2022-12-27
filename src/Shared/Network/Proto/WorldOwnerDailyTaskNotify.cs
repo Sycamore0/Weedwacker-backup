@@ -24,16 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static WorldOwnerDailyTaskNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9Xb3JsZE93bmVyRGFpbHlUYXNrTm90aWZ5LnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvGhNEYWlseVRhc2tJbmZvLnByb3RvIpgB",
-            "ChlXb3JsZE93bmVyRGFpbHlUYXNrTm90aWZ5EhsKE1VuazMzMDBfRkpPSkZQ",
-            "UFBPRlAYBCABKA0SQQoJdGFza19saXN0GAIgAygLMi4uV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90by5EYWlseVRhc2tJbmZvEhsKE1VuazMzMDBf",
-            "TkFESU9JSkdQSEUYCSABKA1iBnByb3RvMw=="));
+            "Ch9Xb3JsZE93bmVyRGFpbHlUYXNrTm90aWZ5LnByb3RvGhNEYWlseVRhc2tJ",
+            "bmZvLnByb3RvIncKGVdvcmxkT3duZXJEYWlseVRhc2tOb3RpZnkSFgoOZmls",
+            "dGVyX2NpdHlfaWQYBCABKA0SIQoJdGFza19saXN0GAIgAygLMg4uRGFpbHlU",
+            "YXNrSW5mbxIfChdmaW5pc2hlZF9kYWlseV90YXNrX251bRgJIAEoDUIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.DailyTaskInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.WorldOwnerDailyTaskNotify), global::Weedwacker.Shared.Network.Proto.WorldOwnerDailyTaskNotify.Parser, new[]{ "Unk3300FJOJFPPPOFP", "TaskList", "Unk3300NADIOIJGPHE" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.WorldOwnerDailyTaskNotify), global::Weedwacker.Shared.Network.Proto.WorldOwnerDailyTaskNotify.Parser, new[]{ "FilterCityId", "TaskList", "FinishedDailyTaskNum" }, null, null, null, null)
           }));
     }
     #endregion
@@ -84,9 +83,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public WorldOwnerDailyTaskNotify(WorldOwnerDailyTaskNotify other) : this() {
-      unk3300FJOJFPPPOFP_ = other.unk3300FJOJFPPPOFP_;
+      filterCityId_ = other.filterCityId_;
       taskList_ = other.taskList_.Clone();
-      unk3300NADIOIJGPHE_ = other.unk3300NADIOIJGPHE_;
+      finishedDailyTaskNum_ = other.finishedDailyTaskNum_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -96,15 +95,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new WorldOwnerDailyTaskNotify(this);
     }
 
-    /// <summary>Field number for the "Unk3300_FJOJFPPPOFP" field.</summary>
-    public const int Unk3300FJOJFPPPOFPFieldNumber = 4;
-    private uint unk3300FJOJFPPPOFP_;
+    /// <summary>Field number for the "filter_city_id" field.</summary>
+    public const int FilterCityIdFieldNumber = 4;
+    private uint filterCityId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300FJOJFPPPOFP {
-      get { return unk3300FJOJFPPPOFP_; }
+    public uint FilterCityId {
+      get { return filterCityId_; }
       set {
-        unk3300FJOJFPPPOFP_ = value;
+        filterCityId_ = value;
       }
     }
 
@@ -119,15 +118,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return taskList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_NADIOIJGPHE" field.</summary>
-    public const int Unk3300NADIOIJGPHEFieldNumber = 9;
-    private uint unk3300NADIOIJGPHE_;
+    /// <summary>Field number for the "finished_daily_task_num" field.</summary>
+    public const int FinishedDailyTaskNumFieldNumber = 9;
+    private uint finishedDailyTaskNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300NADIOIJGPHE {
-      get { return unk3300NADIOIJGPHE_; }
+    public uint FinishedDailyTaskNum {
+      get { return finishedDailyTaskNum_; }
       set {
-        unk3300NADIOIJGPHE_ = value;
+        finishedDailyTaskNum_ = value;
       }
     }
 
@@ -146,9 +145,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300FJOJFPPPOFP != other.Unk3300FJOJFPPPOFP) return false;
+      if (FilterCityId != other.FilterCityId) return false;
       if(!taskList_.Equals(other.taskList_)) return false;
-      if (Unk3300NADIOIJGPHE != other.Unk3300NADIOIJGPHE) return false;
+      if (FinishedDailyTaskNum != other.FinishedDailyTaskNum) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -156,9 +155,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300FJOJFPPPOFP != 0) hash ^= Unk3300FJOJFPPPOFP.GetHashCode();
+      if (FilterCityId != 0) hash ^= FilterCityId.GetHashCode();
       hash ^= taskList_.GetHashCode();
-      if (Unk3300NADIOIJGPHE != 0) hash ^= Unk3300NADIOIJGPHE.GetHashCode();
+      if (FinishedDailyTaskNum != 0) hash ^= FinishedDailyTaskNum.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -178,13 +177,13 @@ namespace Weedwacker.Shared.Network.Proto {
       output.WriteRawMessage(this);
     #else
       taskList_.WriteTo(output, _repeated_taskList_codec);
-      if (Unk3300FJOJFPPPOFP != 0) {
+      if (FilterCityId != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk3300FJOJFPPPOFP);
+        output.WriteUInt32(FilterCityId);
       }
-      if (Unk3300NADIOIJGPHE != 0) {
+      if (FinishedDailyTaskNum != 0) {
         output.WriteRawTag(72);
-        output.WriteUInt32(Unk3300NADIOIJGPHE);
+        output.WriteUInt32(FinishedDailyTaskNum);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -197,13 +196,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       taskList_.WriteTo(ref output, _repeated_taskList_codec);
-      if (Unk3300FJOJFPPPOFP != 0) {
+      if (FilterCityId != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk3300FJOJFPPPOFP);
+        output.WriteUInt32(FilterCityId);
       }
-      if (Unk3300NADIOIJGPHE != 0) {
+      if (FinishedDailyTaskNum != 0) {
         output.WriteRawTag(72);
-        output.WriteUInt32(Unk3300NADIOIJGPHE);
+        output.WriteUInt32(FinishedDailyTaskNum);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -215,12 +214,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300FJOJFPPPOFP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300FJOJFPPPOFP);
+      if (FilterCityId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FilterCityId);
       }
       size += taskList_.CalculateSize(_repeated_taskList_codec);
-      if (Unk3300NADIOIJGPHE != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300NADIOIJGPHE);
+      if (FinishedDailyTaskNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FinishedDailyTaskNum);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -234,12 +233,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300FJOJFPPPOFP != 0) {
-        Unk3300FJOJFPPPOFP = other.Unk3300FJOJFPPPOFP;
+      if (other.FilterCityId != 0) {
+        FilterCityId = other.FilterCityId;
       }
       taskList_.Add(other.taskList_);
-      if (other.Unk3300NADIOIJGPHE != 0) {
-        Unk3300NADIOIJGPHE = other.Unk3300NADIOIJGPHE;
+      if (other.FinishedDailyTaskNum != 0) {
+        FinishedDailyTaskNum = other.FinishedDailyTaskNum;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -261,11 +260,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 32: {
-            Unk3300FJOJFPPPOFP = input.ReadUInt32();
+            FilterCityId = input.ReadUInt32();
             break;
           }
           case 72: {
-            Unk3300NADIOIJGPHE = input.ReadUInt32();
+            FinishedDailyTaskNum = input.ReadUInt32();
             break;
           }
         }
@@ -288,11 +287,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 32: {
-            Unk3300FJOJFPPPOFP = input.ReadUInt32();
+            FilterCityId = input.ReadUInt32();
             break;
           }
           case 72: {
-            Unk3300NADIOIJGPHE = input.ReadUInt32();
+            FinishedDailyTaskNum = input.ReadUInt32();
             break;
           }
         }

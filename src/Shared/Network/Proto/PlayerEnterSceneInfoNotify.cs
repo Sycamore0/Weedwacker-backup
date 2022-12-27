@@ -24,17 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerEnterSceneInfoNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBQbGF5ZXJFbnRlclNjZW5lSW5mb05vdGlmeS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90bxoaQXZhdGFyRW50ZXJTY2VuZUluZm8u",
-            "cHJvdG8aF01QTGV2ZWxFbnRpdHlJbmZvLnByb3RvGhhUZWFtRW50ZXJTY2Vu",
-            "ZUluZm8ucHJvdG8ixwIKGlBsYXllckVudGVyU2NlbmVJbmZvTm90aWZ5EkwK",
-            "D3RlYW1fZW50ZXJfaW5mbxgGIAEoCzIzLldlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8uVGVhbUVudGVyU2NlbmVJbmZvElAKEWF2YXRhcl9lbnRl",
-            "cl9pbmZvGAogAygLMjUuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
-            "by5BdmF0YXJFbnRlclNjZW5lSW5mbxIcChRjdXJfYXZhdGFyX2VudGl0eV9p",
-            "ZBgEIAEoDRJQChRtcF9sZXZlbF9lbnRpdHlfaW5mbxgPIAEoCzIyLldlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uTVBMZXZlbEVudGl0eUluZm8S",
-            "GQoRZW50ZXJfc2NlbmVfdG9rZW4YASABKA1iBnByb3RvMw=="));
+            "CiBQbGF5ZXJFbnRlclNjZW5lSW5mb05vdGlmeS5wcm90bxoaQXZhdGFyRW50",
+            "ZXJTY2VuZUluZm8ucHJvdG8aF01QTGV2ZWxFbnRpdHlJbmZvLnByb3RvGhhU",
+            "ZWFtRW50ZXJTY2VuZUluZm8ucHJvdG8i5wEKGlBsYXllckVudGVyU2NlbmVJ",
+            "bmZvTm90aWZ5EiwKD3RlYW1fZW50ZXJfaW5mbxgGIAEoCzITLlRlYW1FbnRl",
+            "clNjZW5lSW5mbxIwChFhdmF0YXJfZW50ZXJfaW5mbxgKIAMoCzIVLkF2YXRh",
+            "ckVudGVyU2NlbmVJbmZvEhwKFGN1cl9hdmF0YXJfZW50aXR5X2lkGAQgASgN",
+            "EjAKFG1wX2xldmVsX2VudGl0eV9pbmZvGA8gASgLMhIuTVBMZXZlbEVudGl0",
+            "eUluZm8SGQoRZW50ZXJfc2NlbmVfdG9rZW4YASABKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AvatarEnterSceneInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MPLevelEntityInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.TeamEnterSceneInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

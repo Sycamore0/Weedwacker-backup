@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static RegionTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChBSZWdpb25UeXBlLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvKm0KClJlZ2lvblR5cGUSFwoTUkVHSU9OX1RZUEVfUFJPRFVDVBAA",
-            "EhQKEFJFR0lPTl9UWVBFX0VYQU0QARIXChNSRUdJT05fVFlQRV9ERVZfUFVC",
-            "EAISFwoTUkVHSU9OX1RZUEVfREVWX1BSSRADYgZwcm90bzM="));
+            "ChBSZWdpb25UeXBlLnByb3RvKm0KClJlZ2lvblR5cGUSFwoTUkVHSU9OX1RZ",
+            "UEVfUFJPRFVDVBAAEhQKEFJFR0lPTl9UWVBFX0VYQU0QARIXChNSRUdJT05f",
+            "VFlQRV9ERVZfUFVCEAISFwoTUkVHSU9OX1RZUEVfREVWX1BSSRADQiKqAh9X",
+            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.RegionType), }, null, null));

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static WidgetDoBagRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRXaWRnZXREb0JhZ1JzcC5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90byI2Cg5XaWRnZXREb0JhZ1JzcBITCgttYXRlcmlhbF9pZBgG",
-            "IAEoDRIPCgdyZXRjb2RlGA4gASgFYgZwcm90bzM="));
+            "ChRXaWRnZXREb0JhZ1JzcC5wcm90byI2Cg5XaWRnZXREb0JhZ1JzcBITCgtt",
+            "YXRlcmlhbF9pZBgGIAEoDRIPCgdyZXRjb2RlGA4gASgFQiKqAh9XZWVkd2Fj",
+            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

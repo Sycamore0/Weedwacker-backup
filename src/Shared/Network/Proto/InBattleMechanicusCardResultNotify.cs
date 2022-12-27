@@ -24,18 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static InBattleMechanicusCardResultNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CihJbkJhdHRsZU1lY2hhbmljdXNDYXJkUmVzdWx0Tm90aWZ5LnByb3RvEh9X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvGiBJbkJhdHRsZU1lY2hh",
-            "bmljdXNDYXJkSW5mby5wcm90byKQAwoiSW5CYXR0bGVNZWNoYW5pY3VzQ2Fy",
-            "ZFJlc3VsdE5vdGlmeRIQCghncm91cF9pZBgKIAEoDRJOCgljYXJkX2xpc3QY",
-            "CCADKAsyOy5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkluQmF0",
-            "dGxlTWVjaGFuaWN1c0NhcmRJbmZvEhIKCnBsYXlfaW5kZXgYDiABKA0SggEK",
-            "GXBsYXllcl9jb25maXJtZWRfY2FyZF9tYXAYCSADKAsyXy5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLkluQmF0dGxlTWVjaGFuaWN1c0NhcmRS",
-            "ZXN1bHROb3RpZnkuUGxheWVyQ29uZmlybWVkQ2FyZE1hcEVudHJ5EhoKEndh",
-            "aXRfYmVnaW5fdGltZV91cxgCIAEoBBIUCgx3YWl0X3NlY29uZHMYBSABKA0a",
-            "PQobUGxheWVyQ29uZmlybWVkQ2FyZE1hcEVudHJ5EgsKA2tleRgBIAEoDRIN",
-            "CgV2YWx1ZRgCIAEoDToCOAFiBnByb3RvMw=="));
+            "CihJbkJhdHRsZU1lY2hhbmljdXNDYXJkUmVzdWx0Tm90aWZ5LnByb3RvGiBJ",
+            "bkJhdHRsZU1lY2hhbmljdXNDYXJkSW5mby5wcm90byLPAgoiSW5CYXR0bGVN",
+            "ZWNoYW5pY3VzQ2FyZFJlc3VsdE5vdGlmeRIQCghncm91cF9pZBgKIAEoDRIu",
+            "CgljYXJkX2xpc3QYCCADKAsyGy5JbkJhdHRsZU1lY2hhbmljdXNDYXJkSW5m",
+            "bxISCgpwbGF5X2luZGV4GA4gASgNEmIKGXBsYXllcl9jb25maXJtZWRfY2Fy",
+            "ZF9tYXAYCSADKAsyPy5JbkJhdHRsZU1lY2hhbmljdXNDYXJkUmVzdWx0Tm90",
+            "aWZ5LlBsYXllckNvbmZpcm1lZENhcmRNYXBFbnRyeRIaChJ3YWl0X2JlZ2lu",
+            "X3RpbWVfdXMYAiABKAQSFAoMd2FpdF9zZWNvbmRzGAUgASgNGj0KG1BsYXll",
+            "ckNvbmZpcm1lZENhcmRNYXBFbnRyeRILCgNrZXkYASABKA0SDQoFdmFsdWUY",
+            "AiABKA06AjgBQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.InBattleMechanicusCardInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static GMShowObstacleRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdHTVNob3dPYnN0YWNsZVJzcC5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90bxoUR01PYnN0YWNsZUluZm8ucHJvdG8iaAoRR01TaG93",
-            "T2JzdGFjbGVSc3ASQgoJb2JzdGFjbGVzGAggAygLMi8uV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90by5HTU9ic3RhY2xlSW5mbxIPCgdyZXRjb2Rl",
-            "GAwgASgFYgZwcm90bzM="));
+            "ChdHTVNob3dPYnN0YWNsZVJzcC5wcm90bxoUR01PYnN0YWNsZUluZm8ucHJv",
+            "dG8iSAoRR01TaG93T2JzdGFjbGVSc3ASIgoJb2JzdGFjbGVzGAggAygLMg8u",
+            "R01PYnN0YWNsZUluZm8SDwoHcmV0Y29kZRgMIAEoBUIiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GMObstacleInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

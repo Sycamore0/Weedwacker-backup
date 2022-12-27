@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static MistTrialActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFNaXN0VHJpYWxBY3Rpdml0eURldGFpbEluZm8ucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8aGE1pc3RUcmlhbExldmVsRGF0YS5w",
-            "cm90byJxChtNaXN0VHJpYWxBY3Rpdml0eURldGFpbEluZm8SUgoVdHJpYWxf",
-            "bGV2ZWxfZGF0YV9saXN0GAEgAygLMjMuV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90by5NaXN0VHJpYWxMZXZlbERhdGFiBnByb3RvMw=="));
+            "CiFNaXN0VHJpYWxBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aGE1pc3RUcmlh",
+            "bExldmVsRGF0YS5wcm90byJRChtNaXN0VHJpYWxBY3Rpdml0eURldGFpbElu",
+            "Zm8SMgoVdHJpYWxfbGV2ZWxfZGF0YV9saXN0GAEgAygLMhMuTWlzdFRyaWFs",
+            "TGV2ZWxEYXRhQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MistTrialLevelDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,18 +24,18 @@ namespace Weedwacker.Shared.Network.Proto {
     static ChannelIdTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNDaGFubmVsSWRUeXBlLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvKrsDCg1DaGFubmVsSWRUeXBlEhgKFENIQU5ORUxfSURfVFlQ",
-            "RV9OT05FEAASGgoWQ0hBTk5FTF9JRF9UWVBFX01JSE9ZTxABEhoKFkNIQU5O",
-            "RUxfSURfVFlQRV9YSUFPTUkQCxIbChdDSEFOTkVMX0lEX1RZUEVfQ09PTFBB",
-            "RBAMEhcKE0NIQU5ORUxfSURfVFlQRV9ZWUIQDRIYChRDSEFOTkVMX0lEX1RZ",
-            "UEVfQklMSRAOEhoKFkNIQU5ORUxfSURfVFlQRV9IVUFXRUkQDxIZChVDSEFO",
-            "TkVMX0lEX1RZUEVfTUVJWlUQEBIXChNDSEFOTkVMX0lEX1RZUEVfMzYwEBES",
-            "GAoUQ0hBTk5FTF9JRF9UWVBFX09QUE8QEhIYChRDSEFOTkVMX0lEX1RZUEVf",
-            "VklWTxATEhYKEkNIQU5ORUxfSURfVFlQRV9VQxAUEhoKFkNIQU5ORUxfSURf",
-            "VFlQRV9MRU5PVk8QFhIZChVDSEFOTkVMX0lEX1RZUEVfSklOTEkQFxIZChVD",
-            "SEFOTkVMX0lEX1RZUEVfQkFJRFUQGRIaChZDSEFOTkVMX0lEX1RZUEVfREFO",
-            "R0xFEBpiBnByb3RvMw=="));
+            "ChNDaGFubmVsSWRUeXBlLnByb3RvKrsDCg1DaGFubmVsSWRUeXBlEhgKFENI",
+            "QU5ORUxfSURfVFlQRV9OT05FEAASGgoWQ0hBTk5FTF9JRF9UWVBFX01JSE9Z",
+            "TxABEhoKFkNIQU5ORUxfSURfVFlQRV9YSUFPTUkQCxIbChdDSEFOTkVMX0lE",
+            "X1RZUEVfQ09PTFBBRBAMEhcKE0NIQU5ORUxfSURfVFlQRV9ZWUIQDRIYChRD",
+            "SEFOTkVMX0lEX1RZUEVfQklMSRAOEhoKFkNIQU5ORUxfSURfVFlQRV9IVUFX",
+            "RUkQDxIZChVDSEFOTkVMX0lEX1RZUEVfTUVJWlUQEBIXChNDSEFOTkVMX0lE",
+            "X1RZUEVfMzYwEBESGAoUQ0hBTk5FTF9JRF9UWVBFX09QUE8QEhIYChRDSEFO",
+            "TkVMX0lEX1RZUEVfVklWTxATEhYKEkNIQU5ORUxfSURfVFlQRV9VQxAUEhoK",
+            "FkNIQU5ORUxfSURfVFlQRV9MRU5PVk8QFhIZChVDSEFOTkVMX0lEX1RZUEVf",
+            "SklOTEkQFxIZChVDSEFOTkVMX0lEX1RZUEVfQkFJRFUQGRIaChZDSEFOTkVM",
+            "X0lEX1RZUEVfREFOR0xFEBpCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
+            "cmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.ChannelIdType), }, null, null));

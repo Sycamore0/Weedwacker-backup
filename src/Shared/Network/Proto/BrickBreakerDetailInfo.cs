@@ -24,23 +24,21 @@ namespace Weedwacker.Shared.Network.Proto {
     static BrickBreakerDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxCcmlja0JyZWFrZXJEZXRhaWxJbmZvLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvGiNCcmlja0JyZWFrZXJBY3Rpdml0eVN0YWdl",
-            "SW5mby5wcm90bxobQnJpY2tCcmVha2VyTGV2ZWxJbmZvLnByb3RvIrMDChZC",
-            "cmlja0JyZWFrZXJEZXRhaWxJbmZvElcKD3N0YWdlX2luZm9fbGlzdBgNIAMo",
-            "CzI+LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQnJpY2tCcmVh",
-            "a2VyQWN0aXZpdHlTdGFnZUluZm8SUwoTVW5rMzMwMF9BSUVHT0FDT0lOTxgJ",
-            "IAMoCzI2LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQnJpY2tC",
-            "cmVha2VyTGV2ZWxJbmZvElMKE1VuazMzMDBfQkNIRUVMRlBOQ0QYCyADKAsy",
-            "Ni5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkJyaWNrQnJlYWtl",
-            "ckxldmVsSW5mbxJhCg5za2lsbF9pbmZvX21hcBgBIAMoCzJJLldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQnJpY2tCcmVha2VyRGV0YWlsSW5m",
-            "by5Ta2lsbEluZm9NYXBFbnRyeRozChFTa2lsbEluZm9NYXBFbnRyeRILCgNr",
-            "ZXkYASABKA0SDQoFdmFsdWUYAiABKA06AjgBYgZwcm90bzM="));
+            "ChxCcmlja0JyZWFrZXJEZXRhaWxJbmZvLnByb3RvGiNCcmlja0JyZWFrZXJB",
+            "Y3Rpdml0eVN0YWdlSW5mby5wcm90bxobQnJpY2tCcmVha2VyTGV2ZWxJbmZv",
+            "LnByb3RvIrkCChZCcmlja0JyZWFrZXJEZXRhaWxJbmZvEjcKD3N0YWdlX2lu",
+            "Zm9fbGlzdBgNIAMoCzIeLkJyaWNrQnJlYWtlckFjdGl2aXR5U3RhZ2VJbmZv",
+            "EjcKF2R1bmdlb25fbGV2ZWxfaW5mb19saXN0GAkgAygLMhYuQnJpY2tCcmVh",
+            "a2VyTGV2ZWxJbmZvEjUKFXdvcmxkX2xldmVsX2luZm9fbGlzdBgLIAMoCzIW",
+            "LkJyaWNrQnJlYWtlckxldmVsSW5mbxJBCg5za2lsbF9pbmZvX21hcBgBIAMo",
+            "CzIpLkJyaWNrQnJlYWtlckRldGFpbEluZm8uU2tpbGxJbmZvTWFwRW50cnka",
+            "MwoRU2tpbGxJbmZvTWFwRW50cnkSCwoDa2V5GAEgASgNEg0KBXZhbHVlGAIg",
+            "ASgNOgI4AUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.BrickBreakerActivityStageInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.BrickBreakerDetailInfo), global::Weedwacker.Shared.Network.Proto.BrickBreakerDetailInfo.Parser, new[]{ "StageInfoList", "Unk3300AIEGOACOINO", "Unk3300BCHEELFPNCD", "SkillInfoMap" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.BrickBreakerDetailInfo), global::Weedwacker.Shared.Network.Proto.BrickBreakerDetailInfo.Parser, new[]{ "StageInfoList", "DungeonLevelInfoList", "WorldLevelInfoList", "SkillInfoMap" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -82,8 +80,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BrickBreakerDetailInfo(BrickBreakerDetailInfo other) : this() {
       stageInfoList_ = other.stageInfoList_.Clone();
-      unk3300AIEGOACOINO_ = other.unk3300AIEGOACOINO_.Clone();
-      unk3300BCHEELFPNCD_ = other.unk3300BCHEELFPNCD_.Clone();
+      dungeonLevelInfoList_ = other.dungeonLevelInfoList_.Clone();
+      worldLevelInfoList_ = other.worldLevelInfoList_.Clone();
       skillInfoMap_ = other.skillInfoMap_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -105,26 +103,26 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return stageInfoList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_AIEGOACOINO" field.</summary>
-    public const int Unk3300AIEGOACOINOFieldNumber = 9;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> _repeated_unk3300AIEGOACOINO_codec
+    /// <summary>Field number for the "dungeon_level_info_list" field.</summary>
+    public const int DungeonLevelInfoListFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> _repeated_dungeonLevelInfoList_codec
         = pb::FieldCodec.ForMessage(74, global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> unk3300AIEGOACOINO_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo>();
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> dungeonLevelInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> Unk3300AIEGOACOINO {
-      get { return unk3300AIEGOACOINO_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> DungeonLevelInfoList {
+      get { return dungeonLevelInfoList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_BCHEELFPNCD" field.</summary>
-    public const int Unk3300BCHEELFPNCDFieldNumber = 11;
-    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> _repeated_unk3300BCHEELFPNCD_codec
+    /// <summary>Field number for the "world_level_info_list" field.</summary>
+    public const int WorldLevelInfoListFieldNumber = 11;
+    private static readonly pb::FieldCodec<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> _repeated_worldLevelInfoList_codec
         = pb::FieldCodec.ForMessage(90, global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo.Parser);
-    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> unk3300BCHEELFPNCD_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo>();
+    private readonly pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> worldLevelInfoList_ = new pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> Unk3300BCHEELFPNCD {
-      get { return unk3300BCHEELFPNCD_; }
+    public pbc::RepeatedField<global::Weedwacker.Shared.Network.Proto.BrickBreakerLevelInfo> WorldLevelInfoList {
+      get { return worldLevelInfoList_; }
     }
 
     /// <summary>Field number for the "skill_info_map" field.</summary>
@@ -154,8 +152,8 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if(!stageInfoList_.Equals(other.stageInfoList_)) return false;
-      if(!unk3300AIEGOACOINO_.Equals(other.unk3300AIEGOACOINO_)) return false;
-      if(!unk3300BCHEELFPNCD_.Equals(other.unk3300BCHEELFPNCD_)) return false;
+      if(!dungeonLevelInfoList_.Equals(other.dungeonLevelInfoList_)) return false;
+      if(!worldLevelInfoList_.Equals(other.worldLevelInfoList_)) return false;
       if (!SkillInfoMap.Equals(other.SkillInfoMap)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -165,8 +163,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= stageInfoList_.GetHashCode();
-      hash ^= unk3300AIEGOACOINO_.GetHashCode();
-      hash ^= unk3300BCHEELFPNCD_.GetHashCode();
+      hash ^= dungeonLevelInfoList_.GetHashCode();
+      hash ^= worldLevelInfoList_.GetHashCode();
       hash ^= SkillInfoMap.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -187,8 +185,8 @@ namespace Weedwacker.Shared.Network.Proto {
       output.WriteRawMessage(this);
     #else
       skillInfoMap_.WriteTo(output, _map_skillInfoMap_codec);
-      unk3300AIEGOACOINO_.WriteTo(output, _repeated_unk3300AIEGOACOINO_codec);
-      unk3300BCHEELFPNCD_.WriteTo(output, _repeated_unk3300BCHEELFPNCD_codec);
+      dungeonLevelInfoList_.WriteTo(output, _repeated_dungeonLevelInfoList_codec);
+      worldLevelInfoList_.WriteTo(output, _repeated_worldLevelInfoList_codec);
       stageInfoList_.WriteTo(output, _repeated_stageInfoList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -201,8 +199,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       skillInfoMap_.WriteTo(ref output, _map_skillInfoMap_codec);
-      unk3300AIEGOACOINO_.WriteTo(ref output, _repeated_unk3300AIEGOACOINO_codec);
-      unk3300BCHEELFPNCD_.WriteTo(ref output, _repeated_unk3300BCHEELFPNCD_codec);
+      dungeonLevelInfoList_.WriteTo(ref output, _repeated_dungeonLevelInfoList_codec);
+      worldLevelInfoList_.WriteTo(ref output, _repeated_worldLevelInfoList_codec);
       stageInfoList_.WriteTo(ref output, _repeated_stageInfoList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -215,8 +213,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public int CalculateSize() {
       int size = 0;
       size += stageInfoList_.CalculateSize(_repeated_stageInfoList_codec);
-      size += unk3300AIEGOACOINO_.CalculateSize(_repeated_unk3300AIEGOACOINO_codec);
-      size += unk3300BCHEELFPNCD_.CalculateSize(_repeated_unk3300BCHEELFPNCD_codec);
+      size += dungeonLevelInfoList_.CalculateSize(_repeated_dungeonLevelInfoList_codec);
+      size += worldLevelInfoList_.CalculateSize(_repeated_worldLevelInfoList_codec);
       size += skillInfoMap_.CalculateSize(_map_skillInfoMap_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -231,8 +229,8 @@ namespace Weedwacker.Shared.Network.Proto {
         return;
       }
       stageInfoList_.Add(other.stageInfoList_);
-      unk3300AIEGOACOINO_.Add(other.unk3300AIEGOACOINO_);
-      unk3300BCHEELFPNCD_.Add(other.unk3300BCHEELFPNCD_);
+      dungeonLevelInfoList_.Add(other.dungeonLevelInfoList_);
+      worldLevelInfoList_.Add(other.worldLevelInfoList_);
       skillInfoMap_.Add(other.skillInfoMap_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -254,11 +252,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 74: {
-            unk3300AIEGOACOINO_.AddEntriesFrom(input, _repeated_unk3300AIEGOACOINO_codec);
+            dungeonLevelInfoList_.AddEntriesFrom(input, _repeated_dungeonLevelInfoList_codec);
             break;
           }
           case 90: {
-            unk3300BCHEELFPNCD_.AddEntriesFrom(input, _repeated_unk3300BCHEELFPNCD_codec);
+            worldLevelInfoList_.AddEntriesFrom(input, _repeated_worldLevelInfoList_codec);
             break;
           }
           case 106: {
@@ -285,11 +283,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 74: {
-            unk3300AIEGOACOINO_.AddEntriesFrom(ref input, _repeated_unk3300AIEGOACOINO_codec);
+            dungeonLevelInfoList_.AddEntriesFrom(ref input, _repeated_dungeonLevelInfoList_codec);
             break;
           }
           case 90: {
-            unk3300BCHEELFPNCD_.AddEntriesFrom(ref input, _repeated_unk3300BCHEELFPNCD_codec);
+            worldLevelInfoList_.AddEntriesFrom(ref input, _repeated_worldLevelInfoList_codec);
             break;
           }
           case 106: {

@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static SignInInfoRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNTaWduSW5JbmZvUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvGhBTaWduSW5JbmZvLnByb3RvImgKDVNpZ25JbkluZm9Sc3AS",
-            "DwoHcmV0Y29kZRgDIAEoBRJGChFzaWduX2luX2luZm9fbGlzdBgIIAMoCzIr",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU2lnbkluSW5mb2IG",
-            "cHJvdG8z"));
+            "ChNTaWduSW5JbmZvUnNwLnByb3RvGhBTaWduSW5JbmZvLnByb3RvIkgKDVNp",
+            "Z25JbkluZm9Sc3ASDwoHcmV0Y29kZRgDIAEoBRImChFzaWduX2luX2luZm9f",
+            "bGlzdBgIIAMoCzILLlNpZ25JbkluZm9CIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.SignInInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

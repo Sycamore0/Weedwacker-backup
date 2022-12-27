@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static ResinChangeNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdSZXNpbkNoYW5nZU5vdGlmeS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byJfChFSZXNpbkNoYW5nZU5vdGlmeRIaChJuZXh0X2Fk",
-            "ZF90aW1lc3RhbXAYCyABKA0SGwoTVW5rMzMwMF9EQURNTENQSUhLShgNIAEo",
-            "DRIRCgljdXJfdmFsdWUYCiABKA1iBnByb3RvMw=="));
+            "ChdSZXNpbkNoYW5nZU5vdGlmeS5wcm90byJZChFSZXNpbkNoYW5nZU5vdGlm",
+            "eRIVCg1jdXJfYnV5X2NvdW50GAsgASgNEhoKEm5leHRfYWRkX3RpbWVzdGFt",
+            "cBgNIAEoDRIRCgljdXJfdmFsdWUYCiABKA1CIqoCH1dlZWR3YWNrZXIuU2hh",
+            "cmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ResinChangeNotify), global::Weedwacker.Shared.Network.Proto.ResinChangeNotify.Parser, new[]{ "NextAddTimestamp", "Unk3300DADMLCPIHKJ", "CurValue" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ResinChangeNotify), global::Weedwacker.Shared.Network.Proto.ResinChangeNotify.Parser, new[]{ "CurBuyCount", "NextAddTimestamp", "CurValue" }, null, null, null, null)
           }));
     }
     #endregion
@@ -81,8 +81,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ResinChangeNotify(ResinChangeNotify other) : this() {
+      curBuyCount_ = other.curBuyCount_;
       nextAddTimestamp_ = other.nextAddTimestamp_;
-      unk3300DADMLCPIHKJ_ = other.unk3300DADMLCPIHKJ_;
       curValue_ = other.curValue_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -93,30 +93,27 @@ namespace Weedwacker.Shared.Network.Proto {
       return new ResinChangeNotify(this);
     }
 
+    /// <summary>Field number for the "cur_buy_count" field.</summary>
+    public const int CurBuyCountFieldNumber = 11;
+    private uint curBuyCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint CurBuyCount {
+      get { return curBuyCount_; }
+      set {
+        curBuyCount_ = value;
+      }
+    }
+
     /// <summary>Field number for the "next_add_timestamp" field.</summary>
-    public const int NextAddTimestampFieldNumber = 11;
+    public const int NextAddTimestampFieldNumber = 13;
     private uint nextAddTimestamp_;
-    /// <summary>
-    /// Unk3300_KGLIHGLNAJK
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint NextAddTimestamp {
       get { return nextAddTimestamp_; }
       set {
         nextAddTimestamp_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "Unk3300_DADMLCPIHKJ" field.</summary>
-    public const int Unk3300DADMLCPIHKJFieldNumber = 13;
-    private uint unk3300DADMLCPIHKJ_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300DADMLCPIHKJ {
-      get { return unk3300DADMLCPIHKJ_; }
-      set {
-        unk3300DADMLCPIHKJ_ = value;
       }
     }
 
@@ -147,8 +144,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (CurBuyCount != other.CurBuyCount) return false;
       if (NextAddTimestamp != other.NextAddTimestamp) return false;
-      if (Unk3300DADMLCPIHKJ != other.Unk3300DADMLCPIHKJ) return false;
       if (CurValue != other.CurValue) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -157,8 +154,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (CurBuyCount != 0) hash ^= CurBuyCount.GetHashCode();
       if (NextAddTimestamp != 0) hash ^= NextAddTimestamp.GetHashCode();
-      if (Unk3300DADMLCPIHKJ != 0) hash ^= Unk3300DADMLCPIHKJ.GetHashCode();
       if (CurValue != 0) hash ^= CurValue.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -182,13 +179,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(80);
         output.WriteUInt32(CurValue);
       }
-      if (NextAddTimestamp != 0) {
+      if (CurBuyCount != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(NextAddTimestamp);
+        output.WriteUInt32(CurBuyCount);
       }
-      if (Unk3300DADMLCPIHKJ != 0) {
+      if (NextAddTimestamp != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk3300DADMLCPIHKJ);
+        output.WriteUInt32(NextAddTimestamp);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -204,13 +201,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(80);
         output.WriteUInt32(CurValue);
       }
-      if (NextAddTimestamp != 0) {
+      if (CurBuyCount != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(NextAddTimestamp);
+        output.WriteUInt32(CurBuyCount);
       }
-      if (Unk3300DADMLCPIHKJ != 0) {
+      if (NextAddTimestamp != 0) {
         output.WriteRawTag(104);
-        output.WriteUInt32(Unk3300DADMLCPIHKJ);
+        output.WriteUInt32(NextAddTimestamp);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -222,11 +219,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (CurBuyCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurBuyCount);
+      }
       if (NextAddTimestamp != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NextAddTimestamp);
-      }
-      if (Unk3300DADMLCPIHKJ != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300DADMLCPIHKJ);
       }
       if (CurValue != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurValue);
@@ -243,11 +240,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
+      if (other.CurBuyCount != 0) {
+        CurBuyCount = other.CurBuyCount;
+      }
       if (other.NextAddTimestamp != 0) {
         NextAddTimestamp = other.NextAddTimestamp;
-      }
-      if (other.Unk3300DADMLCPIHKJ != 0) {
-        Unk3300DADMLCPIHKJ = other.Unk3300DADMLCPIHKJ;
       }
       if (other.CurValue != 0) {
         CurValue = other.CurValue;
@@ -272,11 +269,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            NextAddTimestamp = input.ReadUInt32();
+            CurBuyCount = input.ReadUInt32();
             break;
           }
           case 104: {
-            Unk3300DADMLCPIHKJ = input.ReadUInt32();
+            NextAddTimestamp = input.ReadUInt32();
             break;
           }
         }
@@ -299,11 +296,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            NextAddTimestamp = input.ReadUInt32();
+            CurBuyCount = input.ReadUInt32();
             break;
           }
           case 104: {
-            Unk3300DADMLCPIHKJ = input.ReadUInt32();
+            NextAddTimestamp = input.ReadUInt32();
             break;
           }
         }

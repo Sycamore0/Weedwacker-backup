@@ -24,18 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static LanternRiteActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNMYW50ZXJuUml0ZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxIfV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90bxobTGFudGVyblByb2plY3Rpb25J",
-            "bmZvLnByb3RvGh5MYW50ZXJuUml0ZUZpcmV3b3Jrc0luZm8ucHJvdG8aFlNh",
-            "bHZhZ2VTdGFnZUluZm8ucHJvdG8i5AIKHUxhbnRlcm5SaXRlQWN0aXZpdHlE",
-            "ZXRhaWxJbmZvEkoKD3N0YWdlX2luZm9fbGlzdBgFIAMoCzIxLldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU2FsdmFnZVN0YWdlSW5mbxJRCg5m",
-            "aXJld29ya3NfaW5mbxgPIAEoCzI5LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uTGFudGVyblJpdGVGaXJld29ya3NJbmZvEhsKE1VuazMzMDBf",
-            "UERGSk5DREdLR0gYCyABKAgSTwoPcHJvamVjdGlvbl9pbmZvGAMgASgLMjYu",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5MYW50ZXJuUHJvamVj",
-            "dGlvbkluZm8SGwoTVW5rMzMwMF9ES0JKTENJTUJBTBgIIAEoCBIZChFpc19j",
-            "b250ZW50X2Nsb3NlZBgOIAEoCGIGcHJvdG8z"));
+            "CiNMYW50ZXJuUml0ZUFjdGl2aXR5RGV0YWlsSW5mby5wcm90bxobTGFudGVy",
+            "blByb2plY3Rpb25JbmZvLnByb3RvGh5MYW50ZXJuUml0ZUZpcmV3b3Jrc0lu",
+            "Zm8ucHJvdG8aFlNhbHZhZ2VTdGFnZUluZm8ucHJvdG8ihAIKHUxhbnRlcm5S",
+            "aXRlQWN0aXZpdHlEZXRhaWxJbmZvEioKD3N0YWdlX2luZm9fbGlzdBgFIAMo",
+            "CzIRLlNhbHZhZ2VTdGFnZUluZm8SMQoOZmlyZXdvcmtzX2luZm8YDyABKAsy",
+            "GS5MYW50ZXJuUml0ZUZpcmV3b3Jrc0luZm8SGwoTVW5rMzMwMF9QREZKTkNE",
+            "R0tHSBgLIAEoCBIvCg9wcm9qZWN0aW9uX2luZm8YAyABKAsyFi5MYW50ZXJu",
+            "UHJvamVjdGlvbkluZm8SGwoTVW5rMzMwMF9ES0JKTENJTUJBTBgIIAEoCBIZ",
+            "ChFpc19jb250ZW50X2Nsb3NlZBgOIAEoCEIiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.LanternProjectionInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.LanternRiteFireworksInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.SalvageStageInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -146,5 +146,43 @@ namespace Weedwacker.GameServer.Systems.Inventory
                 return false;
             }
         }
+
+        public async Task<bool> EquipRelic(ulong avatarGuid, ulong equipGuid)
+        {
+            Avatar.Avatar? avatar = Owner.Avatars.GetAvatarByGuid(avatarGuid);
+
+            if (avatar != null && Inventory.GuidMap.TryGetValue(equipGuid, out GameItem relic) && relic.ItemData.itemType == ItemType.ITEM_RELIQUARY)
+            {
+                ReliquaryItem asRelic = (ReliquaryItem)relic;
+                // Is it equipped ot another avatar?
+                Avatar.Avatar? otherAvatar = Owner.Avatars.Avatars.Values.Where(a => a.GetRelic(asRelic.ItemData.equipType) == asRelic && a != avatar).FirstOrDefault();
+                if (otherAvatar != null)
+                {
+                    await UnequipRelicAsync(otherAvatar.Guid, asRelic.ItemData.equipType);
+                }
+
+                if (await avatar.EquipRelic(asRelic, true))
+                {
+                    asRelic.EquippedAvatar = avatar.AvatarId;
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public async Task<bool> UnequipRelicAsync(ulong avatarGuid, EquipType slot)
+        {
+            Avatar.Avatar? avatar = Owner.Avatars.GetAvatarByGuid(avatarGuid);
+
+            if (avatar != null && slot != EquipType.EQUIP_WEAPON)
+            {
+
+                return await avatar.UnequipRelic(slot);
+
+            }
+
+            return false;
+        }
     }
 }

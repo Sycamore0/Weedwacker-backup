@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetRogueDairyRepairInfoReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBHZXRSb2d1ZURhaXJ5UmVwYWlySW5mb1JlcS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byIcChpHZXRSb2d1ZURhaXJ5UmVwYWly",
-            "SW5mb1JlcWIGcHJvdG8z"));
+            "CiBHZXRSb2d1ZURhaXJ5UmVwYWlySW5mb1JlcS5wcm90byIcChpHZXRSb2d1",
+            "ZURhaXJ5UmVwYWlySW5mb1JlcUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
+            "d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

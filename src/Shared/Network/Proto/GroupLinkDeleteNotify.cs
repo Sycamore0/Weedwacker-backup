@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static GroupLinkDeleteNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtHcm91cExpbmtEZWxldGVOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8iKgoVR3JvdXBMaW5rRGVsZXRlTm90aWZ5EhEK",
-            "CWJ1bmRsZV9pZBgJIAEoDWIGcHJvdG8z"));
+            "ChtHcm91cExpbmtEZWxldGVOb3RpZnkucHJvdG8iKgoVR3JvdXBMaW5rRGVs",
+            "ZXRlTm90aWZ5EhEKCWJ1bmRsZV9pZBgJIAEoDUIiqgIfV2VlZHdhY2tlci5T",
+            "aGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

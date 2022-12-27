@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ReadNicknameAuditRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpSZWFkTmlja25hbWVBdWRpdFJzcC5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90byInChRSZWFkTmlja25hbWVBdWRpdFJzcBIPCgdy",
-            "ZXRjb2RlGA8gASgFYgZwcm90bzM="));
+            "ChpSZWFkTmlja25hbWVBdWRpdFJzcC5wcm90byInChRSZWFkTmlja25hbWVB",
+            "dWRpdFJzcBIPCgdyZXRjb2RlGA8gASgFQiKqAh9XZWVkd2Fja2VyLlNoYXJl",
+            "ZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static SpringUseRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJTcHJpbmdVc2VSc3AucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8iLQoMU3ByaW5nVXNlUnNwEg8KB3JldGNvZGUYBSABKAUSDAoE",
-            "Z3VpZBgBIAEoBGIGcHJvdG8z"));
+            "ChJTcHJpbmdVc2VSc3AucHJvdG8iLQoMU3ByaW5nVXNlUnNwEg8KB3JldGNv",
+            "ZGUYBSABKAUSDAoEZ3VpZBgBIAEoBEIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

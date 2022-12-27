@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static IrodoriFillPoetryRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpJcm9kb3JpRmlsbFBvZXRyeVJzcC5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90bxocSXJvZG9yaVBvZXRyeVRoZW1lRGF0YS5wcm90",
-            "byJ0ChRJcm9kb3JpRmlsbFBvZXRyeVJzcBJLCgp0aGVtZV9kYXRhGAggASgL",
-            "MjcuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5Jcm9kb3JpUG9l",
-            "dHJ5VGhlbWVEYXRhEg8KB3JldGNvZGUYAiABKAViBnByb3RvMw=="));
+            "ChpJcm9kb3JpRmlsbFBvZXRyeVJzcC5wcm90bxocSXJvZG9yaVBvZXRyeVRo",
+            "ZW1lRGF0YS5wcm90byJUChRJcm9kb3JpRmlsbFBvZXRyeVJzcBIrCgp0aGVt",
+            "ZV9kYXRhGAggASgLMhcuSXJvZG9yaVBvZXRyeVRoZW1lRGF0YRIPCgdyZXRj",
+            "b2RlGAIgASgFQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.IrodoriPoetryThemeDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

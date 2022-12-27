@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static RegionalPlayVarReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVSZWdpb25hbFBsYXlWYXIucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8iaAoPUmVnaW9uYWxQbGF5VmFyEgwKBHR5cGUYBSABKA0S",
-            "GwoTVW5rMzMwMF9GT0JNSEhOSVBQSBgEIAEoAhIbChNVbmszMzAwX1BJREhG",
-            "QUJLSUpOGAMgASgCEg0KBXZhbHVlGAIgASgCYgZwcm90bzM="));
+            "ChVSZWdpb25hbFBsYXlWYXIucHJvdG8iVQoPUmVnaW9uYWxQbGF5VmFyEgwK",
+            "BHR5cGUYBSABKA0SEgoKYmFzZV92YWx1ZRgEIAEoAhIRCgltYXhfdmFsdWUY",
+            "AyABKAISDQoFdmFsdWUYAiABKAJCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
+            "dHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RegionalPlayVar), global::Weedwacker.Shared.Network.Proto.RegionalPlayVar.Parser, new[]{ "Type", "Unk3300FOBMHHNIPPH", "Unk3300PIDHFABKIJN", "Value" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RegionalPlayVar), global::Weedwacker.Shared.Network.Proto.RegionalPlayVar.Parser, new[]{ "Type", "BaseValue", "MaxValue", "Value" }, null, null, null, null)
           }));
     }
     #endregion
@@ -73,8 +73,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RegionalPlayVar(RegionalPlayVar other) : this() {
       type_ = other.type_;
-      unk3300FOBMHHNIPPH_ = other.unk3300FOBMHHNIPPH_;
-      unk3300PIDHFABKIJN_ = other.unk3300PIDHFABKIJN_;
+      baseValue_ = other.baseValue_;
+      maxValue_ = other.maxValue_;
       value_ = other.value_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -97,27 +97,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_FOBMHHNIPPH" field.</summary>
-    public const int Unk3300FOBMHHNIPPHFieldNumber = 4;
-    private float unk3300FOBMHHNIPPH_;
+    /// <summary>Field number for the "base_value" field.</summary>
+    public const int BaseValueFieldNumber = 4;
+    private float baseValue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3300FOBMHHNIPPH {
-      get { return unk3300FOBMHHNIPPH_; }
+    public float BaseValue {
+      get { return baseValue_; }
       set {
-        unk3300FOBMHHNIPPH_ = value;
+        baseValue_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_PIDHFABKIJN" field.</summary>
-    public const int Unk3300PIDHFABKIJNFieldNumber = 3;
-    private float unk3300PIDHFABKIJN_;
+    /// <summary>Field number for the "max_value" field.</summary>
+    public const int MaxValueFieldNumber = 3;
+    private float maxValue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3300PIDHFABKIJN {
-      get { return unk3300PIDHFABKIJN_; }
+    public float MaxValue {
+      get { return maxValue_; }
       set {
-        unk3300PIDHFABKIJN_ = value;
+        maxValue_ = value;
       }
     }
 
@@ -149,8 +149,8 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (Type != other.Type) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3300FOBMHHNIPPH, other.Unk3300FOBMHHNIPPH)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3300PIDHFABKIJN, other.Unk3300PIDHFABKIJN)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(BaseValue, other.BaseValue)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MaxValue, other.MaxValue)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Value, other.Value)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -160,8 +160,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Type != 0) hash ^= Type.GetHashCode();
-      if (Unk3300FOBMHHNIPPH != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3300FOBMHHNIPPH);
-      if (Unk3300PIDHFABKIJN != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3300PIDHFABKIJN);
+      if (BaseValue != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(BaseValue);
+      if (MaxValue != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MaxValue);
       if (Value != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Value);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -185,13 +185,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(21);
         output.WriteFloat(Value);
       }
-      if (Unk3300PIDHFABKIJN != 0F) {
+      if (MaxValue != 0F) {
         output.WriteRawTag(29);
-        output.WriteFloat(Unk3300PIDHFABKIJN);
+        output.WriteFloat(MaxValue);
       }
-      if (Unk3300FOBMHHNIPPH != 0F) {
+      if (BaseValue != 0F) {
         output.WriteRawTag(37);
-        output.WriteFloat(Unk3300FOBMHHNIPPH);
+        output.WriteFloat(BaseValue);
       }
       if (Type != 0) {
         output.WriteRawTag(40);
@@ -211,13 +211,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(21);
         output.WriteFloat(Value);
       }
-      if (Unk3300PIDHFABKIJN != 0F) {
+      if (MaxValue != 0F) {
         output.WriteRawTag(29);
-        output.WriteFloat(Unk3300PIDHFABKIJN);
+        output.WriteFloat(MaxValue);
       }
-      if (Unk3300FOBMHHNIPPH != 0F) {
+      if (BaseValue != 0F) {
         output.WriteRawTag(37);
-        output.WriteFloat(Unk3300FOBMHHNIPPH);
+        output.WriteFloat(BaseValue);
       }
       if (Type != 0) {
         output.WriteRawTag(40);
@@ -236,10 +236,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Type != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Type);
       }
-      if (Unk3300FOBMHHNIPPH != 0F) {
+      if (BaseValue != 0F) {
         size += 1 + 4;
       }
-      if (Unk3300PIDHFABKIJN != 0F) {
+      if (MaxValue != 0F) {
         size += 1 + 4;
       }
       if (Value != 0F) {
@@ -260,11 +260,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Type != 0) {
         Type = other.Type;
       }
-      if (other.Unk3300FOBMHHNIPPH != 0F) {
-        Unk3300FOBMHHNIPPH = other.Unk3300FOBMHHNIPPH;
+      if (other.BaseValue != 0F) {
+        BaseValue = other.BaseValue;
       }
-      if (other.Unk3300PIDHFABKIJN != 0F) {
-        Unk3300PIDHFABKIJN = other.Unk3300PIDHFABKIJN;
+      if (other.MaxValue != 0F) {
+        MaxValue = other.MaxValue;
       }
       if (other.Value != 0F) {
         Value = other.Value;
@@ -289,11 +289,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 29: {
-            Unk3300PIDHFABKIJN = input.ReadFloat();
+            MaxValue = input.ReadFloat();
             break;
           }
           case 37: {
-            Unk3300FOBMHHNIPPH = input.ReadFloat();
+            BaseValue = input.ReadFloat();
             break;
           }
           case 40: {
@@ -320,11 +320,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 29: {
-            Unk3300PIDHFABKIJN = input.ReadFloat();
+            MaxValue = input.ReadFloat();
             break;
           }
           case 37: {
-            Unk3300FOBMHHNIPPH = input.ReadFloat();
+            BaseValue = input.ReadFloat();
             break;
           }
           case 40: {

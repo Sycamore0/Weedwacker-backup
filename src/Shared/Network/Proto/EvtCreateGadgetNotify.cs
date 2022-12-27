@@ -24,27 +24,25 @@ namespace Weedwacker.Shared.Network.Proto {
     static EvtCreateGadgetNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtFdnRDcmVhdGVHYWRnZXROb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8aEUZvcndhcmRUeXBlLnByb3RvGgxWZWN0b3Iu",
-            "cHJvdG8i7wQKFUV2dENyZWF0ZUdhZGdldE5vdGlmeRIeChV0YXJnZXRfZW50",
-            "aXR5X2lkX2xpc3QY9AwgAygNEjkKCGluaXRfcG9zGAkgASgLMicuV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5WZWN0b3ISFQoNaXNfYXN5bmNf",
-            "bG9hZBgPIAEoCBIXCg9vd25lcl9lbnRpdHlfaWQYAiABKA0SQgoMZm9yd2Fy",
-            "ZF90eXBlGAMgASgOMiwuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
-            "by5Gb3J3YXJkVHlwZRIlChx0YXJnZXRfbG9ja19wb2ludF9pbmRleF9saXN0",
-            "GJ4DIAMoDRIcChRwcm9wX293bmVyX2VudGl0eV9pZBgGIAEoDRIfChd0YXJn",
-            "ZXRfbG9ja19wb2ludF9pbmRleBgEIAEoDRIcChNVbmszMzAwX09KSERKR0FG",
-            "RE5OGJkLIAEoCBIPCgdjYW1wX2lkGAogASgNEhsKE1VuazMzMDBfRUpOQklH",
-            "TEdNSUkYCCABKAgSQgoRaW5pdF9ldWxlcl9hbmdsZXMYDCABKAsyJy5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlZlY3RvchIfChZpc19wZWVy",
-            "X2lkX2Zyb21fcGxheWVyGOEEIAEoCBIPCgdyb29tX2lkGAUgASgNEhEKCWNv",
-            "bmZpZ19pZBgOIAEoDRIRCgljYW1wX3R5cGUYDSABKA0SDAoEZ3VpZBgHIAEo",
-            "BBIRCgllbnRpdHlfaWQYASABKA0SGAoQdGFyZ2V0X2VudGl0eV9pZBgLIAEo",
-            "DWIGcHJvdG8z"));
+            "ChtFdnRDcmVhdGVHYWRnZXROb3RpZnkucHJvdG8aEUZvcndhcmRUeXBlLnBy",
+            "b3RvGgxWZWN0b3IucHJvdG8ilQQKFUV2dENyZWF0ZUdhZGdldE5vdGlmeRIe",
+            "ChV0YXJnZXRfZW50aXR5X2lkX2xpc3QY9AwgAygNEhkKCGluaXRfcG9zGAkg",
+            "ASgLMgcuVmVjdG9yEhsKE1VuazMzMDBfRExCSUpGT09OQkEYDyABKAgSFwoP",
+            "b3duZXJfZW50aXR5X2lkGAIgASgNEiIKDGZvcndhcmRfdHlwZRgDIAEoDjIM",
+            "LkZvcndhcmRUeXBlEiUKHHRhcmdldF9sb2NrX3BvaW50X2luZGV4X2xpc3QY",
+            "ngMgAygNEhwKFHByb3Bfb3duZXJfZW50aXR5X2lkGAYgASgNEh8KF3Rhcmdl",
+            "dF9sb2NrX3BvaW50X2luZGV4GAQgASgNEhwKE1VuazMzMDBfT0pIREpHQUZE",
+            "Tk4YmQsgASgIEg8KB2NhbXBfaWQYCiABKA0SGwoTVW5rMzMwMF9FSk5CSUdM",
+            "R01JSRgIIAEoCBIiChFpbml0X2V1bGVyX2FuZ2xlcxgMIAEoCzIHLlZlY3Rv",
+            "chIfChZpc19wZWVyX2lkX2Zyb21fcGxheWVyGOEEIAEoCBIPCgdyb29tX2lk",
+            "GAUgASgNEhEKCWNvbmZpZ19pZBgOIAEoDRIRCgljYW1wX3R5cGUYDSABKA0S",
+            "DAoEZ3VpZBgHIAEoBBIRCgllbnRpdHlfaWQYASABKA0SGAoQdGFyZ2V0X2Vu",
+            "dGl0eV9pZBgLIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ForwardTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtCreateGadgetNotify), global::Weedwacker.Shared.Network.Proto.EvtCreateGadgetNotify.Parser, new[]{ "TargetEntityIdList", "InitPos", "IsAsyncLoad", "OwnerEntityId", "ForwardType", "TargetLockPointIndexList", "PropOwnerEntityId", "TargetLockPointIndex", "Unk3300OJHDJGAFDNN", "CampId", "Unk3300EJNBIGLGMII", "InitEulerAngles", "IsPeerIdFromPlayer", "RoomId", "ConfigId", "CampType", "Guid", "EntityId", "TargetEntityId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtCreateGadgetNotify), global::Weedwacker.Shared.Network.Proto.EvtCreateGadgetNotify.Parser, new[]{ "TargetEntityIdList", "InitPos", "Unk3300DLBIJFOONBA", "OwnerEntityId", "ForwardType", "TargetLockPointIndexList", "PropOwnerEntityId", "TargetLockPointIndex", "Unk3300OJHDJGAFDNN", "CampId", "Unk3300EJNBIGLGMII", "InitEulerAngles", "IsPeerIdFromPlayer", "RoomId", "ConfigId", "CampType", "Guid", "EntityId", "TargetEntityId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -97,7 +95,7 @@ namespace Weedwacker.Shared.Network.Proto {
     public EvtCreateGadgetNotify(EvtCreateGadgetNotify other) : this() {
       targetEntityIdList_ = other.targetEntityIdList_.Clone();
       initPos_ = other.initPos_ != null ? other.initPos_.Clone() : null;
-      isAsyncLoad_ = other.isAsyncLoad_;
+      unk3300DLBIJFOONBA_ = other.unk3300DLBIJFOONBA_;
       ownerEntityId_ = other.ownerEntityId_;
       forwardType_ = other.forwardType_;
       targetLockPointIndexList_ = other.targetLockPointIndexList_.Clone();
@@ -146,15 +144,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "is_async_load" field.</summary>
-    public const int IsAsyncLoadFieldNumber = 15;
-    private bool isAsyncLoad_;
+    /// <summary>Field number for the "Unk3300_DLBIJFOONBA" field.</summary>
+    public const int Unk3300DLBIJFOONBAFieldNumber = 15;
+    private bool unk3300DLBIJFOONBA_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsAsyncLoad {
-      get { return isAsyncLoad_; }
+    public bool Unk3300DLBIJFOONBA {
+      get { return unk3300DLBIJFOONBA_; }
       set {
-        isAsyncLoad_ = value;
+        unk3300DLBIJFOONBA_ = value;
       }
     }
 
@@ -366,7 +364,7 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if(!targetEntityIdList_.Equals(other.targetEntityIdList_)) return false;
       if (!object.Equals(InitPos, other.InitPos)) return false;
-      if (IsAsyncLoad != other.IsAsyncLoad) return false;
+      if (Unk3300DLBIJFOONBA != other.Unk3300DLBIJFOONBA) return false;
       if (OwnerEntityId != other.OwnerEntityId) return false;
       if (ForwardType != other.ForwardType) return false;
       if(!targetLockPointIndexList_.Equals(other.targetLockPointIndexList_)) return false;
@@ -392,7 +390,7 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       hash ^= targetEntityIdList_.GetHashCode();
       if (initPos_ != null) hash ^= InitPos.GetHashCode();
-      if (IsAsyncLoad != false) hash ^= IsAsyncLoad.GetHashCode();
+      if (Unk3300DLBIJFOONBA != false) hash ^= Unk3300DLBIJFOONBA.GetHashCode();
       if (OwnerEntityId != 0) hash ^= OwnerEntityId.GetHashCode();
       if (ForwardType != global::Weedwacker.Shared.Network.Proto.ForwardType.Local) hash ^= ForwardType.GetHashCode();
       hash ^= targetLockPointIndexList_.GetHashCode();
@@ -483,9 +481,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(112);
         output.WriteUInt32(ConfigId);
       }
-      if (IsAsyncLoad != false) {
+      if (Unk3300DLBIJFOONBA != false) {
         output.WriteRawTag(120);
-        output.WriteBool(IsAsyncLoad);
+        output.WriteBool(Unk3300DLBIJFOONBA);
       }
       targetLockPointIndexList_.WriteTo(output, _repeated_targetLockPointIndexList_codec);
       if (IsPeerIdFromPlayer != false) {
@@ -563,9 +561,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(112);
         output.WriteUInt32(ConfigId);
       }
-      if (IsAsyncLoad != false) {
+      if (Unk3300DLBIJFOONBA != false) {
         output.WriteRawTag(120);
-        output.WriteBool(IsAsyncLoad);
+        output.WriteBool(Unk3300DLBIJFOONBA);
       }
       targetLockPointIndexList_.WriteTo(ref output, _repeated_targetLockPointIndexList_codec);
       if (IsPeerIdFromPlayer != false) {
@@ -591,7 +589,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (initPos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(InitPos);
       }
-      if (IsAsyncLoad != false) {
+      if (Unk3300DLBIJFOONBA != false) {
         size += 1 + 1;
       }
       if (OwnerEntityId != 0) {
@@ -659,8 +657,8 @@ namespace Weedwacker.Shared.Network.Proto {
         }
         InitPos.MergeFrom(other.InitPos);
       }
-      if (other.IsAsyncLoad != false) {
-        IsAsyncLoad = other.IsAsyncLoad;
+      if (other.Unk3300DLBIJFOONBA != false) {
+        Unk3300DLBIJFOONBA = other.Unk3300DLBIJFOONBA;
       }
       if (other.OwnerEntityId != 0) {
         OwnerEntityId = other.OwnerEntityId;
@@ -789,7 +787,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            IsAsyncLoad = input.ReadBool();
+            Unk3300DLBIJFOONBA = input.ReadBool();
             break;
           }
           case 3314:
@@ -888,7 +886,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            IsAsyncLoad = input.ReadBool();
+            Unk3300DLBIJFOONBA = input.ReadBool();
             break;
           }
           case 3314:

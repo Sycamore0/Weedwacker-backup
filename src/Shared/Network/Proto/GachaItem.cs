@@ -24,19 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static GachaItemReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg9HYWNoYUl0ZW0ucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
-            "UHJvdG8aF0dhY2hhVHJhbnNmZXJJdGVtLnByb3RvGg9JdGVtUGFyYW0ucHJv",
-            "dG8ilgIKCUdhY2hhSXRlbRIbChNVbmszMzAwX0JHSU9KQkpGTUZMGAggASgI",
-            "EkoKDnRyYW5zZmVyX2l0ZW1zGAYgAygLMjIuV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90by5HYWNoYVRyYW5zZmVySXRlbRIbChNVbmszMzAwX0pO",
-            "T09IQk5KRklFGA0gASgIEj4KCmdhY2hhX2l0ZW0YBSABKAsyKi5XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkl0ZW1QYXJhbRJDCg90b2tlbl9p",
-            "dGVtX2xpc3QYCiADKAsyKi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvLkl0ZW1QYXJhbWIGcHJvdG8z"));
+            "Cg9HYWNoYUl0ZW0ucHJvdG8aF0dhY2hhVHJhbnNmZXJJdGVtLnByb3RvGg9J",
+            "dGVtUGFyYW0ucHJvdG8irgEKCUdhY2hhSXRlbRIVCg1pc19mbGFzaF9jYXJk",
+            "GAggASgIEioKDnRyYW5zZmVyX2l0ZW1zGAYgAygLMhIuR2FjaGFUcmFuc2Zl",
+            "ckl0ZW0SGQoRaXNfZ2FjaGFfaXRlbV9uZXcYDSABKAgSHgoKZ2FjaGFfaXRl",
+            "bRgFIAEoCzIKLkl0ZW1QYXJhbRIjCg90b2tlbl9pdGVtX2xpc3QYCiADKAsy",
+            "Ci5JdGVtUGFyYW1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GachaTransferItemReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ItemParamReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GachaItem), global::Weedwacker.Shared.Network.Proto.GachaItem.Parser, new[]{ "Unk3300BGIOJBJFMFL", "TransferItems", "Unk3300JNOOHBNJFIE", "GachaItem_", "TokenItemList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GachaItem), global::Weedwacker.Shared.Network.Proto.GachaItem.Parser, new[]{ "IsFlashCard", "TransferItems", "IsGachaItemNew", "GachaItem_", "TokenItemList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,9 +75,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GachaItem(GachaItem other) : this() {
-      unk3300BGIOJBJFMFL_ = other.unk3300BGIOJBJFMFL_;
+      isFlashCard_ = other.isFlashCard_;
       transferItems_ = other.transferItems_.Clone();
-      unk3300JNOOHBNJFIE_ = other.unk3300JNOOHBNJFIE_;
+      isGachaItemNew_ = other.isGachaItemNew_;
       gachaItem_ = other.gachaItem_ != null ? other.gachaItem_.Clone() : null;
       tokenItemList_ = other.tokenItemList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -91,15 +89,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new GachaItem(this);
     }
 
-    /// <summary>Field number for the "Unk3300_BGIOJBJFMFL" field.</summary>
-    public const int Unk3300BGIOJBJFMFLFieldNumber = 8;
-    private bool unk3300BGIOJBJFMFL_;
+    /// <summary>Field number for the "is_flash_card" field.</summary>
+    public const int IsFlashCardFieldNumber = 8;
+    private bool isFlashCard_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300BGIOJBJFMFL {
-      get { return unk3300BGIOJBJFMFL_; }
+    public bool IsFlashCard {
+      get { return isFlashCard_; }
       set {
-        unk3300BGIOJBJFMFL_ = value;
+        isFlashCard_ = value;
       }
     }
 
@@ -114,15 +112,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return transferItems_; }
     }
 
-    /// <summary>Field number for the "Unk3300_JNOOHBNJFIE" field.</summary>
-    public const int Unk3300JNOOHBNJFIEFieldNumber = 13;
-    private bool unk3300JNOOHBNJFIE_;
+    /// <summary>Field number for the "is_gacha_item_new" field.</summary>
+    public const int IsGachaItemNewFieldNumber = 13;
+    private bool isGachaItemNew_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300JNOOHBNJFIE {
-      get { return unk3300JNOOHBNJFIE_; }
+    public bool IsGachaItemNew {
+      get { return isGachaItemNew_; }
       set {
-        unk3300JNOOHBNJFIE_ = value;
+        isGachaItemNew_ = value;
       }
     }
 
@@ -164,9 +162,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300BGIOJBJFMFL != other.Unk3300BGIOJBJFMFL) return false;
+      if (IsFlashCard != other.IsFlashCard) return false;
       if(!transferItems_.Equals(other.transferItems_)) return false;
-      if (Unk3300JNOOHBNJFIE != other.Unk3300JNOOHBNJFIE) return false;
+      if (IsGachaItemNew != other.IsGachaItemNew) return false;
       if (!object.Equals(GachaItem_, other.GachaItem_)) return false;
       if(!tokenItemList_.Equals(other.tokenItemList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -176,9 +174,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300BGIOJBJFMFL != false) hash ^= Unk3300BGIOJBJFMFL.GetHashCode();
+      if (IsFlashCard != false) hash ^= IsFlashCard.GetHashCode();
       hash ^= transferItems_.GetHashCode();
-      if (Unk3300JNOOHBNJFIE != false) hash ^= Unk3300JNOOHBNJFIE.GetHashCode();
+      if (IsGachaItemNew != false) hash ^= IsGachaItemNew.GetHashCode();
       if (gachaItem_ != null) hash ^= GachaItem_.GetHashCode();
       hash ^= tokenItemList_.GetHashCode();
       if (_unknownFields != null) {
@@ -204,14 +202,14 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteMessage(GachaItem_);
       }
       transferItems_.WriteTo(output, _repeated_transferItems_codec);
-      if (Unk3300BGIOJBJFMFL != false) {
+      if (IsFlashCard != false) {
         output.WriteRawTag(64);
-        output.WriteBool(Unk3300BGIOJBJFMFL);
+        output.WriteBool(IsFlashCard);
       }
       tokenItemList_.WriteTo(output, _repeated_tokenItemList_codec);
-      if (Unk3300JNOOHBNJFIE != false) {
+      if (IsGachaItemNew != false) {
         output.WriteRawTag(104);
-        output.WriteBool(Unk3300JNOOHBNJFIE);
+        output.WriteBool(IsGachaItemNew);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -228,14 +226,14 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteMessage(GachaItem_);
       }
       transferItems_.WriteTo(ref output, _repeated_transferItems_codec);
-      if (Unk3300BGIOJBJFMFL != false) {
+      if (IsFlashCard != false) {
         output.WriteRawTag(64);
-        output.WriteBool(Unk3300BGIOJBJFMFL);
+        output.WriteBool(IsFlashCard);
       }
       tokenItemList_.WriteTo(ref output, _repeated_tokenItemList_codec);
-      if (Unk3300JNOOHBNJFIE != false) {
+      if (IsGachaItemNew != false) {
         output.WriteRawTag(104);
-        output.WriteBool(Unk3300JNOOHBNJFIE);
+        output.WriteBool(IsGachaItemNew);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -247,11 +245,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300BGIOJBJFMFL != false) {
+      if (IsFlashCard != false) {
         size += 1 + 1;
       }
       size += transferItems_.CalculateSize(_repeated_transferItems_codec);
-      if (Unk3300JNOOHBNJFIE != false) {
+      if (IsGachaItemNew != false) {
         size += 1 + 1;
       }
       if (gachaItem_ != null) {
@@ -270,12 +268,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300BGIOJBJFMFL != false) {
-        Unk3300BGIOJBJFMFL = other.Unk3300BGIOJBJFMFL;
+      if (other.IsFlashCard != false) {
+        IsFlashCard = other.IsFlashCard;
       }
       transferItems_.Add(other.transferItems_);
-      if (other.Unk3300JNOOHBNJFIE != false) {
-        Unk3300JNOOHBNJFIE = other.Unk3300JNOOHBNJFIE;
+      if (other.IsGachaItemNew != false) {
+        IsGachaItemNew = other.IsGachaItemNew;
       }
       if (other.gachaItem_ != null) {
         if (gachaItem_ == null) {
@@ -311,7 +309,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk3300BGIOJBJFMFL = input.ReadBool();
+            IsFlashCard = input.ReadBool();
             break;
           }
           case 82: {
@@ -319,7 +317,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk3300JNOOHBNJFIE = input.ReadBool();
+            IsGachaItemNew = input.ReadBool();
             break;
           }
         }
@@ -349,7 +347,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk3300BGIOJBJFMFL = input.ReadBool();
+            IsFlashCard = input.ReadBool();
             break;
           }
           case 82: {
@@ -357,7 +355,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 104: {
-            Unk3300JNOOHBNJFIE = input.ReadBool();
+            IsGachaItemNew = input.ReadBool();
             break;
           }
         }

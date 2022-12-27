@@ -24,18 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static HideAndSeekStageInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpIaWRlQW5kU2Vla1N0YWdlSW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90bxohSGlkZUFuZFNlZWtQbGF5ZXJCYXR0bGVJbmZv",
-            "LnByb3RvGhpIaWRlQW5kU2Vla1N0YWdlVHlwZS5wcm90byKNAwoUSGlkZUFu",
-            "ZFNlZWtTdGFnZUluZm8SEgoKaHVudGVyX3VpZBgJIAEoDRJhCg9iYXR0bGVf",
-            "aW5mb19tYXAYCCADKAsySC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvLkhpZGVBbmRTZWVrU3RhZ2VJbmZvLkJhdHRsZUluZm9NYXBFbnRyeRIX",
-            "Cg9pc19yZWNvcmRfc2NvcmUYBSABKAgSFgoOaGlkZXJfdWlkX2xpc3QYAiAD",
-            "KA0SDgoGbWFwX2lkGA0gASgNEkkKCnN0YWdlX3R5cGUYBiABKA4yNS5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkhpZGVBbmRTZWVrU3RhZ2VU",
-            "eXBlGnIKEkJhdHRsZUluZm9NYXBFbnRyeRILCgNrZXkYASABKA0SSwoFdmFs",
-            "dWUYAiABKAsyPC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkhp",
-            "ZGVBbmRTZWVrUGxheWVyQmF0dGxlSW5mbzoCOAFiBnByb3RvMw=="));
+            "ChpIaWRlQW5kU2Vla1N0YWdlSW5mby5wcm90bxohSGlkZUFuZFNlZWtQbGF5",
+            "ZXJCYXR0bGVJbmZvLnByb3RvGhpIaWRlQW5kU2Vla1N0YWdlVHlwZS5wcm90",
+            "byKtAgoUSGlkZUFuZFNlZWtTdGFnZUluZm8SEgoKaHVudGVyX3VpZBgJIAEo",
+            "DRJBCg9iYXR0bGVfaW5mb19tYXAYCCADKAsyKC5IaWRlQW5kU2Vla1N0YWdl",
+            "SW5mby5CYXR0bGVJbmZvTWFwRW50cnkSFwoPaXNfcmVjb3JkX3Njb3JlGAUg",
+            "ASgIEhYKDmhpZGVyX3VpZF9saXN0GAIgAygNEg4KBm1hcF9pZBgNIAEoDRIp",
+            "CgpzdGFnZV90eXBlGAYgASgOMhUuSGlkZUFuZFNlZWtTdGFnZVR5cGUaUgoS",
+            "QmF0dGxlSW5mb01hcEVudHJ5EgsKA2tleRgBIAEoDRIrCgV2YWx1ZRgCIAEo",
+            "CzIcLkhpZGVBbmRTZWVrUGxheWVyQmF0dGxlSW5mbzoCOAFCIqoCH1dlZWR3",
+            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.HideAndSeekPlayerBattleInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HideAndSeekStageTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static BattlePassProductReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdCYXR0bGVQYXNzUHJvZHVjdC5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byJqChFCYXR0bGVQYXNzUHJvZHVjdBIbChNVbmszMzAw",
-            "X0FPTUdDSk9HR0VEGAwgASgJEhsKE1VuazMzMDBfTkhPQUdNR05FSU0YCSAB",
-            "KAkSGwoTVW5rMzMwMF9OSUVCQURMQURNSxgHIAEoCWIGcHJvdG8z"));
+            "ChdCYXR0bGVQYXNzUHJvZHVjdC5wcm90byJkChFCYXR0bGVQYXNzUHJvZHVj",
+            "dBIYChBleHRyYV9wcm9kdWN0X2lkGAwgASgJEhkKEW5vcm1hbF9wcm9kdWN0",
+            "X2lkGAkgASgJEhoKEnVwZ3JhZGVfcHJvZHVjdF9pZBgHIAEoCUIiqgIfV2Vl",
+            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.BattlePassProduct), global::Weedwacker.Shared.Network.Proto.BattlePassProduct.Parser, new[]{ "Unk3300AOMGCJOGGED", "Unk3300NHOAGMGNEIM", "Unk3300NIEBADLADMK" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.BattlePassProduct), global::Weedwacker.Shared.Network.Proto.BattlePassProduct.Parser, new[]{ "ExtraProductId", "NormalProductId", "UpgradeProductId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -72,9 +72,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BattlePassProduct(BattlePassProduct other) : this() {
-      unk3300AOMGCJOGGED_ = other.unk3300AOMGCJOGGED_;
-      unk3300NHOAGMGNEIM_ = other.unk3300NHOAGMGNEIM_;
-      unk3300NIEBADLADMK_ = other.unk3300NIEBADLADMK_;
+      extraProductId_ = other.extraProductId_;
+      normalProductId_ = other.normalProductId_;
+      upgradeProductId_ = other.upgradeProductId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -84,39 +84,39 @@ namespace Weedwacker.Shared.Network.Proto {
       return new BattlePassProduct(this);
     }
 
-    /// <summary>Field number for the "Unk3300_AOMGCJOGGED" field.</summary>
-    public const int Unk3300AOMGCJOGGEDFieldNumber = 12;
-    private string unk3300AOMGCJOGGED_ = "";
+    /// <summary>Field number for the "extra_product_id" field.</summary>
+    public const int ExtraProductIdFieldNumber = 12;
+    private string extraProductId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Unk3300AOMGCJOGGED {
-      get { return unk3300AOMGCJOGGED_; }
+    public string ExtraProductId {
+      get { return extraProductId_; }
       set {
-        unk3300AOMGCJOGGED_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        extraProductId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "Unk3300_NHOAGMGNEIM" field.</summary>
-    public const int Unk3300NHOAGMGNEIMFieldNumber = 9;
-    private string unk3300NHOAGMGNEIM_ = "";
+    /// <summary>Field number for the "normal_product_id" field.</summary>
+    public const int NormalProductIdFieldNumber = 9;
+    private string normalProductId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Unk3300NHOAGMGNEIM {
-      get { return unk3300NHOAGMGNEIM_; }
+    public string NormalProductId {
+      get { return normalProductId_; }
       set {
-        unk3300NHOAGMGNEIM_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        normalProductId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "Unk3300_NIEBADLADMK" field.</summary>
-    public const int Unk3300NIEBADLADMKFieldNumber = 7;
-    private string unk3300NIEBADLADMK_ = "";
+    /// <summary>Field number for the "upgrade_product_id" field.</summary>
+    public const int UpgradeProductIdFieldNumber = 7;
+    private string upgradeProductId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Unk3300NIEBADLADMK {
-      get { return unk3300NIEBADLADMK_; }
+    public string UpgradeProductId {
+      get { return upgradeProductId_; }
       set {
-        unk3300NIEBADLADMK_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        upgradeProductId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -135,9 +135,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300AOMGCJOGGED != other.Unk3300AOMGCJOGGED) return false;
-      if (Unk3300NHOAGMGNEIM != other.Unk3300NHOAGMGNEIM) return false;
-      if (Unk3300NIEBADLADMK != other.Unk3300NIEBADLADMK) return false;
+      if (ExtraProductId != other.ExtraProductId) return false;
+      if (NormalProductId != other.NormalProductId) return false;
+      if (UpgradeProductId != other.UpgradeProductId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -145,9 +145,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300AOMGCJOGGED.Length != 0) hash ^= Unk3300AOMGCJOGGED.GetHashCode();
-      if (Unk3300NHOAGMGNEIM.Length != 0) hash ^= Unk3300NHOAGMGNEIM.GetHashCode();
-      if (Unk3300NIEBADLADMK.Length != 0) hash ^= Unk3300NIEBADLADMK.GetHashCode();
+      if (ExtraProductId.Length != 0) hash ^= ExtraProductId.GetHashCode();
+      if (NormalProductId.Length != 0) hash ^= NormalProductId.GetHashCode();
+      if (UpgradeProductId.Length != 0) hash ^= UpgradeProductId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -166,17 +166,17 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300NIEBADLADMK.Length != 0) {
+      if (UpgradeProductId.Length != 0) {
         output.WriteRawTag(58);
-        output.WriteString(Unk3300NIEBADLADMK);
+        output.WriteString(UpgradeProductId);
       }
-      if (Unk3300NHOAGMGNEIM.Length != 0) {
+      if (NormalProductId.Length != 0) {
         output.WriteRawTag(74);
-        output.WriteString(Unk3300NHOAGMGNEIM);
+        output.WriteString(NormalProductId);
       }
-      if (Unk3300AOMGCJOGGED.Length != 0) {
+      if (ExtraProductId.Length != 0) {
         output.WriteRawTag(98);
-        output.WriteString(Unk3300AOMGCJOGGED);
+        output.WriteString(ExtraProductId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -188,17 +188,17 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300NIEBADLADMK.Length != 0) {
+      if (UpgradeProductId.Length != 0) {
         output.WriteRawTag(58);
-        output.WriteString(Unk3300NIEBADLADMK);
+        output.WriteString(UpgradeProductId);
       }
-      if (Unk3300NHOAGMGNEIM.Length != 0) {
+      if (NormalProductId.Length != 0) {
         output.WriteRawTag(74);
-        output.WriteString(Unk3300NHOAGMGNEIM);
+        output.WriteString(NormalProductId);
       }
-      if (Unk3300AOMGCJOGGED.Length != 0) {
+      if (ExtraProductId.Length != 0) {
         output.WriteRawTag(98);
-        output.WriteString(Unk3300AOMGCJOGGED);
+        output.WriteString(ExtraProductId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -210,14 +210,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300AOMGCJOGGED.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Unk3300AOMGCJOGGED);
+      if (ExtraProductId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ExtraProductId);
       }
-      if (Unk3300NHOAGMGNEIM.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Unk3300NHOAGMGNEIM);
+      if (NormalProductId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NormalProductId);
       }
-      if (Unk3300NIEBADLADMK.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Unk3300NIEBADLADMK);
+      if (UpgradeProductId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UpgradeProductId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -231,14 +231,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300AOMGCJOGGED.Length != 0) {
-        Unk3300AOMGCJOGGED = other.Unk3300AOMGCJOGGED;
+      if (other.ExtraProductId.Length != 0) {
+        ExtraProductId = other.ExtraProductId;
       }
-      if (other.Unk3300NHOAGMGNEIM.Length != 0) {
-        Unk3300NHOAGMGNEIM = other.Unk3300NHOAGMGNEIM;
+      if (other.NormalProductId.Length != 0) {
+        NormalProductId = other.NormalProductId;
       }
-      if (other.Unk3300NIEBADLADMK.Length != 0) {
-        Unk3300NIEBADLADMK = other.Unk3300NIEBADLADMK;
+      if (other.UpgradeProductId.Length != 0) {
+        UpgradeProductId = other.UpgradeProductId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -256,15 +256,15 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 58: {
-            Unk3300NIEBADLADMK = input.ReadString();
+            UpgradeProductId = input.ReadString();
             break;
           }
           case 74: {
-            Unk3300NHOAGMGNEIM = input.ReadString();
+            NormalProductId = input.ReadString();
             break;
           }
           case 98: {
-            Unk3300AOMGCJOGGED = input.ReadString();
+            ExtraProductId = input.ReadString();
             break;
           }
         }
@@ -283,15 +283,15 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 58: {
-            Unk3300NIEBADLADMK = input.ReadString();
+            UpgradeProductId = input.ReadString();
             break;
           }
           case 74: {
-            Unk3300NHOAGMGNEIM = input.ReadString();
+            NormalProductId = input.ReadString();
             break;
           }
           case 98: {
-            Unk3300AOMGCJOGGED = input.ReadString();
+            ExtraProductId = input.ReadString();
             break;
           }
         }

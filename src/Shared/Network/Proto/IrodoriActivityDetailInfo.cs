@@ -24,18 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static IrodoriActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9Jcm9kb3JpQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvGhZJcm9kb3JpQ2hlc3NEYXRhLnByb3Rv",
-            "GhdJcm9kb3JpRmxvd2VyRGF0YS5wcm90bxocSXJvZG9yaU1hc3RlckxldmVs",
-            "SW5mby5wcm90bxoXSXJvZG9yaVBvZXRyeURhdGEucHJvdG8iyAIKGUlyb2Rv",
-            "cmlBY3Rpdml0eURldGFpbEluZm8SRQoKY2hlc3NfZGF0YRgFIAEoCzIxLldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uSXJvZG9yaUNoZXNzRGF0",
-            "YRJHCgtmbG93ZXJfZGF0YRgDIAEoCzIyLldlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8uSXJvZG9yaUZsb3dlckRhdGESRwoLcG9ldHJ5X2RhdGEY",
-            "BiABKAsyMi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLklyb2Rv",
-            "cmlQb2V0cnlEYXRhElIKEW1hc3Rlcl9sZXZlbF9saXN0GAEgAygLMjcuV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5Jcm9kb3JpTWFzdGVyTGV2",
-            "ZWxJbmZvYgZwcm90bzM="));
+            "Ch9Jcm9kb3JpQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhZJcm9kb3JpQ2hl",
+            "c3NEYXRhLnByb3RvGhdJcm9kb3JpRmxvd2VyRGF0YS5wcm90bxocSXJvZG9y",
+            "aU1hc3RlckxldmVsSW5mby5wcm90bxoXSXJvZG9yaVBvZXRyeURhdGEucHJv",
+            "dG8iyAEKGUlyb2RvcmlBY3Rpdml0eURldGFpbEluZm8SJQoKY2hlc3NfZGF0",
+            "YRgFIAEoCzIRLklyb2RvcmlDaGVzc0RhdGESJwoLZmxvd2VyX2RhdGEYAyAB",
+            "KAsyEi5Jcm9kb3JpRmxvd2VyRGF0YRInCgtwb2V0cnlfZGF0YRgGIAEoCzIS",
+            "Lklyb2RvcmlQb2V0cnlEYXRhEjIKEW1hc3Rlcl9sZXZlbF9saXN0GAEgAygL",
+            "MhcuSXJvZG9yaU1hc3RlckxldmVsSW5mb0IiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.IrodoriChessDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IrodoriFlowerDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IrodoriMasterLevelInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IrodoriPoetryDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static HideAndSeekPlayerBattleInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFIaWRlQW5kU2Vla1BsYXllckJhdHRsZUluZm8ucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iagobSGlkZUFuZFNlZWtQbGF5ZXJC",
-            "YXR0bGVJbmZvEhAKCGlzX3JlYWR5GAwgASgIEhIKCnNraWxsX2xpc3QYCyAD",
-            "KA0SEQoJYXZhdGFyX2lkGA8gASgNEhIKCmNvc3R1bWVfaWQYBCABKA1iBnBy",
-            "b3RvMw=="));
+            "CiFIaWRlQW5kU2Vla1BsYXllckJhdHRsZUluZm8ucHJvdG8iagobSGlkZUFu",
+            "ZFNlZWtQbGF5ZXJCYXR0bGVJbmZvEhAKCGlzX3JlYWR5GAwgASgIEhIKCnNr",
+            "aWxsX2xpc3QYCyADKA0SEQoJYXZhdGFyX2lkGA8gASgNEhIKCmNvc3R1bWVf",
+            "aWQYBCABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

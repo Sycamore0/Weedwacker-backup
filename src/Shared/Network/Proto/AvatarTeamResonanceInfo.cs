@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static AvatarTeamResonanceInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1BdmF0YXJUZWFtUmVzb25hbmNlSW5mby5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90byKJAQoXQXZhdGFyVGVhbVJlc29uYW5jZUlu",
-            "Zm8SEwoLYXZhdGFyX2d1aWQYCSABKAQSEQoJZW50aXR5X2lkGAggASgNEiIK",
-            "GmRlbF90ZWFtX3Jlc29uYW5jZV9pZF9saXN0GA8gAygNEiIKGmFkZF90ZWFt",
-            "X3Jlc29uYW5jZV9pZF9saXN0GA0gAygNYgZwcm90bzM="));
+            "Ch1BdmF0YXJUZWFtUmVzb25hbmNlSW5mby5wcm90byKJAQoXQXZhdGFyVGVh",
+            "bVJlc29uYW5jZUluZm8SEwoLYXZhdGFyX2d1aWQYCSABKAQSEQoJZW50aXR5",
+            "X2lkGAggASgNEiIKGmFkZF90ZWFtX3Jlc29uYW5jZV9pZF9saXN0GA8gAygN",
+            "EiIKGmRlbF90ZWFtX3Jlc29uYW5jZV9pZF9saXN0GA0gAygNQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AvatarTeamResonanceInfo), global::Weedwacker.Shared.Network.Proto.AvatarTeamResonanceInfo.Parser, new[]{ "AvatarGuid", "EntityId", "DelTeamResonanceIdList", "AddTeamResonanceIdList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AvatarTeamResonanceInfo), global::Weedwacker.Shared.Network.Proto.AvatarTeamResonanceInfo.Parser, new[]{ "AvatarGuid", "EntityId", "AddTeamResonanceIdList", "DelTeamResonanceIdList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -75,8 +75,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public AvatarTeamResonanceInfo(AvatarTeamResonanceInfo other) : this() {
       avatarGuid_ = other.avatarGuid_;
       entityId_ = other.entityId_;
-      delTeamResonanceIdList_ = other.delTeamResonanceIdList_.Clone();
       addTeamResonanceIdList_ = other.addTeamResonanceIdList_.Clone();
+      delTeamResonanceIdList_ = other.delTeamResonanceIdList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -110,26 +110,26 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "del_team_resonance_id_list" field.</summary>
-    public const int DelTeamResonanceIdListFieldNumber = 15;
-    private static readonly pb::FieldCodec<uint> _repeated_delTeamResonanceIdList_codec
-        = pb::FieldCodec.ForUInt32(122);
-    private readonly pbc::RepeatedField<uint> delTeamResonanceIdList_ = new pbc::RepeatedField<uint>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> DelTeamResonanceIdList {
-      get { return delTeamResonanceIdList_; }
-    }
-
     /// <summary>Field number for the "add_team_resonance_id_list" field.</summary>
-    public const int AddTeamResonanceIdListFieldNumber = 13;
+    public const int AddTeamResonanceIdListFieldNumber = 15;
     private static readonly pb::FieldCodec<uint> _repeated_addTeamResonanceIdList_codec
-        = pb::FieldCodec.ForUInt32(106);
+        = pb::FieldCodec.ForUInt32(122);
     private readonly pbc::RepeatedField<uint> addTeamResonanceIdList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<uint> AddTeamResonanceIdList {
       get { return addTeamResonanceIdList_; }
+    }
+
+    /// <summary>Field number for the "del_team_resonance_id_list" field.</summary>
+    public const int DelTeamResonanceIdListFieldNumber = 13;
+    private static readonly pb::FieldCodec<uint> _repeated_delTeamResonanceIdList_codec
+        = pb::FieldCodec.ForUInt32(106);
+    private readonly pbc::RepeatedField<uint> delTeamResonanceIdList_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<uint> DelTeamResonanceIdList {
+      get { return delTeamResonanceIdList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -149,8 +149,8 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (AvatarGuid != other.AvatarGuid) return false;
       if (EntityId != other.EntityId) return false;
-      if(!delTeamResonanceIdList_.Equals(other.delTeamResonanceIdList_)) return false;
       if(!addTeamResonanceIdList_.Equals(other.addTeamResonanceIdList_)) return false;
+      if(!delTeamResonanceIdList_.Equals(other.delTeamResonanceIdList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -160,8 +160,8 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (AvatarGuid != 0UL) hash ^= AvatarGuid.GetHashCode();
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      hash ^= delTeamResonanceIdList_.GetHashCode();
       hash ^= addTeamResonanceIdList_.GetHashCode();
+      hash ^= delTeamResonanceIdList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -188,8 +188,8 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(72);
         output.WriteUInt64(AvatarGuid);
       }
-      addTeamResonanceIdList_.WriteTo(output, _repeated_addTeamResonanceIdList_codec);
       delTeamResonanceIdList_.WriteTo(output, _repeated_delTeamResonanceIdList_codec);
+      addTeamResonanceIdList_.WriteTo(output, _repeated_addTeamResonanceIdList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -208,8 +208,8 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(72);
         output.WriteUInt64(AvatarGuid);
       }
-      addTeamResonanceIdList_.WriteTo(ref output, _repeated_addTeamResonanceIdList_codec);
       delTeamResonanceIdList_.WriteTo(ref output, _repeated_delTeamResonanceIdList_codec);
+      addTeamResonanceIdList_.WriteTo(ref output, _repeated_addTeamResonanceIdList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -226,8 +226,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EntityId);
       }
-      size += delTeamResonanceIdList_.CalculateSize(_repeated_delTeamResonanceIdList_codec);
       size += addTeamResonanceIdList_.CalculateSize(_repeated_addTeamResonanceIdList_codec);
+      size += delTeamResonanceIdList_.CalculateSize(_repeated_delTeamResonanceIdList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -246,8 +246,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      delTeamResonanceIdList_.Add(other.delTeamResonanceIdList_);
       addTeamResonanceIdList_.Add(other.addTeamResonanceIdList_);
+      delTeamResonanceIdList_.Add(other.delTeamResonanceIdList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -273,12 +273,12 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 106:
           case 104: {
-            addTeamResonanceIdList_.AddEntriesFrom(input, _repeated_addTeamResonanceIdList_codec);
+            delTeamResonanceIdList_.AddEntriesFrom(input, _repeated_delTeamResonanceIdList_codec);
             break;
           }
           case 122:
           case 120: {
-            delTeamResonanceIdList_.AddEntriesFrom(input, _repeated_delTeamResonanceIdList_codec);
+            addTeamResonanceIdList_.AddEntriesFrom(input, _repeated_addTeamResonanceIdList_codec);
             break;
           }
         }
@@ -306,12 +306,12 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 106:
           case 104: {
-            addTeamResonanceIdList_.AddEntriesFrom(ref input, _repeated_addTeamResonanceIdList_codec);
+            delTeamResonanceIdList_.AddEntriesFrom(ref input, _repeated_delTeamResonanceIdList_codec);
             break;
           }
           case 122:
           case 120: {
-            delTeamResonanceIdList_.AddEntriesFrom(ref input, _repeated_delTeamResonanceIdList_codec);
+            addTeamResonanceIdList_.AddEntriesFrom(ref input, _repeated_addTeamResonanceIdList_codec);
             break;
           }
         }

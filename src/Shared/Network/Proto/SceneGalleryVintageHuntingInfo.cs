@@ -24,18 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGalleryVintageHuntingInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiRTY2VuZUdhbGxlcnlWaW50YWdlSHVudGluZ0luZm8ucHJvdG8SH1dlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8aIlZpbnRhZ2VIdW50aW5nRmly",
-            "c3RTdGFnZUluZm8ucHJvdG8aI1ZpbnRhZ2VIdW50aW5nU2Vjb25kU3RhZ2VJ",
-            "bmZvLnByb3RvGiJWaW50YWdlSHVudGluZ1RoaXJkU3RhZ2VJbmZvLnByb3Rv",
-            "Is0CCh5TY2VuZUdhbGxlcnlWaW50YWdlSHVudGluZ0luZm8SEAoIc3RhZ2Vf",
-            "aWQYCSABKA0SWQoQZmlyc3Rfc3RhZ2VfaW5mbxgFIAEoCzI9LldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uVmludGFnZUh1bnRpbmdGaXJzdFN0",
-            "YWdlSW5mb0gAElsKEXNlY29uZF9zdGFnZV9pbmZvGA4gASgLMj4uV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5WaW50YWdlSHVudGluZ1NlY29u",
-            "ZFN0YWdlSW5mb0gAElkKEHRoaXJkX3N0YWdlX2luZm8YCCABKAsyPS5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlZpbnRhZ2VIdW50aW5nVGhp",
-            "cmRTdGFnZUluZm9IAEIGCgRpbmZvYgZwcm90bzM="));
+            "CiRTY2VuZUdhbGxlcnlWaW50YWdlSHVudGluZ0luZm8ucHJvdG8aIlZpbnRh",
+            "Z2VIdW50aW5nRmlyc3RTdGFnZUluZm8ucHJvdG8aI1ZpbnRhZ2VIdW50aW5n",
+            "U2Vjb25kU3RhZ2VJbmZvLnByb3RvGiJWaW50YWdlSHVudGluZ1RoaXJkU3Rh",
+            "Z2VJbmZvLnByb3RvIu0BCh5TY2VuZUdhbGxlcnlWaW50YWdlSHVudGluZ0lu",
+            "Zm8SEAoIc3RhZ2VfaWQYCSABKA0SOQoQZmlyc3Rfc3RhZ2VfaW5mbxgFIAEo",
+            "CzIdLlZpbnRhZ2VIdW50aW5nRmlyc3RTdGFnZUluZm9IABI7ChFzZWNvbmRf",
+            "c3RhZ2VfaW5mbxgOIAEoCzIeLlZpbnRhZ2VIdW50aW5nU2Vjb25kU3RhZ2VJ",
+            "bmZvSAASOQoQdGhpcmRfc3RhZ2VfaW5mbxgIIAEoCzIdLlZpbnRhZ2VIdW50",
+            "aW5nVGhpcmRTdGFnZUluZm9IAEIGCgRpbmZvQiKqAh9XZWVkd2Fja2VyLlNo",
+            "YXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VintageHuntingFirstStageInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VintageHuntingSecondStageInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VintageHuntingThirdStageInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

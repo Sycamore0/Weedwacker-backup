@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlatformCategoryReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZQbGF0Zm9ybUNhdGVnb3J5LnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvKmQKEFBsYXRmb3JtQ2F0ZWdvcnkSGgoWUExBVEZPUk1f",
-            "Q0FURUdPUllfTk9ORRAAEhkKFVBMQVRGT1JNX0NBVEVHT1JZX1BDTRABEhkK",
-            "FVBMQVRGT1JNX0NBVEVHT1JZX1BTThACYgZwcm90bzM="));
+            "ChZQbGF0Zm9ybUNhdGVnb3J5LnByb3RvKmQKEFBsYXRmb3JtQ2F0ZWdvcnkS",
+            "GgoWUExBVEZPUk1fQ0FURUdPUllfTk9ORRAAEhkKFVBMQVRGT1JNX0NBVEVH",
+            "T1JZX1BDTRABEhkKFVBMQVRGT1JNX0NBVEVHT1JZX1BTThACQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.PlatformCategory), }, null, null));

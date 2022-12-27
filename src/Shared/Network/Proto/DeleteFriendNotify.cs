@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static DeleteFriendNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhEZWxldGVGcmllbmROb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8iKAoSRGVsZXRlRnJpZW5kTm90aWZ5EhIKCnRhcmdl",
-            "dF91aWQYBSABKA1iBnByb3RvMw=="));
+            "ChhEZWxldGVGcmllbmROb3RpZnkucHJvdG8iKAoSRGVsZXRlRnJpZW5kTm90",
+            "aWZ5EhIKCnRhcmdldF91aWQYBSABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

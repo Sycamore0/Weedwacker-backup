@@ -25,9 +25,9 @@ namespace Weedwacker.Shared.Network.Proto {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRDaGFubmVsZXJTbGFiTG9vcER1bmdlb25UYWtlRmlyc3RQYXNzUmV3YXJk",
-            "UmVxLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIkcK",
-            "LkNoYW5uZWxlclNsYWJMb29wRHVuZ2VvblRha2VGaXJzdFBhc3NSZXdhcmRS",
-            "ZXESFQoNZHVuZ2Vvbl9pbmRleBgHIAEoDWIGcHJvdG8z"));
+            "UmVxLnByb3RvIkcKLkNoYW5uZWxlclNsYWJMb29wRHVuZ2VvblRha2VGaXJz",
+            "dFBhc3NSZXdhcmRSZXESFQoNZHVuZ2Vvbl9pbmRleBgHIAEoDUIiqgIfV2Vl",
+            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

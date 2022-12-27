@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static DungeonDieOptionRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlEdW5nZW9uRGllT3B0aW9uUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvGhVQbGF5ZXJEaWVPcHRpb24ucHJvdG8iggEKE0R1",
-            "bmdlb25EaWVPcHRpb25Sc3ASFAoMcmV2aXZlX2NvdW50GAIgASgNEkQKCmRp",
-            "ZV9vcHRpb24YByABKA4yMC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvLlBsYXllckRpZU9wdGlvbhIPCgdyZXRjb2RlGA0gASgFYgZwcm90bzM="));
+            "ChlEdW5nZW9uRGllT3B0aW9uUnNwLnByb3RvGhVQbGF5ZXJEaWVPcHRpb24u",
+            "cHJvdG8iYgoTRHVuZ2VvbkRpZU9wdGlvblJzcBIUCgxyZXZpdmVfY291bnQY",
+            "AiABKA0SJAoKZGllX29wdGlvbhgHIAEoDjIQLlBsYXllckRpZU9wdGlvbhIP",
+            "CgdyZXRjb2RlGA0gASgFQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.PlayerDieOptionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

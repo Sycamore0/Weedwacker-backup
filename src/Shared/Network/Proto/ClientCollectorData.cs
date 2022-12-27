@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static ClientCollectorDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlDbGllbnRDb2xsZWN0b3JEYXRhLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvImQKE0NsaWVudENvbGxlY3RvckRhdGESGwoTVW5r",
-            "MzMwMF9QUEFPSkNHQUFFQRgCIAEoDRIbChNVbmszMzAwX01GQ0hKSFBKQUxE",
-            "GAMgASgNEhMKC21hdGVyaWFsX2lkGAkgASgNYgZwcm90bzM="));
+            "ChlDbGllbnRDb2xsZWN0b3JEYXRhLnByb3RvIlMKE0NsaWVudENvbGxlY3Rv",
+            "ckRhdGESEgoKbWF4X3BvaW50cxgCIAEoDRITCgtjdXJyX3BvaW50cxgDIAEo",
+            "DRITCgttYXRlcmlhbF9pZBgJIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ClientCollectorData), global::Weedwacker.Shared.Network.Proto.ClientCollectorData.Parser, new[]{ "Unk3300PPAOJCGAAEA", "Unk3300MFCHJHPJALD", "MaterialId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ClientCollectorData), global::Weedwacker.Shared.Network.Proto.ClientCollectorData.Parser, new[]{ "MaxPoints", "CurrPoints", "MaterialId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -72,8 +72,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ClientCollectorData(ClientCollectorData other) : this() {
-      unk3300PPAOJCGAAEA_ = other.unk3300PPAOJCGAAEA_;
-      unk3300MFCHJHPJALD_ = other.unk3300MFCHJHPJALD_;
+      maxPoints_ = other.maxPoints_;
+      currPoints_ = other.currPoints_;
       materialId_ = other.materialId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -84,27 +84,27 @@ namespace Weedwacker.Shared.Network.Proto {
       return new ClientCollectorData(this);
     }
 
-    /// <summary>Field number for the "Unk3300_PPAOJCGAAEA" field.</summary>
-    public const int Unk3300PPAOJCGAAEAFieldNumber = 2;
-    private uint unk3300PPAOJCGAAEA_;
+    /// <summary>Field number for the "max_points" field.</summary>
+    public const int MaxPointsFieldNumber = 2;
+    private uint maxPoints_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300PPAOJCGAAEA {
-      get { return unk3300PPAOJCGAAEA_; }
+    public uint MaxPoints {
+      get { return maxPoints_; }
       set {
-        unk3300PPAOJCGAAEA_ = value;
+        maxPoints_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_MFCHJHPJALD" field.</summary>
-    public const int Unk3300MFCHJHPJALDFieldNumber = 3;
-    private uint unk3300MFCHJHPJALD_;
+    /// <summary>Field number for the "curr_points" field.</summary>
+    public const int CurrPointsFieldNumber = 3;
+    private uint currPoints_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300MFCHJHPJALD {
-      get { return unk3300MFCHJHPJALD_; }
+    public uint CurrPoints {
+      get { return currPoints_; }
       set {
-        unk3300MFCHJHPJALD_ = value;
+        currPoints_ = value;
       }
     }
 
@@ -135,8 +135,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300PPAOJCGAAEA != other.Unk3300PPAOJCGAAEA) return false;
-      if (Unk3300MFCHJHPJALD != other.Unk3300MFCHJHPJALD) return false;
+      if (MaxPoints != other.MaxPoints) return false;
+      if (CurrPoints != other.CurrPoints) return false;
       if (MaterialId != other.MaterialId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -145,8 +145,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300PPAOJCGAAEA != 0) hash ^= Unk3300PPAOJCGAAEA.GetHashCode();
-      if (Unk3300MFCHJHPJALD != 0) hash ^= Unk3300MFCHJHPJALD.GetHashCode();
+      if (MaxPoints != 0) hash ^= MaxPoints.GetHashCode();
+      if (CurrPoints != 0) hash ^= CurrPoints.GetHashCode();
       if (MaterialId != 0) hash ^= MaterialId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -166,13 +166,13 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300PPAOJCGAAEA != 0) {
+      if (MaxPoints != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk3300PPAOJCGAAEA);
+        output.WriteUInt32(MaxPoints);
       }
-      if (Unk3300MFCHJHPJALD != 0) {
+      if (CurrPoints != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300MFCHJHPJALD);
+        output.WriteUInt32(CurrPoints);
       }
       if (MaterialId != 0) {
         output.WriteRawTag(72);
@@ -188,13 +188,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300PPAOJCGAAEA != 0) {
+      if (MaxPoints != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk3300PPAOJCGAAEA);
+        output.WriteUInt32(MaxPoints);
       }
-      if (Unk3300MFCHJHPJALD != 0) {
+      if (CurrPoints != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300MFCHJHPJALD);
+        output.WriteUInt32(CurrPoints);
       }
       if (MaterialId != 0) {
         output.WriteRawTag(72);
@@ -210,11 +210,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300PPAOJCGAAEA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300PPAOJCGAAEA);
+      if (MaxPoints != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxPoints);
       }
-      if (Unk3300MFCHJHPJALD != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300MFCHJHPJALD);
+      if (CurrPoints != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurrPoints);
       }
       if (MaterialId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaterialId);
@@ -231,11 +231,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300PPAOJCGAAEA != 0) {
-        Unk3300PPAOJCGAAEA = other.Unk3300PPAOJCGAAEA;
+      if (other.MaxPoints != 0) {
+        MaxPoints = other.MaxPoints;
       }
-      if (other.Unk3300MFCHJHPJALD != 0) {
-        Unk3300MFCHJHPJALD = other.Unk3300MFCHJHPJALD;
+      if (other.CurrPoints != 0) {
+        CurrPoints = other.CurrPoints;
       }
       if (other.MaterialId != 0) {
         MaterialId = other.MaterialId;
@@ -256,11 +256,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 16: {
-            Unk3300PPAOJCGAAEA = input.ReadUInt32();
+            MaxPoints = input.ReadUInt32();
             break;
           }
           case 24: {
-            Unk3300MFCHJHPJALD = input.ReadUInt32();
+            CurrPoints = input.ReadUInt32();
             break;
           }
           case 72: {
@@ -283,11 +283,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 16: {
-            Unk3300PPAOJCGAAEA = input.ReadUInt32();
+            MaxPoints = input.ReadUInt32();
             break;
           }
           case 24: {
-            Unk3300MFCHJHPJALD = input.ReadUInt32();
+            CurrPoints = input.ReadUInt32();
             break;
           }
           case 72: {

@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static IrodoriChessMonsterInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1Jcm9kb3JpQ2hlc3NNb25zdGVySW5mby5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90byJmChdJcm9kb3JpQ2hlc3NNb25zdGVySW5m",
-            "bxIUCgxncmFudF9wb2ludHMYByABKA0SEgoKbW9uc3Rlcl9pZBgNIAEoDRIN",
-            "CgVsZXZlbBgLIAEoDRISCgphZmZpeF9saXN0GAogAygNYgZwcm90bzM="));
+            "Ch1Jcm9kb3JpQ2hlc3NNb25zdGVySW5mby5wcm90byJmChdJcm9kb3JpQ2hl",
+            "c3NNb25zdGVySW5mbxIUCgxncmFudF9wb2ludHMYByABKA0SEgoKbW9uc3Rl",
+            "cl9pZBgNIAEoDRINCgVsZXZlbBgLIAEoDRISCgphZmZpeF9saXN0GAogAygN",
+            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

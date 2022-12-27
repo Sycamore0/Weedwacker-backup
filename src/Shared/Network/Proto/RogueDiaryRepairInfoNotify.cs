@@ -24,19 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static RogueDiaryRepairInfoNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBSb2d1ZURpYXJ5UmVwYWlySW5mb05vdGlmeS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90bxoWUm9ndWVEaWFyeUF2YXRhci5wcm90",
-            "bxoYUm9ndWVEaWFyeVJvb21JbmZvLnByb3RvIqcDChpSb2d1ZURpYXJ5UmVw",
-            "YWlySW5mb05vdGlmeRJGCgthdmF0YXJfbGlzdBgCIAMoCzIxLldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uUm9ndWVEaWFyeUF2YXRhchJMChF0",
-            "cmlhbF9hdmF0YXJfbGlzdBgKIAMoCzIxLldlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8uUm9ndWVEaWFyeUF2YXRhchJGCglyb29tX2xpc3QYCyAD",
-            "KAsyMy5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlJvZ3VlRGlh",
-            "cnlSb29tSW5mbxIYChBzZWxlY3RfY2FyZF9saXN0GAwgAygNEhgKEGNob3Nl",
-            "bl9jYXJkX2xpc3QYBSADKA0SEAoIc3RhZ2VfaWQYByABKA0STQoSc2VsZWN0",
-            "X2F2YXRhcl9saXN0GAMgAygLMjEuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90by5Sb2d1ZURpYXJ5QXZhdGFyEhYKDnJhbmRfY2FyZF9saXN0GA0g",
-            "AygNYgZwcm90bzM="));
+            "CiBSb2d1ZURpYXJ5UmVwYWlySW5mb05vdGlmeS5wcm90bxoWUm9ndWVEaWFy",
+            "eUF2YXRhci5wcm90bxoYUm9ndWVEaWFyeVJvb21JbmZvLnByb3RvIqcCChpS",
+            "b2d1ZURpYXJ5UmVwYWlySW5mb05vdGlmeRImCgthdmF0YXJfbGlzdBgCIAMo",
+            "CzIRLlJvZ3VlRGlhcnlBdmF0YXISLAoRdHJpYWxfYXZhdGFyX2xpc3QYCiAD",
+            "KAsyES5Sb2d1ZURpYXJ5QXZhdGFyEiYKCXJvb21fbGlzdBgLIAMoCzITLlJv",
+            "Z3VlRGlhcnlSb29tSW5mbxIYChBzZWxlY3RfY2FyZF9saXN0GAwgAygNEhgK",
+            "EGNob3Nlbl9jYXJkX2xpc3QYBSADKA0SEAoIc3RhZ2VfaWQYByABKA0SLQoS",
+            "c2VsZWN0X2F2YXRhcl9saXN0GAMgAygLMhEuUm9ndWVEaWFyeUF2YXRhchIW",
+            "Cg5yYW5kX2NhcmRfbGlzdBgNIAMoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.RogueDiaryAvatarReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RogueDiaryRoomInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

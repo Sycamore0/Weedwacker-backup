@@ -24,13 +24,12 @@ namespace Weedwacker.Shared.Network.Proto {
     static SumoSelectTeamAndEnterDungeonRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiZTdW1vU2VsZWN0VGVhbUFuZEVudGVyRHVuZ2VvblJzcC5wcm90bxIfV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90bxoSU3Vtb1RlYW1EYXRhLnBy",
-            "b3RvIrMBCiBTdW1vU2VsZWN0VGVhbUFuZEVudGVyRHVuZ2VvblJzcBIVCg1k",
-            "aWZmaWN1bHR5X2lkGAwgASgNEhMKC2FjdGl2aXR5X2lkGAkgASgNEhAKCHN0",
-            "YWdlX2lkGAYgASgNEg8KB3JldGNvZGUYBSABKAUSQAoJdGVhbV9saXN0GAMg",
-            "AygLMi0uV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5TdW1vVGVh",
-            "bURhdGFiBnByb3RvMw=="));
+            "CiZTdW1vU2VsZWN0VGVhbUFuZEVudGVyRHVuZ2VvblJzcC5wcm90bxoSU3Vt",
+            "b1RlYW1EYXRhLnByb3RvIpMBCiBTdW1vU2VsZWN0VGVhbUFuZEVudGVyRHVu",
+            "Z2VvblJzcBIVCg1kaWZmaWN1bHR5X2lkGAwgASgNEhMKC2FjdGl2aXR5X2lk",
+            "GAkgASgNEhAKCHN0YWdlX2lkGAYgASgNEg8KB3JldGNvZGUYBSABKAUSIAoJ",
+            "dGVhbV9saXN0GAMgAygLMg0uU3Vtb1RlYW1EYXRhQiKqAh9XZWVkd2Fja2Vy",
+            "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.SumoTeamDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

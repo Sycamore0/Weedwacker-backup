@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static FurnitureMakeDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdGdXJuaXR1cmVNYWtlRGF0YS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byKUAQoRRnVybml0dXJlTWFrZURhdGESEgoKYmVnaW5f",
-            "dGltZRgBIAEoBxIRCglhdmF0YXJfaWQYBSABKA0SDwoHbWFrZV9pZBgKIAEo",
-            "DRINCgVpbmRleBgGIAEoDRIbChNVbmszMzAwX0dESUJMQURNSklDGAggASgN",
-            "EhsKE1VuazMzMDBfR0JESEZMRUZKTEcYByABKA1iBnByb3RvMw=="));
+            "ChdGdXJuaXR1cmVNYWtlRGF0YS5wcm90byKFAQoRRnVybml0dXJlTWFrZURh",
+            "dGESEgoKYmVnaW5fdGltZRgBIAEoBxIRCglhdmF0YXJfaWQYBSABKA0SDwoH",
+            "bWFrZV9pZBgKIAEoDRINCgVpbmRleBgGIAEoDRIQCghkdXJfdGltZRgIIAEo",
+            "DRIXCg9hY2NlbGVyYXRlX3RpbWUYByABKAdCIqoCH1dlZWR3YWNrZXIuU2hh",
+            "cmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.FurnitureMakeData), global::Weedwacker.Shared.Network.Proto.FurnitureMakeData.Parser, new[]{ "BeginTime", "AvatarId", "MakeId", "Index", "Unk3300GDIBLADMJIC", "Unk3300GBDHFLEFJLG" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.FurnitureMakeData), global::Weedwacker.Shared.Network.Proto.FurnitureMakeData.Parser, new[]{ "BeginTime", "AvatarId", "MakeId", "Index", "DurTime", "AccelerateTime" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,8 +77,8 @@ namespace Weedwacker.Shared.Network.Proto {
       avatarId_ = other.avatarId_;
       makeId_ = other.makeId_;
       index_ = other.index_;
-      unk3300GDIBLADMJIC_ = other.unk3300GDIBLADMJIC_;
-      unk3300GBDHFLEFJLG_ = other.unk3300GBDHFLEFJLG_;
+      durTime_ = other.durTime_;
+      accelerateTime_ = other.accelerateTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -136,27 +136,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_GDIBLADMJIC" field.</summary>
-    public const int Unk3300GDIBLADMJICFieldNumber = 8;
-    private uint unk3300GDIBLADMJIC_;
+    /// <summary>Field number for the "dur_time" field.</summary>
+    public const int DurTimeFieldNumber = 8;
+    private uint durTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300GDIBLADMJIC {
-      get { return unk3300GDIBLADMJIC_; }
+    public uint DurTime {
+      get { return durTime_; }
       set {
-        unk3300GDIBLADMJIC_ = value;
+        durTime_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_GBDHFLEFJLG" field.</summary>
-    public const int Unk3300GBDHFLEFJLGFieldNumber = 7;
-    private uint unk3300GBDHFLEFJLG_;
+    /// <summary>Field number for the "accelerate_time" field.</summary>
+    public const int AccelerateTimeFieldNumber = 7;
+    private uint accelerateTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300GBDHFLEFJLG {
-      get { return unk3300GBDHFLEFJLG_; }
+    public uint AccelerateTime {
+      get { return accelerateTime_; }
       set {
-        unk3300GBDHFLEFJLG_ = value;
+        accelerateTime_ = value;
       }
     }
 
@@ -179,8 +179,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (AvatarId != other.AvatarId) return false;
       if (MakeId != other.MakeId) return false;
       if (Index != other.Index) return false;
-      if (Unk3300GDIBLADMJIC != other.Unk3300GDIBLADMJIC) return false;
-      if (Unk3300GBDHFLEFJLG != other.Unk3300GBDHFLEFJLG) return false;
+      if (DurTime != other.DurTime) return false;
+      if (AccelerateTime != other.AccelerateTime) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -192,8 +192,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (AvatarId != 0) hash ^= AvatarId.GetHashCode();
       if (MakeId != 0) hash ^= MakeId.GetHashCode();
       if (Index != 0) hash ^= Index.GetHashCode();
-      if (Unk3300GDIBLADMJIC != 0) hash ^= Unk3300GDIBLADMJIC.GetHashCode();
-      if (Unk3300GBDHFLEFJLG != 0) hash ^= Unk3300GBDHFLEFJLG.GetHashCode();
+      if (DurTime != 0) hash ^= DurTime.GetHashCode();
+      if (AccelerateTime != 0) hash ^= AccelerateTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -224,13 +224,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(Index);
       }
-      if (Unk3300GBDHFLEFJLG != 0) {
-        output.WriteRawTag(56);
-        output.WriteUInt32(Unk3300GBDHFLEFJLG);
+      if (AccelerateTime != 0) {
+        output.WriteRawTag(61);
+        output.WriteFixed32(AccelerateTime);
       }
-      if (Unk3300GDIBLADMJIC != 0) {
+      if (DurTime != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk3300GDIBLADMJIC);
+        output.WriteUInt32(DurTime);
       }
       if (MakeId != 0) {
         output.WriteRawTag(80);
@@ -258,13 +258,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(Index);
       }
-      if (Unk3300GBDHFLEFJLG != 0) {
-        output.WriteRawTag(56);
-        output.WriteUInt32(Unk3300GBDHFLEFJLG);
+      if (AccelerateTime != 0) {
+        output.WriteRawTag(61);
+        output.WriteFixed32(AccelerateTime);
       }
-      if (Unk3300GDIBLADMJIC != 0) {
+      if (DurTime != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk3300GDIBLADMJIC);
+        output.WriteUInt32(DurTime);
       }
       if (MakeId != 0) {
         output.WriteRawTag(80);
@@ -292,11 +292,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Index != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Index);
       }
-      if (Unk3300GDIBLADMJIC != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300GDIBLADMJIC);
+      if (DurTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DurTime);
       }
-      if (Unk3300GBDHFLEFJLG != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300GBDHFLEFJLG);
+      if (AccelerateTime != 0) {
+        size += 1 + 4;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -322,11 +322,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Index != 0) {
         Index = other.Index;
       }
-      if (other.Unk3300GDIBLADMJIC != 0) {
-        Unk3300GDIBLADMJIC = other.Unk3300GDIBLADMJIC;
+      if (other.DurTime != 0) {
+        DurTime = other.DurTime;
       }
-      if (other.Unk3300GBDHFLEFJLG != 0) {
-        Unk3300GBDHFLEFJLG = other.Unk3300GBDHFLEFJLG;
+      if (other.AccelerateTime != 0) {
+        AccelerateTime = other.AccelerateTime;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -355,12 +355,12 @@ namespace Weedwacker.Shared.Network.Proto {
             Index = input.ReadUInt32();
             break;
           }
-          case 56: {
-            Unk3300GBDHFLEFJLG = input.ReadUInt32();
+          case 61: {
+            AccelerateTime = input.ReadFixed32();
             break;
           }
           case 64: {
-            Unk3300GDIBLADMJIC = input.ReadUInt32();
+            DurTime = input.ReadUInt32();
             break;
           }
           case 80: {
@@ -394,12 +394,12 @@ namespace Weedwacker.Shared.Network.Proto {
             Index = input.ReadUInt32();
             break;
           }
-          case 56: {
-            Unk3300GBDHFLEFJLG = input.ReadUInt32();
+          case 61: {
+            AccelerateTime = input.ReadFixed32();
             break;
           }
           case 64: {
-            Unk3300GDIBLADMJIC = input.ReadUInt32();
+            DurTime = input.ReadUInt32();
             break;
           }
           case 80: {

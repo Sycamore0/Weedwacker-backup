@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static GroupLinkAllNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhHcm91cExpbmtBbGxOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8aFUdyb3VwTGlua0J1bmRsZS5wcm90byJbChJHcm91",
-            "cExpbmtBbGxOb3RpZnkSRQoLYnVuZGxlX2xpc3QYCSADKAsyMC5XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkdyb3VwTGlua0J1bmRsZWIGcHJv",
-            "dG8z"));
+            "ChhHcm91cExpbmtBbGxOb3RpZnkucHJvdG8aFUdyb3VwTGlua0J1bmRsZS5w",
+            "cm90byI7ChJHcm91cExpbmtBbGxOb3RpZnkSJQoLYnVuZGxlX2xpc3QYCSAD",
+            "KAsyEC5Hcm91cExpbmtCdW5kbGVCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
+            "dHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GroupLinkBundleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

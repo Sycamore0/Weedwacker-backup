@@ -24,15 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static ServerCondMeetQuestListUpdateNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CilTZXJ2ZXJDb25kTWVldFF1ZXN0TGlzdFVwZGF0ZU5vdGlmeS5wcm90bxIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90byJfCiNTZXJ2ZXJDb25k",
-            "TWVldFF1ZXN0TGlzdFVwZGF0ZU5vdGlmeRIbChNVbmszMzAwX01HQkRLRk1C",
-            "R0JPGAogAygNEhsKE1VuazMzMDBfSElFTUtFSk9GUE8YBCADKA1iBnByb3Rv",
-            "Mw=="));
+            "CilTZXJ2ZXJDb25kTWVldFF1ZXN0TGlzdFVwZGF0ZU5vdGlmeS5wcm90byJb",
+            "CiNTZXJ2ZXJDb25kTWVldFF1ZXN0TGlzdFVwZGF0ZU5vdGlmeRIZChFhZGRf",
+            "cXVlc3RfaWRfbGlzdBgKIAMoDRIZChFkZWxfcXVlc3RfaWRfbGlzdBgEIAMo",
+            "DUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ServerCondMeetQuestListUpdateNotify), global::Weedwacker.Shared.Network.Proto.ServerCondMeetQuestListUpdateNotify.Parser, new[]{ "Unk3300MGBDKFMBGBO", "Unk3300HIEMKEJOFPO" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ServerCondMeetQuestListUpdateNotify), global::Weedwacker.Shared.Network.Proto.ServerCondMeetQuestListUpdateNotify.Parser, new[]{ "AddQuestIdList", "DelQuestIdList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -82,8 +81,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ServerCondMeetQuestListUpdateNotify(ServerCondMeetQuestListUpdateNotify other) : this() {
-      unk3300MGBDKFMBGBO_ = other.unk3300MGBDKFMBGBO_.Clone();
-      unk3300HIEMKEJOFPO_ = other.unk3300HIEMKEJOFPO_.Clone();
+      addQuestIdList_ = other.addQuestIdList_.Clone();
+      delQuestIdList_ = other.delQuestIdList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -93,26 +92,26 @@ namespace Weedwacker.Shared.Network.Proto {
       return new ServerCondMeetQuestListUpdateNotify(this);
     }
 
-    /// <summary>Field number for the "Unk3300_MGBDKFMBGBO" field.</summary>
-    public const int Unk3300MGBDKFMBGBOFieldNumber = 10;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300MGBDKFMBGBO_codec
+    /// <summary>Field number for the "add_quest_id_list" field.</summary>
+    public const int AddQuestIdListFieldNumber = 10;
+    private static readonly pb::FieldCodec<uint> _repeated_addQuestIdList_codec
         = pb::FieldCodec.ForUInt32(82);
-    private readonly pbc::RepeatedField<uint> unk3300MGBDKFMBGBO_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> addQuestIdList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300MGBDKFMBGBO {
-      get { return unk3300MGBDKFMBGBO_; }
+    public pbc::RepeatedField<uint> AddQuestIdList {
+      get { return addQuestIdList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_HIEMKEJOFPO" field.</summary>
-    public const int Unk3300HIEMKEJOFPOFieldNumber = 4;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300HIEMKEJOFPO_codec
+    /// <summary>Field number for the "del_quest_id_list" field.</summary>
+    public const int DelQuestIdListFieldNumber = 4;
+    private static readonly pb::FieldCodec<uint> _repeated_delQuestIdList_codec
         = pb::FieldCodec.ForUInt32(34);
-    private readonly pbc::RepeatedField<uint> unk3300HIEMKEJOFPO_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> delQuestIdList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300HIEMKEJOFPO {
-      get { return unk3300HIEMKEJOFPO_; }
+    public pbc::RepeatedField<uint> DelQuestIdList {
+      get { return delQuestIdList_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -130,8 +129,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk3300MGBDKFMBGBO_.Equals(other.unk3300MGBDKFMBGBO_)) return false;
-      if(!unk3300HIEMKEJOFPO_.Equals(other.unk3300HIEMKEJOFPO_)) return false;
+      if(!addQuestIdList_.Equals(other.addQuestIdList_)) return false;
+      if(!delQuestIdList_.Equals(other.delQuestIdList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -139,8 +138,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk3300MGBDKFMBGBO_.GetHashCode();
-      hash ^= unk3300HIEMKEJOFPO_.GetHashCode();
+      hash ^= addQuestIdList_.GetHashCode();
+      hash ^= delQuestIdList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -159,8 +158,8 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk3300HIEMKEJOFPO_.WriteTo(output, _repeated_unk3300HIEMKEJOFPO_codec);
-      unk3300MGBDKFMBGBO_.WriteTo(output, _repeated_unk3300MGBDKFMBGBO_codec);
+      delQuestIdList_.WriteTo(output, _repeated_delQuestIdList_codec);
+      addQuestIdList_.WriteTo(output, _repeated_addQuestIdList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -171,8 +170,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk3300HIEMKEJOFPO_.WriteTo(ref output, _repeated_unk3300HIEMKEJOFPO_codec);
-      unk3300MGBDKFMBGBO_.WriteTo(ref output, _repeated_unk3300MGBDKFMBGBO_codec);
+      delQuestIdList_.WriteTo(ref output, _repeated_delQuestIdList_codec);
+      addQuestIdList_.WriteTo(ref output, _repeated_addQuestIdList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -183,8 +182,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk3300MGBDKFMBGBO_.CalculateSize(_repeated_unk3300MGBDKFMBGBO_codec);
-      size += unk3300HIEMKEJOFPO_.CalculateSize(_repeated_unk3300HIEMKEJOFPO_codec);
+      size += addQuestIdList_.CalculateSize(_repeated_addQuestIdList_codec);
+      size += delQuestIdList_.CalculateSize(_repeated_delQuestIdList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -197,8 +196,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk3300MGBDKFMBGBO_.Add(other.unk3300MGBDKFMBGBO_);
-      unk3300HIEMKEJOFPO_.Add(other.unk3300HIEMKEJOFPO_);
+      addQuestIdList_.Add(other.addQuestIdList_);
+      delQuestIdList_.Add(other.delQuestIdList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -216,12 +215,12 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 34:
           case 32: {
-            unk3300HIEMKEJOFPO_.AddEntriesFrom(input, _repeated_unk3300HIEMKEJOFPO_codec);
+            delQuestIdList_.AddEntriesFrom(input, _repeated_delQuestIdList_codec);
             break;
           }
           case 82:
           case 80: {
-            unk3300MGBDKFMBGBO_.AddEntriesFrom(input, _repeated_unk3300MGBDKFMBGBO_codec);
+            addQuestIdList_.AddEntriesFrom(input, _repeated_addQuestIdList_codec);
             break;
           }
         }
@@ -241,12 +240,12 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 34:
           case 32: {
-            unk3300HIEMKEJOFPO_.AddEntriesFrom(ref input, _repeated_unk3300HIEMKEJOFPO_codec);
+            delQuestIdList_.AddEntriesFrom(ref input, _repeated_delQuestIdList_codec);
             break;
           }
           case 82:
           case 80: {
-            unk3300MGBDKFMBGBO_.AddEntriesFrom(ref input, _repeated_unk3300MGBDKFMBGBO_codec);
+            addQuestIdList_.AddEntriesFrom(ref input, _repeated_addQuestIdList_codec);
             break;
           }
         }

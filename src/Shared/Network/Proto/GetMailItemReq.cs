@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetMailItemReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRHZXRNYWlsSXRlbVJlcS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90byImCg5HZXRNYWlsSXRlbVJlcRIUCgxtYWlsX2lkX2xpc3QY",
-            "ASADKA1iBnByb3RvMw=="));
+            "ChRHZXRNYWlsSXRlbVJlcS5wcm90byImCg5HZXRNYWlsSXRlbVJlcRIUCgxt",
+            "YWlsX2lkX2xpc3QYASADKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
+            "cmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

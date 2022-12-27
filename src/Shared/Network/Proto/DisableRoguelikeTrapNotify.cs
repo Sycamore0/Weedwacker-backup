@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static DisableRoguelikeTrapNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBEaXNhYmxlUm9ndWVsaWtlVHJhcE5vdGlmeS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byItChpEaXNhYmxlUm9ndWVsaWtlVHJh",
-            "cE5vdGlmeRIPCgdjYXJkX2lkGAsgASgNYgZwcm90bzM="));
+            "CiBEaXNhYmxlUm9ndWVsaWtlVHJhcE5vdGlmeS5wcm90byItChpEaXNhYmxl",
+            "Um9ndWVsaWtlVHJhcE5vdGlmeRIPCgdjYXJkX2lkGAsgASgNQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

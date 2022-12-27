@@ -24,15 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static EvtAvatarStandUpNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxFdnRBdmF0YXJTdGFuZFVwTm90aWZ5LnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvIncKFkV2dEF2YXRhclN0YW5kVXBOb3RpZnkS",
-            "GwoTVW5rMzMwMF9FQlBBQ1BOUEtLShgNIAEoBRIQCghjaGFpcl9pZBgDIAEo",
-            "BBIRCgllbnRpdHlfaWQYBSABKA0SGwoTVW5rMzMwMF9JTU5HTkxMTUVGShgL",
-            "IAEoBWIGcHJvdG8z"));
+            "ChxFdnRBdmF0YXJTdGFuZFVwTm90aWZ5LnByb3RvImQKFkV2dEF2YXRhclN0",
+            "YW5kVXBOb3RpZnkSEQoJZGlyZWN0aW9uGA0gASgFEhAKCGNoYWlyX2lkGAMg",
+            "ASgEEhEKCWVudGl0eV9pZBgFIAEoDRISCgpwZXJmb3JtX2lkGAsgASgFQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtAvatarStandUpNotify), global::Weedwacker.Shared.Network.Proto.EvtAvatarStandUpNotify.Parser, new[]{ "Unk3300EBPACPNPKKJ", "ChairId", "EntityId", "Unk3300IMNGNLLMEFJ" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtAvatarStandUpNotify), global::Weedwacker.Shared.Network.Proto.EvtAvatarStandUpNotify.Parser, new[]{ "Direction", "ChairId", "EntityId", "PerformId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -83,10 +82,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EvtAvatarStandUpNotify(EvtAvatarStandUpNotify other) : this() {
-      unk3300EBPACPNPKKJ_ = other.unk3300EBPACPNPKKJ_;
+      direction_ = other.direction_;
       chairId_ = other.chairId_;
       entityId_ = other.entityId_;
-      unk3300IMNGNLLMEFJ_ = other.unk3300IMNGNLLMEFJ_;
+      performId_ = other.performId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -96,15 +95,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new EvtAvatarStandUpNotify(this);
     }
 
-    /// <summary>Field number for the "Unk3300_EBPACPNPKKJ" field.</summary>
-    public const int Unk3300EBPACPNPKKJFieldNumber = 13;
-    private int unk3300EBPACPNPKKJ_;
+    /// <summary>Field number for the "direction" field.</summary>
+    public const int DirectionFieldNumber = 13;
+    private int direction_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Unk3300EBPACPNPKKJ {
-      get { return unk3300EBPACPNPKKJ_; }
+    public int Direction {
+      get { return direction_; }
       set {
-        unk3300EBPACPNPKKJ_ = value;
+        direction_ = value;
       }
     }
 
@@ -132,15 +131,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_IMNGNLLMEFJ" field.</summary>
-    public const int Unk3300IMNGNLLMEFJFieldNumber = 11;
-    private int unk3300IMNGNLLMEFJ_;
+    /// <summary>Field number for the "perform_id" field.</summary>
+    public const int PerformIdFieldNumber = 11;
+    private int performId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Unk3300IMNGNLLMEFJ {
-      get { return unk3300IMNGNLLMEFJ_; }
+    public int PerformId {
+      get { return performId_; }
       set {
-        unk3300IMNGNLLMEFJ_ = value;
+        performId_ = value;
       }
     }
 
@@ -159,10 +158,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300EBPACPNPKKJ != other.Unk3300EBPACPNPKKJ) return false;
+      if (Direction != other.Direction) return false;
       if (ChairId != other.ChairId) return false;
       if (EntityId != other.EntityId) return false;
-      if (Unk3300IMNGNLLMEFJ != other.Unk3300IMNGNLLMEFJ) return false;
+      if (PerformId != other.PerformId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -170,10 +169,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300EBPACPNPKKJ != 0) hash ^= Unk3300EBPACPNPKKJ.GetHashCode();
+      if (Direction != 0) hash ^= Direction.GetHashCode();
       if (ChairId != 0UL) hash ^= ChairId.GetHashCode();
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (Unk3300IMNGNLLMEFJ != 0) hash ^= Unk3300IMNGNLLMEFJ.GetHashCode();
+      if (PerformId != 0) hash ^= PerformId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -200,13 +199,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(EntityId);
       }
-      if (Unk3300IMNGNLLMEFJ != 0) {
+      if (PerformId != 0) {
         output.WriteRawTag(88);
-        output.WriteInt32(Unk3300IMNGNLLMEFJ);
+        output.WriteInt32(PerformId);
       }
-      if (Unk3300EBPACPNPKKJ != 0) {
+      if (Direction != 0) {
         output.WriteRawTag(104);
-        output.WriteInt32(Unk3300EBPACPNPKKJ);
+        output.WriteInt32(Direction);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -226,13 +225,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(EntityId);
       }
-      if (Unk3300IMNGNLLMEFJ != 0) {
+      if (PerformId != 0) {
         output.WriteRawTag(88);
-        output.WriteInt32(Unk3300IMNGNLLMEFJ);
+        output.WriteInt32(PerformId);
       }
-      if (Unk3300EBPACPNPKKJ != 0) {
+      if (Direction != 0) {
         output.WriteRawTag(104);
-        output.WriteInt32(Unk3300EBPACPNPKKJ);
+        output.WriteInt32(Direction);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -244,8 +243,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300EBPACPNPKKJ != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Unk3300EBPACPNPKKJ);
+      if (Direction != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Direction);
       }
       if (ChairId != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ChairId);
@@ -253,8 +252,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EntityId);
       }
-      if (Unk3300IMNGNLLMEFJ != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Unk3300IMNGNLLMEFJ);
+      if (PerformId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PerformId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -268,8 +267,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300EBPACPNPKKJ != 0) {
-        Unk3300EBPACPNPKKJ = other.Unk3300EBPACPNPKKJ;
+      if (other.Direction != 0) {
+        Direction = other.Direction;
       }
       if (other.ChairId != 0UL) {
         ChairId = other.ChairId;
@@ -277,8 +276,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.Unk3300IMNGNLLMEFJ != 0) {
-        Unk3300IMNGNLLMEFJ = other.Unk3300IMNGNLLMEFJ;
+      if (other.PerformId != 0) {
+        PerformId = other.PerformId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -304,11 +303,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk3300IMNGNLLMEFJ = input.ReadInt32();
+            PerformId = input.ReadInt32();
             break;
           }
           case 104: {
-            Unk3300EBPACPNPKKJ = input.ReadInt32();
+            Direction = input.ReadInt32();
             break;
           }
         }
@@ -335,11 +334,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk3300IMNGNLLMEFJ = input.ReadInt32();
+            PerformId = input.ReadInt32();
             break;
           }
           case 104: {
-            Unk3300EBPACPNPKKJ = input.ReadInt32();
+            Direction = input.ReadInt32();
             break;
           }
         }

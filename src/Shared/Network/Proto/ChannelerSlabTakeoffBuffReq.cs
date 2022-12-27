@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static ChannelerSlabTakeoffBuffReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFDaGFubmVsZXJTbGFiVGFrZW9mZkJ1ZmZSZXEucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iTgobQ2hhbm5lbGVyU2xhYlRha2Vv",
-            "ZmZCdWZmUmVxEg8KB3Nsb3RfaWQYAyABKA0SDwoHYnVmZl9pZBgMIAEoDRIN",
-            "CgVpc19tcBgKIAEoCGIGcHJvdG8z"));
+            "CiFDaGFubmVsZXJTbGFiVGFrZW9mZkJ1ZmZSZXEucHJvdG8iTgobQ2hhbm5l",
+            "bGVyU2xhYlRha2VvZmZCdWZmUmVxEg8KB3Nsb3RfaWQYAyABKA0SDwoHYnVm",
+            "Zl9pZBgMIAEoDRINCgVpc19tcBgKIAEoCEIiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

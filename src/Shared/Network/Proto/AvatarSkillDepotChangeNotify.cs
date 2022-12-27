@@ -24,20 +24,19 @@ namespace Weedwacker.Shared.Network.Proto {
     static AvatarSkillDepotChangeNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJBdmF0YXJTa2lsbERlcG90Q2hhbmdlTm90aWZ5LnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIpIEChxBdmF0YXJTa2lsbERlcG90",
-            "Q2hhbmdlTm90aWZ5En8KG3Byb3VkX3NraWxsX2V4dHJhX2xldmVsX21hcBgJ",
-            "IAMoCzJaLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQXZhdGFy",
-            "U2tpbGxEZXBvdENoYW5nZU5vdGlmeS5Qcm91ZFNraWxsRXh0cmFMZXZlbE1h",
-            "cEVudHJ5EhgKEHByb3VkX3NraWxsX2xpc3QYAyADKA0SEQoJZW50aXR5X2lk",
-            "GAUgASgNEhMKC2F2YXRhcl9ndWlkGAcgASgEEmkKD3NraWxsX2xldmVsX21h",
-            "cBgBIAMoCzJQLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQXZh",
-            "dGFyU2tpbGxEZXBvdENoYW5nZU5vdGlmeS5Ta2lsbExldmVsTWFwRW50cnkS",
-            "FgoOc2tpbGxfZGVwb3RfaWQYDSABKA0SFgoOdGFsZW50X2lkX2xpc3QYDiAD",
-            "KA0SHgoWY29yZV9wcm91ZF9za2lsbF9sZXZlbBgPIAEoDRo+ChxQcm91ZFNr",
-            "aWxsRXh0cmFMZXZlbE1hcEVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1ZRgC",
-            "IAEoDToCOAEaNAoSU2tpbGxMZXZlbE1hcEVudHJ5EgsKA2tleRgBIAEoDRIN",
-            "CgV2YWx1ZRgCIAEoDToCOAFiBnByb3RvMw=="));
+            "CiJBdmF0YXJTa2lsbERlcG90Q2hhbmdlTm90aWZ5LnByb3RvItIDChxBdmF0",
+            "YXJTa2lsbERlcG90Q2hhbmdlTm90aWZ5El8KG3Byb3VkX3NraWxsX2V4dHJh",
+            "X2xldmVsX21hcBgJIAMoCzI6LkF2YXRhclNraWxsRGVwb3RDaGFuZ2VOb3Rp",
+            "ZnkuUHJvdWRTa2lsbEV4dHJhTGV2ZWxNYXBFbnRyeRIYChBwcm91ZF9za2ls",
+            "bF9saXN0GAMgAygNEhEKCWVudGl0eV9pZBgFIAEoDRITCgthdmF0YXJfZ3Vp",
+            "ZBgHIAEoBBJJCg9za2lsbF9sZXZlbF9tYXAYASADKAsyMC5BdmF0YXJTa2ls",
+            "bERlcG90Q2hhbmdlTm90aWZ5LlNraWxsTGV2ZWxNYXBFbnRyeRIWCg5za2ls",
+            "bF9kZXBvdF9pZBgNIAEoDRIWCg50YWxlbnRfaWRfbGlzdBgOIAMoDRIeChZj",
+            "b3JlX3Byb3VkX3NraWxsX2xldmVsGA8gASgNGj4KHFByb3VkU2tpbGxFeHRy",
+            "YUxldmVsTWFwRW50cnkSCwoDa2V5GAEgASgNEg0KBXZhbHVlGAIgASgNOgI4",
+            "ARo0ChJTa2lsbExldmVsTWFwRW50cnkSCwoDa2V5GAEgASgNEg0KBXZhbHVl",
+            "GAIgASgNOgI4AUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

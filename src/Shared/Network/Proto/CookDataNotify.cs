@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static CookDataNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRDb29rRGF0YU5vdGlmeS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90bxoUQ29va1JlY2lwZURhdGEucHJvdG8iagoOQ29va0RhdGFO",
-            "b3RpZnkSSQoQcmVjaXBlX2RhdGFfbGlzdBgPIAMoCzIvLldlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8uQ29va1JlY2lwZURhdGESDQoFZ3JhZGUY",
-            "CSABKA1iBnByb3RvMw=="));
+            "ChRDb29rRGF0YU5vdGlmeS5wcm90bxoUQ29va1JlY2lwZURhdGEucHJvdG8i",
+            "SgoOQ29va0RhdGFOb3RpZnkSKQoQcmVjaXBlX2RhdGFfbGlzdBgPIAMoCzIP",
+            "LkNvb2tSZWNpcGVEYXRhEg0KBWdyYWRlGAkgASgNQiKqAh9XZWVkd2Fja2Vy",
+            "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.CookRecipeDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

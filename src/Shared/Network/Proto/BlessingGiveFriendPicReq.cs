@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static BlessingGiveFriendPicReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5CbGVzc2luZ0dpdmVGcmllbmRQaWNSZXEucHJvdG8SH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8iNwoYQmxlc3NpbmdHaXZlRnJpZW5kUGlj",
-            "UmVxEg4KBnBpY19pZBgLIAEoDRILCgN1aWQYCiABKA1iBnByb3RvMw=="));
+            "Ch5CbGVzc2luZ0dpdmVGcmllbmRQaWNSZXEucHJvdG8iNwoYQmxlc3NpbmdH",
+            "aXZlRnJpZW5kUGljUmVxEg4KBnBpY19pZBgLIAEoDRILCgN1aWQYCiABKA1C",
+            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

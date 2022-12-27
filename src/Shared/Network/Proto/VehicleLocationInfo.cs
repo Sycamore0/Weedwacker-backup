@@ -24,18 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static VehicleLocationInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlWZWhpY2xlTG9jYXRpb25JbmZvLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvGgxWZWN0b3IucHJvdG8ihgIKE1ZlaGljbGVMb2Nh",
-            "dGlvbkluZm8SNAoDcm90GAUgASgLMicuV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90by5WZWN0b3ISEQoJb3duZXJfdWlkGAsgASgNEhAKCHVpZF9s",
-            "aXN0GAQgAygNEhsKE1VuazMzMDBfTUxJQ0VBS0xPSUgYAiABKAISNAoDcG9z",
-            "GAkgASgLMicuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5WZWN0",
-            "b3ISEQoJZ2FkZ2V0X2lkGAEgASgNEhEKCWVudGl0eV9pZBgOIAEoDRIbChNV",
-            "bmszMzAwX01OTk1PQ0lJRUFKGA8gASgCYgZwcm90bzM="));
+            "ChlWZWhpY2xlTG9jYXRpb25JbmZvLnByb3RvGgxWZWN0b3IucHJvdG8irAEK",
+            "E1ZlaGljbGVMb2NhdGlvbkluZm8SFAoDcm90GAUgASgLMgcuVmVjdG9yEhEK",
+            "CW93bmVyX3VpZBgLIAEoDRIQCgh1aWRfbGlzdBgEIAMoDRIOCgZjdXJfaHAY",
+            "AiABKAISFAoDcG9zGAkgASgLMgcuVmVjdG9yEhEKCWdhZGdldF9pZBgBIAEo",
+            "DRIRCgllbnRpdHlfaWQYDiABKA0SDgoGbWF4X2hwGA8gASgCQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.VehicleLocationInfo), global::Weedwacker.Shared.Network.Proto.VehicleLocationInfo.Parser, new[]{ "Rot", "OwnerUid", "UidList", "Unk3300MLICEAKLOIH", "Pos", "GadgetId", "EntityId", "Unk3300MNNMOCIIEAJ" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.VehicleLocationInfo), global::Weedwacker.Shared.Network.Proto.VehicleLocationInfo.Parser, new[]{ "Rot", "OwnerUid", "UidList", "CurHp", "Pos", "GadgetId", "EntityId", "MaxHp" }, null, null, null, null)
           }));
     }
     #endregion
@@ -79,11 +77,11 @@ namespace Weedwacker.Shared.Network.Proto {
       rot_ = other.rot_ != null ? other.rot_.Clone() : null;
       ownerUid_ = other.ownerUid_;
       uidList_ = other.uidList_.Clone();
-      unk3300MLICEAKLOIH_ = other.unk3300MLICEAKLOIH_;
+      curHp_ = other.curHp_;
       pos_ = other.pos_ != null ? other.pos_.Clone() : null;
       gadgetId_ = other.gadgetId_;
       entityId_ = other.entityId_;
-      unk3300MNNMOCIIEAJ_ = other.unk3300MNNMOCIIEAJ_;
+      maxHp_ = other.maxHp_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -128,15 +126,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return uidList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_MLICEAKLOIH" field.</summary>
-    public const int Unk3300MLICEAKLOIHFieldNumber = 2;
-    private float unk3300MLICEAKLOIH_;
+    /// <summary>Field number for the "cur_hp" field.</summary>
+    public const int CurHpFieldNumber = 2;
+    private float curHp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3300MLICEAKLOIH {
-      get { return unk3300MLICEAKLOIH_; }
+    public float CurHp {
+      get { return curHp_; }
       set {
-        unk3300MLICEAKLOIH_ = value;
+        curHp_ = value;
       }
     }
 
@@ -176,15 +174,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_MNNMOCIIEAJ" field.</summary>
-    public const int Unk3300MNNMOCIIEAJFieldNumber = 15;
-    private float unk3300MNNMOCIIEAJ_;
+    /// <summary>Field number for the "max_hp" field.</summary>
+    public const int MaxHpFieldNumber = 15;
+    private float maxHp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3300MNNMOCIIEAJ {
-      get { return unk3300MNNMOCIIEAJ_; }
+    public float MaxHp {
+      get { return maxHp_; }
       set {
-        unk3300MNNMOCIIEAJ_ = value;
+        maxHp_ = value;
       }
     }
 
@@ -206,11 +204,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (!object.Equals(Rot, other.Rot)) return false;
       if (OwnerUid != other.OwnerUid) return false;
       if(!uidList_.Equals(other.uidList_)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3300MLICEAKLOIH, other.Unk3300MLICEAKLOIH)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(CurHp, other.CurHp)) return false;
       if (!object.Equals(Pos, other.Pos)) return false;
       if (GadgetId != other.GadgetId) return false;
       if (EntityId != other.EntityId) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3300MNNMOCIIEAJ, other.Unk3300MNNMOCIIEAJ)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MaxHp, other.MaxHp)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -221,11 +219,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (rot_ != null) hash ^= Rot.GetHashCode();
       if (OwnerUid != 0) hash ^= OwnerUid.GetHashCode();
       hash ^= uidList_.GetHashCode();
-      if (Unk3300MLICEAKLOIH != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3300MLICEAKLOIH);
+      if (CurHp != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(CurHp);
       if (pos_ != null) hash ^= Pos.GetHashCode();
       if (GadgetId != 0) hash ^= GadgetId.GetHashCode();
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (Unk3300MNNMOCIIEAJ != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3300MNNMOCIIEAJ);
+      if (MaxHp != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MaxHp);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -248,9 +246,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(GadgetId);
       }
-      if (Unk3300MLICEAKLOIH != 0F) {
+      if (CurHp != 0F) {
         output.WriteRawTag(21);
-        output.WriteFloat(Unk3300MLICEAKLOIH);
+        output.WriteFloat(CurHp);
       }
       uidList_.WriteTo(output, _repeated_uidList_codec);
       if (rot_ != null) {
@@ -269,9 +267,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(112);
         output.WriteUInt32(EntityId);
       }
-      if (Unk3300MNNMOCIIEAJ != 0F) {
+      if (MaxHp != 0F) {
         output.WriteRawTag(125);
-        output.WriteFloat(Unk3300MNNMOCIIEAJ);
+        output.WriteFloat(MaxHp);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -287,9 +285,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(8);
         output.WriteUInt32(GadgetId);
       }
-      if (Unk3300MLICEAKLOIH != 0F) {
+      if (CurHp != 0F) {
         output.WriteRawTag(21);
-        output.WriteFloat(Unk3300MLICEAKLOIH);
+        output.WriteFloat(CurHp);
       }
       uidList_.WriteTo(ref output, _repeated_uidList_codec);
       if (rot_ != null) {
@@ -308,9 +306,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(112);
         output.WriteUInt32(EntityId);
       }
-      if (Unk3300MNNMOCIIEAJ != 0F) {
+      if (MaxHp != 0F) {
         output.WriteRawTag(125);
-        output.WriteFloat(Unk3300MNNMOCIIEAJ);
+        output.WriteFloat(MaxHp);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -329,7 +327,7 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OwnerUid);
       }
       size += uidList_.CalculateSize(_repeated_uidList_codec);
-      if (Unk3300MLICEAKLOIH != 0F) {
+      if (CurHp != 0F) {
         size += 1 + 4;
       }
       if (pos_ != null) {
@@ -341,7 +339,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EntityId);
       }
-      if (Unk3300MNNMOCIIEAJ != 0F) {
+      if (MaxHp != 0F) {
         size += 1 + 4;
       }
       if (_unknownFields != null) {
@@ -366,8 +364,8 @@ namespace Weedwacker.Shared.Network.Proto {
         OwnerUid = other.OwnerUid;
       }
       uidList_.Add(other.uidList_);
-      if (other.Unk3300MLICEAKLOIH != 0F) {
-        Unk3300MLICEAKLOIH = other.Unk3300MLICEAKLOIH;
+      if (other.CurHp != 0F) {
+        CurHp = other.CurHp;
       }
       if (other.pos_ != null) {
         if (pos_ == null) {
@@ -381,8 +379,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.Unk3300MNNMOCIIEAJ != 0F) {
-        Unk3300MNNMOCIIEAJ = other.Unk3300MNNMOCIIEAJ;
+      if (other.MaxHp != 0F) {
+        MaxHp = other.MaxHp;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -404,7 +402,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 21: {
-            Unk3300MLICEAKLOIH = input.ReadFloat();
+            CurHp = input.ReadFloat();
             break;
           }
           case 34:
@@ -435,7 +433,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 125: {
-            Unk3300MNNMOCIIEAJ = input.ReadFloat();
+            MaxHp = input.ReadFloat();
             break;
           }
         }
@@ -458,7 +456,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 21: {
-            Unk3300MLICEAKLOIH = input.ReadFloat();
+            CurHp = input.ReadFloat();
             break;
           }
           case 34:
@@ -489,7 +487,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 125: {
-            Unk3300MNNMOCIIEAJ = input.ReadFloat();
+            MaxHp = input.ReadFloat();
             break;
           }
         }

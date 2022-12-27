@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static JigsawPictureDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdKaWdzYXdQaWN0dXJlRGF0YS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byJzChFKaWdzYXdQaWN0dXJlRGF0YRIbChNVbmszMzAw",
-            "X0RGR0hLREJFTkVEGAogASgNEhsKE1VuazMzMDBfRklLUExHSklCR1AYBSAB",
-            "KA0SEwoLaXNfZmluaXNoZWQYByABKAgSDwoHaXNfb3BlbhgOIAEoCGIGcHJv",
-            "dG8z"));
+            "ChdKaWdzYXdQaWN0dXJlRGF0YS5wcm90byJzChFKaWdzYXdQaWN0dXJlRGF0",
+            "YRIbChNVbmszMzAwX0RGR0hLREJFTkVEGAogASgNEhsKE1VuazMzMDBfRklL",
+            "UExHSklCR1AYBSABKA0SEwoLaXNfZmluaXNoZWQYByABKAgSDwoHaXNfb3Bl",
+            "bhgOIAEoCEIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

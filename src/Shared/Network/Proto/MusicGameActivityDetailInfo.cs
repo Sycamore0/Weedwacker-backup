@@ -24,19 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static MusicGameActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFNdXNpY0dhbWVBY3Rpdml0eURldGFpbEluZm8ucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8aFU11c2ljR2FtZVJlY29yZC5wcm90",
-            "bxoXVWdjTXVzaWNCcmllZkluZm8ucHJvdG8ioQMKG011c2ljR2FtZUFjdGl2",
-            "aXR5RGV0YWlsSW5mbxJPChNVbmszMzAwX0FBR0NEQ09JUEpNGAIgAygLMjIu",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5VZ2NNdXNpY0JyaWVm",
-            "SW5mbxJPChNVbmszMzAwX09LSEFBQ0dITUFQGAwgAygLMjIuV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90by5VZ2NNdXNpY0JyaWVmSW5mbxJzChVt",
-            "dXNpY19nYW1lX3JlY29yZF9tYXAYCSADKAsyVC5XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvLk11c2ljR2FtZUFjdGl2aXR5RGV0YWlsSW5mby5N",
-            "dXNpY0dhbWVSZWNvcmRNYXBFbnRyeRprChdNdXNpY0dhbWVSZWNvcmRNYXBF",
-            "bnRyeRILCgNrZXkYASABKA0SPwoFdmFsdWUYAiABKAsyMC5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLk11c2ljR2FtZVJlY29yZDoCOAFiBnBy",
-            "b3RvMw=="));
+            "CiFNdXNpY0dhbWVBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aFU11c2ljR2Ft",
+            "ZVJlY29yZC5wcm90bxoXVWdjTXVzaWNCcmllZkluZm8ucHJvdG8ioQIKG011",
+            "c2ljR2FtZUFjdGl2aXR5RGV0YWlsSW5mbxIvChNVbmszMzAwX0FBR0NEQ09J",
+            "UEpNGAIgAygLMhIuVWdjTXVzaWNCcmllZkluZm8SLwoTVW5rMzMwMF9PS0hB",
+            "QUNHSE1BUBgMIAMoCzISLlVnY011c2ljQnJpZWZJbmZvElMKFW11c2ljX2dh",
+            "bWVfcmVjb3JkX21hcBgJIAMoCzI0Lk11c2ljR2FtZUFjdGl2aXR5RGV0YWls",
+            "SW5mby5NdXNpY0dhbWVSZWNvcmRNYXBFbnRyeRpLChdNdXNpY0dhbWVSZWNv",
+            "cmRNYXBFbnRyeRILCgNrZXkYASABKA0SHwoFdmFsdWUYAiABKAsyEC5NdXNp",
+            "Y0dhbWVSZWNvcmQ6AjgBQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MusicGameRecordReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.UgcMusicBriefInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

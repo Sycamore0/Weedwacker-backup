@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static EvtBeingHealedNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpFdnRCZWluZ0hlYWxlZE5vdGlmeS5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90byJ2ChRFdnRCZWluZ0hlYWxlZE5vdGlmeRIbChNV",
-            "bmszMzAwX0xDTE9GQ0NJSktIGAIgASgCEhsKE1VuazMzMDBfRUNOQktISEFE",
-            "REoYAyABKAISEQoJdGFyZ2V0X2lkGAQgASgNEhEKCXNvdXJjZV9pZBgGIAEo",
-            "DWIGcHJvdG8z"));
+            "ChpFdnRCZWluZ0hlYWxlZE5vdGlmeS5wcm90byJrChRFdnRCZWluZ0hlYWxl",
+            "ZE5vdGlmeRIYChByZWFsX2hlYWxfYW1vdW50GAIgASgCEhMKC2hlYWxfYW1v",
+            "dW50GAMgASgCEhEKCXRhcmdldF9pZBgEIAEoDRIRCglzb3VyY2VfaWQYBiAB",
+            "KA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtBeingHealedNotify), global::Weedwacker.Shared.Network.Proto.EvtBeingHealedNotify.Parser, new[]{ "Unk3300LCLOFCCIJKH", "Unk3300ECNBKHHADDJ", "TargetId", "SourceId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.EvtBeingHealedNotify), global::Weedwacker.Shared.Network.Proto.EvtBeingHealedNotify.Parser, new[]{ "RealHealAmount", "HealAmount", "TargetId", "SourceId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -82,8 +82,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public EvtBeingHealedNotify(EvtBeingHealedNotify other) : this() {
-      unk3300LCLOFCCIJKH_ = other.unk3300LCLOFCCIJKH_;
-      unk3300ECNBKHHADDJ_ = other.unk3300ECNBKHHADDJ_;
+      realHealAmount_ = other.realHealAmount_;
+      healAmount_ = other.healAmount_;
       targetId_ = other.targetId_;
       sourceId_ = other.sourceId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -95,27 +95,27 @@ namespace Weedwacker.Shared.Network.Proto {
       return new EvtBeingHealedNotify(this);
     }
 
-    /// <summary>Field number for the "Unk3300_LCLOFCCIJKH" field.</summary>
-    public const int Unk3300LCLOFCCIJKHFieldNumber = 2;
-    private float unk3300LCLOFCCIJKH_;
+    /// <summary>Field number for the "real_heal_amount" field.</summary>
+    public const int RealHealAmountFieldNumber = 2;
+    private float realHealAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3300LCLOFCCIJKH {
-      get { return unk3300LCLOFCCIJKH_; }
+    public float RealHealAmount {
+      get { return realHealAmount_; }
       set {
-        unk3300LCLOFCCIJKH_ = value;
+        realHealAmount_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_ECNBKHHADDJ" field.</summary>
-    public const int Unk3300ECNBKHHADDJFieldNumber = 3;
-    private float unk3300ECNBKHHADDJ_;
+    /// <summary>Field number for the "heal_amount" field.</summary>
+    public const int HealAmountFieldNumber = 3;
+    private float healAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3300ECNBKHHADDJ {
-      get { return unk3300ECNBKHHADDJ_; }
+    public float HealAmount {
+      get { return healAmount_; }
       set {
-        unk3300ECNBKHHADDJ_ = value;
+        healAmount_ = value;
       }
     }
 
@@ -158,8 +158,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3300LCLOFCCIJKH, other.Unk3300LCLOFCCIJKH)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3300ECNBKHHADDJ, other.Unk3300ECNBKHHADDJ)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(RealHealAmount, other.RealHealAmount)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(HealAmount, other.HealAmount)) return false;
       if (TargetId != other.TargetId) return false;
       if (SourceId != other.SourceId) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -169,8 +169,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300LCLOFCCIJKH != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3300LCLOFCCIJKH);
-      if (Unk3300ECNBKHHADDJ != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3300ECNBKHHADDJ);
+      if (RealHealAmount != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(RealHealAmount);
+      if (HealAmount != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(HealAmount);
       if (TargetId != 0) hash ^= TargetId.GetHashCode();
       if (SourceId != 0) hash ^= SourceId.GetHashCode();
       if (_unknownFields != null) {
@@ -191,13 +191,13 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300LCLOFCCIJKH != 0F) {
+      if (RealHealAmount != 0F) {
         output.WriteRawTag(21);
-        output.WriteFloat(Unk3300LCLOFCCIJKH);
+        output.WriteFloat(RealHealAmount);
       }
-      if (Unk3300ECNBKHHADDJ != 0F) {
+      if (HealAmount != 0F) {
         output.WriteRawTag(29);
-        output.WriteFloat(Unk3300ECNBKHHADDJ);
+        output.WriteFloat(HealAmount);
       }
       if (TargetId != 0) {
         output.WriteRawTag(32);
@@ -217,13 +217,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300LCLOFCCIJKH != 0F) {
+      if (RealHealAmount != 0F) {
         output.WriteRawTag(21);
-        output.WriteFloat(Unk3300LCLOFCCIJKH);
+        output.WriteFloat(RealHealAmount);
       }
-      if (Unk3300ECNBKHHADDJ != 0F) {
+      if (HealAmount != 0F) {
         output.WriteRawTag(29);
-        output.WriteFloat(Unk3300ECNBKHHADDJ);
+        output.WriteFloat(HealAmount);
       }
       if (TargetId != 0) {
         output.WriteRawTag(32);
@@ -243,10 +243,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300LCLOFCCIJKH != 0F) {
+      if (RealHealAmount != 0F) {
         size += 1 + 4;
       }
-      if (Unk3300ECNBKHHADDJ != 0F) {
+      if (HealAmount != 0F) {
         size += 1 + 4;
       }
       if (TargetId != 0) {
@@ -267,11 +267,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300LCLOFCCIJKH != 0F) {
-        Unk3300LCLOFCCIJKH = other.Unk3300LCLOFCCIJKH;
+      if (other.RealHealAmount != 0F) {
+        RealHealAmount = other.RealHealAmount;
       }
-      if (other.Unk3300ECNBKHHADDJ != 0F) {
-        Unk3300ECNBKHHADDJ = other.Unk3300ECNBKHHADDJ;
+      if (other.HealAmount != 0F) {
+        HealAmount = other.HealAmount;
       }
       if (other.TargetId != 0) {
         TargetId = other.TargetId;
@@ -295,11 +295,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 21: {
-            Unk3300LCLOFCCIJKH = input.ReadFloat();
+            RealHealAmount = input.ReadFloat();
             break;
           }
           case 29: {
-            Unk3300ECNBKHHADDJ = input.ReadFloat();
+            HealAmount = input.ReadFloat();
             break;
           }
           case 32: {
@@ -326,11 +326,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 21: {
-            Unk3300LCLOFCCIJKH = input.ReadFloat();
+            RealHealAmount = input.ReadFloat();
             break;
           }
           case 29: {
-            Unk3300ECNBKHHADDJ = input.ReadFloat();
+            HealAmount = input.ReadFloat();
             break;
           }
           case 32: {

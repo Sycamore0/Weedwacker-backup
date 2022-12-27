@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static ReunionPrivilegeInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpSZXVuaW9uUHJpdmlsZWdlSW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90byJmChRSZXVuaW9uUHJpdmlsZWdlSW5mbxIbChNV",
-            "bmszMzAwX0dKQkVBRlBNRkFBGA4gASgNEhQKDHByaXZpbGVnZV9pZBgCIAEo",
-            "DRIbChNVbmszMzAwX0FMT0xBQ0ZHTUhJGAEgASgNYgZwcm90bzM="));
+            "ChpSZXVuaW9uUHJpdmlsZWdlSW5mby5wcm90byJmChRSZXVuaW9uUHJpdmls",
+            "ZWdlSW5mbxIbChNVbmszMzAwX0dKQkVBRlBNRkFBGA4gASgNEhQKDHByaXZp",
+            "bGVnZV9pZBgCIAEoDRIbChNVbmszMzAwX0FMT0xBQ0ZHTUhJGAEgASgNQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

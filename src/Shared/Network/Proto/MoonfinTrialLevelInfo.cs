@@ -24,9 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static MoonfinTrialLevelInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtNb29uZmluVHJpYWxMZXZlbEluZm8ucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8iPwoVTW9vbmZpblRyaWFsTGV2ZWxJbmZvEhMK",
-            "C2Jlc3RfcmVjb3JkGA8gASgNEhEKCW9wZW5fdGltZRgNIAEoDWIGcHJvdG8z"));
+            "ChtNb29uZmluVHJpYWxMZXZlbEluZm8ucHJvdG8iPwoVTW9vbmZpblRyaWFs",
+            "TGV2ZWxJbmZvEhMKC2Jlc3RfcmVjb3JkGA8gASgNEhEKCW9wZW5fdGltZRgN",
+            "IAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

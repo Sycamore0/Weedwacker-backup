@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static DoRoguelikeDungeonCardGachaRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiREb1JvZ3VlbGlrZUR1bmdlb25DYXJkR2FjaGFSc3AucHJvdG8SH1dlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iXAoeRG9Sb2d1ZWxpa2VEdW5n",
-            "ZW9uQ2FyZEdhY2hhUnNwEg8KB3JldGNvZGUYCyABKAUSFgoOaXNfY2FuX3Jl",
-            "ZnJlc2gYBiABKAgSEQoJY2FyZF9saXN0GA8gAygNYgZwcm90bzM="));
+            "CiREb1JvZ3VlbGlrZUR1bmdlb25DYXJkR2FjaGFSc3AucHJvdG8iXAoeRG9S",
+            "b2d1ZWxpa2VEdW5nZW9uQ2FyZEdhY2hhUnNwEg8KB3JldGNvZGUYCyABKAUS",
+            "FgoOaXNfY2FuX3JlZnJlc2gYBiABKAgSEQoJY2FyZF9saXN0GA8gAygNQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

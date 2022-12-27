@@ -24,9 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static HideAndSeekChooseMapRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1IaWRlQW5kU2Vla0Nob29zZU1hcFJzcC5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90byI8ChdIaWRlQW5kU2Vla0Nob29zZU1hcFJz",
-            "cBIQCghtYXBfbGlzdBgLIAMoDRIPCgdyZXRjb2RlGA8gASgFYgZwcm90bzM="));
+            "Ch1IaWRlQW5kU2Vla0Nob29zZU1hcFJzcC5wcm90byI8ChdIaWRlQW5kU2Vl",
+            "a0Nob29zZU1hcFJzcBIQCghtYXBfbGlzdBgLIAMoDRIPCgdyZXRjb2RlGA8g",
+            "ASgFQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

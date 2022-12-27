@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetScenePointRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZHZXRTY2VuZVBvaW50UnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvIu0CChBHZXRTY2VuZVBvaW50UnNwEhgKEHVubG9ja19h",
-            "cmVhX2xpc3QYCSADKA0SGQoRbG9ja2VkX3BvaW50X2xpc3QYDyADKA0SDwoH",
-            "cmV0Y29kZRgNIAEoBRIZChF1bmhpZGVfcG9pbnRfbGlzdBgDIAMoDRIXCg9o",
-            "aWRlX3BvaW50X2xpc3QYCiADKA0SIAoYZ3JvdXBfdW5saW1pdF9wb2ludF9s",
-            "aXN0GAEgAygNEicKH25vdF9pbnRlcmFjdF9kdW5nZW9uX2VudHJ5X2xpc3QY",
-            "CyADKA0SKAogdG9fYmVfZXhwbG9yZV9kdW5nZW9uX2VudHJ5X2xpc3QYBiAD",
-            "KA0SJwofbm90X2V4cGxvcmVkX2R1bmdlb25fZW50cnlfbGlzdBgHIAMoDRIS",
-            "CgpiZWxvbmdfdWlkGAwgASgNEhsKE3VubG9ja2VkX3BvaW50X2xpc3QYAiAD",
-            "KA0SEAoIc2NlbmVfaWQYCCABKA1iBnByb3RvMw=="));
+            "ChZHZXRTY2VuZVBvaW50UnNwLnByb3RvIu0CChBHZXRTY2VuZVBvaW50UnNw",
+            "EhgKEHVubG9ja19hcmVhX2xpc3QYCSADKA0SGQoRbG9ja2VkX3BvaW50X2xp",
+            "c3QYDyADKA0SDwoHcmV0Y29kZRgNIAEoBRIZChF1bmhpZGVfcG9pbnRfbGlz",
+            "dBgDIAMoDRIXCg9oaWRlX3BvaW50X2xpc3QYCiADKA0SIAoYZ3JvdXBfdW5s",
+            "aW1pdF9wb2ludF9saXN0GAEgAygNEicKH25vdF9pbnRlcmFjdF9kdW5nZW9u",
+            "X2VudHJ5X2xpc3QYCyADKA0SKAogdG9fYmVfZXhwbG9yZV9kdW5nZW9uX2Vu",
+            "dHJ5X2xpc3QYBiADKA0SJwofbm90X2V4cGxvcmVkX2R1bmdlb25fZW50cnlf",
+            "bGlzdBgHIAMoDRISCgpiZWxvbmdfdWlkGAwgASgNEhsKE3VubG9ja2VkX3Bv",
+            "aW50X2xpc3QYAiADKA0SEAoIc2NlbmVfaWQYCCABKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

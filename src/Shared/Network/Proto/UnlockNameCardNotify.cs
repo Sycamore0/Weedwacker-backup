@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static UnlockNameCardNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpVbmxvY2tOYW1lQ2FyZE5vdGlmeS5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90byIsChRVbmxvY2tOYW1lQ2FyZE5vdGlmeRIUCgxu",
-            "YW1lX2NhcmRfaWQYAyABKA1iBnByb3RvMw=="));
+            "ChpVbmxvY2tOYW1lQ2FyZE5vdGlmeS5wcm90byIsChRVbmxvY2tOYW1lQ2Fy",
+            "ZE5vdGlmeRIUCgxuYW1lX2NhcmRfaWQYAyABKA1CIqoCH1dlZWR3YWNrZXIu",
+            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

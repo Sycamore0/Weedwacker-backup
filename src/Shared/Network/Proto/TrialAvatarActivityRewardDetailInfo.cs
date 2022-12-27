@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static TrialAvatarActivityRewardDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CilUcmlhbEF2YXRhckFjdGl2aXR5UmV3YXJkRGV0YWlsSW5mby5wcm90bxIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90byKRAQojVHJpYWxBdmF0",
-            "YXJBY3Rpdml0eVJld2FyZERldGFpbEluZm8SHQoVdHJpYWxfYXZhdGFyX2lu",
-            "ZGV4X2lkGAQgASgNEhsKE1VuazMzMDBfSUZFUEdDS0hPREwYDiABKAgSGwoT",
-            "VW5rMzMwMF9ORUpMR0JCRkRQSBgFIAEoCBIRCglyZXdhcmRfaWQYCyABKA1i",
-            "BnByb3RvMw=="));
+            "CilUcmlhbEF2YXRhckFjdGl2aXR5UmV3YXJkRGV0YWlsSW5mby5wcm90byKI",
+            "AQojVHJpYWxBdmF0YXJBY3Rpdml0eVJld2FyZERldGFpbEluZm8SHQoVdHJp",
+            "YWxfYXZhdGFyX2luZGV4X2lkGAQgASgNEhcKD3JlY2VpdmVkX3Jld2FyZBgO",
+            "IAEoCBIWCg5wYXNzZWRfZHVuZ2VvbhgFIAEoCBIRCglyZXdhcmRfaWQYCyAB",
+            "KA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TrialAvatarActivityRewardDetailInfo), global::Weedwacker.Shared.Network.Proto.TrialAvatarActivityRewardDetailInfo.Parser, new[]{ "TrialAvatarIndexId", "Unk3300IFEPGCKHODL", "Unk3300NEJLGBBFDPH", "RewardId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TrialAvatarActivityRewardDetailInfo), global::Weedwacker.Shared.Network.Proto.TrialAvatarActivityRewardDetailInfo.Parser, new[]{ "TrialAvatarIndexId", "ReceivedReward", "PassedDungeon", "RewardId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -75,8 +75,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TrialAvatarActivityRewardDetailInfo(TrialAvatarActivityRewardDetailInfo other) : this() {
       trialAvatarIndexId_ = other.trialAvatarIndexId_;
-      unk3300IFEPGCKHODL_ = other.unk3300IFEPGCKHODL_;
-      unk3300NEJLGBBFDPH_ = other.unk3300NEJLGBBFDPH_;
+      receivedReward_ = other.receivedReward_;
+      passedDungeon_ = other.passedDungeon_;
       rewardId_ = other.rewardId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -99,27 +99,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_IFEPGCKHODL" field.</summary>
-    public const int Unk3300IFEPGCKHODLFieldNumber = 14;
-    private bool unk3300IFEPGCKHODL_;
+    /// <summary>Field number for the "received_reward" field.</summary>
+    public const int ReceivedRewardFieldNumber = 14;
+    private bool receivedReward_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300IFEPGCKHODL {
-      get { return unk3300IFEPGCKHODL_; }
+    public bool ReceivedReward {
+      get { return receivedReward_; }
       set {
-        unk3300IFEPGCKHODL_ = value;
+        receivedReward_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_NEJLGBBFDPH" field.</summary>
-    public const int Unk3300NEJLGBBFDPHFieldNumber = 5;
-    private bool unk3300NEJLGBBFDPH_;
+    /// <summary>Field number for the "passed_dungeon" field.</summary>
+    public const int PassedDungeonFieldNumber = 5;
+    private bool passedDungeon_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300NEJLGBBFDPH {
-      get { return unk3300NEJLGBBFDPH_; }
+    public bool PassedDungeon {
+      get { return passedDungeon_; }
       set {
-        unk3300NEJLGBBFDPH_ = value;
+        passedDungeon_ = value;
       }
     }
 
@@ -151,8 +151,8 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (TrialAvatarIndexId != other.TrialAvatarIndexId) return false;
-      if (Unk3300IFEPGCKHODL != other.Unk3300IFEPGCKHODL) return false;
-      if (Unk3300NEJLGBBFDPH != other.Unk3300NEJLGBBFDPH) return false;
+      if (ReceivedReward != other.ReceivedReward) return false;
+      if (PassedDungeon != other.PassedDungeon) return false;
       if (RewardId != other.RewardId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -162,8 +162,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (TrialAvatarIndexId != 0) hash ^= TrialAvatarIndexId.GetHashCode();
-      if (Unk3300IFEPGCKHODL != false) hash ^= Unk3300IFEPGCKHODL.GetHashCode();
-      if (Unk3300NEJLGBBFDPH != false) hash ^= Unk3300NEJLGBBFDPH.GetHashCode();
+      if (ReceivedReward != false) hash ^= ReceivedReward.GetHashCode();
+      if (PassedDungeon != false) hash ^= PassedDungeon.GetHashCode();
       if (RewardId != 0) hash ^= RewardId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -187,17 +187,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(32);
         output.WriteUInt32(TrialAvatarIndexId);
       }
-      if (Unk3300NEJLGBBFDPH != false) {
+      if (PassedDungeon != false) {
         output.WriteRawTag(40);
-        output.WriteBool(Unk3300NEJLGBBFDPH);
+        output.WriteBool(PassedDungeon);
       }
       if (RewardId != 0) {
         output.WriteRawTag(88);
         output.WriteUInt32(RewardId);
       }
-      if (Unk3300IFEPGCKHODL != false) {
+      if (ReceivedReward != false) {
         output.WriteRawTag(112);
-        output.WriteBool(Unk3300IFEPGCKHODL);
+        output.WriteBool(ReceivedReward);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -213,17 +213,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(32);
         output.WriteUInt32(TrialAvatarIndexId);
       }
-      if (Unk3300NEJLGBBFDPH != false) {
+      if (PassedDungeon != false) {
         output.WriteRawTag(40);
-        output.WriteBool(Unk3300NEJLGBBFDPH);
+        output.WriteBool(PassedDungeon);
       }
       if (RewardId != 0) {
         output.WriteRawTag(88);
         output.WriteUInt32(RewardId);
       }
-      if (Unk3300IFEPGCKHODL != false) {
+      if (ReceivedReward != false) {
         output.WriteRawTag(112);
-        output.WriteBool(Unk3300IFEPGCKHODL);
+        output.WriteBool(ReceivedReward);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -238,10 +238,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (TrialAvatarIndexId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TrialAvatarIndexId);
       }
-      if (Unk3300IFEPGCKHODL != false) {
+      if (ReceivedReward != false) {
         size += 1 + 1;
       }
-      if (Unk3300NEJLGBBFDPH != false) {
+      if (PassedDungeon != false) {
         size += 1 + 1;
       }
       if (RewardId != 0) {
@@ -262,11 +262,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.TrialAvatarIndexId != 0) {
         TrialAvatarIndexId = other.TrialAvatarIndexId;
       }
-      if (other.Unk3300IFEPGCKHODL != false) {
-        Unk3300IFEPGCKHODL = other.Unk3300IFEPGCKHODL;
+      if (other.ReceivedReward != false) {
+        ReceivedReward = other.ReceivedReward;
       }
-      if (other.Unk3300NEJLGBBFDPH != false) {
-        Unk3300NEJLGBBFDPH = other.Unk3300NEJLGBBFDPH;
+      if (other.PassedDungeon != false) {
+        PassedDungeon = other.PassedDungeon;
       }
       if (other.RewardId != 0) {
         RewardId = other.RewardId;
@@ -291,7 +291,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk3300NEJLGBBFDPH = input.ReadBool();
+            PassedDungeon = input.ReadBool();
             break;
           }
           case 88: {
@@ -299,7 +299,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk3300IFEPGCKHODL = input.ReadBool();
+            ReceivedReward = input.ReadBool();
             break;
           }
         }
@@ -322,7 +322,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 40: {
-            Unk3300NEJLGBBFDPH = input.ReadBool();
+            PassedDungeon = input.ReadBool();
             break;
           }
           case 88: {
@@ -330,7 +330,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk3300IFEPGCKHODL = input.ReadBool();
+            ReceivedReward = input.ReadBool();
             break;
           }
         }

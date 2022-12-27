@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ScenePlayOutofRegionNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBTY2VuZVBsYXlPdXRvZlJlZ2lvbk5vdGlmeS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byItChpTY2VuZVBsYXlPdXRvZlJlZ2lv",
-            "bk5vdGlmeRIPCgdwbGF5X2lkGAYgASgNYgZwcm90bzM="));
+            "CiBTY2VuZVBsYXlPdXRvZlJlZ2lvbk5vdGlmeS5wcm90byItChpTY2VuZVBs",
+            "YXlPdXRvZlJlZ2lvbk5vdGlmeRIPCgdwbGF5X2lkGAYgASgNQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

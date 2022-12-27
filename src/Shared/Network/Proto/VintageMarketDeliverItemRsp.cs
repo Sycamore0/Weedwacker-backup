@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static VintageMarketDeliverItemRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFWaW50YWdlTWFya2V0RGVsaXZlckl0ZW1Sc3AucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iQQobVmludGFnZU1hcmtldERlbGl2",
-            "ZXJJdGVtUnNwEg8KB3JldGNvZGUYCSABKAUSEQoJdHJhZGVyX2lkGAYgASgN",
-            "YgZwcm90bzM="));
+            "CiFWaW50YWdlTWFya2V0RGVsaXZlckl0ZW1Sc3AucHJvdG8iQQobVmludGFn",
+            "ZU1hcmtldERlbGl2ZXJJdGVtUnNwEg8KB3JldGNvZGUYCSABKAUSEQoJdHJh",
+            "ZGVyX2lkGAYgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
+            "b3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

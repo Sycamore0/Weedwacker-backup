@@ -24,8 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static FishBattleBeginReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhGaXNoQmF0dGxlQmVnaW5SZXEucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8iFAoSRmlzaEJhdHRsZUJlZ2luUmVxYgZwcm90bzM="));
+            "ChhGaXNoQmF0dGxlQmVnaW5SZXEucHJvdG8iFAoSRmlzaEJhdHRsZUJlZ2lu",
+            "UmVxQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

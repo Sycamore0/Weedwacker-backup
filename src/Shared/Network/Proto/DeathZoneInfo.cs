@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static DeathZoneInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNEZWF0aFpvbmVJbmZvLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvIiwKDURlYXRoWm9uZUluZm8SCgoCaWQYAyABKA0SDwoHaXNf",
-            "b3BlbhgMIAEoCGIGcHJvdG8z"));
+            "ChNEZWF0aFpvbmVJbmZvLnByb3RvIiwKDURlYXRoWm9uZUluZm8SCgoCaWQY",
+            "AyABKA0SDwoHaXNfb3BlbhgMIAEoCEIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

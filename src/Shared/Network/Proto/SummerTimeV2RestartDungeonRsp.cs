@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static SummerTimeV2RestartDungeonRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNTdW1tZXJUaW1lVjJSZXN0YXJ0RHVuZ2VvblJzcC5wcm90bxIfV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90byIwCh1TdW1tZXJUaW1lVjJSZXN0",
-            "YXJ0RHVuZ2VvblJzcBIPCgdyZXRjb2RlGA8gASgFYgZwcm90bzM="));
+            "CiNTdW1tZXJUaW1lVjJSZXN0YXJ0RHVuZ2VvblJzcC5wcm90byIwCh1TdW1t",
+            "ZXJUaW1lVjJSZXN0YXJ0RHVuZ2VvblJzcBIPCgdyZXRjb2RlGA8gASgFQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

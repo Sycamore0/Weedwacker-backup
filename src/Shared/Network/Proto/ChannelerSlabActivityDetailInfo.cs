@@ -24,18 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static ChannelerSlabActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiVDaGFubmVsZXJTbGFiQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvEh9XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvGhtDaGFubmVsZXJTbGFiQnVm",
-            "ZkluZm8ucHJvdG8aIUNoYW5uZWxlclNsYWJDaGFsbGVuZ2VTdGFnZS5wcm90",
-            "bxonQ2hhbm5lbGVyU2xhYkxvb3BEdW5nZW9uU3RhZ2VJbmZvLnByb3RvIroC",
-            "Ch9DaGFubmVsZXJTbGFiQWN0aXZpdHlEZXRhaWxJbmZvEmMKF2xvb3BfZHVu",
-            "Z2Vvbl9zdGFnZV9pbmZvGAIgASgLMkIuV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90by5DaGFubmVsZXJTbGFiTG9vcER1bmdlb25TdGFnZUluZm8S",
-            "SQoJYnVmZl9pbmZvGAkgASgLMjYuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90by5DaGFubmVsZXJTbGFiQnVmZkluZm8SUAoKc3RhZ2VfbGlzdBgI",
-            "IAMoCzI8LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQ2hhbm5l",
-            "bGVyU2xhYkNoYWxsZW5nZVN0YWdlEhUKDXBsYXlfZW5kX3RpbWUYDiABKA1i",
-            "BnByb3RvMw=="));
+            "CiVDaGFubmVsZXJTbGFiQWN0aXZpdHlEZXRhaWxJbmZvLnByb3RvGhtDaGFu",
+            "bmVsZXJTbGFiQnVmZkluZm8ucHJvdG8aIUNoYW5uZWxlclNsYWJDaGFsbGVu",
+            "Z2VTdGFnZS5wcm90bxonQ2hhbm5lbGVyU2xhYkxvb3BEdW5nZW9uU3RhZ2VJ",
+            "bmZvLnByb3RvItoBCh9DaGFubmVsZXJTbGFiQWN0aXZpdHlEZXRhaWxJbmZv",
+            "EkMKF2xvb3BfZHVuZ2Vvbl9zdGFnZV9pbmZvGAIgASgLMiIuQ2hhbm5lbGVy",
+            "U2xhYkxvb3BEdW5nZW9uU3RhZ2VJbmZvEikKCWJ1ZmZfaW5mbxgJIAEoCzIW",
+            "LkNoYW5uZWxlclNsYWJCdWZmSW5mbxIwCgpzdGFnZV9saXN0GAggAygLMhwu",
+            "Q2hhbm5lbGVyU2xhYkNoYWxsZW5nZVN0YWdlEhUKDXBsYXlfZW5kX3RpbWUY",
+            "DiABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ChannelerSlabBuffInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChannelerSlabChallengeStageReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChannelerSlabLoopDungeonStageInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

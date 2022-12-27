@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static InferenceWordInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdJbmZlcmVuY2VXb3JkSW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byKWAQoRSW5mZXJlbmNlV29yZEluZm8SGwoTVW5rMzMw",
-            "MF9CRk9HS09ISUVFShgMIAEoCBIZChF1bmxvY2tfYnlfd29yZF9pZBgLIAEo",
-            "DRIbChNVbmszMzAwX1BLQkNBT0hHTkxNGAogASgIEg8KB3dvcmRfaWQYAiAB",
-            "KA0SGwoTVW5rMzMwMF9KUEhMRUNPSUdLRhgDIAEoCGIGcHJvdG8z"));
+            "ChdJbmZlcmVuY2VXb3JkSW5mby5wcm90byJ+ChFJbmZlcmVuY2VXb3JkSW5m",
+            "bxIRCglpc19zdWJtaXQYDCABKAgSGQoRdW5sb2NrX2J5X3dvcmRfaWQYCyAB",
+            "KA0SFAoMaXNfYXNzb2NpYXRlGAogASgIEg8KB3dvcmRfaWQYAiABKA0SFAoM",
+            "aXNfaW50ZXJwcmV0GAMgASgIQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
+            "b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.InferenceWordInfo), global::Weedwacker.Shared.Network.Proto.InferenceWordInfo.Parser, new[]{ "Unk3300BFOGKOHIEEJ", "UnlockByWordId", "Unk3300PKBCAOHGNLM", "WordId", "Unk3300JPHLECOIGKF" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.InferenceWordInfo), global::Weedwacker.Shared.Network.Proto.InferenceWordInfo.Parser, new[]{ "IsSubmit", "UnlockByWordId", "IsAssociate", "WordId", "IsInterpret" }, null, null, null, null)
           }));
     }
     #endregion
@@ -73,11 +73,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InferenceWordInfo(InferenceWordInfo other) : this() {
-      unk3300BFOGKOHIEEJ_ = other.unk3300BFOGKOHIEEJ_;
+      isSubmit_ = other.isSubmit_;
       unlockByWordId_ = other.unlockByWordId_;
-      unk3300PKBCAOHGNLM_ = other.unk3300PKBCAOHGNLM_;
+      isAssociate_ = other.isAssociate_;
       wordId_ = other.wordId_;
-      unk3300JPHLECOIGKF_ = other.unk3300JPHLECOIGKF_;
+      isInterpret_ = other.isInterpret_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -87,15 +87,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new InferenceWordInfo(this);
     }
 
-    /// <summary>Field number for the "Unk3300_BFOGKOHIEEJ" field.</summary>
-    public const int Unk3300BFOGKOHIEEJFieldNumber = 12;
-    private bool unk3300BFOGKOHIEEJ_;
+    /// <summary>Field number for the "is_submit" field.</summary>
+    public const int IsSubmitFieldNumber = 12;
+    private bool isSubmit_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300BFOGKOHIEEJ {
-      get { return unk3300BFOGKOHIEEJ_; }
+    public bool IsSubmit {
+      get { return isSubmit_; }
       set {
-        unk3300BFOGKOHIEEJ_ = value;
+        isSubmit_ = value;
       }
     }
 
@@ -111,15 +111,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_PKBCAOHGNLM" field.</summary>
-    public const int Unk3300PKBCAOHGNLMFieldNumber = 10;
-    private bool unk3300PKBCAOHGNLM_;
+    /// <summary>Field number for the "is_associate" field.</summary>
+    public const int IsAssociateFieldNumber = 10;
+    private bool isAssociate_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300PKBCAOHGNLM {
-      get { return unk3300PKBCAOHGNLM_; }
+    public bool IsAssociate {
+      get { return isAssociate_; }
       set {
-        unk3300PKBCAOHGNLM_ = value;
+        isAssociate_ = value;
       }
     }
 
@@ -135,15 +135,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_JPHLECOIGKF" field.</summary>
-    public const int Unk3300JPHLECOIGKFFieldNumber = 3;
-    private bool unk3300JPHLECOIGKF_;
+    /// <summary>Field number for the "is_interpret" field.</summary>
+    public const int IsInterpretFieldNumber = 3;
+    private bool isInterpret_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300JPHLECOIGKF {
-      get { return unk3300JPHLECOIGKF_; }
+    public bool IsInterpret {
+      get { return isInterpret_; }
       set {
-        unk3300JPHLECOIGKF_ = value;
+        isInterpret_ = value;
       }
     }
 
@@ -162,11 +162,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300BFOGKOHIEEJ != other.Unk3300BFOGKOHIEEJ) return false;
+      if (IsSubmit != other.IsSubmit) return false;
       if (UnlockByWordId != other.UnlockByWordId) return false;
-      if (Unk3300PKBCAOHGNLM != other.Unk3300PKBCAOHGNLM) return false;
+      if (IsAssociate != other.IsAssociate) return false;
       if (WordId != other.WordId) return false;
-      if (Unk3300JPHLECOIGKF != other.Unk3300JPHLECOIGKF) return false;
+      if (IsInterpret != other.IsInterpret) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -174,11 +174,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300BFOGKOHIEEJ != false) hash ^= Unk3300BFOGKOHIEEJ.GetHashCode();
+      if (IsSubmit != false) hash ^= IsSubmit.GetHashCode();
       if (UnlockByWordId != 0) hash ^= UnlockByWordId.GetHashCode();
-      if (Unk3300PKBCAOHGNLM != false) hash ^= Unk3300PKBCAOHGNLM.GetHashCode();
+      if (IsAssociate != false) hash ^= IsAssociate.GetHashCode();
       if (WordId != 0) hash ^= WordId.GetHashCode();
-      if (Unk3300JPHLECOIGKF != false) hash ^= Unk3300JPHLECOIGKF.GetHashCode();
+      if (IsInterpret != false) hash ^= IsInterpret.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -201,21 +201,21 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(WordId);
       }
-      if (Unk3300JPHLECOIGKF != false) {
+      if (IsInterpret != false) {
         output.WriteRawTag(24);
-        output.WriteBool(Unk3300JPHLECOIGKF);
+        output.WriteBool(IsInterpret);
       }
-      if (Unk3300PKBCAOHGNLM != false) {
+      if (IsAssociate != false) {
         output.WriteRawTag(80);
-        output.WriteBool(Unk3300PKBCAOHGNLM);
+        output.WriteBool(IsAssociate);
       }
       if (UnlockByWordId != 0) {
         output.WriteRawTag(88);
         output.WriteUInt32(UnlockByWordId);
       }
-      if (Unk3300BFOGKOHIEEJ != false) {
+      if (IsSubmit != false) {
         output.WriteRawTag(96);
-        output.WriteBool(Unk3300BFOGKOHIEEJ);
+        output.WriteBool(IsSubmit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -231,21 +231,21 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(WordId);
       }
-      if (Unk3300JPHLECOIGKF != false) {
+      if (IsInterpret != false) {
         output.WriteRawTag(24);
-        output.WriteBool(Unk3300JPHLECOIGKF);
+        output.WriteBool(IsInterpret);
       }
-      if (Unk3300PKBCAOHGNLM != false) {
+      if (IsAssociate != false) {
         output.WriteRawTag(80);
-        output.WriteBool(Unk3300PKBCAOHGNLM);
+        output.WriteBool(IsAssociate);
       }
       if (UnlockByWordId != 0) {
         output.WriteRawTag(88);
         output.WriteUInt32(UnlockByWordId);
       }
-      if (Unk3300BFOGKOHIEEJ != false) {
+      if (IsSubmit != false) {
         output.WriteRawTag(96);
-        output.WriteBool(Unk3300BFOGKOHIEEJ);
+        output.WriteBool(IsSubmit);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -257,19 +257,19 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300BFOGKOHIEEJ != false) {
+      if (IsSubmit != false) {
         size += 1 + 1;
       }
       if (UnlockByWordId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(UnlockByWordId);
       }
-      if (Unk3300PKBCAOHGNLM != false) {
+      if (IsAssociate != false) {
         size += 1 + 1;
       }
       if (WordId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(WordId);
       }
-      if (Unk3300JPHLECOIGKF != false) {
+      if (IsInterpret != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -284,20 +284,20 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300BFOGKOHIEEJ != false) {
-        Unk3300BFOGKOHIEEJ = other.Unk3300BFOGKOHIEEJ;
+      if (other.IsSubmit != false) {
+        IsSubmit = other.IsSubmit;
       }
       if (other.UnlockByWordId != 0) {
         UnlockByWordId = other.UnlockByWordId;
       }
-      if (other.Unk3300PKBCAOHGNLM != false) {
-        Unk3300PKBCAOHGNLM = other.Unk3300PKBCAOHGNLM;
+      if (other.IsAssociate != false) {
+        IsAssociate = other.IsAssociate;
       }
       if (other.WordId != 0) {
         WordId = other.WordId;
       }
-      if (other.Unk3300JPHLECOIGKF != false) {
-        Unk3300JPHLECOIGKF = other.Unk3300JPHLECOIGKF;
+      if (other.IsInterpret != false) {
+        IsInterpret = other.IsInterpret;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -319,11 +319,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300JPHLECOIGKF = input.ReadBool();
+            IsInterpret = input.ReadBool();
             break;
           }
           case 80: {
-            Unk3300PKBCAOHGNLM = input.ReadBool();
+            IsAssociate = input.ReadBool();
             break;
           }
           case 88: {
@@ -331,7 +331,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk3300BFOGKOHIEEJ = input.ReadBool();
+            IsSubmit = input.ReadBool();
             break;
           }
         }
@@ -354,11 +354,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300JPHLECOIGKF = input.ReadBool();
+            IsInterpret = input.ReadBool();
             break;
           }
           case 80: {
-            Unk3300PKBCAOHGNLM = input.ReadBool();
+            IsAssociate = input.ReadBool();
             break;
           }
           case 88: {
@@ -366,7 +366,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk3300BFOGKOHIEEJ = input.ReadBool();
+            IsSubmit = input.ReadBool();
             break;
           }
         }

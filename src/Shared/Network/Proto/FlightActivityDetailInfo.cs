@@ -24,12 +24,12 @@ namespace Weedwacker.Shared.Network.Proto {
     static FlightActivityDetailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5GbGlnaHRBY3Rpdml0eURldGFpbEluZm8ucHJvdG8SH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8aF0ZsaWdodERhaWx5UmVjb3JkLnByb3Rv",
-            "IqMBChhGbGlnaHRBY3Rpdml0eURldGFpbEluZm8STQoRZGFpbHlfcmVjb3Jk",
-            "X2xpc3QYDCADKAsyMi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
-            "LkZsaWdodERhaWx5UmVjb3JkEhkKEXByZXZpZXdfcmV3YXJkX2lkGAEgASgN",
-            "Eh0KFW1pbl9vcGVuX3BsYXllcl9sZXZlbBgEIAEoDWIGcHJvdG8z"));
+            "Ch5GbGlnaHRBY3Rpdml0eURldGFpbEluZm8ucHJvdG8aF0ZsaWdodERhaWx5",
+            "UmVjb3JkLnByb3RvIoMBChhGbGlnaHRBY3Rpdml0eURldGFpbEluZm8SLQoR",
+            "ZGFpbHlfcmVjb3JkX2xpc3QYDCADKAsyEi5GbGlnaHREYWlseVJlY29yZBIZ",
+            "ChFwcmV2aWV3X3Jld2FyZF9pZBgBIAEoDRIdChVtaW5fb3Blbl9wbGF5ZXJf",
+            "bGV2ZWwYBCABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
+            "dG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.FlightDailyRecordReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

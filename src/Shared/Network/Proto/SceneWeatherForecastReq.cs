@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneWeatherForecastReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1TY2VuZVdlYXRoZXJGb3JlY2FzdFJlcS5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90byIyChdTY2VuZVdlYXRoZXJGb3JlY2FzdFJl",
-            "cRIXCg93ZWF0aGVyX2FyZWFfaWQYCSABKA1iBnByb3RvMw=="));
+            "Ch1TY2VuZVdlYXRoZXJGb3JlY2FzdFJlcS5wcm90byIyChdTY2VuZVdlYXRo",
+            "ZXJGb3JlY2FzdFJlcRIXCg93ZWF0aGVyX2FyZWFfaWQYCSABKA1CIqoCH1dl",
+            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

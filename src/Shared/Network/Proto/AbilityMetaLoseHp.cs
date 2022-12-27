@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static AbilityMetaLoseHpReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdBYmlsaXR5TWV0YUxvc2VIcC5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byIvChFBYmlsaXR5TWV0YUxvc2VIcBIaChJsb3NlX2hw",
-            "X2NvbmZpZ19pZHgYDyABKA1iBnByb3RvMw=="));
+            "ChdBYmlsaXR5TWV0YUxvc2VIcC5wcm90byIvChFBYmlsaXR5TWV0YUxvc2VI",
+            "cBIaChJsb3NlX2hwX2NvbmZpZ19pZHgYDyABKA1CIqoCH1dlZWR3YWNrZXIu",
+            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

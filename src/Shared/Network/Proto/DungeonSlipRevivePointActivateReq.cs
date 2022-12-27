@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static DungeonSlipRevivePointActivateReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CidEdW5nZW9uU2xpcFJldml2ZVBvaW50QWN0aXZhdGVSZXEucHJvdG8SH1dl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iQQohRHVuZ2VvblNsaXBS",
-            "ZXZpdmVQb2ludEFjdGl2YXRlUmVxEhwKFHNsaXBfcmV2aXZlX3BvaW50X2lk",
-            "GAggASgNYgZwcm90bzM="));
+            "CidEdW5nZW9uU2xpcFJldml2ZVBvaW50QWN0aXZhdGVSZXEucHJvdG8iQQoh",
+            "RHVuZ2VvblNsaXBSZXZpdmVQb2ludEFjdGl2YXRlUmVxEhwKFHNsaXBfcmV2",
+            "aXZlX3BvaW50X2lkGAggASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
+            "b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

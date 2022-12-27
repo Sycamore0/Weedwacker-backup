@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static CoopChapterUpdateNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1Db29wQ2hhcHRlclVwZGF0ZU5vdGlmeS5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90bxoRQ29vcENoYXB0ZXIucHJvdG8iXQoXQ29v",
-            "cENoYXB0ZXJVcGRhdGVOb3RpZnkSQgoMY2hhcHRlcl9saXN0GAQgAygLMiwu",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5Db29wQ2hhcHRlcmIG",
-            "cHJvdG8z"));
+            "Ch1Db29wQ2hhcHRlclVwZGF0ZU5vdGlmeS5wcm90bxoRQ29vcENoYXB0ZXIu",
+            "cHJvdG8iPQoXQ29vcENoYXB0ZXJVcGRhdGVOb3RpZnkSIgoMY2hhcHRlcl9s",
+            "aXN0GAQgAygLMgwuQ29vcENoYXB0ZXJCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.CoopChapterReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

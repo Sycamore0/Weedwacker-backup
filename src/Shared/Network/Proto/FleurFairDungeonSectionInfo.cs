@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static FleurFairDungeonSectionInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFGbGV1ckZhaXJEdW5nZW9uU2VjdGlvbkluZm8ucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iVQobRmxldXJGYWlyRHVuZ2VvblNl",
-            "Y3Rpb25JbmZvEg8KB2lzX29wZW4YBiABKAgSEgoKc2VjdGlvbl9pZBgOIAEo",
-            "DRIRCglvcGVuX3RpbWUYDyABKA1iBnByb3RvMw=="));
+            "CiFGbGV1ckZhaXJEdW5nZW9uU2VjdGlvbkluZm8ucHJvdG8iVQobRmxldXJG",
+            "YWlyRHVuZ2VvblNlY3Rpb25JbmZvEg8KB2lzX29wZW4YBiABKAgSEgoKc2Vj",
+            "dGlvbl9pZBgOIAEoDRIRCglvcGVuX3RpbWUYDyABKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

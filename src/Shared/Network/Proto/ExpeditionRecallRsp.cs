@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ExpeditionRecallRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlFeHBlZGl0aW9uUmVjYWxsUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvIjcKE0V4cGVkaXRpb25SZWNhbGxSc3ASDwoHcGF0",
-            "aF9pZBgCIAEoDRIPCgdyZXRjb2RlGAQgASgFYgZwcm90bzM="));
+            "ChlFeHBlZGl0aW9uUmVjYWxsUnNwLnByb3RvIjcKE0V4cGVkaXRpb25SZWNh",
+            "bGxSc3ASDwoHcGF0aF9pZBgCIAEoDRIPCgdyZXRjb2RlGAQgASgFQiKqAh9X",
+            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

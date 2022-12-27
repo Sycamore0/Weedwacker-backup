@@ -24,21 +24,20 @@ namespace Weedwacker.Shared.Network.Proto {
     static AvatarUpgradeRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZBdmF0YXJVcGdyYWRlUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvIqQDChBBdmF0YXJVcGdyYWRlUnNwEg8KB3JldGNvZGUY",
-            "CCABKAUSEwoLYXZhdGFyX2d1aWQYDiABKAQSEQoJY3VyX2xldmVsGAkgASgN",
-            "EmYKE1VuazMzMDBfT0lNUEZDRENER0EYDSADKAsySS5XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvLkF2YXRhclVwZ3JhZGVSc3AuVW5rMzMwME9J",
-            "TVBGQ0RDREdBRW50cnkSZgoTVW5rMzMwMF9CRk5ISE5LT0xCSBgGIAMoCzJJ",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQXZhdGFyVXBncmFk",
-            "ZVJzcC5VbmszMzAwQkZOSEhOS09MQkhFbnRyeRIRCglvbGRfbGV2ZWwYDCAB",
-            "KA0aOQoXVW5rMzMwME9JTVBGQ0RDREdBRW50cnkSCwoDa2V5GAEgASgNEg0K",
-            "BXZhbHVlGAIgASgCOgI4ARo5ChdVbmszMzAwQkZOSEhOS09MQkhFbnRyeRIL",
-            "CgNrZXkYASABKA0SDQoFdmFsdWUYAiABKAI6AjgBYgZwcm90bzM="));
+            "ChZBdmF0YXJVcGdyYWRlUnNwLnByb3RvItYCChBBdmF0YXJVcGdyYWRlUnNw",
+            "Eg8KB3JldGNvZGUYCCABKAUSEwoLYXZhdGFyX2d1aWQYDiABKAQSEQoJY3Vy",
+            "X2xldmVsGAkgASgNEkIKEmN1cl9maWdodF9wcm9wX21hcBgNIAMoCzImLkF2",
+            "YXRhclVwZ3JhZGVSc3AuQ3VyRmlnaHRQcm9wTWFwRW50cnkSQgoSb2xkX2Zp",
+            "Z2h0X3Byb3BfbWFwGAYgAygLMiYuQXZhdGFyVXBncmFkZVJzcC5PbGRGaWdo",
+            "dFByb3BNYXBFbnRyeRIRCglvbGRfbGV2ZWwYDCABKA0aNgoUQ3VyRmlnaHRQ",
+            "cm9wTWFwRW50cnkSCwoDa2V5GAEgASgNEg0KBXZhbHVlGAIgASgCOgI4ARo2",
+            "ChRPbGRGaWdodFByb3BNYXBFbnRyeRILCgNrZXkYASABKA0SDQoFdmFsdWUY",
+            "AiABKAI6AjgBQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AvatarUpgradeRsp), global::Weedwacker.Shared.Network.Proto.AvatarUpgradeRsp.Parser, new[]{ "Retcode", "AvatarGuid", "CurLevel", "Unk3300OIMPFCDCDGA", "Unk3300BFNHHNKOLBH", "OldLevel" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AvatarUpgradeRsp), global::Weedwacker.Shared.Network.Proto.AvatarUpgradeRsp.Parser, new[]{ "Retcode", "AvatarGuid", "CurLevel", "CurFightPropMap", "OldFightPropMap", "OldLevel" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
           }));
     }
     #endregion
@@ -91,8 +90,8 @@ namespace Weedwacker.Shared.Network.Proto {
       retcode_ = other.retcode_;
       avatarGuid_ = other.avatarGuid_;
       curLevel_ = other.curLevel_;
-      unk3300OIMPFCDCDGA_ = other.unk3300OIMPFCDCDGA_.Clone();
-      unk3300BFNHHNKOLBH_ = other.unk3300BFNHHNKOLBH_.Clone();
+      curFightPropMap_ = other.curFightPropMap_.Clone();
+      oldFightPropMap_ = other.oldFightPropMap_.Clone();
       oldLevel_ = other.oldLevel_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -139,26 +138,26 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_OIMPFCDCDGA" field.</summary>
-    public const int Unk3300OIMPFCDCDGAFieldNumber = 13;
-    private static readonly pbc::MapField<uint, float>.Codec _map_unk3300OIMPFCDCDGA_codec
+    /// <summary>Field number for the "cur_fight_prop_map" field.</summary>
+    public const int CurFightPropMapFieldNumber = 13;
+    private static readonly pbc::MapField<uint, float>.Codec _map_curFightPropMap_codec
         = new pbc::MapField<uint, float>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForFloat(21, 0F), 106);
-    private readonly pbc::MapField<uint, float> unk3300OIMPFCDCDGA_ = new pbc::MapField<uint, float>();
+    private readonly pbc::MapField<uint, float> curFightPropMap_ = new pbc::MapField<uint, float>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, float> Unk3300OIMPFCDCDGA {
-      get { return unk3300OIMPFCDCDGA_; }
+    public pbc::MapField<uint, float> CurFightPropMap {
+      get { return curFightPropMap_; }
     }
 
-    /// <summary>Field number for the "Unk3300_BFNHHNKOLBH" field.</summary>
-    public const int Unk3300BFNHHNKOLBHFieldNumber = 6;
-    private static readonly pbc::MapField<uint, float>.Codec _map_unk3300BFNHHNKOLBH_codec
+    /// <summary>Field number for the "old_fight_prop_map" field.</summary>
+    public const int OldFightPropMapFieldNumber = 6;
+    private static readonly pbc::MapField<uint, float>.Codec _map_oldFightPropMap_codec
         = new pbc::MapField<uint, float>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForFloat(21, 0F), 50);
-    private readonly pbc::MapField<uint, float> unk3300BFNHHNKOLBH_ = new pbc::MapField<uint, float>();
+    private readonly pbc::MapField<uint, float> oldFightPropMap_ = new pbc::MapField<uint, float>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, float> Unk3300BFNHHNKOLBH {
-      get { return unk3300BFNHHNKOLBH_; }
+    public pbc::MapField<uint, float> OldFightPropMap {
+      get { return oldFightPropMap_; }
     }
 
     /// <summary>Field number for the "old_level" field.</summary>
@@ -191,8 +190,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Retcode != other.Retcode) return false;
       if (AvatarGuid != other.AvatarGuid) return false;
       if (CurLevel != other.CurLevel) return false;
-      if (!Unk3300OIMPFCDCDGA.Equals(other.Unk3300OIMPFCDCDGA)) return false;
-      if (!Unk3300BFNHHNKOLBH.Equals(other.Unk3300BFNHHNKOLBH)) return false;
+      if (!CurFightPropMap.Equals(other.CurFightPropMap)) return false;
+      if (!OldFightPropMap.Equals(other.OldFightPropMap)) return false;
       if (OldLevel != other.OldLevel) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -204,8 +203,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
       if (AvatarGuid != 0UL) hash ^= AvatarGuid.GetHashCode();
       if (CurLevel != 0) hash ^= CurLevel.GetHashCode();
-      hash ^= Unk3300OIMPFCDCDGA.GetHashCode();
-      hash ^= Unk3300BFNHHNKOLBH.GetHashCode();
+      hash ^= CurFightPropMap.GetHashCode();
+      hash ^= OldFightPropMap.GetHashCode();
       if (OldLevel != 0) hash ^= OldLevel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -225,7 +224,7 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk3300BFNHHNKOLBH_.WriteTo(output, _map_unk3300BFNHHNKOLBH_codec);
+      oldFightPropMap_.WriteTo(output, _map_oldFightPropMap_codec);
       if (Retcode != 0) {
         output.WriteRawTag(64);
         output.WriteInt32(Retcode);
@@ -238,7 +237,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(96);
         output.WriteUInt32(OldLevel);
       }
-      unk3300OIMPFCDCDGA_.WriteTo(output, _map_unk3300OIMPFCDCDGA_codec);
+      curFightPropMap_.WriteTo(output, _map_curFightPropMap_codec);
       if (AvatarGuid != 0UL) {
         output.WriteRawTag(112);
         output.WriteUInt64(AvatarGuid);
@@ -253,7 +252,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk3300BFNHHNKOLBH_.WriteTo(ref output, _map_unk3300BFNHHNKOLBH_codec);
+      oldFightPropMap_.WriteTo(ref output, _map_oldFightPropMap_codec);
       if (Retcode != 0) {
         output.WriteRawTag(64);
         output.WriteInt32(Retcode);
@@ -266,7 +265,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(96);
         output.WriteUInt32(OldLevel);
       }
-      unk3300OIMPFCDCDGA_.WriteTo(ref output, _map_unk3300OIMPFCDCDGA_codec);
+      curFightPropMap_.WriteTo(ref output, _map_curFightPropMap_codec);
       if (AvatarGuid != 0UL) {
         output.WriteRawTag(112);
         output.WriteUInt64(AvatarGuid);
@@ -290,8 +289,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (CurLevel != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurLevel);
       }
-      size += unk3300OIMPFCDCDGA_.CalculateSize(_map_unk3300OIMPFCDCDGA_codec);
-      size += unk3300BFNHHNKOLBH_.CalculateSize(_map_unk3300BFNHHNKOLBH_codec);
+      size += curFightPropMap_.CalculateSize(_map_curFightPropMap_codec);
+      size += oldFightPropMap_.CalculateSize(_map_oldFightPropMap_codec);
       if (OldLevel != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OldLevel);
       }
@@ -316,8 +315,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.CurLevel != 0) {
         CurLevel = other.CurLevel;
       }
-      unk3300OIMPFCDCDGA_.Add(other.unk3300OIMPFCDCDGA_);
-      unk3300BFNHHNKOLBH_.Add(other.unk3300BFNHHNKOLBH_);
+      curFightPropMap_.Add(other.curFightPropMap_);
+      oldFightPropMap_.Add(other.oldFightPropMap_);
       if (other.OldLevel != 0) {
         OldLevel = other.OldLevel;
       }
@@ -337,7 +336,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 50: {
-            unk3300BFNHHNKOLBH_.AddEntriesFrom(input, _map_unk3300BFNHHNKOLBH_codec);
+            oldFightPropMap_.AddEntriesFrom(input, _map_oldFightPropMap_codec);
             break;
           }
           case 64: {
@@ -353,7 +352,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 106: {
-            unk3300OIMPFCDCDGA_.AddEntriesFrom(input, _map_unk3300OIMPFCDCDGA_codec);
+            curFightPropMap_.AddEntriesFrom(input, _map_curFightPropMap_codec);
             break;
           }
           case 112: {
@@ -376,7 +375,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 50: {
-            unk3300BFNHHNKOLBH_.AddEntriesFrom(ref input, _map_unk3300BFNHHNKOLBH_codec);
+            oldFightPropMap_.AddEntriesFrom(ref input, _map_oldFightPropMap_codec);
             break;
           }
           case 64: {
@@ -392,7 +391,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 106: {
-            unk3300OIMPFCDCDGA_.AddEntriesFrom(ref input, _map_unk3300OIMPFCDCDGA_codec);
+            curFightPropMap_.AddEntriesFrom(ref input, _map_curFightPropMap_codec);
             break;
           }
           case 112: {

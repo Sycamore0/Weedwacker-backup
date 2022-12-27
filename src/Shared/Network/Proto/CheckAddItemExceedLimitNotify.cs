@@ -24,22 +24,21 @@ namespace Weedwacker.Shared.Network.Proto {
     static CheckAddItemExceedLimitNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNDaGVja0FkZEl0ZW1FeGNlZWRMaW1pdE5vdGlmeS5wcm90bxIfV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90byKiAwodQ2hlY2tBZGRJdGVtRXhj",
-            "ZWVkTGltaXROb3RpZnkSGwoTVW5rMzMwMF9QS0pNRUpLQVBCSRgEIAMoDRIb",
-            "ChNVbmszMzAwX0dQRFBDSkxIQkRFGAsgAygNEg4KBnJlYXNvbhgJIAEoDRIP",
-            "Cgdpc19kcm9wGA4gASgIEmcKCG1zZ190eXBlGAYgASgOMlUuV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90by5DaGVja0FkZEl0ZW1FeGNlZWRMaW1p",
-            "dE5vdGlmeS5JdGVtRXhjZWVkTGltaXRNc2dUeXBlIrwBChZJdGVtRXhjZWVk",
-            "TGltaXRNc2dUeXBlEiYKIklURU1fRVhDRUVEX0xJTUlUX01TR19UWVBFX0RF",
-            "RkFVTFQQABIjCh9JVEVNX0VYQ0VFRF9MSU1JVF9NU0dfVFlQRV9URVhUEAES",
-            "JQohSVRFTV9FWENFRURfTElNSVRfTVNHX1RZUEVfRElBTE9HEAISLgoqSVRF",
-            "TV9FWENFRURfTElNSVRfTVNHX1RZUEVfRElBTE9HX05PTkJMT0NLEANiBnBy",
-            "b3RvMw=="));
+            "CiNDaGVja0FkZEl0ZW1FeGNlZWRMaW1pdE5vdGlmeS5wcm90byKFAwodQ2hl",
+            "Y2tBZGRJdGVtRXhjZWVkTGltaXROb3RpZnkSGgoSZXhjZWVkZWRfaXRlbV9s",
+            "aXN0GAQgAygNEh8KF2V4Y2VlZGVkX2l0ZW1fdHlwZV9saXN0GAsgAygNEg4K",
+            "BnJlYXNvbhgJIAEoDRIPCgdpc19kcm9wGA4gASgIEkcKCG1zZ190eXBlGAYg",
+            "ASgOMjUuQ2hlY2tBZGRJdGVtRXhjZWVkTGltaXROb3RpZnkuSXRlbUV4Y2Vl",
+            "ZExpbWl0TXNnVHlwZSK8AQoWSXRlbUV4Y2VlZExpbWl0TXNnVHlwZRImCiJJ",
+            "VEVNX0VYQ0VFRF9MSU1JVF9NU0dfVFlQRV9ERUZBVUxUEAASIwofSVRFTV9F",
+            "WENFRURfTElNSVRfTVNHX1RZUEVfVEVYVBABEiUKIUlURU1fRVhDRUVEX0xJ",
+            "TUlUX01TR19UWVBFX0RJQUxPRxACEi4KKklURU1fRVhDRUVEX0xJTUlUX01T",
+            "R19UWVBFX0RJQUxPR19OT05CTE9DSxADQiKqAh9XZWVkd2Fja2VyLlNoYXJl",
+            "ZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify), global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Parser, new[]{ "Unk3300PKJMEJKAPBI", "Unk3300GPDPCJLHBDE", "Reason", "IsDrop", "MsgType" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType) }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify), global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Parser, new[]{ "ExceededItemList", "ExceededItemTypeList", "Reason", "IsDrop", "MsgType" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType) }, null, null)
           }));
     }
     #endregion
@@ -89,8 +88,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CheckAddItemExceedLimitNotify(CheckAddItemExceedLimitNotify other) : this() {
-      unk3300PKJMEJKAPBI_ = other.unk3300PKJMEJKAPBI_.Clone();
-      unk3300GPDPCJLHBDE_ = other.unk3300GPDPCJLHBDE_.Clone();
+      exceededItemList_ = other.exceededItemList_.Clone();
+      exceededItemTypeList_ = other.exceededItemTypeList_.Clone();
       reason_ = other.reason_;
       isDrop_ = other.isDrop_;
       msgType_ = other.msgType_;
@@ -103,26 +102,26 @@ namespace Weedwacker.Shared.Network.Proto {
       return new CheckAddItemExceedLimitNotify(this);
     }
 
-    /// <summary>Field number for the "Unk3300_PKJMEJKAPBI" field.</summary>
-    public const int Unk3300PKJMEJKAPBIFieldNumber = 4;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300PKJMEJKAPBI_codec
+    /// <summary>Field number for the "exceeded_item_list" field.</summary>
+    public const int ExceededItemListFieldNumber = 4;
+    private static readonly pb::FieldCodec<uint> _repeated_exceededItemList_codec
         = pb::FieldCodec.ForUInt32(34);
-    private readonly pbc::RepeatedField<uint> unk3300PKJMEJKAPBI_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> exceededItemList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300PKJMEJKAPBI {
-      get { return unk3300PKJMEJKAPBI_; }
+    public pbc::RepeatedField<uint> ExceededItemList {
+      get { return exceededItemList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_GPDPCJLHBDE" field.</summary>
-    public const int Unk3300GPDPCJLHBDEFieldNumber = 11;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300GPDPCJLHBDE_codec
+    /// <summary>Field number for the "exceeded_item_type_list" field.</summary>
+    public const int ExceededItemTypeListFieldNumber = 11;
+    private static readonly pb::FieldCodec<uint> _repeated_exceededItemTypeList_codec
         = pb::FieldCodec.ForUInt32(90);
-    private readonly pbc::RepeatedField<uint> unk3300GPDPCJLHBDE_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> exceededItemTypeList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300GPDPCJLHBDE {
-      get { return unk3300GPDPCJLHBDE_; }
+    public pbc::RepeatedField<uint> ExceededItemTypeList {
+      get { return exceededItemTypeList_; }
     }
 
     /// <summary>Field number for the "reason" field.</summary>
@@ -176,8 +175,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk3300PKJMEJKAPBI_.Equals(other.unk3300PKJMEJKAPBI_)) return false;
-      if(!unk3300GPDPCJLHBDE_.Equals(other.unk3300GPDPCJLHBDE_)) return false;
+      if(!exceededItemList_.Equals(other.exceededItemList_)) return false;
+      if(!exceededItemTypeList_.Equals(other.exceededItemTypeList_)) return false;
       if (Reason != other.Reason) return false;
       if (IsDrop != other.IsDrop) return false;
       if (MsgType != other.MsgType) return false;
@@ -188,8 +187,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk3300PKJMEJKAPBI_.GetHashCode();
-      hash ^= unk3300GPDPCJLHBDE_.GetHashCode();
+      hash ^= exceededItemList_.GetHashCode();
+      hash ^= exceededItemTypeList_.GetHashCode();
       if (Reason != 0) hash ^= Reason.GetHashCode();
       if (IsDrop != false) hash ^= IsDrop.GetHashCode();
       if (MsgType != global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType.Default) hash ^= MsgType.GetHashCode();
@@ -211,7 +210,7 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk3300PKJMEJKAPBI_.WriteTo(output, _repeated_unk3300PKJMEJKAPBI_codec);
+      exceededItemList_.WriteTo(output, _repeated_exceededItemList_codec);
       if (MsgType != global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType.Default) {
         output.WriteRawTag(48);
         output.WriteEnum((int) MsgType);
@@ -220,7 +219,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(72);
         output.WriteUInt32(Reason);
       }
-      unk3300GPDPCJLHBDE_.WriteTo(output, _repeated_unk3300GPDPCJLHBDE_codec);
+      exceededItemTypeList_.WriteTo(output, _repeated_exceededItemTypeList_codec);
       if (IsDrop != false) {
         output.WriteRawTag(112);
         output.WriteBool(IsDrop);
@@ -235,7 +234,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk3300PKJMEJKAPBI_.WriteTo(ref output, _repeated_unk3300PKJMEJKAPBI_codec);
+      exceededItemList_.WriteTo(ref output, _repeated_exceededItemList_codec);
       if (MsgType != global::Weedwacker.Shared.Network.Proto.CheckAddItemExceedLimitNotify.Types.ItemExceedLimitMsgType.Default) {
         output.WriteRawTag(48);
         output.WriteEnum((int) MsgType);
@@ -244,7 +243,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(72);
         output.WriteUInt32(Reason);
       }
-      unk3300GPDPCJLHBDE_.WriteTo(ref output, _repeated_unk3300GPDPCJLHBDE_codec);
+      exceededItemTypeList_.WriteTo(ref output, _repeated_exceededItemTypeList_codec);
       if (IsDrop != false) {
         output.WriteRawTag(112);
         output.WriteBool(IsDrop);
@@ -259,8 +258,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk3300PKJMEJKAPBI_.CalculateSize(_repeated_unk3300PKJMEJKAPBI_codec);
-      size += unk3300GPDPCJLHBDE_.CalculateSize(_repeated_unk3300GPDPCJLHBDE_codec);
+      size += exceededItemList_.CalculateSize(_repeated_exceededItemList_codec);
+      size += exceededItemTypeList_.CalculateSize(_repeated_exceededItemTypeList_codec);
       if (Reason != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Reason);
       }
@@ -282,8 +281,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk3300PKJMEJKAPBI_.Add(other.unk3300PKJMEJKAPBI_);
-      unk3300GPDPCJLHBDE_.Add(other.unk3300GPDPCJLHBDE_);
+      exceededItemList_.Add(other.exceededItemList_);
+      exceededItemTypeList_.Add(other.exceededItemTypeList_);
       if (other.Reason != 0) {
         Reason = other.Reason;
       }
@@ -310,7 +309,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 34:
           case 32: {
-            unk3300PKJMEJKAPBI_.AddEntriesFrom(input, _repeated_unk3300PKJMEJKAPBI_codec);
+            exceededItemList_.AddEntriesFrom(input, _repeated_exceededItemList_codec);
             break;
           }
           case 48: {
@@ -323,7 +322,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 90:
           case 88: {
-            unk3300GPDPCJLHBDE_.AddEntriesFrom(input, _repeated_unk3300GPDPCJLHBDE_codec);
+            exceededItemTypeList_.AddEntriesFrom(input, _repeated_exceededItemTypeList_codec);
             break;
           }
           case 112: {
@@ -347,7 +346,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 34:
           case 32: {
-            unk3300PKJMEJKAPBI_.AddEntriesFrom(ref input, _repeated_unk3300PKJMEJKAPBI_codec);
+            exceededItemList_.AddEntriesFrom(ref input, _repeated_exceededItemList_codec);
             break;
           }
           case 48: {
@@ -360,7 +359,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 90:
           case 88: {
-            unk3300GPDPCJLHBDE_.AddEntriesFrom(ref input, _repeated_unk3300GPDPCJLHBDE_codec);
+            exceededItemTypeList_.AddEntriesFrom(ref input, _repeated_exceededItemTypeList_codec);
             break;
           }
           case 112: {

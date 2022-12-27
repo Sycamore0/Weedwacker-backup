@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static HideAndSeekSelectAvatarReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBIaWRlQW5kU2Vla1NlbGVjdEF2YXRhclJlcS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byIvChpIaWRlQW5kU2Vla1NlbGVjdEF2",
-            "YXRhclJlcRIRCglhdmF0YXJfaWQYCiABKA1iBnByb3RvMw=="));
+            "CiBIaWRlQW5kU2Vla1NlbGVjdEF2YXRhclJlcS5wcm90byIvChpIaWRlQW5k",
+            "U2Vla1NlbGVjdEF2YXRhclJlcRIRCglhdmF0YXJfaWQYCiABKA1CIqoCH1dl",
+            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static SeaLampPopularityNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1TZWFMYW1wUG9wdWxhcml0eU5vdGlmeS5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90byItChdTZWFMYW1wUG9wdWxhcml0eU5vdGlm",
-            "eRISCgpwb3B1bGFyaXR5GAYgASgNYgZwcm90bzM="));
+            "Ch1TZWFMYW1wUG9wdWxhcml0eU5vdGlmeS5wcm90byItChdTZWFMYW1wUG9w",
+            "dWxhcml0eU5vdGlmeRISCgpwb3B1bGFyaXR5GAYgASgNQiKqAh9XZWVkd2Fj",
+            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

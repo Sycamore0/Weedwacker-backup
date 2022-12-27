@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static FleurFairMusicGameSettleReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFGbGV1ckZhaXJNdXNpY0dhbWVTZXR0bGVSZXEucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iaAobRmxldXJGYWlyTXVzaWNHYW1l",
-            "U2V0dGxlUmVxEg0KBXNjb3JlGAEgASgNEhMKC2NvcnJlY3RfaGl0GAogASgN",
-            "Eg0KBWNvbWJvGAMgASgNEhYKDm11c2ljX2Jhc2ljX2lkGA4gASgNYgZwcm90",
-            "bzM="));
+            "CiFGbGV1ckZhaXJNdXNpY0dhbWVTZXR0bGVSZXEucHJvdG8iaAobRmxldXJG",
+            "YWlyTXVzaWNHYW1lU2V0dGxlUmVxEg0KBXNjb3JlGAEgASgNEhMKC2NvcnJl",
+            "Y3RfaGl0GAogASgNEg0KBWNvbWJvGAMgASgNEhYKDm11c2ljX2Jhc2ljX2lk",
+            "GA4gASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

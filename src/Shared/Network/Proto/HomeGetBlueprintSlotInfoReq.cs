@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static HomeGetBlueprintSlotInfoReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFIb21lR2V0Qmx1ZXByaW50U2xvdEluZm9SZXEucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iHQobSG9tZUdldEJsdWVwcmludFNs",
-            "b3RJbmZvUmVxYgZwcm90bzM="));
+            "CiFIb21lR2V0Qmx1ZXByaW50U2xvdEluZm9SZXEucHJvdG8iHQobSG9tZUdl",
+            "dEJsdWVwcmludFNsb3RJbmZvUmVxQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5O",
+            "ZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,21 +24,19 @@ namespace Weedwacker.Shared.Network.Proto {
     static SaveMainCoopReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVTYXZlTWFpbkNvb3BSZXEucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8ikQMKD1NhdmVNYWluQ29vcFJlcRJlChNVbmszMzAwX0pG",
-            "UExFRExOSlBGGA4gAygLMkguV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90by5TYXZlTWFpbkNvb3BSZXEuVW5rMzMwMEpGUExFRExOSlBGRW50cnkS",
-            "FwoPc2VsZl9jb25maWRlbmNlGAYgASgNEgoKAmlkGA0gASgNEhUKDXNhdmVf",
-            "cG9pbnRfaWQYAiABKA0SZQoTVW5rMzMwMF9PTUVFTUZKRktCSBgMIAMoCzJI",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU2F2ZU1haW5Db29w",
-            "UmVxLlVuazMzMDBPTUVFTUZKRktCSEVudHJ5GjkKF1VuazMzMDBKRlBMRURM",
-            "TkpQRkVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1ZRgCIAEoBToCOAEaOQoX",
-            "VW5rMzMwME9NRUVNRkpGS0JIRW50cnkSCwoDa2V5GAEgASgNEg0KBXZhbHVl",
-            "GAIgASgFOgI4AWIGcHJvdG8z"));
+            "ChVTYXZlTWFpbkNvb3BSZXEucHJvdG8iqQIKD1NhdmVNYWluQ29vcFJlcRI6",
+            "Cg5ub3JtYWxfdmFyX21hcBgOIAMoCzIiLlNhdmVNYWluQ29vcFJlcS5Ob3Jt",
+            "YWxWYXJNYXBFbnRyeRIXCg9zZWxmX2NvbmZpZGVuY2UYBiABKA0SCgoCaWQY",
+            "DSABKA0SFQoNc2F2ZV9wb2ludF9pZBgCIAEoDRI2Cgx0ZW1wX3Zhcl9tYXAY",
+            "DCADKAsyIC5TYXZlTWFpbkNvb3BSZXEuVGVtcFZhck1hcEVudHJ5GjMKEU5v",
+            "cm1hbFZhck1hcEVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1ZRgCIAEoBToC",
+            "OAEaMQoPVGVtcFZhck1hcEVudHJ5EgsKA2tleRgBIAEoDRINCgV2YWx1ZRgC",
+            "IAEoBToCOAFCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SaveMainCoopReq), global::Weedwacker.Shared.Network.Proto.SaveMainCoopReq.Parser, new[]{ "Unk3300JFPLEDLNJPF", "SelfConfidence", "Id", "SavePointId", "Unk3300OMEEMFJFKBH" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.SaveMainCoopReq), global::Weedwacker.Shared.Network.Proto.SaveMainCoopReq.Parser, new[]{ "NormalVarMap", "SelfConfidence", "Id", "SavePointId", "TempVarMap" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, })
           }));
     }
     #endregion
@@ -89,11 +87,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SaveMainCoopReq(SaveMainCoopReq other) : this() {
-      unk3300JFPLEDLNJPF_ = other.unk3300JFPLEDLNJPF_.Clone();
+      normalVarMap_ = other.normalVarMap_.Clone();
       selfConfidence_ = other.selfConfidence_;
       id_ = other.id_;
       savePointId_ = other.savePointId_;
-      unk3300OMEEMFJFKBH_ = other.unk3300OMEEMFJFKBH_.Clone();
+      tempVarMap_ = other.tempVarMap_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -103,15 +101,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new SaveMainCoopReq(this);
     }
 
-    /// <summary>Field number for the "Unk3300_JFPLEDLNJPF" field.</summary>
-    public const int Unk3300JFPLEDLNJPFFieldNumber = 14;
-    private static readonly pbc::MapField<uint, int>.Codec _map_unk3300JFPLEDLNJPF_codec
+    /// <summary>Field number for the "normal_var_map" field.</summary>
+    public const int NormalVarMapFieldNumber = 14;
+    private static readonly pbc::MapField<uint, int>.Codec _map_normalVarMap_codec
         = new pbc::MapField<uint, int>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForInt32(16, 0), 114);
-    private readonly pbc::MapField<uint, int> unk3300JFPLEDLNJPF_ = new pbc::MapField<uint, int>();
+    private readonly pbc::MapField<uint, int> normalVarMap_ = new pbc::MapField<uint, int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, int> Unk3300JFPLEDLNJPF {
-      get { return unk3300JFPLEDLNJPF_; }
+    public pbc::MapField<uint, int> NormalVarMap {
+      get { return normalVarMap_; }
     }
 
     /// <summary>Field number for the "self_confidence" field.</summary>
@@ -150,15 +148,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_OMEEMFJFKBH" field.</summary>
-    public const int Unk3300OMEEMFJFKBHFieldNumber = 12;
-    private static readonly pbc::MapField<uint, int>.Codec _map_unk3300OMEEMFJFKBH_codec
+    /// <summary>Field number for the "temp_var_map" field.</summary>
+    public const int TempVarMapFieldNumber = 12;
+    private static readonly pbc::MapField<uint, int>.Codec _map_tempVarMap_codec
         = new pbc::MapField<uint, int>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForInt32(16, 0), 98);
-    private readonly pbc::MapField<uint, int> unk3300OMEEMFJFKBH_ = new pbc::MapField<uint, int>();
+    private readonly pbc::MapField<uint, int> tempVarMap_ = new pbc::MapField<uint, int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::MapField<uint, int> Unk3300OMEEMFJFKBH {
-      get { return unk3300OMEEMFJFKBH_; }
+    public pbc::MapField<uint, int> TempVarMap {
+      get { return tempVarMap_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -176,11 +174,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!Unk3300JFPLEDLNJPF.Equals(other.Unk3300JFPLEDLNJPF)) return false;
+      if (!NormalVarMap.Equals(other.NormalVarMap)) return false;
       if (SelfConfidence != other.SelfConfidence) return false;
       if (Id != other.Id) return false;
       if (SavePointId != other.SavePointId) return false;
-      if (!Unk3300OMEEMFJFKBH.Equals(other.Unk3300OMEEMFJFKBH)) return false;
+      if (!TempVarMap.Equals(other.TempVarMap)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -188,11 +186,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= Unk3300JFPLEDLNJPF.GetHashCode();
+      hash ^= NormalVarMap.GetHashCode();
       if (SelfConfidence != 0) hash ^= SelfConfidence.GetHashCode();
       if (Id != 0) hash ^= Id.GetHashCode();
       if (SavePointId != 0) hash ^= SavePointId.GetHashCode();
-      hash ^= Unk3300OMEEMFJFKBH.GetHashCode();
+      hash ^= TempVarMap.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -219,12 +217,12 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(SelfConfidence);
       }
-      unk3300OMEEMFJFKBH_.WriteTo(output, _map_unk3300OMEEMFJFKBH_codec);
+      tempVarMap_.WriteTo(output, _map_tempVarMap_codec);
       if (Id != 0) {
         output.WriteRawTag(104);
         output.WriteUInt32(Id);
       }
-      unk3300JFPLEDLNJPF_.WriteTo(output, _map_unk3300JFPLEDLNJPF_codec);
+      normalVarMap_.WriteTo(output, _map_normalVarMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -243,12 +241,12 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(SelfConfidence);
       }
-      unk3300OMEEMFJFKBH_.WriteTo(ref output, _map_unk3300OMEEMFJFKBH_codec);
+      tempVarMap_.WriteTo(ref output, _map_tempVarMap_codec);
       if (Id != 0) {
         output.WriteRawTag(104);
         output.WriteUInt32(Id);
       }
-      unk3300JFPLEDLNJPF_.WriteTo(ref output, _map_unk3300JFPLEDLNJPF_codec);
+      normalVarMap_.WriteTo(ref output, _map_normalVarMap_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -259,7 +257,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk3300JFPLEDLNJPF_.CalculateSize(_map_unk3300JFPLEDLNJPF_codec);
+      size += normalVarMap_.CalculateSize(_map_normalVarMap_codec);
       if (SelfConfidence != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SelfConfidence);
       }
@@ -269,7 +267,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (SavePointId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SavePointId);
       }
-      size += unk3300OMEEMFJFKBH_.CalculateSize(_map_unk3300OMEEMFJFKBH_codec);
+      size += tempVarMap_.CalculateSize(_map_tempVarMap_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -282,7 +280,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk3300JFPLEDLNJPF_.Add(other.unk3300JFPLEDLNJPF_);
+      normalVarMap_.Add(other.normalVarMap_);
       if (other.SelfConfidence != 0) {
         SelfConfidence = other.SelfConfidence;
       }
@@ -292,7 +290,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.SavePointId != 0) {
         SavePointId = other.SavePointId;
       }
-      unk3300OMEEMFJFKBH_.Add(other.unk3300OMEEMFJFKBH_);
+      tempVarMap_.Add(other.tempVarMap_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -317,7 +315,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 98: {
-            unk3300OMEEMFJFKBH_.AddEntriesFrom(input, _map_unk3300OMEEMFJFKBH_codec);
+            tempVarMap_.AddEntriesFrom(input, _map_tempVarMap_codec);
             break;
           }
           case 104: {
@@ -325,7 +323,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 114: {
-            unk3300JFPLEDLNJPF_.AddEntriesFrom(input, _map_unk3300JFPLEDLNJPF_codec);
+            normalVarMap_.AddEntriesFrom(input, _map_normalVarMap_codec);
             break;
           }
         }
@@ -352,7 +350,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 98: {
-            unk3300OMEEMFJFKBH_.AddEntriesFrom(ref input, _map_unk3300OMEEMFJFKBH_codec);
+            tempVarMap_.AddEntriesFrom(ref input, _map_tempVarMap_codec);
             break;
           }
           case 104: {
@@ -360,7 +358,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 114: {
-            unk3300JFPLEDLNJPF_.AddEntriesFrom(ref input, _map_unk3300JFPLEDLNJPF_codec);
+            normalVarMap_.AddEntriesFrom(ref input, _map_normalVarMap_codec);
             break;
           }
         }

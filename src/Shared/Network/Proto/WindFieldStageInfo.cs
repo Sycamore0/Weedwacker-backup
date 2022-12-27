@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static WindFieldStageInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhXaW5kRmllbGRTdGFnZUluZm8ucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8iSgoSV2luZEZpZWxkU3RhZ2VJbmZvEhAKCHN0YWdl",
-            "X2lkGAogASgNEg8KB2lzX29wZW4YBCABKAgSEQoJb3Blbl90aW1lGAggASgN",
-            "YgZwcm90bzM="));
+            "ChhXaW5kRmllbGRTdGFnZUluZm8ucHJvdG8iSgoSV2luZEZpZWxkU3RhZ2VJ",
+            "bmZvEhAKCHN0YWdlX2lkGAogASgNEg8KB2lzX29wZW4YBCABKAgSEQoJb3Bl",
+            "bl90aW1lGAggASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
+            "b3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,19 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static DungeonCandidateTeamInfoNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiREdW5nZW9uQ2FuZGlkYXRlVGVhbUluZm9Ob3RpZnkucHJvdG8SH1dlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8aIER1bmdlb25DYW5kaWRhdGVU",
-            "ZWFtQXZhdGFyLnByb3RvGiVEdW5nZW9uQ2FuZGlkYXRlVGVhbVBsYXllclN0",
-            "YXRlLnByb3RvIpwDCh5EdW5nZW9uQ2FuZGlkYXRlVGVhbUluZm9Ob3RpZnkS",
-            "GAoQcmVhZHlfcGxheWVyX3VpZBgCIAMoDRISCgptYXRjaF90eXBlGAwgASgN",
-            "EhIKCmR1bmdlb25faWQYCCABKA0SUAoLYXZhdGFyX2xpc3QYASADKAsyOy5X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkR1bmdlb25DYW5kaWRh",
-            "dGVUZWFtQXZhdGFyEm0KEHBsYXllcl9zdGF0ZV9tYXAYCiADKAsyUy5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkR1bmdlb25DYW5kaWRhdGVU",
-            "ZWFtSW5mb05vdGlmeS5QbGF5ZXJTdGF0ZU1hcEVudHJ5GncKE1BsYXllclN0",
-            "YXRlTWFwRW50cnkSCwoDa2V5GAEgASgNEk8KBXZhbHVlGAIgASgOMkAuV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5EdW5nZW9uQ2FuZGlkYXRl",
-            "VGVhbVBsYXllclN0YXRlOgI4AWIGcHJvdG8z"));
+            "CiREdW5nZW9uQ2FuZGlkYXRlVGVhbUluZm9Ob3RpZnkucHJvdG8aIER1bmdl",
+            "b25DYW5kaWRhdGVUZWFtQXZhdGFyLnByb3RvGiVEdW5nZW9uQ2FuZGlkYXRl",
+            "VGVhbVBsYXllclN0YXRlLnByb3RvIrwCCh5EdW5nZW9uQ2FuZGlkYXRlVGVh",
+            "bUluZm9Ob3RpZnkSGAoQcmVhZHlfcGxheWVyX3VpZBgCIAMoDRISCgptYXRj",
+            "aF90eXBlGAwgASgNEhIKCmR1bmdlb25faWQYCCABKA0SMAoLYXZhdGFyX2xp",
+            "c3QYASADKAsyGy5EdW5nZW9uQ2FuZGlkYXRlVGVhbUF2YXRhchJNChBwbGF5",
+            "ZXJfc3RhdGVfbWFwGAogAygLMjMuRHVuZ2VvbkNhbmRpZGF0ZVRlYW1JbmZv",
+            "Tm90aWZ5LlBsYXllclN0YXRlTWFwRW50cnkaVwoTUGxheWVyU3RhdGVNYXBF",
+            "bnRyeRILCgNrZXkYASABKA0SLwoFdmFsdWUYAiABKA4yIC5EdW5nZW9uQ2Fu",
+            "ZGlkYXRlVGVhbVBsYXllclN0YXRlOgI4AUIiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.DungeonCandidateTeamAvatarReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.DungeonCandidateTeamPlayerStateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

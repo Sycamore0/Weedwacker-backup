@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static MechanicusCoinNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpNZWNoYW5pY3VzQ29pbk5vdGlmeS5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90byI7ChRNZWNoYW5pY3VzQ29pbk5vdGlmeRIMCgRj",
-            "b2luGAggASgNEhUKDW1lY2hhbmljdXNfaWQYBSABKA1iBnByb3RvMw=="));
+            "ChpNZWNoYW5pY3VzQ29pbk5vdGlmeS5wcm90byI7ChRNZWNoYW5pY3VzQ29p",
+            "bk5vdGlmeRIMCgRjb2luGAggASgNEhUKDW1lY2hhbmljdXNfaWQYBSABKA1C",
+            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

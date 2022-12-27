@@ -24,21 +24,18 @@ namespace Weedwacker.Shared.Network.Proto {
     static CityReputationInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhDaXR5UmVwdXRhdGlvbkluZm8ucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8aH0NpdHlSZXB1dGF0aW9uRXhwbG9yZUluZm8ucHJv",
-            "dG8aHENpdHlSZXB1dGF0aW9uSHVudEluZm8ucHJvdG8aHUNpdHlSZXB1dGF0",
-            "aW9uUXVlc3RJbmZvLnByb3RvGh9DaXR5UmVwdXRhdGlvblJlcXVlc3RJbmZv",
-            "LnByb3RvIswDChJDaXR5UmVwdXRhdGlvbkluZm8SCwoDZXhwGAggASgNEkwK",
-            "CnF1ZXN0X2luZm8YCSABKAsyOC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvLkNpdHlSZXB1dGF0aW9uUXVlc3RJbmZvEh8KF3Rha2VuX2xldmVs",
-            "X3Jld2FyZF9saXN0GAogAygNElAKDHJlcXVlc3RfaW5mbxgFIAEoCzI6Lldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQ2l0eVJlcHV0YXRpb25S",
-            "ZXF1ZXN0SW5mbxIZChFuZXh0X3JlZnJlc2hfdGltZRgLIAEoDRIgChh0b3Rh",
-            "bF9hY2NlcHRfcmVxdWVzdF9udW0YDCABKA0SSgoJaHVudF9pbmZvGA8gASgL",
-            "MjcuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5DaXR5UmVwdXRh",
-            "dGlvbkh1bnRJbmZvElAKDGV4cGxvcmVfaW5mbxgDIAEoCzI6LldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQ2l0eVJlcHV0YXRpb25FeHBsb3Jl",
-            "SW5mbxINCgVsZXZlbBgCIAEoDWIGcHJvdG8z"));
+            "ChhDaXR5UmVwdXRhdGlvbkluZm8ucHJvdG8aH0NpdHlSZXB1dGF0aW9uRXhw",
+            "bG9yZUluZm8ucHJvdG8aHENpdHlSZXB1dGF0aW9uSHVudEluZm8ucHJvdG8a",
+            "HUNpdHlSZXB1dGF0aW9uUXVlc3RJbmZvLnByb3RvGh9DaXR5UmVwdXRhdGlv",
+            "blJlcXVlc3RJbmZvLnByb3RvIswCChJDaXR5UmVwdXRhdGlvbkluZm8SCwoD",
+            "ZXhwGAggASgNEiwKCnF1ZXN0X2luZm8YCSABKAsyGC5DaXR5UmVwdXRhdGlv",
+            "blF1ZXN0SW5mbxIfChd0YWtlbl9sZXZlbF9yZXdhcmRfbGlzdBgKIAMoDRIw",
+            "CgxyZXF1ZXN0X2luZm8YBSABKAsyGi5DaXR5UmVwdXRhdGlvblJlcXVlc3RJ",
+            "bmZvEhkKEW5leHRfcmVmcmVzaF90aW1lGAsgASgNEiAKGHRvdGFsX2FjY2Vw",
+            "dF9yZXF1ZXN0X251bRgMIAEoDRIqCglodW50X2luZm8YDyABKAsyFy5DaXR5",
+            "UmVwdXRhdGlvbkh1bnRJbmZvEjAKDGV4cGxvcmVfaW5mbxgDIAEoCzIaLkNp",
+            "dHlSZXB1dGF0aW9uRXhwbG9yZUluZm8SDQoFbGV2ZWwYAiABKA1CIqoCH1dl",
+            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.CityReputationExploreInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CityReputationHuntInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CityReputationQuestInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CityReputationRequestInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,17 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static FleurFairMinigameInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtGbGV1ckZhaXJNaW5pZ2FtZUluZm8ucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8aGkZsZXVyRmFpckJhbGxvb25JbmZvLnByb3Rv",
-            "GhdGbGV1ckZhaXJGYWxsSW5mby5wcm90bxocRmxldXJGYWlyTXVzaWNHYW1l",
-            "SW5mby5wcm90byLBAgoVRmxldXJGYWlyTWluaWdhbWVJbmZvEhMKC21pbmln",
-            "YW1lX2lkGAMgASgNEg8KB2lzX29wZW4YDyABKAgSEQoJb3Blbl90aW1lGA0g",
-            "ASgNEk0KDGJhbGxvb25faW5mbxgBIAEoCzI1LldlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8uRmxldXJGYWlyQmFsbG9vbkluZm9IABJHCglmYWxs",
-            "X2luZm8YCiABKAsyMi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
-            "LkZsZXVyRmFpckZhbGxJbmZvSAASTQoKbXVzaWNfaW5mbxgOIAEoCzI3Lldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uRmxldXJGYWlyTXVzaWNH",
-            "YW1lSW5mb0gAQggKBmRldGFpbGIGcHJvdG8z"));
+            "ChtGbGV1ckZhaXJNaW5pZ2FtZUluZm8ucHJvdG8aGkZsZXVyRmFpckJhbGxv",
+            "b25JbmZvLnByb3RvGhdGbGV1ckZhaXJGYWxsSW5mby5wcm90bxocRmxldXJG",
+            "YWlyTXVzaWNHYW1lSW5mby5wcm90byLhAQoVRmxldXJGYWlyTWluaWdhbWVJ",
+            "bmZvEhMKC21pbmlnYW1lX2lkGAMgASgNEg8KB2lzX29wZW4YDyABKAgSEQoJ",
+            "b3Blbl90aW1lGA0gASgNEi0KDGJhbGxvb25faW5mbxgBIAEoCzIVLkZsZXVy",
+            "RmFpckJhbGxvb25JbmZvSAASJwoJZmFsbF9pbmZvGAogASgLMhIuRmxldXJG",
+            "YWlyRmFsbEluZm9IABItCgptdXNpY19pbmZvGA4gASgLMhcuRmxldXJGYWly",
+            "TXVzaWNHYW1lSW5mb0gAQggKBmRldGFpbEIiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.FleurFairBalloonInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FleurFairFallInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.FleurFairMusicGameInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

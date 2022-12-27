@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static InterpretInferenceWordReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9JbnRlcnByZXRJbmZlcmVuY2VXb3JkUmVxLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvIj0KGUludGVycHJldEluZmVyZW5jZVdv",
-            "cmRSZXESDwoHcGFnZV9pZBgDIAEoDRIPCgd3b3JkX2lkGAQgASgNYgZwcm90",
-            "bzM="));
+            "Ch9JbnRlcnByZXRJbmZlcmVuY2VXb3JkUmVxLnByb3RvIj0KGUludGVycHJl",
+            "dEluZmVyZW5jZVdvcmRSZXESDwoHcGFnZV9pZBgDIAEoDRIPCgd3b3JkX2lk",
+            "GAQgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

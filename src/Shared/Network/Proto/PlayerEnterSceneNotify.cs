@@ -24,24 +24,22 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerEnterSceneNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxQbGF5ZXJFbnRlclNjZW5lTm90aWZ5LnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvGg9FbnRlclR5cGUucHJvdG8aDFZlY3Rvci5w",
-            "cm90byKCBAoWUGxheWVyRW50ZXJTY2VuZU5vdGlmeRITCgp3b3JsZF90eXBl",
-            "GMgJIAEoDRIiChppc19maXJzdF9sb2dpbl9lbnRlcl9zY2VuZRggIAEoCBIT",
-            "Cgt3b3JsZF9sZXZlbBgEIAEoDRI0CgNwb3MYASABKAsyJy5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLlZlY3RvchIbChNVbmszMzAwX09LTU5P",
-            "Rk9IS09CGAMgASgIEhUKDXByZXZfc2NlbmVfaWQYDSABKA0SGQoRZW50ZXJf",
-            "c2NlbmVfdG9rZW4YBiABKA0SEgoKZHVuZ2Vvbl9pZBgCIAEoDRIQCghzY2Vu",
-            "ZV9pZBgLIAEoDRI4CgR0eXBlGAwgASgOMiouV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90by5FbnRlclR5cGUSGQoRc2NlbmVfdGFnX2lkX2xpc3QY",
-            "BSADKA0SGAoQc2NlbmVfYmVnaW5fdGltZRgJIAEoBBIVCgxlbnRlcl9yZWFz",
-            "b24YnwIgASgNEhIKCnRhcmdldF91aWQYCCABKA0SOQoIcHJldl9wb3MYCiAB",
-            "KAsyJy5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlZlY3RvchIa",
-            "ChFzY2VuZV90cmFuc2FjdGlvbhjyAiABKAliBnByb3RvMw=="));
+            "ChxQbGF5ZXJFbnRlclNjZW5lTm90aWZ5LnByb3RvGg9FbnRlclR5cGUucHJv",
+            "dG8aDFZlY3Rvci5wcm90byKZAwoWUGxheWVyRW50ZXJTY2VuZU5vdGlmeRIT",
+            "Cgp3b3JsZF90eXBlGMgJIAEoDRISCgppc19za2lwX3VpGCAgASgIEhMKC3dv",
+            "cmxkX2xldmVsGAQgASgNEhQKA3BvcxgBIAEoCzIHLlZlY3RvchIiChppc19m",
+            "aXJzdF9sb2dpbl9lbnRlcl9zY2VuZRgDIAEoCBIVCg1wcmV2X3NjZW5lX2lk",
+            "GA0gASgNEhkKEWVudGVyX3NjZW5lX3Rva2VuGAYgASgNEhIKCmR1bmdlb25f",
+            "aWQYAiABKA0SEAoIc2NlbmVfaWQYCyABKA0SGAoEdHlwZRgMIAEoDjIKLkVu",
+            "dGVyVHlwZRIZChFzY2VuZV90YWdfaWRfbGlzdBgFIAMoDRIYChBzY2VuZV9i",
+            "ZWdpbl90aW1lGAkgASgEEhUKDGVudGVyX3JlYXNvbhifAiABKA0SEgoKdGFy",
+            "Z2V0X3VpZBgIIAEoDRIZCghwcmV2X3BvcxgKIAEoCzIHLlZlY3RvchIaChFz",
+            "Y2VuZV90cmFuc2FjdGlvbhjyAiABKAlCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.EnterTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerEnterSceneNotify), global::Weedwacker.Shared.Network.Proto.PlayerEnterSceneNotify.Parser, new[]{ "WorldType", "IsFirstLoginEnterScene", "WorldLevel", "Pos", "Unk3300OKMNOFOHKOB", "PrevSceneId", "EnterSceneToken", "DungeonId", "SceneId", "Type", "SceneTagIdList", "SceneBeginTime", "EnterReason", "TargetUid", "PrevPos", "SceneTransaction" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PlayerEnterSceneNotify), global::Weedwacker.Shared.Network.Proto.PlayerEnterSceneNotify.Parser, new[]{ "WorldType", "IsSkipUi", "WorldLevel", "Pos", "IsFirstLoginEnterScene", "PrevSceneId", "EnterSceneToken", "DungeonId", "SceneId", "Type", "SceneTagIdList", "SceneBeginTime", "EnterReason", "TargetUid", "PrevPos", "SceneTransaction" }, null, null, null, null)
           }));
     }
     #endregion
@@ -92,10 +90,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlayerEnterSceneNotify(PlayerEnterSceneNotify other) : this() {
       worldType_ = other.worldType_;
-      isFirstLoginEnterScene_ = other.isFirstLoginEnterScene_;
+      isSkipUi_ = other.isSkipUi_;
       worldLevel_ = other.worldLevel_;
       pos_ = other.pos_ != null ? other.pos_.Clone() : null;
-      unk3300OKMNOFOHKOB_ = other.unk3300OKMNOFOHKOB_;
+      isFirstLoginEnterScene_ = other.isFirstLoginEnterScene_;
       prevSceneId_ = other.prevSceneId_;
       enterSceneToken_ = other.enterSceneToken_;
       dungeonId_ = other.dungeonId_;
@@ -128,15 +126,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "is_first_login_enter_scene" field.</summary>
-    public const int IsFirstLoginEnterSceneFieldNumber = 32;
-    private bool isFirstLoginEnterScene_;
+    /// <summary>Field number for the "is_skip_ui" field.</summary>
+    public const int IsSkipUiFieldNumber = 32;
+    private bool isSkipUi_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsFirstLoginEnterScene {
-      get { return isFirstLoginEnterScene_; }
+    public bool IsSkipUi {
+      get { return isSkipUi_; }
       set {
-        isFirstLoginEnterScene_ = value;
+        isSkipUi_ = value;
       }
     }
 
@@ -164,15 +162,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_OKMNOFOHKOB" field.</summary>
-    public const int Unk3300OKMNOFOHKOBFieldNumber = 3;
-    private bool unk3300OKMNOFOHKOB_;
+    /// <summary>Field number for the "is_first_login_enter_scene" field.</summary>
+    public const int IsFirstLoginEnterSceneFieldNumber = 3;
+    private bool isFirstLoginEnterScene_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300OKMNOFOHKOB {
-      get { return unk3300OKMNOFOHKOB_; }
+    public bool IsFirstLoginEnterScene {
+      get { return isFirstLoginEnterScene_; }
       set {
-        unk3300OKMNOFOHKOB_ = value;
+        isFirstLoginEnterScene_ = value;
       }
     }
 
@@ -323,10 +321,10 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (WorldType != other.WorldType) return false;
-      if (IsFirstLoginEnterScene != other.IsFirstLoginEnterScene) return false;
+      if (IsSkipUi != other.IsSkipUi) return false;
       if (WorldLevel != other.WorldLevel) return false;
       if (!object.Equals(Pos, other.Pos)) return false;
-      if (Unk3300OKMNOFOHKOB != other.Unk3300OKMNOFOHKOB) return false;
+      if (IsFirstLoginEnterScene != other.IsFirstLoginEnterScene) return false;
       if (PrevSceneId != other.PrevSceneId) return false;
       if (EnterSceneToken != other.EnterSceneToken) return false;
       if (DungeonId != other.DungeonId) return false;
@@ -346,10 +344,10 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (WorldType != 0) hash ^= WorldType.GetHashCode();
-      if (IsFirstLoginEnterScene != false) hash ^= IsFirstLoginEnterScene.GetHashCode();
+      if (IsSkipUi != false) hash ^= IsSkipUi.GetHashCode();
       if (WorldLevel != 0) hash ^= WorldLevel.GetHashCode();
       if (pos_ != null) hash ^= Pos.GetHashCode();
-      if (Unk3300OKMNOFOHKOB != false) hash ^= Unk3300OKMNOFOHKOB.GetHashCode();
+      if (IsFirstLoginEnterScene != false) hash ^= IsFirstLoginEnterScene.GetHashCode();
       if (PrevSceneId != 0) hash ^= PrevSceneId.GetHashCode();
       if (EnterSceneToken != 0) hash ^= EnterSceneToken.GetHashCode();
       if (DungeonId != 0) hash ^= DungeonId.GetHashCode();
@@ -387,9 +385,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(DungeonId);
       }
-      if (Unk3300OKMNOFOHKOB != false) {
+      if (IsFirstLoginEnterScene != false) {
         output.WriteRawTag(24);
-        output.WriteBool(Unk3300OKMNOFOHKOB);
+        output.WriteBool(IsFirstLoginEnterScene);
       }
       if (WorldLevel != 0) {
         output.WriteRawTag(32);
@@ -424,9 +422,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(104);
         output.WriteUInt32(PrevSceneId);
       }
-      if (IsFirstLoginEnterScene != false) {
+      if (IsSkipUi != false) {
         output.WriteRawTag(128, 2);
-        output.WriteBool(IsFirstLoginEnterScene);
+        output.WriteBool(IsSkipUi);
       }
       if (EnterReason != 0) {
         output.WriteRawTag(248, 17);
@@ -458,9 +456,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(DungeonId);
       }
-      if (Unk3300OKMNOFOHKOB != false) {
+      if (IsFirstLoginEnterScene != false) {
         output.WriteRawTag(24);
-        output.WriteBool(Unk3300OKMNOFOHKOB);
+        output.WriteBool(IsFirstLoginEnterScene);
       }
       if (WorldLevel != 0) {
         output.WriteRawTag(32);
@@ -495,9 +493,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(104);
         output.WriteUInt32(PrevSceneId);
       }
-      if (IsFirstLoginEnterScene != false) {
+      if (IsSkipUi != false) {
         output.WriteRawTag(128, 2);
-        output.WriteBool(IsFirstLoginEnterScene);
+        output.WriteBool(IsSkipUi);
       }
       if (EnterReason != 0) {
         output.WriteRawTag(248, 17);
@@ -524,7 +522,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (WorldType != 0) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(WorldType);
       }
-      if (IsFirstLoginEnterScene != false) {
+      if (IsSkipUi != false) {
         size += 2 + 1;
       }
       if (WorldLevel != 0) {
@@ -533,7 +531,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (pos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pos);
       }
-      if (Unk3300OKMNOFOHKOB != false) {
+      if (IsFirstLoginEnterScene != false) {
         size += 1 + 1;
       }
       if (PrevSceneId != 0) {
@@ -582,8 +580,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.WorldType != 0) {
         WorldType = other.WorldType;
       }
-      if (other.IsFirstLoginEnterScene != false) {
-        IsFirstLoginEnterScene = other.IsFirstLoginEnterScene;
+      if (other.IsSkipUi != false) {
+        IsSkipUi = other.IsSkipUi;
       }
       if (other.WorldLevel != 0) {
         WorldLevel = other.WorldLevel;
@@ -594,8 +592,8 @@ namespace Weedwacker.Shared.Network.Proto {
         }
         Pos.MergeFrom(other.Pos);
       }
-      if (other.Unk3300OKMNOFOHKOB != false) {
-        Unk3300OKMNOFOHKOB = other.Unk3300OKMNOFOHKOB;
+      if (other.IsFirstLoginEnterScene != false) {
+        IsFirstLoginEnterScene = other.IsFirstLoginEnterScene;
       }
       if (other.PrevSceneId != 0) {
         PrevSceneId = other.PrevSceneId;
@@ -658,7 +656,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300OKMNOFOHKOB = input.ReadBool();
+            IsFirstLoginEnterScene = input.ReadBool();
             break;
           }
           case 32: {
@@ -702,7 +700,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 256: {
-            IsFirstLoginEnterScene = input.ReadBool();
+            IsSkipUi = input.ReadBool();
             break;
           }
           case 2296: {
@@ -744,7 +742,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300OKMNOFOHKOB = input.ReadBool();
+            IsFirstLoginEnterScene = input.ReadBool();
             break;
           }
           case 32: {
@@ -788,7 +786,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 256: {
-            IsFirstLoginEnterScene = input.ReadBool();
+            IsSkipUi = input.ReadBool();
             break;
           }
           case 2296: {

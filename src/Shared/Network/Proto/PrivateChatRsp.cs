@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static PrivateChatRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRQcml2YXRlQ2hhdFJzcC5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90byJBCg5Qcml2YXRlQ2hhdFJzcBIPCgdyZXRjb2RlGAQgASgF",
-            "Eh4KFmNoYXRfZm9yYmlkZGVuX2VuZHRpbWUYBiABKA1iBnByb3RvMw=="));
+            "ChRQcml2YXRlQ2hhdFJzcC5wcm90byJBCg5Qcml2YXRlQ2hhdFJzcBIPCgdy",
+            "ZXRjb2RlGAQgASgFEh4KFmNoYXRfZm9yYmlkZGVuX2VuZHRpbWUYBiABKA1C",
+            "IqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

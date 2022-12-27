@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static RoguelikeSettleCoinInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1Sb2d1ZWxpa2VTZXR0bGVDb2luSW5mby5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90byJjChdSb2d1ZWxpa2VTZXR0bGVDb2luSW5m",
-            "bxIbChNVbmszMzAwX01GS09JTU9OQ0xBGAogASgNEhsKE1VuazMzMDBfTEZF",
-            "S0dCQkFNSEUYDCABKA0SDgoGY29pbl9jGAYgASgNYgZwcm90bzM="));
+            "Ch1Sb2d1ZWxpa2VTZXR0bGVDb2luSW5mby5wcm90byJjChdSb2d1ZWxpa2VT",
+            "ZXR0bGVDb2luSW5mbxIbChNVbmszMzAwX01GS09JTU9OQ0xBGAogASgNEhsK",
+            "E1VuazMzMDBfTEZFS0dCQkFNSEUYDCABKA0SDgoGY29pbl9jGAYgASgNQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

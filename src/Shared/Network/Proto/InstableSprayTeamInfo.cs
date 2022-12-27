@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static InstableSprayTeamInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtJbnN0YWJsZVNwcmF5VGVhbUluZm8ucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8aHUluc3RhYmxlU3ByYXlBdmF0YXJJbmZvLnBy",
-            "b3RvImsKFUluc3RhYmxlU3ByYXlUZWFtSW5mbxJSChBhdmF0YXJfaW5mb19s",
-            "aXN0GAUgAygLMjguV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5J",
-            "bnN0YWJsZVNwcmF5QXZhdGFySW5mb2IGcHJvdG8z"));
+            "ChtJbnN0YWJsZVNwcmF5VGVhbUluZm8ucHJvdG8aHUluc3RhYmxlU3ByYXlB",
+            "dmF0YXJJbmZvLnByb3RvIksKFUluc3RhYmxlU3ByYXlUZWFtSW5mbxIyChBh",
+            "dmF0YXJfaW5mb19saXN0GAUgAygLMhguSW5zdGFibGVTcHJheUF2YXRhcklu",
+            "Zm9CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.InstableSprayAvatarInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

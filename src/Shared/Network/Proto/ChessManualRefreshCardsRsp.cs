@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ChessManualRefreshCardsRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBDaGVzc01hbnVhbFJlZnJlc2hDYXJkc1JzcC5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byItChpDaGVzc01hbnVhbFJlZnJlc2hD",
-            "YXJkc1JzcBIPCgdyZXRjb2RlGAsgASgFYgZwcm90bzM="));
+            "CiBDaGVzc01hbnVhbFJlZnJlc2hDYXJkc1JzcC5wcm90byItChpDaGVzc01h",
+            "bnVhbFJlZnJlc2hDYXJkc1JzcBIPCgdyZXRjb2RlGAsgASgFQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

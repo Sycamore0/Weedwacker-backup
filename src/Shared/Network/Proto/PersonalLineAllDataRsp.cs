@@ -24,19 +24,18 @@ namespace Weedwacker.Shared.Network.Proto {
     static PersonalLineAllDataRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxQZXJzb25hbExpbmVBbGxEYXRhUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvGhxMb2NrZWRQZXJzb25hbGxpbmVEYXRhLnBy",
-            "b3RvIoMCChZQZXJzb25hbExpbmVBbGxEYXRhUnNwEiUKHWN1cl9maW5pc2hl",
-            "ZF9kYWlseV90YXNrX2NvdW50GAwgASgNEloKGWxvY2tlZF9wZXJzb25hbF9s",
-            "aW5lX2xpc3QYCiADKAsyNy5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvLkxvY2tlZFBlcnNvbmFsbGluZURhdGESDwoHcmV0Y29kZRgCIAEoBRIb",
-            "ChNVbmszMzAwX0JITEVHTEVJQ0ZKGAEgAygNEhsKE1VuazMzMDBfQkdDSUdO",
-            "RUdCSU4YBiADKA0SGwoTbGVnZW5kYXJ5X2tleV9jb3VudBgFIAEoDWIGcHJv",
-            "dG8z"));
+            "ChxQZXJzb25hbExpbmVBbGxEYXRhUnNwLnByb3RvGhxMb2NrZWRQZXJzb25h",
+            "bGxpbmVEYXRhLnByb3RvIvkBChZQZXJzb25hbExpbmVBbGxEYXRhUnNwEiUK",
+            "HWN1cl9maW5pc2hlZF9kYWlseV90YXNrX2NvdW50GAwgASgNEjoKGWxvY2tl",
+            "ZF9wZXJzb25hbF9saW5lX2xpc3QYCiADKAsyFy5Mb2NrZWRQZXJzb25hbGxp",
+            "bmVEYXRhEg8KB3JldGNvZGUYAiABKAUSKgoiY2FuX2JlX3VubG9ja2VkX3Bl",
+            "cnNvbmFsX2xpbmVfbGlzdBgBIAMoDRIiChpvbmdvaW5nX3BlcnNvbmFsX2xp",
+            "bmVfbGlzdBgGIAMoDRIbChNsZWdlbmRhcnlfa2V5X2NvdW50GAUgASgNQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.LockedPersonallineDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PersonalLineAllDataRsp), global::Weedwacker.Shared.Network.Proto.PersonalLineAllDataRsp.Parser, new[]{ "CurFinishedDailyTaskCount", "LockedPersonalLineList", "Retcode", "Unk3300BHLEGLEICFJ", "Unk3300BGCIGNEGBIN", "LegendaryKeyCount" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.PersonalLineAllDataRsp), global::Weedwacker.Shared.Network.Proto.PersonalLineAllDataRsp.Parser, new[]{ "CurFinishedDailyTaskCount", "LockedPersonalLineList", "Retcode", "CanBeUnlockedPersonalLineList", "OngoingPersonalLineList", "LegendaryKeyCount" }, null, null, null, null)
           }));
     }
     #endregion
@@ -89,8 +88,8 @@ namespace Weedwacker.Shared.Network.Proto {
       curFinishedDailyTaskCount_ = other.curFinishedDailyTaskCount_;
       lockedPersonalLineList_ = other.lockedPersonalLineList_.Clone();
       retcode_ = other.retcode_;
-      unk3300BHLEGLEICFJ_ = other.unk3300BHLEGLEICFJ_.Clone();
-      unk3300BGCIGNEGBIN_ = other.unk3300BGCIGNEGBIN_.Clone();
+      canBeUnlockedPersonalLineList_ = other.canBeUnlockedPersonalLineList_.Clone();
+      ongoingPersonalLineList_ = other.ongoingPersonalLineList_.Clone();
       legendaryKeyCount_ = other.legendaryKeyCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -136,26 +135,26 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_BHLEGLEICFJ" field.</summary>
-    public const int Unk3300BHLEGLEICFJFieldNumber = 1;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300BHLEGLEICFJ_codec
+    /// <summary>Field number for the "can_be_unlocked_personal_line_list" field.</summary>
+    public const int CanBeUnlockedPersonalLineListFieldNumber = 1;
+    private static readonly pb::FieldCodec<uint> _repeated_canBeUnlockedPersonalLineList_codec
         = pb::FieldCodec.ForUInt32(10);
-    private readonly pbc::RepeatedField<uint> unk3300BHLEGLEICFJ_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> canBeUnlockedPersonalLineList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300BHLEGLEICFJ {
-      get { return unk3300BHLEGLEICFJ_; }
+    public pbc::RepeatedField<uint> CanBeUnlockedPersonalLineList {
+      get { return canBeUnlockedPersonalLineList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_BGCIGNEGBIN" field.</summary>
-    public const int Unk3300BGCIGNEGBINFieldNumber = 6;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300BGCIGNEGBIN_codec
+    /// <summary>Field number for the "ongoing_personal_line_list" field.</summary>
+    public const int OngoingPersonalLineListFieldNumber = 6;
+    private static readonly pb::FieldCodec<uint> _repeated_ongoingPersonalLineList_codec
         = pb::FieldCodec.ForUInt32(50);
-    private readonly pbc::RepeatedField<uint> unk3300BGCIGNEGBIN_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> ongoingPersonalLineList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300BGCIGNEGBIN {
-      get { return unk3300BGCIGNEGBIN_; }
+    public pbc::RepeatedField<uint> OngoingPersonalLineList {
+      get { return ongoingPersonalLineList_; }
     }
 
     /// <summary>Field number for the "legendary_key_count" field.</summary>
@@ -188,8 +187,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (CurFinishedDailyTaskCount != other.CurFinishedDailyTaskCount) return false;
       if(!lockedPersonalLineList_.Equals(other.lockedPersonalLineList_)) return false;
       if (Retcode != other.Retcode) return false;
-      if(!unk3300BHLEGLEICFJ_.Equals(other.unk3300BHLEGLEICFJ_)) return false;
-      if(!unk3300BGCIGNEGBIN_.Equals(other.unk3300BGCIGNEGBIN_)) return false;
+      if(!canBeUnlockedPersonalLineList_.Equals(other.canBeUnlockedPersonalLineList_)) return false;
+      if(!ongoingPersonalLineList_.Equals(other.ongoingPersonalLineList_)) return false;
       if (LegendaryKeyCount != other.LegendaryKeyCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -201,8 +200,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (CurFinishedDailyTaskCount != 0) hash ^= CurFinishedDailyTaskCount.GetHashCode();
       hash ^= lockedPersonalLineList_.GetHashCode();
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
-      hash ^= unk3300BHLEGLEICFJ_.GetHashCode();
-      hash ^= unk3300BGCIGNEGBIN_.GetHashCode();
+      hash ^= canBeUnlockedPersonalLineList_.GetHashCode();
+      hash ^= ongoingPersonalLineList_.GetHashCode();
       if (LegendaryKeyCount != 0) hash ^= LegendaryKeyCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -222,7 +221,7 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      unk3300BHLEGLEICFJ_.WriteTo(output, _repeated_unk3300BHLEGLEICFJ_codec);
+      canBeUnlockedPersonalLineList_.WriteTo(output, _repeated_canBeUnlockedPersonalLineList_codec);
       if (Retcode != 0) {
         output.WriteRawTag(16);
         output.WriteInt32(Retcode);
@@ -231,7 +230,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(LegendaryKeyCount);
       }
-      unk3300BGCIGNEGBIN_.WriteTo(output, _repeated_unk3300BGCIGNEGBIN_codec);
+      ongoingPersonalLineList_.WriteTo(output, _repeated_ongoingPersonalLineList_codec);
       lockedPersonalLineList_.WriteTo(output, _repeated_lockedPersonalLineList_codec);
       if (CurFinishedDailyTaskCount != 0) {
         output.WriteRawTag(96);
@@ -247,7 +246,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      unk3300BHLEGLEICFJ_.WriteTo(ref output, _repeated_unk3300BHLEGLEICFJ_codec);
+      canBeUnlockedPersonalLineList_.WriteTo(ref output, _repeated_canBeUnlockedPersonalLineList_codec);
       if (Retcode != 0) {
         output.WriteRawTag(16);
         output.WriteInt32(Retcode);
@@ -256,7 +255,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(LegendaryKeyCount);
       }
-      unk3300BGCIGNEGBIN_.WriteTo(ref output, _repeated_unk3300BGCIGNEGBIN_codec);
+      ongoingPersonalLineList_.WriteTo(ref output, _repeated_ongoingPersonalLineList_codec);
       lockedPersonalLineList_.WriteTo(ref output, _repeated_lockedPersonalLineList_codec);
       if (CurFinishedDailyTaskCount != 0) {
         output.WriteRawTag(96);
@@ -279,8 +278,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Retcode != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
       }
-      size += unk3300BHLEGLEICFJ_.CalculateSize(_repeated_unk3300BHLEGLEICFJ_codec);
-      size += unk3300BGCIGNEGBIN_.CalculateSize(_repeated_unk3300BGCIGNEGBIN_codec);
+      size += canBeUnlockedPersonalLineList_.CalculateSize(_repeated_canBeUnlockedPersonalLineList_codec);
+      size += ongoingPersonalLineList_.CalculateSize(_repeated_ongoingPersonalLineList_codec);
       if (LegendaryKeyCount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LegendaryKeyCount);
       }
@@ -303,8 +302,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Retcode != 0) {
         Retcode = other.Retcode;
       }
-      unk3300BHLEGLEICFJ_.Add(other.unk3300BHLEGLEICFJ_);
-      unk3300BGCIGNEGBIN_.Add(other.unk3300BGCIGNEGBIN_);
+      canBeUnlockedPersonalLineList_.Add(other.canBeUnlockedPersonalLineList_);
+      ongoingPersonalLineList_.Add(other.ongoingPersonalLineList_);
       if (other.LegendaryKeyCount != 0) {
         LegendaryKeyCount = other.LegendaryKeyCount;
       }
@@ -325,7 +324,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 10:
           case 8: {
-            unk3300BHLEGLEICFJ_.AddEntriesFrom(input, _repeated_unk3300BHLEGLEICFJ_codec);
+            canBeUnlockedPersonalLineList_.AddEntriesFrom(input, _repeated_canBeUnlockedPersonalLineList_codec);
             break;
           }
           case 16: {
@@ -338,7 +337,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 50:
           case 48: {
-            unk3300BGCIGNEGBIN_.AddEntriesFrom(input, _repeated_unk3300BGCIGNEGBIN_codec);
+            ongoingPersonalLineList_.AddEntriesFrom(input, _repeated_ongoingPersonalLineList_codec);
             break;
           }
           case 82: {
@@ -366,7 +365,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           case 10:
           case 8: {
-            unk3300BHLEGLEICFJ_.AddEntriesFrom(ref input, _repeated_unk3300BHLEGLEICFJ_codec);
+            canBeUnlockedPersonalLineList_.AddEntriesFrom(ref input, _repeated_canBeUnlockedPersonalLineList_codec);
             break;
           }
           case 16: {
@@ -379,7 +378,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 50:
           case 48: {
-            unk3300BGCIGNEGBIN_.AddEntriesFrom(ref input, _repeated_unk3300BGCIGNEGBIN_codec);
+            ongoingPersonalLineList_.AddEntriesFrom(ref input, _repeated_ongoingPersonalLineList_codec);
             break;
           }
           case 82: {

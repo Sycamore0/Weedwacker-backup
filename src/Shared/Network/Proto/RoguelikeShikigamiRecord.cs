@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static RoguelikeShikigamiRecordReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5Sb2d1ZWxpa2VTaGlraWdhbWlSZWNvcmQucHJvdG8SH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8iNQoYUm9ndWVsaWtlU2hpa2lnYW1pUmVj",
-            "b3JkEgoKAmlkGAIgASgNEg0KBWxldmVsGAogASgNYgZwcm90bzM="));
+            "Ch5Sb2d1ZWxpa2VTaGlraWdhbWlSZWNvcmQucHJvdG8iNQoYUm9ndWVsaWtl",
+            "U2hpa2lnYW1pUmVjb3JkEgoKAmlkGAIgASgNEg0KBWxldmVsGAogASgNQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

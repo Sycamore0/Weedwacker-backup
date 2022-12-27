@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetParentQuestVideoKeyRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9HZXRQYXJlbnRRdWVzdFZpZGVvS2V5UnNwLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvIlgKGUdldFBhcmVudFF1ZXN0VmlkZW9L",
-            "ZXlSc3ASFwoPcGFyZW50X3F1ZXN0X2lkGA8gASgNEhEKCXZpZGVvX2tleRgM",
-            "IAEoBBIPCgdyZXRjb2RlGAQgASgFYgZwcm90bzM="));
+            "Ch9HZXRQYXJlbnRRdWVzdFZpZGVvS2V5UnNwLnByb3RvIlgKGUdldFBhcmVu",
+            "dFF1ZXN0VmlkZW9LZXlSc3ASFwoPcGFyZW50X3F1ZXN0X2lkGA8gASgNEhEK",
+            "CXZpZGVvX2tleRgMIAEoBBIPCgdyZXRjb2RlGAQgASgFQiKqAh9XZWVkd2Fj",
+            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

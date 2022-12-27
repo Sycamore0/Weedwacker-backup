@@ -24,19 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGMsgMoveCardReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRHQ0dNc2dNb3ZlQ2FyZC5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90bxoPR0NHUmVhc29uLnByb3RvGhFHQ0dab25lVHlwZS5wcm90",
-            "byKpAgoOR0NHTXNnTW92ZUNhcmQSSQoTVW5rMzMwMF9FSkhOSk1CSkJLRxgJ",
-            "IAEoDjIsLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uR0NHWm9u",
-            "ZVR5cGUSFgoOZmFpbF9ndWlkX2xpc3QYAiADKA0SSQoTVW5rMzMwMF9OSklM",
-            "T0JERUVDQxgOIAEoDjIsLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJv",
-            "dG8uR0NHWm9uZVR5cGUSFQoNY29udHJvbGxlcl9pZBgEIAEoDRI6CgZyZWFz",
-            "b24YDSABKA4yKi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkdD",
-            "R1JlYXNvbhIWCg5jYXJkX2d1aWRfbGlzdBgFIAMoDWIGcHJvdG8z"));
+            "ChRHQ0dNc2dNb3ZlQ2FyZC5wcm90bxoPR0NHUmVhc29uLnByb3RvGhFHQ0da",
+            "b25lVHlwZS5wcm90byKpAQoOR0NHTXNnTW92ZUNhcmQSGAoCdG8YCSABKA4y",
+            "DC5HQ0dab25lVHlwZRIWCg5mYWlsX2d1aWRfbGlzdBgCIAMoDRIaCgRmcm9t",
+            "GA4gASgOMgwuR0NHWm9uZVR5cGUSFQoNY29udHJvbGxlcl9pZBgEIAEoDRIa",
+            "CgZyZWFzb24YDSABKA4yCi5HQ0dSZWFzb24SFgoOY2FyZF9ndWlkX2xpc3QY",
+            "BSADKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GCGReasonReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GCGZoneTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GCGMsgMoveCard), global::Weedwacker.Shared.Network.Proto.GCGMsgMoveCard.Parser, new[]{ "Unk3300EJHNJMBJBKG", "FailGuidList", "Unk3300NJILOBDEECC", "ControllerId", "Reason", "CardGuidList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GCGMsgMoveCard), global::Weedwacker.Shared.Network.Proto.GCGMsgMoveCard.Parser, new[]{ "To", "FailGuidList", "From", "ControllerId", "Reason", "CardGuidList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -77,9 +75,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GCGMsgMoveCard(GCGMsgMoveCard other) : this() {
-      unk3300EJHNJMBJBKG_ = other.unk3300EJHNJMBJBKG_;
+      to_ = other.to_;
       failGuidList_ = other.failGuidList_.Clone();
-      unk3300NJILOBDEECC_ = other.unk3300NJILOBDEECC_;
+      from_ = other.from_;
       controllerId_ = other.controllerId_;
       reason_ = other.reason_;
       cardGuidList_ = other.cardGuidList_.Clone();
@@ -92,15 +90,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new GCGMsgMoveCard(this);
     }
 
-    /// <summary>Field number for the "Unk3300_EJHNJMBJBKG" field.</summary>
-    public const int Unk3300EJHNJMBJBKGFieldNumber = 9;
-    private global::Weedwacker.Shared.Network.Proto.GCGZoneType unk3300EJHNJMBJBKG_ = global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid;
+    /// <summary>Field number for the "to" field.</summary>
+    public const int ToFieldNumber = 9;
+    private global::Weedwacker.Shared.Network.Proto.GCGZoneType to_ = global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.GCGZoneType Unk3300EJHNJMBJBKG {
-      get { return unk3300EJHNJMBJBKG_; }
+    public global::Weedwacker.Shared.Network.Proto.GCGZoneType To {
+      get { return to_; }
       set {
-        unk3300EJHNJMBJBKG_ = value;
+        to_ = value;
       }
     }
 
@@ -115,15 +113,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return failGuidList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_NJILOBDEECC" field.</summary>
-    public const int Unk3300NJILOBDEECCFieldNumber = 14;
-    private global::Weedwacker.Shared.Network.Proto.GCGZoneType unk3300NJILOBDEECC_ = global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid;
+    /// <summary>Field number for the "from" field.</summary>
+    public const int FromFieldNumber = 14;
+    private global::Weedwacker.Shared.Network.Proto.GCGZoneType from_ = global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.GCGZoneType Unk3300NJILOBDEECC {
-      get { return unk3300NJILOBDEECC_; }
+    public global::Weedwacker.Shared.Network.Proto.GCGZoneType From {
+      get { return from_; }
       set {
-        unk3300NJILOBDEECC_ = value;
+        from_ = value;
       }
     }
 
@@ -177,9 +175,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300EJHNJMBJBKG != other.Unk3300EJHNJMBJBKG) return false;
+      if (To != other.To) return false;
       if(!failGuidList_.Equals(other.failGuidList_)) return false;
-      if (Unk3300NJILOBDEECC != other.Unk3300NJILOBDEECC) return false;
+      if (From != other.From) return false;
       if (ControllerId != other.ControllerId) return false;
       if (Reason != other.Reason) return false;
       if(!cardGuidList_.Equals(other.cardGuidList_)) return false;
@@ -190,9 +188,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300EJHNJMBJBKG != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) hash ^= Unk3300EJHNJMBJBKG.GetHashCode();
+      if (To != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) hash ^= To.GetHashCode();
       hash ^= failGuidList_.GetHashCode();
-      if (Unk3300NJILOBDEECC != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) hash ^= Unk3300NJILOBDEECC.GetHashCode();
+      if (From != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) hash ^= From.GetHashCode();
       if (ControllerId != 0) hash ^= ControllerId.GetHashCode();
       if (Reason != global::Weedwacker.Shared.Network.Proto.GCGReason.Default) hash ^= Reason.GetHashCode();
       hash ^= cardGuidList_.GetHashCode();
@@ -220,17 +218,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteUInt32(ControllerId);
       }
       cardGuidList_.WriteTo(output, _repeated_cardGuidList_codec);
-      if (Unk3300EJHNJMBJBKG != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
+      if (To != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
         output.WriteRawTag(72);
-        output.WriteEnum((int) Unk3300EJHNJMBJBKG);
+        output.WriteEnum((int) To);
       }
       if (Reason != global::Weedwacker.Shared.Network.Proto.GCGReason.Default) {
         output.WriteRawTag(104);
         output.WriteEnum((int) Reason);
       }
-      if (Unk3300NJILOBDEECC != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
+      if (From != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
         output.WriteRawTag(112);
-        output.WriteEnum((int) Unk3300NJILOBDEECC);
+        output.WriteEnum((int) From);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -248,17 +246,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteUInt32(ControllerId);
       }
       cardGuidList_.WriteTo(ref output, _repeated_cardGuidList_codec);
-      if (Unk3300EJHNJMBJBKG != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
+      if (To != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
         output.WriteRawTag(72);
-        output.WriteEnum((int) Unk3300EJHNJMBJBKG);
+        output.WriteEnum((int) To);
       }
       if (Reason != global::Weedwacker.Shared.Network.Proto.GCGReason.Default) {
         output.WriteRawTag(104);
         output.WriteEnum((int) Reason);
       }
-      if (Unk3300NJILOBDEECC != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
+      if (From != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
         output.WriteRawTag(112);
-        output.WriteEnum((int) Unk3300NJILOBDEECC);
+        output.WriteEnum((int) From);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -270,12 +268,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300EJHNJMBJBKG != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk3300EJHNJMBJBKG);
+      if (To != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) To);
       }
       size += failGuidList_.CalculateSize(_repeated_failGuidList_codec);
-      if (Unk3300NJILOBDEECC != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk3300NJILOBDEECC);
+      if (From != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) From);
       }
       if (ControllerId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ControllerId);
@@ -296,12 +294,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300EJHNJMBJBKG != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
-        Unk3300EJHNJMBJBKG = other.Unk3300EJHNJMBJBKG;
+      if (other.To != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
+        To = other.To;
       }
       failGuidList_.Add(other.failGuidList_);
-      if (other.Unk3300NJILOBDEECC != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
-        Unk3300NJILOBDEECC = other.Unk3300NJILOBDEECC;
+      if (other.From != global::Weedwacker.Shared.Network.Proto.GCGZoneType.Invalid) {
+        From = other.From;
       }
       if (other.ControllerId != 0) {
         ControllerId = other.ControllerId;
@@ -340,7 +338,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 72: {
-            Unk3300EJHNJMBJBKG = (global::Weedwacker.Shared.Network.Proto.GCGZoneType) input.ReadEnum();
+            To = (global::Weedwacker.Shared.Network.Proto.GCGZoneType) input.ReadEnum();
             break;
           }
           case 104: {
@@ -348,7 +346,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk3300NJILOBDEECC = (global::Weedwacker.Shared.Network.Proto.GCGZoneType) input.ReadEnum();
+            From = (global::Weedwacker.Shared.Network.Proto.GCGZoneType) input.ReadEnum();
             break;
           }
         }
@@ -381,7 +379,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 72: {
-            Unk3300EJHNJMBJBKG = (global::Weedwacker.Shared.Network.Proto.GCGZoneType) input.ReadEnum();
+            To = (global::Weedwacker.Shared.Network.Proto.GCGZoneType) input.ReadEnum();
             break;
           }
           case 104: {
@@ -389,7 +387,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk3300NJILOBDEECC = (global::Weedwacker.Shared.Network.Proto.GCGZoneType) input.ReadEnum();
+            From = (global::Weedwacker.Shared.Network.Proto.GCGZoneType) input.ReadEnum();
             break;
           }
         }

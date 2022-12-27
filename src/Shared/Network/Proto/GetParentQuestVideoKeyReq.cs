@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetParentQuestVideoKeyReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9HZXRQYXJlbnRRdWVzdFZpZGVvS2V5UmVxLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvIjQKGUdldFBhcmVudFF1ZXN0VmlkZW9L",
-            "ZXlSZXESFwoPcGFyZW50X3F1ZXN0X2lkGA0gASgNYgZwcm90bzM="));
+            "Ch9HZXRQYXJlbnRRdWVzdFZpZGVvS2V5UmVxLnByb3RvIjQKGUdldFBhcmVu",
+            "dFF1ZXN0VmlkZW9LZXlSZXESFwoPcGFyZW50X3F1ZXN0X2lkGA0gASgNQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

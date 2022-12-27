@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetQuestLackingResourceReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBHZXRRdWVzdExhY2tpbmdSZXNvdXJjZVJlcS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byIuChpHZXRRdWVzdExhY2tpbmdSZXNv",
-            "dXJjZVJlcRIQCghxdWVzdF9pZBgNIAEoDWIGcHJvdG8z"));
+            "CiBHZXRRdWVzdExhY2tpbmdSZXNvdXJjZVJlcS5wcm90byIuChpHZXRRdWVz",
+            "dExhY2tpbmdSZXNvdXJjZVJlcRIQCghxdWVzdF9pZBgNIAEoDUIiqgIfV2Vl",
+            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

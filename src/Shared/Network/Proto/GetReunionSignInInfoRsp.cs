@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetReunionSignInInfoRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1HZXRSZXVuaW9uU2lnbkluSW5mb1JzcC5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90bxoXUmV1bmlvblNpZ25JbkluZm8ucHJvdG8i",
-            "dAoXR2V0UmV1bmlvblNpZ25JbkluZm9Sc3ASSAoMc2lnbl9pbl9pbmZvGAIg",
-            "ASgLMjIuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5SZXVuaW9u",
-            "U2lnbkluSW5mbxIPCgdyZXRjb2RlGA0gASgFYgZwcm90bzM="));
+            "Ch1HZXRSZXVuaW9uU2lnbkluSW5mb1JzcC5wcm90bxoXUmV1bmlvblNpZ25J",
+            "bkluZm8ucHJvdG8iVAoXR2V0UmV1bmlvblNpZ25JbkluZm9Sc3ASKAoMc2ln",
+            "bl9pbl9pbmZvGAIgASgLMhIuUmV1bmlvblNpZ25JbkluZm8SDwoHcmV0Y29k",
+            "ZRgNIAEoBUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ReunionSignInInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,27 +24,24 @@ namespace Weedwacker.Shared.Network.Proto {
     static AbilityMetaModifierChangeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9BYmlsaXR5TWV0YU1vZGlmaWVyQ2hhbmdlLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvGh1BYmlsaXR5QXR0YWNoZWRNb2RpZmll",
-            "ci5wcm90bxoTQWJpbGl0eVN0cmluZy5wcm90bxoUTW9kaWZpZXJBY3Rpb24u",
-            "cHJvdG8aFk1vZGlmaWVyUHJvcGVydHkucHJvdG8iywQKGUFiaWxpdHlNZXRh",
-            "TW9kaWZpZXJDaGFuZ2USXQobYXR0YWNoZWRfaW5zdGFuY2VkX21vZGlmaWVy",
-            "GAMgASgLMjguV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5BYmls",
-            "aXR5QXR0YWNoZWRNb2RpZmllchIiChppc19hdHRhY2hlZF9wYXJlbnRfYWJp",
-            "bGl0eRgFIAEoCBJFCgpwcm9wZXJ0aWVzGA4gAygLMjEuV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90by5Nb2RpZmllclByb3BlcnR5EhsKE1VuazMz",
-            "MDBfTk9QS09ES09ISksYDCABKAgSGQoRbW9kaWZpZXJfbG9jYWxfaWQYAiAB",
-            "KAUSGwoTVW5rMzMwMF9QQk5FTlBCTU5DSRgIIAEoCBJLChNwYXJlbnRfYWJp",
-            "bGl0eV9uYW1lGA0gASgLMi4uV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90by5BYmlsaXR5U3RyaW5nEhcKD3NlcnZlcl9idWZmX3VpZBgJIAEoDRIX",
-            "Cg9hcHBseV9lbnRpdHlfaWQYByABKA0STwoXcGFyZW50X2FiaWxpdHlfb3Zl",
-            "cnJpZGUYDyABKAsyLi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
-            "LkFiaWxpdHlTdHJpbmcSPwoGYWN0aW9uGAQgASgOMi8uV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90by5Nb2RpZmllckFjdGlvbmIGcHJvdG8z"));
+            "Ch9BYmlsaXR5TWV0YU1vZGlmaWVyQ2hhbmdlLnByb3RvGh1BYmlsaXR5QXR0",
+            "YWNoZWRNb2RpZmllci5wcm90bxoTQWJpbGl0eVN0cmluZy5wcm90bxoUTW9k",
+            "aWZpZXJBY3Rpb24ucHJvdG8aFk1vZGlmaWVyUHJvcGVydHkucHJvdG8ipQMK",
+            "GUFiaWxpdHlNZXRhTW9kaWZpZXJDaGFuZ2USPQobYXR0YWNoZWRfaW5zdGFu",
+            "Y2VkX21vZGlmaWVyGAMgASgLMhguQWJpbGl0eUF0dGFjaGVkTW9kaWZpZXIS",
+            "IgoaaXNfYXR0YWNoZWRfcGFyZW50X2FiaWxpdHkYBSABKAgSJQoKcHJvcGVy",
+            "dGllcxgOIAMoCzIRLk1vZGlmaWVyUHJvcGVydHkSFgoOaXNfbXV0ZV9yZW1v",
+            "dGUYDCABKAgSGQoRbW9kaWZpZXJfbG9jYWxfaWQYAiABKAUSGgoSaXNfZHVy",
+            "YWJpbGl0eV96ZXJvGAggASgIEisKE3BhcmVudF9hYmlsaXR5X25hbWUYDSAB",
+            "KAsyDi5BYmlsaXR5U3RyaW5nEhcKD3NlcnZlcl9idWZmX3VpZBgJIAEoDRIX",
+            "Cg9hcHBseV9lbnRpdHlfaWQYByABKA0SLwoXcGFyZW50X2FiaWxpdHlfb3Zl",
+            "cnJpZGUYDyABKAsyDi5BYmlsaXR5U3RyaW5nEh8KBmFjdGlvbhgEIAEoDjIP",
+            "Lk1vZGlmaWVyQWN0aW9uQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
+            "LlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.AbilityAttachedModifierReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.AbilityStringReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ModifierActionReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ModifierPropertyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityMetaModifierChange), global::Weedwacker.Shared.Network.Proto.AbilityMetaModifierChange.Parser, new[]{ "AttachedInstancedModifier", "IsAttachedParentAbility", "Properties", "Unk3300NOPKODKOHJK", "ModifierLocalId", "Unk3300PBNENPBMNCI", "ParentAbilityName", "ServerBuffUid", "ApplyEntityId", "ParentAbilityOverride", "Action" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityMetaModifierChange), global::Weedwacker.Shared.Network.Proto.AbilityMetaModifierChange.Parser, new[]{ "AttachedInstancedModifier", "IsAttachedParentAbility", "Properties", "IsMuteRemote", "ModifierLocalId", "IsDurabilityZero", "ParentAbilityName", "ServerBuffUid", "ApplyEntityId", "ParentAbilityOverride", "Action" }, null, null, null, null)
           }));
     }
     #endregion
@@ -88,9 +85,9 @@ namespace Weedwacker.Shared.Network.Proto {
       attachedInstancedModifier_ = other.attachedInstancedModifier_ != null ? other.attachedInstancedModifier_.Clone() : null;
       isAttachedParentAbility_ = other.isAttachedParentAbility_;
       properties_ = other.properties_.Clone();
-      unk3300NOPKODKOHJK_ = other.unk3300NOPKODKOHJK_;
+      isMuteRemote_ = other.isMuteRemote_;
       modifierLocalId_ = other.modifierLocalId_;
-      unk3300PBNENPBMNCI_ = other.unk3300PBNENPBMNCI_;
+      isDurabilityZero_ = other.isDurabilityZero_;
       parentAbilityName_ = other.parentAbilityName_ != null ? other.parentAbilityName_.Clone() : null;
       serverBuffUid_ = other.serverBuffUid_;
       applyEntityId_ = other.applyEntityId_;
@@ -140,15 +137,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return properties_; }
     }
 
-    /// <summary>Field number for the "Unk3300_NOPKODKOHJK" field.</summary>
-    public const int Unk3300NOPKODKOHJKFieldNumber = 12;
-    private bool unk3300NOPKODKOHJK_;
+    /// <summary>Field number for the "is_mute_remote" field.</summary>
+    public const int IsMuteRemoteFieldNumber = 12;
+    private bool isMuteRemote_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300NOPKODKOHJK {
-      get { return unk3300NOPKODKOHJK_; }
+    public bool IsMuteRemote {
+      get { return isMuteRemote_; }
       set {
-        unk3300NOPKODKOHJK_ = value;
+        isMuteRemote_ = value;
       }
     }
 
@@ -164,15 +161,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_PBNENPBMNCI" field.</summary>
-    public const int Unk3300PBNENPBMNCIFieldNumber = 8;
-    private bool unk3300PBNENPBMNCI_;
+    /// <summary>Field number for the "is_durability_zero" field.</summary>
+    public const int IsDurabilityZeroFieldNumber = 8;
+    private bool isDurabilityZero_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300PBNENPBMNCI {
-      get { return unk3300PBNENPBMNCI_; }
+    public bool IsDurabilityZero {
+      get { return isDurabilityZero_; }
       set {
-        unk3300PBNENPBMNCI_ = value;
+        isDurabilityZero_ = value;
       }
     }
 
@@ -254,9 +251,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (!object.Equals(AttachedInstancedModifier, other.AttachedInstancedModifier)) return false;
       if (IsAttachedParentAbility != other.IsAttachedParentAbility) return false;
       if(!properties_.Equals(other.properties_)) return false;
-      if (Unk3300NOPKODKOHJK != other.Unk3300NOPKODKOHJK) return false;
+      if (IsMuteRemote != other.IsMuteRemote) return false;
       if (ModifierLocalId != other.ModifierLocalId) return false;
-      if (Unk3300PBNENPBMNCI != other.Unk3300PBNENPBMNCI) return false;
+      if (IsDurabilityZero != other.IsDurabilityZero) return false;
       if (!object.Equals(ParentAbilityName, other.ParentAbilityName)) return false;
       if (ServerBuffUid != other.ServerBuffUid) return false;
       if (ApplyEntityId != other.ApplyEntityId) return false;
@@ -272,9 +269,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (attachedInstancedModifier_ != null) hash ^= AttachedInstancedModifier.GetHashCode();
       if (IsAttachedParentAbility != false) hash ^= IsAttachedParentAbility.GetHashCode();
       hash ^= properties_.GetHashCode();
-      if (Unk3300NOPKODKOHJK != false) hash ^= Unk3300NOPKODKOHJK.GetHashCode();
+      if (IsMuteRemote != false) hash ^= IsMuteRemote.GetHashCode();
       if (ModifierLocalId != 0) hash ^= ModifierLocalId.GetHashCode();
-      if (Unk3300PBNENPBMNCI != false) hash ^= Unk3300PBNENPBMNCI.GetHashCode();
+      if (IsDurabilityZero != false) hash ^= IsDurabilityZero.GetHashCode();
       if (parentAbilityName_ != null) hash ^= ParentAbilityName.GetHashCode();
       if (ServerBuffUid != 0) hash ^= ServerBuffUid.GetHashCode();
       if (ApplyEntityId != 0) hash ^= ApplyEntityId.GetHashCode();
@@ -318,17 +315,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteUInt32(ApplyEntityId);
       }
-      if (Unk3300PBNENPBMNCI != false) {
+      if (IsDurabilityZero != false) {
         output.WriteRawTag(64);
-        output.WriteBool(Unk3300PBNENPBMNCI);
+        output.WriteBool(IsDurabilityZero);
       }
       if (ServerBuffUid != 0) {
         output.WriteRawTag(72);
         output.WriteUInt32(ServerBuffUid);
       }
-      if (Unk3300NOPKODKOHJK != false) {
+      if (IsMuteRemote != false) {
         output.WriteRawTag(96);
-        output.WriteBool(Unk3300NOPKODKOHJK);
+        output.WriteBool(IsMuteRemote);
       }
       if (parentAbilityName_ != null) {
         output.WriteRawTag(106);
@@ -369,17 +366,17 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteUInt32(ApplyEntityId);
       }
-      if (Unk3300PBNENPBMNCI != false) {
+      if (IsDurabilityZero != false) {
         output.WriteRawTag(64);
-        output.WriteBool(Unk3300PBNENPBMNCI);
+        output.WriteBool(IsDurabilityZero);
       }
       if (ServerBuffUid != 0) {
         output.WriteRawTag(72);
         output.WriteUInt32(ServerBuffUid);
       }
-      if (Unk3300NOPKODKOHJK != false) {
+      if (IsMuteRemote != false) {
         output.WriteRawTag(96);
-        output.WriteBool(Unk3300NOPKODKOHJK);
+        output.WriteBool(IsMuteRemote);
       }
       if (parentAbilityName_ != null) {
         output.WriteRawTag(106);
@@ -407,13 +404,13 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + 1;
       }
       size += properties_.CalculateSize(_repeated_properties_codec);
-      if (Unk3300NOPKODKOHJK != false) {
+      if (IsMuteRemote != false) {
         size += 1 + 1;
       }
       if (ModifierLocalId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ModifierLocalId);
       }
-      if (Unk3300PBNENPBMNCI != false) {
+      if (IsDurabilityZero != false) {
         size += 1 + 1;
       }
       if (parentAbilityName_ != null) {
@@ -453,14 +450,14 @@ namespace Weedwacker.Shared.Network.Proto {
         IsAttachedParentAbility = other.IsAttachedParentAbility;
       }
       properties_.Add(other.properties_);
-      if (other.Unk3300NOPKODKOHJK != false) {
-        Unk3300NOPKODKOHJK = other.Unk3300NOPKODKOHJK;
+      if (other.IsMuteRemote != false) {
+        IsMuteRemote = other.IsMuteRemote;
       }
       if (other.ModifierLocalId != 0) {
         ModifierLocalId = other.ModifierLocalId;
       }
-      if (other.Unk3300PBNENPBMNCI != false) {
-        Unk3300PBNENPBMNCI = other.Unk3300PBNENPBMNCI;
+      if (other.IsDurabilityZero != false) {
+        IsDurabilityZero = other.IsDurabilityZero;
       }
       if (other.parentAbilityName_ != null) {
         if (parentAbilityName_ == null) {
@@ -522,7 +519,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk3300PBNENPBMNCI = input.ReadBool();
+            IsDurabilityZero = input.ReadBool();
             break;
           }
           case 72: {
@@ -530,7 +527,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk3300NOPKODKOHJK = input.ReadBool();
+            IsMuteRemote = input.ReadBool();
             break;
           }
           case 106: {
@@ -590,7 +587,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk3300PBNENPBMNCI = input.ReadBool();
+            IsDurabilityZero = input.ReadBool();
             break;
           }
           case 72: {
@@ -598,7 +595,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk3300NOPKODKOHJK = input.ReadBool();
+            IsMuteRemote = input.ReadBool();
             break;
           }
           case 106: {

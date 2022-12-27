@@ -24,17 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static ServerBuffChangeNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxTZXJ2ZXJCdWZmQ2hhbmdlTm90aWZ5LnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvGhBTZXJ2ZXJCdWZmLnByb3RvIowDChZTZXJ2",
-            "ZXJCdWZmQ2hhbmdlTm90aWZ5EkUKEHNlcnZlcl9idWZmX2xpc3QYBCADKAsy",
-            "Ky5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlNlcnZlckJ1ZmYS",
-            "GAoQaXNfY3JlYXR1cmVfYnVmZhgIIAEoCBIWCg5lbnRpdHlfaWRfbGlzdBgG",
-            "IAMoDRJtChdzZXJ2ZXJfYnVmZl9jaGFuZ2VfdHlwZRgJIAEoDjJMLldlZWR3",
-            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uU2VydmVyQnVmZkNoYW5nZU5v",
-            "dGlmeS5TZXJ2ZXJCdWZmQ2hhbmdlVHlwZRIYChBhdmF0YXJfZ3VpZF9saXN0",
-            "GAUgAygEInAKFFNlcnZlckJ1ZmZDaGFuZ2VUeXBlEisKJ1NFUlZFUl9CVUZG",
-            "X0NIQU5HRV9UWVBFX0FERF9TRVJWRVJfQlVGRhAAEisKJ1NFUlZFUl9CVUZG",
-            "X0NIQU5HRV9UWVBFX0RFTF9TRVJWRVJfQlVGRhABYgZwcm90bzM="));
+            "ChxTZXJ2ZXJCdWZmQ2hhbmdlTm90aWZ5LnByb3RvGhBTZXJ2ZXJCdWZmLnBy",
+            "b3RvIswCChZTZXJ2ZXJCdWZmQ2hhbmdlTm90aWZ5EiUKEHNlcnZlcl9idWZm",
+            "X2xpc3QYBCADKAsyCy5TZXJ2ZXJCdWZmEhgKEGlzX2NyZWF0dXJlX2J1ZmYY",
+            "CCABKAgSFgoOZW50aXR5X2lkX2xpc3QYBiADKA0STQoXc2VydmVyX2J1ZmZf",
+            "Y2hhbmdlX3R5cGUYCSABKA4yLC5TZXJ2ZXJCdWZmQ2hhbmdlTm90aWZ5LlNl",
+            "cnZlckJ1ZmZDaGFuZ2VUeXBlEhgKEGF2YXRhcl9ndWlkX2xpc3QYBSADKAQi",
+            "cAoUU2VydmVyQnVmZkNoYW5nZVR5cGUSKwonU0VSVkVSX0JVRkZfQ0hBTkdF",
+            "X1RZUEVfQUREX1NFUlZFUl9CVUZGEAASKwonU0VSVkVSX0JVRkZfQ0hBTkdF",
+            "X1RZUEVfREVMX1NFUlZFUl9CVUZGEAFCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ServerBuffReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

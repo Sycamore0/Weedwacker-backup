@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static BrickBreakerSelectAvatarReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFCcmlja0JyZWFrZXJTZWxlY3RBdmF0YXJSZXEucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iMAobQnJpY2tCcmVha2VyU2VsZWN0",
-            "QXZhdGFyUmVxEhEKCWF2YXRhcl9pZBgMIAMoDWIGcHJvdG8z"));
+            "CiFCcmlja0JyZWFrZXJTZWxlY3RBdmF0YXJSZXEucHJvdG8iMAobQnJpY2tC",
+            "cmVha2VyU2VsZWN0QXZhdGFyUmVxEhEKCWF2YXRhcl9pZBgMIAMoDUIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

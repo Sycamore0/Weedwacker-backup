@@ -24,17 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static ReunionBriefInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZSZXVuaW9uQnJpZWZJbmZvLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvGhpSZXVuaW9uUHJpdmlsZWdlSW5mby5wcm90byLzAgoQ",
-            "UmV1bmlvbkJyaWVmSW5mbxIcChRmaXJzdF9kYXlfc3RhcnRfdGltZRgBIAEo",
-            "DRIPCgd2ZXJzaW9uGAsgASgJEhIKCm1pc3Npb25faWQYBiABKA0SEwoLZmlu",
-            "aXNoX3RpbWUYAiABKA0SGwoTVW5rMzMwMF9PS0dBQUVERU5FSRgNIAEoCBIU",
-            "Cgxwcml2aWxlZ2VfaWQYBSABKA0STQoOcHJpdmlsZWdlX2luZm8YCiABKAsy",
-            "NS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlJldW5pb25Qcml2",
-            "aWxlZ2VJbmZvEhIKCnN0YXJ0X3RpbWUYDiABKA0SHAoUZmlyc3RfZ2lmdF9y",
-            "ZXdhcmRfaWQYCSABKA0SGwoTVW5rMzMwMF9PREtMUE9NS0tQRBgIIAEoCBIb",
-            "ChNVbmszMzAwX01ISExFSklGRklNGAcgASgIEhkKEXNpZ25faW5fY29uZmln",
-            "X2lkGAwgASgNYgZwcm90bzM="));
+            "ChZSZXVuaW9uQnJpZWZJbmZvLnByb3RvGhpSZXVuaW9uUHJpdmlsZWdlSW5m",
+            "by5wcm90byLTAgoQUmV1bmlvbkJyaWVmSW5mbxIcChRmaXJzdF9kYXlfc3Rh",
+            "cnRfdGltZRgBIAEoDRIPCgd2ZXJzaW9uGAsgASgJEhIKCm1pc3Npb25faWQY",
+            "BiABKA0SEwoLZmluaXNoX3RpbWUYAiABKA0SGwoTVW5rMzMwMF9PS0dBQUVE",
+            "RU5FSRgNIAEoCBIUCgxwcml2aWxlZ2VfaWQYBSABKA0SLQoOcHJpdmlsZWdl",
+            "X2luZm8YCiABKAsyFS5SZXVuaW9uUHJpdmlsZWdlSW5mbxISCgpzdGFydF90",
+            "aW1lGA4gASgNEhwKFGZpcnN0X2dpZnRfcmV3YXJkX2lkGAkgASgNEhsKE1Vu",
+            "azMzMDBfT0RLTFBPTUtLUEQYCCABKAgSGwoTVW5rMzMwMF9NSEhMRUpJRkZJ",
+            "TRgHIAEoCBIZChFzaWduX2luX2NvbmZpZ19pZBgMIAEoDUIiqgIfV2VlZHdh",
+            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ReunionPrivilegeInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

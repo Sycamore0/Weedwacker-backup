@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static RemoveBlacklistRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhSZW1vdmVCbGFja2xpc3RSc3AucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8iOQoSUmVtb3ZlQmxhY2tsaXN0UnNwEhIKCnRhcmdl",
-            "dF91aWQYBiABKA0SDwoHcmV0Y29kZRgIIAEoBWIGcHJvdG8z"));
+            "ChhSZW1vdmVCbGFja2xpc3RSc3AucHJvdG8iOQoSUmVtb3ZlQmxhY2tsaXN0",
+            "UnNwEhIKCnRhcmdldF91aWQYBiABKA0SDwoHcmV0Y29kZRgIIAEoBUIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

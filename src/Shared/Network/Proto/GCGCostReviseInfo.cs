@@ -24,17 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGCostReviseInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdHQ0dDb3N0UmV2aXNlSW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90bxoXR0NHQXR0YWNrQ29zdEluZm8ucHJvdG8aGUdDR1Bs",
-            "YXlDYXJkQ29zdEluZm8ucHJvdG8aHkdDR1NlbGVjdE9uU3RhZ2VDb3N0SW5m",
-            "by5wcm90byLMAgoRR0NHQ29zdFJldmlzZUluZm8SIQoZY2FuX3VzZV9oYW5k",
-            "X2NhcmRfaWRfbGlzdBgPIAMoDRJcChlzZWxlY3Rfb25fc3RhZ2VfY29zdF9s",
-            "aXN0GA0gAygLMjkuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5H",
-            "Q0dTZWxlY3RPblN0YWdlQ29zdEluZm8SUQoTcGxheV9jYXJkX2Nvc3RfbGlz",
-            "dBgFIAMoCzI0LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uR0NH",
-            "UGxheUNhcmRDb3N0SW5mbxJMChBhdHRhY2tfY29zdF9saXN0GAwgAygLMjIu",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5HQ0dBdHRhY2tDb3N0",
-            "SW5mbxIVCg1pc19jYW5fYXR0YWNrGA4gASgIYgZwcm90bzM="));
+            "ChdHQ0dDb3N0UmV2aXNlSW5mby5wcm90bxoXR0NHQXR0YWNrQ29zdEluZm8u",
+            "cHJvdG8aGUdDR1BsYXlDYXJkQ29zdEluZm8ucHJvdG8aHkdDR1NlbGVjdE9u",
+            "U3RhZ2VDb3N0SW5mby5wcm90byLsAQoRR0NHQ29zdFJldmlzZUluZm8SIQoZ",
+            "Y2FuX3VzZV9oYW5kX2NhcmRfaWRfbGlzdBgPIAMoDRI8ChlzZWxlY3Rfb25f",
+            "c3RhZ2VfY29zdF9saXN0GA0gAygLMhkuR0NHU2VsZWN0T25TdGFnZUNvc3RJ",
+            "bmZvEjEKE3BsYXlfY2FyZF9jb3N0X2xpc3QYBSADKAsyFC5HQ0dQbGF5Q2Fy",
+            "ZENvc3RJbmZvEiwKEGF0dGFja19jb3N0X2xpc3QYDCADKAsyEi5HQ0dBdHRh",
+            "Y2tDb3N0SW5mbxIVCg1pc19jYW5fYXR0YWNrGA4gASgIQiKqAh9XZWVkd2Fj",
+            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GCGAttackCostInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GCGPlayCardCostInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GCGSelectOnStageCostInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

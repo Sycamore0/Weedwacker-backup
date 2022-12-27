@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static UgcMusicNoteReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJVZ2NNdXNpY05vdGUucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8iNAoMVWdjTXVzaWNOb3RlEhIKCnN0YXJ0X3RpbWUYCyABKA0S",
-            "EAoIZW5kX3RpbWUYCSABKA1iBnByb3RvMw=="));
+            "ChJVZ2NNdXNpY05vdGUucHJvdG8iNAoMVWdjTXVzaWNOb3RlEhIKCnN0YXJ0",
+            "X3RpbWUYCyABKA0SEAoIZW5kX3RpbWUYCSABKA1CIqoCH1dlZWR3YWNrZXIu",
+            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

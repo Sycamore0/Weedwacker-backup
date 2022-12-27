@@ -24,25 +24,23 @@ namespace Weedwacker.Shared.Network.Proto {
     static RogueStageInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRSb2d1ZVN0YWdlSW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90bxodUm9ndWVTaG93QXZhdGFyVGVhbUluZm8ucHJvdG8aGVJv",
-            "Z3VlbGlrZVJ1bmVSZWNvcmQucHJvdG8i/AMKDlJvZ3VlU3RhZ2VJbmZvEh0K",
-            "FHJldmlzZV9tb25zdGVyX2xldmVsGK4PIAEoDRIRCglpc19wYXNzZWQYCyAB",
-            "KAgSGwoTVW5rMzMwMF9HR0hNRktOSFBBShgCIAEoDRJNCgthdmF0YXJfdGVh",
-            "bRgIIAEoCzI4LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uUm9n",
-            "dWVTaG93QXZhdGFyVGVhbUluZm8SFwoPaXNfdGFrZW5fcmV3YXJkGAkgASgI",
-            "EhsKE1VuazMzMDBfSE1DSk9MTEtNTUIYDiABKAgSTgoQcnVuZV9yZWNvcmRf",
-            "bGlzdBgFIAMoCzI0LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8u",
-            "Um9ndWVsaWtlUnVuZVJlY29yZBIbChNVbmszMzAwX0hNQUVMQkJPRkROGAYg",
-            "ASgIEhsKE1VuazMzMDBfQ01NR0tNTU1PQUwYAyABKA0SDwoHaXNfb3BlbhgN",
-            "IAEoCBIQCghzdGFnZV9pZBgHIAEoDRIbChNVbmszMzAwX0RBQlBGQ1BDTkNC",
-            "GAQgASgNEhEKCWN1cl9sZXZlbBgMIAEoDRIbChNVbmszMzAwX09ISEJFUE9J",
-            "Q0xJGAEgASgNEhwKE1VuazMzMDBfSFBLRkhMTENKQk0YkwIgASgNYgZwcm90",
-            "bzM="));
+            "ChRSb2d1ZVN0YWdlSW5mby5wcm90bxodUm9ndWVTaG93QXZhdGFyVGVhbUlu",
+            "Zm8ucHJvdG8aGVJvZ3VlbGlrZVJ1bmVSZWNvcmQucHJvdG8ioQMKDlJvZ3Vl",
+            "U3RhZ2VJbmZvEh0KFHJldmlzZV9tb25zdGVyX2xldmVsGK4PIAEoDRIRCglp",
+            "c19wYXNzZWQYCyABKAgSGwoTVW5rMzMwMF9HR0hNRktOSFBBShgCIAEoDRIt",
+            "CgthdmF0YXJfdGVhbRgIIAEoCzIYLlJvZ3VlU2hvd0F2YXRhclRlYW1JbmZv",
+            "EhcKD2lzX3Rha2VuX3Jld2FyZBgJIAEoCBITCgtpc19leHBsb3JlZBgOIAEo",
+            "CBIuChBydW5lX3JlY29yZF9saXN0GAUgAygLMhQuUm9ndWVsaWtlUnVuZVJl",
+            "Y29yZBIUCgxpc19pbl9jb21iYXQYBiABKAgSEgoKY29pbl9jX251bRgDIAEo",
+            "DRIPCgdpc19vcGVuGA0gASgIEhAKCHN0YWdlX2lkGAcgASgNEhgKEG1heF9w",
+            "YXNzZWRfbGV2ZWwYBCABKA0SEQoJY3VyX2xldmVsGAwgASgNEhsKE1VuazMz",
+            "MDBfT0hIQkVQT0lDTEkYASABKA0SHAoTVW5rMzMwMF9IUEtGSExMQ0pCTRiT",
+            "AiABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.RogueShowAvatarTeamInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.RoguelikeRuneRecordReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RogueStageInfo), global::Weedwacker.Shared.Network.Proto.RogueStageInfo.Parser, new[]{ "ReviseMonsterLevel", "IsPassed", "Unk3300GGHMFKNHPAJ", "AvatarTeam", "IsTakenReward", "Unk3300HMCJOLLKMMB", "RuneRecordList", "Unk3300HMAELBBOFDN", "Unk3300CMMGKMMMOAL", "IsOpen", "StageId", "Unk3300DABPFCPCNCB", "CurLevel", "Unk3300OHHBEPOICLI", "Unk3300HPKFHLLCJBM" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.RogueStageInfo), global::Weedwacker.Shared.Network.Proto.RogueStageInfo.Parser, new[]{ "ReviseMonsterLevel", "IsPassed", "Unk3300GGHMFKNHPAJ", "AvatarTeam", "IsTakenReward", "IsExplored", "RuneRecordList", "IsInCombat", "CoinCNum", "IsOpen", "StageId", "MaxPassedLevel", "CurLevel", "Unk3300OHHBEPOICLI", "Unk3300HPKFHLLCJBM" }, null, null, null, null)
           }));
     }
     #endregion
@@ -88,13 +86,13 @@ namespace Weedwacker.Shared.Network.Proto {
       unk3300GGHMFKNHPAJ_ = other.unk3300GGHMFKNHPAJ_;
       avatarTeam_ = other.avatarTeam_ != null ? other.avatarTeam_.Clone() : null;
       isTakenReward_ = other.isTakenReward_;
-      unk3300HMCJOLLKMMB_ = other.unk3300HMCJOLLKMMB_;
+      isExplored_ = other.isExplored_;
       runeRecordList_ = other.runeRecordList_.Clone();
-      unk3300HMAELBBOFDN_ = other.unk3300HMAELBBOFDN_;
-      unk3300CMMGKMMMOAL_ = other.unk3300CMMGKMMMOAL_;
+      isInCombat_ = other.isInCombat_;
+      coinCNum_ = other.coinCNum_;
       isOpen_ = other.isOpen_;
       stageId_ = other.stageId_;
-      unk3300DABPFCPCNCB_ = other.unk3300DABPFCPCNCB_;
+      maxPassedLevel_ = other.maxPassedLevel_;
       curLevel_ = other.curLevel_;
       unk3300OHHBEPOICLI_ = other.unk3300OHHBEPOICLI_;
       unk3300HPKFHLLCJBM_ = other.unk3300HPKFHLLCJBM_;
@@ -167,15 +165,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_HMCJOLLKMMB" field.</summary>
-    public const int Unk3300HMCJOLLKMMBFieldNumber = 14;
-    private bool unk3300HMCJOLLKMMB_;
+    /// <summary>Field number for the "is_explored" field.</summary>
+    public const int IsExploredFieldNumber = 14;
+    private bool isExplored_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300HMCJOLLKMMB {
-      get { return unk3300HMCJOLLKMMB_; }
+    public bool IsExplored {
+      get { return isExplored_; }
       set {
-        unk3300HMCJOLLKMMB_ = value;
+        isExplored_ = value;
       }
     }
 
@@ -190,27 +188,27 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return runeRecordList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_HMAELBBOFDN" field.</summary>
-    public const int Unk3300HMAELBBOFDNFieldNumber = 6;
-    private bool unk3300HMAELBBOFDN_;
+    /// <summary>Field number for the "is_in_combat" field.</summary>
+    public const int IsInCombatFieldNumber = 6;
+    private bool isInCombat_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Unk3300HMAELBBOFDN {
-      get { return unk3300HMAELBBOFDN_; }
+    public bool IsInCombat {
+      get { return isInCombat_; }
       set {
-        unk3300HMAELBBOFDN_ = value;
+        isInCombat_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_CMMGKMMMOAL" field.</summary>
-    public const int Unk3300CMMGKMMMOALFieldNumber = 3;
-    private uint unk3300CMMGKMMMOAL_;
+    /// <summary>Field number for the "coin_c_num" field.</summary>
+    public const int CoinCNumFieldNumber = 3;
+    private uint coinCNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300CMMGKMMMOAL {
-      get { return unk3300CMMGKMMMOAL_; }
+    public uint CoinCNum {
+      get { return coinCNum_; }
       set {
-        unk3300CMMGKMMMOAL_ = value;
+        coinCNum_ = value;
       }
     }
 
@@ -238,15 +236,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_DABPFCPCNCB" field.</summary>
-    public const int Unk3300DABPFCPCNCBFieldNumber = 4;
-    private uint unk3300DABPFCPCNCB_;
+    /// <summary>Field number for the "max_passed_level" field.</summary>
+    public const int MaxPassedLevelFieldNumber = 4;
+    private uint maxPassedLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300DABPFCPCNCB {
-      get { return unk3300DABPFCPCNCB_; }
+    public uint MaxPassedLevel {
+      get { return maxPassedLevel_; }
       set {
-        unk3300DABPFCPCNCB_ = value;
+        maxPassedLevel_ = value;
       }
     }
 
@@ -306,13 +304,13 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Unk3300GGHMFKNHPAJ != other.Unk3300GGHMFKNHPAJ) return false;
       if (!object.Equals(AvatarTeam, other.AvatarTeam)) return false;
       if (IsTakenReward != other.IsTakenReward) return false;
-      if (Unk3300HMCJOLLKMMB != other.Unk3300HMCJOLLKMMB) return false;
+      if (IsExplored != other.IsExplored) return false;
       if(!runeRecordList_.Equals(other.runeRecordList_)) return false;
-      if (Unk3300HMAELBBOFDN != other.Unk3300HMAELBBOFDN) return false;
-      if (Unk3300CMMGKMMMOAL != other.Unk3300CMMGKMMMOAL) return false;
+      if (IsInCombat != other.IsInCombat) return false;
+      if (CoinCNum != other.CoinCNum) return false;
       if (IsOpen != other.IsOpen) return false;
       if (StageId != other.StageId) return false;
-      if (Unk3300DABPFCPCNCB != other.Unk3300DABPFCPCNCB) return false;
+      if (MaxPassedLevel != other.MaxPassedLevel) return false;
       if (CurLevel != other.CurLevel) return false;
       if (Unk3300OHHBEPOICLI != other.Unk3300OHHBEPOICLI) return false;
       if (Unk3300HPKFHLLCJBM != other.Unk3300HPKFHLLCJBM) return false;
@@ -328,13 +326,13 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Unk3300GGHMFKNHPAJ != 0) hash ^= Unk3300GGHMFKNHPAJ.GetHashCode();
       if (avatarTeam_ != null) hash ^= AvatarTeam.GetHashCode();
       if (IsTakenReward != false) hash ^= IsTakenReward.GetHashCode();
-      if (Unk3300HMCJOLLKMMB != false) hash ^= Unk3300HMCJOLLKMMB.GetHashCode();
+      if (IsExplored != false) hash ^= IsExplored.GetHashCode();
       hash ^= runeRecordList_.GetHashCode();
-      if (Unk3300HMAELBBOFDN != false) hash ^= Unk3300HMAELBBOFDN.GetHashCode();
-      if (Unk3300CMMGKMMMOAL != 0) hash ^= Unk3300CMMGKMMMOAL.GetHashCode();
+      if (IsInCombat != false) hash ^= IsInCombat.GetHashCode();
+      if (CoinCNum != 0) hash ^= CoinCNum.GetHashCode();
       if (IsOpen != false) hash ^= IsOpen.GetHashCode();
       if (StageId != 0) hash ^= StageId.GetHashCode();
-      if (Unk3300DABPFCPCNCB != 0) hash ^= Unk3300DABPFCPCNCB.GetHashCode();
+      if (MaxPassedLevel != 0) hash ^= MaxPassedLevel.GetHashCode();
       if (CurLevel != 0) hash ^= CurLevel.GetHashCode();
       if (Unk3300OHHBEPOICLI != 0) hash ^= Unk3300OHHBEPOICLI.GetHashCode();
       if (Unk3300HPKFHLLCJBM != 0) hash ^= Unk3300HPKFHLLCJBM.GetHashCode();
@@ -364,18 +362,18 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(Unk3300GGHMFKNHPAJ);
       }
-      if (Unk3300CMMGKMMMOAL != 0) {
+      if (CoinCNum != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300CMMGKMMMOAL);
+        output.WriteUInt32(CoinCNum);
       }
-      if (Unk3300DABPFCPCNCB != 0) {
+      if (MaxPassedLevel != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk3300DABPFCPCNCB);
+        output.WriteUInt32(MaxPassedLevel);
       }
       runeRecordList_.WriteTo(output, _repeated_runeRecordList_codec);
-      if (Unk3300HMAELBBOFDN != false) {
+      if (IsInCombat != false) {
         output.WriteRawTag(48);
-        output.WriteBool(Unk3300HMAELBBOFDN);
+        output.WriteBool(IsInCombat);
       }
       if (StageId != 0) {
         output.WriteRawTag(56);
@@ -401,9 +399,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(104);
         output.WriteBool(IsOpen);
       }
-      if (Unk3300HMCJOLLKMMB != false) {
+      if (IsExplored != false) {
         output.WriteRawTag(112);
-        output.WriteBool(Unk3300HMCJOLLKMMB);
+        output.WriteBool(IsExplored);
       }
       if (Unk3300HPKFHLLCJBM != 0) {
         output.WriteRawTag(152, 17);
@@ -431,18 +429,18 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(16);
         output.WriteUInt32(Unk3300GGHMFKNHPAJ);
       }
-      if (Unk3300CMMGKMMMOAL != 0) {
+      if (CoinCNum != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Unk3300CMMGKMMMOAL);
+        output.WriteUInt32(CoinCNum);
       }
-      if (Unk3300DABPFCPCNCB != 0) {
+      if (MaxPassedLevel != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk3300DABPFCPCNCB);
+        output.WriteUInt32(MaxPassedLevel);
       }
       runeRecordList_.WriteTo(ref output, _repeated_runeRecordList_codec);
-      if (Unk3300HMAELBBOFDN != false) {
+      if (IsInCombat != false) {
         output.WriteRawTag(48);
-        output.WriteBool(Unk3300HMAELBBOFDN);
+        output.WriteBool(IsInCombat);
       }
       if (StageId != 0) {
         output.WriteRawTag(56);
@@ -468,9 +466,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(104);
         output.WriteBool(IsOpen);
       }
-      if (Unk3300HMCJOLLKMMB != false) {
+      if (IsExplored != false) {
         output.WriteRawTag(112);
-        output.WriteBool(Unk3300HMCJOLLKMMB);
+        output.WriteBool(IsExplored);
       }
       if (Unk3300HPKFHLLCJBM != 0) {
         output.WriteRawTag(152, 17);
@@ -505,15 +503,15 @@ namespace Weedwacker.Shared.Network.Proto {
       if (IsTakenReward != false) {
         size += 1 + 1;
       }
-      if (Unk3300HMCJOLLKMMB != false) {
+      if (IsExplored != false) {
         size += 1 + 1;
       }
       size += runeRecordList_.CalculateSize(_repeated_runeRecordList_codec);
-      if (Unk3300HMAELBBOFDN != false) {
+      if (IsInCombat != false) {
         size += 1 + 1;
       }
-      if (Unk3300CMMGKMMMOAL != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300CMMGKMMMOAL);
+      if (CoinCNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CoinCNum);
       }
       if (IsOpen != false) {
         size += 1 + 1;
@@ -521,8 +519,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (StageId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(StageId);
       }
-      if (Unk3300DABPFCPCNCB != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300DABPFCPCNCB);
+      if (MaxPassedLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxPassedLevel);
       }
       if (CurLevel != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CurLevel);
@@ -563,15 +561,15 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.IsTakenReward != false) {
         IsTakenReward = other.IsTakenReward;
       }
-      if (other.Unk3300HMCJOLLKMMB != false) {
-        Unk3300HMCJOLLKMMB = other.Unk3300HMCJOLLKMMB;
+      if (other.IsExplored != false) {
+        IsExplored = other.IsExplored;
       }
       runeRecordList_.Add(other.runeRecordList_);
-      if (other.Unk3300HMAELBBOFDN != false) {
-        Unk3300HMAELBBOFDN = other.Unk3300HMAELBBOFDN;
+      if (other.IsInCombat != false) {
+        IsInCombat = other.IsInCombat;
       }
-      if (other.Unk3300CMMGKMMMOAL != 0) {
-        Unk3300CMMGKMMMOAL = other.Unk3300CMMGKMMMOAL;
+      if (other.CoinCNum != 0) {
+        CoinCNum = other.CoinCNum;
       }
       if (other.IsOpen != false) {
         IsOpen = other.IsOpen;
@@ -579,8 +577,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.StageId != 0) {
         StageId = other.StageId;
       }
-      if (other.Unk3300DABPFCPCNCB != 0) {
-        Unk3300DABPFCPCNCB = other.Unk3300DABPFCPCNCB;
+      if (other.MaxPassedLevel != 0) {
+        MaxPassedLevel = other.MaxPassedLevel;
       }
       if (other.CurLevel != 0) {
         CurLevel = other.CurLevel;
@@ -615,11 +613,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300CMMGKMMMOAL = input.ReadUInt32();
+            CoinCNum = input.ReadUInt32();
             break;
           }
           case 32: {
-            Unk3300DABPFCPCNCB = input.ReadUInt32();
+            MaxPassedLevel = input.ReadUInt32();
             break;
           }
           case 42: {
@@ -627,7 +625,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk3300HMAELBBOFDN = input.ReadBool();
+            IsInCombat = input.ReadBool();
             break;
           }
           case 56: {
@@ -658,7 +656,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk3300HMCJOLLKMMB = input.ReadBool();
+            IsExplored = input.ReadBool();
             break;
           }
           case 2200: {
@@ -693,11 +691,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 24: {
-            Unk3300CMMGKMMMOAL = input.ReadUInt32();
+            CoinCNum = input.ReadUInt32();
             break;
           }
           case 32: {
-            Unk3300DABPFCPCNCB = input.ReadUInt32();
+            MaxPassedLevel = input.ReadUInt32();
             break;
           }
           case 42: {
@@ -705,7 +703,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk3300HMAELBBOFDN = input.ReadBool();
+            IsInCombat = input.ReadBool();
             break;
           }
           case 56: {
@@ -736,7 +734,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 112: {
-            Unk3300HMCJOLLKMMB = input.ReadBool();
+            IsExplored = input.ReadBool();
             break;
           }
           case 2200: {

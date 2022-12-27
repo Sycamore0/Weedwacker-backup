@@ -24,12 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetSceneNpcPositionRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxHZXRTY2VuZU5wY1Bvc2l0aW9uUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvGhVOcGNQb3NpdGlvbkluZm8ucHJvdG8ihAEK",
-            "FkdldFNjZW5lTnBjUG9zaXRpb25Sc3ASEAoIc2NlbmVfaWQYASABKA0SRwoN",
-            "bnBjX2luZm9fbGlzdBgCIAMoCzIwLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uTnBjUG9zaXRpb25JbmZvEg8KB3JldGNvZGUYBSABKAViBnBy",
-            "b3RvMw=="));
+            "ChxHZXRTY2VuZU5wY1Bvc2l0aW9uUnNwLnByb3RvGhVOcGNQb3NpdGlvbklu",
+            "Zm8ucHJvdG8iZAoWR2V0U2NlbmVOcGNQb3NpdGlvblJzcBIQCghzY2VuZV9p",
+            "ZBgBIAEoDRInCg1ucGNfaW5mb19saXN0GAIgAygLMhAuTnBjUG9zaXRpb25J",
+            "bmZvEg8KB3JldGNvZGUYBSABKAVCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
+            "dHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.NpcPositionInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

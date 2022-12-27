@@ -228,7 +228,7 @@ namespace Weedwacker.GameServer.Systems.World
             await AddEntityAsync(teamManager.GetCurrentAvatarEntity());
 
             // Notify the client of any extra skill charges
-            teamManager.ActiveTeam.AsParallel().ForAll(async x => await x.Value.Avatar.GetCurSkillDepot().SendAvatarSkillInfoNotify());
+            teamManager.ActiveTeam.AsParallel().ForAll(async x => await x.Value.Avatar.CurSkillDepot.SendAvatarSkillInfoNotify());
         }
 
         public async Task RespawnPlayerAsync(Player.Player player)

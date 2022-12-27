@@ -24,17 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static TrackingIOInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRUcmFja2luZ0lPSW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90byLbAQoOVHJhY2tpbmdJT0luZm8SGwoTVW5rMzMwMF9LR0dQ",
-            "REtHREVMRxgKIAEoCRIbChNVbmszMzAwX1BJQkZQREFNSkxFGAwgASgJEhsK",
-            "E1VuazMzMDBfTk1ETkxITEFLQU0YByABKAkSGwoTVW5rMzMwMF9HRUpKS0RM",
-            "R0ZQSBgFIAEoCRIbChNVbmszMzAwX0NOUElHRE9FSlBCGAIgASgJEhsKE1Vu",
-            "azMzMDBfQ0NPR0JJQ01IS0cYCSABKAkSGwoTVW5rMzMwMF9ESkhLSEVGUENE",
-            "SxgBIAEoCWIGcHJvdG8z"));
+            "ChRUcmFja2luZ0lPSW5mby5wcm90byLKAQoOVHJhY2tpbmdJT0luZm8SEQoJ",
+            "Y2xpZW50X3R6GAogASgJEhsKE1VuazMzMDBfUElCRlBEQU1KTEUYDCABKAkS",
+            "GwoTVW5rMzMwMF9OTUROTEhMQUtBTRgHIAEoCRIUCgxyeWRldmljZXR5cGUY",
+            "BSABKAkSGwoTVW5rMzMwMF9DTlBJR0RPRUpQQhgCIAEoCRIbChNVbmszMzAw",
+            "X0NDT0dCSUNNSEtHGAkgASgJEhsKE1VuazMzMDBfREpIS0hFRlBDREsYASAB",
+            "KAlCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TrackingIOInfo), global::Weedwacker.Shared.Network.Proto.TrackingIOInfo.Parser, new[]{ "Unk3300KGGPDKGDELG", "Unk3300PIBFPDAMJLE", "Unk3300NMDNLHLAKAM", "Unk3300GEJJKDLGFPH", "Unk3300CNPIGDOEJPB", "Unk3300CCOGBICMHKG", "Unk3300DJHKHEFPCDK" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TrackingIOInfo), global::Weedwacker.Shared.Network.Proto.TrackingIOInfo.Parser, new[]{ "ClientTz", "Unk3300PIBFPDAMJLE", "Unk3300NMDNLHLAKAM", "Rydevicetype", "Unk3300CNPIGDOEJPB", "Unk3300CCOGBICMHKG", "Unk3300DJHKHEFPCDK" }, null, null, null, null)
           }));
     }
     #endregion
@@ -75,10 +75,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TrackingIOInfo(TrackingIOInfo other) : this() {
-      unk3300KGGPDKGDELG_ = other.unk3300KGGPDKGDELG_;
+      clientTz_ = other.clientTz_;
       unk3300PIBFPDAMJLE_ = other.unk3300PIBFPDAMJLE_;
       unk3300NMDNLHLAKAM_ = other.unk3300NMDNLHLAKAM_;
-      unk3300GEJJKDLGFPH_ = other.unk3300GEJJKDLGFPH_;
+      rydevicetype_ = other.rydevicetype_;
       unk3300CNPIGDOEJPB_ = other.unk3300CNPIGDOEJPB_;
       unk3300CCOGBICMHKG_ = other.unk3300CCOGBICMHKG_;
       unk3300DJHKHEFPCDK_ = other.unk3300DJHKHEFPCDK_;
@@ -91,15 +91,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new TrackingIOInfo(this);
     }
 
-    /// <summary>Field number for the "Unk3300_KGGPDKGDELG" field.</summary>
-    public const int Unk3300KGGPDKGDELGFieldNumber = 10;
-    private string unk3300KGGPDKGDELG_ = "";
+    /// <summary>Field number for the "client_tz" field.</summary>
+    public const int ClientTzFieldNumber = 10;
+    private string clientTz_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Unk3300KGGPDKGDELG {
-      get { return unk3300KGGPDKGDELG_; }
+    public string ClientTz {
+      get { return clientTz_; }
       set {
-        unk3300KGGPDKGDELG_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        clientTz_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -127,15 +127,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_GEJJKDLGFPH" field.</summary>
-    public const int Unk3300GEJJKDLGFPHFieldNumber = 5;
-    private string unk3300GEJJKDLGFPH_ = "";
+    /// <summary>Field number for the "rydevicetype" field.</summary>
+    public const int RydevicetypeFieldNumber = 5;
+    private string rydevicetype_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Unk3300GEJJKDLGFPH {
-      get { return unk3300GEJJKDLGFPH_; }
+    public string Rydevicetype {
+      get { return rydevicetype_; }
       set {
-        unk3300GEJJKDLGFPH_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        rydevicetype_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -190,10 +190,10 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300KGGPDKGDELG != other.Unk3300KGGPDKGDELG) return false;
+      if (ClientTz != other.ClientTz) return false;
       if (Unk3300PIBFPDAMJLE != other.Unk3300PIBFPDAMJLE) return false;
       if (Unk3300NMDNLHLAKAM != other.Unk3300NMDNLHLAKAM) return false;
-      if (Unk3300GEJJKDLGFPH != other.Unk3300GEJJKDLGFPH) return false;
+      if (Rydevicetype != other.Rydevicetype) return false;
       if (Unk3300CNPIGDOEJPB != other.Unk3300CNPIGDOEJPB) return false;
       if (Unk3300CCOGBICMHKG != other.Unk3300CCOGBICMHKG) return false;
       if (Unk3300DJHKHEFPCDK != other.Unk3300DJHKHEFPCDK) return false;
@@ -204,10 +204,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300KGGPDKGDELG.Length != 0) hash ^= Unk3300KGGPDKGDELG.GetHashCode();
+      if (ClientTz.Length != 0) hash ^= ClientTz.GetHashCode();
       if (Unk3300PIBFPDAMJLE.Length != 0) hash ^= Unk3300PIBFPDAMJLE.GetHashCode();
       if (Unk3300NMDNLHLAKAM.Length != 0) hash ^= Unk3300NMDNLHLAKAM.GetHashCode();
-      if (Unk3300GEJJKDLGFPH.Length != 0) hash ^= Unk3300GEJJKDLGFPH.GetHashCode();
+      if (Rydevicetype.Length != 0) hash ^= Rydevicetype.GetHashCode();
       if (Unk3300CNPIGDOEJPB.Length != 0) hash ^= Unk3300CNPIGDOEJPB.GetHashCode();
       if (Unk3300CCOGBICMHKG.Length != 0) hash ^= Unk3300CCOGBICMHKG.GetHashCode();
       if (Unk3300DJHKHEFPCDK.Length != 0) hash ^= Unk3300DJHKHEFPCDK.GetHashCode();
@@ -237,9 +237,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(18);
         output.WriteString(Unk3300CNPIGDOEJPB);
       }
-      if (Unk3300GEJJKDLGFPH.Length != 0) {
+      if (Rydevicetype.Length != 0) {
         output.WriteRawTag(42);
-        output.WriteString(Unk3300GEJJKDLGFPH);
+        output.WriteString(Rydevicetype);
       }
       if (Unk3300NMDNLHLAKAM.Length != 0) {
         output.WriteRawTag(58);
@@ -249,9 +249,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(74);
         output.WriteString(Unk3300CCOGBICMHKG);
       }
-      if (Unk3300KGGPDKGDELG.Length != 0) {
+      if (ClientTz.Length != 0) {
         output.WriteRawTag(82);
-        output.WriteString(Unk3300KGGPDKGDELG);
+        output.WriteString(ClientTz);
       }
       if (Unk3300PIBFPDAMJLE.Length != 0) {
         output.WriteRawTag(98);
@@ -275,9 +275,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(18);
         output.WriteString(Unk3300CNPIGDOEJPB);
       }
-      if (Unk3300GEJJKDLGFPH.Length != 0) {
+      if (Rydevicetype.Length != 0) {
         output.WriteRawTag(42);
-        output.WriteString(Unk3300GEJJKDLGFPH);
+        output.WriteString(Rydevicetype);
       }
       if (Unk3300NMDNLHLAKAM.Length != 0) {
         output.WriteRawTag(58);
@@ -287,9 +287,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(74);
         output.WriteString(Unk3300CCOGBICMHKG);
       }
-      if (Unk3300KGGPDKGDELG.Length != 0) {
+      if (ClientTz.Length != 0) {
         output.WriteRawTag(82);
-        output.WriteString(Unk3300KGGPDKGDELG);
+        output.WriteString(ClientTz);
       }
       if (Unk3300PIBFPDAMJLE.Length != 0) {
         output.WriteRawTag(98);
@@ -305,8 +305,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300KGGPDKGDELG.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Unk3300KGGPDKGDELG);
+      if (ClientTz.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClientTz);
       }
       if (Unk3300PIBFPDAMJLE.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Unk3300PIBFPDAMJLE);
@@ -314,8 +314,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Unk3300NMDNLHLAKAM.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Unk3300NMDNLHLAKAM);
       }
-      if (Unk3300GEJJKDLGFPH.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Unk3300GEJJKDLGFPH);
+      if (Rydevicetype.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Rydevicetype);
       }
       if (Unk3300CNPIGDOEJPB.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Unk3300CNPIGDOEJPB);
@@ -338,8 +338,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300KGGPDKGDELG.Length != 0) {
-        Unk3300KGGPDKGDELG = other.Unk3300KGGPDKGDELG;
+      if (other.ClientTz.Length != 0) {
+        ClientTz = other.ClientTz;
       }
       if (other.Unk3300PIBFPDAMJLE.Length != 0) {
         Unk3300PIBFPDAMJLE = other.Unk3300PIBFPDAMJLE;
@@ -347,8 +347,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Unk3300NMDNLHLAKAM.Length != 0) {
         Unk3300NMDNLHLAKAM = other.Unk3300NMDNLHLAKAM;
       }
-      if (other.Unk3300GEJJKDLGFPH.Length != 0) {
-        Unk3300GEJJKDLGFPH = other.Unk3300GEJJKDLGFPH;
+      if (other.Rydevicetype.Length != 0) {
+        Rydevicetype = other.Rydevicetype;
       }
       if (other.Unk3300CNPIGDOEJPB.Length != 0) {
         Unk3300CNPIGDOEJPB = other.Unk3300CNPIGDOEJPB;
@@ -383,7 +383,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 42: {
-            Unk3300GEJJKDLGFPH = input.ReadString();
+            Rydevicetype = input.ReadString();
             break;
           }
           case 58: {
@@ -395,7 +395,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 82: {
-            Unk3300KGGPDKGDELG = input.ReadString();
+            ClientTz = input.ReadString();
             break;
           }
           case 98: {
@@ -426,7 +426,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 42: {
-            Unk3300GEJJKDLGFPH = input.ReadString();
+            Rydevicetype = input.ReadString();
             break;
           }
           case 58: {
@@ -438,7 +438,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 82: {
-            Unk3300KGGPDKGDELG = input.ReadString();
+            ClientTz = input.ReadString();
             break;
           }
           case 98: {

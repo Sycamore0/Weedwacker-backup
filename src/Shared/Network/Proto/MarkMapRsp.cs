@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static MarkMapRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChBNYXJrTWFwUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvGhJNYXBNYXJrUG9pbnQucHJvdG8iXwoKTWFya01hcFJzcBJACglt",
-            "YXJrX2xpc3QYAiADKAsyLS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlBy",
-            "b3RvLk1hcE1hcmtQb2ludBIPCgdyZXRjb2RlGA0gASgFYgZwcm90bzM="));
+            "ChBNYXJrTWFwUnNwLnByb3RvGhJNYXBNYXJrUG9pbnQucHJvdG8iPwoKTWFy",
+            "a01hcFJzcBIgCgltYXJrX2xpc3QYAiADKAsyDS5NYXBNYXJrUG9pbnQSDwoH",
+            "cmV0Y29kZRgNIAEoBUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MapMarkPointReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

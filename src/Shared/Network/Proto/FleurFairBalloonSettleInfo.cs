@@ -24,12 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static FleurFairBalloonSettleInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBGbGV1ckZhaXJCYWxsb29uU2V0dGxlSW5mby5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90bxoXQmFsbG9vblNldHRsZUluZm8ucHJv",
-            "dG8ifAoaRmxldXJGYWlyQmFsbG9vblNldHRsZUluZm8SRwoLc2V0dGxlX2lu",
-            "Zm8YBSABKAsyMi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkJh",
-            "bGxvb25TZXR0bGVJbmZvEhUKDWlzX25ld19yZWNvcmQYDyABKAhiBnByb3Rv",
-            "Mw=="));
+            "CiBGbGV1ckZhaXJCYWxsb29uU2V0dGxlSW5mby5wcm90bxoXQmFsbG9vblNl",
+            "dHRsZUluZm8ucHJvdG8iXAoaRmxldXJGYWlyQmFsbG9vblNldHRsZUluZm8S",
+            "JwoLc2V0dGxlX2luZm8YBSABKAsyEi5CYWxsb29uU2V0dGxlSW5mbxIVCg1p",
+            "c19uZXdfcmVjb3JkGA8gASgIQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
+            "b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.BalloonSettleInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,27 +24,24 @@ namespace Weedwacker.Shared.Network.Proto {
     static CoopChapterReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFDb29wQ2hhcHRlci5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90bxoMQ29vcENnLnByb3RvGg9Db29wUG9pbnQucHJvdG8aEENvb3BS",
-            "ZXdhcmQucHJvdG8ihQUKC0Nvb3BDaGFwdGVyEgoKAmlkGAkgASgNEkMKD2Nv",
-            "b3BfcG9pbnRfbGlzdBgMIAMoCzIqLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdv",
-            "cmsuUHJvdG8uQ29vcFBvaW50EhsKE1VuazMzMDBfTU9PS0JMRktPTEMYBiAD",
-            "KA0SQQoFc3RhdGUYByABKA4yMi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvLkNvb3BDaGFwdGVyLlN0YXRlEhsKE1VuazMzMDBfS0RMR0xPSUlJ",
-            "TkgYCyABKA0SRQoQY29vcF9yZXdhcmRfbGlzdBgDIAMoCzIrLldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQ29vcFJld2FyZBIbChNVbmszMzAw",
-            "X01KTE1KQk1HSlBQGAQgAygNEj0KDGNvb3BfY2dfbGlzdBgCIAMoCzInLldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQ29vcENnElgKD3NlZW5f",
-            "ZW5kaW5nX21hcBgPIAMoCzI/LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
-            "UHJvdG8uQ29vcENoYXB0ZXIuU2VlbkVuZGluZ01hcEVudHJ5EhsKE1VuazMz",
-            "MDBfS01KSElNQklHSkYYCCABKA0aNAoSU2VlbkVuZGluZ01hcEVudHJ5EgsK",
-            "A2tleRgBIAEoDRINCgV2YWx1ZRgCIAEoDToCOAEiWAoFU3RhdGUSDwoLU1RB",
-            "VEVfQ0xPU0UQABIXChNTVEFURV9DT05EX05PVF9NRUVUEAESEwoPU1RBVEVf",
-            "Q09ORF9NRUVUEAISEAoMU1RBVEVfQUNDRVBUEANiBnByb3RvMw=="));
+            "ChFDb29wQ2hhcHRlci5wcm90bxoMQ29vcENnLnByb3RvGg9Db29wUG9pbnQu",
+            "cHJvdG8aEENvb3BSZXdhcmQucHJvdG8i3AMKC0Nvb3BDaGFwdGVyEgoKAmlk",
+            "GAkgASgNEiMKD2Nvb3BfcG9pbnRfbGlzdBgMIAMoCzIKLkNvb3BQb2ludBIa",
+            "ChJmaW5pc2hfZGlhbG9nX2xpc3QYBiADKA0SIQoFc3RhdGUYByABKA4yEi5D",
+            "b29wQ2hhcHRlci5TdGF0ZRIXCg90b3RhbF9lbmRfY291bnQYCyABKA0SJQoQ",
+            "Y29vcF9yZXdhcmRfbGlzdBgDIAMoCzILLkNvb3BSZXdhcmQSGAoQbG9ja19y",
+            "ZWFzb25fbGlzdBgEIAMoDRIdCgxjb29wX2NnX2xpc3QYAiADKAsyBy5Db29w",
+            "Q2cSOAoPc2Vlbl9lbmRpbmdfbWFwGA8gAygLMh8uQ29vcENoYXB0ZXIuU2Vl",
+            "bkVuZGluZ01hcEVudHJ5EhoKEmZpbmlzaGVkX2VuZF9jb3VudBgIIAEoDRo0",
+            "ChJTZWVuRW5kaW5nTWFwRW50cnkSCwoDa2V5GAEgASgNEg0KBXZhbHVlGAIg",
+            "ASgNOgI4ASJYCgVTdGF0ZRIPCgtTVEFURV9DTE9TRRAAEhcKE1NUQVRFX0NP",
+            "TkRfTk9UX01FRVQQARITCg9TVEFURV9DT05EX01FRVQQAhIQCgxTVEFURV9B",
+            "Q0NFUFQQA0IiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.CoopCgReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CoopPointReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.CoopRewardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CoopChapter), global::Weedwacker.Shared.Network.Proto.CoopChapter.Parser, new[]{ "Id", "CoopPointList", "Unk3300MOOKBLFKOLC", "State", "Unk3300KDLGLOIIINH", "CoopRewardList", "Unk3300MJLMJBMGJPP", "CoopCgList", "SeenEndingMap", "Unk3300KMJHIMBIGJF" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.CoopChapter.Types.State) }, null, new pbr::GeneratedClrTypeInfo[] { null, })
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.CoopChapter), global::Weedwacker.Shared.Network.Proto.CoopChapter.Parser, new[]{ "Id", "CoopPointList", "FinishDialogList", "State", "TotalEndCount", "CoopRewardList", "LockReasonList", "CoopCgList", "SeenEndingMap", "FinishedEndCount" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.CoopChapter.Types.State) }, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -87,14 +84,14 @@ namespace Weedwacker.Shared.Network.Proto {
     public CoopChapter(CoopChapter other) : this() {
       id_ = other.id_;
       coopPointList_ = other.coopPointList_.Clone();
-      unk3300MOOKBLFKOLC_ = other.unk3300MOOKBLFKOLC_.Clone();
+      finishDialogList_ = other.finishDialogList_.Clone();
       state_ = other.state_;
-      unk3300KDLGLOIIINH_ = other.unk3300KDLGLOIIINH_;
+      totalEndCount_ = other.totalEndCount_;
       coopRewardList_ = other.coopRewardList_.Clone();
-      unk3300MJLMJBMGJPP_ = other.unk3300MJLMJBMGJPP_.Clone();
+      lockReasonList_ = other.lockReasonList_.Clone();
       coopCgList_ = other.coopCgList_.Clone();
       seenEndingMap_ = other.seenEndingMap_.Clone();
-      unk3300KMJHIMBIGJF_ = other.unk3300KMJHIMBIGJF_;
+      finishedEndCount_ = other.finishedEndCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -127,15 +124,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return coopPointList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_MOOKBLFKOLC" field.</summary>
-    public const int Unk3300MOOKBLFKOLCFieldNumber = 6;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300MOOKBLFKOLC_codec
+    /// <summary>Field number for the "finish_dialog_list" field.</summary>
+    public const int FinishDialogListFieldNumber = 6;
+    private static readonly pb::FieldCodec<uint> _repeated_finishDialogList_codec
         = pb::FieldCodec.ForUInt32(50);
-    private readonly pbc::RepeatedField<uint> unk3300MOOKBLFKOLC_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> finishDialogList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300MOOKBLFKOLC {
-      get { return unk3300MOOKBLFKOLC_; }
+    public pbc::RepeatedField<uint> FinishDialogList {
+      get { return finishDialogList_; }
     }
 
     /// <summary>Field number for the "state" field.</summary>
@@ -150,15 +147,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_KDLGLOIIINH" field.</summary>
-    public const int Unk3300KDLGLOIIINHFieldNumber = 11;
-    private uint unk3300KDLGLOIIINH_;
+    /// <summary>Field number for the "total_end_count" field.</summary>
+    public const int TotalEndCountFieldNumber = 11;
+    private uint totalEndCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300KDLGLOIIINH {
-      get { return unk3300KDLGLOIIINH_; }
+    public uint TotalEndCount {
+      get { return totalEndCount_; }
       set {
-        unk3300KDLGLOIIINH_ = value;
+        totalEndCount_ = value;
       }
     }
 
@@ -173,15 +170,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return coopRewardList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_MJLMJBMGJPP" field.</summary>
-    public const int Unk3300MJLMJBMGJPPFieldNumber = 4;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300MJLMJBMGJPP_codec
+    /// <summary>Field number for the "lock_reason_list" field.</summary>
+    public const int LockReasonListFieldNumber = 4;
+    private static readonly pb::FieldCodec<uint> _repeated_lockReasonList_codec
         = pb::FieldCodec.ForUInt32(34);
-    private readonly pbc::RepeatedField<uint> unk3300MJLMJBMGJPP_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> lockReasonList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300MJLMJBMGJPP {
-      get { return unk3300MJLMJBMGJPP_; }
+    public pbc::RepeatedField<uint> LockReasonList {
+      get { return lockReasonList_; }
     }
 
     /// <summary>Field number for the "coop_cg_list" field.</summary>
@@ -206,15 +203,15 @@ namespace Weedwacker.Shared.Network.Proto {
       get { return seenEndingMap_; }
     }
 
-    /// <summary>Field number for the "Unk3300_KMJHIMBIGJF" field.</summary>
-    public const int Unk3300KMJHIMBIGJFFieldNumber = 8;
-    private uint unk3300KMJHIMBIGJF_;
+    /// <summary>Field number for the "finished_end_count" field.</summary>
+    public const int FinishedEndCountFieldNumber = 8;
+    private uint finishedEndCount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300KMJHIMBIGJF {
-      get { return unk3300KMJHIMBIGJF_; }
+    public uint FinishedEndCount {
+      get { return finishedEndCount_; }
       set {
-        unk3300KMJHIMBIGJF_ = value;
+        finishedEndCount_ = value;
       }
     }
 
@@ -235,14 +232,14 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (Id != other.Id) return false;
       if(!coopPointList_.Equals(other.coopPointList_)) return false;
-      if(!unk3300MOOKBLFKOLC_.Equals(other.unk3300MOOKBLFKOLC_)) return false;
+      if(!finishDialogList_.Equals(other.finishDialogList_)) return false;
       if (State != other.State) return false;
-      if (Unk3300KDLGLOIIINH != other.Unk3300KDLGLOIIINH) return false;
+      if (TotalEndCount != other.TotalEndCount) return false;
       if(!coopRewardList_.Equals(other.coopRewardList_)) return false;
-      if(!unk3300MJLMJBMGJPP_.Equals(other.unk3300MJLMJBMGJPP_)) return false;
+      if(!lockReasonList_.Equals(other.lockReasonList_)) return false;
       if(!coopCgList_.Equals(other.coopCgList_)) return false;
       if (!SeenEndingMap.Equals(other.SeenEndingMap)) return false;
-      if (Unk3300KMJHIMBIGJF != other.Unk3300KMJHIMBIGJF) return false;
+      if (FinishedEndCount != other.FinishedEndCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -252,14 +249,14 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       hash ^= coopPointList_.GetHashCode();
-      hash ^= unk3300MOOKBLFKOLC_.GetHashCode();
+      hash ^= finishDialogList_.GetHashCode();
       if (State != global::Weedwacker.Shared.Network.Proto.CoopChapter.Types.State.Close) hash ^= State.GetHashCode();
-      if (Unk3300KDLGLOIIINH != 0) hash ^= Unk3300KDLGLOIIINH.GetHashCode();
+      if (TotalEndCount != 0) hash ^= TotalEndCount.GetHashCode();
       hash ^= coopRewardList_.GetHashCode();
-      hash ^= unk3300MJLMJBMGJPP_.GetHashCode();
+      hash ^= lockReasonList_.GetHashCode();
       hash ^= coopCgList_.GetHashCode();
       hash ^= SeenEndingMap.GetHashCode();
-      if (Unk3300KMJHIMBIGJF != 0) hash ^= Unk3300KMJHIMBIGJF.GetHashCode();
+      if (FinishedEndCount != 0) hash ^= FinishedEndCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -280,23 +277,23 @@ namespace Weedwacker.Shared.Network.Proto {
     #else
       coopCgList_.WriteTo(output, _repeated_coopCgList_codec);
       coopRewardList_.WriteTo(output, _repeated_coopRewardList_codec);
-      unk3300MJLMJBMGJPP_.WriteTo(output, _repeated_unk3300MJLMJBMGJPP_codec);
-      unk3300MOOKBLFKOLC_.WriteTo(output, _repeated_unk3300MOOKBLFKOLC_codec);
+      lockReasonList_.WriteTo(output, _repeated_lockReasonList_codec);
+      finishDialogList_.WriteTo(output, _repeated_finishDialogList_codec);
       if (State != global::Weedwacker.Shared.Network.Proto.CoopChapter.Types.State.Close) {
         output.WriteRawTag(56);
         output.WriteEnum((int) State);
       }
-      if (Unk3300KMJHIMBIGJF != 0) {
+      if (FinishedEndCount != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk3300KMJHIMBIGJF);
+        output.WriteUInt32(FinishedEndCount);
       }
       if (Id != 0) {
         output.WriteRawTag(72);
         output.WriteUInt32(Id);
       }
-      if (Unk3300KDLGLOIIINH != 0) {
+      if (TotalEndCount != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk3300KDLGLOIIINH);
+        output.WriteUInt32(TotalEndCount);
       }
       coopPointList_.WriteTo(output, _repeated_coopPointList_codec);
       seenEndingMap_.WriteTo(output, _map_seenEndingMap_codec);
@@ -312,23 +309,23 @@ namespace Weedwacker.Shared.Network.Proto {
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       coopCgList_.WriteTo(ref output, _repeated_coopCgList_codec);
       coopRewardList_.WriteTo(ref output, _repeated_coopRewardList_codec);
-      unk3300MJLMJBMGJPP_.WriteTo(ref output, _repeated_unk3300MJLMJBMGJPP_codec);
-      unk3300MOOKBLFKOLC_.WriteTo(ref output, _repeated_unk3300MOOKBLFKOLC_codec);
+      lockReasonList_.WriteTo(ref output, _repeated_lockReasonList_codec);
+      finishDialogList_.WriteTo(ref output, _repeated_finishDialogList_codec);
       if (State != global::Weedwacker.Shared.Network.Proto.CoopChapter.Types.State.Close) {
         output.WriteRawTag(56);
         output.WriteEnum((int) State);
       }
-      if (Unk3300KMJHIMBIGJF != 0) {
+      if (FinishedEndCount != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk3300KMJHIMBIGJF);
+        output.WriteUInt32(FinishedEndCount);
       }
       if (Id != 0) {
         output.WriteRawTag(72);
         output.WriteUInt32(Id);
       }
-      if (Unk3300KDLGLOIIINH != 0) {
+      if (TotalEndCount != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk3300KDLGLOIIINH);
+        output.WriteUInt32(TotalEndCount);
       }
       coopPointList_.WriteTo(ref output, _repeated_coopPointList_codec);
       seenEndingMap_.WriteTo(ref output, _map_seenEndingMap_codec);
@@ -346,19 +343,19 @@ namespace Weedwacker.Shared.Network.Proto {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
       }
       size += coopPointList_.CalculateSize(_repeated_coopPointList_codec);
-      size += unk3300MOOKBLFKOLC_.CalculateSize(_repeated_unk3300MOOKBLFKOLC_codec);
+      size += finishDialogList_.CalculateSize(_repeated_finishDialogList_codec);
       if (State != global::Weedwacker.Shared.Network.Proto.CoopChapter.Types.State.Close) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) State);
       }
-      if (Unk3300KDLGLOIIINH != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300KDLGLOIIINH);
+      if (TotalEndCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TotalEndCount);
       }
       size += coopRewardList_.CalculateSize(_repeated_coopRewardList_codec);
-      size += unk3300MJLMJBMGJPP_.CalculateSize(_repeated_unk3300MJLMJBMGJPP_codec);
+      size += lockReasonList_.CalculateSize(_repeated_lockReasonList_codec);
       size += coopCgList_.CalculateSize(_repeated_coopCgList_codec);
       size += seenEndingMap_.CalculateSize(_map_seenEndingMap_codec);
-      if (Unk3300KMJHIMBIGJF != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300KMJHIMBIGJF);
+      if (FinishedEndCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FinishedEndCount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -376,19 +373,19 @@ namespace Weedwacker.Shared.Network.Proto {
         Id = other.Id;
       }
       coopPointList_.Add(other.coopPointList_);
-      unk3300MOOKBLFKOLC_.Add(other.unk3300MOOKBLFKOLC_);
+      finishDialogList_.Add(other.finishDialogList_);
       if (other.State != global::Weedwacker.Shared.Network.Proto.CoopChapter.Types.State.Close) {
         State = other.State;
       }
-      if (other.Unk3300KDLGLOIIINH != 0) {
-        Unk3300KDLGLOIIINH = other.Unk3300KDLGLOIIINH;
+      if (other.TotalEndCount != 0) {
+        TotalEndCount = other.TotalEndCount;
       }
       coopRewardList_.Add(other.coopRewardList_);
-      unk3300MJLMJBMGJPP_.Add(other.unk3300MJLMJBMGJPP_);
+      lockReasonList_.Add(other.lockReasonList_);
       coopCgList_.Add(other.coopCgList_);
       seenEndingMap_.Add(other.seenEndingMap_);
-      if (other.Unk3300KMJHIMBIGJF != 0) {
-        Unk3300KMJHIMBIGJF = other.Unk3300KMJHIMBIGJF;
+      if (other.FinishedEndCount != 0) {
+        FinishedEndCount = other.FinishedEndCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -415,12 +412,12 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 34:
           case 32: {
-            unk3300MJLMJBMGJPP_.AddEntriesFrom(input, _repeated_unk3300MJLMJBMGJPP_codec);
+            lockReasonList_.AddEntriesFrom(input, _repeated_lockReasonList_codec);
             break;
           }
           case 50:
           case 48: {
-            unk3300MOOKBLFKOLC_.AddEntriesFrom(input, _repeated_unk3300MOOKBLFKOLC_codec);
+            finishDialogList_.AddEntriesFrom(input, _repeated_finishDialogList_codec);
             break;
           }
           case 56: {
@@ -428,7 +425,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk3300KMJHIMBIGJF = input.ReadUInt32();
+            FinishedEndCount = input.ReadUInt32();
             break;
           }
           case 72: {
@@ -436,7 +433,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk3300KDLGLOIIINH = input.ReadUInt32();
+            TotalEndCount = input.ReadUInt32();
             break;
           }
           case 98: {
@@ -472,12 +469,12 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 34:
           case 32: {
-            unk3300MJLMJBMGJPP_.AddEntriesFrom(ref input, _repeated_unk3300MJLMJBMGJPP_codec);
+            lockReasonList_.AddEntriesFrom(ref input, _repeated_lockReasonList_codec);
             break;
           }
           case 50:
           case 48: {
-            unk3300MOOKBLFKOLC_.AddEntriesFrom(ref input, _repeated_unk3300MOOKBLFKOLC_codec);
+            finishDialogList_.AddEntriesFrom(ref input, _repeated_finishDialogList_codec);
             break;
           }
           case 56: {
@@ -485,7 +482,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk3300KMJHIMBIGJF = input.ReadUInt32();
+            FinishedEndCount = input.ReadUInt32();
             break;
           }
           case 72: {
@@ -493,7 +490,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 88: {
-            Unk3300KDLGLOIIINH = input.ReadUInt32();
+            TotalEndCount = input.ReadUInt32();
             break;
           }
           case 98: {

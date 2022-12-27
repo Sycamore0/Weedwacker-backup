@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static VintageDecorateBoothRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1WaW50YWdlRGVjb3JhdGVCb290aFJzcC5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90byIqChdWaW50YWdlRGVjb3JhdGVCb290aFJz",
-            "cBIPCgdyZXRjb2RlGAMgASgFYgZwcm90bzM="));
+            "Ch1WaW50YWdlRGVjb3JhdGVCb290aFJzcC5wcm90byIqChdWaW50YWdlRGVj",
+            "b3JhdGVCb290aFJzcBIPCgdyZXRjb2RlGAMgASgFQiKqAh9XZWVkd2Fja2Vy",
+            "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

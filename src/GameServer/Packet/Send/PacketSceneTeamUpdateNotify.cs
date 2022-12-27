@@ -32,8 +32,8 @@ namespace Weedwacker.GameServer.Packet.Send
                         EntityId = avatar.EntityId,
                         SceneId = (uint)p.SceneId,
                         SceneEntityInfo = avatar.ToProto(),
-                        WeaponGuid = avatar.Avatar.GetWeapon().Guid,
-                        WeaponEntityId = avatar.Avatar.GetWeapon().WeaponEntityId,
+                        WeaponGuid = avatar.Avatar.Weapon.Guid,
+                        WeaponEntityId = avatar.Avatar.Weapon.WeaponEntityId,
                         IsPlayerCurAvatar = p.TeamManager.GetCurrentAvatarEntity() == avatar,
                         IsOnScene = p.TeamManager.GetCurrentAvatarEntity() == avatar, // might affect cutscenes. investigate
                         AvatarAbilityInfo = avatarAbilityInfo,

@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static AbilityIdentifierReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdBYmlsaXR5SWRlbnRpZmllci5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byK8AQoRQWJpbGl0eUlkZW50aWZpZXISHAoUaW5zdGFu",
-            "Y2VkX2FiaWxpdHlfaWQYBCABKA0SGwoTVW5rMzMwMF9JSENLSktMQ0lDSRgK",
-            "IAEoDRIeChZpc19zZXJ2ZXJidWZmX21vZGlmaWVyGA4gASgIEhAKCGxvY2Fs",
-            "X2lkGAcgASgFEhsKE1VuazMzMDBfT09PTEVMUEJESEoYASABKA0SHQoVaW5z",
-            "dGFuY2VkX21vZGlmaWVyX2lkGAUgASgNYgZwcm90bzM="));
+            "ChdBYmlsaXR5SWRlbnRpZmllci5wcm90byK4AQoRQWJpbGl0eUlkZW50aWZp",
+            "ZXISHAoUaW5zdGFuY2VkX2FiaWxpdHlfaWQYBCABKA0SGQoRbW9kaWZpZXJf",
+            "b3duZXJfaWQYCiABKA0SHgoWaXNfc2VydmVyYnVmZl9tb2RpZmllchgOIAEo",
+            "CBIQCghsb2NhbF9pZBgHIAEoBRIZChFhYmlsaXR5X2Nhc3Rlcl9pZBgBIAEo",
+            "DRIdChVpbnN0YW5jZWRfbW9kaWZpZXJfaWQYBSABKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityIdentifier), global::Weedwacker.Shared.Network.Proto.AbilityIdentifier.Parser, new[]{ "InstancedAbilityId", "Unk3300IHCKJKLCICI", "IsServerbuffModifier", "LocalId", "Unk3300OOOLELPBDHJ", "InstancedModifierId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityIdentifier), global::Weedwacker.Shared.Network.Proto.AbilityIdentifier.Parser, new[]{ "InstancedAbilityId", "ModifierOwnerId", "IsServerbuffModifier", "LocalId", "AbilityCasterId", "InstancedModifierId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -75,10 +75,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AbilityIdentifier(AbilityIdentifier other) : this() {
       instancedAbilityId_ = other.instancedAbilityId_;
-      unk3300IHCKJKLCICI_ = other.unk3300IHCKJKLCICI_;
+      modifierOwnerId_ = other.modifierOwnerId_;
       isServerbuffModifier_ = other.isServerbuffModifier_;
       localId_ = other.localId_;
-      unk3300OOOLELPBDHJ_ = other.unk3300OOOLELPBDHJ_;
+      abilityCasterId_ = other.abilityCasterId_;
       instancedModifierId_ = other.instancedModifierId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -101,15 +101,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_IHCKJKLCICI" field.</summary>
-    public const int Unk3300IHCKJKLCICIFieldNumber = 10;
-    private uint unk3300IHCKJKLCICI_;
+    /// <summary>Field number for the "modifier_owner_id" field.</summary>
+    public const int ModifierOwnerIdFieldNumber = 10;
+    private uint modifierOwnerId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300IHCKJKLCICI {
-      get { return unk3300IHCKJKLCICI_; }
+    public uint ModifierOwnerId {
+      get { return modifierOwnerId_; }
       set {
-        unk3300IHCKJKLCICI_ = value;
+        modifierOwnerId_ = value;
       }
     }
 
@@ -137,15 +137,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_OOOLELPBDHJ" field.</summary>
-    public const int Unk3300OOOLELPBDHJFieldNumber = 1;
-    private uint unk3300OOOLELPBDHJ_;
+    /// <summary>Field number for the "ability_caster_id" field.</summary>
+    public const int AbilityCasterIdFieldNumber = 1;
+    private uint abilityCasterId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300OOOLELPBDHJ {
-      get { return unk3300OOOLELPBDHJ_; }
+    public uint AbilityCasterId {
+      get { return abilityCasterId_; }
       set {
-        unk3300OOOLELPBDHJ_ = value;
+        abilityCasterId_ = value;
       }
     }
 
@@ -177,10 +177,10 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (InstancedAbilityId != other.InstancedAbilityId) return false;
-      if (Unk3300IHCKJKLCICI != other.Unk3300IHCKJKLCICI) return false;
+      if (ModifierOwnerId != other.ModifierOwnerId) return false;
       if (IsServerbuffModifier != other.IsServerbuffModifier) return false;
       if (LocalId != other.LocalId) return false;
-      if (Unk3300OOOLELPBDHJ != other.Unk3300OOOLELPBDHJ) return false;
+      if (AbilityCasterId != other.AbilityCasterId) return false;
       if (InstancedModifierId != other.InstancedModifierId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -190,10 +190,10 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (InstancedAbilityId != 0) hash ^= InstancedAbilityId.GetHashCode();
-      if (Unk3300IHCKJKLCICI != 0) hash ^= Unk3300IHCKJKLCICI.GetHashCode();
+      if (ModifierOwnerId != 0) hash ^= ModifierOwnerId.GetHashCode();
       if (IsServerbuffModifier != false) hash ^= IsServerbuffModifier.GetHashCode();
       if (LocalId != 0) hash ^= LocalId.GetHashCode();
-      if (Unk3300OOOLELPBDHJ != 0) hash ^= Unk3300OOOLELPBDHJ.GetHashCode();
+      if (AbilityCasterId != 0) hash ^= AbilityCasterId.GetHashCode();
       if (InstancedModifierId != 0) hash ^= InstancedModifierId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -213,9 +213,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300OOOLELPBDHJ != 0) {
+      if (AbilityCasterId != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk3300OOOLELPBDHJ);
+        output.WriteUInt32(AbilityCasterId);
       }
       if (InstancedAbilityId != 0) {
         output.WriteRawTag(32);
@@ -229,9 +229,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteInt32(LocalId);
       }
-      if (Unk3300IHCKJKLCICI != 0) {
+      if (ModifierOwnerId != 0) {
         output.WriteRawTag(80);
-        output.WriteUInt32(Unk3300IHCKJKLCICI);
+        output.WriteUInt32(ModifierOwnerId);
       }
       if (IsServerbuffModifier != false) {
         output.WriteRawTag(112);
@@ -247,9 +247,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300OOOLELPBDHJ != 0) {
+      if (AbilityCasterId != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk3300OOOLELPBDHJ);
+        output.WriteUInt32(AbilityCasterId);
       }
       if (InstancedAbilityId != 0) {
         output.WriteRawTag(32);
@@ -263,9 +263,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteInt32(LocalId);
       }
-      if (Unk3300IHCKJKLCICI != 0) {
+      if (ModifierOwnerId != 0) {
         output.WriteRawTag(80);
-        output.WriteUInt32(Unk3300IHCKJKLCICI);
+        output.WriteUInt32(ModifierOwnerId);
       }
       if (IsServerbuffModifier != false) {
         output.WriteRawTag(112);
@@ -284,8 +284,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (InstancedAbilityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(InstancedAbilityId);
       }
-      if (Unk3300IHCKJKLCICI != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300IHCKJKLCICI);
+      if (ModifierOwnerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ModifierOwnerId);
       }
       if (IsServerbuffModifier != false) {
         size += 1 + 1;
@@ -293,8 +293,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (LocalId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(LocalId);
       }
-      if (Unk3300OOOLELPBDHJ != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300OOOLELPBDHJ);
+      if (AbilityCasterId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AbilityCasterId);
       }
       if (InstancedModifierId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(InstancedModifierId);
@@ -314,8 +314,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.InstancedAbilityId != 0) {
         InstancedAbilityId = other.InstancedAbilityId;
       }
-      if (other.Unk3300IHCKJKLCICI != 0) {
-        Unk3300IHCKJKLCICI = other.Unk3300IHCKJKLCICI;
+      if (other.ModifierOwnerId != 0) {
+        ModifierOwnerId = other.ModifierOwnerId;
       }
       if (other.IsServerbuffModifier != false) {
         IsServerbuffModifier = other.IsServerbuffModifier;
@@ -323,8 +323,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.LocalId != 0) {
         LocalId = other.LocalId;
       }
-      if (other.Unk3300OOOLELPBDHJ != 0) {
-        Unk3300OOOLELPBDHJ = other.Unk3300OOOLELPBDHJ;
+      if (other.AbilityCasterId != 0) {
+        AbilityCasterId = other.AbilityCasterId;
       }
       if (other.InstancedModifierId != 0) {
         InstancedModifierId = other.InstancedModifierId;
@@ -345,7 +345,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Unk3300OOOLELPBDHJ = input.ReadUInt32();
+            AbilityCasterId = input.ReadUInt32();
             break;
           }
           case 32: {
@@ -361,7 +361,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 80: {
-            Unk3300IHCKJKLCICI = input.ReadUInt32();
+            ModifierOwnerId = input.ReadUInt32();
             break;
           }
           case 112: {
@@ -384,7 +384,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Unk3300OOOLELPBDHJ = input.ReadUInt32();
+            AbilityCasterId = input.ReadUInt32();
             break;
           }
           case 32: {
@@ -400,7 +400,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 80: {
-            Unk3300IHCKJKLCICI = input.ReadUInt32();
+            ModifierOwnerId = input.ReadUInt32();
             break;
           }
           case 112: {

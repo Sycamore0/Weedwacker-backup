@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static UpdateRedPointNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpVcGRhdGVSZWRQb2ludE5vdGlmeS5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90bxoSUmVkUG9pbnREYXRhLnByb3RvIl0KFFVwZGF0",
-            "ZVJlZFBvaW50Tm90aWZ5EkUKDnJlZF9wb2ludF9saXN0GAogAygLMi0uV2Vl",
-            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5SZWRQb2ludERhdGFiBnBy",
-            "b3RvMw=="));
+            "ChpVcGRhdGVSZWRQb2ludE5vdGlmeS5wcm90bxoSUmVkUG9pbnREYXRhLnBy",
+            "b3RvIj0KFFVwZGF0ZVJlZFBvaW50Tm90aWZ5EiUKDnJlZF9wb2ludF9saXN0",
+            "GAogAygLMg0uUmVkUG9pbnREYXRhQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5O",
+            "ZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.RedPointDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

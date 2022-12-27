@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static WidgetCameraInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZXaWRnZXRDYW1lcmFJbmZvLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvIiwKEFdpZGdldENhbWVyYUluZm8SGAoQdGFyZ2V0X2Vu",
-            "dGl0eV9pZBgHIAEoDWIGcHJvdG8z"));
+            "ChZXaWRnZXRDYW1lcmFJbmZvLnByb3RvIiwKEFdpZGdldENhbWVyYUluZm8S",
+            "GAoQdGFyZ2V0X2VudGl0eV9pZBgHIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

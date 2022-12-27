@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetPlayerBlacklistReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtHZXRQbGF5ZXJCbGFja2xpc3RSZXEucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8iFwoVR2V0UGxheWVyQmxhY2tsaXN0UmVxYgZw",
-            "cm90bzM="));
+            "ChtHZXRQbGF5ZXJCbGFja2xpc3RSZXEucHJvdG8iFwoVR2V0UGxheWVyQmxh",
+            "Y2tsaXN0UmVxQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

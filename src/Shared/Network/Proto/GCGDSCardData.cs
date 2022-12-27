@@ -24,15 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGDSCardDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNHQ0dEU0NhcmREYXRhLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvIo8BCg1HQ0dEU0NhcmREYXRhEgsKA251bRgLIAEoDRIRCglm",
-            "YWNlX3R5cGUYBSABKA0SDwoHY2FyZF9pZBgEIAEoDRIbChNVbmszMzAwX0NJ",
-            "R0dISElISkZNGA4gAygNEhsKE1VuazMzMDBfT0FGTURKQ1BDSkgYBiADKA0S",
-            "EwoLcHJvZmljaWVuY3kYCiABKA1iBnByb3RvMw=="));
+            "ChNHQ0dEU0NhcmREYXRhLnByb3RvIp8BCg1HQ0dEU0NhcmREYXRhEgsKA251",
+            "bRgLIAEoDRIRCglmYWNlX3R5cGUYBSABKA0SDwoHY2FyZF9pZBgEIAEoDRIp",
+            "CiFwcm9maWNpZW5jeV9yZXdhcmRfdGFrZW5faWR4X2xpc3QYDiADKA0SHQoV",
+            "dW5sb2NrX2ZhY2VfdHlwZV9saXN0GAYgAygNEhMKC3Byb2ZpY2llbmN5GAog",
+            "ASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GCGDSCardData), global::Weedwacker.Shared.Network.Proto.GCGDSCardData.Parser, new[]{ "Num", "FaceType", "CardId", "Unk3300CIGGHHIHJFM", "Unk3300OAFMDJCPCJH", "Proficiency" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GCGDSCardData), global::Weedwacker.Shared.Network.Proto.GCGDSCardData.Parser, new[]{ "Num", "FaceType", "CardId", "ProficiencyRewardTakenIdxList", "UnlockFaceTypeList", "Proficiency" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,8 +77,8 @@ namespace Weedwacker.Shared.Network.Proto {
       num_ = other.num_;
       faceType_ = other.faceType_;
       cardId_ = other.cardId_;
-      unk3300CIGGHHIHJFM_ = other.unk3300CIGGHHIHJFM_.Clone();
-      unk3300OAFMDJCPCJH_ = other.unk3300OAFMDJCPCJH_.Clone();
+      proficiencyRewardTakenIdxList_ = other.proficiencyRewardTakenIdxList_.Clone();
+      unlockFaceTypeList_ = other.unlockFaceTypeList_.Clone();
       proficiency_ = other.proficiency_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -124,26 +125,26 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_CIGGHHIHJFM" field.</summary>
-    public const int Unk3300CIGGHHIHJFMFieldNumber = 14;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300CIGGHHIHJFM_codec
+    /// <summary>Field number for the "proficiency_reward_taken_idx_list" field.</summary>
+    public const int ProficiencyRewardTakenIdxListFieldNumber = 14;
+    private static readonly pb::FieldCodec<uint> _repeated_proficiencyRewardTakenIdxList_codec
         = pb::FieldCodec.ForUInt32(114);
-    private readonly pbc::RepeatedField<uint> unk3300CIGGHHIHJFM_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> proficiencyRewardTakenIdxList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300CIGGHHIHJFM {
-      get { return unk3300CIGGHHIHJFM_; }
+    public pbc::RepeatedField<uint> ProficiencyRewardTakenIdxList {
+      get { return proficiencyRewardTakenIdxList_; }
     }
 
-    /// <summary>Field number for the "Unk3300_OAFMDJCPCJH" field.</summary>
-    public const int Unk3300OAFMDJCPCJHFieldNumber = 6;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300OAFMDJCPCJH_codec
+    /// <summary>Field number for the "unlock_face_type_list" field.</summary>
+    public const int UnlockFaceTypeListFieldNumber = 6;
+    private static readonly pb::FieldCodec<uint> _repeated_unlockFaceTypeList_codec
         = pb::FieldCodec.ForUInt32(50);
-    private readonly pbc::RepeatedField<uint> unk3300OAFMDJCPCJH_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> unlockFaceTypeList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300OAFMDJCPCJH {
-      get { return unk3300OAFMDJCPCJH_; }
+    public pbc::RepeatedField<uint> UnlockFaceTypeList {
+      get { return unlockFaceTypeList_; }
     }
 
     /// <summary>Field number for the "proficiency" field.</summary>
@@ -176,8 +177,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Num != other.Num) return false;
       if (FaceType != other.FaceType) return false;
       if (CardId != other.CardId) return false;
-      if(!unk3300CIGGHHIHJFM_.Equals(other.unk3300CIGGHHIHJFM_)) return false;
-      if(!unk3300OAFMDJCPCJH_.Equals(other.unk3300OAFMDJCPCJH_)) return false;
+      if(!proficiencyRewardTakenIdxList_.Equals(other.proficiencyRewardTakenIdxList_)) return false;
+      if(!unlockFaceTypeList_.Equals(other.unlockFaceTypeList_)) return false;
       if (Proficiency != other.Proficiency) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -189,8 +190,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Num != 0) hash ^= Num.GetHashCode();
       if (FaceType != 0) hash ^= FaceType.GetHashCode();
       if (CardId != 0) hash ^= CardId.GetHashCode();
-      hash ^= unk3300CIGGHHIHJFM_.GetHashCode();
-      hash ^= unk3300OAFMDJCPCJH_.GetHashCode();
+      hash ^= proficiencyRewardTakenIdxList_.GetHashCode();
+      hash ^= unlockFaceTypeList_.GetHashCode();
       if (Proficiency != 0) hash ^= Proficiency.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -218,7 +219,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(FaceType);
       }
-      unk3300OAFMDJCPCJH_.WriteTo(output, _repeated_unk3300OAFMDJCPCJH_codec);
+      unlockFaceTypeList_.WriteTo(output, _repeated_unlockFaceTypeList_codec);
       if (Proficiency != 0) {
         output.WriteRawTag(80);
         output.WriteUInt32(Proficiency);
@@ -227,7 +228,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(88);
         output.WriteUInt32(Num);
       }
-      unk3300CIGGHHIHJFM_.WriteTo(output, _repeated_unk3300CIGGHHIHJFM_codec);
+      proficiencyRewardTakenIdxList_.WriteTo(output, _repeated_proficiencyRewardTakenIdxList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -246,7 +247,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteUInt32(FaceType);
       }
-      unk3300OAFMDJCPCJH_.WriteTo(ref output, _repeated_unk3300OAFMDJCPCJH_codec);
+      unlockFaceTypeList_.WriteTo(ref output, _repeated_unlockFaceTypeList_codec);
       if (Proficiency != 0) {
         output.WriteRawTag(80);
         output.WriteUInt32(Proficiency);
@@ -255,7 +256,7 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(88);
         output.WriteUInt32(Num);
       }
-      unk3300CIGGHHIHJFM_.WriteTo(ref output, _repeated_unk3300CIGGHHIHJFM_codec);
+      proficiencyRewardTakenIdxList_.WriteTo(ref output, _repeated_proficiencyRewardTakenIdxList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -275,8 +276,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (CardId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CardId);
       }
-      size += unk3300CIGGHHIHJFM_.CalculateSize(_repeated_unk3300CIGGHHIHJFM_codec);
-      size += unk3300OAFMDJCPCJH_.CalculateSize(_repeated_unk3300OAFMDJCPCJH_codec);
+      size += proficiencyRewardTakenIdxList_.CalculateSize(_repeated_proficiencyRewardTakenIdxList_codec);
+      size += unlockFaceTypeList_.CalculateSize(_repeated_unlockFaceTypeList_codec);
       if (Proficiency != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Proficiency);
       }
@@ -301,8 +302,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.CardId != 0) {
         CardId = other.CardId;
       }
-      unk3300CIGGHHIHJFM_.Add(other.unk3300CIGGHHIHJFM_);
-      unk3300OAFMDJCPCJH_.Add(other.unk3300OAFMDJCPCJH_);
+      proficiencyRewardTakenIdxList_.Add(other.proficiencyRewardTakenIdxList_);
+      unlockFaceTypeList_.Add(other.unlockFaceTypeList_);
       if (other.Proficiency != 0) {
         Proficiency = other.Proficiency;
       }
@@ -331,7 +332,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 50:
           case 48: {
-            unk3300OAFMDJCPCJH_.AddEntriesFrom(input, _repeated_unk3300OAFMDJCPCJH_codec);
+            unlockFaceTypeList_.AddEntriesFrom(input, _repeated_unlockFaceTypeList_codec);
             break;
           }
           case 80: {
@@ -344,7 +345,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 114:
           case 112: {
-            unk3300CIGGHHIHJFM_.AddEntriesFrom(input, _repeated_unk3300CIGGHHIHJFM_codec);
+            proficiencyRewardTakenIdxList_.AddEntriesFrom(input, _repeated_proficiencyRewardTakenIdxList_codec);
             break;
           }
         }
@@ -372,7 +373,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 50:
           case 48: {
-            unk3300OAFMDJCPCJH_.AddEntriesFrom(ref input, _repeated_unk3300OAFMDJCPCJH_codec);
+            unlockFaceTypeList_.AddEntriesFrom(ref input, _repeated_unlockFaceTypeList_codec);
             break;
           }
           case 80: {
@@ -385,7 +386,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 114:
           case 112: {
-            unk3300CIGGHHIHJFM_.AddEntriesFrom(ref input, _repeated_unk3300CIGGHHIHJFM_codec);
+            proficiencyRewardTakenIdxList_.AddEntriesFrom(ref input, _repeated_proficiencyRewardTakenIdxList_codec);
             break;
           }
         }

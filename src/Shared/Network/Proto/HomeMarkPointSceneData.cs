@@ -24,20 +24,17 @@ namespace Weedwacker.Shared.Network.Proto {
     static HomeMarkPointSceneDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxIb21lTWFya1BvaW50U2NlbmVEYXRhLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvGiBIb21lTWFya1BvaW50RnVybml0dXJlRGF0",
-            "YS5wcm90bxoMVmVjdG9yLnByb3RvIp4CChZIb21lTWFya1BvaW50U2NlbmVE",
-            "YXRhEkQKE1VuazMzMDBfT05KSkpFUEZLSkkYCSABKAsyJy5XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvLlZlY3RvchIQCghzY2VuZV9pZBgGIAEo",
-            "DRJEChNVbmszMzAwX0hGTk9JTkdQTUpQGAsgASgLMicuV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90by5WZWN0b3ISEQoJbW9kdWxlX2lkGAggASgN",
-            "ElMKDmZ1cm5pdHVyZV9saXN0GA0gAygLMjsuV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90by5Ib21lTWFya1BvaW50RnVybml0dXJlRGF0YWIGcHJv",
-            "dG8z"));
+            "ChxIb21lTWFya1BvaW50U2NlbmVEYXRhLnByb3RvGiBIb21lTWFya1BvaW50",
+            "RnVybml0dXJlRGF0YS5wcm90bxoMVmVjdG9yLnByb3RvIrcBChZIb21lTWFy",
+            "a1BvaW50U2NlbmVEYXRhEiIKEXRlYXBvdF9zcGlyaXRfcG9zGAkgASgLMgcu",
+            "VmVjdG9yEhAKCHNjZW5lX2lkGAYgASgNEh8KDnNhZmVfcG9pbnRfcG9zGAsg",
+            "ASgLMgcuVmVjdG9yEhEKCW1vZHVsZV9pZBgIIAEoDRIzCg5mdXJuaXR1cmVf",
+            "bGlzdBgNIAMoCzIbLkhvbWVNYXJrUG9pbnRGdXJuaXR1cmVEYXRhQiKqAh9X",
+            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.HomeMarkPointFurnitureDataReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HomeMarkPointSceneData), global::Weedwacker.Shared.Network.Proto.HomeMarkPointSceneData.Parser, new[]{ "Unk3300ONJJJEPFKJI", "SceneId", "Unk3300HFNOINGPMJP", "ModuleId", "FurnitureList" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.HomeMarkPointSceneData), global::Weedwacker.Shared.Network.Proto.HomeMarkPointSceneData.Parser, new[]{ "TeapotSpiritPos", "SceneId", "SafePointPos", "ModuleId", "FurnitureList" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,9 +75,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public HomeMarkPointSceneData(HomeMarkPointSceneData other) : this() {
-      unk3300ONJJJEPFKJI_ = other.unk3300ONJJJEPFKJI_ != null ? other.unk3300ONJJJEPFKJI_.Clone() : null;
+      teapotSpiritPos_ = other.teapotSpiritPos_ != null ? other.teapotSpiritPos_.Clone() : null;
       sceneId_ = other.sceneId_;
-      unk3300HFNOINGPMJP_ = other.unk3300HFNOINGPMJP_ != null ? other.unk3300HFNOINGPMJP_.Clone() : null;
+      safePointPos_ = other.safePointPos_ != null ? other.safePointPos_.Clone() : null;
       moduleId_ = other.moduleId_;
       furnitureList_ = other.furnitureList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -92,15 +89,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new HomeMarkPointSceneData(this);
     }
 
-    /// <summary>Field number for the "Unk3300_ONJJJEPFKJI" field.</summary>
-    public const int Unk3300ONJJJEPFKJIFieldNumber = 9;
-    private global::Weedwacker.Shared.Network.Proto.Vector unk3300ONJJJEPFKJI_;
+    /// <summary>Field number for the "teapot_spirit_pos" field.</summary>
+    public const int TeapotSpiritPosFieldNumber = 9;
+    private global::Weedwacker.Shared.Network.Proto.Vector teapotSpiritPos_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Vector Unk3300ONJJJEPFKJI {
-      get { return unk3300ONJJJEPFKJI_; }
+    public global::Weedwacker.Shared.Network.Proto.Vector TeapotSpiritPos {
+      get { return teapotSpiritPos_; }
       set {
-        unk3300ONJJJEPFKJI_ = value;
+        teapotSpiritPos_ = value;
       }
     }
 
@@ -116,15 +113,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_HFNOINGPMJP" field.</summary>
-    public const int Unk3300HFNOINGPMJPFieldNumber = 11;
-    private global::Weedwacker.Shared.Network.Proto.Vector unk3300HFNOINGPMJP_;
+    /// <summary>Field number for the "safe_point_pos" field.</summary>
+    public const int SafePointPosFieldNumber = 11;
+    private global::Weedwacker.Shared.Network.Proto.Vector safePointPos_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.Vector Unk3300HFNOINGPMJP {
-      get { return unk3300HFNOINGPMJP_; }
+    public global::Weedwacker.Shared.Network.Proto.Vector SafePointPos {
+      get { return safePointPos_; }
       set {
-        unk3300HFNOINGPMJP_ = value;
+        safePointPos_ = value;
       }
     }
 
@@ -166,9 +163,9 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Unk3300ONJJJEPFKJI, other.Unk3300ONJJJEPFKJI)) return false;
+      if (!object.Equals(TeapotSpiritPos, other.TeapotSpiritPos)) return false;
       if (SceneId != other.SceneId) return false;
-      if (!object.Equals(Unk3300HFNOINGPMJP, other.Unk3300HFNOINGPMJP)) return false;
+      if (!object.Equals(SafePointPos, other.SafePointPos)) return false;
       if (ModuleId != other.ModuleId) return false;
       if(!furnitureList_.Equals(other.furnitureList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -178,9 +175,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (unk3300ONJJJEPFKJI_ != null) hash ^= Unk3300ONJJJEPFKJI.GetHashCode();
+      if (teapotSpiritPos_ != null) hash ^= TeapotSpiritPos.GetHashCode();
       if (SceneId != 0) hash ^= SceneId.GetHashCode();
-      if (unk3300HFNOINGPMJP_ != null) hash ^= Unk3300HFNOINGPMJP.GetHashCode();
+      if (safePointPos_ != null) hash ^= SafePointPos.GetHashCode();
       if (ModuleId != 0) hash ^= ModuleId.GetHashCode();
       hash ^= furnitureList_.GetHashCode();
       if (_unknownFields != null) {
@@ -209,13 +206,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(64);
         output.WriteUInt32(ModuleId);
       }
-      if (unk3300ONJJJEPFKJI_ != null) {
+      if (teapotSpiritPos_ != null) {
         output.WriteRawTag(74);
-        output.WriteMessage(Unk3300ONJJJEPFKJI);
+        output.WriteMessage(TeapotSpiritPos);
       }
-      if (unk3300HFNOINGPMJP_ != null) {
+      if (safePointPos_ != null) {
         output.WriteRawTag(90);
-        output.WriteMessage(Unk3300HFNOINGPMJP);
+        output.WriteMessage(SafePointPos);
       }
       furnitureList_.WriteTo(output, _repeated_furnitureList_codec);
       if (_unknownFields != null) {
@@ -236,13 +233,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(64);
         output.WriteUInt32(ModuleId);
       }
-      if (unk3300ONJJJEPFKJI_ != null) {
+      if (teapotSpiritPos_ != null) {
         output.WriteRawTag(74);
-        output.WriteMessage(Unk3300ONJJJEPFKJI);
+        output.WriteMessage(TeapotSpiritPos);
       }
-      if (unk3300HFNOINGPMJP_ != null) {
+      if (safePointPos_ != null) {
         output.WriteRawTag(90);
-        output.WriteMessage(Unk3300HFNOINGPMJP);
+        output.WriteMessage(SafePointPos);
       }
       furnitureList_.WriteTo(ref output, _repeated_furnitureList_codec);
       if (_unknownFields != null) {
@@ -255,14 +252,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (unk3300ONJJJEPFKJI_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Unk3300ONJJJEPFKJI);
+      if (teapotSpiritPos_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TeapotSpiritPos);
       }
       if (SceneId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SceneId);
       }
-      if (unk3300HFNOINGPMJP_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Unk3300HFNOINGPMJP);
+      if (safePointPos_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SafePointPos);
       }
       if (ModuleId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ModuleId);
@@ -280,20 +277,20 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.unk3300ONJJJEPFKJI_ != null) {
-        if (unk3300ONJJJEPFKJI_ == null) {
-          Unk3300ONJJJEPFKJI = new global::Weedwacker.Shared.Network.Proto.Vector();
+      if (other.teapotSpiritPos_ != null) {
+        if (teapotSpiritPos_ == null) {
+          TeapotSpiritPos = new global::Weedwacker.Shared.Network.Proto.Vector();
         }
-        Unk3300ONJJJEPFKJI.MergeFrom(other.Unk3300ONJJJEPFKJI);
+        TeapotSpiritPos.MergeFrom(other.TeapotSpiritPos);
       }
       if (other.SceneId != 0) {
         SceneId = other.SceneId;
       }
-      if (other.unk3300HFNOINGPMJP_ != null) {
-        if (unk3300HFNOINGPMJP_ == null) {
-          Unk3300HFNOINGPMJP = new global::Weedwacker.Shared.Network.Proto.Vector();
+      if (other.safePointPos_ != null) {
+        if (safePointPos_ == null) {
+          SafePointPos = new global::Weedwacker.Shared.Network.Proto.Vector();
         }
-        Unk3300HFNOINGPMJP.MergeFrom(other.Unk3300HFNOINGPMJP);
+        SafePointPos.MergeFrom(other.SafePointPos);
       }
       if (other.ModuleId != 0) {
         ModuleId = other.ModuleId;
@@ -323,17 +320,17 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 74: {
-            if (unk3300ONJJJEPFKJI_ == null) {
-              Unk3300ONJJJEPFKJI = new global::Weedwacker.Shared.Network.Proto.Vector();
+            if (teapotSpiritPos_ == null) {
+              TeapotSpiritPos = new global::Weedwacker.Shared.Network.Proto.Vector();
             }
-            input.ReadMessage(Unk3300ONJJJEPFKJI);
+            input.ReadMessage(TeapotSpiritPos);
             break;
           }
           case 90: {
-            if (unk3300HFNOINGPMJP_ == null) {
-              Unk3300HFNOINGPMJP = new global::Weedwacker.Shared.Network.Proto.Vector();
+            if (safePointPos_ == null) {
+              SafePointPos = new global::Weedwacker.Shared.Network.Proto.Vector();
             }
-            input.ReadMessage(Unk3300HFNOINGPMJP);
+            input.ReadMessage(SafePointPos);
             break;
           }
           case 106: {
@@ -364,17 +361,17 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 74: {
-            if (unk3300ONJJJEPFKJI_ == null) {
-              Unk3300ONJJJEPFKJI = new global::Weedwacker.Shared.Network.Proto.Vector();
+            if (teapotSpiritPos_ == null) {
+              TeapotSpiritPos = new global::Weedwacker.Shared.Network.Proto.Vector();
             }
-            input.ReadMessage(Unk3300ONJJJEPFKJI);
+            input.ReadMessage(TeapotSpiritPos);
             break;
           }
           case 90: {
-            if (unk3300HFNOINGPMJP_ == null) {
-              Unk3300HFNOINGPMJP = new global::Weedwacker.Shared.Network.Proto.Vector();
+            if (safePointPos_ == null) {
+              SafePointPos = new global::Weedwacker.Shared.Network.Proto.Vector();
             }
-            input.ReadMessage(Unk3300HFNOINGPMJP);
+            input.ReadMessage(SafePointPos);
             break;
           }
           case 106: {

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static GachaUpInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFHYWNoYVVwSW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90byI9CgtHYWNoYVVwSW5mbxIYChBpdGVtX3BhcmVudF90eXBlGA8g",
-            "ASgNEhQKDGl0ZW1faWRfbGlzdBgGIAMoDWIGcHJvdG8z"));
+            "ChFHYWNoYVVwSW5mby5wcm90byI9CgtHYWNoYVVwSW5mbxIYChBpdGVtX3Bh",
+            "cmVudF90eXBlGA8gASgNEhQKDGl0ZW1faWRfbGlzdBgGIAMoDUIiqgIfV2Vl",
+            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

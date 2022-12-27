@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerGetForceQuitBanInfoReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJQbGF5ZXJHZXRGb3JjZVF1aXRCYW5JbmZvUmVxLnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIh4KHFBsYXllckdldEZvcmNlUXVp",
-            "dEJhbkluZm9SZXFiBnByb3RvMw=="));
+            "CiJQbGF5ZXJHZXRGb3JjZVF1aXRCYW5JbmZvUmVxLnByb3RvIh4KHFBsYXll",
+            "ckdldEZvcmNlUXVpdEJhbkluZm9SZXFCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

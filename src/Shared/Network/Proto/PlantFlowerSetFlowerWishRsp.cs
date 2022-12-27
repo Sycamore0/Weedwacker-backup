@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlantFlowerSetFlowerWishRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFQbGFudEZsb3dlclNldEZsb3dlcldpc2hSc3AucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iQwobUGxhbnRGbG93ZXJTZXRGbG93",
-            "ZXJXaXNoUnNwEhMKC3NjaGVkdWxlX2lkGAUgASgNEg8KB3JldGNvZGUYDCAB",
-            "KAViBnByb3RvMw=="));
+            "CiFQbGFudEZsb3dlclNldEZsb3dlcldpc2hSc3AucHJvdG8iQwobUGxhbnRG",
+            "bG93ZXJTZXRGbG93ZXJXaXNoUnNwEhMKC3NjaGVkdWxlX2lkGAUgASgNEg8K",
+            "B3JldGNvZGUYDCABKAVCIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

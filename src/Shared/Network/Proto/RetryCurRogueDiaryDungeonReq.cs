@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static RetryCurRogueDiaryDungeonReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJSZXRyeUN1clJvZ3VlRGlhcnlEdW5nZW9uUmVxLnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIh4KHFJldHJ5Q3VyUm9ndWVEaWFy",
-            "eUR1bmdlb25SZXFiBnByb3RvMw=="));
+            "CiJSZXRyeUN1clJvZ3VlRGlhcnlEdW5nZW9uUmVxLnByb3RvIh4KHFJldHJ5",
+            "Q3VyUm9ndWVEaWFyeUR1bmdlb25SZXFCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

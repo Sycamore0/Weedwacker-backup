@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static EntityAiKillSelfNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxFbnRpdHlBaUtpbGxTZWxmTm90aWZ5LnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvIisKFkVudGl0eUFpS2lsbFNlbGZOb3RpZnkS",
-            "EQoJZW50aXR5X2lkGAcgASgNYgZwcm90bzM="));
+            "ChxFbnRpdHlBaUtpbGxTZWxmTm90aWZ5LnByb3RvIisKFkVudGl0eUFpS2ls",
+            "bFNlbGZOb3RpZnkSEQoJZW50aXR5X2lkGAcgASgNQiKqAh9XZWVkd2Fja2Vy",
+            "LlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

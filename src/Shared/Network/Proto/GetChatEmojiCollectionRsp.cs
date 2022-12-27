@@ -24,12 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetChatEmojiCollectionRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9HZXRDaGF0RW1vamlDb2xsZWN0aW9uUnNwLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvGh1DaGF0RW1vamlDb2xsZWN0aW9uRGF0",
-            "YS5wcm90byKKAQoZR2V0Q2hhdEVtb2ppQ29sbGVjdGlvblJzcBJcChpjaGF0",
-            "X2Vtb2ppX2NvbGxlY3Rpb25fZGF0YRgPIAEoCzI4LldlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8uQ2hhdEVtb2ppQ29sbGVjdGlvbkRhdGESDwoH",
-            "cmV0Y29kZRgFIAEoBWIGcHJvdG8z"));
+            "Ch9HZXRDaGF0RW1vamlDb2xsZWN0aW9uUnNwLnByb3RvGh1DaGF0RW1vamlD",
+            "b2xsZWN0aW9uRGF0YS5wcm90byJqChlHZXRDaGF0RW1vamlDb2xsZWN0aW9u",
+            "UnNwEjwKGmNoYXRfZW1vamlfY29sbGVjdGlvbl9kYXRhGA8gASgLMhguQ2hh",
+            "dEVtb2ppQ29sbGVjdGlvbkRhdGESDwoHcmV0Y29kZRgFIAEoBUIiqgIfV2Vl",
+            "ZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ChatEmojiCollectionDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

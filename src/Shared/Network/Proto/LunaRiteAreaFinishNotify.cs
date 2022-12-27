@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static LunaRiteAreaFinishNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5MdW5hUml0ZUFyZWFGaW5pc2hOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8iKwoYTHVuYVJpdGVBcmVhRmluaXNoTm90",
-            "aWZ5Eg8KB2FyZWFfaWQYDiABKA1iBnByb3RvMw=="));
+            "Ch5MdW5hUml0ZUFyZWFGaW5pc2hOb3RpZnkucHJvdG8iKwoYTHVuYVJpdGVB",
+            "cmVhRmluaXNoTm90aWZ5Eg8KB2FyZWFfaWQYDiABKA1CIqoCH1dlZWR3YWNr",
+            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

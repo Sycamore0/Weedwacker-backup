@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static MiracleRingDataNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtNaXJhY2xlUmluZ0RhdGFOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8ipQEKFU1pcmFjbGVSaW5nRGF0YU5vdGlmeRIZ",
-            "ChFpc19nYWRnZXRfY3JlYXRlZBgPIAEoCBIYChBnYWRnZXRfZW50aXR5X2lk",
-            "GAcgASgNEhsKE1VuazMzMDBfT09OUERMTVBMTkMYCSABKA0SGwoTVW5rMzMw",
-            "MF9QT0lBRUdKTkVLUBgIIAEoDRIdChVsYXN0X3Rha2VfcmV3YXJkX3RpbWUY",
-            "DCABKA1iBnByb3RvMw=="));
+            "ChtNaXJhY2xlUmluZ0RhdGFOb3RpZnkucHJvdG8ipAEKFU1pcmFjbGVSaW5n",
+            "RGF0YU5vdGlmeRIZChFpc19nYWRnZXRfY3JlYXRlZBgPIAEoCBIYChBnYWRn",
+            "ZXRfZW50aXR5X2lkGAcgASgNEhcKD21pcmFjbGVfcmluZ19jZBgJIAEoDRIe",
+            "ChZsYXN0X2RlbGl2ZXJfaXRlbV90aW1lGAggASgNEh0KFWxhc3RfdGFrZV9y",
+            "ZXdhcmRfdGltZRgMIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
+            "ay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MiracleRingDataNotify), global::Weedwacker.Shared.Network.Proto.MiracleRingDataNotify.Parser, new[]{ "IsGadgetCreated", "GadgetEntityId", "Unk3300OONPDLMPLNC", "Unk3300POIAEGJNEKP", "LastTakeRewardTime" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.MiracleRingDataNotify), global::Weedwacker.Shared.Network.Proto.MiracleRingDataNotify.Parser, new[]{ "IsGadgetCreated", "GadgetEntityId", "MiracleRingCd", "LastDeliverItemTime", "LastTakeRewardTime" }, null, null, null, null)
           }));
     }
     #endregion
@@ -85,8 +85,8 @@ namespace Weedwacker.Shared.Network.Proto {
     public MiracleRingDataNotify(MiracleRingDataNotify other) : this() {
       isGadgetCreated_ = other.isGadgetCreated_;
       gadgetEntityId_ = other.gadgetEntityId_;
-      unk3300OONPDLMPLNC_ = other.unk3300OONPDLMPLNC_;
-      unk3300POIAEGJNEKP_ = other.unk3300POIAEGJNEKP_;
+      miracleRingCd_ = other.miracleRingCd_;
+      lastDeliverItemTime_ = other.lastDeliverItemTime_;
       lastTakeRewardTime_ = other.lastTakeRewardTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -121,27 +121,27 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_OONPDLMPLNC" field.</summary>
-    public const int Unk3300OONPDLMPLNCFieldNumber = 9;
-    private uint unk3300OONPDLMPLNC_;
+    /// <summary>Field number for the "miracle_ring_cd" field.</summary>
+    public const int MiracleRingCdFieldNumber = 9;
+    private uint miracleRingCd_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300OONPDLMPLNC {
-      get { return unk3300OONPDLMPLNC_; }
+    public uint MiracleRingCd {
+      get { return miracleRingCd_; }
       set {
-        unk3300OONPDLMPLNC_ = value;
+        miracleRingCd_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_POIAEGJNEKP" field.</summary>
-    public const int Unk3300POIAEGJNEKPFieldNumber = 8;
-    private uint unk3300POIAEGJNEKP_;
+    /// <summary>Field number for the "last_deliver_item_time" field.</summary>
+    public const int LastDeliverItemTimeFieldNumber = 8;
+    private uint lastDeliverItemTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300POIAEGJNEKP {
-      get { return unk3300POIAEGJNEKP_; }
+    public uint LastDeliverItemTime {
+      get { return lastDeliverItemTime_; }
       set {
-        unk3300POIAEGJNEKP_ = value;
+        lastDeliverItemTime_ = value;
       }
     }
 
@@ -174,8 +174,8 @@ namespace Weedwacker.Shared.Network.Proto {
       }
       if (IsGadgetCreated != other.IsGadgetCreated) return false;
       if (GadgetEntityId != other.GadgetEntityId) return false;
-      if (Unk3300OONPDLMPLNC != other.Unk3300OONPDLMPLNC) return false;
-      if (Unk3300POIAEGJNEKP != other.Unk3300POIAEGJNEKP) return false;
+      if (MiracleRingCd != other.MiracleRingCd) return false;
+      if (LastDeliverItemTime != other.LastDeliverItemTime) return false;
       if (LastTakeRewardTime != other.LastTakeRewardTime) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -186,8 +186,8 @@ namespace Weedwacker.Shared.Network.Proto {
       int hash = 1;
       if (IsGadgetCreated != false) hash ^= IsGadgetCreated.GetHashCode();
       if (GadgetEntityId != 0) hash ^= GadgetEntityId.GetHashCode();
-      if (Unk3300OONPDLMPLNC != 0) hash ^= Unk3300OONPDLMPLNC.GetHashCode();
-      if (Unk3300POIAEGJNEKP != 0) hash ^= Unk3300POIAEGJNEKP.GetHashCode();
+      if (MiracleRingCd != 0) hash ^= MiracleRingCd.GetHashCode();
+      if (LastDeliverItemTime != 0) hash ^= LastDeliverItemTime.GetHashCode();
       if (LastTakeRewardTime != 0) hash ^= LastTakeRewardTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -211,13 +211,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteUInt32(GadgetEntityId);
       }
-      if (Unk3300POIAEGJNEKP != 0) {
+      if (LastDeliverItemTime != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk3300POIAEGJNEKP);
+        output.WriteUInt32(LastDeliverItemTime);
       }
-      if (Unk3300OONPDLMPLNC != 0) {
+      if (MiracleRingCd != 0) {
         output.WriteRawTag(72);
-        output.WriteUInt32(Unk3300OONPDLMPLNC);
+        output.WriteUInt32(MiracleRingCd);
       }
       if (LastTakeRewardTime != 0) {
         output.WriteRawTag(96);
@@ -241,13 +241,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(56);
         output.WriteUInt32(GadgetEntityId);
       }
-      if (Unk3300POIAEGJNEKP != 0) {
+      if (LastDeliverItemTime != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk3300POIAEGJNEKP);
+        output.WriteUInt32(LastDeliverItemTime);
       }
-      if (Unk3300OONPDLMPLNC != 0) {
+      if (MiracleRingCd != 0) {
         output.WriteRawTag(72);
-        output.WriteUInt32(Unk3300OONPDLMPLNC);
+        output.WriteUInt32(MiracleRingCd);
       }
       if (LastTakeRewardTime != 0) {
         output.WriteRawTag(96);
@@ -273,11 +273,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (GadgetEntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GadgetEntityId);
       }
-      if (Unk3300OONPDLMPLNC != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300OONPDLMPLNC);
+      if (MiracleRingCd != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MiracleRingCd);
       }
-      if (Unk3300POIAEGJNEKP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300POIAEGJNEKP);
+      if (LastDeliverItemTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LastDeliverItemTime);
       }
       if (LastTakeRewardTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LastTakeRewardTime);
@@ -300,11 +300,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.GadgetEntityId != 0) {
         GadgetEntityId = other.GadgetEntityId;
       }
-      if (other.Unk3300OONPDLMPLNC != 0) {
-        Unk3300OONPDLMPLNC = other.Unk3300OONPDLMPLNC;
+      if (other.MiracleRingCd != 0) {
+        MiracleRingCd = other.MiracleRingCd;
       }
-      if (other.Unk3300POIAEGJNEKP != 0) {
-        Unk3300POIAEGJNEKP = other.Unk3300POIAEGJNEKP;
+      if (other.LastDeliverItemTime != 0) {
+        LastDeliverItemTime = other.LastDeliverItemTime;
       }
       if (other.LastTakeRewardTime != 0) {
         LastTakeRewardTime = other.LastTakeRewardTime;
@@ -329,11 +329,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk3300POIAEGJNEKP = input.ReadUInt32();
+            LastDeliverItemTime = input.ReadUInt32();
             break;
           }
           case 72: {
-            Unk3300OONPDLMPLNC = input.ReadUInt32();
+            MiracleRingCd = input.ReadUInt32();
             break;
           }
           case 96: {
@@ -364,11 +364,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 64: {
-            Unk3300POIAEGJNEKP = input.ReadUInt32();
+            LastDeliverItemTime = input.ReadUInt32();
             break;
           }
           case 72: {
-            Unk3300OONPDLMPLNC = input.ReadUInt32();
+            MiracleRingCd = input.ReadUInt32();
             break;
           }
           case 96: {

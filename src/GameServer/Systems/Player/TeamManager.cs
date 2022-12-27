@@ -216,7 +216,7 @@ namespace Weedwacker.GameServer.Systems.Player
             await Owner.World.BroadcastPacketAsync(new PacketSceneTeamUpdateNotify(Owner));
 
             // Skill charges packet - Yes, this is official server behavior as of 2.6.0
-            ActiveTeam.AsParallel().ForAll(async w => await w.Value.Avatar.GetCurSkillDepot().SendAvatarSkillInfoNotify());
+            ActiveTeam.AsParallel().ForAll(async w => await w.Value.Avatar.CurSkillDepot.SendAvatarSkillInfoNotify());
 
             // Check if character changed
             if (currentEntity != GetCurrentAvatarEntity())

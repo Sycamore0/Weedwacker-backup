@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static ProudSkillExtraLevelNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBQcm91ZFNraWxsRXh0cmFMZXZlbE5vdGlmeS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byKIAQoaUHJvdWRTa2lsbEV4dHJhTGV2",
-            "ZWxOb3RpZnkSEwoLYXZhdGFyX2d1aWQYDSABKAQSGwoTVW5rMzMwMF9PRElP",
-            "UExISkhBRRgEIAEoDRIbChNVbmszMzAwX0xLTkZNT0RNRUlBGAggASgNEhsK",
-            "E1VuazMzMDBfSVBEQkFEQUFIQkEYAiABKA1iBnByb3RvMw=="));
+            "CiBQcm91ZFNraWxsRXh0cmFMZXZlbE5vdGlmeS5wcm90byJxChpQcm91ZFNr",
+            "aWxsRXh0cmFMZXZlbE5vdGlmeRITCgthdmF0YXJfZ3VpZBgNIAEoBBITCgtl",
+            "eHRyYV9sZXZlbBgEIAEoDRITCgt0YWxlbnRfdHlwZRgIIAEoDRIUCgx0YWxl",
+            "bnRfaW5kZXgYAiABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsu",
+            "UHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ProudSkillExtraLevelNotify), global::Weedwacker.Shared.Network.Proto.ProudSkillExtraLevelNotify.Parser, new[]{ "AvatarGuid", "Unk3300ODIOPLHJHAE", "Unk3300LKNFMODMEIA", "Unk3300IPDBADAAHBA" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ProudSkillExtraLevelNotify), global::Weedwacker.Shared.Network.Proto.ProudSkillExtraLevelNotify.Parser, new[]{ "AvatarGuid", "ExtraLevel", "TalentType", "TalentIndex" }, null, null, null, null)
           }));
     }
     #endregion
@@ -83,9 +83,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProudSkillExtraLevelNotify(ProudSkillExtraLevelNotify other) : this() {
       avatarGuid_ = other.avatarGuid_;
-      unk3300ODIOPLHJHAE_ = other.unk3300ODIOPLHJHAE_;
-      unk3300LKNFMODMEIA_ = other.unk3300LKNFMODMEIA_;
-      unk3300IPDBADAAHBA_ = other.unk3300IPDBADAAHBA_;
+      extraLevel_ = other.extraLevel_;
+      talentType_ = other.talentType_;
+      talentIndex_ = other.talentIndex_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -107,39 +107,39 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_ODIOPLHJHAE" field.</summary>
-    public const int Unk3300ODIOPLHJHAEFieldNumber = 4;
-    private uint unk3300ODIOPLHJHAE_;
+    /// <summary>Field number for the "extra_level" field.</summary>
+    public const int ExtraLevelFieldNumber = 4;
+    private uint extraLevel_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300ODIOPLHJHAE {
-      get { return unk3300ODIOPLHJHAE_; }
+    public uint ExtraLevel {
+      get { return extraLevel_; }
       set {
-        unk3300ODIOPLHJHAE_ = value;
+        extraLevel_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_LKNFMODMEIA" field.</summary>
-    public const int Unk3300LKNFMODMEIAFieldNumber = 8;
-    private uint unk3300LKNFMODMEIA_;
+    /// <summary>Field number for the "talent_type" field.</summary>
+    public const int TalentTypeFieldNumber = 8;
+    private uint talentType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300LKNFMODMEIA {
-      get { return unk3300LKNFMODMEIA_; }
+    public uint TalentType {
+      get { return talentType_; }
       set {
-        unk3300LKNFMODMEIA_ = value;
+        talentType_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_IPDBADAAHBA" field.</summary>
-    public const int Unk3300IPDBADAAHBAFieldNumber = 2;
-    private uint unk3300IPDBADAAHBA_;
+    /// <summary>Field number for the "talent_index" field.</summary>
+    public const int TalentIndexFieldNumber = 2;
+    private uint talentIndex_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300IPDBADAAHBA {
-      get { return unk3300IPDBADAAHBA_; }
+    public uint TalentIndex {
+      get { return talentIndex_; }
       set {
-        unk3300IPDBADAAHBA_ = value;
+        talentIndex_ = value;
       }
     }
 
@@ -159,9 +159,9 @@ namespace Weedwacker.Shared.Network.Proto {
         return true;
       }
       if (AvatarGuid != other.AvatarGuid) return false;
-      if (Unk3300ODIOPLHJHAE != other.Unk3300ODIOPLHJHAE) return false;
-      if (Unk3300LKNFMODMEIA != other.Unk3300LKNFMODMEIA) return false;
-      if (Unk3300IPDBADAAHBA != other.Unk3300IPDBADAAHBA) return false;
+      if (ExtraLevel != other.ExtraLevel) return false;
+      if (TalentType != other.TalentType) return false;
+      if (TalentIndex != other.TalentIndex) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -170,9 +170,9 @@ namespace Weedwacker.Shared.Network.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (AvatarGuid != 0UL) hash ^= AvatarGuid.GetHashCode();
-      if (Unk3300ODIOPLHJHAE != 0) hash ^= Unk3300ODIOPLHJHAE.GetHashCode();
-      if (Unk3300LKNFMODMEIA != 0) hash ^= Unk3300LKNFMODMEIA.GetHashCode();
-      if (Unk3300IPDBADAAHBA != 0) hash ^= Unk3300IPDBADAAHBA.GetHashCode();
+      if (ExtraLevel != 0) hash ^= ExtraLevel.GetHashCode();
+      if (TalentType != 0) hash ^= TalentType.GetHashCode();
+      if (TalentIndex != 0) hash ^= TalentIndex.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -191,17 +191,17 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300IPDBADAAHBA != 0) {
+      if (TalentIndex != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk3300IPDBADAAHBA);
+        output.WriteUInt32(TalentIndex);
       }
-      if (Unk3300ODIOPLHJHAE != 0) {
+      if (ExtraLevel != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk3300ODIOPLHJHAE);
+        output.WriteUInt32(ExtraLevel);
       }
-      if (Unk3300LKNFMODMEIA != 0) {
+      if (TalentType != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk3300LKNFMODMEIA);
+        output.WriteUInt32(TalentType);
       }
       if (AvatarGuid != 0UL) {
         output.WriteRawTag(104);
@@ -217,17 +217,17 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300IPDBADAAHBA != 0) {
+      if (TalentIndex != 0) {
         output.WriteRawTag(16);
-        output.WriteUInt32(Unk3300IPDBADAAHBA);
+        output.WriteUInt32(TalentIndex);
       }
-      if (Unk3300ODIOPLHJHAE != 0) {
+      if (ExtraLevel != 0) {
         output.WriteRawTag(32);
-        output.WriteUInt32(Unk3300ODIOPLHJHAE);
+        output.WriteUInt32(ExtraLevel);
       }
-      if (Unk3300LKNFMODMEIA != 0) {
+      if (TalentType != 0) {
         output.WriteRawTag(64);
-        output.WriteUInt32(Unk3300LKNFMODMEIA);
+        output.WriteUInt32(TalentType);
       }
       if (AvatarGuid != 0UL) {
         output.WriteRawTag(104);
@@ -246,14 +246,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (AvatarGuid != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(AvatarGuid);
       }
-      if (Unk3300ODIOPLHJHAE != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300ODIOPLHJHAE);
+      if (ExtraLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ExtraLevel);
       }
-      if (Unk3300LKNFMODMEIA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300LKNFMODMEIA);
+      if (TalentType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TalentType);
       }
-      if (Unk3300IPDBADAAHBA != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300IPDBADAAHBA);
+      if (TalentIndex != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TalentIndex);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -270,14 +270,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.AvatarGuid != 0UL) {
         AvatarGuid = other.AvatarGuid;
       }
-      if (other.Unk3300ODIOPLHJHAE != 0) {
-        Unk3300ODIOPLHJHAE = other.Unk3300ODIOPLHJHAE;
+      if (other.ExtraLevel != 0) {
+        ExtraLevel = other.ExtraLevel;
       }
-      if (other.Unk3300LKNFMODMEIA != 0) {
-        Unk3300LKNFMODMEIA = other.Unk3300LKNFMODMEIA;
+      if (other.TalentType != 0) {
+        TalentType = other.TalentType;
       }
-      if (other.Unk3300IPDBADAAHBA != 0) {
-        Unk3300IPDBADAAHBA = other.Unk3300IPDBADAAHBA;
+      if (other.TalentIndex != 0) {
+        TalentIndex = other.TalentIndex;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -295,15 +295,15 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 16: {
-            Unk3300IPDBADAAHBA = input.ReadUInt32();
+            TalentIndex = input.ReadUInt32();
             break;
           }
           case 32: {
-            Unk3300ODIOPLHJHAE = input.ReadUInt32();
+            ExtraLevel = input.ReadUInt32();
             break;
           }
           case 64: {
-            Unk3300LKNFMODMEIA = input.ReadUInt32();
+            TalentType = input.ReadUInt32();
             break;
           }
           case 104: {
@@ -326,15 +326,15 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 16: {
-            Unk3300IPDBADAAHBA = input.ReadUInt32();
+            TalentIndex = input.ReadUInt32();
             break;
           }
           case 32: {
-            Unk3300ODIOPLHJHAE = input.ReadUInt32();
+            ExtraLevel = input.ReadUInt32();
             break;
           }
           case 64: {
-            Unk3300LKNFMODMEIA = input.ReadUInt32();
+            TalentType = input.ReadUInt32();
             break;
           }
           case 104: {

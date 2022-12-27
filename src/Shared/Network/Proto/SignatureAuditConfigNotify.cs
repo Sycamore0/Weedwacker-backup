@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static SignatureAuditConfigNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiBTaWduYXR1cmVBdWRpdENvbmZpZ05vdGlmeS5wcm90bxIfV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90byJDChpTaWduYXR1cmVBdWRpdENvbmZp",
-            "Z05vdGlmeRIPCgdpc19vcGVuGAYgASgIEhQKDHN1Ym1pdF9saW1pdBgLIAEo",
-            "DWIGcHJvdG8z"));
+            "CiBTaWduYXR1cmVBdWRpdENvbmZpZ05vdGlmeS5wcm90byJDChpTaWduYXR1",
+            "cmVBdWRpdENvbmZpZ05vdGlmeRIPCgdpc19vcGVuGAYgASgIEhQKDHN1Ym1p",
+            "dF9saW1pdBgLIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
+            "cm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

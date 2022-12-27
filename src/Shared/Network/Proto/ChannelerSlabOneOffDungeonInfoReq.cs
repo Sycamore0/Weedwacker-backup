@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ChannelerSlabOneOffDungeonInfoReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CidDaGFubmVsZXJTbGFiT25lT2ZmRHVuZ2VvbkluZm9SZXEucHJvdG8SH1dl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iIwohQ2hhbm5lbGVyU2xh",
-            "Yk9uZU9mZkR1bmdlb25JbmZvUmVxYgZwcm90bzM="));
+            "CidDaGFubmVsZXJTbGFiT25lT2ZmRHVuZ2VvbkluZm9SZXEucHJvdG8iIwoh",
+            "Q2hhbm5lbGVyU2xhYk9uZU9mZkR1bmdlb25JbmZvUmVxQiKqAh9XZWVkd2Fj",
+            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

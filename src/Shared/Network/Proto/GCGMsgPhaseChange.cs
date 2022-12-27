@@ -24,18 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGMsgPhaseChangeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdHQ0dNc2dQaGFzZUNoYW5nZS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90bxoSR0NHUGhhc2VUeXBlLnByb3RvGhBVaW50MzJQYWly",
-            "LnByb3RvIvYBChFHQ0dNc2dQaGFzZUNoYW5nZRJKChNVbmszMzAwX0pEUEFE",
-            "TEZGRkRLGA8gASgOMi0uV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
-            "by5HQ0dQaGFzZVR5cGUSSgoTVW5rMzMwMF9HTkFJRERNREVCThgDIAEoDjIt",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uR0NHUGhhc2VUeXBl",
-            "EkkKFGFsbG93X2NvbnRyb2xsZXJfbWFwGAsgAygLMisuV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90by5VaW50MzJQYWlyYgZwcm90bzM="));
+            "ChdHQ0dNc2dQaGFzZUNoYW5nZS5wcm90bxoSR0NHUGhhc2VUeXBlLnByb3Rv",
+            "GhBVaW50MzJQYWlyLnByb3RvIocBChFHQ0dNc2dQaGFzZUNoYW5nZRIjCgxi",
+            "ZWZvcmVfcGhhc2UYDyABKA4yDS5HQ0dQaGFzZVR5cGUSIgoLYWZ0ZXJfcGhh",
+            "c2UYAyABKA4yDS5HQ0dQaGFzZVR5cGUSKQoUYWxsb3dfY29udHJvbGxlcl9t",
+            "YXAYCyADKAsyCy5VaW50MzJQYWlyQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5O",
+            "ZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GCGPhaseTypeReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Uint32PairReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GCGMsgPhaseChange), global::Weedwacker.Shared.Network.Proto.GCGMsgPhaseChange.Parser, new[]{ "Unk3300JDPADLFFFDK", "Unk3300GNAIDDMDEBN", "AllowControllerMap" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.GCGMsgPhaseChange), global::Weedwacker.Shared.Network.Proto.GCGMsgPhaseChange.Parser, new[]{ "BeforePhase", "AfterPhase", "AllowControllerMap" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,8 +74,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GCGMsgPhaseChange(GCGMsgPhaseChange other) : this() {
-      unk3300JDPADLFFFDK_ = other.unk3300JDPADLFFFDK_;
-      unk3300GNAIDDMDEBN_ = other.unk3300GNAIDDMDEBN_;
+      beforePhase_ = other.beforePhase_;
+      afterPhase_ = other.afterPhase_;
       allowControllerMap_ = other.allowControllerMap_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -88,27 +86,27 @@ namespace Weedwacker.Shared.Network.Proto {
       return new GCGMsgPhaseChange(this);
     }
 
-    /// <summary>Field number for the "Unk3300_JDPADLFFFDK" field.</summary>
-    public const int Unk3300JDPADLFFFDKFieldNumber = 15;
-    private global::Weedwacker.Shared.Network.Proto.GCGPhaseType unk3300JDPADLFFFDK_ = global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid;
+    /// <summary>Field number for the "before_phase" field.</summary>
+    public const int BeforePhaseFieldNumber = 15;
+    private global::Weedwacker.Shared.Network.Proto.GCGPhaseType beforePhase_ = global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.GCGPhaseType Unk3300JDPADLFFFDK {
-      get { return unk3300JDPADLFFFDK_; }
+    public global::Weedwacker.Shared.Network.Proto.GCGPhaseType BeforePhase {
+      get { return beforePhase_; }
       set {
-        unk3300JDPADLFFFDK_ = value;
+        beforePhase_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_GNAIDDMDEBN" field.</summary>
-    public const int Unk3300GNAIDDMDEBNFieldNumber = 3;
-    private global::Weedwacker.Shared.Network.Proto.GCGPhaseType unk3300GNAIDDMDEBN_ = global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid;
+    /// <summary>Field number for the "after_phase" field.</summary>
+    public const int AfterPhaseFieldNumber = 3;
+    private global::Weedwacker.Shared.Network.Proto.GCGPhaseType afterPhase_ = global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Weedwacker.Shared.Network.Proto.GCGPhaseType Unk3300GNAIDDMDEBN {
-      get { return unk3300GNAIDDMDEBN_; }
+    public global::Weedwacker.Shared.Network.Proto.GCGPhaseType AfterPhase {
+      get { return afterPhase_; }
       set {
-        unk3300GNAIDDMDEBN_ = value;
+        afterPhase_ = value;
       }
     }
 
@@ -138,8 +136,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Unk3300JDPADLFFFDK != other.Unk3300JDPADLFFFDK) return false;
-      if (Unk3300GNAIDDMDEBN != other.Unk3300GNAIDDMDEBN) return false;
+      if (BeforePhase != other.BeforePhase) return false;
+      if (AfterPhase != other.AfterPhase) return false;
       if(!allowControllerMap_.Equals(other.allowControllerMap_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -148,8 +146,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300JDPADLFFFDK != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) hash ^= Unk3300JDPADLFFFDK.GetHashCode();
-      if (Unk3300GNAIDDMDEBN != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) hash ^= Unk3300GNAIDDMDEBN.GetHashCode();
+      if (BeforePhase != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) hash ^= BeforePhase.GetHashCode();
+      if (AfterPhase != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) hash ^= AfterPhase.GetHashCode();
       hash ^= allowControllerMap_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -169,14 +167,14 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300GNAIDDMDEBN != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
+      if (AfterPhase != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
         output.WriteRawTag(24);
-        output.WriteEnum((int) Unk3300GNAIDDMDEBN);
+        output.WriteEnum((int) AfterPhase);
       }
       allowControllerMap_.WriteTo(output, _repeated_allowControllerMap_codec);
-      if (Unk3300JDPADLFFFDK != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
+      if (BeforePhase != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
         output.WriteRawTag(120);
-        output.WriteEnum((int) Unk3300JDPADLFFFDK);
+        output.WriteEnum((int) BeforePhase);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -188,14 +186,14 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300GNAIDDMDEBN != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
+      if (AfterPhase != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
         output.WriteRawTag(24);
-        output.WriteEnum((int) Unk3300GNAIDDMDEBN);
+        output.WriteEnum((int) AfterPhase);
       }
       allowControllerMap_.WriteTo(ref output, _repeated_allowControllerMap_codec);
-      if (Unk3300JDPADLFFFDK != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
+      if (BeforePhase != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
         output.WriteRawTag(120);
-        output.WriteEnum((int) Unk3300JDPADLFFFDK);
+        output.WriteEnum((int) BeforePhase);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -207,11 +205,11 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300JDPADLFFFDK != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk3300JDPADLFFFDK);
+      if (BeforePhase != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) BeforePhase);
       }
-      if (Unk3300GNAIDDMDEBN != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Unk3300GNAIDDMDEBN);
+      if (AfterPhase != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AfterPhase);
       }
       size += allowControllerMap_.CalculateSize(_repeated_allowControllerMap_codec);
       if (_unknownFields != null) {
@@ -226,11 +224,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300JDPADLFFFDK != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
-        Unk3300JDPADLFFFDK = other.Unk3300JDPADLFFFDK;
+      if (other.BeforePhase != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
+        BeforePhase = other.BeforePhase;
       }
-      if (other.Unk3300GNAIDDMDEBN != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
-        Unk3300GNAIDDMDEBN = other.Unk3300GNAIDDMDEBN;
+      if (other.AfterPhase != global::Weedwacker.Shared.Network.Proto.GCGPhaseType.Invalid) {
+        AfterPhase = other.AfterPhase;
       }
       allowControllerMap_.Add(other.allowControllerMap_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -249,7 +247,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 24: {
-            Unk3300GNAIDDMDEBN = (global::Weedwacker.Shared.Network.Proto.GCGPhaseType) input.ReadEnum();
+            AfterPhase = (global::Weedwacker.Shared.Network.Proto.GCGPhaseType) input.ReadEnum();
             break;
           }
           case 90: {
@@ -257,7 +255,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk3300JDPADLFFFDK = (global::Weedwacker.Shared.Network.Proto.GCGPhaseType) input.ReadEnum();
+            BeforePhase = (global::Weedwacker.Shared.Network.Proto.GCGPhaseType) input.ReadEnum();
             break;
           }
         }
@@ -276,7 +274,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 24: {
-            Unk3300GNAIDDMDEBN = (global::Weedwacker.Shared.Network.Proto.GCGPhaseType) input.ReadEnum();
+            AfterPhase = (global::Weedwacker.Shared.Network.Proto.GCGPhaseType) input.ReadEnum();
             break;
           }
           case 90: {
@@ -284,7 +282,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 120: {
-            Unk3300JDPADLFFFDK = (global::Weedwacker.Shared.Network.Proto.GCGPhaseType) input.ReadEnum();
+            BeforePhase = (global::Weedwacker.Shared.Network.Proto.GCGPhaseType) input.ReadEnum();
             break;
           }
         }

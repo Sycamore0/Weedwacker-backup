@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static WinterCampRaceStageInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch1XaW50ZXJDYW1wUmFjZVN0YWdlSW5mby5wcm90bxIfV2VlZHdhY2tlci5T",
-            "aGFyZWQuTmV0d29yay5Qcm90bxoMVmVjdG9yLnByb3RvIoEBChdXaW50ZXJD",
-            "YW1wUmFjZVN0YWdlSW5mbxIKCgJpZBgCIAEoDRI0CgNwb3MYBiABKAsyJy5X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlZlY3RvchIRCglvcGVu",
-            "X3RpbWUYBSABKA0SEQoJbWF4X3Njb3JlGAQgASgNYgZwcm90bzM="));
+            "Ch1XaW50ZXJDYW1wUmFjZVN0YWdlSW5mby5wcm90bxoMVmVjdG9yLnByb3Rv",
+            "ImEKF1dpbnRlckNhbXBSYWNlU3RhZ2VJbmZvEgoKAmlkGAIgASgNEhQKA3Bv",
+            "cxgGIAEoCzIHLlZlY3RvchIRCglvcGVuX3RpbWUYBSABKA0SEQoJbWF4X3Nj",
+            "b3JlGAQgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3Rv",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

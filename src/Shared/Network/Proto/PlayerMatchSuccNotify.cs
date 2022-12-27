@@ -24,17 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerMatchSuccNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtQbGF5ZXJNYXRjaFN1Y2NOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8aEkdDR01hdGNoSW5mby5wcm90bxoWR2VuZXJh",
-            "bE1hdGNoSW5mby5wcm90bxoPTWF0Y2hUeXBlLnByb3RvIuUCChVQbGF5ZXJN",
-            "YXRjaFN1Y2NOb3RpZnkSTQoSZ2VuZXJhbF9tYXRjaF9pbmZvGAcgASgLMjEu",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5HZW5lcmFsTWF0Y2hJ",
-            "bmZvEhIKCmR1bmdlb25faWQYAyABKA0SPgoKbWF0Y2hfdHlwZRgPIAEoDjIq",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uTWF0Y2hUeXBlEiIK",
-            "Gm1lY2hhbmljdXNfZGlmZmljdWx0X2xldmVsGAUgASgNEhgKEGNvbmZpcm1f",
-            "ZW5kX3RpbWUYDSABKA0SRQoOZ2NnX21hdGNoX2luZm8YCSABKAsyLS5XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkdDR01hdGNoSW5mbxISCgpt",
-            "cF9wbGF5X2lkGAsgASgNEhAKCGhvc3RfdWlkGAogASgNYgZwcm90bzM="));
+            "ChtQbGF5ZXJNYXRjaFN1Y2NOb3RpZnkucHJvdG8aEkdDR01hdGNoSW5mby5w",
+            "cm90bxoWR2VuZXJhbE1hdGNoSW5mby5wcm90bxoPTWF0Y2hUeXBlLnByb3Rv",
+            "IoUCChVQbGF5ZXJNYXRjaFN1Y2NOb3RpZnkSLQoSZ2VuZXJhbF9tYXRjaF9p",
+            "bmZvGAcgASgLMhEuR2VuZXJhbE1hdGNoSW5mbxISCgpkdW5nZW9uX2lkGAMg",
+            "ASgNEh4KCm1hdGNoX3R5cGUYDyABKA4yCi5NYXRjaFR5cGUSIgoabWVjaGFu",
+            "aWN1c19kaWZmaWN1bHRfbGV2ZWwYBSABKA0SGAoQY29uZmlybV9lbmRfdGlt",
+            "ZRgNIAEoDRIlCg5nY2dfbWF0Y2hfaW5mbxgJIAEoCzINLkdDR01hdGNoSW5m",
+            "bxISCgptcF9wbGF5X2lkGAsgASgNEhAKCGhvc3RfdWlkGAogASgNQiKqAh9X",
+            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GCGMatchInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.GeneralMatchInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.MatchTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

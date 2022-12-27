@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static MailChangeNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZNYWlsQ2hhbmdlTm90aWZ5LnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvGg5NYWlsRGF0YS5wcm90byJqChBNYWlsQ2hhbmdlTm90",
-            "aWZ5EhgKEGRlbF9tYWlsX2lkX2xpc3QYDyADKA0SPAoJbWFpbF9saXN0GAIg",
-            "AygLMikuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5NYWlsRGF0",
-            "YWIGcHJvdG8z"));
+            "ChZNYWlsQ2hhbmdlTm90aWZ5LnByb3RvGg5NYWlsRGF0YS5wcm90byJKChBN",
+            "YWlsQ2hhbmdlTm90aWZ5EhgKEGRlbF9tYWlsX2lkX2xpc3QYDyADKA0SHAoJ",
+            "bWFpbF9saXN0GAIgAygLMgkuTWFpbERhdGFCIqoCH1dlZWR3YWNrZXIuU2hh",
+            "cmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MailDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ClosedItemNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChZDbG9zZWRJdGVtTm90aWZ5LnByb3RvEh9XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvIigKEENsb3NlZEl0ZW1Ob3RpZnkSFAoMaXRlbV9pZF9s",
-            "aXN0GAogAygNYgZwcm90bzM="));
+            "ChZDbG9zZWRJdGVtTm90aWZ5LnByb3RvIigKEENsb3NlZEl0ZW1Ob3RpZnkS",
+            "FAoMaXRlbV9pZF9saXN0GAogAygNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5O",
+            "ZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

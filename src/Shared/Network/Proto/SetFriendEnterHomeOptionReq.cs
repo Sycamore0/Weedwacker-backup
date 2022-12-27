@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static SetFriendEnterHomeOptionReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFTZXRGcmllbmRFbnRlckhvbWVPcHRpb25SZXEucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8aG0ZyaWVuZEVudGVySG9tZU9wdGlv",
-            "bi5wcm90byJlChtTZXRGcmllbmRFbnRlckhvbWVPcHRpb25SZXESRgoGb3B0",
-            "aW9uGAggASgOMjYuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5G",
-            "cmllbmRFbnRlckhvbWVPcHRpb25iBnByb3RvMw=="));
+            "CiFTZXRGcmllbmRFbnRlckhvbWVPcHRpb25SZXEucHJvdG8aG0ZyaWVuZEVu",
+            "dGVySG9tZU9wdGlvbi5wcm90byJFChtTZXRGcmllbmRFbnRlckhvbWVPcHRp",
+            "b25SZXESJgoGb3B0aW9uGAggASgOMhYuRnJpZW5kRW50ZXJIb21lT3B0aW9u",
+            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.FriendEnterHomeOptionReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

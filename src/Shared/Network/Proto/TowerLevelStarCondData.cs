@@ -24,15 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static TowerLevelStarCondDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxUb3dlckxldmVsU3RhckNvbmREYXRhLnByb3RvEh9XZWVkd2Fja2VyLlNo",
-            "YXJlZC5OZXR3b3JrLlByb3RvIowBChZUb3dlckxldmVsU3RhckNvbmREYXRh",
-            "EhsKE1VuazMzMDBfS0JDRkRGT0FKTU0YDiABKAgSGwoTVW5rMzMwMF9DUEJD",
-            "TkFDS0FBSxgFIAEoCBIbChNVbmszMzAwX0pHT0xCRk1KQkNMGAsgASgNEhsK",
-            "E1VuazMzMDBfTUdITkRKQUFDTUUYDCABKA1iBnByb3RvMw=="));
+            "ChxUb3dlckxldmVsU3RhckNvbmREYXRhLnByb3RvIoMBChZUb3dlckxldmVs",
+            "U3RhckNvbmREYXRhEhsKE1VuazMzMDBfS0JDRkRGT0FKTU0YDiABKAgSGwoT",
+            "VW5rMzMwMF9DUEJDTkFDS0FBSxgFIAEoCBIbChNVbmszMzAwX0pHT0xCRk1K",
+            "QkNMGAsgASgNEhIKCmNvbmRfdmFsdWUYDCABKA1CIqoCH1dlZWR3YWNrZXIu",
+            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TowerLevelStarCondData), global::Weedwacker.Shared.Network.Proto.TowerLevelStarCondData.Parser, new[]{ "Unk3300KBCFDFOAJMM", "Unk3300CPBCNACKAAK", "Unk3300JGOLBFMJBCL", "Unk3300MGHNDJAACME" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.TowerLevelStarCondData), global::Weedwacker.Shared.Network.Proto.TowerLevelStarCondData.Parser, new[]{ "Unk3300KBCFDFOAJMM", "Unk3300CPBCNACKAAK", "Unk3300JGOLBFMJBCL", "CondValue" }, null, null, null, null)
           }));
     }
     #endregion
@@ -76,7 +76,7 @@ namespace Weedwacker.Shared.Network.Proto {
       unk3300KBCFDFOAJMM_ = other.unk3300KBCFDFOAJMM_;
       unk3300CPBCNACKAAK_ = other.unk3300CPBCNACKAAK_;
       unk3300JGOLBFMJBCL_ = other.unk3300JGOLBFMJBCL_;
-      unk3300MGHNDJAACME_ = other.unk3300MGHNDJAACME_;
+      condValue_ = other.condValue_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -122,15 +122,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_MGHNDJAACME" field.</summary>
-    public const int Unk3300MGHNDJAACMEFieldNumber = 12;
-    private uint unk3300MGHNDJAACME_;
+    /// <summary>Field number for the "cond_value" field.</summary>
+    public const int CondValueFieldNumber = 12;
+    private uint condValue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300MGHNDJAACME {
-      get { return unk3300MGHNDJAACME_; }
+    public uint CondValue {
+      get { return condValue_; }
       set {
-        unk3300MGHNDJAACME_ = value;
+        condValue_ = value;
       }
     }
 
@@ -152,7 +152,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Unk3300KBCFDFOAJMM != other.Unk3300KBCFDFOAJMM) return false;
       if (Unk3300CPBCNACKAAK != other.Unk3300CPBCNACKAAK) return false;
       if (Unk3300JGOLBFMJBCL != other.Unk3300JGOLBFMJBCL) return false;
-      if (Unk3300MGHNDJAACME != other.Unk3300MGHNDJAACME) return false;
+      if (CondValue != other.CondValue) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -163,7 +163,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Unk3300KBCFDFOAJMM != false) hash ^= Unk3300KBCFDFOAJMM.GetHashCode();
       if (Unk3300CPBCNACKAAK != false) hash ^= Unk3300CPBCNACKAAK.GetHashCode();
       if (Unk3300JGOLBFMJBCL != 0) hash ^= Unk3300JGOLBFMJBCL.GetHashCode();
-      if (Unk3300MGHNDJAACME != 0) hash ^= Unk3300MGHNDJAACME.GetHashCode();
+      if (CondValue != 0) hash ^= CondValue.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -190,9 +190,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(88);
         output.WriteUInt32(Unk3300JGOLBFMJBCL);
       }
-      if (Unk3300MGHNDJAACME != 0) {
+      if (CondValue != 0) {
         output.WriteRawTag(96);
-        output.WriteUInt32(Unk3300MGHNDJAACME);
+        output.WriteUInt32(CondValue);
       }
       if (Unk3300KBCFDFOAJMM != false) {
         output.WriteRawTag(112);
@@ -216,9 +216,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(88);
         output.WriteUInt32(Unk3300JGOLBFMJBCL);
       }
-      if (Unk3300MGHNDJAACME != 0) {
+      if (CondValue != 0) {
         output.WriteRawTag(96);
-        output.WriteUInt32(Unk3300MGHNDJAACME);
+        output.WriteUInt32(CondValue);
       }
       if (Unk3300KBCFDFOAJMM != false) {
         output.WriteRawTag(112);
@@ -243,8 +243,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Unk3300JGOLBFMJBCL != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300JGOLBFMJBCL);
       }
-      if (Unk3300MGHNDJAACME != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300MGHNDJAACME);
+      if (CondValue != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CondValue);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -267,8 +267,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Unk3300JGOLBFMJBCL != 0) {
         Unk3300JGOLBFMJBCL = other.Unk3300JGOLBFMJBCL;
       }
-      if (other.Unk3300MGHNDJAACME != 0) {
-        Unk3300MGHNDJAACME = other.Unk3300MGHNDJAACME;
+      if (other.CondValue != 0) {
+        CondValue = other.CondValue;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -294,7 +294,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk3300MGHNDJAACME = input.ReadUInt32();
+            CondValue = input.ReadUInt32();
             break;
           }
           case 112: {
@@ -325,7 +325,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 96: {
-            Unk3300MGHNDJAACME = input.ReadUInt32();
+            CondValue = input.ReadUInt32();
             break;
           }
           case 112: {

@@ -24,16 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static ReliquaryUpgradeRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlSZWxpcXVhcnlVcGdyYWRlUnNwLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvIrwBChNSZWxpcXVhcnlVcGdyYWRlUnNwEhsKE1Vu",
-            "azMzMDBfTUdFTEFCTE1GT0UYDSADKA0SDwoHcmV0Y29kZRgLIAEoBRIdChV0",
-            "YXJnZXRfcmVsaXF1YXJ5X2d1aWQYDiABKAQSEQoJY3VyX2xldmVsGAIgASgN",
-            "EhEKCW9sZF9sZXZlbBgGIAEoDRIbChNVbmszMzAwX0lBTFBHTkFERktBGAog",
-            "AygNEhUKDXBvd2VyX3VwX3JhdGUYASABKA1iBnByb3RvMw=="));
+            "ChlSZWxpcXVhcnlVcGdyYWRlUnNwLnByb3RvIr4BChNSZWxpcXVhcnlVcGdy",
+            "YWRlUnNwEhwKFGN1cl9hcHBlbmRfcHJvcF9saXN0GA0gAygNEg8KB3JldGNv",
+            "ZGUYCyABKAUSHQoVdGFyZ2V0X3JlbGlxdWFyeV9ndWlkGA4gASgEEhEKCWN1",
+            "cl9sZXZlbBgCIAEoDRIRCglvbGRfbGV2ZWwYBiABKA0SHAoUb2xkX2FwcGVu",
+            "ZF9wcm9wX2xpc3QYCiADKA0SFQoNcG93ZXJfdXBfcmF0ZRgBIAEoDUIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ReliquaryUpgradeRsp), global::Weedwacker.Shared.Network.Proto.ReliquaryUpgradeRsp.Parser, new[]{ "Unk3300MGELABLMFOE", "Retcode", "TargetReliquaryGuid", "CurLevel", "OldLevel", "Unk3300IALPGNADFKA", "PowerUpRate" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.ReliquaryUpgradeRsp), global::Weedwacker.Shared.Network.Proto.ReliquaryUpgradeRsp.Parser, new[]{ "CurAppendPropList", "Retcode", "TargetReliquaryGuid", "CurLevel", "OldLevel", "OldAppendPropList", "PowerUpRate" }, null, null, null, null)
           }));
     }
     #endregion
@@ -83,12 +83,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReliquaryUpgradeRsp(ReliquaryUpgradeRsp other) : this() {
-      unk3300MGELABLMFOE_ = other.unk3300MGELABLMFOE_.Clone();
+      curAppendPropList_ = other.curAppendPropList_.Clone();
       retcode_ = other.retcode_;
       targetReliquaryGuid_ = other.targetReliquaryGuid_;
       curLevel_ = other.curLevel_;
       oldLevel_ = other.oldLevel_;
-      unk3300IALPGNADFKA_ = other.unk3300IALPGNADFKA_.Clone();
+      oldAppendPropList_ = other.oldAppendPropList_.Clone();
       powerUpRate_ = other.powerUpRate_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -99,15 +99,15 @@ namespace Weedwacker.Shared.Network.Proto {
       return new ReliquaryUpgradeRsp(this);
     }
 
-    /// <summary>Field number for the "Unk3300_MGELABLMFOE" field.</summary>
-    public const int Unk3300MGELABLMFOEFieldNumber = 13;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300MGELABLMFOE_codec
+    /// <summary>Field number for the "cur_append_prop_list" field.</summary>
+    public const int CurAppendPropListFieldNumber = 13;
+    private static readonly pb::FieldCodec<uint> _repeated_curAppendPropList_codec
         = pb::FieldCodec.ForUInt32(106);
-    private readonly pbc::RepeatedField<uint> unk3300MGELABLMFOE_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> curAppendPropList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300MGELABLMFOE {
-      get { return unk3300MGELABLMFOE_; }
+    public pbc::RepeatedField<uint> CurAppendPropList {
+      get { return curAppendPropList_; }
     }
 
     /// <summary>Field number for the "retcode" field.</summary>
@@ -158,15 +158,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_IALPGNADFKA" field.</summary>
-    public const int Unk3300IALPGNADFKAFieldNumber = 10;
-    private static readonly pb::FieldCodec<uint> _repeated_unk3300IALPGNADFKA_codec
+    /// <summary>Field number for the "old_append_prop_list" field.</summary>
+    public const int OldAppendPropListFieldNumber = 10;
+    private static readonly pb::FieldCodec<uint> _repeated_oldAppendPropList_codec
         = pb::FieldCodec.ForUInt32(82);
-    private readonly pbc::RepeatedField<uint> unk3300IALPGNADFKA_ = new pbc::RepeatedField<uint>();
+    private readonly pbc::RepeatedField<uint> oldAppendPropList_ = new pbc::RepeatedField<uint>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> Unk3300IALPGNADFKA {
-      get { return unk3300IALPGNADFKA_; }
+    public pbc::RepeatedField<uint> OldAppendPropList {
+      get { return oldAppendPropList_; }
     }
 
     /// <summary>Field number for the "power_up_rate" field.</summary>
@@ -196,12 +196,12 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!unk3300MGELABLMFOE_.Equals(other.unk3300MGELABLMFOE_)) return false;
+      if(!curAppendPropList_.Equals(other.curAppendPropList_)) return false;
       if (Retcode != other.Retcode) return false;
       if (TargetReliquaryGuid != other.TargetReliquaryGuid) return false;
       if (CurLevel != other.CurLevel) return false;
       if (OldLevel != other.OldLevel) return false;
-      if(!unk3300IALPGNADFKA_.Equals(other.unk3300IALPGNADFKA_)) return false;
+      if(!oldAppendPropList_.Equals(other.oldAppendPropList_)) return false;
       if (PowerUpRate != other.PowerUpRate) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -210,12 +210,12 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= unk3300MGELABLMFOE_.GetHashCode();
+      hash ^= curAppendPropList_.GetHashCode();
       if (Retcode != 0) hash ^= Retcode.GetHashCode();
       if (TargetReliquaryGuid != 0UL) hash ^= TargetReliquaryGuid.GetHashCode();
       if (CurLevel != 0) hash ^= CurLevel.GetHashCode();
       if (OldLevel != 0) hash ^= OldLevel.GetHashCode();
-      hash ^= unk3300IALPGNADFKA_.GetHashCode();
+      hash ^= oldAppendPropList_.GetHashCode();
       if (PowerUpRate != 0) hash ^= PowerUpRate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -247,12 +247,12 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(OldLevel);
       }
-      unk3300IALPGNADFKA_.WriteTo(output, _repeated_unk3300IALPGNADFKA_codec);
+      oldAppendPropList_.WriteTo(output, _repeated_oldAppendPropList_codec);
       if (Retcode != 0) {
         output.WriteRawTag(88);
         output.WriteInt32(Retcode);
       }
-      unk3300MGELABLMFOE_.WriteTo(output, _repeated_unk3300MGELABLMFOE_codec);
+      curAppendPropList_.WriteTo(output, _repeated_curAppendPropList_codec);
       if (TargetReliquaryGuid != 0UL) {
         output.WriteRawTag(112);
         output.WriteUInt64(TargetReliquaryGuid);
@@ -279,12 +279,12 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(48);
         output.WriteUInt32(OldLevel);
       }
-      unk3300IALPGNADFKA_.WriteTo(ref output, _repeated_unk3300IALPGNADFKA_codec);
+      oldAppendPropList_.WriteTo(ref output, _repeated_oldAppendPropList_codec);
       if (Retcode != 0) {
         output.WriteRawTag(88);
         output.WriteInt32(Retcode);
       }
-      unk3300MGELABLMFOE_.WriteTo(ref output, _repeated_unk3300MGELABLMFOE_codec);
+      curAppendPropList_.WriteTo(ref output, _repeated_curAppendPropList_codec);
       if (TargetReliquaryGuid != 0UL) {
         output.WriteRawTag(112);
         output.WriteUInt64(TargetReliquaryGuid);
@@ -299,7 +299,7 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += unk3300MGELABLMFOE_.CalculateSize(_repeated_unk3300MGELABLMFOE_codec);
+      size += curAppendPropList_.CalculateSize(_repeated_curAppendPropList_codec);
       if (Retcode != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retcode);
       }
@@ -312,7 +312,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (OldLevel != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(OldLevel);
       }
-      size += unk3300IALPGNADFKA_.CalculateSize(_repeated_unk3300IALPGNADFKA_codec);
+      size += oldAppendPropList_.CalculateSize(_repeated_oldAppendPropList_codec);
       if (PowerUpRate != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PowerUpRate);
       }
@@ -328,7 +328,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      unk3300MGELABLMFOE_.Add(other.unk3300MGELABLMFOE_);
+      curAppendPropList_.Add(other.curAppendPropList_);
       if (other.Retcode != 0) {
         Retcode = other.Retcode;
       }
@@ -341,7 +341,7 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.OldLevel != 0) {
         OldLevel = other.OldLevel;
       }
-      unk3300IALPGNADFKA_.Add(other.unk3300IALPGNADFKA_);
+      oldAppendPropList_.Add(other.oldAppendPropList_);
       if (other.PowerUpRate != 0) {
         PowerUpRate = other.PowerUpRate;
       }
@@ -374,7 +374,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 82:
           case 80: {
-            unk3300IALPGNADFKA_.AddEntriesFrom(input, _repeated_unk3300IALPGNADFKA_codec);
+            oldAppendPropList_.AddEntriesFrom(input, _repeated_oldAppendPropList_codec);
             break;
           }
           case 88: {
@@ -383,7 +383,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 106:
           case 104: {
-            unk3300MGELABLMFOE_.AddEntriesFrom(input, _repeated_unk3300MGELABLMFOE_codec);
+            curAppendPropList_.AddEntriesFrom(input, _repeated_curAppendPropList_codec);
             break;
           }
           case 112: {
@@ -419,7 +419,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 82:
           case 80: {
-            unk3300IALPGNADFKA_.AddEntriesFrom(ref input, _repeated_unk3300IALPGNADFKA_codec);
+            oldAppendPropList_.AddEntriesFrom(ref input, _repeated_oldAppendPropList_codec);
             break;
           }
           case 88: {
@@ -428,7 +428,7 @@ namespace Weedwacker.Shared.Network.Proto {
           }
           case 106:
           case 104: {
-            unk3300MGELABLMFOE_.AddEntriesFrom(ref input, _repeated_unk3300MGELABLMFOE_codec);
+            curAppendPropList_.AddEntriesFrom(ref input, _repeated_curAppendPropList_codec);
             break;
           }
           case 112: {

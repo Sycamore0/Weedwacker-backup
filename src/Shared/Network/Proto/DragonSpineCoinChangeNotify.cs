@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static DragonSpineCoinChangeNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFEcmFnb25TcGluZUNvaW5DaGFuZ2VOb3RpZnkucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8iiQEKG0RyYWdvblNwaW5lQ29pbkNo",
-            "YW5nZU5vdGlmeRIbChNVbmszMzAwX0lNTEtJSkFPQURGGAsgASgNEhMKC3Nj",
-            "aGVkdWxlX2lkGA8gASgNEhsKE1VuazMzMDBfRk9ISkRHQ0FLRUsYAyABKA0S",
-            "GwoTVW5rMzMwMF9ORU9DTUdKQ0VPShgCIAEoDWIGcHJvdG8z"));
+            "CiFEcmFnb25TcGluZUNvaW5DaGFuZ2VOb3RpZnkucHJvdG8iiQEKG0RyYWdv",
+            "blNwaW5lQ29pbkNoYW5nZU5vdGlmeRIbChNVbmszMzAwX0lNTEtJSkFPQURG",
+            "GAsgASgNEhMKC3NjaGVkdWxlX2lkGA8gASgNEhsKE1VuazMzMDBfRk9ISkRH",
+            "Q0FLRUsYAyABKA0SGwoTVW5rMzMwMF9ORU9DTUdKQ0VPShgCIAEoDUIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

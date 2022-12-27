@@ -24,16 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGalleryIslandPartySailInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiVTY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eVNhaWxJbmZvLnByb3RvEh9XZWVk",
-            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvGhhHYWxsZXJ5U3RhcnRTb3Vy",
-            "Y2UucHJvdG8aGklzbGFuZFBhcnR5U2FpbFN0YWdlLnByb3RvIrQCCh9TY2Vu",
-            "ZUdhbGxlcnlJc2xhbmRQYXJ0eVNhaWxJbmZvEgwKBGNvaW4YBSABKA0SGwoT",
-            "VW5rMzMwMF9IQ0pHREhFTUJMTRgEIAEoDRIbChNVbmszMzAwX01KSE1DQVBH",
-            "QklLGAYgASgNEhsKE1VuazMzMDBfUEZDSk9ER05EQ0kYAyABKA0SRAoFc3Rh",
-            "Z2UYDiABKA4yNS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLklz",
-            "bGFuZFBhcnR5U2FpbFN0YWdlEhsKE1VuazMzMDBfTUpPSUlKSUJBSEYYCiAB",
-            "KA0SSQoMc3RhcnRfc291cmNlGA0gASgOMjMuV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90by5HYWxsZXJ5U3RhcnRTb3VyY2ViBnByb3RvMw=="));
+            "CiVTY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eVNhaWxJbmZvLnByb3RvGhhHYWxs",
+            "ZXJ5U3RhcnRTb3VyY2UucHJvdG8aGklzbGFuZFBhcnR5U2FpbFN0YWdlLnBy",
+            "b3RvIvQBCh9TY2VuZUdhbGxlcnlJc2xhbmRQYXJ0eVNhaWxJbmZvEgwKBGNv",
+            "aW4YBSABKA0SGwoTVW5rMzMwMF9IQ0pHREhFTUJMTRgEIAEoDRIbChNVbmsz",
+            "MzAwX01KSE1DQVBHQklLGAYgASgNEhsKE1VuazMzMDBfUEZDSk9ER05EQ0kY",
+            "AyABKA0SJAoFc3RhZ2UYDiABKA4yFS5Jc2xhbmRQYXJ0eVNhaWxTdGFnZRIb",
+            "ChNVbmszMzAwX01KT0lJSklCQUhGGAogASgNEikKDHN0YXJ0X3NvdXJjZRgN",
+            "IAEoDjITLkdhbGxlcnlTdGFydFNvdXJjZUIiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.GalleryStartSourceReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.IslandPartySailStageReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,19 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static HomeGroupRecordReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVIb21lR3JvdXBSZWNvcmQucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
-            "dHdvcmsuUHJvdG8aF0hvbWVCYWxsb29uUmVjb3JkLnByb3RvGhZIb21lUmFj",
-            "aW5nUmVjb3JkLnByb3RvGiBIb21lU2Vla0Z1cm5pdHVyZUFsbFJlY29yZC5w",
-            "cm90bxoVSG9tZVN0YWtlUmVjb3JkLnByb3RvIogDCg9Ib21lR3JvdXBSZWNv",
-            "cmQSEAoIZ3JvdXBfaWQYDyABKA0SUQoTcmFjaW5nX2dhbGxlcnlfaW5mbxjD",
-            "BiABKAsyMS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkhvbWVS",
-            "YWNpbmdSZWNvcmRIABJTChRiYWxsb29uX2dhbGxlcnlfaW5mbxjWBSABKAsy",
-            "Mi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkhvbWVCYWxsb29u",
-            "UmVjb3JkSAASTAoPc3Rha2VfcGxheV9pbmZvGJoOIAEoCzIwLldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uSG9tZVN0YWtlUmVjb3JkSAASYwob",
-            "c2Vla19mdXJuaXR1cmVfZ2FsbGVyeV9pbmZvGPICIAEoCzI7LldlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uSG9tZVNlZWtGdXJuaXR1cmVBbGxS",
-            "ZWNvcmRIAEIICgZkZXRhaWxiBnByb3RvMw=="));
+            "ChVIb21lR3JvdXBSZWNvcmQucHJvdG8aF0hvbWVCYWxsb29uUmVjb3JkLnBy",
+            "b3RvGhZIb21lUmFjaW5nUmVjb3JkLnByb3RvGiBIb21lU2Vla0Z1cm5pdHVy",
+            "ZUFsbFJlY29yZC5wcm90bxoVSG9tZVN0YWtlUmVjb3JkLnByb3RvIogCCg9I",
+            "b21lR3JvdXBSZWNvcmQSEAoIZ3JvdXBfaWQYDyABKA0SMQoTcmFjaW5nX2dh",
+            "bGxlcnlfaW5mbxjDBiABKAsyES5Ib21lUmFjaW5nUmVjb3JkSAASMwoUYmFs",
+            "bG9vbl9nYWxsZXJ5X2luZm8Y1gUgASgLMhIuSG9tZUJhbGxvb25SZWNvcmRI",
+            "ABIsCg9zdGFrZV9wbGF5X2luZm8Ymg4gASgLMhAuSG9tZVN0YWtlUmVjb3Jk",
+            "SAASQwobc2Vla19mdXJuaXR1cmVfZ2FsbGVyeV9pbmZvGPICIAEoCzIbLkhv",
+            "bWVTZWVrRnVybml0dXJlQWxsUmVjb3JkSABCCAoGZGV0YWlsQiKqAh9XZWVk",
+            "d2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.HomeBalloonRecordReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HomeRacingRecordReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HomeSeekFurnitureAllRecordReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.HomeStakeRecordReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

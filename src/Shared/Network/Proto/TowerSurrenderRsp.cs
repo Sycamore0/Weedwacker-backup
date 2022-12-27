@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static TowerSurrenderRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdUb3dlclN1cnJlbmRlclJzcC5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90byIkChFUb3dlclN1cnJlbmRlclJzcBIPCgdyZXRjb2Rl",
-            "GA4gASgFYgZwcm90bzM="));
+            "ChdUb3dlclN1cnJlbmRlclJzcC5wcm90byIkChFUb3dlclN1cnJlbmRlclJz",
+            "cBIPCgdyZXRjb2RlGA4gASgFQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
+            "b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

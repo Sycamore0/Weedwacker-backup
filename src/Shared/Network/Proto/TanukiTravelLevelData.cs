@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static TanukiTravelLevelDataReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtUYW51a2lUcmF2ZWxMZXZlbERhdGEucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8iTQoVVGFudWtpVHJhdmVsTGV2ZWxEYXRhEhEK",
-            "CWlzX2ZpbmlzaBgHIAEoCBIPCgdpc19vcGVuGAkgASgIEhAKCHJvdXRlX2lk",
-            "GAggASgNYgZwcm90bzM="));
+            "ChtUYW51a2lUcmF2ZWxMZXZlbERhdGEucHJvdG8iTQoVVGFudWtpVHJhdmVs",
+            "TGV2ZWxEYXRhEhEKCWlzX2ZpbmlzaBgHIAEoCBIPCgdpc19vcGVuGAkgASgI",
+            "EhAKCHJvdXRlX2lkGAggASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
+            "b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static WaterSpritePhaseFinishNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJXYXRlclNwcml0ZVBoYXNlRmluaXNoTm90aWZ5LnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIh4KHFdhdGVyU3ByaXRlUGhhc2VG",
-            "aW5pc2hOb3RpZnliBnByb3RvMw=="));
+            "CiJXYXRlclNwcml0ZVBoYXNlRmluaXNoTm90aWZ5LnByb3RvIh4KHFdhdGVy",
+            "U3ByaXRlUGhhc2VGaW5pc2hOb3RpZnlCIqoCH1dlZWR3YWNrZXIuU2hhcmVk",
+            "Lk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

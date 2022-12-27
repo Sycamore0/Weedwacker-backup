@@ -24,17 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static EntityFightPropChangeReasonNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CidFbnRpdHlGaWdodFByb3BDaGFuZ2VSZWFzb25Ob3RpZnkucHJvdG8SH1dl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8aGENoYW5nZUVuZXJneVJl",
-            "YXNvbi5wcm90bxoUQ2hhbmdlSHBSZWFzb24ucHJvdG8aFlByb3BDaGFuZ2VS",
-            "ZWFzb24ucHJvdG8i0gIKIUVudGl0eUZpZ2h0UHJvcENoYW5nZVJlYXNvbk5v",
-            "dGlmeRIRCglwcm9wX3R5cGUYBSABKA0SEgoKcGFyYW1fbGlzdBgHIAMoDRIR",
-            "CgllbnRpdHlfaWQYCCABKA0SQQoGcmVhc29uGAIgASgOMjEuV2VlZHdhY2tl",
-            "ci5TaGFyZWQuTmV0d29yay5Qcm90by5Qcm9wQ2hhbmdlUmVhc29uEkkKEGNo",
-            "YW5nZV9ocF9yZWFzb24YCSABKA4yLy5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
-            "b3JrLlByb3RvLkNoYW5nZUhwUmVhc29uElEKFGNoYW5nZV9lbmVyZ3lfcmVh",
-            "c29uGAwgASgOMjMuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5D",
-            "aGFuZ2VFbmVyZ3lSZWFzb24SEgoKcHJvcF9kZWx0YRgKIAEoAmIGcHJvdG8z"));
+            "CidFbnRpdHlGaWdodFByb3BDaGFuZ2VSZWFzb25Ob3RpZnkucHJvdG8aGENo",
+            "YW5nZUVuZXJneVJlYXNvbi5wcm90bxoUQ2hhbmdlSHBSZWFzb24ucHJvdG8a",
+            "FlByb3BDaGFuZ2VSZWFzb24ucHJvdG8i8gEKIUVudGl0eUZpZ2h0UHJvcENo",
+            "YW5nZVJlYXNvbk5vdGlmeRIRCglwcm9wX3R5cGUYBSABKA0SEgoKcGFyYW1f",
+            "bGlzdBgHIAMoDRIRCgllbnRpdHlfaWQYCCABKA0SIQoGcmVhc29uGAIgASgO",
+            "MhEuUHJvcENoYW5nZVJlYXNvbhIpChBjaGFuZ2VfaHBfcmVhc29uGAkgASgO",
+            "Mg8uQ2hhbmdlSHBSZWFzb24SMQoUY2hhbmdlX2VuZXJneV9yZWFzb24YDCAB",
+            "KA4yEy5DaGFuZ2VFbmVyZ3lSZWFzb24SEgoKcHJvcF9kZWx0YRgKIAEoAkIi",
+            "qgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ChangeEnergyReasonReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChangeHpReasonReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.PropChangeReasonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

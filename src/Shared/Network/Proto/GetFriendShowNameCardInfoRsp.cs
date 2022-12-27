@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static GetFriendShowNameCardInfoRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJHZXRGcmllbmRTaG93TmFtZUNhcmRJbmZvUnNwLnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIlwKHEdldEZyaWVuZFNob3dOYW1l",
-            "Q2FyZEluZm9Sc3ASHgoWc2hvd19uYW1lX2NhcmRfaWRfbGlzdBgFIAMoDRIL",
-            "CgN1aWQYCSABKA0SDwoHcmV0Y29kZRgDIAEoBWIGcHJvdG8z"));
+            "CiJHZXRGcmllbmRTaG93TmFtZUNhcmRJbmZvUnNwLnByb3RvIlwKHEdldEZy",
+            "aWVuZFNob3dOYW1lQ2FyZEluZm9Sc3ASHgoWc2hvd19uYW1lX2NhcmRfaWRf",
+            "bGlzdBgFIAMoDRILCgN1aWQYCSABKA0SDwoHcmV0Y29kZRgDIAEoBUIiqgIf",
+            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

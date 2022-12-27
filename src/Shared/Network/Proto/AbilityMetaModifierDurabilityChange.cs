@@ -24,15 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static AbilityMetaModifierDurabilityChangeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CilBYmlsaXR5TWV0YU1vZGlmaWVyRHVyYWJpbGl0eUNoYW5nZS5wcm90bxIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90byJfCiNBYmlsaXR5TWV0",
-            "YU1vZGlmaWVyRHVyYWJpbGl0eUNoYW5nZRIbChNVbmszMzAwX0xESE5GTk9H",
-            "T0dGGA0gASgCEhsKE1VuazMzMDBfSUZIRkhFSERPSU8YASABKAJiBnByb3Rv",
-            "Mw=="));
+            "CilBYmlsaXR5TWV0YU1vZGlmaWVyRHVyYWJpbGl0eUNoYW5nZS5wcm90byJb",
+            "CiNBYmlsaXR5TWV0YU1vZGlmaWVyRHVyYWJpbGl0eUNoYW5nZRIZChFyZW1h",
+            "aW5fZHVyYWJpbGl0eRgNIAEoAhIZChFyZWR1Y2VfZHVyYWJpbGl0eRgBIAEo",
+            "AkIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityMetaModifierDurabilityChange), global::Weedwacker.Shared.Network.Proto.AbilityMetaModifierDurabilityChange.Parser, new[]{ "Unk3300LDHNFNOGOGF", "Unk3300IFHFHEHDOIO" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.AbilityMetaModifierDurabilityChange), global::Weedwacker.Shared.Network.Proto.AbilityMetaModifierDurabilityChange.Parser, new[]{ "RemainDurability", "ReduceDurability" }, null, null, null, null)
           }));
     }
     #endregion
@@ -73,8 +72,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AbilityMetaModifierDurabilityChange(AbilityMetaModifierDurabilityChange other) : this() {
-      unk3300LDHNFNOGOGF_ = other.unk3300LDHNFNOGOGF_;
-      unk3300IFHFHEHDOIO_ = other.unk3300IFHFHEHDOIO_;
+      remainDurability_ = other.remainDurability_;
+      reduceDurability_ = other.reduceDurability_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -84,27 +83,27 @@ namespace Weedwacker.Shared.Network.Proto {
       return new AbilityMetaModifierDurabilityChange(this);
     }
 
-    /// <summary>Field number for the "Unk3300_LDHNFNOGOGF" field.</summary>
-    public const int Unk3300LDHNFNOGOGFFieldNumber = 13;
-    private float unk3300LDHNFNOGOGF_;
+    /// <summary>Field number for the "remain_durability" field.</summary>
+    public const int RemainDurabilityFieldNumber = 13;
+    private float remainDurability_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3300LDHNFNOGOGF {
-      get { return unk3300LDHNFNOGOGF_; }
+    public float RemainDurability {
+      get { return remainDurability_; }
       set {
-        unk3300LDHNFNOGOGF_ = value;
+        remainDurability_ = value;
       }
     }
 
-    /// <summary>Field number for the "Unk3300_IFHFHEHDOIO" field.</summary>
-    public const int Unk3300IFHFHEHDOIOFieldNumber = 1;
-    private float unk3300IFHFHEHDOIO_;
+    /// <summary>Field number for the "reduce_durability" field.</summary>
+    public const int ReduceDurabilityFieldNumber = 1;
+    private float reduceDurability_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Unk3300IFHFHEHDOIO {
-      get { return unk3300IFHFHEHDOIO_; }
+    public float ReduceDurability {
+      get { return reduceDurability_; }
       set {
-        unk3300IFHFHEHDOIO_ = value;
+        reduceDurability_ = value;
       }
     }
 
@@ -123,8 +122,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3300LDHNFNOGOGF, other.Unk3300LDHNFNOGOGF)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Unk3300IFHFHEHDOIO, other.Unk3300IFHFHEHDOIO)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(RemainDurability, other.RemainDurability)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ReduceDurability, other.ReduceDurability)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -132,8 +131,8 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (Unk3300LDHNFNOGOGF != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3300LDHNFNOGOGF);
-      if (Unk3300IFHFHEHDOIO != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Unk3300IFHFHEHDOIO);
+      if (RemainDurability != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(RemainDurability);
+      if (ReduceDurability != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ReduceDurability);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -152,13 +151,13 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300IFHFHEHDOIO != 0F) {
+      if (ReduceDurability != 0F) {
         output.WriteRawTag(13);
-        output.WriteFloat(Unk3300IFHFHEHDOIO);
+        output.WriteFloat(ReduceDurability);
       }
-      if (Unk3300LDHNFNOGOGF != 0F) {
+      if (RemainDurability != 0F) {
         output.WriteRawTag(109);
-        output.WriteFloat(Unk3300LDHNFNOGOGF);
+        output.WriteFloat(RemainDurability);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -170,13 +169,13 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300IFHFHEHDOIO != 0F) {
+      if (ReduceDurability != 0F) {
         output.WriteRawTag(13);
-        output.WriteFloat(Unk3300IFHFHEHDOIO);
+        output.WriteFloat(ReduceDurability);
       }
-      if (Unk3300LDHNFNOGOGF != 0F) {
+      if (RemainDurability != 0F) {
         output.WriteRawTag(109);
-        output.WriteFloat(Unk3300LDHNFNOGOGF);
+        output.WriteFloat(RemainDurability);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -188,10 +187,10 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (Unk3300LDHNFNOGOGF != 0F) {
+      if (RemainDurability != 0F) {
         size += 1 + 4;
       }
-      if (Unk3300IFHFHEHDOIO != 0F) {
+      if (ReduceDurability != 0F) {
         size += 1 + 4;
       }
       if (_unknownFields != null) {
@@ -206,11 +205,11 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other == null) {
         return;
       }
-      if (other.Unk3300LDHNFNOGOGF != 0F) {
-        Unk3300LDHNFNOGOGF = other.Unk3300LDHNFNOGOGF;
+      if (other.RemainDurability != 0F) {
+        RemainDurability = other.RemainDurability;
       }
-      if (other.Unk3300IFHFHEHDOIO != 0F) {
-        Unk3300IFHFHEHDOIO = other.Unk3300IFHFHEHDOIO;
+      if (other.ReduceDurability != 0F) {
+        ReduceDurability = other.ReduceDurability;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -228,11 +227,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 13: {
-            Unk3300IFHFHEHDOIO = input.ReadFloat();
+            ReduceDurability = input.ReadFloat();
             break;
           }
           case 109: {
-            Unk3300LDHNFNOGOGF = input.ReadFloat();
+            RemainDurability = input.ReadFloat();
             break;
           }
         }
@@ -251,11 +250,11 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 13: {
-            Unk3300IFHFHEHDOIO = input.ReadFloat();
+            ReduceDurability = input.ReadFloat();
             break;
           }
           case 109: {
-            Unk3300LDHNFNOGOGF = input.ReadFloat();
+            RemainDurability = input.ReadFloat();
             break;
           }
         }

@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static ReliquaryPromoteReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlSZWxpcXVhcnlQcm9tb3RlUmVxLnByb3RvEh9XZWVkd2Fja2VyLlNoYXJl",
-            "ZC5OZXR3b3JrLlByb3RvIj0KE1JlbGlxdWFyeVByb21vdGVSZXESEwoLdGFy",
-            "Z2V0X2d1aWQYAyABKAQSEQoJaXRlbV9ndWlkGAIgASgEYgZwcm90bzM="));
+            "ChlSZWxpcXVhcnlQcm9tb3RlUmVxLnByb3RvIj0KE1JlbGlxdWFyeVByb21v",
+            "dGVSZXESEwoLdGFyZ2V0X2d1aWQYAyABKAQSEQoJaXRlbV9ndWlkGAIgASgE",
+            "QiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

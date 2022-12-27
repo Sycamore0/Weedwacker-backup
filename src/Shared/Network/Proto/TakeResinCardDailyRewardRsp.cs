@@ -24,12 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static TakeResinCardDailyRewardRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFUYWtlUmVzaW5DYXJkRGFpbHlSZXdhcmRSc3AucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8aD0l0ZW1QYXJhbS5wcm90byKHAQob",
-            "VGFrZVJlc2luQ2FyZERhaWx5UmV3YXJkUnNwEg8KB3JldGNvZGUYBCABKAUS",
-            "PAoIaXRlbV92ZWMYDyADKAsyKi5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3Jr",
-            "LlByb3RvLkl0ZW1QYXJhbRIZChFwcm9kdWN0X2NvbmZpZ19pZBgNIAEoDWIG",
-            "cHJvdG8z"));
+            "CiFUYWtlUmVzaW5DYXJkRGFpbHlSZXdhcmRSc3AucHJvdG8aD0l0ZW1QYXJh",
+            "bS5wcm90byJnChtUYWtlUmVzaW5DYXJkRGFpbHlSZXdhcmRSc3ASDwoHcmV0",
+            "Y29kZRgEIAEoBRIcCghpdGVtX3ZlYxgPIAMoCzIKLkl0ZW1QYXJhbRIZChFw",
+            "cm9kdWN0X2NvbmZpZ19pZBgNIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFyZWQu",
+            "TmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ItemParamReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

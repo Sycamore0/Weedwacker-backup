@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static MichiaeMatsuriUnlockCrystalSkillReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CilNaWNoaWFlTWF0c3VyaVVubG9ja0NyeXN0YWxTa2lsbFJlcS5wcm90bxIf",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90byI/CiNNaWNoaWFlTWF0",
-            "c3VyaVVubG9ja0NyeXN0YWxTa2lsbFJlcRIYChBjcnlzdGFsX3NraWxsX2lk",
-            "GAogASgNYgZwcm90bzM="));
+            "CilNaWNoaWFlTWF0c3VyaVVubG9ja0NyeXN0YWxTa2lsbFJlcS5wcm90byI/",
+            "CiNNaWNoaWFlTWF0c3VyaVVubG9ja0NyeXN0YWxTa2lsbFJlcRIYChBjcnlz",
+            "dGFsX3NraWxsX2lkGAogASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3",
+            "b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

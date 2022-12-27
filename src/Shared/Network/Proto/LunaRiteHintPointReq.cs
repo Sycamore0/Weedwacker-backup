@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static LunaRiteHintPointReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpMdW5hUml0ZUhpbnRQb2ludFJlcS5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90byInChRMdW5hUml0ZUhpbnRQb2ludFJlcRIPCgdh",
-            "cmVhX2lkGAsgASgNYgZwcm90bzM="));
+            "ChpMdW5hUml0ZUhpbnRQb2ludFJlcS5wcm90byInChRMdW5hUml0ZUhpbnRQ",
+            "b2ludFJlcRIPCgdhcmVhX2lkGAsgASgNQiKqAh9XZWVkd2Fja2VyLlNoYXJl",
+            "ZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

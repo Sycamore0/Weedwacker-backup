@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static SpiceActivityProcessFoodReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiFTcGljZUFjdGl2aXR5UHJvY2Vzc0Zvb2RSZXEucHJvdG8SH1dlZWR3YWNr",
-            "ZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8aD0l0ZW1QYXJhbS5wcm90byJjChtT",
-            "cGljZUFjdGl2aXR5UHJvY2Vzc0Zvb2RSZXESRAoQbm9ybWFsX2Zvb2RfbGlz",
-            "dBgPIAMoCzIqLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uSXRl",
-            "bVBhcmFtYgZwcm90bzM="));
+            "CiFTcGljZUFjdGl2aXR5UHJvY2Vzc0Zvb2RSZXEucHJvdG8aD0l0ZW1QYXJh",
+            "bS5wcm90byJDChtTcGljZUFjdGl2aXR5UHJvY2Vzc0Zvb2RSZXESJAoQbm9y",
+            "bWFsX2Zvb2RfbGlzdBgPIAMoCzIKLkl0ZW1QYXJhbUIiqgIfV2VlZHdhY2tl",
+            "ci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ItemParamReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

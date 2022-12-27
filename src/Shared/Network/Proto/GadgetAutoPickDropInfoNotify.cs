@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static GadgetAutoPickDropInfoNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJHYWRnZXRBdXRvUGlja0Ryb3BJbmZvTm90aWZ5LnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvGgpJdGVtLnByb3RvIlgKHEdhZGdl",
-            "dEF1dG9QaWNrRHJvcEluZm9Ob3RpZnkSOAoJaXRlbV9saXN0GA8gAygLMiUu",
-            "V2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5JdGVtYgZwcm90bzM="));
+            "CiJHYWRnZXRBdXRvUGlja0Ryb3BJbmZvTm90aWZ5LnByb3RvGgpJdGVtLnBy",
+            "b3RvIjgKHEdhZGdldEF1dG9QaWNrRHJvcEluZm9Ob3RpZnkSGAoJaXRlbV9s",
+            "aXN0GA8gAygLMgUuSXRlbUIiqgIfV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
+            "ay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ItemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

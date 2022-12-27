@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static PlayerGetForceQuitBanInfoRspReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiJQbGF5ZXJHZXRGb3JjZVF1aXRCYW5JbmZvUnNwLnByb3RvEh9XZWVkd2Fj",
-            "a2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvIlYKHFBsYXllckdldEZvcmNlUXVp",
-            "dEJhbkluZm9Sc3ASEAoIbWF0Y2hfaWQYDSABKA0SEwoLZXhwaXJlX3RpbWUY",
-            "AiABKA0SDwoHcmV0Y29kZRgEIAEoBWIGcHJvdG8z"));
+            "CiJQbGF5ZXJHZXRGb3JjZVF1aXRCYW5JbmZvUnNwLnByb3RvIlYKHFBsYXll",
+            "ckdldEZvcmNlUXVpdEJhbkluZm9Sc3ASEAoIbWF0Y2hfaWQYDSABKA0SEwoL",
+            "ZXhwaXJlX3RpbWUYAiABKA0SDwoHcmV0Y29kZRgEIAEoBUIiqgIfV2VlZHdh",
+            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

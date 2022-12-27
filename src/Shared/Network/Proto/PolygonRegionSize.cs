@@ -24,11 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static PolygonRegionSizeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdQb2x5Z29uUmVnaW9uU2l6ZS5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90bxoRVmVjdG9yUGxhbmUucHJvdG8iZQoRUG9seWdvblJl",
-            "Z2lvblNpemUSDgoGaGVpZ2h0GAMgASgCEkAKCnBvaW50X2xpc3QYCSADKAsy",
-            "LC5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLlZlY3RvclBsYW5l",
-            "YgZwcm90bzM="));
+            "ChdQb2x5Z29uUmVnaW9uU2l6ZS5wcm90bxoRVmVjdG9yUGxhbmUucHJvdG8i",
+            "RQoRUG9seWdvblJlZ2lvblNpemUSDgoGaGVpZ2h0GAMgASgCEiAKCnBvaW50",
+            "X2xpc3QYCSADKAsyDC5WZWN0b3JQbGFuZUIiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorPlaneReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,18 +24,15 @@ namespace Weedwacker.Shared.Network.Proto {
     static GMObstacleInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRHTU9ic3RhY2xlSW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQuTmV0",
-            "d29yay5Qcm90bxoUTWF0aFF1YXRlcm5pb24ucHJvdG8aDFZlY3Rvci5wcm90",
-            "bxoQVmVjdG9yM0ludC5wcm90byKTAwoOR01PYnN0YWNsZUluZm8SSAoFc2hh",
-            "cGUYAiABKA4yOS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkdN",
-            "T2JzdGFjbGVJbmZvLlNoYXBlVHlwZRJBCghyb3RhdGlvbhgIIAEoCzIvLldl",
-            "ZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uTWF0aFF1YXRlcm5pb24S",
-            "NwoGY2VudGVyGA8gASgLMicuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Q",
-            "cm90by5WZWN0b3ISEQoJdGltZXN0YW1wGAEgASgDEhMKC29ic3RhY2xlX2lk",
-            "GA0gASgFEjwKB2V4dGVudHMYCSABKAsyKy5XZWVkd2Fja2VyLlNoYXJlZC5O",
-            "ZXR3b3JrLlByb3RvLlZlY3RvcjNJbnQiVQoJU2hhcGVUeXBlEiUKIVNIQVBF",
-            "X1RZUEVfT0JTVEFDTEVfU0hBUEVfQ0FQU1VMRRAAEiEKHVNIQVBFX1RZUEVf",
-            "T0JTVEFDTEVfU0hBUEVfQk9YEAFiBnByb3RvMw=="));
+            "ChRHTU9ic3RhY2xlSW5mby5wcm90bxoUTWF0aFF1YXRlcm5pb24ucHJvdG8a",
+            "DFZlY3Rvci5wcm90bxoQVmVjdG9yM0ludC5wcm90byKTAgoOR01PYnN0YWNs",
+            "ZUluZm8SKAoFc2hhcGUYAiABKA4yGS5HTU9ic3RhY2xlSW5mby5TaGFwZVR5",
+            "cGUSIQoIcm90YXRpb24YCCABKAsyDy5NYXRoUXVhdGVybmlvbhIXCgZjZW50",
+            "ZXIYDyABKAsyBy5WZWN0b3ISEQoJdGltZXN0YW1wGAEgASgDEhMKC29ic3Rh",
+            "Y2xlX2lkGA0gASgFEhwKB2V4dGVudHMYCSABKAsyCy5WZWN0b3IzSW50IlUK",
+            "CVNoYXBlVHlwZRIlCiFTSEFQRV9UWVBFX09CU1RBQ0xFX1NIQVBFX0NBUFNV",
+            "TEUQABIhCh1TSEFQRV9UWVBFX09CU1RBQ0xFX1NIQVBFX0JPWBABQiKqAh9X",
+            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.MathQuaternionReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.Vector3IntReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

@@ -24,18 +24,16 @@ namespace Weedwacker.Shared.Network.Proto {
     static ChapterStateNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhDaGFwdGVyU3RhdGVOb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8aEkNoYXB0ZXJTdGF0ZS5wcm90byK0AwoSQ2hhcHRl",
-            "clN0YXRlTm90aWZ5EhIKCmNoYXB0ZXJfaWQYCSABKA0SWgoPbmVlZF9iZWdp",
-            "bl90aW1lGA0gASgLMkEuV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
-            "by5DaGFwdGVyU3RhdGVOb3RpZnkuTmVlZEJlZ2luVGltZRJECg1jaGFwdGVy",
-            "X3N0YXRlGAEgASgOMi0uV2VlZHdhY2tlci5TaGFyZWQuTmV0d29yay5Qcm90",
-            "by5DaGFwdGVyU3RhdGUSXgoRbmVlZF9wbGF5ZXJfbGV2ZWwYBSABKAsyQy5X",
-            "ZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkNoYXB0ZXJTdGF0ZU5v",
-            "dGlmeS5OZWVkUGxheWVyTGV2ZWwaRQoPTmVlZFBsYXllckxldmVsEhAKCGlz",
-            "X2xpbWl0GAwgASgIEiAKGGNvbmZpZ19uZWVkX3BsYXllcl9sZXZlbBgDIAEo",
-            "DRpBCg1OZWVkQmVnaW5UaW1lEhAKCGlzX2xpbWl0GAQgASgIEh4KFmNvbmZp",
-            "Z19uZWVkX2JlZ2luX3RpbWUYDiABKA1iBnByb3RvMw=="));
+            "ChhDaGFwdGVyU3RhdGVOb3RpZnkucHJvdG8aEkNoYXB0ZXJTdGF0ZS5wcm90",
+            "byLUAgoSQ2hhcHRlclN0YXRlTm90aWZ5EhIKCmNoYXB0ZXJfaWQYCSABKA0S",
+            "OgoPbmVlZF9iZWdpbl90aW1lGA0gASgLMiEuQ2hhcHRlclN0YXRlTm90aWZ5",
+            "Lk5lZWRCZWdpblRpbWUSJAoNY2hhcHRlcl9zdGF0ZRgBIAEoDjINLkNoYXB0",
+            "ZXJTdGF0ZRI+ChFuZWVkX3BsYXllcl9sZXZlbBgFIAEoCzIjLkNoYXB0ZXJT",
+            "dGF0ZU5vdGlmeS5OZWVkUGxheWVyTGV2ZWwaRQoPTmVlZFBsYXllckxldmVs",
+            "EhAKCGlzX2xpbWl0GAwgASgIEiAKGGNvbmZpZ19uZWVkX3BsYXllcl9sZXZl",
+            "bBgDIAEoDRpBCg1OZWVkQmVnaW5UaW1lEhAKCGlzX2xpbWl0GAQgASgIEh4K",
+            "FmNvbmZpZ19uZWVkX2JlZ2luX3RpbWUYDiABKA1CIqoCH1dlZWR3YWNrZXIu",
+            "U2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ChapterStateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

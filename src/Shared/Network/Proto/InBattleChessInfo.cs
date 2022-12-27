@@ -24,21 +24,18 @@ namespace Weedwacker.Shared.Network.Proto {
     static InBattleChessInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdJbkJhdHRsZUNoZXNzSW5mby5wcm90bxIfV2VlZHdhY2tlci5TaGFyZWQu",
-            "TmV0d29yay5Qcm90bxoTQ2hlc3NDYXJkSW5mby5wcm90bxoWQ2hlc3NNeXN0",
-            "ZXJ5SW5mby5wcm90bxoVQ2hlc3NQbGF5ZXJJbmZvLnByb3RvIoUEChFJbkJh",
-            "dHRsZUNoZXNzSW5mbxINCgVyb3VuZBgCIAEoDRJHCgxteXN0ZXJ5X2luZm8Y",
-            "BiABKAsyMS5XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvLkNoZXNz",
-            "TXlzdGVyeUluZm8SXgoPcGxheWVyX2luZm9fbWFwGA8gAygLMkUuV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90by5JbkJhdHRsZUNoZXNzSW5mby5Q",
-            "bGF5ZXJJbmZvTWFwRW50cnkSHgoWbWF4X2VzY2FwYWJsZV9tb25zdGVycxgH",
-            "IAEoDRIYChBlc2NhcGVkX21vbnN0ZXJzGAsgASgNEk8KF3NlbGVjdGVkX2Nh",
-            "cmRfaW5mb19saXN0GAQgAygLMi4uV2VlZHdhY2tlci5TaGFyZWQuTmV0d29y",
-            "ay5Qcm90by5DaGVzc0NhcmRJbmZvEhMKC3RvdGFsX3JvdW5kGA0gASgNEhUK",
-            "DWxlZnRfbW9uc3RlcnMYBSABKA0SGQoRYmFuX2NhcmRfdGFnX2xpc3QYASAD",
-            "KA0aZgoSUGxheWVySW5mb01hcEVudHJ5EgsKA2tleRgBIAEoDRI/CgV2YWx1",
-            "ZRgCIAEoCzIwLldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uQ2hl",
-            "c3NQbGF5ZXJJbmZvOgI4AWIGcHJvdG8z"));
+            "ChdJbkJhdHRsZUNoZXNzSW5mby5wcm90bxoTQ2hlc3NDYXJkSW5mby5wcm90",
+            "bxoWQ2hlc3NNeXN0ZXJ5SW5mby5wcm90bxoVQ2hlc3NQbGF5ZXJJbmZvLnBy",
+            "b3RvIoUDChFJbkJhdHRsZUNoZXNzSW5mbxINCgVyb3VuZBgCIAEoDRInCgxt",
+            "eXN0ZXJ5X2luZm8YBiABKAsyES5DaGVzc015c3RlcnlJbmZvEj4KD3BsYXll",
+            "cl9pbmZvX21hcBgPIAMoCzIlLkluQmF0dGxlQ2hlc3NJbmZvLlBsYXllcklu",
+            "Zm9NYXBFbnRyeRIeChZtYXhfZXNjYXBhYmxlX21vbnN0ZXJzGAcgASgNEhgK",
+            "EGVzY2FwZWRfbW9uc3RlcnMYCyABKA0SLwoXc2VsZWN0ZWRfY2FyZF9pbmZv",
+            "X2xpc3QYBCADKAsyDi5DaGVzc0NhcmRJbmZvEhMKC3RvdGFsX3JvdW5kGA0g",
+            "ASgNEhUKDWxlZnRfbW9uc3RlcnMYBSABKA0SGQoRYmFuX2NhcmRfdGFnX2xp",
+            "c3QYASADKA0aRgoSUGxheWVySW5mb01hcEVudHJ5EgsKA2tleRgBIAEoDRIf",
+            "CgV2YWx1ZRgCIAEoCzIQLkNoZXNzUGxheWVySW5mbzoCOAFCIqoCH1dlZWR3",
+            "YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.ChessCardInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChessMysteryInfoReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.ChessPlayerInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

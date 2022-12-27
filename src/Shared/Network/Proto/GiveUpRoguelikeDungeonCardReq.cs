@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static GiveUpRoguelikeDungeonCardReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiNHaXZlVXBSb2d1ZWxpa2VEdW5nZW9uQ2FyZFJlcS5wcm90bxIfV2VlZHdh",
-            "Y2tlci5TaGFyZWQuTmV0d29yay5Qcm90byIfCh1HaXZlVXBSb2d1ZWxpa2VE",
-            "dW5nZW9uQ2FyZFJlcWIGcHJvdG8z"));
+            "CiNHaXZlVXBSb2d1ZWxpa2VEdW5nZW9uQ2FyZFJlcS5wcm90byIfCh1HaXZl",
+            "VXBSb2d1ZWxpa2VEdW5nZW9uQ2FyZFJlcUIiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

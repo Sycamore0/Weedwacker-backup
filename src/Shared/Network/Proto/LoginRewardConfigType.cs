@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static LoginRewardConfigTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChtMb2dpblJld2FyZENvbmZpZ1R5cGUucHJvdG8SH1dlZWR3YWNrZXIuU2hh",
-            "cmVkLk5ldHdvcmsuUHJvdG8qZAoVTG9naW5SZXdhcmRDb25maWdUeXBlEicK",
-            "I0xPR0lOX1JFV0FSRF9DT05GSUdfVFlQRV9JTU1FRElEQVRFEAASIgoeTE9H",
-            "SU5fUkVXQVJEX0NPTkZJR19UWVBFX0ZJUlNUEAFiBnByb3RvMw=="));
+            "ChtMb2dpblJld2FyZENvbmZpZ1R5cGUucHJvdG8qZAoVTG9naW5SZXdhcmRD",
+            "b25maWdUeXBlEicKI0xPR0lOX1JFV0FSRF9DT05GSUdfVFlQRV9JTU1FRElE",
+            "QVRFEAASIgoeTE9HSU5fUkVXQVJEX0NPTkZJR19UWVBFX0ZJUlNUEAFCIqoC",
+            "H1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.LoginRewardConfigType), }, null, null));

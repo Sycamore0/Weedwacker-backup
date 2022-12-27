@@ -24,10 +24,10 @@ namespace Weedwacker.Shared.Network.Proto {
     static LuaShellNotifyTypeReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhMdWFTaGVsbE5vdGlmeVR5cGUucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8qaAoSTHVhU2hlbGxOb3RpZnlUeXBlEikKJUxVQV9T",
-            "SEVMTF9OT1RJRllfVFlQRV9MVUFTSEVMTF9OT1RJRlkQABInCiNMVUFfU0hF",
-            "TExfTk9USUZZX1RZUEVfTFVBU0hFTExfSElERRABYgZwcm90bzM="));
+            "ChhMdWFTaGVsbE5vdGlmeVR5cGUucHJvdG8qaAoSTHVhU2hlbGxOb3RpZnlU",
+            "eXBlEikKJUxVQV9TSEVMTF9OT1RJRllfVFlQRV9MVUFTSEVMTF9OT1RJRlkQ",
+            "ABInCiNMVUFfU0hFTExfTk9USUZZX1RZUEVfTFVBU0hFTExfSElERRABQiKq",
+            "Ah9XZWVkd2Fja2VyLlNoYXJlZC5OZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Weedwacker.Shared.Network.Proto.LuaShellNotifyType), }, null, null));

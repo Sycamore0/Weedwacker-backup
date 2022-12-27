@@ -24,14 +24,14 @@ namespace Weedwacker.Shared.Network.Proto {
     static SceneGalleryWindFieldInfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch9TY2VuZUdhbGxlcnlXaW5kRmllbGRJbmZvLnByb3RvEh9XZWVkd2Fja2Vy",
-            "LlNoYXJlZC5OZXR3b3JrLlByb3RvIoMCChlTY2VuZUdhbGxlcnlXaW5kRmll",
-            "bGRJbmZvEhsKE1VuazMzMDBfTU1PTlBETUlFQk4YBiABKA0SGwoTVW5rMzMw",
-            "MF9PSkhKUEJDQU9OQRgCIAEoDRIbChNVbmszMzAwX05CSUJLRktPQ0ZLGA8g",
-            "ASgNEhsKE1VuazMzMDBfRUtNSE1ISkRISUwYDSABKA0SGwoTVW5rMzMwMF9H",
-            "TkpLT0NMSkZOTRgHIAEoDRIbChNVbmszMzAwX0dOS0NGSE1ET0hKGAMgASgN",
-            "EhsKE1VuazMzMDBfRkZPREFLTUtHRUsYBCABKA0SGwoTVW5rMzMwMF9HTE5I",
-            "QkpKSklOSxgOIAEoDWIGcHJvdG8z"));
+            "Ch9TY2VuZUdhbGxlcnlXaW5kRmllbGRJbmZvLnByb3RvIoMCChlTY2VuZUdh",
+            "bGxlcnlXaW5kRmllbGRJbmZvEhsKE1VuazMzMDBfTU1PTlBETUlFQk4YBiAB",
+            "KA0SGwoTVW5rMzMwMF9PSkhKUEJDQU9OQRgCIAEoDRIbChNVbmszMzAwX05C",
+            "SUJLRktPQ0ZLGA8gASgNEhsKE1VuazMzMDBfRUtNSE1ISkRISUwYDSABKA0S",
+            "GwoTVW5rMzMwMF9HTkpLT0NMSkZOTRgHIAEoDRIbChNVbmszMzAwX0dOS0NG",
+            "SE1ET0hKGAMgASgNEhsKE1VuazMzMDBfRkZPREFLTUtHRUsYBCABKA0SGwoT",
+            "VW5rMzMwMF9HTE5IQkpKSklOSxgOIAEoDUIiqgIfV2VlZHdhY2tlci5TaGFy",
+            "ZWQuTmV0d29yay5Qcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

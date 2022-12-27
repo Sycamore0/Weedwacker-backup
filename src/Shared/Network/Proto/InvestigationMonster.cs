@@ -24,27 +24,25 @@ namespace Weedwacker.Shared.Network.Proto {
     static InvestigationMonsterReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChpJbnZlc3RpZ2F0aW9uTW9uc3Rlci5wcm90bxIfV2VlZHdhY2tlci5TaGFy",
-            "ZWQuTmV0d29yay5Qcm90bxoMVmVjdG9yLnByb3RvGiFXZWVrbHlCb3NzUmVz",
-            "aW5EaXNjb3VudEluZm8ucHJvdG8i7gQKFEludmVzdGlnYXRpb25Nb25zdGVy",
-            "EhAKCGlzX2FsaXZlGA0gASgIEjQKA3BvcxgHIAEoCzInLldlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8uVmVjdG9yEhAKCHNjZW5lX2lkGAwgASgN",
-            "EhkKEW5leHRfcmVmcmVzaF90aW1lGAggASgNEg8KB2NpdHlfaWQYDiABKA0S",
-            "EQoIZ3JvdXBfaWQYxw0gASgNEhsKE1VuazMzMDBfT05MQUxDQ0tJRUUYASAB",
-            "KA0SZQofd2Vla2x5X2Jvc3NfcmVzaW5fZGlzY291bnRfaW5mbxgDIAEoCzI8",
-            "LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uV2Vla2x5Qm9zc1Jl",
-            "c2luRGlzY291bnRJbmZvEhsKE1VuazMzMDBfREtLT0JESUVLUFAYBiABKA0S",
-            "CgoCaWQYCSABKA0SEwoKbW9uc3Rlcl9pZBiyBCABKA0SUwoKbG9ja19zdGF0",
-            "ZRgEIAEoDjI/LldlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG8uSW52",
-            "ZXN0aWdhdGlvbk1vbnN0ZXIuTG9ja1N0YXRlEhsKE1VuazMzMDBfSkhMRUhF",
-            "T09HR0IYCiABKA0SFgoOaXNfYXJlYV9sb2NrZWQYBSABKAgSDQoFbGV2ZWwY",
-            "AiABKA0SGwoTVW5rMzMwMF9LTktGQ09LTUVDSRgLIAEoDRINCgVyZXNpbhgP",
-            "IAEoDSI2CglMb2NrU3RhdGUSEwoPTE9DS19TVEFURV9OT05FEAASFAoQTE9D",
-            "S19TVEFURV9RVUVTVBABYgZwcm90bzM="));
+            "ChpJbnZlc3RpZ2F0aW9uTW9uc3Rlci5wcm90bxoMVmVjdG9yLnByb3RvGiFX",
+            "ZWVrbHlCb3NzUmVzaW5EaXNjb3VudEluZm8ucHJvdG8ijgQKFEludmVzdGln",
+            "YXRpb25Nb25zdGVyEhAKCGlzX2FsaXZlGA0gASgIEhQKA3BvcxgHIAEoCzIH",
+            "LlZlY3RvchIQCghzY2VuZV9pZBgMIAEoDRIZChFuZXh0X3JlZnJlc2hfdGlt",
+            "ZRgIIAEoDRIPCgdjaXR5X2lkGA4gASgNEhEKCGdyb3VwX2lkGMcNIAEoDRIk",
+            "ChxuZXh0X2Jvc3NfY2hlc3RfcmVmcmVzaF90aW1lGAEgASgNEkUKH3dlZWts",
+            "eV9ib3NzX3Jlc2luX2Rpc2NvdW50X2luZm8YAyABKAsyHC5XZWVrbHlCb3Nz",
+            "UmVzaW5EaXNjb3VudEluZm8SFgoOYm9zc19jaGVzdF9udW0YBiABKA0SCgoC",
+            "aWQYCSABKA0SEwoKbW9uc3Rlcl9pZBiyBCABKA0SMwoKbG9ja19zdGF0ZRgE",
+            "IAEoDjIfLkludmVzdGlnYXRpb25Nb25zdGVyLkxvY2tTdGF0ZRIYChByZWZy",
+            "ZXNoX2ludGVydmFsGAogASgNEhYKDmlzX2FyZWFfbG9ja2VkGAUgASgIEg0K",
+            "BWxldmVsGAIgASgNEhoKEm1heF9ib3NzX2NoZXN0X251bRgLIAEoDRINCgVy",
+            "ZXNpbhgPIAEoDSI2CglMb2NrU3RhdGUSEwoPTE9DS19TVEFURV9OT05FEAAS",
+            "FAoQTE9DS19TVEFURV9RVUVTVBABQiKqAh9XZWVkd2Fja2VyLlNoYXJlZC5O",
+            "ZXR3b3JrLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Weedwacker.Shared.Network.Proto.VectorReflection.Descriptor, global::Weedwacker.Shared.Network.Proto.WeeklyBossResinDiscountInfoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.InvestigationMonster), global::Weedwacker.Shared.Network.Proto.InvestigationMonster.Parser, new[]{ "IsAlive", "Pos", "SceneId", "NextRefreshTime", "CityId", "GroupId", "Unk3300ONLALCCKIEE", "WeeklyBossResinDiscountInfo", "Unk3300DKKOBDIEKPP", "Id", "MonsterId", "LockState", "Unk3300JHLEHEOOGGB", "IsAreaLocked", "Level", "Unk3300KNKFCOKMECI", "Resin" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.InvestigationMonster.Types.LockState) }, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Weedwacker.Shared.Network.Proto.InvestigationMonster), global::Weedwacker.Shared.Network.Proto.InvestigationMonster.Parser, new[]{ "IsAlive", "Pos", "SceneId", "NextRefreshTime", "CityId", "GroupId", "NextBossChestRefreshTime", "WeeklyBossResinDiscountInfo", "BossChestNum", "Id", "MonsterId", "LockState", "RefreshInterval", "IsAreaLocked", "Level", "MaxBossChestNum", "Resin" }, null, new[]{ typeof(global::Weedwacker.Shared.Network.Proto.InvestigationMonster.Types.LockState) }, null, null)
           }));
     }
     #endregion
@@ -91,16 +89,16 @@ namespace Weedwacker.Shared.Network.Proto {
       nextRefreshTime_ = other.nextRefreshTime_;
       cityId_ = other.cityId_;
       groupId_ = other.groupId_;
-      unk3300ONLALCCKIEE_ = other.unk3300ONLALCCKIEE_;
+      nextBossChestRefreshTime_ = other.nextBossChestRefreshTime_;
       weeklyBossResinDiscountInfo_ = other.weeklyBossResinDiscountInfo_ != null ? other.weeklyBossResinDiscountInfo_.Clone() : null;
-      unk3300DKKOBDIEKPP_ = other.unk3300DKKOBDIEKPP_;
+      bossChestNum_ = other.bossChestNum_;
       id_ = other.id_;
       monsterId_ = other.monsterId_;
       lockState_ = other.lockState_;
-      unk3300JHLEHEOOGGB_ = other.unk3300JHLEHEOOGGB_;
+      refreshInterval_ = other.refreshInterval_;
       isAreaLocked_ = other.isAreaLocked_;
       level_ = other.level_;
-      unk3300KNKFCOKMECI_ = other.unk3300KNKFCOKMECI_;
+      maxBossChestNum_ = other.maxBossChestNum_;
       resin_ = other.resin_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -183,15 +181,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_ONLALCCKIEE" field.</summary>
-    public const int Unk3300ONLALCCKIEEFieldNumber = 1;
-    private uint unk3300ONLALCCKIEE_;
+    /// <summary>Field number for the "next_boss_chest_refresh_time" field.</summary>
+    public const int NextBossChestRefreshTimeFieldNumber = 1;
+    private uint nextBossChestRefreshTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300ONLALCCKIEE {
-      get { return unk3300ONLALCCKIEE_; }
+    public uint NextBossChestRefreshTime {
+      get { return nextBossChestRefreshTime_; }
       set {
-        unk3300ONLALCCKIEE_ = value;
+        nextBossChestRefreshTime_ = value;
       }
     }
 
@@ -207,15 +205,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_DKKOBDIEKPP" field.</summary>
-    public const int Unk3300DKKOBDIEKPPFieldNumber = 6;
-    private uint unk3300DKKOBDIEKPP_;
+    /// <summary>Field number for the "boss_chest_num" field.</summary>
+    public const int BossChestNumFieldNumber = 6;
+    private uint bossChestNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300DKKOBDIEKPP {
-      get { return unk3300DKKOBDIEKPP_; }
+    public uint BossChestNum {
+      get { return bossChestNum_; }
       set {
-        unk3300DKKOBDIEKPP_ = value;
+        bossChestNum_ = value;
       }
     }
 
@@ -255,15 +253,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_JHLEHEOOGGB" field.</summary>
-    public const int Unk3300JHLEHEOOGGBFieldNumber = 10;
-    private uint unk3300JHLEHEOOGGB_;
+    /// <summary>Field number for the "refresh_interval" field.</summary>
+    public const int RefreshIntervalFieldNumber = 10;
+    private uint refreshInterval_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300JHLEHEOOGGB {
-      get { return unk3300JHLEHEOOGGB_; }
+    public uint RefreshInterval {
+      get { return refreshInterval_; }
       set {
-        unk3300JHLEHEOOGGB_ = value;
+        refreshInterval_ = value;
       }
     }
 
@@ -291,15 +289,15 @@ namespace Weedwacker.Shared.Network.Proto {
       }
     }
 
-    /// <summary>Field number for the "Unk3300_KNKFCOKMECI" field.</summary>
-    public const int Unk3300KNKFCOKMECIFieldNumber = 11;
-    private uint unk3300KNKFCOKMECI_;
+    /// <summary>Field number for the "max_boss_chest_num" field.</summary>
+    public const int MaxBossChestNumFieldNumber = 11;
+    private uint maxBossChestNum_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Unk3300KNKFCOKMECI {
-      get { return unk3300KNKFCOKMECI_; }
+    public uint MaxBossChestNum {
+      get { return maxBossChestNum_; }
       set {
-        unk3300KNKFCOKMECI_ = value;
+        maxBossChestNum_ = value;
       }
     }
 
@@ -336,16 +334,16 @@ namespace Weedwacker.Shared.Network.Proto {
       if (NextRefreshTime != other.NextRefreshTime) return false;
       if (CityId != other.CityId) return false;
       if (GroupId != other.GroupId) return false;
-      if (Unk3300ONLALCCKIEE != other.Unk3300ONLALCCKIEE) return false;
+      if (NextBossChestRefreshTime != other.NextBossChestRefreshTime) return false;
       if (!object.Equals(WeeklyBossResinDiscountInfo, other.WeeklyBossResinDiscountInfo)) return false;
-      if (Unk3300DKKOBDIEKPP != other.Unk3300DKKOBDIEKPP) return false;
+      if (BossChestNum != other.BossChestNum) return false;
       if (Id != other.Id) return false;
       if (MonsterId != other.MonsterId) return false;
       if (LockState != other.LockState) return false;
-      if (Unk3300JHLEHEOOGGB != other.Unk3300JHLEHEOOGGB) return false;
+      if (RefreshInterval != other.RefreshInterval) return false;
       if (IsAreaLocked != other.IsAreaLocked) return false;
       if (Level != other.Level) return false;
-      if (Unk3300KNKFCOKMECI != other.Unk3300KNKFCOKMECI) return false;
+      if (MaxBossChestNum != other.MaxBossChestNum) return false;
       if (Resin != other.Resin) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -360,16 +358,16 @@ namespace Weedwacker.Shared.Network.Proto {
       if (NextRefreshTime != 0) hash ^= NextRefreshTime.GetHashCode();
       if (CityId != 0) hash ^= CityId.GetHashCode();
       if (GroupId != 0) hash ^= GroupId.GetHashCode();
-      if (Unk3300ONLALCCKIEE != 0) hash ^= Unk3300ONLALCCKIEE.GetHashCode();
+      if (NextBossChestRefreshTime != 0) hash ^= NextBossChestRefreshTime.GetHashCode();
       if (weeklyBossResinDiscountInfo_ != null) hash ^= WeeklyBossResinDiscountInfo.GetHashCode();
-      if (Unk3300DKKOBDIEKPP != 0) hash ^= Unk3300DKKOBDIEKPP.GetHashCode();
+      if (BossChestNum != 0) hash ^= BossChestNum.GetHashCode();
       if (Id != 0) hash ^= Id.GetHashCode();
       if (MonsterId != 0) hash ^= MonsterId.GetHashCode();
       if (LockState != global::Weedwacker.Shared.Network.Proto.InvestigationMonster.Types.LockState.None) hash ^= LockState.GetHashCode();
-      if (Unk3300JHLEHEOOGGB != 0) hash ^= Unk3300JHLEHEOOGGB.GetHashCode();
+      if (RefreshInterval != 0) hash ^= RefreshInterval.GetHashCode();
       if (IsAreaLocked != false) hash ^= IsAreaLocked.GetHashCode();
       if (Level != 0) hash ^= Level.GetHashCode();
-      if (Unk3300KNKFCOKMECI != 0) hash ^= Unk3300KNKFCOKMECI.GetHashCode();
+      if (MaxBossChestNum != 0) hash ^= MaxBossChestNum.GetHashCode();
       if (Resin != 0) hash ^= Resin.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -389,9 +387,9 @@ namespace Weedwacker.Shared.Network.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Unk3300ONLALCCKIEE != 0) {
+      if (NextBossChestRefreshTime != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk3300ONLALCCKIEE);
+        output.WriteUInt32(NextBossChestRefreshTime);
       }
       if (Level != 0) {
         output.WriteRawTag(16);
@@ -409,9 +407,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteBool(IsAreaLocked);
       }
-      if (Unk3300DKKOBDIEKPP != 0) {
+      if (BossChestNum != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(Unk3300DKKOBDIEKPP);
+        output.WriteUInt32(BossChestNum);
       }
       if (pos_ != null) {
         output.WriteRawTag(58);
@@ -425,13 +423,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(72);
         output.WriteUInt32(Id);
       }
-      if (Unk3300JHLEHEOOGGB != 0) {
+      if (RefreshInterval != 0) {
         output.WriteRawTag(80);
-        output.WriteUInt32(Unk3300JHLEHEOOGGB);
+        output.WriteUInt32(RefreshInterval);
       }
-      if (Unk3300KNKFCOKMECI != 0) {
+      if (MaxBossChestNum != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk3300KNKFCOKMECI);
+        output.WriteUInt32(MaxBossChestNum);
       }
       if (SceneId != 0) {
         output.WriteRawTag(96);
@@ -467,9 +465,9 @@ namespace Weedwacker.Shared.Network.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Unk3300ONLALCCKIEE != 0) {
+      if (NextBossChestRefreshTime != 0) {
         output.WriteRawTag(8);
-        output.WriteUInt32(Unk3300ONLALCCKIEE);
+        output.WriteUInt32(NextBossChestRefreshTime);
       }
       if (Level != 0) {
         output.WriteRawTag(16);
@@ -487,9 +485,9 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(40);
         output.WriteBool(IsAreaLocked);
       }
-      if (Unk3300DKKOBDIEKPP != 0) {
+      if (BossChestNum != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(Unk3300DKKOBDIEKPP);
+        output.WriteUInt32(BossChestNum);
       }
       if (pos_ != null) {
         output.WriteRawTag(58);
@@ -503,13 +501,13 @@ namespace Weedwacker.Shared.Network.Proto {
         output.WriteRawTag(72);
         output.WriteUInt32(Id);
       }
-      if (Unk3300JHLEHEOOGGB != 0) {
+      if (RefreshInterval != 0) {
         output.WriteRawTag(80);
-        output.WriteUInt32(Unk3300JHLEHEOOGGB);
+        output.WriteUInt32(RefreshInterval);
       }
-      if (Unk3300KNKFCOKMECI != 0) {
+      if (MaxBossChestNum != 0) {
         output.WriteRawTag(88);
-        output.WriteUInt32(Unk3300KNKFCOKMECI);
+        output.WriteUInt32(MaxBossChestNum);
       }
       if (SceneId != 0) {
         output.WriteRawTag(96);
@@ -563,14 +561,14 @@ namespace Weedwacker.Shared.Network.Proto {
       if (GroupId != 0) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(GroupId);
       }
-      if (Unk3300ONLALCCKIEE != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300ONLALCCKIEE);
+      if (NextBossChestRefreshTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NextBossChestRefreshTime);
       }
       if (weeklyBossResinDiscountInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(WeeklyBossResinDiscountInfo);
       }
-      if (Unk3300DKKOBDIEKPP != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300DKKOBDIEKPP);
+      if (BossChestNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BossChestNum);
       }
       if (Id != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Id);
@@ -581,8 +579,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (LockState != global::Weedwacker.Shared.Network.Proto.InvestigationMonster.Types.LockState.None) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) LockState);
       }
-      if (Unk3300JHLEHEOOGGB != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300JHLEHEOOGGB);
+      if (RefreshInterval != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RefreshInterval);
       }
       if (IsAreaLocked != false) {
         size += 1 + 1;
@@ -590,8 +588,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (Level != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Level);
       }
-      if (Unk3300KNKFCOKMECI != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Unk3300KNKFCOKMECI);
+      if (MaxBossChestNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxBossChestNum);
       }
       if (Resin != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Resin);
@@ -629,8 +627,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.GroupId != 0) {
         GroupId = other.GroupId;
       }
-      if (other.Unk3300ONLALCCKIEE != 0) {
-        Unk3300ONLALCCKIEE = other.Unk3300ONLALCCKIEE;
+      if (other.NextBossChestRefreshTime != 0) {
+        NextBossChestRefreshTime = other.NextBossChestRefreshTime;
       }
       if (other.weeklyBossResinDiscountInfo_ != null) {
         if (weeklyBossResinDiscountInfo_ == null) {
@@ -638,8 +636,8 @@ namespace Weedwacker.Shared.Network.Proto {
         }
         WeeklyBossResinDiscountInfo.MergeFrom(other.WeeklyBossResinDiscountInfo);
       }
-      if (other.Unk3300DKKOBDIEKPP != 0) {
-        Unk3300DKKOBDIEKPP = other.Unk3300DKKOBDIEKPP;
+      if (other.BossChestNum != 0) {
+        BossChestNum = other.BossChestNum;
       }
       if (other.Id != 0) {
         Id = other.Id;
@@ -650,8 +648,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.LockState != global::Weedwacker.Shared.Network.Proto.InvestigationMonster.Types.LockState.None) {
         LockState = other.LockState;
       }
-      if (other.Unk3300JHLEHEOOGGB != 0) {
-        Unk3300JHLEHEOOGGB = other.Unk3300JHLEHEOOGGB;
+      if (other.RefreshInterval != 0) {
+        RefreshInterval = other.RefreshInterval;
       }
       if (other.IsAreaLocked != false) {
         IsAreaLocked = other.IsAreaLocked;
@@ -659,8 +657,8 @@ namespace Weedwacker.Shared.Network.Proto {
       if (other.Level != 0) {
         Level = other.Level;
       }
-      if (other.Unk3300KNKFCOKMECI != 0) {
-        Unk3300KNKFCOKMECI = other.Unk3300KNKFCOKMECI;
+      if (other.MaxBossChestNum != 0) {
+        MaxBossChestNum = other.MaxBossChestNum;
       }
       if (other.Resin != 0) {
         Resin = other.Resin;
@@ -681,7 +679,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Unk3300ONLALCCKIEE = input.ReadUInt32();
+            NextBossChestRefreshTime = input.ReadUInt32();
             break;
           }
           case 16: {
@@ -704,7 +702,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk3300DKKOBDIEKPP = input.ReadUInt32();
+            BossChestNum = input.ReadUInt32();
             break;
           }
           case 58: {
@@ -723,11 +721,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 80: {
-            Unk3300JHLEHEOOGGB = input.ReadUInt32();
+            RefreshInterval = input.ReadUInt32();
             break;
           }
           case 88: {
-            Unk3300KNKFCOKMECI = input.ReadUInt32();
+            MaxBossChestNum = input.ReadUInt32();
             break;
           }
           case 96: {
@@ -770,7 +768,7 @@ namespace Weedwacker.Shared.Network.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Unk3300ONLALCCKIEE = input.ReadUInt32();
+            NextBossChestRefreshTime = input.ReadUInt32();
             break;
           }
           case 16: {
@@ -793,7 +791,7 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 48: {
-            Unk3300DKKOBDIEKPP = input.ReadUInt32();
+            BossChestNum = input.ReadUInt32();
             break;
           }
           case 58: {
@@ -812,11 +810,11 @@ namespace Weedwacker.Shared.Network.Proto {
             break;
           }
           case 80: {
-            Unk3300JHLEHEOOGGB = input.ReadUInt32();
+            RefreshInterval = input.ReadUInt32();
             break;
           }
           case 88: {
-            Unk3300KNKFCOKMECI = input.ReadUInt32();
+            MaxBossChestNum = input.ReadUInt32();
             break;
           }
           case 96: {

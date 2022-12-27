@@ -24,9 +24,9 @@ namespace Weedwacker.Shared.Network.Proto {
     static GCGDSDeleteDeckReqReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhHQ0dEU0RlbGV0ZURlY2tSZXEucHJvdG8SH1dlZWR3YWNrZXIuU2hhcmVk",
-            "Lk5ldHdvcmsuUHJvdG8iJQoSR0NHRFNEZWxldGVEZWNrUmVxEg8KB2RlY2tf",
-            "aWQYASABKA1iBnByb3RvMw=="));
+            "ChhHQ0dEU0RlbGV0ZURlY2tSZXEucHJvdG8iJQoSR0NHRFNEZWxldGVEZWNr",
+            "UmVxEg8KB2RlY2tfaWQYASABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5l",
+            "dHdvcmsuUHJvdG9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

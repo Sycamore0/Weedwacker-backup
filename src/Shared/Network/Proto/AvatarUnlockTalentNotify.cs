@@ -24,11 +24,11 @@ namespace Weedwacker.Shared.Network.Proto {
     static AvatarUnlockTalentNotifyReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Ch5BdmF0YXJVbmxvY2tUYWxlbnROb3RpZnkucHJvdG8SH1dlZWR3YWNrZXIu",
-            "U2hhcmVkLk5ldHdvcmsuUHJvdG8ibQoYQXZhdGFyVW5sb2NrVGFsZW50Tm90",
-            "aWZ5EhYKDnNraWxsX2RlcG90X2lkGAkgASgNEhMKC2F2YXRhcl9ndWlkGAMg",
-            "ASgEEhEKCWVudGl0eV9pZBgKIAEoDRIRCgl0YWxlbnRfaWQYCCABKA1iBnBy",
-            "b3RvMw=="));
+            "Ch5BdmF0YXJVbmxvY2tUYWxlbnROb3RpZnkucHJvdG8ibQoYQXZhdGFyVW5s",
+            "b2NrVGFsZW50Tm90aWZ5EhYKDnNraWxsX2RlcG90X2lkGAkgASgNEhMKC2F2",
+            "YXRhcl9ndWlkGAMgASgEEhEKCWVudGl0eV9pZBgKIAEoDRIRCgl0YWxlbnRf",
+            "aWQYCCABKA1CIqoCH1dlZWR3YWNrZXIuU2hhcmVkLk5ldHdvcmsuUHJvdG9i",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
