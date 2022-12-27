@@ -9,16 +9,18 @@ namespace Weedwacker.GameServer.Systems.Inventory
     {
         [BsonElement] public List<int>? Affixes { get; protected set; } = new();
         [BsonElement] public int Refinement { get; protected set; } = 0;
+
         [BsonIgnore] public uint WeaponEntityId;
         [BsonIgnore] public new WeaponData ItemData => (WeaponData)GameData.ItemDataMap[ItemId];
+        [BsonIgnore] public WeaponPromoteData PromoteData => GameData.WeaponPromoteDataMap[Tuple.Create(ItemData.weaponPromoteId, PromoteLevel)];
 
         public WeaponItem(ulong guid, int itemId, int uniqueId, int level = 1, int refinement = 0) : base(guid, itemId)
         {
             Id = uniqueId;
-            Level = level;
             Refinement = refinement;
+            Level = level;
             PromoteLevel = GetMinPromoteLevel(Level);
-
+            
             if (ItemData.skillAffix != null)
             {
                 foreach (int skillAffix in ItemData.skillAffix)
@@ -36,6 +38,7 @@ namespace Weedwacker.GameServer.Systems.Inventory
             Guid = guid;
             Count = 1;
         }
+
 
         public Shared.Network.Proto.Weapon ToWeaponProto()
         {

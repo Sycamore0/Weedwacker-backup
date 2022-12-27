@@ -191,10 +191,10 @@ namespace Weedwacker.GameServer.Systems.Inventory
             switch (data.materialType)
             {
                 case MaterialType.MATERIAL_WEAPON_EXP_STONE:
-                    return await Inventory.SubInventories[ItemType.ITEM_WEAPON].RemoveItemAsync(item);
+                    return await Inventory.SubInventories[ItemType.ITEM_WEAPON].RemoveItemAsync(item, count);
 
                 case MaterialType.MATERIAL_RELIQUARY_MATERIAL:
-                    return await Inventory.SubInventories[ItemType.ITEM_RELIQUARY].RemoveItemAsync(item);
+                    return await Inventory.SubInventories[ItemType.ITEM_RELIQUARY].RemoveItemAsync(item, count);
 
                 case MaterialType.MATERIAL_FURNITURE_FORMULA:
                 case MaterialType.MATERIAL_FURNITURE_SUITE_FORMULA:
@@ -230,6 +230,64 @@ namespace Weedwacker.GameServer.Systems.Inventory
                     Logger.WriteErrorLine("Invalid material");
                     return false;
             }
+        }
+        public bool TryGetItemInSubInvById(int itemId, out GameItem? result) 
+        {
+            MaterialData data = (MaterialData)GameData.ItemDataMap[itemId];
+            result = null;
+            switch (data.materialType)
+            {
+                case MaterialType.MATERIAL_WEAPON_EXP_STONE:
+                    if ((Inventory.SubInventories[ItemType.ITEM_WEAPON] as WeaponTab).UpgradeMaterials.TryGetValue(itemId, out MaterialItem materialItem))
+                    {
+                        result = materialItem;
+                        return true;
+                    }
+                    break;
+                case MaterialType.MATERIAL_RELIQUARY_MATERIAL:
+                    if ((Inventory.SubInventories[ItemType.ITEM_RELIQUARY] as RelicTab).UpgradeMaterials.TryGetValue(itemId, out materialItem))
+                    {
+                        result = materialItem; 
+                        return true;
+                    }                
+                    break;
+
+                case MaterialType.MATERIAL_FURNITURE_FORMULA:
+                case MaterialType.MATERIAL_FURNITURE_SUITE_FORMULA:
+                case MaterialType.MATERIAL_ACTIVITY_ROBOT:
+                    if((Inventory.SubInventories[ItemType.ITEM_FURNITURE] as FurnitureTab).Materials.TryGetValue(itemId, out materialItem)) //is it Materials?
+                    {
+                        result = materialItem;
+                        return true;
+                    }
+                    break;
+
+                case MaterialType.MATERIAL_FOOD:
+                case MaterialType.MATERIAL_NOTICE_ADD_HP:
+                case MaterialType.MATERIAL_SPICE_FOOD:
+                    return FoodTab.Items.TryGetValue(itemId, out result);
+                case MaterialType.MATERIAL_EXP_FRUIT:
+                case MaterialType.MATERIAL_AVATAR_MATERIAL:
+                case MaterialType.MATERIAL_TALENT:
+                    return PromoteTab.Items.TryGetValue(itemId, out result);
+                case MaterialType.MATERIAL_EXCHANGE:
+                case MaterialType.MATERIAL_WOOD:
+                case MaterialType.MATERIAL_HOME_SEED:
+                case MaterialType.MATERIAL_FISH_BAIT:
+                    return MaterialsTab.Items.TryGetValue(itemId, out result);
+                case MaterialType.MATERIAL_WIDGET:
+                case MaterialType.MATERIAL_FISH_ROD:
+                    return GadgetTab.Items.TryGetValue(itemId, out result);
+
+                case MaterialType.MATERIAL_QUEST:
+                case MaterialType.MATERIAL_CRICKET:
+                case MaterialType.MATERIAL_ACTIVITY_GEAR:
+                    return QuestTab.Items.TryGetValue(itemId, out result);
+                default:
+                    Logger.WriteErrorLine("Invalid material");
+                    return false;
+            }
+            return false;
         }
     }
 }

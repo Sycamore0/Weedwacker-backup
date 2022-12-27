@@ -3,6 +3,7 @@ using MongoDB.Driver;
 using Weedwacker.GameServer.Data;
 using Weedwacker.GameServer.Database;
 using Weedwacker.GameServer.Enums;
+using Weedwacker.GameServer.Packet.Send;
 using Weedwacker.Shared.Utils;
 
 namespace Weedwacker.GameServer.Systems.Inventory
@@ -87,6 +88,7 @@ namespace Weedwacker.GameServer.Systems.Inventory
                     var update = Builders<InventoryManager>.Update.Set($"{mongoPathToItems}.{nameof(Materials)}.{material.ItemId}.{nameof(GameItem.Count)}", material.Count);
                     await DatabaseManager.UpdateInventoryAsync(filter, update);
 
+                    await Owner.SendPacketAsync(new PacketStoreItemChangeNotify(material));
                     return true;
                 }
                 else if (material.Count - count == 0)
@@ -96,7 +98,10 @@ namespace Weedwacker.GameServer.Systems.Inventory
                     var update = Builders<InventoryManager>.Update.Unset($"{mongoPathToItems}.{nameof(Materials)}.{material.ItemId}");
                     await DatabaseManager.UpdateInventoryAsync(filter, update);
 
+                    material.Count = 0;
+                    Inventory.GuidMap.Remove(material.Guid);
                     Materials.Remove(material.ItemId);
+                    await Owner.SendPacketAsync(new PacketStoreItemDelNotify(material));
                     return true;
                 }
                 else

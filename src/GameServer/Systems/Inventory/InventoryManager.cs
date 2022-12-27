@@ -4,6 +4,7 @@ using Weedwacker.GameServer.Data.Common;
 using Weedwacker.GameServer.Data.Excel;
 using Weedwacker.GameServer.Enums;
 using Weedwacker.GameServer.Packet.Send;
+using Weedwacker.Shared.Network.Proto;
 using Weedwacker.Shared.Utils;
 
 namespace Weedwacker.GameServer.Systems.Inventory
@@ -28,7 +29,7 @@ namespace Weedwacker.GameServer.Systems.Inventory
             };
         }
 
-        private int GetVirtualItemValue(int itemId)
+        public int GetVirtualItemValue(int itemId)
         {
             switch (itemId)
             {
@@ -55,7 +56,56 @@ namespace Weedwacker.GameServer.Systems.Inventory
                     return 0;
             }
         }
+        
 
+        public async Task<WeaponItem> PromoteWeaponAsync(ulong targetWeaponGuid) // returns updated weapon
+        {
+            return await (SubInventories[ItemType.ITEM_WEAPON] as WeaponTab).PromoteWeaponAsync(targetWeaponGuid);
+        }
+
+        public async Task<WeaponItem> UpgradeWeaponAsync(ulong targetWeaponGuid, IEnumerable<ulong> foodWeaponGuidList, IEnumerable<ItemParam> itemParamList) //returns updated weapon
+        {
+            return await (SubInventories[ItemType.ITEM_WEAPON] as WeaponTab).UpgradeWeaponAsync(targetWeaponGuid, foodWeaponGuidList, itemParamList);
+        }
+
+        public async Task<bool> RemoveItemByParamData(ItemParamData itemData)
+        {
+            bool result = false;
+            switch (GameData.ItemDataMap[itemData.id].itemType)
+            {
+                case ItemType.ITEM_RELIQUARY:
+                    if ((SubInventories[ItemType.ITEM_RELIQUARY] as RelicTab).Items.TryGetValue(itemData.id, out GameItem? relicItem))
+                    {
+                        result = await (SubInventories[ItemType.ITEM_RELIQUARY] as RelicTab).RemoveItemAsync(relicItem, itemData.count);
+                    }
+                    break;
+                case ItemType.ITEM_WEAPON:
+                    if ((SubInventories[ItemType.ITEM_WEAPON] as WeaponTab).Items.TryGetValue(itemData.id, out GameItem? weaponItem))
+                    {
+                        result = await (SubInventories[ItemType.ITEM_WEAPON] as WeaponTab).RemoveItemAsync(weaponItem, itemData.count);
+                    }
+                    break;
+                case ItemType.ITEM_FURNITURE:
+                    if ((SubInventories[ItemType.ITEM_FURNITURE] as FurnitureTab).Items.TryGetValue(itemData.id, out GameItem? furnitureItem))
+                    {
+                        result = await (SubInventories[ItemType.ITEM_FURNITURE] as FurnitureTab).RemoveItemAsync(furnitureItem, itemData.count);
+                    }
+                    break;
+                case ItemType.ITEM_MATERIAL:
+                    if ((SubInventories[ItemType.ITEM_MATERIAL] as MaterialSubInv).TryGetItemInSubInvById(itemData.id, out GameItem? materialItem))
+                    {
+                        result = await (SubInventories[ItemType.ITEM_MATERIAL] as MaterialSubInv).RemoveItemAsync(materialItem, itemData.count);
+                    }
+                    break;
+                case ItemType.ITEM_VIRTUAL:
+                    result = await PayVirtualItemByParamDataAsync(itemData);
+                    break;
+                default:
+                    Logger.WriteErrorLine("Invalid item type!");
+                    break;
+            }
+            return result;
+        }
         // Used by reward lists
         public async Task<GameItem?> AddItemByParamDataAsync(ItemParamData itemParam, ActionReason reason)
         {
@@ -161,20 +211,21 @@ namespace Weedwacker.GameServer.Systems.Inventory
         {
             Dictionary<MaterialItem, int> materials = new();
             Dictionary<int, int> virtualItems = new();
-            foreach (ItemParamData itemData in costItems)
-            {
-                if (GameData.ItemDataMap[itemData.id].itemType == ItemType.ITEM_MATERIAL)
+                foreach (ItemParamData itemData in costItems)
                 {
-                    var material = (SubInventories[ItemType.ITEM_MATERIAL] as MaterialSubInv).PromoteTab.Items[itemData.id];
-                    if (material.Count < itemData.count) return false; // insufficient materials
-                    else materials.Add((material as MaterialItem), itemData.count);
+                    if (GameData.ItemDataMap[itemData.id].itemType == ItemType.ITEM_MATERIAL)
+                    {
+                        if (!(SubInventories[ItemType.ITEM_MATERIAL] as MaterialSubInv).PromoteTab.Items.TryGetValue(itemData.id, out GameItem? material))
+                            return false;
+                        if (material.Count < itemData.count) return false; // insufficient materials
+                        else materials.Add(material as MaterialItem, itemData.count);
+                    }
+                    else if (GameData.ItemDataMap[itemData.id].itemType == ItemType.ITEM_VIRTUAL)
+                    {
+                        if (GetVirtualItemValue(itemData.id) < itemData.count) return false; // insufficient currency
+                        else virtualItems.Add(itemData.id, itemData.count);
+                    }
                 }
-                else if (GameData.ItemDataMap[itemData.id].itemType == ItemType.ITEM_VIRTUAL)
-                {
-                    if (GetVirtualItemValue(itemData.id) < itemData.count) return false; // insufficient currency
-                    else virtualItems.Add(itemData.id, GetVirtualItemValue(itemData.id));
-                }
-            }
             // We have the requisite amount for all items
             foreach (MaterialItem material in materials.Keys) await RemoveItemByGuid(material.Guid, materials[material]);
             foreach (int item in virtualItems.Keys) await PayVirtualItemByIdAsync(item, virtualItems[item]);
@@ -211,7 +262,7 @@ namespace Weedwacker.GameServer.Systems.Inventory
                     return false;
             }
         }
-        private async Task<bool> PayVirtualItemByIdAsync(int itemId, int count, ActionReason reason = ActionReason.None)
+        public async Task<bool> PayVirtualItemByIdAsync(int itemId, int count, ActionReason reason = ActionReason.None)
         {
             switch (itemId)
             {
@@ -259,11 +310,11 @@ namespace Weedwacker.GameServer.Systems.Inventory
 
         public async Task<bool> RemoveItemByGuid(ulong guid, int count = 1)
         {
-            if (GuidMap.TryGetValue(guid, out GameItem? item))
+            if (!GuidMap.ContainsKey(guid)) //TryGetValue(guid, out GameItem? item) appears to occasionally return false despite a key being present
             {
                 return false;
             }
-
+            GameItem item = GuidMap[guid];
             // Was the operation successful?
             bool result = false;
 
@@ -281,15 +332,6 @@ namespace Weedwacker.GameServer.Systems.Inventory
                 case ItemType.ITEM_MATERIAL:
                     result = await SubInventories[ItemType.ITEM_MATERIAL].RemoveItemAsync(item, count);
                     break;
-            }
-
-            if (item.Count <= 0)
-            {
-                await Owner.SendPacketAsync(new PacketStoreItemDelNotify(item));
-            }
-            else
-            {
-                await Owner.SendPacketAsync(new PacketStoreItemChangeNotify(item));
             }
 
             // Returns true on success
