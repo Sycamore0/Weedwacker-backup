@@ -78,15 +78,7 @@ namespace Weedwacker.GameServer.Systems.World
         {
         }
 
-        public override async Task OnDeathAsync(uint killerId = default)
-        {
-            KilledBy = killerId;
-            KilledType = PlayerDieType.KillByMonster;
-
-            await ClearEnergy(ChangeEnergyReason.None);
-        }
-
-        public async Task OnDeathAsync(uint killerId = default, PlayerDieType dieType = PlayerDieType.KillByMonster)
+        public override async Task OnDeathAsync(uint killerId = default, PlayerDieType dieType = PlayerDieType.KillByMonster)
         {
             KilledBy = killerId;
             KilledType = dieType;
@@ -228,7 +220,7 @@ namespace Weedwacker.GameServer.Systems.World
             };
             entityInfo.AnimatorParaList.Add(new AnimatorParameterValueInfoPair());
 
-            if (Scene != null && Avatar.Owner.TeamManager.GetCurrentAvatarEntity() == this)
+            if (Scene != null && Avatar.Owner.TeamManager.CurrentAvatarEntity == this)
             {
                 entityInfo.MotionInfo = GetMotionInfo();
             }

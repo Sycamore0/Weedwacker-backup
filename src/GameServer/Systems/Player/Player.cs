@@ -67,6 +67,10 @@ namespace Weedwacker.GameServer.Systems.Player
         [BsonIgnore] public InvokeNotifier<AbilityInvokeEntry> AbilityInvNotifyList;
         [BsonIgnore] public InvokeNotifier<AbilityInvokeEntry> ClientAbilityInitFinishNotifyList;
 
+        [BsonIgnore] public string? NickName => Profile.Nickname;
+        [BsonIgnore] public bool IsInMultiplayer => World != null && World.IsMultiplayer;
+        [BsonIgnore] public PlayerLocationInfo PlayerLocationInfo => new() { Uid = (uint)GameUid, Pos = new() { X = Position.X, Y = Position.Y, Z = Position.Z }, Rot = new() { X = Rotation.X, Y = Rotation.Y, Z = Rotation.Z } };
+
         public Player(string heroName, string accountUid, int gameUid)
         {
             Profile = new(heroName);
@@ -132,11 +136,6 @@ namespace Weedwacker.GameServer.Systems.Player
             else
                 return false;
 
-        }
-
-        public string? GetNickName()
-        {
-            return Profile.Nickname;
         }
         public async Task SetSceneAsync(Scene? scene)
         {
@@ -289,8 +288,6 @@ namespace Weedwacker.GameServer.Systems.Player
             ClientAbilityInitFinishNotifyList = new(this, typeof(PacketClientAbilityInitFinishNotify));
         }
 
-        public bool IsInMultiplayer() { return World != null && World.IsMultiplayer; }
-
         //TODO
         public void SetPaused(bool newPauseState)
         {
@@ -333,23 +330,9 @@ namespace Weedwacker.GameServer.Systems.Player
 
             return onlineInfo;
         }
-
-        public PlayerLocationInfo GetPlayerLocationInfo()
-        {
-            return new PlayerLocationInfo()
-            {
-                Uid = (uint)GameUid,
-                Pos = new() { X = Position.X, Y = Position.Y, Z = Position.Z },
-                Rot = new() { X = Rotation.X, Y = Rotation.Y, Z = Rotation.Z }
-            };
-        }
-
         public async Task SendPacketAsync(BasePacket packet)
         {
             await Session.SendPacketAsync(packet);
         }
-
-
-
     }
 }

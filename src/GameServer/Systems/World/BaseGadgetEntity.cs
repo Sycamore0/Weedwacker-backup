@@ -79,7 +79,7 @@ namespace Weedwacker.GameServer.Systems.World
                 ConfigId = ConfigId,
                 GadgetState = (uint)LiveState,
                 IsEnableInteract = true,
-                AuthorityPeerId = Scene.World.GetHostPeerId(),
+                AuthorityPeerId = Scene.World.HostPeerId,
                 DraftId = (uint)DraftId
             };
 

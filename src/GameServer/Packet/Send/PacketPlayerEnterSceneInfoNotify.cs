@@ -12,7 +12,7 @@ namespace Weedwacker.GameServer.Packet.Send
         {
             PlayerEnterSceneInfoNotify proto = new PlayerEnterSceneInfoNotify()
             {
-                CurAvatarEntityId = player.TeamManager.GetCurrentAvatarEntity().EntityId,
+                CurAvatarEntityId = player.TeamManager.CurrentAvatarEntity.EntityId,
                 EnterSceneToken = player.EnterSceneToken
             };
 
@@ -25,7 +25,7 @@ namespace Weedwacker.GameServer.Packet.Send
 
             proto.MpLevelEntityInfo = new MPLevelEntityInfo()
             {
-                AuthorityPeerId = player.World.GetHostPeerId(),
+                AuthorityPeerId = player.World.HostPeerId,
                 AbilityInfo = new(), //TODO
                 EntityId = player.World.LevelEntityId
             };

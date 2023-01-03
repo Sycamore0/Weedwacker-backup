@@ -20,21 +20,21 @@ namespace Weedwacker.GameServer.Systems.World
         public uint LastMoveReliableSeq;
 
         public bool LockHP;
-
-        // Abilities
-        public Dictionary<string, float> MetaOverrideMap { get; protected set; }
-        public Dictionary<int, string> MetaModifiers { get; protected set; }
+        public World? World
+        {
+            get
+            {
+                if (Scene == null) return null;
+                else return Scene.World;
+            }
+        }
 
         public SceneEntity(Scene? scene)
         {
             Scene = scene;
             MotionState = MotionState.None;
         }
-        public World? GetWorld()
-        {
-            if (Scene == null) return null;
-            else return Scene.World;
-        }
+
 
         public virtual bool SetMotionState(MotionState state)
         {
@@ -153,7 +153,7 @@ namespace Weedwacker.GameServer.Systems.World
          * Called when this entity dies
          * @param killerId Entity id of the entity that killed this entity
          */
-        public virtual async Task OnDeathAsync(uint killerId = default)
+        public virtual async Task OnDeathAsync(uint killerId = default, PlayerDieType dieType = PlayerDieType.KillByMonster)
         {
 
         }

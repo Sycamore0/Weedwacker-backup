@@ -54,9 +54,9 @@ namespace Weedwacker.GameServer.Packet.Recv
                     case CombatTypeArgument.EntityMove: // Seems to only handle avatar entities, despite the generic name...
                         info = EntityMoveInfo.Parser.ParseFrom(data);
                         var moveInfo = info as EntityMoveInfo;
-                        if (session.Player.TeamManager.GetCurrentAvatarEntity().EntityId == moveInfo.EntityId)
+                        if (session.Player.TeamManager.CurrentAvatarEntity.EntityId == moveInfo.EntityId)
                         {
-                            var avatar = session.Player.TeamManager.GetCurrentAvatarEntity();
+                            var avatar = session.Player.TeamManager.CurrentAvatarEntity;
                             await avatar.MoveAsync(moveInfo);
                         }
                         break;
