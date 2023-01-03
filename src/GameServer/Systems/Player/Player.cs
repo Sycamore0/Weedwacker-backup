@@ -107,6 +107,7 @@ namespace Weedwacker.GameServer.Systems.Player
             Session.State = SessionState.PICKING_CHARACTER;
             await Session.SendPacketAsync(new BasePacket(OpCode.DoSetPlayerBornDataNotify));
         }
+
         public ulong GetNextGameGuid()
         {
             ulong nextId = ++NextGuid;
@@ -167,7 +168,7 @@ namespace Weedwacker.GameServer.Systems.Player
 
         public async void OnTickAsync()
         {
-            if(Session == null)
+            if (Session == null)
             {
                 return;
             }
@@ -287,6 +288,7 @@ namespace Weedwacker.GameServer.Systems.Player
             AbilityInvNotifyList = new(this, typeof(PacketAbilityInvocationsNotify));
             ClientAbilityInitFinishNotifyList = new(this, typeof(PacketClientAbilityInitFinishNotify));
         }
+
         public bool IsInMultiplayer() { return World != null && World.IsMultiplayer; }
 
         //TODO
@@ -346,6 +348,8 @@ namespace Weedwacker.GameServer.Systems.Player
         {
             await Session.SendPacketAsync(packet);
         }
+
+
 
     }
 }
