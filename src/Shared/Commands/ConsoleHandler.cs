@@ -9,8 +9,8 @@ namespace Weedwacker.Shared.Commands
         public static void Init()
         {
 
-            Command hashabilityCommand = new Command("hashability", "hashability command");
-            Command hashpathCommand = new Command("hashpath", "hashpath command");
+            Command hashabilityCommand = new("hashability", "hashability command");
+            Command hashpathCommand = new("hashpath", "hashpath command");
 
 
             var valueArgument = new Argument<string>(
@@ -20,20 +20,20 @@ namespace Weedwacker.Shared.Commands
             hashabilityCommand.AddArgument(valueArgument);
             hashpathCommand.AddArgument(valueArgument);
 
-            hashabilityCommand.SetHandler(ConsoleCommands.OnHashAbility,UserRank.Console, valueArgument);
-            hashpathCommand.SetHandler(ConsoleCommands.OnHashPath, UserRank.Console,valueArgument);
+            hashabilityCommand.SetHandler(ConsoleCommands.OnHashAbility, UserRank.Console, valueArgument);
+            hashpathCommand.SetHandler(ConsoleCommands.OnHashPath, UserRank.Console, valueArgument);
 
 
             AddCommand(hashpathCommand);
             AddCommand(hashabilityCommand);
         }
 
-        public static Command rootCommand { get; private set; } = new Command("/");
+        public static Command RootCommand { get; private set; } = new Command("/");
 
 
         public static void AddCommand(Command command)
         {
-            rootCommand.AddCommand(command);
+            RootCommand.AddCommand(command);
         }
         public static async Task Start()
         {
@@ -48,7 +48,7 @@ namespace Weedwacker.Shared.Commands
                     try
                     {
                         var console = new SimConsole(UserRank.Console);
-                        await rootCommand.InvokeAsync(args, console);
+                        await RootCommand.InvokeAsync(args, console);
                         var ret = console.Out.ToString().TrimEnd('\n'); ;
                         //var err = console.Error.ToString(); //err is null
                         Logger.WriteLine(Environment.NewLine + ret);

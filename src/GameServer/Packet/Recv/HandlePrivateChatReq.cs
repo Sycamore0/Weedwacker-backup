@@ -30,7 +30,7 @@ namespace Weedwacker.GameServer.Packet.Recv
                         var console = new SimConsole(UserRank.Player);
                         var args = ConsoleHandler.ParseCommandString(req.Text.Substring(1));
 
-                        var r = await ConsoleHandler.rootCommand.InvokeAsync(args, console);
+                        var r = await ConsoleHandler.RootCommand.InvokeAsync(args, console);
                         var ret = console.Out.ToString().TrimEnd('\n');
 
                         await session.SendPacketAsync(new PacketPrivateChatNotify(req.TargetUid, (uint)session.Player.GameUid, ret));

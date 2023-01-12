@@ -7,7 +7,7 @@ namespace Weedwacker.GameServer.Data.Excel
     [Resource("GadgetExcelConfigData.json")]
     internal class GadgetData
     {
-        [JsonProperty] public readonly GadgetType type;
+        [JsonProperty] public readonly EntityType type;
         [JsonProperty] public readonly string jsonName;
         [JsonProperty] public readonly bool hasMove;
         [JsonProperty] public readonly bool hasAudio;
@@ -15,11 +15,11 @@ namespace Weedwacker.GameServer.Data.Excel
         [JsonProperty] public readonly string itemJsonName;
         [JsonProperty] public readonly string inteeIconName;
         [JsonProperty] public readonly long interactNameTextMapHash;
-        [JsonProperty] public readonly int id;
+        [JsonProperty] public readonly uint id;
         [JsonProperty] public readonly long nameTextMapHash;
         [JsonProperty] public readonly BigInteger prefabPathHashSuffix;
-        [JsonProperty] public readonly int prefabPathHashPre;
-        [JsonProperty] public readonly int campId;
+        [JsonProperty] public readonly uint prefabPathHashPre;
+        [JsonProperty] public readonly uint campId;
         [JsonProperty] public readonly string lODPatternName;
     }
 }

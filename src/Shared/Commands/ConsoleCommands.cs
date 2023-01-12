@@ -1,5 +1,4 @@
 ﻿using System.CommandLine;
-using Weedwacker.Shared.Enums;
 
 namespace Weedwacker.Shared.Commands
 {
